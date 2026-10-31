@@ -90,6 +90,8 @@ jobs:
     if: needs.decide.outputs.run == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 240
+    outputs:
+      wrote: ${{ steps.wrote.outputs.wrote }}
     env:
       IUC_CACHE: /home/runner/iuc-cache
     steps:
@@ -122,9 +124,22 @@ jobs:
           VERSION: ${{ needs.decide.outputs.version }}
           CASE: ${{ github.event.inputs.case }}
         run: |
+          touch "$RUNNER_TEMP/start"
           args=(--version "$VERSION")
           [ -z "$CASE" ] || args+=(--case "$CASE")
           "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}"
+      - name: Il runner ha scritto i risultati?
+        id: wrote
+        if: always()
+        env:
+          VERSION: ${{ needs.decide.outputs.version }}
+        run: |
+          # true solo se summary.md è stato riscritto in questa esecuzione (non quello del checkout)
+          if [ -f "$RUNNER_TEMP/start" ] && [ "results/$VERSION/summary.md" -nt "$RUNNER_TEMP/start" ]; then
+            echo "wrote=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "wrote=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Riepilogo
         if: always()
         env:
@@ -132,7 +147,7 @@ jobs:
         run: |
           [ -f "results/$VERSION/summary.md" ] && cat "results/$VERSION/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.wrote.outputs.wrote == 'true'
         with:
           name: results-${{ needs.decide.outputs.version }}
           path: results/${{ needs.decide.outputs.version }}
@@ -146,7 +161,7 @@ jobs:
 
   publish:
     needs: [decide, run]
-    if: always() && github.event_name != 'pull_request' && needs.decide.outputs.run == 'true' && needs.run.result != 'cancelled' && needs.run.result != 'skipped'
+    if: always() && github.event_name != 'pull_request' && needs.decide.outputs.run == 'true' && needs.run.outputs.wrote == 'true'
     runs-on: ubuntu-24.04
     permissions:
       contents: write
