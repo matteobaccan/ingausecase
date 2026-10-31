@@ -12,8 +12,7 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 | `cases/documenti/` | domande su documenti, con risposte e pagine note |
 | `cases/email/` | smistamento di email e ticket, voto esatto |
 | `cases/pdf/` | estrazione di dati da PDF, voto esatto |
-| `cases/mesh/` | più nodi Inga insieme, simulati su una macchina |
 | `tools/` | lo script comune: scarica Inga, lo avvia, esegue i casi, dà i voti |
 
-Tutto gira sui runner di GitHub: nessun PC personale. I dati sono pubblici o
-sintetici.
+Tutto gira sui runner di GitHub, un solo PC alla volta: nessun PC personale e, per
+ora, nessuna mesh. I dati sono pubblici o sintetici.
