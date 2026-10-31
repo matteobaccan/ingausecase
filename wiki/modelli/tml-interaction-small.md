@@ -1,11 +1,10 @@
-﻿---
+---
 title: "TML-Interaction-Small"
 category: modello
 tags: [moe, multimodale, realtime, thinking-machines]
 related_puntate: [20260513]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260513.md]
 ---
 
 # TML-Interaction-Small
@@ -24,7 +23,7 @@ Modello MoE di Thinking Machines (276 miliardi di parametri, 12 attivi) che unis
 
 ## Timeline delle notizie
 
-- **2026-05-13** — TML-Interaction-Small (276 miliardi di parametri, 12 attivi) non funziona più a turni: ascolta, vede, parla, pensa e agisce contemporaneamente, con 0,4 secondi di latenza, micro-turni da 200 millisecondi e traduzione simultanea mentre entrambe le parti parlano. [Fonte: raw/puntate/ainews20260513.md]
+- **2026-05-13** — TML-Interaction-Small (276 miliardi di parametri, 12 attivi) non funziona più a turni: ascolta, vede, parla, pensa e agisce contemporaneamente, con 0,4 secondi di latenza, micro-turni da 200 millisecondi e traduzione simultanea mentre entrambe le parti parlano.
 
 ## Collegamenti
 

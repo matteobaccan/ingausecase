@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Lift"
 category: modello
 tags: [estrazione-documenti, json, vllm]
 related_puntate: [20261004]
 created: 2026-10-04
 updated: 2026-10-04
-sources: [raw/puntate/ainews20261004.md]
 ---
 
 # Lift
@@ -25,7 +24,7 @@ Modello da nove miliardi di parametri per l'estrazione di JSON da documenti.
 
 ## Timeline delle notizie
 
-- **2026-10-04** — Lift estrae JSON da documenti: nove miliardi di parametri, tre volte più veloce di Gemini Flash 3.5, legge PDF e immagini in un solo passaggio ed è self-hostable con vLLM. [Fonte: raw/puntate/ainews20261004.md]
+- **2026-10-04** — Lift estrae JSON da documenti: nove miliardi di parametri, tre volte più veloce di Gemini Flash 3.5, legge PDF e immagini in un solo passaggio ed è self-hostable con vLLM.
 
 ## Collegamenti
 

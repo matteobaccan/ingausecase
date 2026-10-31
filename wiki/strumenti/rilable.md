@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Rilable"
 category: strumento
 tags: [app-builder, ios, open-source, prompt]
 related_puntate: [20260612]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260612.md]
 ---
 
 # Rilable
@@ -24,7 +23,7 @@ App iOS open source che crea web app e app iOS dai prompt, costruita con Fable 5
 
 ## Timeline delle notizie
 
-- **2026-06-12** — Rilable crea web app e app iOS direttamente da prompt: costruita con Fable 5 in dieci prompt per duecentodieci dollari di token; sandbox via Daytona, database Convex, AI gateway Vercel e skill iOS via Chorus Agent. [Fonte: raw/puntate/ainews20260612.md]
+- **2026-06-12** — Rilable crea web app e app iOS direttamente da prompt: costruita con Fable 5 in dieci prompt per duecentodieci dollari di token; sandbox via Daytona, database Convex, AI gateway Vercel e skill iOS via Chorus Agent.
 
 ## Collegamenti
 

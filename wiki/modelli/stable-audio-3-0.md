@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Stable Audio 3.0"
 category: modello
 tags: [audio, musica, open-weight]
 related_puntate: [20260522]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260522.md]
 ---
 
 # Stable Audio 3.0
@@ -24,7 +23,7 @@ Famiglia di modelli open-weight per musica di Stability AI, supportata in ComfyU
 
 ## Timeline delle notizie
 
-- **2026-05-22** — Stable Audio 3.0 è già supportato in ComfyUI: modelli open-weight per musica con dati completamente licenziati, per SFX rapidi, tracce brevi e pezzi musicali più lunghi, dentro i workflow già esistenti. [Fonte: raw/puntate/ainews20260522.md]
+- **2026-05-22** — Stable Audio 3.0 è già supportato in ComfyUI: modelli open-weight per musica con dati completamente licenziati, per SFX rapidi, tracce brevi e pezzi musicali più lunghi, dentro i workflow già esistenti.
 
 ## Collegamenti
 

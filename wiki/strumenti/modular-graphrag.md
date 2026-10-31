@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Modular GraphRAG"
 category: strumento
 tags: [graph, open-source, rag, rust]
 related_puntate: [20260628]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260628.md]
 ---
 
 # Modular GraphRAG
@@ -24,7 +23,7 @@ Implementazione completa e modulare di GraphRAG scritta in Rust, con supporto al
 
 ## Timeline delle notizie
 
-- **2026-06-28** — Implementazione completa e modulare di GraphRAG in Rust con supporto all'accelerazione WebGPU. [Fonte: raw/puntate/ainews20260628.md]
+- **2026-06-28** — Implementazione completa e modulare di GraphRAG in Rust con supporto all'accelerazione WebGPU.
 
 ## Collegamenti
 

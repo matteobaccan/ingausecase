@@ -1,11 +1,10 @@
-﻿---
+---
 title: "OpenClaude"
 category: strumento
 tags: [anthropic, claude, gateway, llm]
 related_puntate: [20260901]
 created: 2026-09-01
 updated: 2026-09-01
-sources: [raw/puntate/ainews20260901.md]
 ---
 
 # OpenClaude
@@ -23,7 +22,7 @@ Gateway ibrido per Claude alla versione 0,30: modelli live da OpenRouter e OpenG
 
 ## Timeline delle notizie
 
-- **2026-09-01** — OpenClaude versione 0,30. Gateway ibrido LLMTR, modelli live da OpenRouter e OpenGateway, input Unicode e IMI affidabili, plugin più sicuri, chiamate a strumento più pulite, sessioni background migliorate. [Fonte: raw/puntate/ainews20260901.md]
+- **2026-09-01** — OpenClaude versione 0,30. Gateway ibrido LLMTR, modelli live da OpenRouter e OpenGateway, input Unicode e IMI affidabili, plugin più sicuri, chiamate a strumento più pulite, sessioni background migliorate.
 
 ## Collegamenti
 

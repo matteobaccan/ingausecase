@@ -1,11 +1,10 @@
-﻿---
+---
 title: "CubeSandbox"
 category: strumento
 tags: [agent, cina, sandbox, sicurezza]
 related_puntate: [20260707]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260707.md]
 ---
 
 # CubeSandbox
@@ -20,7 +19,7 @@ Sandbox cinese per agenti: boot in 60 millisecondi, 5 MB di RAM per istanza e is
 
 ## Timeline delle notizie
 
-- **2026-07-07** — Sandbox cinese: boot in 60 millisecondi, 5 MB di RAM per istanza, isolamento hardware per ogni agente. 2,5-50 volte più veloce dei sandbox tradizionali. [Fonte: raw/puntate/ainews20260707.md]
+- **2026-07-07** — Sandbox cinese: boot in 60 millisecondi, 5 MB di RAM per istanza, isolamento hardware per ogni agente. 2,5-50 volte più veloce dei sandbox tradizionali.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "SensorFM"
 category: modello
 tags: [foundation-model, google, health]
 related_puntate: [20260710]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260710.md]
 ---
 
 # SensorFM
@@ -24,7 +23,7 @@ Foundation model di Google Research addestrato su un trilione di minuti di dati 
 
 ## Timeline delle notizie
 
-- **2026-07-10** — SensorFM di Google Research è un foundation model su un trilione di minuti di dati wearable: cinque milioni di partecipanti consenzienti, rappresentazione riusabile per salute cardiovascolare, metabolica, sonno e salute mentale. [Fonte: raw/puntate/ainews20260710.md]
+- **2026-07-10** — SensorFM di Google Research è un foundation model su un trilione di minuti di dati wearable: cinque milioni di partecipanti consenzienti, rappresentazione riusabile per salute cardiovascolare, metabolica, sonno e salute mentale.
 
 ## Collegamenti
 

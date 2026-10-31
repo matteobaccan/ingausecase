@@ -1,11 +1,10 @@
-﻿---
+---
 title: "VideoRAG"
 category: strumento
 tags: [multimodale, rag, retrieval, video]
 related_puntate: [20260707]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260707.md]
 ---
 
 # VideoRAG
@@ -20,7 +19,7 @@ Sistema RAG video che indicizza ciò che gli utenti vedono realmente, permettend
 
 ## Timeline delle notizie
 
-- **2026-07-07** — Permette di chattare con centinaia di ore di video: indicizza quello che gli utenti vedono realmente, superando i baseline testuali del 18,1%. [Fonte: raw/puntate/ainews20260707.md]
+- **2026-07-07** — Permette di chattare con centinaia di ore di video: indicizza quello che gli utenti vedono realmente, superando i baseline testuali del 18,1%.
 
 ## Collegamenti
 

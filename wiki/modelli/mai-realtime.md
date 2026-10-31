@@ -1,18 +1,17 @@
-﻿---
+---
 title: "MAI Realtime"
 category: modello
 tags: [full-duplex, microsoft, realtime, tts, voce]
 related_puntate: []
 created: 2026-09-12
 updated: 2026-09-12
-sources: [raw/pillitteri/pillitteri20260802-mai-realtime-microsoft-voce-full-duplex.md]
 ---
 
 # MAI Realtime
 
 ## Introduzione
 
-Modello vocale conversazionale di [[microsoft]], il primo costruito internamente per l'audio in tempo reale: ascolta e parla nello stesso istante (full-duplex) invece di alternarsi a turni. È stato individuato il 2 agosto 2026 da TestingCatalog dentro il MAI Playground come elemento in early access, riservato a un gruppo ristretto di partner e mai annunciato con un comunicato ufficiale, senza benchmark pubblicati né data di apertura al pubblico. [Fonte: raw/pillitteri/pillitteri20260802-mai-realtime-microsoft-voce-full-duplex.md]
+Modello vocale conversazionale di [[microsoft]], il primo costruito internamente per l'audio in tempo reale: ascolta e parla nello stesso istante (full-duplex) invece di alternarsi a turni. È stato individuato il 2 agosto 2026 da TestingCatalog dentro il MAI Playground come elemento in early access, riservato a un gruppo ristretto di partner e mai annunciato con un comunicato ufficiale, senza benchmark pubblicati né data di apertura al pubblico.
 
 ## Capacità
 
@@ -25,7 +24,7 @@ Modello vocale conversazionale di [[microsoft]], il primo costruito internamente
 
 ## Performance
 
-Nessun benchmark pubblicato, a differenza dei numeri su CyberGym diffusi per MAI-Cyber-1-Flash. Il resoconto di TestingCatalog riferisce interruzioni gestite in modo pulito e latenza di risposta bassa, senza però una cifra end-to-end confrontabile con i circa 200 millisecondi di Moshi di Kyutai o con [[gpt-live-1]]. [Fonte: raw/pillitteri/pillitteri20260802-mai-realtime-microsoft-voce-full-duplex.md]
+Nessun benchmark pubblicato, a differenza dei numeri su CyberGym diffusi per MAI-Cyber-1-Flash. Il resoconto di TestingCatalog riferisce interruzioni gestite in modo pulito e latenza di risposta bassa, senza però una cifra end-to-end confrontabile con i circa 200 millisecondi di Moshi di Kyutai o con [[gpt-live-1]].
 
 ## Disponibilità
 
@@ -50,7 +49,7 @@ Nessun benchmark pubblicato, a differenza dei numeri su CyberGym diffusi per MAI
 
 ## Timeline delle notizie
 
-- **2026-08-02** — TestingCatalog individua MAI Realtime nel MAI Playground: full-duplex, 17 lingue con l'italiano, le voci Victoria e Grant, due modalità di turn-taking e un pannello di debug con la latenza in diretta; nessun benchmark, nessun prezzo e nessuna data di rilascio. Il modello chiude la catena vocale della famiglia MAI dopo MAI-Transcribe-1 (ascoltare) e MAI-Voice-1 e 2 (parlare), nello stesso disegno di verticalizzazione applicato al codice con MAI-Code-1-Flash e alla sicurezza con MAI-Cyber. Per il mercato italiano il dato che conta è la presenza dell'italiano tra le 17 lingue, a cui si aggiungono le voci italiane già esistenti nella preview di Azure Speech (it-IT-Luca:MAI-Voice-2 e it-IT-Rosa:MAI-Voice-2); sul fronte GDPR resta decisiva la regione di deployment di Speech, che determina dove viene elaborato l'audio. [Fonte: raw/pillitteri/pillitteri20260802-mai-realtime-microsoft-voce-full-duplex.md]
+- **2026-08-02** — TestingCatalog individua MAI Realtime nel MAI Playground: full-duplex, 17 lingue con l'italiano, le voci Victoria e Grant, due modalità di turn-taking e un pannello di debug con la latenza in diretta; nessun benchmark, nessun prezzo e nessuna data di rilascio. Il modello chiude la catena vocale della famiglia MAI dopo MAI-Transcribe-1 (ascoltare) e MAI-Voice-1 e 2 (parlare), nello stesso disegno di verticalizzazione applicato al codice con MAI-Code-1-Flash e alla sicurezza con MAI-Cyber. Per il mercato italiano il dato che conta è la presenza dell'italiano tra le 17 lingue, a cui si aggiungono le voci italiane già esistenti nella preview di Azure Speech (it-IT-Luca:MAI-Voice-2 e it-IT-Rosa:MAI-Voice-2); sul fronte GDPR resta decisiva la regione di deployment di Speech, che determina dove viene elaborato l'audio.
 
 ## Collegamenti
 

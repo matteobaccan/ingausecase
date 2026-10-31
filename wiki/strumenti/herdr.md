@@ -1,24 +1,23 @@
-﻿---
+---
 title: "Herdr"
 category: strumento
 tags: [agent, cli, gestione, open-source, orchestrazione]
 related_puntate: [20260912]
 created: 2026-09-12
 updated: 2026-09-12
-sources: [raw/puntate/ainews20260912.md]
 ---
 
 # Herdr
 
 ## Introduzione
 
-Tool CLI open source per gestire agenti multipli — Codex, Claude, Hermes e OpenClaw — organizzandoli in spazi e tab. [Fonte: raw/puntate/ainews20260912.md]
+Tool CLI open source per gestire agenti multipli — Codex, Claude, Hermes e OpenClaw — organizzandoli in spazi e tab.
 
 ## Funzionalità principali
 
 - Organizza più agenti in spazi e tab.
 - Mostra quali agenti stanno lavorando e quali aspettano risposta.
-- Gestisce Codex, Claude, Hermes e OpenClaw. [Fonte: raw/puntate/ainews20260912.md]
+- Gestisce Codex, Claude, Hermes e OpenClaw.
 
 ## Repository
 
@@ -34,7 +33,7 @@ Tool CLI open source per gestire agenti multipli — Codex, Claude, Hermes e Ope
 
 ## Timeline delle notizie
 
-- **2026-09-12** — Herdr è un tool CLI open source per gestire agenti multipli (Codex, Claude, Hermes, OpenClaw): organizza tutto in spazi e tab, mostra quali agenti stanno lavorando e quali aspettano risposta; qualcuno sostiene di essere diventato cento volte più produttivo. [Fonte: raw/puntate/ainews20260912.md]
+- **2026-09-12** — Herdr è un tool CLI open source per gestire agenti multipli (Codex, Claude, Hermes, OpenClaw): organizza tutto in spazi e tab, mostra quali agenti stanno lavorando e quali aspettano risposta; qualcuno sostiene di essere diventato cento volte più produttivo.
 
 ## Collegamenti
 

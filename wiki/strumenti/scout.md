@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Scout"
 category: strumento
 tags: [microsoft, agent, copilot, proattivo]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/pillitteri/pillitteri20260530-microsoft-copilot-super-app-scout-autopilot.md, raw/pillitteri/pillitteri20260925-microsoft-copilot-autopilot-code-home.md]
 ---
 
 # Scout
@@ -25,10 +24,10 @@ Agente proattivo di Microsoft rivelato da uno screenshot trapelato della futura 
 
 ## Timeline delle notizie
 
-- **2026-05-30** — Uno screenshot trapelato ha rivelato Scout, agente proattivo mai documentato prima: non resta fermo in attesa di un comando ma osserva il lavoro e prende l'iniziativa, suggerendo o avviando compiti. Microsoft, contattata dalle testate, ha rifiutato di commentare e i dettagli restano indiscrezioni non confermate. [Fonte: raw/pillitteri/pillitteri20260530-microsoft-copilot-super-app-scout-autopilot.md]
+- **2026-05-30** — Uno screenshot trapelato ha rivelato Scout, agente proattivo mai documentato prima: non resta fermo in attesa di un comando ma osserva il lavoro e prende l'iniziativa, suggerendo o avviando compiti. Microsoft, contattata dalle testate, ha rifiutato di commentare e i dettagli restano indiscrezioni non confermate.
 
-- **2026-06-02** — Microsoft ha presentato Scout il 2 giugno 2026 come primo esempio della categoria degli agenti sempre attivi; chi lo crea gli assegna un nome, un ruolo e un obiettivo e l'agente sorveglia canali e conversazioni senza aspettare un comando. [Fonte: raw/pillitteri/pillitteri20260925-microsoft-copilot-autopilot-code-home.md]
-- **2026-09-25** — Scout cambia nome in Autopilot: l'erede presentato il 25 settembre 2026 mantiene l'idea dell'agente sempre attivo e la porta dentro Copilot e Microsoft 365, con identità Entra propria, memoria e indirizzo email. [Fonte: raw/pillitteri/pillitteri20260925-microsoft-copilot-autopilot-code-home.md]
+- **2026-06-02** — Microsoft ha presentato Scout il 2 giugno 2026 come primo esempio della categoria degli agenti sempre attivi; chi lo crea gli assegna un nome, un ruolo e un obiettivo e l'agente sorveglia canali e conversazioni senza aspettare un comando.
+- **2026-09-25** — Scout cambia nome in Autopilot: l'erede presentato il 25 settembre 2026 mantiene l'idea dell'agente sempre attivo e la porta dentro Copilot e Microsoft 365, con identità Entra propria, memoria e indirizzo email.
 ## Collegamenti
 
 - [[copilot]]

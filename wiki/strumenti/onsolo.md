@@ -1,11 +1,10 @@
-﻿---
+---
 title: "OnSolo"
 category: strumento
 tags: [creator, cina, fmv, video, tencent]
 related_puntate: [20260825]
 created: 2026-08-25
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260825.md]
 ---
 
 # OnSolo
@@ -20,7 +19,7 @@ Strumento AI nativo one-stop di Tencent per creator indipendenti, dall'idea alla
 
 ## Timeline delle notizie
 
-- **2026-08-25** — OnSolo è uno strumento AI nativo one-stop di Tencent per creator indipendenti (serie brevi, fumetti, animazione, interactive FMV), una versione leggera di WorkRally senza collaborazione team e gestione asset complessa. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-25** — OnSolo è uno strumento AI nativo one-stop di Tencent per creator indipendenti (serie brevi, fumetti, animazione, interactive FMV), una versione leggera di WorkRally senza collaborazione team e gestione asset complessa.
 
 ## Collegamenti
 

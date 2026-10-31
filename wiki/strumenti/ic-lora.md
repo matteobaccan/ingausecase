@@ -1,11 +1,10 @@
-﻿---
+---
 title: "IC-LoRA"
 category: strumento
 tags: [fine-tuning, lora, open-source, video-ai]
 related_puntate: [20260627]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260627.md]
 ---
 
 # IC-LoRA
@@ -28,7 +27,7 @@ Tecnica di adattamento LoRA di fal (Image-Conditioning LoRA) per condizionare mo
 
 ## Timeline delle notizie
 
-- **2026-06-27** — Adattamento per LTX 2.3 che permette di trasformare render 3D in video fotorealistici di qualità cinematografica usando il primo frame come condizione, mantenendo composizione e camera move esatti. Open source. [Fonte: raw/puntate/ainews20260627.md]
+- **2026-06-27** — Adattamento per LTX 2.3 che permette di trasformare render 3D in video fotorealistici di qualità cinematografica usando il primo frame come condizione, mantenendo composizione e camera move esatti. Open source.
 
 ## Collegamenti
 

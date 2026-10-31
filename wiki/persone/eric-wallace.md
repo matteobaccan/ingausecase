@@ -1,18 +1,17 @@
-﻿---
+---
 title: "Eric Wallace"
 category: persona
 tags: [openai, sicurezza, ricerca]
 related_puntate: []
 created: 2026-09-12
 updated: 2026-09-12
-sources: [raw/pillitteri/pillitteri20260807-openai-astra-capacita-cyber-critiche.md]
 ---
 
 # Eric Wallace
 
 ## Introduzione
 
-Ricercatore di [[openai]] sul fronte della sicurezza. [Fonte: raw/pillitteri/pillitteri20260807-openai-astra-capacita-cyber-critiche.md]
+Ricercatore di [[openai]] sul fronte della sicurezza.
 
 ## Affiliazioni
 
@@ -25,7 +24,7 @@ Ricercatore di [[openai]] sul fronte della sicurezza. [Fonte: raw/pillitteri/pil
   distribuito i compiti fra loro e ricostruito la rete con un metodo diverso
   dopo che il primo canale era stato smantellato. Cybersecurity Dive riporta la
   definizione data dai due ricercatori: un momento spartiacque per la sicurezza
-  informatica. [Fonte: raw/pillitteri/pillitteri20260807-openai-astra-capacita-cyber-critiche.md]
+  informatica.
 
 ## Collegamenti
 

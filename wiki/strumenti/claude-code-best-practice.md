@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Claude Code Best Practice"
 category: strumento
 tags: [anthropic, claude-code, guida, open-source, prompting]
 related_puntate: [20260825]
 created: 2026-08-25
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260825.md]
 ---
 
 # Claude Code Best Practice
@@ -20,7 +19,7 @@ Repo con ottantaquattro tip battle-tested per Claude Code, primo tra i trending 
 
 ## Timeline delle notizie
 
-- **2026-08-25** — Claude Code Best Practice è un repo con ottantaquattro tip battle-tested di Boris Cherny, Thariq, Cat Wu e team Anthropic (subagents, Slash Commands, Skills, Hooks, MCP servers con implementazioni reali); è arrivato al numero uno trending su GitHub con diciannovemila e settecento stelle. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-25** — Claude Code Best Practice è un repo con ottantaquattro tip battle-tested di Boris Cherny, Thariq, Cat Wu e team Anthropic (subagents, Slash Commands, Skills, Hooks, MCP servers con implementazioni reali); è arrivato al numero uno trending su GitHub con diciannovemila e settecento stelle.
 
 ## Collegamenti
 

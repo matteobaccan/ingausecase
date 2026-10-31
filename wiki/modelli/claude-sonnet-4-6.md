@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Claude Sonnet 4.6"
 category: modello
 tags: [agentic, anthropic, llm]
 related_puntate: [20260603]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260603.md]
 ---
 
 # Claude Sonnet 4.6
@@ -24,7 +23,7 @@ Versione Sonnet della famiglia Claude, riferimento nei benchmark di agenti e rea
 
 ## Timeline delle notizie
 
-- **2026-06-03** — Claude Sonnet 4.6 è stato battuto da Holo 3.1 in computer-use ed è il riferimento superato da MAI-Thinking-1 di Microsoft nei blind test su Surge. [Fonte: raw/puntate/ainews20260603.md]
+- **2026-06-03** — Claude Sonnet 4.6 è stato battuto da Holo 3.1 in computer-use ed è il riferimento superato da MAI-Thinking-1 di Microsoft nei blind test su Surge.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MotionGen"
 category: strumento
 tags: [3d, motion-capture, open-source]
 related_puntate: [20260710]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260710.md]
 ---
 
 # MotionGen
@@ -24,7 +23,7 @@ Addon per Blender di AI motion capture completamente locale: da video a animazio
 
 ## Timeline delle notizie
 
-- **2026-07-10** — MotionGen è un addon AI per Blender di motion capture completamente locale: da video a animazione rigged, export per game engine, open source. [Fonte: raw/puntate/ainews20260710.md]
+- **2026-07-10** — MotionGen è un addon AI per Blender di motion capture completamente locale: da video a animazione rigged, export per game engine, open source.
 
 ## Collegamenti
 

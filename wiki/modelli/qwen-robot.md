@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Qwen-Robot"
 category: modello
 tags: [alibaba, embodied, robotica]
 related_puntate: [20260617]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260617.md]
 ---
 
 # Qwen-Robot
@@ -24,7 +23,7 @@ Suite di tre modelli foundational di Alibaba per intelligenza embodied: navigazi
 
 ## Timeline delle notizie
 
-- **2026-06-17** — La suite Qwen-Robot di Alibaba comprende Qwen-RobotNav per la navigazione, Qwen-RobotManip per la manipolazione e Qwen-RobotWorld per le previsioni di mondi fisici: interfaccia in linguaggio naturale, oltre venti embodiment supportati, stack completo per agenti fisici. [Fonte: raw/puntate/ainews20260617.md]
+- **2026-06-17** — La suite Qwen-Robot di Alibaba comprende Qwen-RobotNav per la navigazione, Qwen-RobotManip per la manipolazione e Qwen-RobotWorld per le previsioni di mondi fisici: interfaccia in linguaggio naturale, oltre venti embodiment supportati, stack completo per agenti fisici.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "FreeToken"
 category: strumento
 tags: [consumer-hardware, gguf, inference, moe, open-source, uc-berkeley]
 related_puntate: [20260824, 20260825]
 created: 2026-08-24
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260824.md, raw/puntate/ainews20260825.md]
 ---
 
 # FreeToken
@@ -43,8 +42,8 @@ Sistema pubblicato da UC Berkeley che fa girare modelli frontier MoE su hardware
 
 ## Timeline delle notizie
 
-- **2026-08-24** — UC Berkeley ha pubblicato FreeToken, un sistema che fa girare modelli frontier MoE su hardware consumer: Qwen 3.6 35B raggiunge trentanove token al secondo su un laptop con otto GB di RAM e DeepSeek V4 Flash da 284 miliardi fa ventidue token al secondo su una RTX 5090, più veloce di Ollama. [Fonte: raw/puntate/ainews20260824.md]
-- **2026-08-25** — FreeToken citato di nuovo per girare modelli frontier MoE su hardware consumer, tra cui modelli da 35B su otto GB di RAM. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-24** — UC Berkeley ha pubblicato FreeToken, un sistema che fa girare modelli frontier MoE su hardware consumer: Qwen 3.6 35B raggiunge trentanove token al secondo su un laptop con otto GB di RAM e DeepSeek V4 Flash da 284 miliardi fa ventidue token al secondo su una RTX 5090, più veloce di Ollama.
+- **2026-08-25** — FreeToken citato di nuovo per girare modelli frontier MoE su hardware consumer, tra cui modelli da 35B su otto GB di RAM.
 
 ## Collegamenti
 

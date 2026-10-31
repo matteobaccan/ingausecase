@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Hell Grind"
 category: strumento
 tags: [cinema, generazione-video, open-source, video]
 related_puntate: [20260806]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260806.md]
 ---
 
 # Hell Grind
@@ -24,7 +23,7 @@ Lungometraggio AI di novantacinque minuti di Higgsfield, presentato a Cannes, re
 
 ## Timeline delle notizie
 
-- **2026-08-06** — Hell Grind e' un lungometraggio AI di novantacinque minuti con cinquantamila dollari di budget, presentato a Cannes: ogni prompt e' pubblico e ogni asset e' scaricabile. [Fonte: raw/puntate/ainews20260806.md]
+- **2026-08-06** — Hell Grind e' un lungometraggio AI di novantacinque minuti con cinquantamila dollari di budget, presentato a Cannes: ogni prompt e' pubblico e ogni asset e' scaricabile.
 
 ## Collegamenti
 

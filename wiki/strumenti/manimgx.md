@@ -4,7 +4,6 @@ tags: [rendering, animazione, matematica, rust]
 related_puntate: [20261016]
 created: 2026-10-16
 updated: 2026-10-16
-sources: [raw/puntate/ainews20261016.md]
 
 # ManimGX
 
@@ -18,7 +17,7 @@ ManimGX è un motore di rendering per la libreria Manim, riscritto in Rust per p
 - Progettato per flussi di lavoro agentici
 
 **Timeline:**
-- **2026-10-16** - ManimGX: rendering Rust per Manim, 32.2s vs 36.2s ufficiali [Fonte: raw/puntate/ainews20261016.md]
+- **2026-10-16** - ManimGX: rendering Rust per Manim, 32.2s vs 36.2s ufficiali
 
 **Collegamenti:**
 - Manim

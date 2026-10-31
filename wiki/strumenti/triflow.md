@@ -1,11 +1,10 @@
-﻿---
+---
 title: "TriFlow"
 category: strumento
 tags: [3d, eccv, mesh, ricerca]
 related_puntate: [20260708]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260708.md]
 ---
 
 # TriFlow
@@ -20,7 +19,7 @@ Tecnica accettata a ECCV 2026 che genera automaticamente topologia mesh pulita d
 
 ## Timeline delle notizie
 
-- **2026-07-08** — Accettato a ECCV 2026: genera automaticamente topologia mesh pulita da forme 3D, come creata da un professionista. Tratta la topologia come campo vettoriale continuo, con precisione migliorata e velocità 8 volte superiore. [Fonte: raw/puntate/ainews20260708.md]
+- **2026-07-08** — Accettato a ECCV 2026: genera automaticamente topologia mesh pulita da forme 3D, come creata da un professionista. Tratta la topologia come campo vettoriale continuo, con precisione migliorata e velocità 8 volte superiore.
 
 ## Collegamenti
 

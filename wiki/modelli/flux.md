@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Flux"
 category: modello
 tags: [black-forest-labs, image-gen]
 related_puntate: [20260531]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260531.md]
 ---
 
 # Flux
@@ -24,7 +23,7 @@ Famiglia di modelli di Black Forest Labs, usata con LoRA per fissare il volto de
 
 ## Timeline delle notizie
 
-- **2026-05-31** — Flux è stato usato con una LoRA per bloccare il volto dell'influencer virtuale: ogni clip costa 40 centesimi, i brand pagano 3200 dollari a video e la prima notte live ha fatto 62000 view in 18 ore con 312 ordini per 9360 dollari. [Fonte: raw/puntate/ainews20260531.md]
+- **2026-05-31** — Flux è stato usato con una LoRA per bloccare il volto dell'influencer virtuale: ogni clip costa 40 centesimi, i brand pagano 3200 dollari a video e la prima notte live ha fatto 62000 view in 18 ore con 312 ordini per 9360 dollari.
 
 ## Collegamenti
 

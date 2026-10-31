@@ -1,32 +1,31 @@
-﻿---
+---
 title: "Magika"
 category: strumento
 tags: [google, sicurezza, file-detection, open-source, malware]
 related_puntate: [20260908]
 created: 2026-09-08
 updated: 2026-09-08
-sources: [raw/puntate/ainews20260908.md]
 ---
 
 # Magika
 
 ## Introduzione
 
-Sistema di [[google]] che rileva il contenuto reale di qualsiasi file, anche se mascherato. Può identificare malware camuffato da PDF o script nascosti come immagini. Gratuito e open source. [Fonte: raw/puntate/ainews20260908.md]
+Sistema di [[google]] che rileva il contenuto reale di qualsiasi file, anche se mascherato. Può identificare malware camuffato da PDF o script nascosti come immagini. Gratuito e open source.
 
 ## Funzionalità principali
 
-- Rileva il tipo reale del file indipendentemente dall'estensione o dal mascheramento. [Fonte: raw/puntate/ainews20260908.md]
-- Identifica malware camuffato da PDF o script nascosti come immagini. [Fonte: raw/puntate/ainews20260908.md]
+- Rileva il tipo reale del file indipendentemente dall'estensione o dal mascheramento.
+- Identifica malware camuffato da PDF o script nascosti come immagini.
 
 ## Casi d'uso
 
-- Sicurezza: rilevamento di file mascherati e malware. [Fonte: raw/puntate/ainews20260908.md]
-- Forensics e filtraggio di upload. [Fonte: raw/puntate/ainews20260908.md]
+- Sicurezza: rilevamento di file mascherati e malware.
+- Forensics e filtraggio di upload.
 
 ## Repository
 
-- Rilasciato da Google, gratuito e open source. [Fonte: raw/puntate/ainews20260908.md]
+- Rilasciato da Google, gratuito e open source.
 
 ## Azienda / Autore
 
@@ -34,7 +33,7 @@ Sistema di [[google]] che rileva il contenuto reale di qualsiasi file, anche se 
 
 ## Timeline delle notizie
 
-- **2026-09-08** — Google ha rilasciato Magika: sistema che rileva il contenuto reale di qualsiasi file anche se mascherato, identifica malware camuffato da PDF o script nascosti come immagini. Gratuito e open source. [Fonte: raw/puntate/ainews20260908.md]
+- **2026-09-08** — Google ha rilasciato Magika: sistema che rileva il contenuto reale di qualsiasi file anche se mascherato, identifica malware camuffato da PDF o script nascosti come immagini. Gratuito e open source.
 
 ## Collegamenti
 

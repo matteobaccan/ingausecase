@@ -1,11 +1,10 @@
-﻿---
+---
 title: "DeepSpec"
 category: strumento
 tags: [decoding, deepseek, open-source, training]
 related_puntate: [20260628]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260628.md]
 ---
 
 # DeepSpec
@@ -24,7 +23,7 @@ Framework di training open source di DeepSeek dietro DSpark, usato per addestrar
 
 ## Timeline delle notizie
 
-- **2026-06-28** — Framework di training dietro DSpark, rilasciato open source da DeepSeek insieme al sistema di speculative decoding. [Fonte: raw/puntate/ainews20260628.md]
+- **2026-06-28** — Framework di training dietro DSpark, rilasciato open source da DeepSeek insieme al sistema di speculative decoding.
 
 ## Collegamenti
 

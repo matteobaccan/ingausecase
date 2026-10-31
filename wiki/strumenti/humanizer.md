@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Humanizer"
 category: strumento
 tags: [claude, scrittura, skill]
 related_puntate: [20260622]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260622.md]
 ---
 
 # Humanizer
@@ -20,7 +19,7 @@ Skill gratuita di Claude che rimuove i segni della scrittura generata dall'IA, r
 
 ## Timeline delle notizie
 
-- **2026-06-22** — Humanizer è una skill gratuita di Claude che rimuove ogni segno di scrittura generata dall'IA: rimuove parole di riempimento e aperture sycophantic, corregge il vocabolario AI troppo usato, elimina lineette ed elenchi eccessivi; rileva e riscrive trentatré pattern specifici e adatta lo stile personale. [Fonte: raw/puntate/ainews20260622.md]
+- **2026-06-22** — Humanizer è una skill gratuita di Claude che rimuove ogni segno di scrittura generata dall'IA: rimuove parole di riempimento e aperture sycophantic, corregge il vocabolario AI troppo usato, elimina lineette ed elenchi eccessivi; rileva e riscrive trentatré pattern specifici e adatta lo stile personale.
 
 ## Collegamenti
 

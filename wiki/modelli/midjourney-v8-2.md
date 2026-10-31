@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Midjourney V8.2"
 category: modello
 tags: [generazione, immagini, usa]
 related_puntate: [20260725]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260725.md]
 ---
 
 # Midjourney V8.2
@@ -20,7 +19,7 @@ Modello di default di Midjourney per la generazione di immagini: estetica più a
 
 ## Timeline delle notizie
 
-- **2026-07-25** — V8.2 è il modello di default: estetica più audace, personalizzazione potenziata, qualità migliorata; più creativo, più fresco, più edge. [Fonte: raw/puntate/ainews20260725.md]
+- **2026-07-25** — V8.2 è il modello di default: estetica più audace, personalizzazione potenziata, qualità migliorata; più creativo, più fresco, più edge.
 
 ## Collegamenti
 

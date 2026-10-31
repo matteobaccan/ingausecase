@@ -1,11 +1,10 @@
-﻿---
+---
 title: "LocalMiniDrama"
 category: strumento
 tags: [locale, open-source, storytelling, video]
 related_puntate: [20260805]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260805.md]
 ---
 
 # LocalMiniDrama
@@ -20,7 +19,7 @@ Progetto open source per creare video IA localmente: da una frase genera storia,
 
 ## Timeline delle notizie
 
-- **2026-08-05** — LocalMiniDrama e' un progetto open source per creare video IA localmente: da una frase genera automaticamente personaggi, scene, storia e storyboard con flusso completo locale, integrando il modello Agnes gratuito. [Fonte: raw/puntate/ainews20260805.md]
+- **2026-08-05** — LocalMiniDrama e' un progetto open source per creare video IA localmente: da una frase genera automaticamente personaggi, scene, storia e storyboard con flusso completo locale, integrando il modello Agnes gratuito.
 
 ## Collegamenti
 

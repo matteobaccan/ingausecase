@@ -4,7 +4,6 @@ category: strumento
 tags: [benchmark, open-source, valutazione]
 created: 2026-10-03
 updated: 2026-10-03
-sources: [raw/pillitteri/pillitteri20261003-opus-5-5-depotenziato-utenti-segnalano-calo.md]
 ---
 
 # LiveNerf
@@ -15,12 +14,12 @@ Progetto open source (licenza MIT) che misura giorno per giorno le prestazioni d
 
 ## Funzionalità principali
 
-- Misura le prestazioni del modello giorno per giorno per distinguere un vero calo dalla normale oscillazione di un sistema probabilistico. [Fonte: raw/pillitteri/pillitteri20261003-opus-5-5-depotenziato-utenti-segnalano-calo.md]
-- Ha 1.183 stelle su GitHub al 3 ottobre 2026 ed è finanziato dall'autore stesso. [Fonte: raw/pillitteri/pillitteri20261003-opus-5-5-depotenziato-utenti-segnalano-calo.md]
+- Misura le prestazioni del modello giorno per giorno per distinguere un vero calo dalla normale oscillazione di un sistema probabilistico.
+- Ha 1.183 stelle su GitHub al 3 ottobre 2026 ed è finanziato dall'autore stesso.
 
 ## Timeline delle notizie
 
-- **2026-10-03** — L'autore di LiveNerf chiarisce che il calo osservato il 29 settembre non provava ancora nulla e indica il ventesimo giorno dal lancio (attorno al 12 ottobre) come momento utile per un verdetto; il progetto ha 1.183 stelle su GitHub con licenza MIT. [Fonte: raw/pillitteri/pillitteri20261003-opus-5-5-depotenziato-utenti-segnalano-calo.md]
+- **2026-10-03** — L'autore di LiveNerf chiarisce che il calo osservato il 29 settembre non provava ancora nulla e indica il ventesimo giorno dal lancio (attorno al 12 ottobre) come momento utile per un verdetto; il progetto ha 1.183 stelle su GitHub con licenza MIT.
 
 ## Collegamenti
 

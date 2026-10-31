@@ -1,11 +1,10 @@
-﻿---
+---
 title: "VulcanBench"
 category: strumento
 tags: [agent, benchmark, coding]
 related_puntate: [20260803]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260803.md]
 ---
 
 # VulcanBench
@@ -27,7 +26,7 @@ Benchmark per modelli e agenti IA. Sulle sue classifiche DeepSeek V4 Flash ha ra
 
 ## Timeline delle notizie
 
-- **2026-08-03** — Nei benchmark di VulcanBench, DeepSeek V4 Flash ha preso la prima posizione con effort medio, Grok 4.5 medio è secondo, Fable esce dal podio e ChatGPT non è più nei primi cinque. [Fonte: raw/puntate/ainews20260803.md]
+- **2026-08-03** — Nei benchmark di VulcanBench, DeepSeek V4 Flash ha preso la prima posizione con effort medio, Grok 4.5 medio è secondo, Fable esce dal podio e ChatGPT non è più nei primi cinque.
 
 ## Collegamenti
 

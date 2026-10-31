@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Egaki"
 category: strumento
 tags: [agent, mdx, open-source, video]
 related_puntate: [20260705]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260705.md]
 ---
 
 # Egaki
@@ -24,7 +23,7 @@ Framework per creare video con MDX, pensato per agenti e umani: Fable 5 ha scrit
 
 ## Timeline delle notizie
 
-- **2026-07-05** — Framework per creare video con MDX: Claude Fable 5 ha scritto l'intero video senza toccare editor o codice. Pensato per agenti e umani, semplifica la produzione video automatizzata. [Fonte: raw/puntate/ainews20260705.md]
+- **2026-07-05** — Framework per creare video con MDX: Claude Fable 5 ha scritto l'intero video senza toccare editor o codice. Pensato per agenti e umani, semplifica la produzione video automatizzata.
 
 ## Collegamenti
 

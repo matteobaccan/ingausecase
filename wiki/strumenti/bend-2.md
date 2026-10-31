@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Bend 2"
 category: strumento
 tags: [open-source, programmazione, proof-checking, verifica]
 related_puntate: [20260918]
 created: 2026-09-18
 updated: 2026-09-18
-sources: [raw/puntate/ainews20260918.md]
 ---
 
 # Bend 2
@@ -22,7 +21,7 @@ Linguaggio di programmazione che blocca gli errori dell'IA tramite proof checkin
 
 ## Timeline delle notizie
 
-- **2026-09-18** — Bend 2 è un linguaggio di programmazione che blocca gli errori dell'IA tramite proof checking, la stessa tecnica usata dai laboratori per risolvere problemi matematici aperti: molto veloce, gira su GPU ed è open source. [Fonte: raw/puntate/ainews20260918.md]
+- **2026-09-18** — Bend 2 è un linguaggio di programmazione che blocca gli errori dell'IA tramite proof checking, la stessa tecnica usata dai laboratori per risolvere problemi matematici aperti: molto veloce, gira su GPU ed è open source.
 
 ## Collegamenti
 

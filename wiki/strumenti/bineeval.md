@@ -1,11 +1,10 @@
-﻿---
+---
 title: "BINEEVAL"
 category: strumento
 tags: [benchmark, valutazione, framework, nlp]
 related_puntate: [20260628]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260628.md]
 ---
 
 # BINEEVAL
@@ -20,7 +19,7 @@ Framework di valutazione che decompone ogni criterio in domande atomiche sì-no,
 
 ## Timeline delle notizie
 
-- **2026-06-28** — Decompone ogni criterio di valutazione in domande atomiche sì-no, risponde indipendentemente per ogni output e aggrega i verdetti in score multidimensionali. Supera UniEval e G-Eval su SummEval, Topical-Chat e QAGS. [Fonte: raw/puntate/ainews20260628.md]
+- **2026-06-28** — Decompone ogni criterio di valutazione in domande atomiche sì-no, risponde indipendentemente per ogni output e aggrega i verdetti in score multidimensionali. Supera UniEval e G-Eval su SummEval, Topical-Chat e QAGS.
 
 ## Collegamenti
 

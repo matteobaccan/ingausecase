@@ -1,11 +1,10 @@
-﻿---
+---
 title: "session-migrate"
 category: strumento
 tags: [agent, coding, migrazione, sessioni]
 related_puntate: [20260825]
 created: 2026-08-25
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260825.md]
 ---
 
 # session-migrate
@@ -20,7 +19,7 @@ Strumento per migrare le sessioni di coding agent tra diversi ambienti con un si
 
 ## Timeline delle notizie
 
-- **2026-08-25** — session-migrate è uno strumento per migrare le sessioni di coding agent tra Claude Code, Codex, Pi, OpenCode e altri; un comando converte la sessione. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-25** — session-migrate è uno strumento per migrare le sessioni di coding agent tra Claude Code, Codex, Pi, OpenCode e altri; un comando converte la sessione.
 
 ## Collegamenti
 

@@ -1,22 +1,21 @@
-﻿---
+---
 title: "Agent Ultra"
 category: strumento
 tags: [agenti-ai, exa, ricerca, sciame]
 related_puntate: [20260926]
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/puntate/ainews20260926.md]
 ---
 
 # Agent Ultra
 
 ## Introduzione
 
-Strumento di [[exa]] per la ricerca approfondita basato sull'orchestrazione di sciami di agenti. [Fonte: raw/puntate/ainews20260926.md]
+Strumento di [[exa]] per la ricerca approfondita basato sull'orchestrazione di sciami di agenti.
 
 ## Funzionalità principali
 
-- Elabora migliaia di fonti e costruisce automaticamente liste esaustive; su benchmark e test qualitativi dichiara risultati allo stato dell'arte. [Fonte: raw/puntate/ainews20260926.md]
+- Elabora migliaia di fonti e costruisce automaticamente liste esaustive; su benchmark e test qualitativi dichiara risultati allo stato dell'arte.
 
 ## Azienda / Autore
 
@@ -24,7 +23,7 @@ Strumento di [[exa]] per la ricerca approfondita basato sull'orchestrazione di s
 
 ## Timeline delle notizie
 
-- **2026-09-26** — Exa rilascia Agent Ultra, orchestratore di sciami di agenti per la ricerca approfondita: elabora migliaia di fonti e costruisce liste esaustive automaticamente, con risultati dichiarati allo stato dell'arte su benchmark e test qualitativi. [Fonte: raw/puntate/ainews20260926.md]
+- **2026-09-26** — Exa rilascia Agent Ultra, orchestratore di sciami di agenti per la ricerca approfondita: elabora migliaia di fonti e costruisce liste esaustive automaticamente, con risultati dichiarati allo stato dell'arte su benchmark e test qualitativi.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "GenCeption"
 category: modello
 tags: [deepmind, video, vision]
 related_puntate: [20260714]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260714.md]
 ---
 
 # GenCeption
@@ -24,7 +23,7 @@ Modello video feed-forward di Google DeepMind che gestisce vari task di visione,
 
 ## Timeline delle notizie
 
-- **2026-07-14** — GenCeption di Google DeepMind è un modello video feed-forward che gestisce vari task di visione: profondità, normali di superficie, pose, keypoint e segmentazione, efficiente sui dati, in arrivo a ECCV 2027. [Fonte: raw/puntate/ainews20260714.md]
+- **2026-07-14** — GenCeption di Google DeepMind è un modello video feed-forward che gestisce vari task di visione: profondità, normali di superficie, pose, keypoint e segmentazione, efficiente sui dati, in arrivo a ECCV 2027.
 
 ## Collegamenti
 

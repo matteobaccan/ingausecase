@@ -4,7 +4,6 @@ tags: [ai-personal-assistant, learning, productivity]
 related_puntate: [20261016]
 created: 2026-10-16
 updated: 2026-10-16
-sources: [raw/puntate/ainews20261016.md]
 
 # Incredibile
 
@@ -17,7 +16,7 @@ Incredibile è un assistente personale AI che impara osservando l'utente lavorar
 - Automatazione locale: opera sul dispositivo senza richiedere cloud
 
 **Timeline:**
-- **2026-10-16** - Incredibile: assistente personale che impara guardandoti lavorare [Fonte: raw/puntate/ainews20261016.md]
+- **2026-10-16** - Incredibile: assistente personale che impara guardandoti lavorare
 
 **Collegamenti:**
 - [[OpenAI]]

@@ -5,7 +5,6 @@ tags: [comfyui, locale, video-ai]
 related_puntate: [20261003, 20261005]
 created: 2026-10-03
 updated: 2026-10-05
-sources: [raw/puntate/ainews20261003.md, raw/puntate/ainews20261005.md]
 ---
 
 # FreeVideo
@@ -16,14 +15,14 @@ Strumento che porta MiniMax H3 e Video DeltaNet su un laptop: bastano otto gigab
 
 ## Funzionalità principali
 
-- Esegue MiniMax H3 e Video DeltaNet in locale con otto gigabyte di VRAM e sedici di RAM. [Fonte: raw/puntate/ainews20261003.md]
-- Si integra con ComfyUI e supporta LoRA e workflow personalizzati. [Fonte: raw/puntate/ainews20261003.md]
+- Esegue MiniMax H3 e Video DeltaNet in locale con otto gigabyte di VRAM e sedici di RAM.
+- Si integra con ComfyUI e supporta LoRA e workflow personalizzati.
 
 ## Timeline delle notizie
 
-- **2026-10-03** — Viene presentato FreeVideo, che porta MiniMax H3 e Video DeltaNet su un laptop con otto gigabyte di VRAM più sedici di RAM, integrazione ComfyUI, LoRA e workflow personalizzati. [Fonte: raw/puntate/ainews20261003.md]
-- **2026-10-03** — FreeVideo porta MiniMax H3 e Video DeltaNet su un laptop con otto gigabyte di VRAM più sedici di RAM, con integrazione ComfyUI, LoRA e workflow personalizzati. [Fonte: raw/puntate/ainews20261003.md]
-- **2026-10-05** — FreeVideo porta MiniMax H3 su PC: bastano otto gigabyte di VRAM, con integrazione ComfyUI, LoRA e workflow personalizzati che si adattano all'hardware disponibile. [Fonte: raw/puntate/ainews20261005.md]
+- **2026-10-03** — Viene presentato FreeVideo, che porta MiniMax H3 e Video DeltaNet su un laptop con otto gigabyte di VRAM più sedici di RAM, integrazione ComfyUI, LoRA e workflow personalizzati.
+- **2026-10-03** — FreeVideo porta MiniMax H3 e Video DeltaNet su un laptop con otto gigabyte di VRAM più sedici di RAM, con integrazione ComfyUI, LoRA e workflow personalizzati.
+- **2026-10-05** — FreeVideo porta MiniMax H3 su PC: bastano otto gigabyte di VRAM, con integrazione ComfyUI, LoRA e workflow personalizzati che si adattano all'hardware disponibile.
 
 
 

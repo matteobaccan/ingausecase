@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Zero"
 category: strumento
 tags: [agent, multi-provider, privacy, terminal]
 related_puntate: [20260706]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260706.md]
 ---
 
 # Zero
@@ -20,7 +19,7 @@ Coding agent per terminale che accetta qualsiasi modello da 25+ provider, con pe
 
 ## Timeline delle notizie
 
-- **2026-07-06** — Coding agent per terminale che accetta qualsiasi modello da 25+ provider: permessi e sandbox propri, sessioni locali mai caricate come telemetria. OpenAI, Anthropic, Gemini, DeepSeek e Ollama tutti supportati. [Fonte: raw/puntate/ainews20260706.md]
+- **2026-07-06** — Coding agent per terminale che accetta qualsiasi modello da 25+ provider: permessi e sandbox propri, sessioni locali mai caricate come telemetria. OpenAI, Anthropic, Gemini, DeepSeek e Ollama tutti supportati.
 
 ## Collegamenti
 

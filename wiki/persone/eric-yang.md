@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Eric Yang"
 category: persona
 tags: [acquisizione, ceo, topaz-labs]
 related_puntate: [20260626]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260626.md]
 ---
 
 # Eric Yang
@@ -25,7 +24,7 @@ CEO di Topaz Labs; continua a guidare il team dopo l'acquisizione da parte di Ad
 
 ## Timeline delle notizie
 
-- **2026-06-26** — Eric Yang, CEO di Topaz Labs, continuerà a guidare il team dopo l'acquisizione dell'azienda da parte di Adobe. [Fonte: raw/puntate/ainews20260626.md]
+- **2026-06-26** — Eric Yang, CEO di Topaz Labs, continuerà a guidare il team dopo l'acquisizione dell'azienda da parte di Adobe.
 
 ## Collegamenti
 

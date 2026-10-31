@@ -1,11 +1,10 @@
-﻿---
+---
 title: "OpenVid"
 category: strumento
 tags: [browser, demo, open-source, video]
 related_puntate: [20260706]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260706.md]
 ---
 
 # OpenVid
@@ -20,7 +19,7 @@ Tool gratuito e open source per creare demo professionali di prodotti dal browse
 
 ## Timeline delle notizie
 
-- **2026-07-06** — Tool gratuito e open source per creare demo professionali di prodotti dal browser: registra schermo, aggiungi zoom, frame di dispositivi ed effetti 3D, esporta in alta qualità. [Fonte: raw/puntate/ainews20260706.md]
+- **2026-07-06** — Tool gratuito e open source per creare demo professionali di prodotti dal browser: registra schermo, aggiungi zoom, frame di dispositivi ed effetti 3D, esporta in alta qualità.
 
 ## Collegamenti
 

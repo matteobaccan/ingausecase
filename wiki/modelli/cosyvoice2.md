@@ -1,11 +1,10 @@
-﻿---
+---
 title: "CosyVoice2"
 category: modello
 tags: [audio, tts, open-source, text-to-speech, voce]
 related_puntate: [20260830]
 created: 2026-08-30
 updated: 2026-08-30
-sources: [raw/puntate/ainews20260830.md]
 ---
 
 # CosyVoice2
@@ -16,11 +15,11 @@ Modello di text-to-speech open source che sintetizza voce umana con naturalezza 
 
 ## Capacità e performance
 
-- CosyVoice2 sintetizza voce umana con naturalezza estrema: dato un riferimento audio di pochi secondi, replica abitudini vocali, pause e intonazioni. È open source e utilizzabile per scopi commerciali. [Fonte: raw/puntate/ainews20260830.md]
+- CosyVoice2 sintetizza voce umana con naturalezza estrema: dato un riferimento audio di pochi secondi, replica abitudini vocali, pause e intonazioni. È open source e utilizzabile per scopi commerciali.
 
 ## Timeline delle notizie
 
-- **2026-08-30** — CosyVoice2 sintetizza voce umana con naturalezza estrema. Dato un riferimento audio di pochi secondi, replica abitudini vocali, pause e intonazioni. È open source e utilizzabile per scopi commerciali. [Fonte: raw/puntate/ainews20260830.md]
+- **2026-08-30** — CosyVoice2 sintetizza voce umana con naturalezza estrema. Dato un riferimento audio di pochi secondi, replica abitudini vocali, pause e intonazioni. È open source e utilizzabile per scopi commerciali.
 
 ## Collegamenti
 

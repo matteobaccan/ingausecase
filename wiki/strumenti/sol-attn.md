@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Sol-Attn"
 category: strumento
 tags: [attenzione-sparsa, nvidia, ricerca, video]
 related_puntate: [20260803]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260803.md]
 ---
 
 # Sol-Attn
@@ -24,7 +23,7 @@ Metodo di sparse attention rilasciato da NVIDIA che accelera la generazione vide
 
 ## Timeline delle notizie
 
-- **2026-08-03** — Sol-Attn di NVIDIA accelera la generazione video fino a due virgola uno volte senza perdere qualità visiva, non richiede training e usa routing dinamico e correzione approssimata in un unico passaggio. [Fonte: raw/puntate/ainews20260803.md]
+- **2026-08-03** — Sol-Attn di NVIDIA accelera la generazione video fino a due virgola uno volte senza perdere qualità visiva, non richiede training e usa routing dinamico e correzione approssimata in un unico passaggio.
 
 ## Collegamenti
 

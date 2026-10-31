@@ -4,7 +4,6 @@ tags: [debugger, reverse-engineering, zig, mcp]
 related_puntate: [20261016]
 created: 2026-10-16
 updated: 2026-10-16
-sources: [raw/puntate/ainews20261016.md]
 
 # x64dbg-mcp-server
 
@@ -18,7 +17,7 @@ x64dbg-mcp-server trasforma il debugger x64dbg in un servizio controllabile da C
 - Integrabile con Claude e altri assistenti IA
 
 **Timeline:**
-- **2026-10-16** - x64dbg-mcp-server: debugger x64dbg trasformato in servizio MCP [Fonte: raw/puntate/ainews20261016.md]
+- **2026-10-16** - x64dbg-mcp-server: debugger x64dbg trasformato in servizio MCP
 
 **Collegamenti:**
 - x64dbg

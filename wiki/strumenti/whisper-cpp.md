@@ -1,11 +1,10 @@
-﻿---
+---
 title: "whisper.cpp"
 category: strumento
 tags: [c++, locale, open-source, voce]
 related_puntate: [20260509]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260509.md]
 ---
 
 # whisper.cpp
@@ -24,7 +23,7 @@ Progetto di Georgi Gerganov, porting in C della tecnologia voice IA di Whisper p
 
 ## Timeline delle notizie
 
-- **2026-05-09** — Georgi Gerganov ha costruito anche whisper.cpp, la stessa cosa di llama.cpp ma per la voice IA, facendo girare la trascrizione in locale. [Fonte: raw/puntate/ainews20260509.md]
+- **2026-05-09** — Georgi Gerganov ha costruito anche whisper.cpp, la stessa cosa di llama.cpp ma per la voice IA, facendo girare la trascrizione in locale.
 
 ## Collegamenti
 

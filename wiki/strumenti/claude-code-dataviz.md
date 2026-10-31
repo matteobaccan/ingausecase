@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Claude Code dataviz"
 category: strumento
 tags: [claude-code, dataviz, design, skill]
 related_puntate: [20260702]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260702.md]
 ---
 
 # Claude Code dataviz
@@ -24,7 +23,7 @@ Skill slash ufficiale di Claude Code (versione 2.1.198) per la visualizzazione d
 
 ## Timeline delle notizie
 
-- **2026-07-02** — Nuovo skill ufficiale di Claude Code 2.1.198: la slash command dataviz carica linee guida per selezione tipo grafico, regole layout e gerarchia visiva per interfacce ricche di dati, con un validatore palette colori eseguibile per controllare contrasto e accessibilità programmaticamente. [Fonte: raw/puntate/ainews20260702.md]
+- **2026-07-02** — Nuovo skill ufficiale di Claude Code 2.1.198: la slash command dataviz carica linee guida per selezione tipo grafico, regole layout e gerarchia visiva per interfacce ricche di dati, con un validatore palette colori eseguibile per controllare contrasto e accessibilità programmaticamente.
 
 ## Collegamenti
 

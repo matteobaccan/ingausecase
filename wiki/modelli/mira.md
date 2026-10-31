@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MIRA"
 category: modello
 tags: [gaming, world-model, multigiocatore, ricerca]
 related_puntate: [20260707]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260707.md]
 ---
 
 # MIRA
@@ -25,7 +24,7 @@ Modello world multigiocatore sviluppato da General Intuition e Kyutai con Epic G
 
 ## Timeline delle notizie
 
-- **2026-07-07** — Modello world multigiocatore addestrato su 10.000 ore di dati: gira in tempo reale a 20 fps, basato sui tasti che i giocatori premono. Sviluppato da General Intuition e Kyutai con Epic Games. [Fonte: raw/puntate/ainews20260707.md]
+- **2026-07-07** — Modello world multigiocatore addestrato su 10.000 ore di dati: gira in tempo reale a 20 fps, basato sui tasti che i giocatori premono. Sviluppato da General Intuition e Kyutai con Epic Games.
 
 ## Collegamenti
 

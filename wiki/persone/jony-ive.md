@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Jony Ive"
 category: persona
 tags: [design, apple, openai, hardware]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/pillitteri/pillitteri20260714-apple-causa-openai-segreti-industriali.md]
 ---
 
 # Jony Ive
@@ -22,7 +21,7 @@ Designer britannico, storico capo del design di Apple e co-fondatore di io Produ
 
 ## Timeline delle notizie
 
-- **2026-07-14** — Jony Ive non è tra gli imputati nella causa che Apple ha depositato contro OpenAI per furto di segreti industriali, nonostante la denuncia nomini io Products, la startup che ha co-fondato. [Fonte: raw/pillitteri/pillitteri20260714-apple-causa-openai-segreti-industriali.md]
+- **2026-07-14** — Jony Ive non è tra gli imputati nella causa che Apple ha depositato contro OpenAI per furto di segreti industriali, nonostante la denuncia nomini io Products, la startup che ha co-fondato.
 
 ## Collegamenti
 

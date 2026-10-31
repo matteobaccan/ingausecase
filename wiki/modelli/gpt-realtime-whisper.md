@@ -1,11 +1,10 @@
-﻿---
+---
 title: "GPT-Realtime-Whisper"
 category: modello
 tags: [openai, realtime, trascrizione, voce]
 related_puntate: [20260508]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260508.md]
 ---
 
 # GPT-Realtime-Whisper
@@ -20,7 +19,7 @@ Modello di OpenAI per trascrizione streaming mentre le persone parlano.
 
 ## Timeline delle notizie
 
-- **2026-05-08** — OpenAI ha lanciato GPT-Realtime-Whisper per la trascrizione streaming mentre le persone parlano, insieme a GPT-Realtime-2 e GPT-Realtime-Translate; il contesto della famiglia è salito da 32.000 a 128.000 token. [Fonte: raw/puntate/ainews20260508.md]
+- **2026-05-08** — OpenAI ha lanciato GPT-Realtime-Whisper per la trascrizione streaming mentre le persone parlano, insieme a GPT-Realtime-2 e GPT-Realtime-Translate; il contesto della famiglia è salito da 32.000 a 128.000 token.
 
 ## Collegamenti
 

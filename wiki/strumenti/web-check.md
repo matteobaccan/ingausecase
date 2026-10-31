@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Web-Check"
 category: strumento
 tags: [analisi, open-source, osint, web]
 related_puntate: [20260612]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260612.md]
 ---
 
 # Web-Check
@@ -20,7 +19,7 @@ Strumento OSINT open source che analizza qualsiasi sito web: IP, SSL, DNS, cooki
 
 ## Timeline delle notizie
 
-- **2026-06-12** — Web-Check fa analisi on-demand di qualsiasi sito web: IP, SSL, DNS, cookie, header, porte aperte, traceroute, performance, tracker e carbon footprint; deploy via Netlify, Vercel o Docker. [Fonte: raw/puntate/ainews20260612.md]
+- **2026-06-12** — Web-Check fa analisi on-demand di qualsiasi sito web: IP, SSL, DNS, cookie, header, porte aperte, traceroute, performance, tracker e carbon footprint; deploy via Netlify, Vercel o Docker.
 
 ## Collegamenti
 

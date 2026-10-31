@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MacPaw"
 category: azienda
 tags: [macpaw, ucraina, macos, partnership, software]
 related_puntate: [20260806]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260806.md]
 ---
 
 # MacPaw
@@ -20,7 +19,7 @@ Azienda ucraina di software per macOS (CleanMyMac, Setapp). In partnership con L
 
 ## Timeline delle notizie
 
-- **2026-08-06** — MacPaw entra in partnership con Liquid AI: modelli foundation specializzati per macOS, con dati sul dispositivo e niente cloud, modello Eney atteso fine anno. [Fonte: raw/puntate/ainews20260806.md]
+- **2026-08-06** — MacPaw entra in partnership con Liquid AI: modelli foundation specializzati per macOS, con dati sul dispositivo e niente cloud, modello Eney atteso fine anno.
 
 ## Collegamenti
 

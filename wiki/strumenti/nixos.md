@@ -1,11 +1,10 @@
-﻿---
+---
 title: "NixOS"
 category: strumento
 tags: [linux, open-source, dichiarativo, configurazione-come-codice]
 related_puntate: []
 created: 2026-09-30
 updated: 2026-09-30
-sources: [raw/pillitteri/pillitteri20260930-dawo-linux-olanda-windows.md]
 ---
 
 # NixOS
@@ -16,12 +15,12 @@ Distribuzione Linux nata dal gestore di pacchetti Nix, creato all'università di
 
 ## Funzionalità principali
 
-- Configurazione dichiarativa: migliaia di postazioni identiche clonabili e ripristinabili in pochi minuti. [Fonte: raw/pillitteri/pillitteri20260930-dawo-linux-olanda-windows.md]
-- Codice in gran parte su Codeberg, piattaforma associativa tedesca, non su un servizio americano. [Fonte: raw/pillitteri/pillitteri20260930-dawo-linux-olanda-windows.md]
+- Configurazione dichiarativa: migliaia di postazioni identiche clonabili e ripristinabili in pochi minuti.
+- Codice in gran parte su Codeberg, piattaforma associativa tedesca, non su un servizio americano.
 
 ## Timeline delle notizie
 
-- **2026-09-30** — NixOS viene scelta dal governo olandese come base di DAWO, l'ambiente di lavoro della pubblica amministrazione, preferendola a Fedora (IBM) e openSUSE (SUSE) perché non appartiene a nessuna azienda: per un progetto nato per eliminare dipendenze da fornitori stranieri, l'assenza di proprietario pesa quanto le prestazioni. [Fonte: raw/pillitteri/pillitteri20260930-dawo-linux-olanda-windows.md]
+- **2026-09-30** — NixOS viene scelta dal governo olandese come base di DAWO, l'ambiente di lavoro della pubblica amministrazione, preferendola a Fedora (IBM) e openSUSE (SUSE) perché non appartiene a nessuna azienda: per un progetto nato per eliminare dipendenze da fornitori stranieri, l'assenza di proprietario pesa quanto le prestazioni.
 
 ## Collegamenti
 

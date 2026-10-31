@@ -1,11 +1,10 @@
-﻿---
+---
 title: "ForgeCAD"
 category: strumento
 tags: [cad, codex, openai, pipeline]
 related_puntate: [20260517]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260517.md]
 ---
 
 # ForgeCAD
@@ -25,7 +24,7 @@ Pipeline che converte render di prodotto in modelli CAD direttamente nel termina
 
 ## Timeline delle notizie
 
-- **2026-05-17** — ForgeCAD è la pipeline emersa da ChatGPT Images 2.0 più GPT-5.5 Codex: immagine di un render entra e il CAD model esce in decine di secondi, in sessione singola, facendo crollare la costante 'CAD uguale software dedicato'. [Fonte: raw/puntate/ainews20260517.md]
+- **2026-05-17** — ForgeCAD è la pipeline emersa da ChatGPT Images 2.0 più GPT-5.5 Codex: immagine di un render entra e il CAD model esce in decine di secondi, in sessione singola, facendo crollare la costante 'CAD uguale software dedicato'.
 
 ## Collegamenti
 

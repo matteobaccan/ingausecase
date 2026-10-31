@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Tobi Lütke"
 category: persona
 tags: [agent, ceo, shopify]
 related_puntate: [20260802]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260802.md]
 ---
 
 # Tobi Lütke
@@ -24,7 +23,7 @@ CEO di Shopify; ha adottato l'agente autoresearch di Karpathy per ottimizzare il
 
 ## Timeline delle notizie
 
-- **2026-08-02** — Tobi Lütke ha usato autoresearch di Andrej Karpathy su Liquid, motore di templating di Shopify: 93 commit e tempo ridotto del 53 percento. [Fonte: raw/puntate/ainews20260802.md]
+- **2026-08-02** — Tobi Lütke ha usato autoresearch di Andrej Karpathy su Liquid, motore di templating di Shopify: 93 commit e tempo ridotto del 53 percento.
 
 ## Collegamenti
 

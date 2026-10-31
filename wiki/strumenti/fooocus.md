@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Fooocus"
 category: strumento
 tags: [diffusion, immagini, open-source]
 related_puntate: [20260601]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260601.md]
 ---
 
 # Fooocus
@@ -24,7 +23,7 @@ Interfaccia open source di generazione immagini basata su Stable Diffusion, alte
 
 ## Timeline delle notizie
 
-- **2026-06-01** — Fooocus è stato indicato come alternativa open source gratuita a Midjourney per la generazione di immagini. [Fonte: raw/puntate/ainews20260601.md]
+- **2026-06-01** — Fooocus è stato indicato come alternativa open source gratuita a Midjourney per la generazione di immagini.
 
 ## Collegamenti
 

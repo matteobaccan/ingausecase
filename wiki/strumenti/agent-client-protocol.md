@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Agent Client Protocol"
 category: strumento
 tags: [agenti, open-source, protocollo, standard, terminale]
 related_puntate: []
 created: 2026-10-08
 updated: 2026-10-08
-sources: [raw/pillitteri/pillitteri20260608-intelligent-terminal-microsoft-windows-terminal-ai.md]
 ---
 
 # Agent Client Protocol
@@ -22,14 +21,12 @@ i linguaggi di programmazione.
 - Usa JSON-RPC 2.0 scambiato su stdin e stdout, il canale che il terminale già
   adopera: richieste, notifiche e risposte separate da un a capo e senza
   interruzioni di riga al loro interno.
-  [Fonte: raw/pillitteri/pillitteri20260608-intelligent-terminal-microsoft-windows-terminal-ai.md]
 - All'inizio del 2026 gli agenti che lo supportano erano oltre venticinque, fra
   cui [[claude-code]], OpenAI Codex e Google Gemini.
-  [Fonte: raw/pillitteri/pillitteri20260608-intelligent-terminal-microsoft-windows-terminal-ai.md]
 
 ## Timeline delle notizie
 
-- **2026-06-02** — [[microsoft]] adotta l'Agent Client Protocol in [[intelligent-terminal]]: il terminale rileva in automatico le CLI compatibili installate sulla macchina e parla con ciascuna attraverso lo stesso protocollo, ricadendo su GitHub Copilot CLI se non ne trova nessuna. [Fonte: raw/pillitteri/pillitteri20260608-intelligent-terminal-microsoft-windows-terminal-ai.md]
+- **2026-06-02** — [[microsoft]] adotta l'Agent Client Protocol in [[intelligent-terminal]]: il terminale rileva in automatico le CLI compatibili installate sulla macchina e parla con ciascuna attraverso lo stesso protocollo, ricadendo su GitHub Copilot CLI se non ne trova nessuna.
 
 ## Collegamenti
 

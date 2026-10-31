@@ -1,11 +1,10 @@
-﻿---
+---
 title: "GenRecon"
 category: strumento
 tags: [3d, open-source, ricerca, ricostruzione]
 related_puntate: [20260703]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260703.md]
 ---
 
 # GenRecon
@@ -20,7 +19,7 @@ Sistema di ricostruzione 3D che da poche immagini genera una scena tridimensiona
 
 ## Timeline delle notizie
 
-- **2026-07-03** — Rilascia il codice: poche immagini in ingresso, scena tridimensionale completa in uscita, con prior generativo su scene intere per qualità di ricostruzione senza precedenti. [Fonte: raw/puntate/ainews20260703.md]
+- **2026-07-03** — Rilascia il codice: poche immagini in ingresso, scena tridimensionale completa in uscita, con prior generativo su scene intere per qualità di ricostruzione senza precedenti.
 
 ## Collegamenti
 

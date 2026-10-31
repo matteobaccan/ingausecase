@@ -1,11 +1,10 @@
-﻿---
+---
 title: "KrillinAI"
 category: strumento
 tags: [gratis, locale, traduzione, video]
 related_puntate: [20260811]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260811.md]
 ---
 
 # KrillinAI
@@ -20,7 +19,7 @@ Tool locale gratuito per traduzione video: sottotitoli precisi, doppiaggio natur
 
 ## Timeline delle notizie
 
-- **2026-08-11** — KrillinAI e' un tool locale per traduzione video: sottotitoli precisi, doppiaggio naturale e clonazione voce in cinese-inglese, con Whisper recognition, LLM di traduzione contestuale e CosyVoice TTS, integrazione yt-dlp, per Windows e Mac; gratis, locale e senza watermark. [Fonte: raw/puntate/ainews20260811.md]
+- **2026-08-11** — KrillinAI e' un tool locale per traduzione video: sottotitoli precisi, doppiaggio naturale e clonazione voce in cinese-inglese, con Whisper recognition, LLM di traduzione contestuale e CosyVoice TTS, integrazione yt-dlp, per Windows e Mac; gratis, locale e senza watermark.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Hyper-Extract"
 category: strumento
 tags: [knowledge-graph, open-source, rag]
 related_puntate: [20260626]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260626.md]
 ---
 
 # Hyper-Extract
@@ -20,7 +19,7 @@ Strumento che trasforma documenti in knowledge graph, hypergraph, temporal graph
 
 ## Timeline delle notizie
 
-- **2026-06-26** — Hyper-Extract trasforma documenti disordinati in knowledge graph, hypergraph, temporal graph, spatial graph e modelli dati fortemente tipizzati: ottanta template YAML per finanza, legale, medicina e industria; funziona localmente con vLLM ed è integrabile con Claude Desktop tramite MCP. [Fonte: raw/puntate/ainews20260626.md]
+- **2026-06-26** — Hyper-Extract trasforma documenti disordinati in knowledge graph, hypergraph, temporal graph, spatial graph e modelli dati fortemente tipizzati: ottanta template YAML per finanza, legale, medicina e industria; funziona localmente con vLLM ed è integrabile con Claude Desktop tramite MCP.
 
 ## Collegamenti
 

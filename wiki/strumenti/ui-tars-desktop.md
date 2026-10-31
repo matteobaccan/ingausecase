@@ -1,11 +1,10 @@
-﻿---
+---
 title: "UI-TARS Desktop"
 category: strumento
 tags: [agent, desktop, open-source]
 related_puntate: [20260617]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260617.md]
 ---
 
 # UI-TARS Desktop
@@ -24,7 +23,7 @@ Agente desktop di ByteDance che controlla il computer guardando solo i pixel: sc
 
 ## Timeline delle notizie
 
-- **2026-06-17** — UI-TARS Desktop di ByteDance è un agente che controlla il computer completo guardando solo pixel: cento percento locale, nessuna API esterna, trentasei punto quattro mila stelle, Apache 2.0; non ispeziona il DOM né usa API di accessibilità: fa screenshot, capisce, muove il mouse e scrive come un umano. [Fonte: raw/puntate/ainews20260617.md]
+- **2026-06-17** — UI-TARS Desktop di ByteDance è un agente che controlla il computer completo guardando solo pixel: cento percento locale, nessuna API esterna, trentasei punto quattro mila stelle, Apache 2.0; non ispeziona il DOM né usa API di accessibilità: fa screenshot, capisce, muove il mouse e scrive come un umano.
 
 ## Collegamenti
 

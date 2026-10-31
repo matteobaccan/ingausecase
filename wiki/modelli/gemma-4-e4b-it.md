@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Gemma 4 E4B IT"
 category: modello
 tags: [google, multimodale, open-weight]
 related_puntate: [20260630]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260630.md]
 ---
 
 # Gemma 4 E4B IT
@@ -24,7 +23,7 @@ Modello di Google capace di gestire qualsiasi tipo di input e output, da testo a
 
 ## Timeline delle notizie
 
-- **2026-06-30** — Rilasciato da Google: modello che gestisce qualsiasi tipo di input e output, testo e immagini compresi, descritto come svolta per l'IA multimodale. [Fonte: raw/puntate/ainews20260630.md]
+- **2026-06-30** — Rilasciato da Google: modello che gestisce qualsiasi tipo di input e output, testo e immagini compresi, descritto come svolta per l'IA multimodale.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "PDF Inspector"
 category: strumento
 tags: [open-source, parsing, pdf]
 related_puntate: [20260803]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260803.md]
 ---
 
 # PDF Inspector
@@ -20,7 +19,7 @@ Motore di parsing PDF open source rilasciato da Firecrawl, pubblicizzato come il
 
 ## Timeline delle notizie
 
-- **2026-08-03** — PDF Inspector è stato rilasciato come open source da Firecrawl con prestazioni di zero virgola zero zero due secondi per pagina, gestendo PDF complessi senza rallentamenti. [Fonte: raw/puntate/ainews20260803.md]
+- **2026-08-03** — PDF Inspector è stato rilasciato come open source da Firecrawl con prestazioni di zero virgola zero zero due secondi per pagina, gestendo PDF complessi senza rallentamenti.
 
 ## Collegamenti
 

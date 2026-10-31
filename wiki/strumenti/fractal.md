@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Fractal"
 category: strumento
 tags: [agent, recursive, terminal]
 related_puntate: [20260625]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260625.md]
 ---
 
 # Fractal
@@ -20,7 +19,7 @@ Agente da terminale basato su Recursive Language Model: pianifica task, legge e 
 
 ## Timeline delle notizie
 
-- **2026-06-25** — Fractal è un agente da terminale basato su Recursive Language Model: risponde a domande, pianifica task, legge e scrive file, esegue comandi e analizza codebase attraverso un runtime che ragiona ricorsivamente sul contesto. [Fonte: raw/puntate/ainews20260625.md]
+- **2026-06-25** — Fractal è un agente da terminale basato su Recursive Language Model: risponde a domande, pianifica task, legge e scrive file, esegue comandi e analizza codebase attraverso un runtime che ragiona ricorsivamente sul contesto.
 
 ## Collegamenti
 

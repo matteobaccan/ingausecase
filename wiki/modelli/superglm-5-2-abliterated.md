@@ -1,11 +1,10 @@
-﻿---
+---
 title: "SuperGLM-5.2-abliterated"
 category: modello
 tags: [abliteration, llm, open-weight]
 related_puntate: [20260714, 20260719]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260714.md, raw/puntate/ainews20260719.md]
 ---
 
 # SuperGLM-5.2-abliterated
@@ -26,8 +25,8 @@ Versione uncensored di GLM-5.2 eseguibile localmente, basata su quantizzazione N
 
 ## Timeline delle notizie
 
-- **2026-07-14** — SuperGLM-5.2-abliterated è la versione uncensored più forte da eseguire localmente: basata su Nvidia NVFP4, con prestazioni complessive migliorate, disponibile ora. [Fonte: raw/puntate/ainews20260714.md]
-- **2026-07-19** — Super-GLM 5.2 abliterated: settecentocinquantatré miliardi totali e quaranta attivi, MoE non censurato con editing a quattro direzioni, un milione di token di contesto, zero rifiuti su cento richieste e efficienza NVFP4 nativa mantenuta. [Fonte: raw/puntate/ainews20260719.md]
+- **2026-07-14** — SuperGLM-5.2-abliterated è la versione uncensored più forte da eseguire localmente: basata su Nvidia NVFP4, con prestazioni complessive migliorate, disponibile ora.
+- **2026-07-19** — Super-GLM 5.2 abliterated: settecentocinquantatré miliardi totali e quaranta attivi, MoE non censurato con editing a quattro direzioni, un milione di token di contesto, zero rifiuti su cento richieste e efficienza NVFP4 nativa mantenuta.
 
 ## Collegamenti
 

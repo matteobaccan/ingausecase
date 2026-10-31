@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Axolotl"
 category: strumento
 tags: [fine-tuning, framework, open-source]
 related_puntate: [20260629]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260629.md]
 ---
 
 # Axolotl
@@ -25,7 +24,7 @@ Framework open source di fine-tuning con ottimizzazioni avanzate, parte dell'eco
 
 ## Timeline delle notizie
 
-- **2026-06-29** — Insieme a DeepSeek completa il quadro delle librerie per il fine-tuning dei modelli con ottimizzazioni avanzate. [Fonte: raw/puntate/ainews20260629.md]
+- **2026-06-29** — Insieme a DeepSeek completa il quadro delle librerie per il fine-tuning dei modelli con ottimizzazioni avanzate.
 
 ## Collegamenti
 

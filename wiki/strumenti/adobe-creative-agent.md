@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Adobe Creative Agent"
 category: strumento
 tags: [adobe, agenti, creativita, firefly]
 related_puntate: []
 created: 2026-10-08
 updated: 2026-10-08
-sources: [raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
 ---
 
 # Adobe Creative Agent
@@ -22,27 +21,27 @@ dell'esperienza unificata.
 
 - L'AI Assistant è in beta pubblica in Photoshop, Premiere, Illustrator,
   InDesign e Frame.io, in beta privata in After Effects, con capacità aggiornate
-  nell'app web Firefly. [Fonte: raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
+  nell'app web Firefly.
 - La differenza rispetto a un assistente generico è l'orchestrazione: in
   Photoshop può cambiare lo sfondo, produrre le varianti social e riordinare i
   livelli, in Premiere smistare e rinominare le clip, individuare le domande di
   un'intervista e assemblare un primo montaggio, in Illustrator generare file
   versionati da un foglio di calcolo, in InDesign aggiornare testo, stili e
-  controlli di stampabilità. [Fonte: raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
+  controlli di stampabilità.
 - Un solo prompt può coinvolgere più applicazioni: l'esempio di Adobe chiede tre
   immagini quadrate, un teaser video di quindici secondi e un layout coerente in
   InDesign e li produce generando in Photoshop, montando in Premiere e popolando
-  il template. [Fonte: raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
+  il template.
 
 ## Integrazioni di terze parti
 
 - Già disponibili in ChatGPT, [[claude]] e Microsoft 365 Copilot; annunciate in
   arrivo in Google Gemini e Slack. Solo il connettore con Claude sfrutta [[mcp]],
   perché per ChatGPT e Copilot Adobe parla genericamente di connettori senza
-  dichiarare il protocollo. [Fonte: raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
+  dichiarare il protocollo.
 - Elements salva personaggi, luoghi e oggetti già generati per riusarli, Projects
   archivia gli asset e condivide il contesto tra le app; entrambe sono in beta
-  privata con lista d'attesa. [Fonte: raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
+  privata con lista d'attesa.
 
 ## Azienda di riferimento
 
@@ -50,7 +49,7 @@ dell'esperienza unificata.
 
 ## Timeline delle notizie
 
-- **2026-06-18** — Al Cannes Lions [[adobe]] annuncia l'espansione del Creative Agent: l'AI Assistant entra in beta pubblica in Photoshop, Premiere, Illustrator, InDesign e Frame.io e in beta privata in After Effects, con orchestrazione di catene di azioni su più app da un solo prompt, mentre gli strumenti creativi arrivano in ChatGPT, [[claude]] e Microsoft 365 Copilot e sono annunciati in Google Gemini e Slack. [Fonte: raw/pillitteri/pillitteri20260620-adobe-creative-agent-firefly-creative-cloud.md]
+- **2026-06-18** — Al Cannes Lions [[adobe]] annuncia l'espansione del Creative Agent: l'AI Assistant entra in beta pubblica in Photoshop, Premiere, Illustrator, InDesign e Frame.io e in beta privata in After Effects, con orchestrazione di catene di azioni su più app da un solo prompt, mentre gli strumenti creativi arrivano in ChatGPT, [[claude]] e Microsoft 365 Copilot e sono annunciati in Google Gemini e Slack.
 
 ## Collegamenti
 

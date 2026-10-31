@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Meta VR Glasses"
 category: strumento
 tags: [meta, vr, visori, hardware, display]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/pillitteri/pillitteri20260925-meta-vr-glasses-100-grammi-1299-dollari.md]
 ---
 
 # Meta VR Glasses
@@ -28,7 +27,7 @@ Occhiali per la realtà virtuale presentati da Meta al Connect il 23 settembre 2
 
 ## Timeline delle notizie
 
-- **2026-09-25** — Al Connect del 23 settembre Meta ha presentato i VR Glasses da circa 100 grammi a 1.299,99 dollari per gli Stati Uniti, in uscita in primavera 2027: il peso esce dal viso e finisce in un puck da circa 300 grammi con calcolo e batteria, mentre il campo visivo si ferma a 70 gradi in orizzontale contro i circa 110 del Quest 3. L'Italia è tra i 25 mercati previsti al lancio, ma prezzo in euro e data locale non sono stati annunciati. [Fonte: raw/pillitteri/pillitteri20260925-meta-vr-glasses-100-grammi-1299-dollari.md]
+- **2026-09-25** — Al Connect del 23 settembre Meta ha presentato i VR Glasses da circa 100 grammi a 1.299,99 dollari per gli Stati Uniti, in uscita in primavera 2027: il peso esce dal viso e finisce in un puck da circa 300 grammi con calcolo e batteria, mentre il campo visivo si ferma a 70 gradi in orizzontale contro i circa 110 del Quest 3. L'Italia è tra i 25 mercati previsti al lancio, ma prezzo in euro e data locale non sono stati annunciati.
 
 ## Collegamenti
 

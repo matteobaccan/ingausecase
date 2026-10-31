@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Kimodo CPP"
 category: strumento
 tags: [animazione, c-plus-plus, ggml, local-first, nvidia, open-source]
 related_puntate: [20260824]
 created: 2026-08-24
 updated: 2026-08-24
-sources: [raw/puntate/ainews20260824.md]
 ---
 
 # Kimodo CPP
@@ -41,7 +40,7 @@ Implementazione locale di Kimodo, uno dei migliori modelli per animazione di per
 
 ## Timeline delle notizie
 
-- **2026-08-24** — Kimodo, rilasciato in precedenza da NVIDIA come uno dei migliori modelli per animazione di personaggi, ora gira in locale su CPU o Vulkan tramite un'implementazione in C++ e GGML senza Python né CUDA, con SMPL-X nativo e retarget su Mixamo. [Fonte: raw/puntate/ainews20260824.md]
+- **2026-08-24** — Kimodo, rilasciato in precedenza da NVIDIA come uno dei migliori modelli per animazione di personaggi, ora gira in locale su CPU o Vulkan tramite un'implementazione in C++ e GGML senza Python né CUDA, con SMPL-X nativo e retarget su Mixamo.
 
 ## Collegamenti
 

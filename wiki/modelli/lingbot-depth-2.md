@@ -1,11 +1,10 @@
-﻿---
+---
 title: "LingBot-Depth 2.0"
 category: modello
 tags: [depth, robotica, vision]
 related_puntate: [20260708]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260708.md]
 ---
 
 # LingBot-Depth 2.0
@@ -24,7 +23,7 @@ Modello per la previsione della profondità nella manipolazione robotica di ogge
 
 ## Timeline delle notizie
 
-- **2026-07-08** — Previsione della profondità per manipolazione robotica su oggetti trasparenti: con un sacchetto di plastica che versa fagioli in barattoli di vetro, la profondità percepita rimane coerente nel tempo, con confini puliti e nitidi. [Fonte: raw/puntate/ainews20260708.md]
+- **2026-07-08** — Previsione della profondità per manipolazione robotica su oggetti trasparenti: con un sacchetto di plastica che versa fagioli in barattoli di vetro, la profondità percepita rimane coerente nel tempo, con confini puliti e nitidi.
 
 ## Collegamenti
 

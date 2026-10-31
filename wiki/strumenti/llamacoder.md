@@ -1,11 +1,10 @@
-﻿---
+---
 title: "LlamaCoder"
 category: strumento
 tags: [coding, generativo, open-source]
 related_puntate: [20260714]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260714.md]
 ---
 
 # LlamaCoder
@@ -24,7 +23,7 @@ Strumento open source gratuito che genera app complete da un singolo prompt; la 
 
 ## Timeline delle notizie
 
-- **2026-07-14** — LlamaCoder versione 4 è ora disponibile: costruita attorno a GLM-5.2, genera app complete da un singolo prompt, gratuita e open source. [Fonte: raw/puntate/ainews20260714.md]
+- **2026-07-14** — LlamaCoder versione 4 è ora disponibile: costruita attorno a GLM-5.2, genera app complete da un singolo prompt, gratuita e open source.
 
 ## Collegamenti
 

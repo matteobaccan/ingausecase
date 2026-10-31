@@ -1,11 +1,10 @@
-﻿---
+---
 title: "WallBreaker"
 category: strumento
 tags: [jailbreak, red-team, sicurezza]
 related_puntate: [20260727]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260727.md]
 ---
 
 # WallBreaker
@@ -24,7 +23,7 @@ Tool che ha dimostrato di poter bucare le protezioni di Claude Opus 5, combinand
 
 ## Timeline delle notizie
 
-- **2026-07-27** — Tool che ha bucato le protezioni di Opus 5 estraendo informazioni su ingegneria biologica e sintesi chimica regolamentata, tramite framing accademico, offuscamento e mappatura dei confini. I guardrail sono migliorati ma restavano più deboli rispetto a OpenAI. [Fonte: raw/puntate/ainews20260727.md]
+- **2026-07-27** — Tool che ha bucato le protezioni di Opus 5 estraendo informazioni su ingegneria biologica e sintesi chimica regolamentata, tramite framing accademico, offuscamento e mappatura dei confini. I guardrail sono migliorati ma restavano più deboli rispetto a OpenAI.
 
 ## Collegamenti
 

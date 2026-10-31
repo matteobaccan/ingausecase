@@ -1,11 +1,10 @@
-﻿---
+---
 title: "ARC-AGI-4"
 category: strumento
 tags: [agi, benchmark, reasoning]
 related_puntate: [20260905]
 created: 2026-09-05
 updated: 2026-09-05
-sources: [raw/puntate/ainews20260905.md]
 ---
 
 # ARC-AGI-4
@@ -26,7 +25,7 @@ Nuovo benchmark per l'AGI con giochi di ragionamento, introdotto per sostituire 
 
 ## Timeline delle notizie
 
-- **2026-09-05** — Arriva ARC-AGI-4, nuova versione del benchmark creata dopo che GPT-6 Astra ha saturato ARC-AGI-3, per misurare di nuovo l’intelligenza di frontiera. Anthropic Fable e ChatGPT Astra sono entrambi fermi al quattro percento circa. [Fonte: raw/puntate/ainews20260905.md]
+- **2026-09-05** — Arriva ARC-AGI-4, nuova versione del benchmark creata dopo che GPT-6 Astra ha saturato ARC-AGI-3, per misurare di nuovo l’intelligenza di frontiera. Anthropic Fable e ChatGPT Astra sono entrambi fermi al quattro percento circa.
 
 ## Collegamenti
 

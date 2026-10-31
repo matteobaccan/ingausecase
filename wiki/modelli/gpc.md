@@ -1,11 +1,10 @@
-﻿---
+---
 title: "GPC"
 category: modello
 tags: [generativo, nvidia, robotica, simulazione]
 related_puntate: [20260701]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260701.md]
 ---
 
 # GPC
@@ -24,7 +23,7 @@ Generative Pretrained Controllers di NVIDIA: trasforma skill motorie in token di
 
 ## Timeline delle notizie
 
-- **2026-07-01** — Presentato al SIGGRAPH: trasforma skill motorie in token discreti e addestra un controller transformer generativo. Stesso controller preaddestrato, poi fine-tuned per task nuovi; addestrato su oltre 600 ore di movimento, gira real-time in simulazione fisica. [Fonte: raw/puntate/ainews20260701.md]
+- **2026-07-01** — Presentato al SIGGRAPH: trasforma skill motorie in token discreti e addestra un controller transformer generativo. Stesso controller preaddestrato, poi fine-tuned per task nuovi; addestrato su oltre 600 ore di movimento, gira real-time in simulazione fisica.
 
 ## Collegamenti
 

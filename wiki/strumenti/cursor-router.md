@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Cursor Router"
 category: strumento
 tags: [costi, cursor, llm-routing]
 related_puntate: [20260723]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260723.md]
 ---
 
 # Cursor Router
@@ -24,7 +23,7 @@ Sistema di routing intelligente di Cursor che seleziona automaticamente il model
 
 ## Timeline delle notizie
 
-- **2026-07-23** — Cursor ha lanciato Router, sistema di routing intelligente che selezionava automaticamente il modello giusto per ogni task, con qualità da frontiera e sessanta percento di costi in meno. [Fonte: raw/puntate/ainews20260723.md]
+- **2026-07-23** — Cursor ha lanciato Router, sistema di routing intelligente che selezionava automaticamente il modello giusto per ogni task, con qualità da frontiera e sessanta percento di costi in meno.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "DeepCode v2"
 category: strumento
 tags: [agent, automazione, coding, loop-engineering]
 related_puntate: [20260806]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260806.md]
 ---
 
 # DeepCode v2
@@ -20,7 +19,7 @@ Versione di DeepCode che introduce Loop Engineering: goal in linguaggio naturale
 
 ## Timeline delle notizie
 
-- **2026-08-06** — DeepCode v2 introduce Loop Engineering: goal in linguaggio naturale, lavoro continuo fino a completamento, test, verifica e repair automatici, CLI e Desktop sincronizzati e automazioni personalizzate. [Fonte: raw/puntate/ainews20260806.md]
+- **2026-08-06** — DeepCode v2 introduce Loop Engineering: goal in linguaggio naturale, lavoro continuo fino a completamento, test, verifica e repair automatici, CLI e Desktop sincronizzati e automazioni personalizzate.
 
 ## Collegamenti
 

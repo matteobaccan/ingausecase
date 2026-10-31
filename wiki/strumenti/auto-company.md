@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Auto-Company"
 category: strumento
 tags: [agent, open-source, simulazione]
 related_puntate: [20260721]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260721.md]
 ---
 
 # Auto-Company
@@ -24,7 +23,7 @@ Sistema open source di un ricercatore della Carnegie Mellon che simula un'intera
 
 ## Timeline delle notizie
 
-- **2026-07-21** — Un ricercatore della Carnegie Mellon ha rilasciato un sistema open source che simula un'intera azienda con quattordici agenti AI (CEO, CTO, ingegneri, marketer) modellati su figure reali come Jeff Bezos e Seth Godin: si svegliano, leggono una memoria condivisa in markdown, formano squadre e lavorano a cicli, funzionando su Claude Code e Codex con un solo file di testo. [Fonte: raw/puntate/ainews20260721.md]
+- **2026-07-21** — Un ricercatore della Carnegie Mellon ha rilasciato un sistema open source che simula un'intera azienda con quattordici agenti AI (CEO, CTO, ingegneri, marketer) modellati su figure reali come Jeff Bezos e Seth Godin: si svegliano, leggono una memoria condivisa in markdown, formano squadre e lavorano a cicli, funzionando su Claude Code e Codex con un solo file di testo.
 
 ## Collegamenti
 

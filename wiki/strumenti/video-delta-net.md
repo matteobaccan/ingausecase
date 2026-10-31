@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Video Delta Net"
 category: strumento
 tags: [open-source, text-to-video, video-ai]
 related_puntate: [20260903]
 created: 2026-09-03
 updated: 2026-09-03
-sources: [raw/puntate/ainews20260903.md]
 ---
 
 # Video Delta Net
@@ -27,7 +26,7 @@ Sistema hybrid attention per text-to-video live con qualità quasi lossless, che
 
 ## Timeline delle notizie
 
-- **2026-09-03** — Video Delta Net, sistema hybrid attention per text-to-video live con qualità quasi lossless che accelera Minimax-H tre di settantacinque-novanta volte, generando quattordici secondi di video a settecentosessantotto pixel in undici secondi su otto GPU NVIDIA B duecento; checkpoint, codice di training e inference rilasciati come open source. [Fonte: raw/puntate/ainews20260903.md]
+- **2026-09-03** — Video Delta Net, sistema hybrid attention per text-to-video live con qualità quasi lossless che accelera Minimax-H tre di settantacinque-novanta volte, generando quattordici secondi di video a settecentosessantotto pixel in undici secondi su otto GPU NVIDIA B duecento; checkpoint, codice di training e inference rilasciati come open source.
 
 ## Collegamenti
 

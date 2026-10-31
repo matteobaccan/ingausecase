@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Claude S40"
 category: strumento
 tags: [claude, client, java, mit, nokia, terminale]
 related_puntate: []
 created: 2026-09-29
 updated: 2026-09-29
-sources: [raw/pillitteri/pillitteri20260929-claude-nokia-6300-claude-s40.md]
 ---
 
 # Claude S40
@@ -27,7 +26,7 @@ Client Java non ufficiale pubblicato su GitHub il 26 settembre 2026 con licenza 
 
 ## Timeline delle notizie
 
-- **2026-09-29** — Claude S40 porta Claude su un Nokia 6300 del 2007: client Java non ufficiale su GitHub, licenza MIT, 225 stelle e 23 fork, con il video pubblicato su X il 27 settembre che ha superato i 3,2 milioni di visualizzazioni; il progetto dichiara di non essere prodotto né sostenuto da Anthropic o Nokia, è verificato solo su quel modello e richiede un server con IP pubblico (un VPS da 4-6 dollari al mese) più le normali API a pagamento. [Fonte: raw/pillitteri/pillitteri20260929-claude-nokia-6300-claude-s40.md]
+- **2026-09-29** — Claude S40 porta Claude su un Nokia 6300 del 2007: client Java non ufficiale su GitHub, licenza MIT, 225 stelle e 23 fork, con il video pubblicato su X il 27 settembre che ha superato i 3,2 milioni di visualizzazioni; il progetto dichiara di non essere prodotto né sostenuto da Anthropic o Nokia, è verificato solo su quel modello e richiede un server con IP pubblico (un VPS da 4-6 dollari al mese) più le normali API a pagamento.
 
 ## Collegamenti
 

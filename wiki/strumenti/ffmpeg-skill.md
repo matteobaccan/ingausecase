@@ -1,11 +1,10 @@
-﻿---
+---
 title: "FFmpeg Skill"
 category: strumento
 tags: [ffmpeg, video, claude-code, cursor, codex]
 related_puntate: [20261004]
 created: 2026-10-04
 updated: 2026-10-04
-sources: [raw/puntate/ainews20261004.md]
 ---
 
 # FFmpeg Skill
@@ -22,7 +21,7 @@ Strumento che collega FFmpeg agli assistenti AI, con quarantadue strumenti integ
 
 ## Timeline delle notizie
 
-- **2026-10-04** — ffmpeg-skill collega FFmpeg agli assistenti AI con quarantadue strumenti integrati, funziona in locale senza account o API e supporta Claude Code, Cursor e Codex. [Fonte: raw/puntate/ainews20261004.md]
+- **2026-10-04** — ffmpeg-skill collega FFmpeg agli assistenti AI con quarantadue strumenti integrati, funziona in locale senza account o API e supporta Claude Code, Cursor e Codex.
 
 ## Collegamenti
 

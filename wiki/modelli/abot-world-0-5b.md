@@ -1,11 +1,10 @@
-﻿---
+---
 title: "ABot World 0.5B"
 category: modello
 tags: [open-source, realtime, world-model]
 related_puntate: [20260730]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260730.md]
 ---
 
 # ABot World 0.5B
@@ -24,7 +23,7 @@ World model da 0,5 miliardi di parametri che gira in tempo reale su GPU consumer
 
 ## Timeline delle notizie
 
-- **2026-07-30** — World model che gira in tempo reale su GPU consumer: gli dai un'immagine iniziale e lo piloti con la tastiera. [Fonte: raw/puntate/ainews20260730.md]
+- **2026-07-30** — World model che gira in tempo reale su GPU consumer: gli dai un'immagine iniziale e lo piloti con la tastiera.
 
 ## Collegamenti
 

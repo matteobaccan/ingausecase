@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Devin Outposts"
 category: strumento
 tags: [agent, cognition, deployment]
 related_puntate: [20260722]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260722.md]
 ---
 
 # Devin Outposts
@@ -24,7 +23,7 @@ Servizio di Cognition che permette di eseguire Devin su qualsiasi macchina o inf
 
 ## Timeline delle notizie
 
-- **2026-07-22** — Cognition ha lanciato Devin Outposts, che permetteva di far girare Devin su qualsiasi macchina: Mac mini, GPU box, VM private o cluster Kubernetes. [Fonte: raw/puntate/ainews20260722.md]
+- **2026-07-22** — Cognition ha lanciato Devin Outposts, che permetteva di far girare Devin su qualsiasi macchina: Mac mini, GPU box, VM private o cluster Kubernetes.
 
 ## Collegamenti
 

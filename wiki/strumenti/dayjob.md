@@ -1,11 +1,10 @@
-﻿---
+---
 title: "DAYJOB"
 category: strumento
 tags: [benchmark, agent, finanza, valutazione]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/tldr/tldr20260925.md]
 ---
 
 # DAYJOB
@@ -21,7 +20,7 @@ Benchmark di SurgeHQ, nella sua variante Finance, che misura la capacità degli 
 
 ## Timeline delle notizie
 
-- **2026-09-25** — DAYJOB: Finance di SurgeHQ testa se gli agenti AI riescono a completare 80 incarichi finanziari realistici usando documenti di supporto e a produrre analisi utilizzabili da un professionista. [Fonte: raw/tldr/tldr20260925.md]
+- **2026-09-25** — DAYJOB: Finance di SurgeHQ testa se gli agenti AI riescono a completare 80 incarichi finanziari realistici usando documenti di supporto e a produrre analisi utilizzabili da un professionista.
 
 ## Collegamenti
 

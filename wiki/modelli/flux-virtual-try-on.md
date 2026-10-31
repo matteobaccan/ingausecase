@@ -1,11 +1,10 @@
-﻿---
+---
 title: "FLUX Virtual Try-On"
 category: modello
 tags: [api, image-gen, try-on]
 related_puntate: [20260529]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260529.md]
 ---
 
 # FLUX Virtual Try-On
@@ -24,7 +23,7 @@ Modello di Black Forest Labs per try-on virtuale: generazione in meno di 4 secon
 
 ## Timeline delle notizie
 
-- **2026-05-29** — FLUX Virtual Try-On genera in meno di 4 secondi: mantiene l'identità della persona e loghi, cuciture e stampe del capo restano intatti; già disponibile via API. [Fonte: raw/puntate/ainews20260529.md]
+- **2026-05-29** — FLUX Virtual Try-On genera in meno di 4 secondi: mantiene l'identità della persona e loghi, cuciture e stampe del capo restano intatti; già disponibile via API.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "scroll-world"
 category: strumento
 tags: [design, skill, web]
 related_puntate: [20260712]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260712.md]
 ---
 
 # scroll-world
@@ -20,7 +19,7 @@ Skill per Claude Code che crea landing scroll-world con animazioni premium, con 
 
 ## Timeline delle notizie
 
-- **2026-07-12** — scroll-world è uno skill Claude Code per creare landing page con animazioni premium: costo da dieci a quindici dollari per pagina, richiede registrazione su Higgsfield AI e installazione CLI. [Fonte: raw/puntate/ainews20260712.md]
+- **2026-07-12** — scroll-world è uno skill Claude Code per creare landing page con animazioni premium: costo da dieci a quindici dollari per pagina, richiede registrazione su Higgsfield AI e installazione CLI.
 
 ## Collegamenti
 

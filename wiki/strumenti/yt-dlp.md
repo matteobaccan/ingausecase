@@ -1,11 +1,10 @@
-﻿---
+---
 title: "yt-dlp"
 category: strumento
 tags: [cli, open-source, video]
 related_puntate: [20260601]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260601.md]
 ---
 
 # yt-dlp
@@ -20,7 +19,7 @@ Strumento open source a riga di comando per scaricare video da qualsiasi piattaf
 
 ## Timeline delle notizie
 
-- **2026-06-01** — yt-dlp è stato citato tra le alternative open source gratuite per scaricare video da qualsiasi piattaforma. [Fonte: raw/puntate/ainews20260601.md]
+- **2026-06-01** — yt-dlp è stato citato tra le alternative open source gratuite per scaricare video da qualsiasi piattaforma.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Will Smith"
 category: persona
 tags: [attore, deepfake, demo]
 related_puntate: [20260520]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260520.md]
 ---
 
 # Will Smith
@@ -24,7 +23,7 @@ Attore americano il cui volto è stato usato nella demo di deepfake live realtim
 
 ## Timeline delle notizie
 
-- **2026-05-20** — Il volto di Will Smith è stato sovrapposto in tempo reale a un dipendente di Incognia in videochiamata nella demo dell'azienda di deepfake footage. [Fonte: raw/puntate/ainews20260520.md]
+- **2026-05-20** — Il volto di Will Smith è stato sovrapposto in tempo reale a un dipendente di Incognia in videochiamata nella demo dell'azienda di deepfake footage.
 
 ## Collegamenti
 

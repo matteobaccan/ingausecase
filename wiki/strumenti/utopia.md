@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Utopia"
 category: strumento
 tags: [database, knowledge-graph, open-source, air-gapped]
 related_puntate: [20260903]
 created: 2026-09-03
 updated: 2026-09-03
-sources: [raw/puntate/ainews20260903.md]
 ---
 
 # Utopia
@@ -31,7 +30,7 @@ Enterprise world model open source che tratta la conoscenza come un sistema, non
 
 ## Timeline delle notizie
 
-- **2026-09-03** — Utopia, enterprise world model open source che tratta la conoscenza come un sistema con fatti datati (inizio e fine): le correzioni chiudono la vecchia versione e aprono una nuova, con timeline navigabile, binario e database Postgres (niente Elasticsearch né servizi vector), e funzionamento completamente offline anche air-gapped con qualsiasi modello. [Fonte: raw/puntate/ainews20260903.md]
+- **2026-09-03** — Utopia, enterprise world model open source che tratta la conoscenza come un sistema con fatti datati (inizio e fine): le correzioni chiudono la vecchia versione e aprono una nuova, con timeline navigabile, binario e database Postgres (niente Elasticsearch né servizi vector), e funzionamento completamente offline anche air-gapped con qualsiasi modello.
 
 ## Collegamenti
 

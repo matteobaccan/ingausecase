@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MiniMax 2.7"
 category: modello
 tags: [agent, cina, coding, llm, minimax]
 related_puntate: [20260508, 20260509, 20260825]
 created: 2026-08-12
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260508.md, raw/puntate/ainews20260509.md, raw/puntate/ainews20260825.md]
 ---
 
 # MiniMax 2.7
@@ -25,9 +24,9 @@ Modello LLM di MiniMax che alimenta MaxHermes e la famiglia di agenti auto-evolu
 
 ## Timeline delle notizie
 
-- **2026-05-08** — MiniMax 2.7 è quarto nella nuova classifica di coding dei modelli cinesi, dietro Kimi K2.6, GLM-5.1 e MiMo V2.5 Pro e davanti a DeepSeek V4 Pro. [Fonte: raw/puntate/ainews20260508.md]
-- **2026-05-09** — MaxHermes, la versione cloud di Hermes Agent di MiniMax con oltre 130.000 stelle GitHub, è powered by MiniMax M2.7 e trasforma ogni task complesso in skill permanente. [Fonte: raw/puntate/ainews20260509.md]
-- **2026-08-25** — GMI Cloud offre due miliardi di token gratuiti per MiniMax M3 e MiniMax 2.7 per i próximos quattordici giorni, con accesso API senza pagamento anticipato. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-05-08** — MiniMax 2.7 è quarto nella nuova classifica di coding dei modelli cinesi, dietro Kimi K2.6, GLM-5.1 e MiMo V2.5 Pro e davanti a DeepSeek V4 Pro.
+- **2026-05-09** — MaxHermes, la versione cloud di Hermes Agent di MiniMax con oltre 130.000 stelle GitHub, è powered by MiniMax M2.7 e trasforma ogni task complesso in skill permanente.
+- **2026-08-25** — GMI Cloud offre due miliardi di token gratuiti per MiniMax M3 e MiniMax 2.7 per i próximos quattordici giorni, con accesso API senza pagamento anticipato.
 
 ## Collegamenti
 

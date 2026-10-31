@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Robert F. Kennedy Jr."
 category: persona
 tags: [salute, usa, politica]
 related_puntate: [20260930]
 created: 2026-09-30
 updated: 2026-09-30
-sources: [raw/myclaw/myclaw20260930-kennedy-wants-ai-on-health-data.md]
 ---
 
 # Robert F. Kennedy Jr.
@@ -20,7 +19,7 @@ Segretario alla Salute degli Stati Uniti, che nel settembre 2026 ha dichiarato d
 
 ## Timeline delle notizie
 
-- **2026-09-30** — Vuole che il governo federale unisca le cartelle cliniche degli americani e le renda ricercabili dall'AI, citando Medicare, Medicaid e i dati dei CDC come fonti preziose; secondo l'articolo non ha dettagliato le tutele sulla privacy. [Fonte: raw/myclaw/myclaw20260930-kennedy-wants-ai-on-health-data.md]
+- **2026-09-30** — Vuole che il governo federale unisca le cartelle cliniche degli americani e le renda ricercabili dall'AI, citando Medicare, Medicaid e i dati dei CDC come fonti preziose; secondo l'articolo non ha dettagliato le tutele sulla privacy.
 
 ## Collegamenti
 

@@ -1,18 +1,17 @@
-﻿---
+---
 title: "Lenovo"
 category: azienda
 tags: [cina, hardware, ai-locale, pc]
 related_puntate: []
 created: 2026-10-27
 updated: 2026-10-27
-sources: [raw/pillitteri/pillitteri20261027-lenovo-ai-host-p7-125b-locale.md]
 ---
 
 # Lenovo
 
 ## Introduzione
 
-Gruppo cinese di hardware che nel 2026 sta portando l'inferenza dei modelli dal cloud a macchine da scrivania con la linea AI Host, presentata per la prima volta al CSDN 1024 Programmers' Day del 24 ottobre. [Fonte: raw/pillitteri/pillitteri20261027-lenovo-ai-host-p7-125b-locale.md]
+Gruppo cinese di hardware che nel 2026 sta portando l'inferenza dei modelli dal cloud a macchine da scrivania con la linea AI Host, presentata per la prima volta al CSDN 1024 Programmers' Day del 24 ottobre.
 
 ## Strumenti
 
@@ -20,7 +19,7 @@ Gruppo cinese di hardware che nel 2026 sta portando l'inferenza dei modelli dal 
 
 ## Timeline delle notizie
 
-- **2026-10-24** — Mostra in anteprima alla conferenza CSDN 1024 Programmers' Day l'AI Host P7 e apre un programma di accesso anticipato, senza prezzo né data di vendita: il dispositivo è presentato come "Token Hub" personale che sposta l'inferenza su una macchina locale. [Fonte: raw/pillitteri/pillitteri20261027-lenovo-ai-host-p7-125b-locale.md]
+- **2026-10-24** — Mostra in anteprima alla conferenza CSDN 1024 Programmers' Day l'AI Host P7 e apre un programma di accesso anticipato, senza prezzo né data di vendita: il dispositivo è presentato come "Token Hub" personale che sposta l'inferenza su una macchina locale.
 
 ## Collegamenti
 

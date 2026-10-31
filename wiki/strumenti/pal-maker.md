@@ -1,11 +1,10 @@
-﻿---
+---
 title: "PAL Maker"
 category: strumento
 tags: [agent, no-code, tavus]
 related_puntate: [20260730]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260730.md]
 ---
 
 # PAL Maker
@@ -24,7 +23,7 @@ Strumento no-code di Tavus per creare PAL: applicazioni che vedono, ascoltano, a
 
 ## Timeline delle notizie
 
-- **2026-07-30** — Tavus ha lanciato PAL Maker, il primo strumento no-code per creare un PAL: applicazioni che vedono, ascoltano, agiscono, ricordano ed emotivamente comprendono le persone. Si costruiva descrivendo cosa si vuole. [Fonte: raw/puntate/ainews20260730.md]
+- **2026-07-30** — Tavus ha lanciato PAL Maker, il primo strumento no-code per creare un PAL: applicazioni che vedono, ascoltano, agiscono, ricordano ed emotivamente comprendono le persone. Si costruiva descrivendo cosa si vuole.
 
 ## Collegamenti
 

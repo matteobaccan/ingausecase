@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Apodex 1.5"
 category: modello
 tags: [agent, agentic, open-source, reasoning]
 related_puntate: [20260825]
 created: 2026-08-25
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260825.md]
 ---
 
 # Apodex 1.5
@@ -20,7 +19,7 @@ Modello per agentic intelligence su lavoro complesso, con team di agenti asincro
 
 ## Timeline delle notizie
 
-- **2026-08-25** — Apodex 1.5 è un modello per agentic intelligence su lavoro complesso; include Asynchronous Agent Team (decomposizione task, coordinazione in parallelo, integrazione dei risultati). Open source, con FrontierAgent come workbench di research deployabile in locale. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-25** — Apodex 1.5 è un modello per agentic intelligence su lavoro complesso; include Asynchronous Agent Team (decomposizione task, coordinazione in parallelo, integrazione dei risultati). Open source, con FrontierAgent come workbench di research deployabile in locale.
 
 ## Collegamenti
 

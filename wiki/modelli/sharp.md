@@ -1,18 +1,17 @@
-﻿---
+---
 title: "SHARP"
 category: modello
 tags: [3d, apple, gaussian-splatting, open-source, ricerca]
 related_puntate: []
 created: 2026-09-16
 updated: 2026-09-16
-sources: [raw/pillitteri/pillitteri20260609-apple-maps-3d-gaussian-splatting-wwdc-2026.md]
 ---
 
 # SHARP
 
 ## Introduzione
 
-Modello di sintesi di viste pubblicato in open source da [[apple]] a dicembre 2025: trasforma una singola fotografia in una scena tridimensionale. Il codice sta nel repository `apple/ml-sharp` su GitHub, che al giugno 2026 aveva raccolto circa 8.483 stelle, con il paper su arXiv. [Fonte: raw/pillitteri/pillitteri20260609-apple-maps-3d-gaussian-splatting-wwdc-2026.md]
+Modello di sintesi di viste pubblicato in open source da [[apple]] a dicembre 2025: trasforma una singola fotografia in una scena tridimensionale. Il codice sta nel repository `apple/ml-sharp` su GitHub, che al giugno 2026 aveva raccolto circa 8.483 stelle, con il paper su arXiv.
 
 ## Capacità e performance
 
@@ -36,7 +35,7 @@ python demo.py --image street.jpg --out scene.ply
 
 ## Timeline delle notizie
 
-- **2026-06-09** — Il modello viene citato come prova dell'investimento di Apple sul 3D Gaussian Splatting, nello stesso giorno in cui l'azienda annuncia il passaggio del Flyover di Apple Maps a quella tecnica di rendering: SHARP è pubblico dalla fine del 2025, con paper su arXiv e circa 8.483 stelle su GitHub. [Fonte: raw/pillitteri/pillitteri20260609-apple-maps-3d-gaussian-splatting-wwdc-2026.md]
+- **2026-06-09** — Il modello viene citato come prova dell'investimento di Apple sul 3D Gaussian Splatting, nello stesso giorno in cui l'azienda annuncia il passaggio del Flyover di Apple Maps a quella tecnica di rendering: SHARP è pubblico dalla fine del 2025, con paper su arXiv e circa 8.483 stelle su GitHub.
 
 ## Collegamenti
 

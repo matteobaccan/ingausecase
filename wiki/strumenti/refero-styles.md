@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Refero Styles"
 category: strumento
 tags: [design, open-source, ui]
 related_puntate: [20260621]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260621.md]
 ---
 
 # Refero Styles
@@ -20,7 +19,7 @@ Libreria con oltre duemila sistemi di design pronti e leggibili dagli AI in form
 
 ## Timeline delle notizie
 
-- **2026-06-21** — Refero Styles è una libreria con oltre duemila sistemi di design già pronti e leggibili dagli AI: palette colori, scale tipografiche e pattern di spaziatura estratti da prodotti reali come Stripe, Linear e Vercel, in formato DESIGN punto MD compatibile con Claude Code e Cursor. [Fonte: raw/puntate/ainews20260621.md]
+- **2026-06-21** — Refero Styles è una libreria con oltre duemila sistemi di design già pronti e leggibili dagli AI: palette colori, scale tipografiche e pattern di spaziatura estratti da prodotti reali come Stripe, Linear e Vercel, in formato DESIGN punto MD compatibile con Claude Code e Cursor.
 
 ## Collegamenti
 

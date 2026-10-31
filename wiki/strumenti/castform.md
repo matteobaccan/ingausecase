@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Castform"
 category: strumento
 tags: [fine-tuning, gpu, open-source, training]
 related_puntate: [20260612]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260612.md]
 ---
 
 # Castform
@@ -20,7 +19,7 @@ Semplifica il training di modelli custom: carichi trace di agenti o dataset, ges
 
 ## Timeline delle notizie
 
-- **2026-06-12** — Castform semplifica il training di modelli custom: carichi trace di agenti o dataset raw, gestisce le GPU, sceglie gli algoritmi e fornisce un IDE per monitorare l'addestramento; open preview attivo. [Fonte: raw/puntate/ainews20260612.md]
+- **2026-06-12** — Castform semplifica il training di modelli custom: carichi trace di agenti o dataset raw, gestisce le GPU, sceglie gli algoritmi e fornisce un IDE per monitorare l'addestramento; open preview attivo.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "VISTA"
 category: strumento
 tags: [agent, harness, ragionamento, vlm]
 related_puntate: [20260807]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260807.md]
 ---
 
 # VISTA
@@ -24,7 +23,7 @@ Harness visuale per modelli VLM che abilita ragionamento a lungo orizzonte in mo
 
 ## Timeline delle notizie
 
-- **2026-08-07** — VISTA e' un harness visuale per modelli VLM che permette ragionamento a lungo orizzonte in mondi interattivi: con Claude Opus cinque punto zero raggiunge il cento percento su ARC-AGI-tre, risolvendo perfettamente tutti i venticinque giochi pubblici. [Fonte: raw/puntate/ainews20260807.md]
+- **2026-08-07** — VISTA e' un harness visuale per modelli VLM che permette ragionamento a lungo orizzonte in mondi interattivi: con Claude Opus cinque punto zero raggiunge il cento percento su ARC-AGI-tre, risolvendo perfettamente tutti i venticinque giochi pubblici.
 
 ## Collegamenti
 

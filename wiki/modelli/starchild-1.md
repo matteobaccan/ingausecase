@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Starchild-1"
 category: modello
 tags: [multimodale, odyssey, realtime, world-model]
 related_puntate: [20260519]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260519.md]
 ---
 
 # Starchild-1
@@ -24,7 +23,7 @@ Primo world model multimodale realtime di Odyssey, che genera visuale e audio de
 
 ## Timeline delle notizie
 
-- **2026-05-19** — Starchild-1 di Odyssey è il primo world model multimodale realtime: genera sia visuale che audio del mondo simulato in tempo reale. [Fonte: raw/puntate/ainews20260519.md]
+- **2026-05-19** — Starchild-1 di Odyssey è il primo world model multimodale realtime: genera sia visuale che audio del mondo simulato in tempo reale.
 
 ## Collegamenti
 

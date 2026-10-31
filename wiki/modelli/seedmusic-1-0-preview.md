@@ -1,11 +1,10 @@
-﻿---
+---
 title: "SeedMusic 1.0 Preview"
 category: modello
 tags: [bytedance, generativo, musica]
 related_puntate: [20260625]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260625.md]
 ---
 
 # SeedMusic 1.0 Preview
@@ -24,7 +23,7 @@ Modello di ByteDance che genera canzoni complete da prompt testuale in due-tre m
 
 ## Timeline delle notizie
 
-- **2026-06-25** — SeedMusic 1.0 Preview di ByteDance genera canzoni complete da un prompt testuale: una descrizione in linguaggio naturale produce una traccia finita in due-tre minuti e il modello gestisce fusioni di generi musicali diversi. [Fonte: raw/puntate/ainews20260625.md]
+- **2026-06-25** — SeedMusic 1.0 Preview di ByteDance genera canzoni complete da un prompt testuale: una descrizione in linguaggio naturale produce una traccia finita in due-tre minuti e il modello gestisce fusioni di generi musicali diversi.
 
 ## Collegamenti
 

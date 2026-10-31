@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Macaw 2.7B"
 category: modello
 tags: [llm, locale, macos, open-weight]
 related_puntate: [20260806]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260806.md]
 ---
 
 # Macaw 2.7B
@@ -24,7 +23,7 @@ Modello locale da due virgola sette miliardi di parametri di Bad Theory Labs, pe
 
 ## Timeline delle notizie
 
-- **2026-08-06** — Macaw 2.7B pesa uno virgola cinque GB, gira su Mac base senza internet e usa novantasette tool macOS nativi, tutto locale. [Fonte: raw/puntate/ainews20260806.md]
+- **2026-08-06** — Macaw 2.7B pesa uno virgola cinque GB, gira su Mac base senza internet e usa novantasette tool macOS nativi, tutto locale.
 
 ## Collegamenti
 

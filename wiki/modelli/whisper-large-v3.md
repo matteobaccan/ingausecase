@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Whisper Large v3"
 category: modello
 tags: [asr, openai]
 related_puntate: [20260623]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260623.md]
 ---
 
 # Whisper Large v3
@@ -24,7 +23,7 @@ Modello di riconoscimento vocale di OpenAI, usato da Violin per la trascrizione.
 
 ## Timeline delle notizie
 
-- **2026-06-23** — Whisper Large v3 è il modello di riconoscimento vocale usato da Violin per il doppiaggio automatico video in trentatré lingue. [Fonte: raw/puntate/ainews20260623.md]
+- **2026-06-23** — Whisper Large v3 è il modello di riconoscimento vocale usato da Violin per il doppiaggio automatico video in trentatré lingue.
 
 ## Collegamenti
 

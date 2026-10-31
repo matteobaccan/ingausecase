@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MODUS"
 category: modello
 tags: [any-to-any, multimodale, open-source]
 related_puntate: [20260710]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260710.md]
 ---
 
 # MODUS
@@ -20,7 +19,7 @@ Modello open source decoder-only any-to-any: predice qualsiasi modalità da qual
 
 ## Timeline delle notizie
 
-- **2026-07-10** — È uscito MODUS, decoder-only any-to-any da quattordici a settantasette miliardi di parametri: predice qualsiasi modalità da qualsiasi altra senza head dedicati, open source. [Fonte: raw/puntate/ainews20260710.md]
+- **2026-07-10** — È uscito MODUS, decoder-only any-to-any da quattordici a settantasette miliardi di parametri: predice qualsiasi modalità da qualsiasi altra senza head dedicati, open source.
 
 ## Collegamenti
 

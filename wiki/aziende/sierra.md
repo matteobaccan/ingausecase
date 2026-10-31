@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Sierra"
 category: azienda
 tags: [agenti, customer-service, usa, standard]
 related_puntate: [20261007]
 created: 2026-10-07
 updated: 2026-10-07
-sources: [raw/puntate/ainews20261007.md, raw/tldr/tldr20261007.md]
 ---
 
 # Sierra
@@ -16,11 +15,11 @@ Azienda statunitense di agenti AI per il servizio clienti, guidata da [[bret-tay
 
 ## Attivita'
 
-- Con Meta annuncia il Personal Agent Protocol, standard aperto per l'interazione tra agenti personali e aziende, al quale collaborano Genesys, Instinct, Rocket, Shopify, Stripe e Walmart. [Fonte: raw/puntate/ainews20261007.md]
+- Con Meta annuncia il Personal Agent Protocol, standard aperto per l'interazione tra agenti personali e aziende, al quale collaborano Genesys, Instinct, Rocket, Shopify, Stripe e Walmart.
 
 ## Timeline delle notizie
 
-- **2026-10-07** — Sierra, insieme a Meta, presenta il Personal Agent Protocol: uno standard aperto con cui gli agenti personali degli utenti interagiscono con siti, API e agenti aziendali, gestendo autenticazione e permessi. [Fonte: raw/puntate/ainews20261007.md] [Fonte: raw/tldr/tldr20261007.md]
+- **2026-10-07** — Sierra, insieme a Meta, presenta il Personal Agent Protocol: uno standard aperto con cui gli agenti personali degli utenti interagiscono con siti, API e agenti aziendali, gestendo autenticazione e permessi.
 
 ## Collegamenti
 

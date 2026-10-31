@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Strands Harness"
 category: strumento
 tags: [agent, aws, harness, open-source]
 related_puntate: [20260930]
 created: 2026-09-30
 updated: 2026-09-30
-sources: [raw/puntate/ainews20260930.md]
 ---
 
 # Strands Harness
@@ -16,7 +15,7 @@ Tool open source di [[aws]] per costruire agenti IA personalizzati, progettato p
 
 ## Funzionalità principali
 
-- Costruzione di agenti IA personalizzati senza dipendenza da un modello specifico: i modelli si sostituiscono liberamente. [Fonte: raw/puntate/ainews20260930.md]
+- Costruzione di agenti IA personalizzati senza dipendenza da un modello specifico: i modelli si sostituiscono liberamente.
 
 ## Azienda / Autore
 
@@ -24,7 +23,7 @@ Tool open source di [[aws]] per costruire agenti IA personalizzati, progettato p
 
 ## Timeline delle notizie
 
-- **2026-09-30** — AWS pubblica Strands Harness, tool open source per costruire agenti IA personalizzati indipendenti dal modello, pensato per la massima flessibilità di architettura. [Fonte: raw/puntate/ainews20260930.md]
+- **2026-09-30** — AWS pubblica Strands Harness, tool open source per costruire agenti IA personalizzati indipendenti dal modello, pensato per la massima flessibilità di architettura.
 
 ## Collegamenti
 

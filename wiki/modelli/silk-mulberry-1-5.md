@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Silk Mulberry 1.5"
 category: modello
 tags: [audio, efficienza, tts, voce]
 related_puntate: [20260708]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260708.md]
 ---
 
 # Silk Mulberry 1.5
@@ -20,7 +19,7 @@ Modello vocale con latenza end-to-end di 162 millisecondi: uguaglia ElevenLabs v
 
 ## Timeline delle notizie
 
-- **2026-07-08** — Modello vocale con latenza end-to-end di 162 millisecondi: uguaglia ElevenLabs v3 sul benchmark MOS essendo il 95% più economico. Non si sceglie una voce ma la si progetta (età, accento, tono, emozione). Cambio lingua a metà frase su oltre 20 lingue con accenti nativi. [Fonte: raw/puntate/ainews20260708.md]
+- **2026-07-08** — Modello vocale con latenza end-to-end di 162 millisecondi: uguaglia ElevenLabs v3 sul benchmark MOS essendo il 95% più economico. Non si sceglie una voce ma la si progetta (età, accento, tono, emozione). Cambio lingua a metà frase su oltre 20 lingue con accenti nativi.
 
 ## Collegamenti
 

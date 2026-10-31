@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Muse Charm"
 category: strumento
 tags: [meta, hardware, agent, muse, dispositivo]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/pillitteri/pillitteri20260925-meta-muse-charm-tamagotchi-ai-a-cosa-serve.md]
 ---
 
 # Muse Charm
@@ -27,7 +26,7 @@ Dispositivo tascabile di Meta da agganciare al portachiavi, mostrato da Mark Zuc
 
 ## Timeline delle notizie
 
-- **2026-09-25** — Meta Muse Charm è un dispositivo tascabile con schermo da circa 2 pollici, sensore di impronte e 5G proprio, che serve a parlare con Muse senza sbloccare il telefono; Zuckerberg lo ha mostrato il 23 settembre al Connect 2026 promettendolo per dicembre. Resta un prototipo, con componenti non definitivi e pochissimi esemplari costruiti, e prezzo, batteria e Paesi non annunciati. [Fonte: raw/pillitteri/pillitteri20260925-meta-muse-charm-tamagotchi-ai-a-cosa-serve.md]
+- **2026-09-25** — Meta Muse Charm è un dispositivo tascabile con schermo da circa 2 pollici, sensore di impronte e 5G proprio, che serve a parlare con Muse senza sbloccare il telefono; Zuckerberg lo ha mostrato il 23 settembre al Connect 2026 promettendolo per dicembre. Resta un prototipo, con componenti non definitivi e pochissimi esemplari costruiti, e prezzo, batteria e Paesi non annunciati.
 
 ## Collegamenti
 

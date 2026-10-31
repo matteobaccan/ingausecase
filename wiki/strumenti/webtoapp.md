@@ -1,11 +1,10 @@
-﻿---
+---
 title: "WebToApp"
 category: strumento
 tags: [android, open-source, web]
 related_puntate: [20260624]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260624.md]
 ---
 
 # WebToApp
@@ -20,7 +19,7 @@ Strumento che converte progetti web in APK Android direttamente da smartphone, c
 
 ## Timeline delle notizie
 
-- **2026-06-24** — WebToApp converte progetti web in APK Android direttamente da smartphone: server runtime locale per Node, PHP, Python, Go e WordPress, build e signing on-device, nessun server esterno. [Fonte: raw/puntate/ainews20260624.md]
+- **2026-06-24** — WebToApp converte progetti web in APK Android direttamente da smartphone: server runtime locale per Node, PHP, Python, Go e WordPress, build e signing on-device, nessun server esterno.
 
 ## Collegamenti
 

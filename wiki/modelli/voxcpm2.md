@@ -1,11 +1,10 @@
-﻿---
+---
 title: "VoxCPM2"
 category: modello
 tags: [48khz, apache, audio, open-source, open-weight, t2s, tts, voce, voice, voice-cloning]
 related_puntate: [20260530, 20260531, 20260607, 20260611, 20260615, 20261012]
 created: 2026-08-12
 updated: 2026-10-12
-sources: [raw/puntate/ainews20260530.md, raw/puntate/ainews20260531.md, raw/puntate/ainews20260607.md, raw/puntate/ainews20260611.md, raw/puntate/ainews20260615.md, raw/puntate/ainews20261012.md]
 ---
 
 # VoxCPM2
@@ -30,12 +29,12 @@ Modello TTS (20000 stelle) senza audio di riferimento: genera la voce descritta 
 
 ## Timeline delle notizie
 
-- **2026-05-30** — VoxCPM2 ha 20000 stelle su GitHub: sintesi vocale senza riferimento audio (gli dici cosa vuoi e genera la voce giusta, oppure da un clip copia tono, emozione e ritmo), accuratezza al 99%, anche voci cantate. [Fonte: raw/puntate/ainews20260530.md]
-- **2026-05-31** — VoxCPM2 è esploso a 20000 stelle: sintesi vocale senza audio di riferimento (descrivi la voce e la genera, oppure da un clip copia tono, emozione e ritmo), accuratezza al 99%, anche voci cantate, qualità studio a 48 kilohertz e licenza Apache 2.0. [Fonte: raw/puntate/ainews20260531.md]
-- **2026-06-07** — VoxCPM2 ha due miliardi di parametri, genera a quarantotto kilohertz in trenta lingue ed è tra i nuovi modelli di mlx-audio 0.4.4 per Apple Silicon. [Fonte: raw/puntate/ainews20260607.md]
-- **2026-06-11** — VoxCPM2 offre voice generation e cloning open source: clonazione da campione audio breve, generazione del carattere vocale da descrizione testuale e supporto multilingue. [Fonte: raw/puntate/ainews20260611.md]
-- **2026-06-15** — Clona qualsiasi voce con tre secondi di audio in trenta lingue a qualità studio 48 kHz; la voce si può descrivere da testo (es. 'voce maschile grave da locutor radiofonico') e il sistema la genera: niente API a pagamento, tutto locale, gratis e open source, contro i ventidue dollari al mese di ElevenLabs. [Fonte: raw/puntate/ainews20260615.md]
-- **2026-10-12** — VoxCPM2 raggiunge 38.000 stelle su GitHub in pochi giorni: genera voci descrivendo il tono desiderato, clona speaker da registrazioni brevi mantenendo cadenza e velocità e produce audio a 48 kHz. [Fonte: raw/puntate/ainews20261012.md]
+- **2026-05-30** — VoxCPM2 ha 20000 stelle su GitHub: sintesi vocale senza riferimento audio (gli dici cosa vuoi e genera la voce giusta, oppure da un clip copia tono, emozione e ritmo), accuratezza al 99%, anche voci cantate.
+- **2026-05-31** — VoxCPM2 è esploso a 20000 stelle: sintesi vocale senza audio di riferimento (descrivi la voce e la genera, oppure da un clip copia tono, emozione e ritmo), accuratezza al 99%, anche voci cantate, qualità studio a 48 kilohertz e licenza Apache 2.0.
+- **2026-06-07** — VoxCPM2 ha due miliardi di parametri, genera a quarantotto kilohertz in trenta lingue ed è tra i nuovi modelli di mlx-audio 0.4.4 per Apple Silicon.
+- **2026-06-11** — VoxCPM2 offre voice generation e cloning open source: clonazione da campione audio breve, generazione del carattere vocale da descrizione testuale e supporto multilingue.
+- **2026-06-15** — Clona qualsiasi voce con tre secondi di audio in trenta lingue a qualità studio 48 kHz; la voce si può descrivere da testo (es. 'voce maschile grave da locutor radiofonico') e il sistema la genera: niente API a pagamento, tutto locale, gratis e open source, contro i ventidue dollari al mese di ElevenLabs.
+- **2026-10-12** — VoxCPM2 raggiunge 38.000 stelle su GitHub in pochi giorni: genera voci descrivendo il tono desiderato, clona speaker da registrazioni brevi mantenendo cadenza e velocità e produce audio a 48 kHz.
 
 
 

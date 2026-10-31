@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Martian Ship"
 category: strumento
 tags: [api, costi, llm-routing]
 related_puntate: [20260722]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260722.md]
 ---
 
 # Martian Ship
@@ -28,7 +27,7 @@ Endpoint di routing LLM che riduce del cinquanta percento garantito i costi di m
 
 ## Timeline delle notizie
 
-- **2026-07-22** — Endpoint che riduceva del cinquanta percento garantito i costi di Opus e GPT-5.6 Sol, con Quality SLA incluso. [Fonte: raw/puntate/ainews20260722.md]
+- **2026-07-22** — Endpoint che riduceva del cinquanta percento garantito i costi di Opus e GPT-5.6 Sol, con Quality SLA incluso.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Blender MCP"
 category: strumento
 tags: [3d, blender, mcp, open-source]
 related_puntate: [20260803]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260803.md]
 ---
 
 # Blender MCP
@@ -24,7 +23,7 @@ Server MCP che collega modelli IA al software di modellazione 3D Blender, permet
 
 ## Timeline delle notizie
 
-- **2026-08-03** — Blender MCP collegato a Kimi K3 trasforma descrizioni in linguaggio naturale in scene tridimensionali complete: terreno, edifici, illuminazione, animazioni e script Python, tutto editabile. [Fonte: raw/puntate/ainews20260803.md]
+- **2026-08-03** — Blender MCP collegato a Kimi K3 trasforma descrizioni in linguaggio naturale in scene tridimensionali complete: terreno, edifici, illuminazione, animazioni e script Python, tutto editabile.
 
 ## Collegamenti
 

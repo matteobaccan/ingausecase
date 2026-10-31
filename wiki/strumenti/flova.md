@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Flova"
 category: strumento
 tags: [agent, generativo, video, video-ai]
 related_puntate: [20260826]
 created: 2026-08-26
 updated: 2026-08-26
-sources: [raw/puntate/ainews20260826.md]
 ---
 
 # Flova
@@ -26,7 +25,7 @@ Strumento agentico di produzione video: trasforma un'idea in un video completo e
 
 ## Timeline delle notizie
 
-- **2026-08-26** — Flova trasforma un'idea in un video completo e modificabile: si definisce lo stile, l'agente crea script e storyboard, si genera con i modelli giusti e si corregge con un commento; MiniMax H3 gestisce le scene live action e Seedance porta tutto in animato. [Fonte: raw/puntate/ainews20260826.md]
+- **2026-08-26** — Flova trasforma un'idea in un video completo e modificabile: si definisce lo stile, l'agente crea script e storyboard, si genera con i modelli giusti e si corregge con un commento; MiniMax H3 gestisce le scene live action e Seedance porta tutto in animato.
 
 ## Collegamenti
 

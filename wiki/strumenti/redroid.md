@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Redroid"
 category: strumento
 tags: [android, container, open-source]
 related_puntate: [20260622]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260622.md]
 ---
 
 # Redroid
@@ -20,7 +19,7 @@ Strumento open source che esegue un telefono Android completo dentro un containe
 
 ## Timeline delle notizie
 
-- **2026-06-22** — Redroid è uno strumento open source che esegue un telefono Android completo dentro un container Docker, cento percento open source. [Fonte: raw/puntate/ainews20260622.md]
+- **2026-06-22** — Redroid è uno strumento open source che esegue un telefono Android completo dentro un container Docker, cento percento open source.
 
 ## Collegamenti
 

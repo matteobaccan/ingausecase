@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Embed 5"
 category: modello
 tags: [embedding, retrieval, cohere]
 related_puntate: [20260930]
 created: 2026-09-30
 updated: 2026-09-30
-sources: [raw/tldr/tldr20260930.md]
 ---
 
 # Embed 5
@@ -16,7 +15,7 @@ Famiglia di modelli di embedding di [[cohere]], evoluzione di Embed 4 annunciata
 
 ## Performance
 
-- Guadagni maggiori rispetto a Embed 4 su documenti ricchi di elementi visivi, bilanci finanziari, PDF analizzati, codice e retrieval multilingue. [Fonte: raw/tldr/tldr20260930.md]
+- Guadagni maggiori rispetto a Embed 4 su documenti ricchi di elementi visivi, bilanci finanziari, PDF analizzati, codice e retrieval multilingue.
 
 ## Azienda di riferimento
 
@@ -24,7 +23,7 @@ Famiglia di modelli di embedding di [[cohere]], evoluzione di Embed 4 annunciata
 
 ## Timeline delle notizie
 
-- **2026-09-30** — Cohere annuncia Embed 5 con guadagni maggiori rispetto a Embed 4 su documenti visivamente ricchi, bilanci, PDF, codice e retrieval multilingue. [Fonte: raw/tldr/tldr20260930.md]
+- **2026-09-30** — Cohere annuncia Embed 5 con guadagni maggiori rispetto a Embed 4 su documenti visivamente ricchi, bilanci, PDF, codice e retrieval multilingue.
 
 ## Collegamenti
 

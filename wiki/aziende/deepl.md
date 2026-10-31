@@ -1,11 +1,10 @@
-﻿---
+---
 title: "DeepL"
 category: azienda
 tags: [europa, germania, traduzione, scrittura]
 related_puntate: []
 created: 2026-10-06
 updated: 2026-10-06
-sources: [raw/pillitteri/pillitteri20260625-migliori-ai-europee-2026.md]
 ---
 
 # DeepL
@@ -20,7 +19,7 @@ Azienda tedesca con sede a Colonia, attiva nella traduzione automatica, dove man
 
 ## Timeline delle notizie
 
-- **2026-06-25** — Nel quadro delle migliori AI europee del 2026 DeepL resta lo standard professionale della traduzione automatica, con una resa delle sfumature difficile da eguagliare. L'azienda ha esteso il suo raggio con DeepL Write, lo strumento che corregge e migliora tono, stile e grammatica di un testo. [Fonte: raw/pillitteri/pillitteri20260625-migliori-ai-europee-2026.md]
+- **2026-06-25** — Nel quadro delle migliori AI europee del 2026 DeepL resta lo standard professionale della traduzione automatica, con una resa delle sfumature difficile da eguagliare. L'azienda ha esteso il suo raggio con DeepL Write, lo strumento che corregge e migliora tono, stile e grammatica di un testo.
 
 ## Collegamenti
 

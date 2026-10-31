@@ -1,11 +1,10 @@
-﻿---
+---
 title: "YikeAI"
 category: strumento
 tags: [alibaba, automazione, piattaforma, video]
 related_puntate: [20260525]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260525.md]
 ---
 
 # YikeAI
@@ -30,7 +29,7 @@ Piattaforma di Alibaba Cloud per video AI che integra HappyHorse, Wan e Qwen-ima
 
 ## Timeline delle notizie
 
-- **2026-05-25** — YikeAI di Alibaba Cloud è una piattaforma completa per video AI che integra HappyHorse, Wan e Qwen-image: da tema a video finito con sceneggiatura automatica, personaggi coerenti, storyboard con movimenti camera, sintesi video, doppiaggio, musica e sottotitoli, tutto in pochi minuti, in qualità cinema verticale. [Fonte: raw/puntate/ainews20260525.md]
+- **2026-05-25** — YikeAI di Alibaba Cloud è una piattaforma completa per video AI che integra HappyHorse, Wan e Qwen-image: da tema a video finito con sceneggiatura automatica, personaggi coerenti, storyboard con movimenti camera, sintesi video, doppiaggio, musica e sottotitoli, tutto in pochi minuti, in qualità cinema verticale.
 
 ## Collegamenti
 

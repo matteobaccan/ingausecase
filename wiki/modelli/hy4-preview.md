@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Hy4 Preview"
 category: modello
 tags: [agent, coding, llm, open-weight, swe-bench]
 related_puntate: [20260830]
 created: 2026-08-30
 updated: 2026-08-30
-sources: [raw/puntate/ainews20260830.md]
 ---
 
 # Hy4 Preview
@@ -16,7 +15,7 @@ Modello di coding del team Hy4, con accesso gratuito per due settimane. Posizion
 
 ## Capacità e performance
 
-- Hy4 Preview offre accesso gratuito per due settimane: sevencentosettanta miliardi di parametri, quarantanove attivi, un milione di token di contesto. Su SWE-Bench multi raggiunge l'ottantadue punto nove percento, alla pari con Claude Opus 5. [Fonte: raw/puntate/ainews20260830.md]
+- Hy4 Preview offre accesso gratuito per due settimane: sevencentosettanta miliardi di parametri, quarantanove attivi, un milione di token di contesto. Su SWE-Bench multi raggiunge l'ottantadue punto nove percento, alla pari con Claude Opus 5.
 
 ## Azienda di riferimento
 
@@ -24,7 +23,7 @@ Modello di coding del team Hy4, con accesso gratuito per due settimane. Posizion
 
 ## Timeline delle notizie
 
-- **2026-08-30** — Il team di Hy4 Preview offre accesso gratuito per due settimane: sevencentosettanta miliardi di parametri, quarantanove attivi, un milione di token di contesto. Su SWE-Bench multi raggiunge l'ottantadue punto nove percento, alla pari con Claude Opus 5. [Fonte: raw/puntate/ainews20260830.md]
+- **2026-08-30** — Il team di Hy4 Preview offre accesso gratuito per due settimane: sevencentosettanta miliardi di parametri, quarantanove attivi, un milione di token di contesto. Su SWE-Bench multi raggiunge l'ottantadue punto nove percento, alla pari con Claude Opus 5.
 
 ## Collegamenti
 

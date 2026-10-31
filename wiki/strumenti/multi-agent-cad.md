@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Multi-Agent CAD"
 category: strumento
 tags: [3d, agent, cad, open-source]
 related_puntate: [20260807]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260807.md]
 ---
 
 # Multi-Agent CAD
@@ -20,7 +19,7 @@ Sistema CAD open source multi-agente che genera asset 3D a circa zero virgola qu
 
 ## Timeline delle notizie
 
-- **2026-08-07** — Multi-Agent CAD open source genera asset 3D a circa zero virgola quindici dollari ciascuno, un tredicesimo del costo di CAD Skills, con inferenza piu' veloce e maggiore accuratezza. [Fonte: raw/puntate/ainews20260807.md]
+- **2026-08-07** — Multi-Agent CAD open source genera asset 3D a circa zero virgola quindici dollari ciascuno, un tredicesimo del costo di CAD Skills, con inferenza piu' veloce e maggiore accuratezza.
 
 ## Collegamenti
 

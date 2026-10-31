@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Frontis-MA1"
 category: modello
 tags: [35b, llm, self-evolution]
 related_puntate: [20260812]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260812.md]
 ---
 
 # Frontis-MA1
@@ -24,7 +23,7 @@ Modello da trentacinque miliardi di parametri incluso nel progetto OpenRSI per l
 
 ## Timeline delle notizie
 
-- **2026-08-12** — Frontis-MA1 e' il modello 35B incluso nel progetto open source OpenRSI per l'agent self-evolution. [Fonte: raw/puntate/ainews20260812.md]
+- **2026-08-12** — Frontis-MA1 e' il modello 35B incluso nel progetto open source OpenRSI per l'agent self-evolution.
 
 ## Collegamenti
 

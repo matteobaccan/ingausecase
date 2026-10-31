@@ -1,11 +1,10 @@
-﻿---
+---
 title: "NVIDIA TAO 7"
 category: strumento
 tags: [auto-ml, fine-tuning, nvidia, vision]
 related_puntate: [20260701]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260701.md]
 ---
 
 # NVIDIA TAO 7
@@ -24,7 +23,7 @@ Piattaforma NVIDIA TAO versione 7 per il fine-tuning di modelli visione e VLM vi
 
 ## Timeline delle notizie
 
-- **2026-07-01** — Permette agli agenti di codice di gestire il fine-tuning dei modelli tramite prompt in linguaggio naturale. AutoML guidato da LLM trova configurazioni ottimali fino a due volte più veloce. Supporta qualsiasi modello CV o VLM da Hugging Face su GPU NVIDIA locali. [Fonte: raw/puntate/ainews20260701.md]
+- **2026-07-01** — Permette agli agenti di codice di gestire il fine-tuning dei modelli tramite prompt in linguaggio naturale. AutoML guidato da LLM trova configurazioni ottimali fino a due volte più veloce. Supporta qualsiasi modello CV o VLM da Hugging Face su GPU NVIDIA locali.
 
 ## Collegamenti
 

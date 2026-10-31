@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Galacean Effects"
 category: strumento
 tags: [3d, ant-group, particelle, web]
 related_puntate: [20260704]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260704.md]
 ---
 
 # Galacean Effects
@@ -20,7 +19,7 @@ Sistema di Ant Group per effetti particellari su web, H5 e WeChat mini-program: 
 
 ## Timeline delle notizie
 
-- **2026-07-04** — Sistema di effetti particellari di Ant Group per web, H5 e WeChat mini-program: rendering elettrico-tridimensionale con editor visuale integrato, 60 FPS anche su dispositivi low-end e supporto gesti nativi. [Fonte: raw/puntate/ainews20260704.md]
+- **2026-07-04** — Sistema di effetti particellari di Ant Group per web, H5 e WeChat mini-program: rendering elettrico-tridimensionale con editor visuale integrato, 60 FPS anche su dispositivi low-end e supporto gesti nativi.
 
 ## Collegamenti
 

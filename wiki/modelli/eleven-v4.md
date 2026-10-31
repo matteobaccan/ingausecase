@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Eleven v4"
 category: modello
 tags: [audio, elevenlabs, latenza, realtime, voce]
 related_puntate: [20260929]
 created: 2026-09-29
 updated: 2026-09-29
-sources: [raw/puntate/ainews20260929.md, raw/tldr/tldr20260929.md]
 ---
 
 # Eleven v4
@@ -16,8 +15,8 @@ Modello vocale di [[elevenlabs]] presentato il 29 settembre 2026, con la variant
 
 ## Capacità e performance
 
-- Eleven v4 e Eleven v4 Turbo sono descritti come i modelli vocali più veloci ed emotivi mai rilasciati dall'azienda, e Artificial Analysis li classifica al primo posto. [Fonte: raw/puntate/ainews20260929.md]
-- Si adatta al contesto della conversazione per produrre dialogo naturale e interazioni fra personaggi, mentre Eleven v4 Turbo porta la stessa tecnologia sugli usi a bassa latenza con una latenza di inferenza mediana di circa cento millisecondi. [Fonte: raw/tldr/tldr20260929.md]
+- Eleven v4 e Eleven v4 Turbo sono descritti come i modelli vocali più veloci ed emotivi mai rilasciati dall'azienda, e Artificial Analysis li classifica al primo posto.
+- Si adatta al contesto della conversazione per produrre dialogo naturale e interazioni fra personaggi, mentre Eleven v4 Turbo porta la stessa tecnologia sugli usi a bassa latenza con una latenza di inferenza mediana di circa cento millisecondi.
 
 ## Azienda di riferimento
 
@@ -25,7 +24,7 @@ Modello vocale di [[elevenlabs]] presentato il 29 settembre 2026, con la variant
 
 ## Timeline delle notizie
 
-- **2026-09-29** — ElevenLabs rilascia Eleven v4 e Eleven v4 Turbo, i modelli vocali più veloci ed emotivi mai pubblicati dall'azienda, che Artificial Analysis classifica al primo posto. [Fonte: raw/puntate/ainews20260929.md] Eleven v4 interpreta tono, ritmo, emozione e contesto mantenendo l'identità del parlante, mentre Turbo porta la stessa tecnologia sugli usi a bassa latenza con una latenza di inferenza mediana di circa cento millisecondi. [Fonte: raw/tldr/tldr20260929.md]
+- **2026-09-29** — ElevenLabs rilascia Eleven v4 e Eleven v4 Turbo, i modelli vocali più veloci ed emotivi mai pubblicati dall'azienda, che Artificial Analysis classifica al primo posto. Eleven v4 interpreta tono, ritmo, emozione e contesto mantenendo l'identità del parlante, mentre Turbo porta la stessa tecnologia sugli usi a bassa latenza con una latenza di inferenza mediana di circa cento millisecondi.
 
 ## Collegamenti
 

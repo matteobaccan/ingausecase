@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Tesana"
 category: azienda
 tags: [tesana, agent, demo, gaming, generazione, sandbox, startup]
 related_puntate: [20260708, 20260803]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260708.md, raw/puntate/ainews20260803.md]
 ---
 
 # Tesana
@@ -20,8 +19,8 @@ Piattaforma in cui sono stati costruiti demo virali di giochi generati da modell
 
 ## Timeline delle notizie
 
-- **2026-07-08** — Si descrive il gioco desiderato, si preme un pulsante e in pochi minuti si ottiene un videogioco completo: mondo ricco, animazioni fluide, grafica di livello AAA e supporto multiplayer. Quello che prima richiedeva anni a uno studio ora richiede minuti. [Fonte: raw/puntate/ainews20260708.md]
-- **2026-08-03** — Su Tesana, Claude Opus 5 ha costruito con un prompt un clone di No Man's Sky con migliaia di mondi unici, specie aliene, pianeti esplorabili e base building. [Fonte: raw/puntate/ainews20260803.md]
+- **2026-07-08** — Si descrive il gioco desiderato, si preme un pulsante e in pochi minuti si ottiene un videogioco completo: mondo ricco, animazioni fluide, grafica di livello AAA e supporto multiplayer. Quello che prima richiedeva anni a uno studio ora richiede minuti.
+- **2026-08-03** — Su Tesana, Claude Opus 5 ha costruito con un prompt un clone di No Man's Sky con migliaia di mondi unici, specie aliene, pianeti esplorabili e base building.
 
 ## Collegamenti
 

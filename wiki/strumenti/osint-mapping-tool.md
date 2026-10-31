@@ -1,11 +1,10 @@
-﻿---
+---
 title: "OSINT Mapping Tool"
 category: strumento
 tags: [browser, geolocalizzazione, osint, react]
 related_puntate: [20260611]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260611.md]
 ---
 
 # OSINT Mapping Tool
@@ -20,7 +19,7 @@ Organizza la ricerca OSINT nel browser con nodi collegati a geolocalizzazione, d
 
 ## Timeline delle notizie
 
-- **2026-06-11** — OSINT Mapping Tool organizza la ricerca intelligence open source nel browser: nodi per account social, telefoni e veicoli collegati a geolocalizzazione, con Google Maps e OpenStreetMap; dati salvati in JSON locale, React 18 più Vite, nessun upload. [Fonte: raw/puntate/ainews20260611.md]
+- **2026-06-11** — OSINT Mapping Tool organizza la ricerca intelligence open source nel browser: nodi per account social, telefoni e veicoli collegati a geolocalizzazione, con Google Maps e OpenStreetMap; dati salvati in JSON locale, React 18 più Vite, nessun upload.
 
 ## Collegamenti
 

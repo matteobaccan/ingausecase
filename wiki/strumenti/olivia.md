@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Olivia"
 category: strumento
 tags: [character-ai, cina, companion]
 related_puntate: [20260715]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260715.md]
 ---
 
 # Olivia
@@ -24,7 +23,7 @@ Companion IA desktop di Mihoyo con personalità definita e worldbuilding, debutt
 
 ## Timeline delle notizie
 
-- **2026-07-15** — Olivia di Mihoyo è una companion IA desktop che suona pianoforte e scambia lettere: centomila download il primo giorno, debutto su Bilibili come pianista virtuale, approccio character-first con personalità definita e worldbuilding. [Fonte: raw/puntate/ainews20260715.md]
+- **2026-07-15** — Olivia di Mihoyo è una companion IA desktop che suona pianoforte e scambia lettere: centomila download il primo giorno, debutto su Bilibili come pianista virtuale, approccio character-first con personalità definita e worldbuilding.
 
 ## Collegamenti
 

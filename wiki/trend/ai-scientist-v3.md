@@ -4,7 +4,6 @@ tags: [ricerca-agente, automazione-scientifica, multi-agente]
 related_puntate: [20261016]
 created: 2026-10-16
 updated: 2026-10-16
-sources: [raw/puntate/ainews20261016.md]
 
 # The AI Scientist v3
 
@@ -21,7 +20,7 @@ The AI Scientist v3 è un sistema "agentic scientist" che orchestratore parallel
 - Creazione di diagrammi e figure scientifiche modificabili
 
 **Timeline:**
-- **2026-10-16** - The AI Scientist v3: sistema di ricerca agente con agenti paralleli [Fonte: raw/puntate/ainews20261016.md]
+- **2026-10-16** - The AI Scientist v3: sistema di ricerca agente con agenti paralleli
 
 **Collegamenti:**
 - Modelli di ricerca agente

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "LiTo"
 category: modello
 tags: [3d, apple, generazione, ricerca]
 related_puntate: [20260521]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260521.md]
 ---
 
 # LiTo
@@ -24,7 +23,7 @@ Generatore 3D di Apple che converte immagini RGB-D in surface light field compat
 
 ## Timeline delle notizie
 
-- **2026-05-21** — LiTo converte immagini RGB-D in surface light field compatto, ricrea highlight speculari sotto illuminazione complessa e genera oggetti 3D da singola immagine con materiali input-consistent. [Fonte: raw/puntate/ainews20260521.md]
+- **2026-05-21** — LiTo converte immagini RGB-D in surface light field compatto, ricrea highlight speculari sotto illuminazione complessa e genera oggetti 3D da singola immagine con materiali input-consistent.
 
 ## Collegamenti
 

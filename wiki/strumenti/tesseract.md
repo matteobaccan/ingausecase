@@ -1,22 +1,21 @@
-﻿---
+---
 title: "Tesseract"
 category: strumento
 tags: [agent, creazione, video]
 related_puntate: [20260923]
 created: 2026-09-23
 updated: 2026-09-25
-sources: [raw/puntate/ainews20260923.md, raw/controrumore/controrumore20260924-diario-ai-la-nuova-guerra-dei-modelli.md]
 ---
 
 # Tesseract
 
 ## Introduzione
 
-Suite creativa video di [[mirage]] costruita per gli agenti basati su [[gpt-6-astra]] e [[gpt-6-sol]], in cui l'agente accede direttamente al motore creativo invece di pilotare l'interfaccia. [Fonte: raw/puntate/ainews20260923.md]
+Suite creativa video di [[mirage]] costruita per gli agenti basati su [[gpt-6-astra]] e [[gpt-6-sol]], in cui l'agente accede direttamente al motore creativo invece di pilotare l'interfaccia.
 
 ## Funzionalità principali
 
-- Editing, motion e suono gestiti dall'agente, con revisioni e render richiesti in linguaggio naturale. [Fonte: raw/puntate/ainews20260923.md]
+- Editing, motion e suono gestiti dall'agente, con revisioni e render richiesti in linguaggio naturale.
 
 ## Azienda/autore
 
@@ -29,7 +28,7 @@ Suite creativa video di [[mirage]] costruita per gli agenti basati su [[gpt-6-as
 
 ## Timeline delle notizie
 
-- **2026-09-23** — Mirage rilascia Tesseract: gli agenti accedono direttamente al motore creativo, senza clic su software pensati per umani. [Fonte: raw/puntate/ainews20260923.md] Il motore è locale ed espone agli agenti strumenti nativi per montaggio video, motion graphics, compositing e audio, con i progetti che restano editabili a livello strutturato: l'output dell'agente non diventa un risultato finale opaco. [Fonte: raw/controrumore/controrumore20260924-diario-ai-la-nuova-guerra-dei-modelli.md]
+- **2026-09-23** — Mirage rilascia Tesseract: gli agenti accedono direttamente al motore creativo, senza clic su software pensati per umani. Il motore è locale ed espone agli agenti strumenti nativi per montaggio video, motion graphics, compositing e audio, con i progetti che restano editabili a livello strutturato: l'output dell'agente non diventa un risultato finale opaco.
 
 ## Collegamenti
 

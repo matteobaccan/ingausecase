@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Mnemosyne"
 category: strumento
 tags: [dashboard, memoria, visualizzazione]
 related_puntate: [20260610]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260610.md]
 ---
 
 # Mnemosyne
@@ -20,7 +19,7 @@ Dashboard per la memoria visuale degli agenti nell'ecosistema Hermes.
 
 ## Timeline delle notizie
 
-- **2026-06-10** — Mnemosyne è la dashboard di memoria visuale dell'ecosistema Hermes, insieme al plugin Graphiti per knowledge graph. [Fonte: raw/puntate/ainews20260610.md]
+- **2026-06-10** — Mnemosyne è la dashboard di memoria visuale dell'ecosistema Hermes, insieme al plugin Graphiti per knowledge graph.
 
 ## Collegamenti
 

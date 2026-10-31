@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Pliny"
 category: persona
 tags: [sicurezza, jailbreak, open-source]
 related_puntate: []
 created: 2026-10-07
 updated: 2026-10-07
-sources: [raw/pillitteri/pillitteri20260706-t3mp3st-pliny-sciame-ai-zero-day.md]
 ---
 
 # Pliny
@@ -16,7 +15,7 @@ Hacker noto per i suoi jailbreak dei modelli di intelligenza artificiale, tra cu
 
 ## Timeline delle notizie
 
-- **2026-07-06** — Pliny pubblica T3MP3ST, framework multi-agente in TypeScript con licenza AGPL-3.0 che trasforma un agente di coding già installato in una macchina di caccia ai bug; il progetto si distingue per l'Integrity Ledger, un registro pubblico delle contaminazioni e correzioni di metodo. [Fonte: raw/pillitteri/pillitteri20260706-t3mp3st-pliny-sciame-ai-zero-day.md]
+- **2026-07-06** — Pliny pubblica T3MP3ST, framework multi-agente in TypeScript con licenza AGPL-3.0 che trasforma un agente di coding già installato in una macchina di caccia ai bug; il progetto si distingue per l'Integrity Ledger, un registro pubblico delle contaminazioni e correzioni di metodo.
 
 ## Collegamenti
 

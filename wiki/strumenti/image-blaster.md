@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Image Blaster"
 category: strumento
 tags: [blender, 3d, world-models, github]
 related_puntate: [20261004]
 created: 2026-10-04
 updated: 2026-10-04
-sources: [raw/puntate/ainews20261004.md]
 ---
 
 # Image Blaster
@@ -21,7 +20,7 @@ Repository su GitHub che prende una foto e genera un mondo 3D esplorabile.
 
 ## Timeline delle notizie
 
-- **2026-10-04** — Image Blaster prende una foto e genera un mondo 3D esplorabile, mescolando mesh con fisiche, splat del fondo e audio ambiente. [Fonte: raw/puntate/ainews20261004.md]
+- **2026-10-04** — Image Blaster prende una foto e genera un mondo 3D esplorabile, mescolando mesh con fisiche, splat del fondo e audio ambiente.
 
 ## Collegamenti
 

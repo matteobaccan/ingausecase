@@ -1,11 +1,10 @@
-﻿---
+---
 title: "SANA-WM"
 category: modello
 tags: [generazione, open-source, video, world-model]
 related_puntate: [20260516]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260516.md]
 ---
 
 # SANA-WM
@@ -20,7 +19,7 @@ World model open source da 2,6 miliardi di parametri: una singola immagine più 
 
 ## Timeline delle notizie
 
-- **2026-05-16** — È uscito SANA-WM, world model open source da 2,6 miliardi di parametri: una singola immagine più testo più traiettoria camera 6-DoF generano 60 secondi di video a 720p, action-controllable, su una sola GPU, con minuti di mondo sintetico. [Fonte: raw/puntate/ainews20260516.md]
+- **2026-05-16** — È uscito SANA-WM, world model open source da 2,6 miliardi di parametri: una singola immagine più testo più traiettoria camera 6-DoF generano 60 secondi di video a 720p, action-controllable, su una sola GPU, con minuti di mondo sintetico.
 
 ## Collegamenti
 

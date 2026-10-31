@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Kök Börü"
 category: strumento
 tags: [animazione, film, open-source]
 related_puntate: [20260625]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260625.md]
 ---
 
 # Kök Börü
@@ -28,7 +27,7 @@ Primo film animato di Higgsfield con produzione ibrida (Seedance 2.0 4K + animaz
 
 ## Timeline delle notizie
 
-- **2026-06-25** — Kök Börü è il primo film animato di Higgsfield con produzione ibrida: combina Seedance 2.0 in 4K con tecniche di animazione tradizionale; tutti i keyframe e i prompt sono stati resi open source. [Fonte: raw/puntate/ainews20260625.md]
+- **2026-06-25** — Kök Börü è il primo film animato di Higgsfield con produzione ibrida: combina Seedance 2.0 in 4K con tecniche di animazione tradizionale; tutti i keyframe e i prompt sono stati resi open source.
 
 ## Collegamenti
 

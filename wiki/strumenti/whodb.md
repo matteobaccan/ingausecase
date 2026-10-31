@@ -1,11 +1,10 @@
-﻿---
+---
 title: "WhoDB"
 category: strumento
 tags: [database, llm, open-source, visualizzazione]
 related_puntate: [20260807]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260807.md]
 ---
 
 # WhoDB
@@ -20,7 +19,7 @@ Strumento open source per la visualizzazione di database con assistente LLM inte
 
 ## Timeline delle notizie
 
-- **2026-08-07** — WhoDB e' comparso su GitHub per la visualizzazione di database con assistente LLM integrato, tra i progetti interessanti della settimana. [Fonte: raw/puntate/ainews20260807.md]
+- **2026-08-07** — WhoDB e' comparso su GitHub per la visualizzazione di database con assistente LLM integrato, tra i progetti interessanti della settimana.
 
 ## Collegamenti
 

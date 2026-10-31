@@ -1,11 +1,10 @@
-﻿---
+---
 title: "E-Commerce Bench"
 category: strumento
 tags: [agent, benchmark, coding, lavoro-agente, qwen]
 related_puntate: [20260904]
 created: 2026-09-04
 updated: 2026-09-04
-sources: [raw/puntate/ainews20260904.md]
 ---
 
 # E-Commerce Bench
@@ -17,7 +16,7 @@ Benchmark lanciato da [[qwen]] per operazioni business autonome a lungo termine,
 ## Funzionalità principali
 
 - Gli agenti partono con centomila yuan per gestire negozi online per trecentosessantaquattro giorni.
-- Quasi nessun modello impara a comprare più economico. [Fonte: raw/puntate/ainews20260904.md]
+- Quasi nessun modello impara a comprare più economico.
 
 ## Azienda
 
@@ -25,7 +24,7 @@ Benchmark lanciato da [[qwen]] per operazioni business autonome a lungo termine,
 
 ## Timeline delle notizie
 
-- **2026-09-04** — Qwen ha lanciato E-Commerce Bench, un benchmark per operations business autonome a lungo termine: gli agenti partono con centomila yuan per gestire negozi online per trecentosessantaquattro giorni, ma quasi nessun modello impara a comprare più economico. [Fonte: raw/puntate/ainews20260904.md]
+- **2026-09-04** — Qwen ha lanciato E-Commerce Bench, un benchmark per operations business autonome a lungo termine: gli agenti partono con centomila yuan per gestire negozi online per trecentosessantaquattro giorni, ma quasi nessun modello impara a comprare più economico.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "PriorEye"
 category: strumento
 tags: [computer-vision, guida, open-source, ricerca]
 related_puntate: [20260703]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260703.md]
 ---
 
 # PriorEye
@@ -20,7 +19,7 @@ Sistema di Oxford che memorizza immagini stradali per anticipare situazioni di g
 
 ## Timeline delle notizie
 
-- **2026-07-03** — Rilasciato da Oxford: memorizza immagini stradali per anticipare situazioni di guida, come farebbe un pilota esperto. Nei test ha migliorato consistentemente le performance di diversi algoritmi. [Fonte: raw/puntate/ainews20260703.md]
+- **2026-07-03** — Rilasciato da Oxford: memorizza immagini stradali per anticipare situazioni di guida, come farebbe un pilota esperto. Nei test ha migliorato consistentemente le performance di diversi algoritmi.
 
 ## Collegamenti
 

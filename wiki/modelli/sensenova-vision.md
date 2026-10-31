@@ -1,11 +1,10 @@
-﻿---
+---
 title: "SenseNova-Vision"
 category: modello
 tags: [open-source, sensetime, vision]
 related_puntate: [20260709]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260709.md]
 ---
 
 # SenseNova-Vision
@@ -24,7 +23,7 @@ Modello open di SenseTime da sette miliardi di parametri che tratta la computer 
 
 ## Timeline delle notizie
 
-- **2026-07-09** — SenseNova-Vision di SenseTime: sette miliardi di parametri, tratta tutta la computer vision come generazione, licenza CC BY-NC 4.0, con modello, corpus da cinquanta milioni di istruzioni, benchmark, paper e demo tutti aperti. [Fonte: raw/puntate/ainews20260709.md]
+- **2026-07-09** — SenseNova-Vision di SenseTime: sette miliardi di parametri, tratta tutta la computer vision come generazione, licenza CC BY-NC 4.0, con modello, corpus da cinquanta milioni di istruzioni, benchmark, paper e demo tutti aperti.
 
 ## Collegamenti
 

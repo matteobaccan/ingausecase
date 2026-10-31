@@ -1,11 +1,10 @@
-﻿---
+---
 title: "DeepSeek GUI"
 category: strumento
 tags: [deepseek, desktop, gui, locale]
 related_puntate: [20260608]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260608.md]
 ---
 
 # DeepSeek GUI
@@ -24,7 +23,7 @@ Ambiente desktop per DeepSeek con modalità codice, editor Markdown, runtime Kun
 
 ## Timeline delle notizie
 
-- **2026-06-08** — DeepSeek GUI introduce un ambiente desktop per DeepSeek: modalità codice, editor Markdown, runtime Kun e integrazione messaging; locale e privato, disponibile per macOS e Windows. [Fonte: raw/puntate/ainews20260608.md]
+- **2026-06-08** — DeepSeek GUI introduce un ambiente desktop per DeepSeek: modalità codice, editor Markdown, runtime Kun e integrazione messaging; locale e privato, disponibile per macOS e Windows.
 
 ## Collegamenti
 

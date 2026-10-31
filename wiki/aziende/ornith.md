@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Ornith"
 category: azienda
 tags: [ornith, coding, open-weight, startup]
 related_puntate: [20260628]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260628.md]
 ---
 
 # Ornith
@@ -21,7 +20,7 @@ Azienda di AI che rilascia modelli open-weight per il coding e agenti, autrice d
 
 ## Timeline delle notizie
 
-- **2026-06-28** — Ha rilasciato un modello agentic coding MoE da 35 miliardi di parametri con 3 miliardi attivi per token, con RL ottimizzato sullo scaffold oltre che sul codice finale. [Fonte: raw/puntate/ainews20260628.md]
+- **2026-06-28** — Ha rilasciato un modello agentic coding MoE da 35 miliardi di parametri con 3 miliardi attivi per token, con RL ottimizzato sullo scaffold oltre che sul codice finale.
 
 ## Collegamenti
 

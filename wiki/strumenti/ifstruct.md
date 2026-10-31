@@ -1,11 +1,10 @@
-﻿---
+---
 title: "IFStruct"
 category: strumento
 tags: [analisi, benchmark, output-strutturati]
 related_puntate: [20260701]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260701.md]
 ---
 
 # IFStruct
@@ -24,7 +23,7 @@ Benchmark di Liquid AI che misura quanto bene i modelli generano output struttur
 
 ## Timeline delle notizie
 
-- **2026-07-01** — Nuovo benchmark per misurare quanto bene i modelli generano output strutturati. Un modello da 350 milioni di parametri addestrato su di esso supera modelli dieci volte più grandi. Rilasciato da Liquid AI. [Fonte: raw/puntate/ainews20260701.md]
+- **2026-07-01** — Nuovo benchmark per misurare quanto bene i modelli generano output strutturati. Un modello da 350 milioni di parametri addestrato su di esso supera modelli dieci volte più grandi. Rilasciato da Liquid AI.
 
 ## Collegamenti
 

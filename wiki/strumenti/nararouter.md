@@ -1,11 +1,10 @@
-﻿---
+---
 title: "NaraRouter"
 category: strumento
 tags: [gateway, gratis, multi-modello, provider]
 related_puntate: [20260810]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260810.md]
 ---
 
 # NaraRouter
@@ -26,7 +25,7 @@ Gateway IA gratuito con sette milioni di token ogni ventiquattro ore: supporta C
 
 ## Timeline delle notizie
 
-- **2026-08-10** — NaraRouter e' un gateway con sette milioni di token ogni ventiquattro ore, senza carta o abbonamento: supporta Claude Opus cinque, GPT cinque punto sei Sol, Kimi K3, Qwen tre punto otto Max, GLM cinque punto due, DeepSeek V4 Pro e MiniMax M3, con route compatibile Anthropic e OpenAI; ogni modello drena l'allowance al proprio tasso. [Fonte: raw/puntate/ainews20260810.md]
+- **2026-08-10** — NaraRouter e' un gateway con sette milioni di token ogni ventiquattro ore, senza carta o abbonamento: supporta Claude Opus cinque, GPT cinque punto sei Sol, Kimi K3, Qwen tre punto otto Max, GLM cinque punto due, DeepSeek V4 Pro e MiniMax M3, con route compatibile Anthropic e OpenAI; ogni modello drena l'allowance al proprio tasso.
 
 ## Collegamenti
 

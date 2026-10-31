@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Bret Taylor"
 category: persona
 tags: [sierra, agenti, usa]
 related_puntate: [20261007]
 created: 2026-10-07
 updated: 2026-10-07
-sources: [raw/puntate/ainews20261007.md]
 ---
 
 # Bret Taylor
@@ -16,7 +15,7 @@ Imprenditore statunitense, amministratore delegato di [[sierra]]. Il 7 ottobre 2
 
 ## Timeline delle notizie
 
-- **2026-10-07** — Bret Taylor, CEO di Sierra, e' tra i protagonisti dell'annuncio del Personal Agent Protocol sviluppato con Meta. [Fonte: raw/puntate/ainews20261007.md]
+- **2026-10-07** — Bret Taylor, CEO di Sierra, e' tra i protagonisti dell'annuncio del Personal Agent Protocol sviluppato con Meta.
 
 ## Collegamenti
 

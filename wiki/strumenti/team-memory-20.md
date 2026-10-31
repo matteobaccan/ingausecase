@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Team Memory 2.0"
 category: strumento
 tags: [agent, beta, memoria, tencent]
 related_puntate: [20260807]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260807.md]
 ---
 
 # Team Memory 2.0
@@ -20,7 +19,7 @@ Sistema di Tencent AI per la memoria condivisa tra agenti e tool IA, in beta: Ch
 
 ## Timeline delle notizie
 
-- **2026-08-07** — TencentAI ha rilasciato Team Memory due virgola zero beta: gestisce memoria condivisa tra agenti e tool IA con Chat Memory, Skill, LLM-Wiki e Code-Graph. [Fonte: raw/puntate/ainews20260807.md]
+- **2026-08-07** — TencentAI ha rilasciato Team Memory due virgola zero beta: gestisce memoria condivisa tra agenti e tool IA con Chat Memory, Skill, LLM-Wiki e Code-Graph.
 
 ## Collegamenti
 

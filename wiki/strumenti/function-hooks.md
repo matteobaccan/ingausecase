@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Function Hooks"
 category: strumento
 tags: [agent, anthropic, claude-code, coding, mcp]
 related_puntate: [20260904]
 created: 2026-09-04
 updated: 2026-09-04
-sources: [raw/puntate/ainews20260904.md]
 ---
 
 # Function Hooks
@@ -17,7 +16,7 @@ Funzionalità per [[claude-code]] che permette di estendere e personalizzare lo 
 ## Funzionalità principali
 
 - Estende e personalizza Claude Code.
-- Raccolta di feedback su GitHub prima della disponibilità generale. [Fonte: raw/puntate/ainews20260904.md]
+- Raccolta di feedback su GitHub prima della disponibilità generale.
 
 ## Azienda
 
@@ -25,7 +24,7 @@ Funzionalità per [[claude-code]] che permette di estendere e personalizzare lo 
 
 ## Timeline delle notizie
 
-- **2026-09-04** — Anthropic ha annunciato Function Hooks per Claude Code, un modo per estendere e personalizzare lo strumento; non era ancora disponibile, ma il team stava raccogliendo feedback su GitHub. [Fonte: raw/puntate/ainews20260904.md]
+- **2026-09-04** — Anthropic ha annunciato Function Hooks per Claude Code, un modo per estendere e personalizzare lo strumento; non era ancora disponibile, ma il team stava raccogliendo feedback su GitHub.
 
 ## Collegamenti
 

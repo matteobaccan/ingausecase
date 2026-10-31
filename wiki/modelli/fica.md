@@ -1,11 +1,10 @@
-﻿---
+---
 title: "FiCA"
 category: modello
 tags: [3d, avatar, meta]
 related_puntate: [20260626]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260626.md]
 ---
 
 # FiCA
@@ -24,7 +23,7 @@ Modello di Meta che genera avatar 3D realistici da una foto in meno di cinque se
 
 ## Timeline delle notizie
 
-- **2026-06-26** — FiCA da Meta genera avatar 3D realistici da una foto in meno di cinque secondi: testa completa anche fuori camera, modello di diffusione custom con rete di processing ed espressioni facciali manipolabili in real-time. [Fonte: raw/puntate/ainews20260626.md]
+- **2026-06-26** — FiCA da Meta genera avatar 3D realistici da una foto in meno di cinque secondi: testa completa anche fuori camera, modello di diffusione custom con rete di processing ed espressioni facciali manipolabili in real-time.
 
 ## Collegamenti
 

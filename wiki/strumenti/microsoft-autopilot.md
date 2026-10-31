@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Microsoft Autopilot"
 category: strumento
 tags: [microsoft, copilot, agent, enterprise]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-10-09
-sources: [raw/pillitteri/pillitteri20260925-microsoft-copilot-autopilot-code-home.md, raw/pillitteri/pillitteri20261009-gemini-agent-autopilot-dots-grok-bot-confronto.md]
 ---
 
 # Microsoft Autopilot
@@ -27,8 +26,8 @@ Agente di Copilot presentato da Microsoft il 25 settembre 2026: chi lo crea gli 
 
 ## Timeline delle notizie
 
-- **2026-09-25** — Microsoft ha presentato Autopilot, agente con nome, ruolo e obiettivo assegnati dal proprietario che continua a lavorare dentro Microsoft 365 anche quando nessuno lo usa; gira nel tenant dell'azienda con identità Entra, memoria e indirizzo email, e si fattura a consumo. Autopilot è l'erede di Scout, presentato il 2 giugno 2026, e arriva in anteprima privata entro fine mese. [Fonte: raw/pillitteri/pillitteri20260925-microsoft-copilot-autopilot-code-home.md]
-- **2026-10-09** — Nel confronto tra agenti sempre attivi Autopilot vive nel tenant Microsoft 365 con identità e memoria proprie e passa dalla fatturazione a consumo: la licenza per utente copre chat e app Office, mentre le funzioni agentiche di lunga durata passano dalla spesa a consumo, senza importi pubblicati. [Fonte: raw/pillitteri/pillitteri20261009-gemini-agent-autopilot-dots-grok-bot-confronto.md]
+- **2026-09-25** — Microsoft ha presentato Autopilot, agente con nome, ruolo e obiettivo assegnati dal proprietario che continua a lavorare dentro Microsoft 365 anche quando nessuno lo usa; gira nel tenant dell'azienda con identità Entra, memoria e indirizzo email, e si fattura a consumo. Autopilot è l'erede di Scout, presentato il 2 giugno 2026, e arriva in anteprima privata entro fine mese.
+- **2026-10-09** — Nel confronto tra agenti sempre attivi Autopilot vive nel tenant Microsoft 365 con identità e memoria proprie e passa dalla fatturazione a consumo: la licenza per utente copre chat e app Office, mentre le funzioni agentiche di lunga durata passano dalla spesa a consumo, senza importi pubblicati.
 
 
 

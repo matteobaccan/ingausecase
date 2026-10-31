@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Wan Streamer"
 category: modello
 tags: [agent, alibaba, multimodale, video]
 related_puntate: [20260627]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260627.md]
 ---
 
 # Wan Streamer
@@ -24,7 +23,7 @@ Sistema di agenti IA di Alibaba in grado di vedere, ascoltare e rispondere in vi
 
 ## Timeline delle notizie
 
-- **2026-06-27** — Presentato da Alibaba come evoluzione del voice mode: agenti che vedono, ascoltano e rispondono in video in tempo reale con interazione visiva sincrona. [Fonte: raw/puntate/ainews20260627.md]
+- **2026-06-27** — Presentato da Alibaba come evoluzione del voice mode: agenti che vedono, ascoltano e rispondono in video in tempo reale con interazione visiva sincrona.
 
 ## Collegamenti
 

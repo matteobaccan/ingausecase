@@ -4,7 +4,6 @@ category: strumento
 tags: [anthropic, claude-code, plugin]
 created: 2026-10-03
 updated: 2026-10-03
-sources: [raw/pillitteri/pillitteri20261002-claude-code-mod-plugin.md]
 ---
 
 # Claude Code Mods
@@ -15,9 +14,9 @@ Nuovo tipo di plugin di [[claude-code]] introdotto il 1 ottobre 2026 con la vers
 
 ## Funzionalità principali
 
-- A differenza di un hook di settings, di una skill o di un server MCP, una mod vive dentro il processo di Claude Code, è diretta e ispezionabile e può aggiungere comandi `/nome` che girano senza passare da un turno del modello. [Fonte: raw/pillitteri/pillitteri20261002-claude-code-mod-plugin.md]
-- La parte di interfaccia funziona solo nel terminale e nella tab "Code" dell'app desktop, mentre gli hook restano attivi anche in VS Code, nella modalità claude -p, nell'Agent SDK e nelle sessioni cloud. [Fonte: raw/pillitteri/pillitteri20261002-claude-code-mod-plugin.md]
-- Gira con gli stessi permessi dell'utente e senza sandbox: può leggere file e chiavi API e approvare da sola azioni che normalmente richiederebbero conferma, per questo Anthropic raccomanda di installare solo mod fidate e di validarle con `claude plugin validate`. [Fonte: raw/pillitteri/pillitteri20261002-claude-code-mod-plugin.md]
+- A differenza di un hook di settings, di una skill o di un server MCP, una mod vive dentro il processo di Claude Code, è diretta e ispezionabile e può aggiungere comandi `/nome` che girano senza passare da un turno del modello.
+- La parte di interfaccia funziona solo nel terminale e nella tab "Code" dell'app desktop, mentre gli hook restano attivi anche in VS Code, nella modalità claude -p, nell'Agent SDK e nelle sessioni cloud.
+- Gira con gli stessi permessi dell'utente e senza sandbox: può leggere file e chiavi API e approvare da sola azioni che normalmente richiederebbero conferma, per questo Anthropic raccomanda di installare solo mod fidate e di validarle con `claude plugin validate`.
 
 ## Azienda / Autore
 
@@ -25,7 +24,7 @@ Nuovo tipo di plugin di [[claude-code]] introdotto il 1 ottobre 2026 con la vers
 
 ## Timeline delle notizie
 
-- **2026-10-01** — Claude Code apre alle mod dalla versione 2.1.287: plugin che girano dentro il processo dell'agente e possono modificarne il comportamento, ridisegnare l'interfaccia o sostituire funzioni esistenti. Il repository ufficiale contiene già quattro mod con codice pubblico (diff, agents-md, sec-default, telemetry), e nelle prime ore ne compaiono diverse della community. [Fonte: raw/pillitteri/pillitteri20261002-claude-code-mod-plugin.md]
+- **2026-10-01** — Claude Code apre alle mod dalla versione 2.1.287: plugin che girano dentro il processo dell'agente e possono modificarne il comportamento, ridisegnare l'interfaccia o sostituire funzioni esistenti. Il repository ufficiale contiene già quattro mod con codice pubblico (diff, agents-md, sec-default, telemetry), e nelle prime ore ne compaiono diverse della community.
 
 ## Collegamenti
 

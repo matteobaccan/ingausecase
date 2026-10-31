@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MiMo-V 2.5-Pro UltraSpeed"
 category: modello
 tags: [llm, mimo, velocita, xiaomi]
 related_puntate: [20260610]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260610.md]
 ---
 
 # MiMo-V 2.5-Pro UltraSpeed
@@ -24,7 +23,7 @@ Modello Pro ultra-veloce di Xiaomi: mille token al secondo, probabilmente il pi�
 
 ## Timeline delle notizie
 
-- **2026-06-10** — MiMo-V 2.5-Pro UltraSpeed raggiunge mille token al secondo: modello Pro, non Flash, probabilmente il più veloce al mondo nella sua categoria. [Fonte: raw/puntate/ainews20260610.md]
+- **2026-06-10** — MiMo-V 2.5-Pro UltraSpeed raggiunge mille token al secondo: modello Pro, non Flash, probabilmente il più veloce al mondo nella sua categoria.
 
 ## Collegamenti
 

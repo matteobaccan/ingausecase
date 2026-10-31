@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Council"
 category: strumento
 tags: [agent, anthropic, claude, debate, multi-agent, sperimentale]
 related_puntate: [20260621, 20260726]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260621.md, raw/puntate/ainews20260726.md]
 ---
 
 # Council
@@ -25,8 +24,8 @@ Funzione di Anthropic che crea un panel di cinque consulenti IA che dibattono e 
 
 ## Timeline delle notizie
 
-- **2026-06-21** — Council è una nuova funzionalità sperimentale di Claude che simula cinque consulenti in dibattito prima di restituire una risposta finale: approccio multi-agente integrato direttamente nell'interfaccia. [Fonte: raw/puntate/ainews20260621.md]
-- **2026-07-26** — Anthropic ha lanciato Council: invece di una risposta singola, creava un panel di cinque consulenti IA che dibattevano, contestavano e affinavano le idee prima della risposta finale. [Fonte: raw/puntate/ainews20260726.md]
+- **2026-06-21** — Council è una nuova funzionalità sperimentale di Claude che simula cinque consulenti in dibattito prima di restituire una risposta finale: approccio multi-agente integrato direttamente nell'interfaccia.
+- **2026-07-26** — Anthropic ha lanciato Council: invece di una risposta singola, creava un panel di cinque consulenti IA che dibattevano, contestavano e affinavano le idee prima della risposta finale.
 
 ## Collegamenti
 

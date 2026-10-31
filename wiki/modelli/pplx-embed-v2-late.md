@@ -1,11 +1,10 @@
-﻿---
+---
 title: "PPLX-Embed-v2-Late"
 category: modello
 tags: [embedding, multimodale, perplexity, retrieval]
 related_puntate: [20261008]
 created: 2026-10-08
 updated: 2026-10-08
-sources: [raw/puntate/ainews20261008.md, raw/tldr/tldr20261008.md]
 ---
 
 # PPLX-Embed-v2-Late
@@ -19,13 +18,11 @@ source da [[perplexity]]: testo e immagini convivono in uno spazio condiviso.
 
 - Due versioni, una da nove miliardi e una da zero virgola sei miliardi di
   parametri; quella piccola può girare on-device per query locali.
-  [Fonte: raw/puntate/ainews20261008.md]
 - Permette di indicizzare dati multimodali e cercare direttamente dentro pagine
   PDF senza OCR; ottiene il novantadue virgola quattro percento su MADQA e il
-  sessantaquattro percento su BrowseComp+. [Fonte: raw/puntate/ainews20261008.md]
+  sessantaquattro percento su BrowseComp+.
 - TLDR AI aggiunge che i modelli conservano vettori a livello di token e
   migliorano il retrieval su benchmark come ViDoRe(V3).
-  [Fonte: raw/tldr/tldr20261008.md]
 
 ## Azienda di riferimento
 
@@ -33,7 +30,7 @@ source da [[perplexity]]: testo e immagini convivono in uno spazio condiviso.
 
 ## Timeline delle notizie
 
-- **2026-10-08** — [[perplexity]] rilascia in open source PPLX-Embed-v2-Late, embedding multi-vettore per testo e immagini in uno spazio condiviso, nelle versioni da nove e da zero virgola sei miliardi di parametri, con ricerca diretta nei PDF senza OCR. [Fonte: raw/puntate/ainews20261008.md] [Fonte: raw/tldr/tldr20261008.md]
+- **2026-10-08** — [[perplexity]] rilascia in open source PPLX-Embed-v2-Late, embedding multi-vettore per testo e immagini in uno spazio condiviso, nelle versioni da nove e da zero virgola sei miliardi di parametri, con ricerca diretta nei PDF senza OCR.
 
 ## Collegamenti
 

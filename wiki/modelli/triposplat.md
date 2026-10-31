@@ -1,11 +1,10 @@
-﻿---
+---
 title: "TripoSplat"
 category: modello
 tags: [3d, gaussian-splatting, open-source, vast-ai]
 related_puntate: [20260602]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260602.md]
 ---
 
 # TripoSplat
@@ -25,7 +24,7 @@ Modello open source MIT di VAST AI Research che converte una singola immagine 2D
 
 ## Timeline delle notizie
 
-- **2026-06-02** — TripoSplat, rilasciato con licenza MIT da VAST AI Research, converte una singola immagine 2D in Gaussian 3D di alta qualità per asset, AR/VR, giochi e simulazione; è stato anche integrato da ComfyUI insieme a Tripo 3.1 per ottenere un asset 3D end-to-end. [Fonte: raw/puntate/ainews20260602.md]
+- **2026-06-02** — TripoSplat, rilasciato con licenza MIT da VAST AI Research, converte una singola immagine 2D in Gaussian 3D di alta qualità per asset, AR/VR, giochi e simulazione; è stato anche integrato da ComfyUI insieme a Tripo 3.1 per ottenere un asset 3D end-to-end.
 
 ## Collegamenti
 

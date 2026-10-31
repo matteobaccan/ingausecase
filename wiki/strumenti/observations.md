@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Observations"
 category: strumento
 tags: [grafo, memoria, pattern-recognition, zep]
 related_puntate: [20260812]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260812.md]
 ---
 
 # Observations
@@ -24,7 +23,7 @@ Sistema di Zep basato su Graphiti che riconosce pattern nei fatti memorizzati e 
 
 ## Timeline delle notizie
 
-- **2026-08-12** — Observations di Zep usa il motore grafico Graphiti per la pattern recognition: analizza i fatti memorizzati come struttura e scrive cosa mostra la struttura, senza attendere query; clustering su topologia grafica pura, senza embeddings. [Fonte: raw/puntate/ainews20260812.md]
+- **2026-08-12** — Observations di Zep usa il motore grafico Graphiti per la pattern recognition: analizza i fatti memorizzati come struttura e scrive cosa mostra la struttura, senza attendere query; clustering su topologia grafica pura, senza embeddings.
 
 ## Collegamenti
 

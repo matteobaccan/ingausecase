@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Model Hardware Standard"
 category: trend
 tags: [agent, hardware, sicurezza, standard]
 related_puntate: [20260828]
 created: 2026-08-28
 updated: 2026-08-28
-sources: [raw/puntate/ainews20260828.md]
 ---
 
 # Model Hardware Standard
@@ -24,7 +23,7 @@ Standard annunciato da Anthropic per far operare agenti IA su strumentazione fis
 
 ## Notizie rilevanti
 
-- **2026-08-28** — Anthropic annuncia il Model Hardware Standard, uno standard per far operare agenti IA su strumentazione fisica in ricerca scientifica e manufacturing avanzato: la fase uno della research preview è partita, con focus su sicurezza e controllo su dispositivi reali. [Fonte: raw/puntate/ainews20260828.md]
+- **2026-08-28** — Anthropic annuncia il Model Hardware Standard, uno standard per far operare agenti IA su strumentazione fisica in ricerca scientifica e manufacturing avanzato: la fase uno della research preview è partita, con focus su sicurezza e controllo su dispositivi reali.
 
 ## Collegamenti
 

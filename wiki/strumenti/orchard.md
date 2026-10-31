@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Orchard"
 category: strumento
 tags: [agent, microsoft, open-source, training]
 related_puntate: [20260805]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260805.md]
 ---
 
 # Orchard
@@ -24,7 +23,7 @@ Infrastruttura open source di Microsoft per training, reinforcement learning e t
 
 ## Timeline delle notizie
 
-- **2026-08-05** — Orchard e' l'infrastruttura open source di Microsoft per training, RL e testing di agenti: Orchard-SWE al sessantanove virgola sette percento su SWE-bench Verified, Orchard-GUI con modello da quattro miliardi e Orchard-Claw per email e calendario, basata su Kubernetes con ambienti isolati e dati condivisi. [Fonte: raw/puntate/ainews20260805.md]
+- **2026-08-05** — Orchard e' l'infrastruttura open source di Microsoft per training, RL e testing di agenti: Orchard-SWE al sessantanove virgola sette percento su SWE-bench Verified, Orchard-GUI con modello da quattro miliardi e Orchard-Claw per email e calendario, basata su Kubernetes con ambienti isolati e dati condivisi.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MiniMax Sparse Attention"
 category: strumento
 tags: [architettura, efficienza, minimax]
 related_puntate: [20260602]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260602.md]
 ---
 
 # MiniMax Sparse Attention
@@ -24,7 +23,7 @@ Architettura di attenzione sparsa di MiniMax che scala il contesto a un milione 
 
 ## Timeline delle notizie
 
-- **2026-06-02** — MiniMax Sparse Attention è l'architettura che permette a MiniMax M3 di scalare il contesto a un milione di token. [Fonte: raw/puntate/ainews20260602.md]
+- **2026-06-02** — MiniMax Sparse Attention è l'architettura che permette a MiniMax M3 di scalare il contesto a un milione di token.
 
 ## Collegamenti
 

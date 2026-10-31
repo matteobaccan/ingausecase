@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Extend3D"
 category: modello
 tags: [3d, generazione, training-free]
 related_puntate: [20260530]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260530.md]
 ---
 
 # Extend3D
@@ -20,7 +19,7 @@ Modello training-free che da una singola immagine genera scene 3D su larga scala
 
 ## Timeline delle notizie
 
-- **2026-05-30** — Extend3D da una singola immagine genera scene 3D su larga scala, training-free: non solo oggetti singoli ma ambienti interi. [Fonte: raw/puntate/ainews20260530.md]
+- **2026-05-30** — Extend3D da una singola immagine genera scene 3D su larga scala, training-free: non solo oggetti singoli ma ambienti interi.
 
 ## Collegamenti
 

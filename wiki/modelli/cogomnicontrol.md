@@ -1,11 +1,10 @@
-﻿---
+---
 title: "CogOmniControl"
 category: modello
 tags: [cina, reasoning, tencent, video]
 related_puntate: [20260522]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260522.md]
 ---
 
 # CogOmniControl
@@ -24,7 +23,7 @@ Sistema di Tencent per generazione video controllabile guidata da reasoning, bas
 
 ## Timeline delle notizie
 
-- **2026-05-22** — CogOmniControl di Tencent offre generazione video controllabile guidata da reasoning, combinando CogVLM e CogOmniDiT: traduce storyboard sparsi o sketch in video production-quality e batte VINO e VACE-Wan 2.1. [Fonte: raw/puntate/ainews20260522.md]
+- **2026-05-22** — CogOmniControl di Tencent offre generazione video controllabile guidata da reasoning, combinando CogVLM e CogOmniDiT: traduce storyboard sparsi o sketch in video production-quality e batte VINO e VACE-Wan 2.1.
 
 ## Collegamenti
 

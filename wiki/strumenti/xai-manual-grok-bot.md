@@ -1,11 +1,10 @@
-﻿---
+---
 title: "XAI Manuale Grok Bot"
 category: strumento
 tags: [agent, prediction-market, xai]
 related_puntate: [20260901]
 created: 2026-09-01
 updated: 2026-09-01
-sources: [raw/puntate/ainews20260901.md]
 ---
 
 # XAI Manuale Grok Bot
@@ -16,7 +15,7 @@ Manuale di sessantatré pagine su Grok Bot pubblicato da XAI, con skill per pred
 
 ## Timeline delle notizie
 
-- **2026-09-01** — XAI ha pubblicato un manuale di sessantatré pagine su Grok Bot con skill per prediction market. Dichiara novantotto punto quattro percento di accuratezza. [Fonte: raw/puntate/ainews20260901.md]
+- **2026-09-01** — XAI ha pubblicato un manuale di sessantatré pagine su Grok Bot con skill per prediction market. Dichiara novantotto punto quattro percento di accuratezza.
 
 ## Collegamenti
 

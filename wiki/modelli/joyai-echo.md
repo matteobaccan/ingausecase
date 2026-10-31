@@ -1,11 +1,10 @@
-﻿---
+---
 title: "JoyAI-Echo"
 category: modello
 tags: [editing, jd, open-source, video]
 related_puntate: [20260609]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260609.md]
 ---
 
 # JoyAI-Echo
@@ -24,7 +23,7 @@ Modello video open source di JD per modifiche con linguaggio naturale: cambia vo
 
 ## Timeline delle notizie
 
-- **2026-06-09** — JoyAI-Echo di JD è un modello video open source per modifiche con linguaggio naturale: cambia volti e voci in video lunghi senza rigenerare tutto e genera video fino a cinque minuti. [Fonte: raw/puntate/ainews20260609.md]
+- **2026-06-09** — JoyAI-Echo di JD è un modello video open source per modifiche con linguaggio naturale: cambia volti e voci in video lunghi senza rigenerare tutto e genera video fino a cinque minuti.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Tripo 3.1"
 category: modello
 tags: [3d, gaussian, generazione, vast-ai]
 related_puntate: [20260602, 20260917]
 created: 2026-08-12
 updated: 2026-09-17
-sources: [raw/puntate/ainews20260602.md, raw/puntate/ainews20260917.md]
 ---
 
 # Tripo 3.1
@@ -25,8 +24,8 @@ Modello 3D di VAST AI per generare asset Gaussian da immagine, integrato con Tri
 
 ## Timeline delle notizie
 
-- **2026-06-02** — Tripo 3.1 insieme a TripoSplat porta in ComfyUI un'immagine a un asset 3D Gaussian completo, end-to-end; rilasciato tra gli undici modelli di maggio. [Fonte: raw/puntate/ainews20260602.md]
-- **2026-09-17** — Un tutorial documenta la creazione di modelli 3D con rigging ed espressioni facciali usando Tripo, [[gpt-6-astra|Astra]], [[blender-mcp|Blender]] e [[chatgpt-image-2-5|GPT Images 2.5]]: il metodo separa la generazione delle immagini di riferimento dalla modifica del modello originale, migliorando la precisione delle espressioni, e richiede dieci giorni dall'inizio al risultato finale. [Fonte: raw/puntate/ainews20260917.md]
+- **2026-06-02** — Tripo 3.1 insieme a TripoSplat porta in ComfyUI un'immagine a un asset 3D Gaussian completo, end-to-end; rilasciato tra gli undici modelli di maggio.
+- **2026-09-17** — Un tutorial documenta la creazione di modelli 3D con rigging ed espressioni facciali usando Tripo, [[gpt-6-astra|Astra]], [[blender-mcp|Blender]] e [[chatgpt-image-2-5|GPT Images 2.5]]: il metodo separa la generazione delle immagini di riferimento dalla modifica del modello originale, migliorando la precisione delle espressioni, e richiede dieci giorni dall'inizio al risultato finale.
 
 ## Collegamenti
 

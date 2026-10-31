@@ -1,11 +1,10 @@
-﻿---
+---
 title: "frontend-design"
 category: strumento
 tags: [anthropic, frontend, open-source, skill]
 related_puntate: [20260627]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260627.md]
 ---
 
 # frontend-design
@@ -28,7 +27,7 @@ Skill ufficiale di Anthropic per Claude che forza il modello a scegliere una dir
 
 ## Timeline delle notizie
 
-- **2026-06-27** — Skill ufficiale per Claude pubblicata da Anthropic: 600.000 installazioni e 155.000 stelle su GitHub. Funziona in Claude Code, Cursor, Codex, Gemini CLI, OpenCode e oltre. [Fonte: raw/puntate/ainews20260627.md]
+- **2026-06-27** — Skill ufficiale per Claude pubblicata da Anthropic: 600.000 installazioni e 155.000 stelle su GitHub. Funziona in Claude Code, Cursor, Codex, Gemini CLI, OpenCode e oltre.
 
 ## Collegamenti
 

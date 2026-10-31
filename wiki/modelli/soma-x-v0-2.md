@@ -1,11 +1,10 @@
-﻿---
+---
 title: "SOMA-X v0.2"
 category: modello
 tags: [3d, nvidia, robotica]
 related_puntate: [20260616]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260616.md]
 ---
 
 # SOMA-X v0.2
@@ -24,7 +23,7 @@ Modello umano 3D di NVIDIA con una struttura scheletrica unica per ogni tipo di 
 
 ## Timeline delle notizie
 
-- **2026-06-16** — NVIDIA ha rilasciato SOMA-X v0.2, modello umano 3D che gestisce ogni tipo di corpo con un'unica struttura scheletrica, ottimizzato per robotica e AI fisica. [Fonte: raw/puntate/ainews20260616.md]
+- **2026-06-16** — NVIDIA ha rilasciato SOMA-X v0.2, modello umano 3D che gestisce ogni tipo di corpo con un'unica struttura scheletrica, ottimizzato per robotica e AI fisica.
 
 ## Collegamenti
 

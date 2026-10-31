@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Claude-Obsidian"
 category: strumento
 tags: [knowledge-base, local-first, markdown, obsidian, wiki]
 related_puntate: [20260824]
 created: 2026-08-24
 updated: 2026-08-24
-sources: [raw/puntate/ainews20260824.md]
 ---
 
 # Claude-Obsidian
@@ -45,7 +44,7 @@ Implementazione industriale dell'idea di «LLM Wiki» di Karpathy: una knowledge
 
 ## Timeline delle notizie
 
-- **2026-08-24** — Claude-Obsidian è un'implementazione industriale dell'idea di «LLM Wiki» di Karpathy: local-first, Markdown più JSON, transazioni atomiche con SHA-256, Source and Claim Ledger per tracciare autorevolezza e contraddizioni, quindici moduli Agent Skills, BM25 fallback, auto-ricerca e canvas Obsidian generati automaticamente. [Fonte: raw/puntate/ainews20260824.md]
+- **2026-08-24** — Claude-Obsidian è un'implementazione industriale dell'idea di «LLM Wiki» di Karpathy: local-first, Markdown più JSON, transazioni atomiche con SHA-256, Source and Claim Ledger per tracciare autorevolezza e contraddizioni, quindici moduli Agent Skills, BM25 fallback, auto-ricerca e canvas Obsidian generati automaticamente.
 
 ## Collegamenti
 

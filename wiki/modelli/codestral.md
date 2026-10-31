@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Codestral"
 category: modello
 tags: [coding, mistral, open-weight]
 related_puntate: [20260618]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260618.md]
 ---
 
 # Codestral
@@ -24,7 +23,7 @@ Modello di coding di Mistral, incluso nell'offerta gratuita di 1B token.
 
 ## Timeline delle notizie
 
-- **2026-06-18** — Codestral è tra i modelli inclusi nell'offerta di un miliardo di token gratuiti di Mistral, con finestre di contesto da duecentocinquantasei K. [Fonte: raw/puntate/ainews20260618.md]
+- **2026-06-18** — Codestral è tra i modelli inclusi nell'offerta di un miliardo di token gratuiti di Mistral, con finestre di contesto da duecentocinquantasei K.
 
 ## Collegamenti
 

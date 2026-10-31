@@ -1,11 +1,10 @@
-﻿---
+---
 title: "AutoArxiv"
 category: strumento
 tags: [automazione, paper, ricerca]
 related_puntate: [20260622]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260622.md]
 ---
 
 # AutoArxiv
@@ -20,7 +19,7 @@ Strumento che trasforma paper in codice funzionante: clona il repository collega
 
 ## Timeline delle notizie
 
-- **2026-06-22** — AutoArxiv trasforma paper in codice funzionante cambiando 'arxiv' in 'autoarxiv' nell'URL: un agente legge abstract, claim e repository GitHub, clona il codice, risolve dipendenze e path rotti, progetta una riproduzione minimale (modello più piccolo, una singola GPU invece di un cluster); tutto registrato live, restituisce un segnale chiaro se il risultato minimo corrisponde al paper più una stima del costo di replica completa. [Fonte: raw/puntate/ainews20260622.md]
+- **2026-06-22** — AutoArxiv trasforma paper in codice funzionante cambiando 'arxiv' in 'autoarxiv' nell'URL: un agente legge abstract, claim e repository GitHub, clona il codice, risolve dipendenze e path rotti, progetta una riproduzione minimale (modello più piccolo, una singola GPU invece di un cluster); tutto registrato live, restituisce un segnale chiaro se il risultato minimo corrisponde al paper più una stima del costo di replica completa.
 
 ## Collegamenti
 

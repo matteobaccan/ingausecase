@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Addy Osmani Skills"
 category: strumento
 tags: [coding, github, skill, workflow]
 related_puntate: [20260807]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260807.md]
 ---
 
 # Addy Osmani Skills
@@ -20,7 +19,7 @@ Collezione di skill IA di Addy Osmani con ottantaduemila stelle su GitHub, che c
 
 ## Timeline delle notizie
 
-- **2026-08-07** — La collezione di Skills di Addy Osmani ha ottantaduemila stelle su GitHub e copre spec, plan, build, test, review e ship, per Claude Code, Cursor e Codex. [Fonte: raw/puntate/ainews20260807.md]
+- **2026-08-07** — La collezione di Skills di Addy Osmani ha ottantaduemila stelle su GitHub e copre spec, plan, build, test, review e ship, per Claude Code, Cursor e Codex.
 
 ## Collegamenti
 

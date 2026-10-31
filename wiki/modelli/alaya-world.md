@@ -1,11 +1,10 @@
-﻿---
+---
 title: "AlayaWorld"
 category: modello
 tags: [gaming, open-source, video-ai, world-model]
 related_puntate: [20260721, 20260722]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260721.md, raw/puntate/ainews20260722.md]
 ---
 
 # AlayaWorld
@@ -25,8 +24,8 @@ Modello video open source che genera streaming in tempo reale a 720p e 24 fps, c
 
 ## Timeline delle notizie
 
-- **2026-07-21** — Alaya World è un modello mondiale aperto che ricostruisce la logica dei costi di prototipazione nel gaming: addestrato su trecentocinquantamila clip motion, con cache 3D esplicita, memoria frame compressa ed Error Bank che re-inietta gli errori accumulati nel training; quindici secondi di coerenza diventano un minuto intero e i prototipi giocabili arrivano in minuti invece di settimane. [Fonte: raw/puntate/ainews20260721.md]
-- **2026-07-22** — Modello video open source che genera streaming a 720p e 24 fps, con controllo camera ed eventi testuali; dettagli tecnici completi appena pubblicati. [Fonte: raw/puntate/ainews20260722.md]
+- **2026-07-21** — Alaya World è un modello mondiale aperto che ricostruisce la logica dei costi di prototipazione nel gaming: addestrato su trecentocinquantamila clip motion, con cache 3D esplicita, memoria frame compressa ed Error Bank che re-inietta gli errori accumulati nel training; quindici secondi di coerenza diventano un minuto intero e i prototipi giocabili arrivano in minuti invece di settimane.
+- **2026-07-22** — Modello video open source che genera streaming a 720p e 24 fps, con controllo camera ed eventi testuali; dettagli tecnici completi appena pubblicati.
 
 ## Collegamenti
 

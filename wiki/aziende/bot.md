@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Bot"
 category: azienda
 tags: [bot, agent, automation, marketplace]
 related_puntate: [20260905]
 created: 2026-09-05
 updated: 2026-09-05
-sources: [raw/puntate/ainews20260905.md]
 ---
 
 # Bot
@@ -20,7 +19,7 @@ Azienda che costruisce un marketplace per template di agenti AI.
 
 ## Timeline delle notizie
 
-- **2026-09-05** — Bot lancia il suo marketplace per template di agenti; primo rilascio Haggle Bot, specializzato in approvvigionamento (negoziazione contratti con fornitori, scoperta licenze software inutilizzate, controllo prezzi ricorrenti). [Fonte: raw/puntate/ainews20260905.md]
+- **2026-09-05** — Bot lancia il suo marketplace per template di agenti; primo rilascio Haggle Bot, specializzato in approvvigionamento (negoziazione contratti con fornitori, scoperta licenze software inutilizzate, controllo prezzi ricorrenti).
 
 ## Collegamenti
 

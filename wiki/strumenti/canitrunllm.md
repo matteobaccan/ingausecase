@@ -1,11 +1,10 @@
-﻿---
+---
 title: "CanItRunLLM"
 category: strumento
 tags: [browser, hardware, inference, locale]
 related_puntate: [20260825]
 created: 2026-08-25
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260825.md]
 ---
 
 # CanItRunLLM
@@ -20,7 +19,7 @@ Strumento gratuito che controlla l'hardware del pc e dice quali modelli girano b
 
 ## Timeline delle notizie
 
-- **2026-08-25** — CanItRunLLM è uno strumento gratuito che controlla l'hardware (RAM, CPU, GPU, VRAM), assegna un punteggio a ogni modello e etichetta ogni quantizzazione; funziona nel browser, senza installazione. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-25** — CanItRunLLM è uno strumento gratuito che controlla l'hardware (RAM, CPU, GPU, VRAM), assegna un punteggio a ogni modello e etichetta ogni quantizzazione; funziona nel browser, senza installazione.
 
 ## Collegamenti
 

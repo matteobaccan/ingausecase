@@ -1,27 +1,26 @@
-﻿---
+---
 title: "SoL-Pi"
 category: strumento
 tags: [agenti, harness, nvidia, open-source, token]
 related_puntate: [20260919, 20260921]
 created: 2026-09-19
 updated: 2026-09-21
-sources: [raw/puntate/ainews20260919.md, raw/puntate/ainews20260921.md]
 ---
 
 # SoL-Pi
 
 ## Introduzione
 
-Harness auto-evolvente per agenti rilasciato da NVIDIA: taglia il traffico di token quasi a metà mantenendo le performance di GPT-5.6 Sol e Claude Opus 5. [Fonte: raw/puntate/ainews20260919.md]
+Harness auto-evolvente per agenti rilasciato da NVIDIA: taglia il traffico di token quasi a metà mantenendo le performance di GPT-5.6 Sol e Claude Opus 5.
 
 ## Funzionalità principali
 
-- Quattro meccanismi sono sopravvissuti alla selezione automatica: Action Fusion, Online Context Compact, ObservationPack e Evidence-Preserving Reducer. [Fonte: raw/puntate/ainews20260919.md]
-- Su EdgeBench, cinquantuno task, risparmia un terzo dei costi API. [Fonte: raw/puntate/ainews20260919.md]
+- Quattro meccanismi sono sopravvissuti alla selezione automatica: Action Fusion, Online Context Compact, ObservationPack e Evidence-Preserving Reducer.
+- Su EdgeBench, cinquantuno task, risparmia un terzo dei costi API.
 
 ## Repository
 
-- Il codice è su GitHub sotto l'organizzazione NVlabs. [Fonte: raw/puntate/ainews20260919.md]
+- Il codice è su GitHub sotto l'organizzazione NVlabs.
 
 ## Azienda / Autore
 
@@ -34,9 +33,9 @@ Harness auto-evolvente per agenti rilasciato da NVIDIA: taglia il traffico di to
 
 ## Timeline delle notizie
 
-- **2026-09-19** — Da NVIDIA arriva SoL-Pi, sistema di harness auto-evolvente per agenti: taglia il traffico token quasi a metà mantenendo le performance di GPT-5.6 Sol e Opus 5, con quattro meccanismi sopravvissuti alla selezione — Action Fusion, Online Context Compact, ObservationPack e Evidence-Preserving Reducer — e un terzo dei costi API risparmiato su cinquantuno task di EdgeBench. Il codice è su GitHub sotto NVlabs. [Fonte: raw/puntate/ainews20260919.md]
+- **2026-09-19** — Da NVIDIA arriva SoL-Pi, sistema di harness auto-evolvente per agenti: taglia il traffico token quasi a metà mantenendo le performance di GPT-5.6 Sol e Opus 5, con quattro meccanismi sopravvissuti alla selezione — Action Fusion, Online Context Compact, ObservationPack e Evidence-Preserving Reducer — e un terzo dei costi API risparmiato su cinquantuno task di EdgeBench. Il codice è su GitHub sotto NVlabs.
 
-- **2026-09-21** — La puntata riporta la firma congiunta di [[nvidia]] e MIT e i numeri d'uso: su GPT-5.6 Sol e Opus 5 riduce il consumo di token del 49 per cento mantenendo le prestazioni, per un risparmio da 8,75 a 13,50 dollari l'ora. [Fonte: raw/puntate/ainews20260921.md]
+- **2026-09-21** — La puntata riporta la firma congiunta di [[nvidia]] e MIT e i numeri d'uso: su GPT-5.6 Sol e Opus 5 riduce il consumo di token del 49 per cento mantenendo le prestazioni, per un risparmio da 8,75 a 13,50 dollari l'ora.
 
 ## Collegamenti
 

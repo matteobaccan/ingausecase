@@ -1,11 +1,10 @@
-﻿---
+---
 title: "VideoMME V2"
 category: strumento
 tags: [benchmark, multimodale, video]
 related_puntate: [20260601]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260601.md]
 ---
 
 # VideoMME V2
@@ -24,7 +23,7 @@ Benchmark per la valutazione della comprensione video multimodale, usato per tes
 
 ## Timeline delle notizie
 
-- **2026-06-01** — Su VideoMME V2, Keye-VL 2.0 ha mostrato che passare da sessantaquattro a cinquecentododici frame aumenta l'accuratezza dal trentacinque virgola trentaquattro al quarantadue virgola quarantaquattro percento. [Fonte: raw/puntate/ainews20260601.md]
+- **2026-06-01** — Su VideoMME V2, Keye-VL 2.0 ha mostrato che passare da sessantaquattro a cinquecentododici frame aumenta l'accuratezza dal trentacinque virgola trentaquattro al quarantadue virgola quarantaquattro percento.
 
 ## Collegamenti
 

@@ -1,11 +1,10 @@
-﻿---
+---
 title: "MAI-Code-1.1-Flash"
 category: modello
 tags: [coding, locale, microsoft]
 related_puntate: [20261008]
 created: 2026-10-08
 updated: 2026-10-08
-sources: [raw/puntate/ainews20261008.md, raw/tldr/tldr20261008.md]
 ---
 
 # MAI-Code-1.1-Flash
@@ -19,9 +18,9 @@ rilasciato in versione locale dentro [[github-copilot]].
 
 - Gira direttamente sul dispositivo, senza costi di inferenza per le chiamate
   locali, e dovrebbe permettere sviluppo agentico di qualità senza passare per
-  il cloud. [Fonte: raw/puntate/ainews20261008.md]
+  il cloud.
 - TLDR AI lo descrive come più veloce e a un quarto del costo delle versioni
-  precedenti. [Fonte: raw/tldr/tldr20261008.md]
+  precedenti.
 
 ## Azienda di riferimento
 
@@ -33,7 +32,7 @@ rilasciato in versione locale dentro [[github-copilot]].
 
 ## Timeline delle notizie
 
-- **2026-10-08** — [[microsoft]] rilascia MAI-Code-1.1-Flash in versione locale su [[github-copilot]]: gira sul dispositivo senza costi di inferenza per le chiamate locali, più veloce e a un quarto del costo delle versioni precedenti. [Fonte: raw/puntate/ainews20261008.md] [Fonte: raw/tldr/tldr20261008.md]
+- **2026-10-08** — [[microsoft]] rilascia MAI-Code-1.1-Flash in versione locale su [[github-copilot]]: gira sul dispositivo senza costi di inferenza per le chiamate locali, più veloce e a un quarto del costo delle versioni precedenti.
 
 ## Collegamenti
 

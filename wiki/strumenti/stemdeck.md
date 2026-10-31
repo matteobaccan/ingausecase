@@ -1,11 +1,10 @@
-﻿---
+---
 title: "StemDeck"
 category: strumento
 tags: [audio, open-source, stem, stem-separation]
 related_puntate: [20260601, 20260623]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260601.md, raw/puntate/ainews20260623.md]
 ---
 
 # StemDeck
@@ -21,8 +20,8 @@ Strumento open source di separazione delle tracce musicali basato su Demucs, tut
 
 ## Timeline delle notizie
 
-- **2026-06-01** — StemDeck carica una canzone da YouTube ed estrae sei tracce separate: voce, batteria, basso, chitarra, piano e altro. Basato su Demucs, ha interfaccia simile a una DAW con mute, solo, fader, zoom, loop e download delle singole tracce, calcola BPM, tonalità e loudness; tutto locale, GPU automatica e velocissimo su Apple Silicon. [Fonte: raw/puntate/ainews20260601.md]
-- **2026-06-23** — StemDeck separa una traccia audio in sei stem indipendenti (voce, batteria, basso, chitarra, piano, altro) con mixer multi-traccia integrato, esportazione singola o mix personalizzato; locale, gratuito e open source. [Fonte: raw/puntate/ainews20260623.md]
+- **2026-06-01** — StemDeck carica una canzone da YouTube ed estrae sei tracce separate: voce, batteria, basso, chitarra, piano e altro. Basato su Demucs, ha interfaccia simile a una DAW con mute, solo, fader, zoom, loop e download delle singole tracce, calcola BPM, tonalità e loudness; tutto locale, GPU automatica e velocissimo su Apple Silicon.
+- **2026-06-23** — StemDeck separa una traccia audio in sei stem indipendenti (voce, batteria, basso, chitarra, piano, altro) con mixer multi-traccia integrato, esportazione singola o mix personalizzato; locale, gratuito e open source.
 
 ## Collegamenti
 

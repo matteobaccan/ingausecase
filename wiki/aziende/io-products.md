@@ -1,11 +1,10 @@
-﻿---
+---
 title: "io Products"
 category: azienda
 tags: [hardware, openai, dispositivi]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/pillitteri/pillitteri20260714-apple-causa-openai-segreti-industriali.md]
 ---
 
 # io Products
@@ -16,7 +15,7 @@ Startup di dispositivi co-fondata da Jony Ive, acquisita da OpenAI a maggio 2025
 
 ## Timeline delle notizie
 
-- **2026-07-14** — io Products è tra gli imputati della causa civile che Apple ha depositato il 10 luglio 2026 contro OpenAI per furto di segreti industriali; Apple contesta alla startup l'uso improprio di tecniche riservate di finitura dei metalli e di informazioni sul design di batterie e alimentazione, sfruttate secondo l'accusa nei rapporti con i fornitori. [Fonte: raw/pillitteri/pillitteri20260714-apple-causa-openai-segreti-industriali.md]
+- **2026-07-14** — io Products è tra gli imputati della causa civile che Apple ha depositato il 10 luglio 2026 contro OpenAI per furto di segreti industriali; Apple contesta alla startup l'uso improprio di tecniche riservate di finitura dei metalli e di informazioni sul design di batterie e alimentazione, sfruttate secondo l'accusa nei rapporti con i fornitori.
 
 ## Collegamenti
 

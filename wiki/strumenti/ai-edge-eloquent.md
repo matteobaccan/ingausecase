@@ -1,11 +1,10 @@
-﻿---
+---
 title: "AI Edge Eloquent"
 category: strumento
 tags: [dettatura, edge, google, on-device]
 related_puntate: [20260609]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260609.md]
 ---
 
 # AI Edge Eloquent
@@ -24,7 +23,7 @@ App gratuita di dettatura di Google per Mac e iPhone, on-device con Gemma 4 12B.
 
 ## Timeline delle notizie
 
-- **2026-06-09** — AI Edge Eloquent di Google è un'app di dettatura gratuita per Mac e iPhone, interamente on-device con Gemma 4 12B: trascrive, rimuove le parole di riempimento, lucida il testo e ha comandi vocali per riformattare, con trascrizione audio e video integrata; richiede Mac con almeno sedici GB di RAM. [Fonte: raw/puntate/ainews20260609.md]
+- **2026-06-09** — AI Edge Eloquent di Google è un'app di dettatura gratuita per Mac e iPhone, interamente on-device con Gemma 4 12B: trascrive, rimuove le parole di riempimento, lucida il testo e ha comandi vocali per riformattare, con trascrizione audio e video integrata; richiede Mac con almeno sedici GB di RAM.
 
 ## Collegamenti
 

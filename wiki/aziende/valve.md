@@ -5,7 +5,6 @@ tags: [videogiochi, steam, piattaforme, usa]
 related_puntate: []
 created: 2026-10-29
 updated: 2026-10-29
-sources: [raw/pillitteri/pillitteri20261029-valve-non-blocca-giochi-ia-steam-slop-cloni.md]
 ---
 
 # Valve
@@ -22,8 +21,8 @@ Società di Bellevue, nello stato di Washington, che gestisce Steam, il negozio 
 
 ## Timeline delle notizie
 
-- **2026-10-29** — Il 27 ottobre a Busan, durante la sessione di domande e risposte della Steam Indie Connect, Tom Giardino e Marc Wilkinson hanno detto agli sviluppatori coreani che Valve non farà da «guardiano» sugli strumenti usati per fare i giochi, intelligenza artificiale compresa: nessun filtro annunciato per i giochi IA su Steam e nessuna stretta sull'accesso alle demo, con la difesa dei cloni affidata alla comunità e agli aggiornamenti del gioco invece che ai controlli in ingresso. [Fonte: raw/pillitteri/pillitteri20261029-valve-non-blocca-giochi-ia-steam-slop-cloni.md]
-- **2026-10-29** — Sul Next Fest di ottobre, partito il 19 con 7.164 demo su SteamDB di cui almeno 1.054 con avviso di contenuti IA, Wilkinson ha spiegato che i primi due giorni mostrano le demo in modo quasi casuale per dare a tutti la stessa visibilità e che dal terzo entrano le raccomandazioni personalizzate, ammettendo che così «alcuni giochi di bassa qualità vengono esposti»; resta in vigore l'obbligo di dichiarare l'IA generativa che arriva ai giocatori, riscritto a gennaio 2026 con gli strumenti di sviluppo esclusi. [Fonte: raw/pillitteri/pillitteri20261029-valve-non-blocca-giochi-ia-steam-slop-cloni.md]
+- **2026-10-29** — Il 27 ottobre a Busan, durante la sessione di domande e risposte della Steam Indie Connect, Tom Giardino e Marc Wilkinson hanno detto agli sviluppatori coreani che Valve non farà da «guardiano» sugli strumenti usati per fare i giochi, intelligenza artificiale compresa: nessun filtro annunciato per i giochi IA su Steam e nessuna stretta sull'accesso alle demo, con la difesa dei cloni affidata alla comunità e agli aggiornamenti del gioco invece che ai controlli in ingresso.
+- **2026-10-29** — Sul Next Fest di ottobre, partito il 19 con 7.164 demo su SteamDB di cui almeno 1.054 con avviso di contenuti IA, Wilkinson ha spiegato che i primi due giorni mostrano le demo in modo quasi casuale per dare a tutti la stessa visibilità e che dal terzo entrano le raccomandazioni personalizzate, ammettendo che così «alcuni giochi di bassa qualità vengono esposti»; resta in vigore l'obbligo di dichiarare l'IA generativa che arriva ai giocatori, riscritto a gennaio 2026 con gli strumenti di sviluppo esclusi.
 
 ## Collegamenti
 

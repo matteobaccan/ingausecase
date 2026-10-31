@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Incognia"
 category: azienda
 tags: [incognia, deepfake, identità, sicurezza]
 related_puntate: [20260520]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260520.md]
 ---
 
 # Incognia
@@ -20,7 +19,7 @@ Azienda che ha mostrato una demo di deepfake live realtime, sovrapponendo il vol
 
 ## Timeline delle notizie
 
-- **2026-05-20** — Incognia ha mostrato un deepfake live in tempo reale: il volto di Will Smith sovrapposto a un proprio dipendente in videochiamata, aprendo interrogativi sull'identità digitale. [Fonte: raw/puntate/ainews20260520.md]
+- **2026-05-20** — Incognia ha mostrato un deepfake live in tempo reale: il volto di Will Smith sovrapposto a un proprio dipendente in videochiamata, aprendo interrogativi sull'identità digitale.
 
 ## Collegamenti
 

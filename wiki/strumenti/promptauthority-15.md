@@ -1,11 +1,10 @@
-﻿---
+---
 title: "PromptAuthority-15"
 category: strumento
 tags: [benchmark, sicurezza, valutazione]
 related_puntate: [20260616]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260616.md]
 ---
 
 # PromptAuthority-15
@@ -24,7 +23,7 @@ Benchmark che testa la gerarchia di obbedienza dei modelli tra sviluppatore, ute
 
 ## Timeline delle notizie
 
-- **2026-06-16** — PromptAuthority-15 è il benchmark che testa chi il modello obbedisce quando sviluppatore, utente e pagina web danno ordini contrastanti: Qwen3.6-27B ha ottenuto punteggio perfetto con zero errori. [Fonte: raw/puntate/ainews20260616.md]
+- **2026-06-16** — PromptAuthority-15 è il benchmark che testa chi il modello obbedisce quando sviluppatore, utente e pagina web danno ordini contrastanti: Qwen3.6-27B ha ottenuto punteggio perfetto con zero errori.
 
 ## Collegamenti
 

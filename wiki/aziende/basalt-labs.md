@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Basalt Labs"
 category: azienda
 tags: [basalt-labs, open-weight, startup, usa]
 related_puntate: [20260718]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260718.md]
 ---
 
 # Basalt Labs
@@ -20,7 +19,7 @@ Laboratorio AI che ha presentato Monolith 1.0, modello da oltre un trilione e me
 
 ## Timeline delle notizie
 
-- **2026-07-18** — Basalt Labs ha presentato Monolith 1.0, modello da un trilione e cinquecentosettanta miliardi di parametri con licenza MIT. [Fonte: raw/puntate/ainews20260718.md]
+- **2026-07-18** — Basalt Labs ha presentato Monolith 1.0, modello da un trilione e cinquecentosettanta miliardi di parametri con licenza MIT.
 
 ## Collegamenti
 

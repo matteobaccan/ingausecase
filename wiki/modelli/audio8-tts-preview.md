@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Audio8 TTS Preview 0.1B"
 category: modello
 tags: [on-device, tts, voce, voice-cloning]
 related_puntate: [20260826]
 created: 2026-08-26
 updated: 2026-08-26
-sources: [raw/puntate/ainews20260826.md]
 ---
 
 # Audio8 TTS Preview 0.1B
@@ -30,7 +29,7 @@ Modello text-to-speech preview da circa cento milioni di parametri, distribuito 
 
 ## Timeline delle notizie
 
-- **2026-08-26** — Audio8 TTS Preview 0.1B arriva su Hugging Face come ONNX INT8: circa cento milioni di parametri, undici lingue, voice cloning zero-shot, gira solo su CPU con circa zero virgola quattro GB di RAM, niente PyTorch né CUDA, 44,1 kHz e API compatibile OpenAI. [Fonte: raw/puntate/ainews20260826.md]
+- **2026-08-26** — Audio8 TTS Preview 0.1B arriva su Hugging Face come ONNX INT8: circa cento milioni di parametri, undici lingue, voice cloning zero-shot, gira solo su CPU con circa zero virgola quattro GB di RAM, niente PyTorch né CUDA, 44,1 kHz e API compatibile OpenAI.
 
 ## Collegamenti
 

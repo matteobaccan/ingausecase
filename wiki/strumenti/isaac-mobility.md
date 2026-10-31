@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Isaac Mobility"
 category: strumento
 tags: [isaac, nvidia, robotica, skill]
 related_puntate: [20260604]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260604.md]
 ---
 
 # Isaac Mobility
@@ -24,7 +23,7 @@ Skill NVIDIA per agenti AI in robotica che automatizzano preparazione scena, sim
 
 ## Timeline delle notizie
 
-- **2026-06-04** — Isaac Mobility e altre skill NVIDIA per robotica automatizzano i passi di sviluppo comuni, dalla preparazione della scena alla simulazione e apprendimento, usando librerie Omniverse, framework Isaac e dataset aperti di IA fisica. [Fonte: raw/puntate/ainews20260604.md]
+- **2026-06-04** — Isaac Mobility e altre skill NVIDIA per robotica automatizzano i passi di sviluppo comuni, dalla preparazione della scena alla simulazione e apprendimento, usando librerie Omniverse, framework Isaac e dataset aperti di IA fisica.
 
 ## Collegamenti
 

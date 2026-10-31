@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Rowboat"
 category: strumento
 tags: [agent, knowledge-graph, open-source, voice]
 related_puntate: [20260526]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260526.md]
 ---
 
 # Rowboat
@@ -24,7 +23,7 @@ Alternativa locale gratuita a Claude Cowork: si connette a Gmail e note meeting,
 
 ## Timeline delle notizie
 
-- **2026-05-26** — Rowboat è l'alternativa locale gratuita a Claude Cowork: si connette a Gmail e note meeting, costruisce un knowledge graph del tuo lavoro e agisce; è voice-enabled, compatibile con qualsiasi LLM locale o hosted, estendibile con MCP tool, con background agent, web search e vault Markdown compatibile Obsidian; 14300 stelle. [Fonte: raw/puntate/ainews20260526.md]
+- **2026-05-26** — Rowboat è l'alternativa locale gratuita a Claude Cowork: si connette a Gmail e note meeting, costruisce un knowledge graph del tuo lavoro e agisce; è voice-enabled, compatibile con qualsiasi LLM locale o hosted, estendibile con MCP tool, con background agent, web search e vault Markdown compatibile Obsidian; 14300 stelle.
 
 ## Collegamenti
 

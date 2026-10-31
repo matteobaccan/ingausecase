@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Hetty"
 category: strumento
 tags: [open-source, proxy, sicurezza]
 related_puntate: [20260623]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260623.md]
 ---
 
 # Hetty
@@ -20,7 +19,7 @@ Proxy HTTP open source (Burp Suite open) con intercettazione, modifica e ripetiz
 
 ## Timeline delle notizie
 
-- **2026-06-23** — Hetty è una Burp Suite open source: diecimila cinquecento star, proxy HTTP completo che intercetta, modifica e ripete richieste su Windows, macOS e Linux. [Fonte: raw/puntate/ainews20260623.md]
+- **2026-06-23** — Hetty è una Burp Suite open source: diecimila cinquecento star, proxy HTTP completo che intercetta, modifica e ripete richieste su Windows, macOS e Linux.
 
 ## Collegamenti
 

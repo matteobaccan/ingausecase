@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Howard Lutnick"
 category: persona
 tags: [governo, regolamentazione, usa]
 related_puntate: [20260626]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260626.md]
 ---
 
 # Howard Lutnick
@@ -20,7 +19,7 @@ Segretario al Commercio USA; ha chiamato personalmente OpenAI per bloccare il la
 
 ## Timeline delle notizie
 
-- **2026-06-26** — Il Segretario al Commercio Lutnick ha chiamato personalmente OpenAI per avvertire di non lanciare GPT-cinque punto sei senza le approvazioni delle altre agenzie, portando il governo ad approvare l'accesso cliente per cliente. [Fonte: raw/puntate/ainews20260626.md]
+- **2026-06-26** — Il Segretario al Commercio Lutnick ha chiamato personalmente OpenAI per avvertire di non lanciare GPT-cinque punto sei senza le approvazioni delle altre agenzie, portando il governo ad approvare l'accesso cliente per cliente.
 
 ## Collegamenti
 

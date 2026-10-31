@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Sepia"
 category: strumento
 tags: [github, ia-detector, text]
 related_puntate: [20260901]
 created: 2026-09-01
 updated: 2026-09-01
-sources: [raw/puntate/ainews20260901.md]
 ---
 
 # Sepia
@@ -23,7 +22,7 @@ Strumento di GitHub che identifica la scrittura generata da IA riconoscendo la s
 
 ## Timeline delle notizie
 
-- **2026-09-01** — Sepia, progetto GitHub con cinquemiladuecento star, identifica la scrittura generata da IA al 93,2% di precision. Analizza la struttura narrativa, non le parole. Trent'anni di regole per riscrivere testo eliminando i pattern tipici dei modelli. Include anche regole per documenti formali. [Fonte: raw/puntate/ainews20260901.md]
+- **2026-09-01** — Sepia, progetto GitHub con cinquemiladuecento star, identifica la scrittura generata da IA al 93,2% di precision. Analizza la struttura narrativa, non le parole. Trent'anni di regole per riscrivere testo eliminando i pattern tipici dei modelli. Include anche regole per documenti formali.
 
 ## Collegamenti
 

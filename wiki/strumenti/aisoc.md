@@ -1,18 +1,17 @@
-﻿---
+---
 title: "AiSOC"
 category: strumento
 tags: [sicurezza, soc, open-source, agenti, self-hosted]
 related_puntate: []
 created: 2026-10-31
 updated: 2026-10-31
-sources: [raw/pillitteri/pillitteri20261031-aisoc-soc-open-source-agenti-ai.md]
 ---
 
 # AiSOC
 
 ## Introduzione
 
-Security Operations Center open source, installabile sui propri server con licenza MIT, che raccoglie i log, li correla in incidenti e li fa analizzare da agenti AI. Nasce il 2 maggio 2026 sull'account GitHub di Beenu Arora, amministratore delegato e cofondatore di Cyble, che secondo il file dei crediti paga lo sviluppo. [Fonte: raw/pillitteri/pillitteri20261031-aisoc-soc-open-source-agenti-ai.md]
+Security Operations Center open source, installabile sui propri server con licenza MIT, che raccoglie i log, li correla in incidenti e li fa analizzare da agenti AI. Nasce il 2 maggio 2026 sull'account GitHub di Beenu Arora, amministratore delegato e cofondatore di Cyble, che secondo il file dei crediti paga lo sviluppo.
 
 ## Funzionalità principali
 
@@ -22,7 +21,7 @@ Security Operations Center open source, installabile sui propri server con licen
 
 ## Installazione e uso
 
-Docker Compose v2 con 8 GB di memoria e 20 GB di disco liberi, poi `make up`; i profili sono Core (16 servizi), Full con event lake e grafo (22 servizi, circa 12 GB) e Demo con dati sintetici. Il modello incluso è un Llama 3.2 da 3 miliardi quantizzato servito da Ollama, sostituibile da console con un provider a pagamento. [Fonte: raw/pillitteri/pillitteri20261031-aisoc-soc-open-source-agenti-ai.md]
+Docker Compose v2 con 8 GB di memoria e 20 GB di disco liberi, poi `make up`; i profili sono Core (16 servizi), Full con event lake e grafo (22 servizi, circa 12 GB) e Demo con dati sintetici. Il modello incluso è un Llama 3.2 da 3 miliardi quantizzato servito da Ollama, sostituibile da console con un provider a pagamento.
 
 ## Repository
 
@@ -34,7 +33,7 @@ Docker Compose v2 con 8 GB di memoria e 20 GB di disco liberi, poi `make up`; i 
 
 ## Timeline delle notizie
 
-- **2026-10-31** — Il progetto documenta il caso della segnalazione numero 220 del 27 maggio 2026, in cui un'iniezione di prompt poteva far chiudere in automatico un allarme: la correzione è arrivata il giorno dopo con la sanificazione dei prompt e il contenuto non fidato racchiuso a parte. Un audit interno del 23 settembre ammette che la guida d'avvio portava a un'installazione senza ingestione, con la console riempita da 15 incidenti inventati scritti nel database. [Fonte: raw/pillitteri/pillitteri20261031-aisoc-soc-open-source-agenti-ai.md]
+- **2026-10-31** — Il progetto documenta il caso della segnalazione numero 220 del 27 maggio 2026, in cui un'iniezione di prompt poteva far chiudere in automatico un allarme: la correzione è arrivata il giorno dopo con la sanificazione dei prompt e il contenuto non fidato racchiuso a parte. Un audit interno del 23 settembre ammette che la guida d'avvio portava a un'installazione senza ingestione, con la console riempita da 15 incidenti inventati scritti nel database.
 
 ## Collegamenti
 

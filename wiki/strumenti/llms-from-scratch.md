@@ -1,11 +1,10 @@
-﻿---
+---
 title: "LLMs-from-scratch"
 category: strumento
 tags: [educativo, github, llm, open-source]
 related_puntate: [20260808]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260808.md]
 ---
 
 # LLMs-from-scratch
@@ -24,7 +23,7 @@ Repository open source di Sebastian Raschka con oltre centomila stelle: implemen
 
 ## Timeline delle notizie
 
-- **2026-08-08** — LLMs-from-scratch ha superato le centomila stelle: codice completo di tokenizzazione, attenzione, pretraining, classificazione e instruction fine-tuning, con implementazioni from-scratch di Llama, Qwen, Gemma e Olmo, varianti attention (GQA, MLA, sliding-window, Gated DeltaNet, DeepSeek Sparse Attention, mixture-of-experts), KV caching, DPO e LoRA. [Fonte: raw/puntate/ainews20260808.md]
+- **2026-08-08** — LLMs-from-scratch ha superato le centomila stelle: codice completo di tokenizzazione, attenzione, pretraining, classificazione e instruction fine-tuning, con implementazioni from-scratch di Llama, Qwen, Gemma e Olmo, varianti attention (GQA, MLA, sliding-window, Gated DeltaNet, DeepSeek Sparse Attention, mixture-of-experts), KV caching, DPO e LoRA.
 
 ## Collegamenti
 

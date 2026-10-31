@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Gauntlet Loop"
 category: strumento
 tags: [agent, loop, open-source]
 related_puntate: [20260731]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260731.md]
 ---
 
 # Gauntlet Loop
@@ -24,7 +23,7 @@ Tecnica open source di loop engineering per agenti: coordina squadre di agenti i
 
 ## Timeline delle notizie
 
-- **2026-07-31** — Ryan Campbell ha dato a Claude Opus 5 un solo prompt e in quattro giorni ha ottenuto un kart racer completo in Three.js: 65.500 righe di TypeScript, zero asset esterni, 126 agenti e undici round. La tecnica, chiamata Gauntlet Loop, è open source. [Fonte: raw/puntate/ainews20260731.md]
+- **2026-07-31** — Ryan Campbell ha dato a Claude Opus 5 un solo prompt e in quattro giorni ha ottenuto un kart racer completo in Three.js: 65.500 righe di TypeScript, zero asset esterni, 126 agenti e undici round. La tecnica, chiamata Gauntlet Loop, è open source.
 
 ## Collegamenti
 

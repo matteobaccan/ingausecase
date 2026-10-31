@@ -1,11 +1,10 @@
-﻿---
+---
 title: "GitHub Store"
 category: strumento
 tags: [app-store, github, installer, open-source]
 related_puntate: [20260611]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260611.md]
 ---
 
 # GitHub Store
@@ -20,7 +19,7 @@ Trasforma i rilasci GitHub in un app store pulito, sviluppato da un diciassetten
 
 ## Timeline delle notizie
 
-- **2026-06-11** — GitHub Store rimuove la confusione del download dai rilasci GitHub: rileva file installabili, mostra la versione corretta per il dispositivo e installa e aggiorna direttamente su Android, Windows, macOS e Linux; open source. [Fonte: raw/puntate/ainews20260611.md]
+- **2026-06-11** — GitHub Store rimuove la confusione del download dai rilasci GitHub: rileva file installabili, mostra la versione corretta per il dispositivo e installa e aggiorna direttamente su Android, Windows, macOS e Linux; open source.
 
 ## Collegamenti
 

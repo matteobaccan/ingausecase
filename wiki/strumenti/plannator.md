@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Plannator"
 category: strumento
 tags: [agent, coding, prototipi, wireframe]
 related_puntate: [20260825]
 created: 2026-08-25
 updated: 2026-08-25
-sources: [raw/puntate/ainews20260825.md]
 ---
 
 # Plannator
@@ -20,7 +19,7 @@ Genera wireframe HTML auto-contenuti e prototipi interattivi per agenti di codin
 
 ## Timeline delle notizie
 
-- **2026-08-25** — Plannator genera wireframe HTML auto-contenuti e prototipi interattivi per agenti di coding. [Fonte: raw/puntate/ainews20260825.md]
+- **2026-08-25** — Plannator genera wireframe HTML auto-contenuti e prototipi interattivi per agenti di coding.
 
 ## Collegamenti
 

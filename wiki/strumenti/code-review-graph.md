@@ -1,11 +1,10 @@
-﻿---
+---
 title: "code-review-graph"
 category: strumento
 tags: [code-review, efficienza, open-source, tree-sitter]
 related_puntate: [20260807]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260807.md]
 ---
 
 # code-review-graph
@@ -20,7 +19,7 @@ Strumento che riduce il consumo di token nelle code review fino a trecentosettan
 
 ## Timeline delle notizie
 
-- **2026-08-07** — code-review-graph riduce il consumo token fino a trecentosettantasei volte nelle review: analizza la codebase con Tree-sitter, salva grafi e passa all'IA solo le modifiche rilevanti. [Fonte: raw/puntate/ainews20260807.md]
+- **2026-08-07** — code-review-graph riduce il consumo token fino a trecentosettantasei volte nelle review: analizza la codebase con Tree-sitter, salva grafi e passa all'IA solo le modifiche rilevanti.
 
 ## Collegamenti
 

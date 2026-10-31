@@ -1,11 +1,10 @@
-﻿---
+---
 title: "HY World 2.0"
 category: modello
 tags: [open-source, tencent, world-model]
 related_puntate: [20260519]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260519.md]
 ---
 
 # HY World 2.0
@@ -20,7 +19,7 @@ World model interattivo di Tencent completamente open sourced, con codice di inf
 
 ## Timeline delle notizie
 
-- **2026-05-19** — HY World 2.0 è stato completamente open-sourced: codice di inferenza completo e tutti i modelli, world model interattivo per costruire ambienti simulati. [Fonte: raw/puntate/ainews20260519.md]
+- **2026-05-19** — HY World 2.0 è stato completamente open-sourced: codice di inferenza completo e tutti i modelli, world model interattivo per costruire ambienti simulati.
 
 ## Collegamenti
 

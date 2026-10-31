@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Soniox TTS v2"
 category: modello
 tags: [voice-cloning, multilingue, tts, voce]
 related_puntate: [20260812]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260812.md]
 ---
 
 # Soniox TTS v2
@@ -20,7 +19,7 @@ Modello text-to-speech di Soniox con qualita' vocale straordinaria, controllo es
 
 ## Timeline delle notizie
 
-- **2026-08-12** — Soniox TTS v2 e' un modello text-to-speech potentissimo: qualita' vocale straordinaria, controllo espressivo tramite tag audio, precisione eccezionale e clonazione vocale ad alta fedelta'; oltre sessanta lingue, mixing linguistico naturale, streaming a bassa latenza, a settanta centesimi per ora generata. [Fonte: raw/puntate/ainews20260812.md]
+- **2026-08-12** — Soniox TTS v2 e' un modello text-to-speech potentissimo: qualita' vocale straordinaria, controllo espressivo tramite tag audio, precisione eccezionale e clonazione vocale ad alta fedelta'; oltre sessanta lingue, mixing linguistico naturale, streaming a bassa latenza, a settanta centesimi per ora generata.
 
 ## Collegamenti
 

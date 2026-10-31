@@ -1,11 +1,10 @@
-﻿---
+---
 title: "rmux"
 category: strumento
 tags: [agent, rust, terminal]
 related_puntate: [20260623]
 created: 2026-08-12
 updated: 2026-08-12
-sources: [raw/puntate/ainews20260623.md]
 ---
 
 # rmux
@@ -20,7 +19,7 @@ Riscrittura Rust di tmux pensata per agenti, con automazione nativa e compatibil
 
 ## Timeline delle notizie
 
-- **2026-06-23** — rmux è la riscrittura Rust di tmux pensata per agenti: gestione terminale multi-finestra con automazione nativa; Claude Code orchestra Codex e Gemini CLI sullo stesso terminale, compatibile con oltre novanta comandi tmux. [Fonte: raw/puntate/ainews20260623.md]
+- **2026-06-23** — rmux è la riscrittura Rust di tmux pensata per agenti: gestione terminale multi-finestra con automazione nativa; Claude Code orchestra Codex e Gemini CLI sullo stesso terminale, compatibile con oltre novanta comandi tmux.
 
 ## Collegamenti
 

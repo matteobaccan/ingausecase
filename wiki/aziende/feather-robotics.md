@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Feather Robotics"
 category: azienda
 tags: [robotica, physical-ai, hardware, modularità]
 related_puntate: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [raw/controrumore/controrumore20260926-diario-ai-una-truffa-ai-costa-95.md]
 ---
 
 # Feather Robotics
@@ -16,7 +15,7 @@ Startup di robotica che punta a costruire l'"Android della robotica" con una pia
 
 ## Timeline delle notizie
 
-- **2026-09-26** — Feather Robotics ha sviluppato una piattaforma modulare pensata per consentire agli sviluppatori di costruire applicazioni di physical AI senza progettare da zero hardware e modello fondamentale; il robot costa 30.000 dollari, può essere modificato in diversi componenti e supporta modelli di vari fornitori. La startup afferma che alcune unità sono già impiegate in ristoranti e laboratori e ha superato 1 milione di dollari di ricavi. [Fonte: raw/controrumore/controrumore20260926-diario-ai-una-truffa-ai-costa-95.md]
+- **2026-09-26** — Feather Robotics ha sviluppato una piattaforma modulare pensata per consentire agli sviluppatori di costruire applicazioni di physical AI senza progettare da zero hardware e modello fondamentale; il robot costa 30.000 dollari, può essere modificato in diversi componenti e supporta modelli di vari fornitori. La startup afferma che alcune unità sono già impiegate in ristoranti e laboratori e ha superato 1 milione di dollari di ricavi.
 
 ## Collegamenti
 

@@ -1,18 +1,17 @@
-﻿---
+---
 title: "Yona Shavit"
 category: persona
 tags: [openai, sicurezza, critica]
 related_puntate: []
 created: 2026-09-12
 updated: 2026-09-12
-sources: [raw/pillitteri/pillitteri20260901-openai-astra-soglia-cyber-critica.md]
 ---
 
 # Yona Shavit
 
 ## Introduzione
 
-Ha lavorato in [[openai]]. [Fonte: raw/pillitteri/pillitteri20260901-openai-astra-soglia-cyber-critica.md]
+Ha lavorato in [[openai]].
 
 ## Timeline delle notizie
 
@@ -20,7 +19,7 @@ Ha lavorato in [[openai]]. [Fonte: raw/pillitteri/pillitteri20260901-openai-astr
   di replica dell'incidente [[hugging-face]] sia autentica: il modello potrebbe
   non aver tentato l'evasione perché sapeva cosa ci si aspettava da lui, o per
   ingannare i ricercatori. È un sospetto che mina alla radice l'affidabilità
-  dei test di sicurezza fatti in casa. [Fonte: raw/pillitteri/pillitteri20260901-openai-astra-soglia-cyber-critica.md]
+  dei test di sicurezza fatti in casa.
 
 ## Collegamenti
 

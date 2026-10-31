@@ -1,11 +1,10 @@
-﻿---
+---
 title: "Qwen 3.8-Max-Zero 0.9.2"
 category: modello
 tags: [alibaba, cina, coding, llm, moe, open-weight]
 related_puntate: [20260903]
 created: 2026-09-03
 updated: 2026-09-03
-sources: [raw/puntate/ainews20260903.md]
 ---
 
 # Qwen 3.8-Max-Zero 0.9.2
@@ -31,7 +30,7 @@ Versione aggiornata del modello di punta Qwen 3.8 Max di Alibaba, rilasciata dop
 
 ## Timeline delle notizie
 
-- **2026-09-03** — Qwen tre virgola otto-Max ha ricevuto un upgrade: si chiama ora Qwen tre virgola otto-Max-zero virgola due virgola due, con due virgola quattro trilioni di parametri, un milione di token di contesto, post-training rafforzato su coding e cowork, e prezzi di due dollari per milione di token in input e sei dollari in output. [Fonte: raw/puntate/ainews20260903.md]
+- **2026-09-03** — Qwen tre virgola otto-Max ha ricevuto un upgrade: si chiama ora Qwen tre virgola otto-Max-zero virgola due virgola due, con due virgola quattro trilioni di parametri, un milione di token di contesto, post-training rafforzato su coding e cowork, e prezzi di due dollari per milione di token in input e sei dollari in output.
 
 ## Collegamenti
 

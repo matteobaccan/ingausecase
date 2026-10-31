@@ -1,23 +1,22 @@
-﻿---
+---
 title: "Echo (Fulcrum)"
 category: modello
 tags: [scrittura, addestramento, llm]
 related_puntate: [20261001]
 created: 2026-10-01
 updated: 2026-10-01
-sources: [raw/puntate/ainews20261001.md]
 ---
 
 # Echo (Fulcrum)
 
 ## Introduzione
 
-Modello di scrittura di [[fulcrum]] specializzato nell'imitazione di stile. [Fonte: raw/puntate/ainews20261001.md]
+Modello di scrittura di [[fulcrum]] specializzato nell'imitazione di stile.
 
 ## Capacità e performance
 
-- Batte i modelli frontier su task di scrittura che vanno dalla fiction alle spiegazioni tecniche. [Fonte: raw/puntate/ainews20261001.md]
-- Costo di training inferiore ai cinquemila dollari. [Fonte: raw/puntate/ainews20261001.md]
+- Batte i modelli frontier su task di scrittura che vanno dalla fiction alle spiegazioni tecniche.
+- Costo di training inferiore ai cinquemila dollari.
 
 ## Azienda di riferimento
 
@@ -25,7 +24,7 @@ Modello di scrittura di [[fulcrum]] specializzato nell'imitazione di stile. [Fon
 
 ## Timeline delle notizie
 
-- **2026-10-01** — Fulcrum presenta Echo, modello di scrittura specializzato nell'imitazione di stile che batte i modelli frontier su task che vanno dalla fiction alle spiegazioni tecniche, addestrato con meno di cinquemila dollari. [Fonte: raw/puntate/ainews20261001.md]
+- **2026-10-01** — Fulcrum presenta Echo, modello di scrittura specializzato nell'imitazione di stile che batte i modelli frontier su task che vanno dalla fiction alle spiegazioni tecniche, addestrato con meno di cinquemila dollari.
 
 ## Collegamenti
 
