@@ -22,6 +22,7 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 .venv/bin/python tools/runner.py --case pdf      # un caso solo (ripetibile)
 .venv/bin/python tools/runner.py --version 0.40.0 --cache /tmp/iuc
 .venv/bin/python tools/runner.py --list
+.venv/bin/python tools/runner.py --summary-only --version 0.40.0   # riscrive solo summary.md
 ```
 
 Variabili d'ambiente lette (nessuna è obbligatoria):

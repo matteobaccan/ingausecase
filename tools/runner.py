@@ -387,7 +387,7 @@ def write_summary(results, version, inga_version_line):
         f"Eseguito con `{inga_version_line}`, seed {cur[next(iter(cur))].get('seed') if cur else '-'}, "
         "temperatura 0. Voti in percentuale; il confronto è con la versione precedente "
         f"presente in `results/` ({pv}).", "",
-        f"| Caso | Voto | Voto {pv} | Differenza | Tempo (m:s) | Modello | Stato |",
+        "| Caso | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |",
         "| --- | ---: | ---: | ---: | ---: | --- | --- |",
     ]
     for name, r in cur.items():
@@ -403,7 +403,7 @@ def write_summary(results, version, inga_version_line):
             continue
         pvoci = (prev.get(name) or {}).get("voci") or {}
         detail.append(f"\n### {name}\n")
-        detail.append(f"| Voce | Valore | Valore {pv} | Differenza |")
+        detail.append("| Voce | Valore | Valore precedente | Differenza |")
         detail.append("| --- | ---: | ---: | ---: |")
         for k, v in voci.items():
             detail.append(f"| {k} | {pct(v)} | {pct(pvoci.get(k))} | {delta(v, pvoci.get(k))} |")
@@ -429,6 +429,8 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--inga", help="use this inga executable instead of downloading the release")
     ap.add_argument("--list", action="store_true", help="list the cases and exit")
+    ap.add_argument("--summary-only", action="store_true",
+                    help="only write results/<version>/summary.md again from the case JSONs")
     args = ap.parse_args()
 
     cases = list_cases()
@@ -451,6 +453,12 @@ def main():
     if not re.fullmatch(r"\d+\.\d+\.\d+", version):
         log(f"not a version: {version!r}")
         return 2
+
+    if args.summary_only:
+        with open(os.path.join(args.results, version, "summary.md"), encoding="utf-8") as f:
+            line = re.search(r"Eseguito con `([^`]*)`", f.read())
+        write_summary(args.results, version, line.group(1) if line else f"inga {version}")
+        return 0
 
     os.makedirs(args.cache, exist_ok=True)
     try:
