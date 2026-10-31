@@ -1,0 +1,6 @@
+{
+  "descrizione": "estrazione dei campi da 20 fatture e ordini sintetici in PDF",
+  "modello": "qwen3-4b",
+  "ctx": 4096,
+  "timeout_minuti": 60
+}
