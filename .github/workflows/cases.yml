@@ -1,0 +1,176 @@
+# Esegue i casi d'uso su una versione di Inga.
+#
+# Questo file è identico sui rami `main` e `cases`: GitHub prende il workflow dal ramo
+# `main` per `schedule` e per `workflow_dispatch` lanciato su main, e dal ramo base della
+# PR (cioè `cases`) per `pull_request`. Se si cambia, va cambiato su tutti e due.
+#
+# - workflow_dispatch: `version` (vuoto = l'ultima release) e `case` (vuoto = tutti);
+# - schedule: una volta al giorno, solo se l'ultima release non ha ancora risultati in
+#   results/ sul ramo `cases`;
+# - pull_request verso `cases` (Renovate o una persona che cambia inga-version.txt, i
+#   casi o gli strumenti): esegue i casi sulla versione della PR, senza pubblicare nulla.
+#
+# Il codice dei casi gira nel job `run` con permessi di sola lettura; il job `publish`,
+# solo per schedule e workflow_dispatch, non esegue codice del repository: scarica i
+# risultati e li salva sul ramo `cases`.
+#
+# Segreti (facoltativi): INGA_TOKEN, un token che legge le release di
+# matteobaccan/inga finché quel repository è privato; HF_TOKEN per Hugging Face.
+
+name: cases
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Versione di Inga (es. 0.40.0); vuoto = l'ultima release"
+        required: false
+        default: ""
+      case:
+        description: "Un caso solo (es. pdf); vuoto = tutti"
+        required: false
+        default: ""
+  schedule:
+    - cron: "17 3 * * *"
+  pull_request:
+    branches: [cases]
+    paths:
+      - inga-version.txt
+      - models.json
+      - cases/**
+      - tools/**
+      - .github/workflows/cases.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cases-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'cases-branch' }}
+  cancel-in-progress: false
+
+jobs:
+  decide:
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+      run: ${{ steps.v.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
+          sparse-checkout: |
+            inga-version.txt
+            results
+      - id: v
+        env:
+          GH_TOKEN: ${{ secrets.INGA_TOKEN || github.token }}
+          EVENT: ${{ github.event_name }}
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+        run: |
+          set -euo pipefail
+          latest() { gh api repos/matteobaccan/inga/releases/latest --jq .tag_name | sed 's/^v//'; }
+          case "$EVENT" in
+            pull_request) version=$(tr -d ' \r\n' < inga-version.txt); run=true ;;
+            workflow_dispatch) version="${INPUT_VERSION#v}"; [ -n "$version" ] || version=$(latest); run=true ;;
+            schedule)
+              version=$(latest)
+              if [ -f "results/$version/summary.md" ]; then
+                echo "Inga $version ha già i risultati in results/$version: niente da fare."
+                run=false
+              else
+                run=true
+              fi ;;
+          esac
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+          echo "Versione: $version, esecuzione: $run"
+
+  run:
+    needs: decide
+    if: needs.decide.outputs.run == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    env:
+      IUC_CACHE: /home/runner/iuc-cache
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dipendenze
+        run: |
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
+      - name: Chiave della cache dei modelli
+        id: models
+        run: |
+          # la chiave è lo sha256 dei file dei modelli (da models.json), non il file JSON
+          key=$(python -c "import json,hashlib; m=json.load(open('models.json'))['modelli']; print(hashlib.sha256(' '.join(sorted(v['sha256'] for v in m.values())).encode()).hexdigest()[:32])")
+          echo "key=models-$key" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.IUC_CACHE }}/models
+          key: ${{ steps.models.outputs.key }}
+      - name: Casi
+        env:
+          INGA_TOKEN: ${{ secrets.INGA_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.decide.outputs.version }}
+          CASE: ${{ github.event.inputs.case }}
+        run: |
+          args=(--version "$VERSION")
+          [ -z "$CASE" ] || args+=(--case "$CASE")
+          "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}"
+      - name: Riepilogo
+        if: always()
+        env:
+          VERSION: ${{ needs.decide.outputs.version }}
+        run: |
+          [ -f "results/$VERSION/summary.md" ] && cat "results/$VERSION/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-${{ needs.decide.outputs.version }}
+          path: results/${{ needs.decide.outputs.version }}
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: logs-${{ needs.decide.outputs.version }}
+          path: ${{ env.IUC_CACHE }}/work/**/*.log
+          if-no-files-found: ignore
+
+  publish:
+    needs: [decide, run]
+    if: always() && github.event_name != 'pull_request' && needs.decide.outputs.run == 'true' && needs.run.result != 'cancelled' && needs.run.result != 'skipped'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cases
+      - uses: actions/download-artifact@v4
+        with:
+          name: results-${{ needs.decide.outputs.version }}
+          path: ${{ runner.temp }}/results
+      - name: Salva i risultati sul ramo cases
+        env:
+          VERSION: ${{ needs.decide.outputs.version }}
+        run: |
+          set -euo pipefail
+          git fetch origin cases
+          git checkout -B cases origin/cases
+          mkdir -p "results/$VERSION"
+          cp -r "$RUNNER_TEMP/results/." "results/$VERSION/"
+          git add "results/$VERSION"
+          if git diff --cached --quiet; then
+            echo "Nessun cambiamento nei risultati."
+            exit 0
+          fi
+          git -c user.name="Matteo Baccan" -c user.email=matteo.baccan@gmail.com commit -m "Risultati di Inga $VERSION"
+          git push origin cases

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate legge questo file dal ramo predefinito (main) e apre le PR sul ramo cases, dove sta inga-version.txt.",
+  "baseBranchPatterns": ["cases"],
+  "enabledManagers": ["custom.regex"],
+  "dependencyDashboard": false,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "La versione di Inga provata dai casi",
+      "managerFilePatterns": ["/^inga-version\\.txt$/"],
+      "matchStrings": ["^(?<currentValue>\\d+\\.\\d+\\.\\d+)\\s*$"],
+      "depNameTemplate": "matteobaccan/inga",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["custom.regex"],
+      "commitMessageTopic": "Inga",
+      "commitMessageExtra": "a {{newVersion}}"
+    }
+  ]
+}
