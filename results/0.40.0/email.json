@@ -1,0 +1,180 @@
+{
+  "caso": "email",
+  "versione": "0.40.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 2048,
+  "seed": 42,
+  "data": "2026-10-31T22:00:38Z",
+  "secondi_avvio": 3.0,
+  "stato": "ok",
+  "voto": 0.8375,
+  "voci": {
+    "urgenza": 0.8,
+    "reparto": 0.875,
+    "entrambi giusti": 0.675
+  },
+  "dettagli": {
+    "messaggi": 40,
+    "confusione": {
+      "urgenza": {
+        "media -> alta": 4,
+        "media -> bassa": 3,
+        "bassa -> media": 1
+      },
+      "reparto": {
+        "risorse_umane -> amministrazione": 2,
+        "assistenza_tecnica -> logistica": 1,
+        "risorse_umane -> logistica": 1,
+        "assistenza_tecnica -> commerciale": 1
+      }
+    },
+    "errori": [
+      {
+        "id": 1,
+        "atteso": {
+          "urgenza": "alta",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "reparto": "logistica",
+          "urgenza": "alta"
+        }
+      },
+      {
+        "id": 3,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "logistica"
+        },
+        "dato": {
+          "reparto": "logistica",
+          "urgenza": "alta"
+        }
+      },
+      {
+        "id": 4,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "commerciale"
+        },
+        "dato": {
+          "reparto": "commerciale",
+          "urgenza": "bassa"
+        }
+      },
+      {
+        "id": 7,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "amministrazione"
+        },
+        "dato": {
+          "reparto": "amministrazione",
+          "urgenza": "bassa"
+        }
+      },
+      {
+        "id": 11,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "reparto": "assistenza_tecnica",
+          "urgenza": "alta"
+        }
+      },
+      {
+        "id": 15,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "reparto": "amministrazione",
+          "urgenza": "media"
+        }
+      },
+      {
+        "id": 16,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "reparto": "assistenza_tecnica",
+          "urgenza": "media"
+        }
+      },
+      {
+        "id": 24,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "logistica"
+        },
+        "dato": {
+          "reparto": "logistica",
+          "urgenza": "alta"
+        }
+      },
+      {
+        "id": 25,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "reparto": "logistica",
+          "urgenza": "media"
+        }
+      },
+      {
+        "id": 26,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "reparto": "commerciale",
+          "urgenza": "bassa"
+        }
+      },
+      {
+        "id": 28,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "commerciale"
+        },
+        "dato": {
+          "reparto": "commerciale",
+          "urgenza": "alta"
+        }
+      },
+      {
+        "id": 35,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "reparto": "amministrazione",
+          "urgenza": "bassa"
+        }
+      },
+      {
+        "id": 40,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "reparto": "risorse_umane",
+          "urgenza": "bassa"
+        }
+      }
+    ]
+  },
+  "secondi": 149.3
+}

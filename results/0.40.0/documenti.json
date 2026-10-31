@@ -1,0 +1,251 @@
+{
+  "caso": "documenti",
+  "versione": "0.40.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 16384,
+  "seed": 42,
+  "data": "2026-10-31T21:46:28Z",
+  "secondi_avvio": 6.0,
+  "stato": "ok",
+  "voto": 1.0,
+  "voci": {
+    "risposta giusta": 1.0,
+    "pagina giusta": 1.0
+  },
+  "dettagli": {
+    "domande": 15,
+    "modo_documenti": {
+      "whole": 15
+    },
+    "risposte": [
+      {
+        "id": 1,
+        "risposta": "Oltre 260.000 brani",
+        "pagina_data": "aziende/sony",
+        "pagina_attesa": "aziende/sony",
+        "pagine_date": [
+          "aziende/manus-ai",
+          "aziende/neuralink",
+          "aziende/sony"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 58.0
+      },
+      {
+        "id": 2,
+        "risposta": "Il modello dello spazzolino CameraJet di Dyson è stato addestrato su 470.000 immagini dentali.",
+        "pagina_data": "aziende/dyson",
+        "pagina_attesa": "aziende/dyson",
+        "pagine_date": [
+          "aziende/siemens",
+          "aziende/dyson",
+          "aziende/fal"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 64.3
+      },
+      {
+        "id": 3,
+        "risposta": "Losanna",
+        "pagina_data": "aziende/giotto-ai",
+        "pagina_attesa": "aziende/giotto-ai",
+        "pagine_date": [
+          "aziende/giotto-ai",
+          "aziende/nucleus-genomics",
+          "aziende/emochi"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 58.2
+      },
+      {
+        "id": 4,
+        "risposta": "Il titolo di Unitree è salito del 460 percento in chiusura il giorno del debutto sullo STAR Market di Shanghai.",
+        "pagina_data": "aziende/unitree",
+        "pagina_attesa": "aziende/unitree",
+        "pagine_date": [
+          "aziende/emochi",
+          "aziende/unitree",
+          "aziende/cohere"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 69.8
+      },
+      {
+        "id": 5,
+        "risposta": "40 milioni di dollari",
+        "pagina_data": "aziende/typesafe-ai",
+        "pagina_attesa": "aziende/typesafe-ai",
+        "pagine_date": [
+          "aziende/oppo",
+          "aziende/capcom",
+          "aziende/typesafe-ai"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 55.6
+      },
+      {
+        "id": 6,
+        "risposta": "Vangrid trattiene una commissione del 10% sul premio di un bounty accettato.",
+        "pagina_data": "aziende/vangrid",
+        "pagina_attesa": "aziende/vangrid",
+        "pagine_date": [
+          "aziende/tradingview",
+          "aziende/brevo",
+          "aziende/vangrid"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 65.2
+      },
+      {
+        "id": 7,
+        "risposta": "Sendinblue",
+        "pagina_data": "aziende/brevo",
+        "pagina_attesa": "aziende/brevo",
+        "pagine_date": [
+          "aziende/brevo",
+          "aziende/deeplearning-ai",
+          "aziende/nscale"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 45.2
+      },
+      {
+        "id": 8,
+        "risposta": "La piattaforma di generazione 3D Tripo è sviluppata dalla società Holymolly Ltd.",
+        "pagina_data": "aziende/tripo",
+        "pagina_attesa": "aziende/tripo",
+        "pagine_date": [
+          "aziende/hyperbolic",
+          "aziende/reddit",
+          "aziende/tripo"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 68.9
+      },
+      {
+        "id": 9,
+        "risposta": "Andreas Thom lavora alla TU Dresda.",
+        "pagina_data": "persone/andreas-thom",
+        "pagina_attesa": "persone/andreas-thom",
+        "pagine_date": [
+          "persone/jensen-huang",
+          "persone/elon-musk",
+          "persone/andreas-thom"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 67.6
+      },
+      {
+        "id": 10,
+        "risposta": "Bulgara",
+        "pagina_data": "persone/georgi-gerganov",
+        "pagina_attesa": "persone/georgi-gerganov",
+        "pagine_date": [
+          "persone/georgi-gerganov",
+          "persone/terence-tao",
+          "persone/robert-ocallahan"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 39.4
+      },
+      {
+        "id": 11,
+        "risposta": "Kuaishou",
+        "pagina_data": "modelli/kling-3-0",
+        "pagina_attesa": "modelli/kling-3-0",
+        "pagine_date": [
+          "modelli/mai-realtime",
+          "modelli/gemini-3-1-flash-live",
+          "modelli/kling-3-0"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 54.2
+      },
+      {
+        "id": 12,
+        "risposta": "Il modello Alaya World genera video in streaming in tempo reale a 720p.",
+        "pagina_data": "modelli/alaya-world",
+        "pagina_attesa": "modelli/alaya-world",
+        "pagine_date": [
+          "modelli/alaya-world",
+          "modelli/deepseek-v4-1",
+          "modelli/fara-1-5"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 36.4
+      },
+      {
+        "id": 13,
+        "risposta": "Le coppie di chiavi dei partecipanti, umani o agenti, nel workspace Buzz di Block usano la curva crittografica secp256k1.",
+        "pagina_data": "strumenti/buzz",
+        "pagina_attesa": "strumenti/buzz",
+        "pagine_date": [
+          "strumenti/buzz",
+          "strumenti/rea",
+          "strumenti/higgsfield-mcp"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 50.2
+      },
+      {
+        "id": 14,
+        "risposta": "Gozde Oznur",
+        "pagina_data": "strumenti/dreambeans",
+        "pagina_attesa": "strumenti/dreambeans",
+        "pagine_date": [
+          "strumenti/dots",
+          "strumenti/meta-ads-mcp",
+          "strumenti/dreambeans"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 46.6
+      },
+      {
+        "id": 15,
+        "risposta": "Diciassette turni giornalieri.",
+        "pagina_data": "trend/loop-notturno-autonomo",
+        "pagina_attesa": "trend/loop-notturno-autonomo",
+        "pagine_date": [
+          "trend/harness-engineering",
+          "trend/looped-transformers",
+          "trend/loop-notturno-autonomo"
+        ],
+        "risposta_ok": true,
+        "pagina_ok": true,
+        "modo_documenti": "whole",
+        "secondi": 55.4
+      }
+    ]
+  },
+  "secondi": 849.3
+}
