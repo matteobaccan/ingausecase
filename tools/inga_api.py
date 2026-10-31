@@ -1,0 +1,125 @@
+"""Small client for the OpenAI-compatible API of `inga serve`, shared by the cases.
+
+Only the standard library. Every request is deterministic: temperature 0 and a
+fixed seed (the SEED environment variable, 42 by default).
+
+A case's run.py imports it with:
+
+    import os, sys
+    sys.path.insert(0, os.environ["IUC_TOOLS"])
+    import inga_api
+"""
+
+import json
+import os
+import time
+import urllib.error
+import urllib.request
+
+SEED = int(os.environ.get("SEED", "42"))
+
+
+def base_url():
+    return os.environ["INGA_URL"].rstrip("/")
+
+
+def case_dir():
+    return os.environ["IUC_CASE_DIR"]
+
+
+def work_dir():
+    """A scratch folder for this case (generated files, downloads); not committed."""
+    d = os.environ["IUC_WORK_DIR"]
+    os.makedirs(d, exist_ok=True)
+    return d
+
+
+def write_result(result):
+    """Write the case's score JSON where the runner expects it.
+
+    result: {"stato": "ok" | "saltato", "voto": 0..1, "voci": {name: 0..1},
+             "motivo": "...", "dettagli": {...}}
+    """
+    with open(os.environ["IUC_RESULT"], "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+
+def _post(path, body, timeout):
+    req = urllib.request.Request(
+        base_url() + path,
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        return urllib.request.urlopen(req, timeout=timeout)
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")[:2000]
+        raise RuntimeError(f"POST {path}: HTTP {e.code}: {detail}") from None
+
+
+def chat(messages, schema=None, max_tokens=1024, timeout=1800, think=False, extra=None):
+    """One chat completion. Returns (content, response_json, seconds).
+
+    schema: a JSON schema dict; the answer is then constrained by
+    response_format json_schema and the parsed object is in content.
+    """
+    body = {
+        "model": os.environ.get("INGA_MODEL", ""),
+        "messages": messages,
+        "temperature": 0,
+        "seed": SEED,
+        "max_tokens": max_tokens,
+        "stream": False,
+        "chat_template_kwargs": {"enable_thinking": bool(think)},
+    }
+    if schema is not None:
+        body["response_format"] = {
+            "type": "json_schema",
+            "json_schema": {"name": "risposta", "schema": schema, "strict": True},
+        }
+    if extra:
+        body.update(extra)
+    t0 = time.monotonic()
+    with _post("/v1/chat/completions", body, timeout) as r:
+        data = json.loads(r.read().decode("utf-8"))
+    seconds = time.monotonic() - t0
+    content = data["choices"][0]["message"].get("content") or ""
+    if schema is not None:
+        content = json.loads(content)
+    return content, data, seconds
+
+
+def chat_stream(messages, max_tokens=256, timeout=600, think=False):
+    """A streamed chat completion. Returns (text, ttft_seconds, total_seconds)."""
+    body = {
+        "model": os.environ.get("INGA_MODEL", ""),
+        "messages": messages,
+        "temperature": 0,
+        "seed": SEED,
+        "max_tokens": max_tokens,
+        "stream": True,
+        "chat_template_kwargs": {"enable_thinking": bool(think)},
+    }
+    t0 = time.monotonic()
+    ttft = None
+    parts = []
+    with _post("/v1/chat/completions", body, timeout) as r:
+        for raw in r:
+            line = raw.decode("utf-8", "replace").strip()
+            if not line.startswith("data:"):
+                continue
+            payload = line[5:].strip()
+            if payload == "[DONE]":
+                break
+            try:
+                chunk = json.loads(payload)
+            except ValueError:
+                continue
+            for ch in chunk.get("choices") or []:
+                piece = (ch.get("delta") or {}).get("content")
+                if piece:
+                    if ttft is None:
+                        ttft = time.monotonic() - t0
+                    parts.append(piece)
+    return "".join(parts), ttft, time.monotonic() - t0

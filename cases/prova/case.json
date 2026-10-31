@@ -1,0 +1,6 @@
+{
+  "descrizione": "avvio di inga serve e una risposta in chat con un modello piccolo",
+  "modello": "qwen3-0.6b",
+  "ctx": 2048,
+  "timeout_minuti": 10
+}

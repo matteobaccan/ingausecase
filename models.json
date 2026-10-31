@@ -1,0 +1,19 @@
+{
+  "nota": "I modelli dei casi. sha256 e size vengono dall'API di Hugging Face (lfs.oid e size di /api/models/<repo>/tree/main); il runner li controlla a ogni esecuzione e si ferma se il file su Hugging Face è cambiato.",
+  "modelli": {
+    "qwen3-0.6b": {
+      "repo": "unsloth/Qwen3-0.6B-GGUF",
+      "file": "Qwen3-0.6B-Q8_0.gguf",
+      "sha256": "e150ed544dfe6016930c026a93913a5e3184181ebfe6ab2223ae01dd0491784c",
+      "size": 639447744,
+      "uso": "caso di prova (avvio e prima risposta)"
+    },
+    "qwen3-4b": {
+      "repo": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "size": 2497281120,
+      "uso": "estrazione, classificazione, domande su documenti"
+    }
+  }
+}
