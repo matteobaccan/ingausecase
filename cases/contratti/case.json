@@ -1,0 +1,6 @@
+{
+  "descrizione": "domande con risposta nota sul CCNL Terziario, Distribuzione e Servizi",
+  "modello": "qwen3-4b",
+  "ctx": 16384,
+  "timeout_minuti": 45
+}

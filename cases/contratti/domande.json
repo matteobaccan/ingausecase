@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "domanda": "Quanto dura il periodo di prova per un lavoratore inquadrato al quarto livello?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 2,
+    "domanda": "Quanti giorni lavorativi di ferie spettano ogni anno a un lavoratore a tempo pieno?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 3,
+    "domanda": "Qual è la durata normale dell'orario di lavoro settimanale?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 4,
+    "domanda": "Quante ore annue di permessi retribuiti (riduzione dell'orario) spettano a un lavoratore a tempo pieno di un'azienda con più di 15 dipendenti?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 5,
+    "domanda": "Quanti giorni dura il periodo di comporto in caso di malattia?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 6,
+    "domanda": "In quale mese si paga la quattordicesima mensilità?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 7,
+    "domanda": "Qual è la maggiorazione per il lavoro straordinario oltre la quarantottesima ora settimanale?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 8,
+    "domanda": "Quante ore di lavoro straordinario si possono fare al massimo in un anno?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 9,
+    "domanda": "Quanti giorni di preavviso di licenziamento spettano a un impiegato del terzo livello con meno di cinque anni di anzianità?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 10,
+    "domanda": "Quanti giorni di congedo matrimoniale retribuito spettano?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 11,
+    "domanda": "Qual è la durata minima settimanale di un contratto a tempo parziale?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  },
+  {
+    "id": 12,
+    "domanda": "Quanto dura al massimo l'apprendistato professionalizzante per i livelli più alti?",
+    "risposte": [],
+    "articolo": null,
+    "verificata": false
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "descrizione": "15 domande sulla wiki di AINews, con la pagina da citare",
+  "modello": "qwen3-4b",
+  "ctx": 16384,
+  "timeout_minuti": 60
+}

@@ -1,0 +1,17 @@
+[
+  {"id": 1, "domanda": "Quanti brani generati con l'AI che imitavano artisti reali Sony Music ha chiesto di rimuovere alle piattaforme di streaming a ottobre 2026?", "pagina": "aziende/sony", "risposte": ["260.000", "260 mila", "duecentosessantamila"]},
+  {"id": 2, "domanda": "Su quante immagini dentali è stato addestrato il modello dello spazzolino CameraJet di Dyson?", "pagina": "aziende/dyson", "risposte": ["470.000", "470 mila"]},
+  {"id": 3, "domanda": "In quale città ha sede il laboratorio che ha lanciato i modelli Giotto Alto e Giotto Solo?", "pagina": "aziende/giotto-ai", "risposte": ["Losanna", "Lausanne"]},
+  {"id": 4, "domanda": "Di quanto è salito in chiusura il titolo Unitree il giorno del debutto sullo STAR Market di Shanghai?", "pagina": "aziende/unitree", "risposte": ["460"]},
+  {"id": 5, "domanda": "Quanto ha raccolto TypeSafe AI con il round seed annunciato insieme al lancio di Jev?", "pagina": "aziende/typesafe-ai", "risposte": ["40 milioni", "40 mln", "40M"]},
+  {"id": 6, "domanda": "Quale commissione trattiene Vangrid sul premio di un bounty accettato?", "pagina": "aziende/vangrid", "risposte": ["10%", "10 per cento", "dieci per cento"]},
+  {"id": 7, "domanda": "Con quale nome era conosciuta in precedenza la piattaforma di email marketing Brevo?", "pagina": "aziende/brevo", "risposte": ["Sendinblue"]},
+  {"id": 8, "domanda": "Quale società sviluppa la piattaforma di generazione 3D Tripo?", "pagina": "aziende/tripo", "risposte": ["Holymolly"]},
+  {"id": 9, "domanda": "In quale università lavora il teorico dei gruppi Andreas Thom?", "pagina": "persone/andreas-thom", "risposte": ["TU Dresda", "Dresda", "Dresden"]},
+  {"id": 10, "domanda": "Di quale nazionalità è l'autore di llama.cpp e whisper.cpp?", "pagina": "persone/georgi-gerganov", "risposte": ["bulgar"]},
+  {"id": 11, "domanda": "Quale azienda ha sviluppato il modello di generazione video Kling 3.0?", "pagina": "modelli/kling-3-0", "risposte": ["Kuaishou"]},
+  {"id": 12, "domanda": "A quale risoluzione genera video in streaming in tempo reale il modello Alaya World?", "pagina": "modelli/alaya-world", "risposte": ["720p", "720"]},
+  {"id": 13, "domanda": "Quale curva crittografica usano le coppie di chiavi dei partecipanti, umani o agenti, nel workspace Buzz di Block?", "pagina": "strumenti/buzz", "risposte": ["secp256k1"]},
+  {"id": 14, "domanda": "Chi ha presentato l'app sperimentale Dreambeans di Google Labs?", "pagina": "strumenti/dreambeans", "risposte": ["Gozde Oznur", "Oznur"]},
+  {"id": 15, "domanda": "Quanti turni giornalieri raggiungono i due loop autonomi notturni descritti nella wiki?", "pagina": "trend/loop-notturno-autonomo", "risposte": ["diciassette", "17"]}
+]

@@ -1,0 +1,6 @@
+{
+  "descrizione": "smistamento di 40 email e ticket per urgenza e reparto",
+  "modello": "qwen3-4b",
+  "ctx": 2048,
+  "timeout_minuti": 30
+}
