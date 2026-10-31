@@ -1,0 +1,29 @@
+﻿---
+title: "Thomas Bloom"
+category: persona
+tags: [matematica, accademia]
+related_puntate: []
+created: 2026-09-12
+updated: 2026-09-13
+sources: [raw/pillitteri/pillitteri20260521-openai-erdos-distanze-unitarie-breakthrough.md, raw/pillitteri/pillitteri20260801-astra-dieci-problemi-matematica-lean.md, raw/pillitteri/pillitteri20260801-openai-astra-modello-multi-agente-senato.md]
+---
+
+# Thomas Bloom
+
+## Introduzione
+
+Matematico, cura il catalogo dei problemi di [[paul-erdoes]]
+(erdosproblems.com). [Fonte: raw/pillitteri/pillitteri20260801-astra-dieci-problemi-matematica-lean.md]. [Fonte: raw/pillitteri/pillitteri20260801-openai-astra-modello-multi-agente-senato.md]
+
+## Timeline delle notizie
+
+- **2026-05-21** — È fra i nove matematici che firmano il paper companion di 19 pagine sulla smentita della congettura delle distanze unitarie di [[paul-erdoes]], quello che traduce la prova di 125 pagine in una forma verificabile; commenta che la teoria dei numeri profonda può nascondere le risposte a diverse domande irrisolte della geometria discreta. [Fonte: raw/pillitteri/pillitteri20260521-openai-erdos-distanze-unitarie-breakthrough.md]
+- **2026-08-01** — Giudicando i dieci risultati di [[ten-proofs]] definisce la
+  notizia grossa sul piano delle costruzioni. [Fonte: raw/pillitteri/pillitteri20260801-astra-dieci-problemi-matematica-lean.md]. [Fonte: raw/pillitteri/pillitteri20260801-openai-astra-modello-multi-agente-senato.md]
+
+## Collegamenti
+
+- [[paul-erdoes]]
+- [[ten-proofs]]
+- [[timothy-gowers]]
+- [[index]]

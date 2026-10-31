@@ -1,0 +1,53 @@
+﻿---
+title: "Everything Claude Code"
+category: strumento
+tags: [agent, claude-code, github, hackathon, open-source, skill]
+related_puntate: [20260601, 20260602, 20260608, 20260727, 20260824]
+created: 2026-08-12
+updated: 2026-08-24
+sources: [raw/puntate/ainews20260601.md, raw/puntate/ainews20260602.md, raw/puntate/ainews20260608.md, raw/puntate/ainews20260727.md, raw/puntate/ainews20260824.md]
+---
+
+# Everything Claude Code
+
+## Introduzione
+
+Collezione open source di Affan Mustafa vincitrice dell'Hackathon Anthropic: 183 skill, 48 sub-agenti e 79 comandi pronti per Claude Code.
+
+## Funzionalità principali
+
+- Everything Claude Code è esploso su GitHub: trenta agenti pronti, sessantaquattro skill, trentatré comandi e AgentShield con milleduecentottantadue test di sicurezza integrati; copre planning, code review, bug fixing, TDD e ottimizzazione token ed è compatibile con Claude Code, Cursor, OpenCode e Codex CLI.
+- Everything Claude Code ha vinto l'hackathon di Anthropic ed è stato rilasciato open source: centoottantatré agent skills, quarantotto sub-agents e settantanove comandi pronti; funziona con Claude Code, Codex, Cursor, Gemini e OpenCode, licenza MIT per uso commerciale.
+- Everything Claude Code, costruito da Affaan Mustafa in una startup da otto ore all'hackathon Anthropic, raccoglie dieci mesi di lavoro ed è pubblico e gratuito.
+
+## Azienda / Autore
+
+- [[affan-mustafa]]
+- [[anthropic]]
+- [[cursor]]
+
+## Modelli supportati / correlati
+
+- [[claude]]
+- [[gemini]]
+
+## Timeline delle notizie
+
+- **2026-06-01** — Everything Claude Code è esploso su GitHub: trenta agenti pronti, sessantaquattro skill, trentatré comandi e AgentShield con milleduecentottantadue test di sicurezza integrati; copre planning, code review, bug fixing, TDD e ottimizzazione token ed è compatibile con Claude Code, Cursor, OpenCode e Codex CLI. [Fonte: raw/puntate/ainews20260601.md]
+- **2026-06-02** — Everything Claude Code ha vinto l'hackathon di Anthropic ed è stato rilasciato open source: centoottantatré agent skills, quarantotto sub-agents e settantanove comandi pronti; funziona con Claude Code, Codex, Cursor, Gemini e OpenCode, licenza MIT per uso commerciale. [Fonte: raw/puntate/ainews20260602.md]
+- **2026-06-08** — Everything Claude Code, costruito da Affaan Mustafa in una startup da otto ore all'hackathon Anthropic, raccoglie dieci mesi di lavoro ed è pubblico e gratuito. [Fonte: raw/puntate/ainews20260608.md]
+- **2026-07-27** — Affan Mustafa, vincitore del Grand Prize dell'Hackathon Anthropic, ha rilasciato Everything Claude Code: 183 skill, 48 sub-agenti e 79 comandi pronti. Agenti specializzati per sicurezza, ottimizzazione memoria e apprendimento dalle sessioni; usato per costruire un prototipo startup in otto ore. [Fonte: raw/puntate/ainews20260727.md]
+- **2026-08-24** — Everything Claude Code raccoglie trenta agent, sessantaquattro skill e trentatré comandi, con AgentShield integrato e milleduecentottantadue test di sicurezza; funziona in Claude Code, Cursor, OpenCode e Codex CLI coprendo pianificazione, code review, fix, TDD e ottimizzazione token, ed è gratis. [Fonte: raw/puntate/ainews20260824.md]
+
+## Collegamenti
+
+- [[affan-mustafa]]
+- [[anthropic]]
+- [[claude]]
+- [[claude-code]]
+- [[codex-cli]]
+- [[cursor]]
+- [[gemini]]
+- [[opencode]]
+- [[index]]
+

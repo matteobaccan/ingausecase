@@ -1,0 +1,30 @@
+﻿---
+title: "Figures4papers"
+category: strumento
+tags: [open-source, ricerca, universita]
+related_puntate: [20260923]
+created: 2026-09-23
+updated: 2026-09-23
+sources: [raw/puntate/ainews20260923.md]
+---
+
+# Figures4papers
+
+## Introduzione
+
+Repository dell'università di Yale pubblicato su GitHub che raccoglie script per generare grafici da paper scientifici. [Fonte: raw/puntate/ainews20260923.md]
+
+## Funzionalità principali
+
+- Otto progetti che coprono grafici a barre, radar, linee e sfere tridimensionali. [Fonte: raw/puntate/ainews20260923.md]
+- Include una skill per Cursor, Claude Code o Codex, così gli agenti scrivono script seguendo le convenzioni del ricercatore. [Fonte: raw/puntate/ainews20260923.md]
+
+## Timeline delle notizie
+
+- **2026-09-23** — Esce su GitHub Figures4papers, repository di Yale con otto progetti di grafici da paper e una skill per Cursor, Claude Code e Codex. [Fonte: raw/puntate/ainews20260923.md]
+
+## Collegamenti
+
+- [[claude-code]]
+- [[codex]]
+- [[index]]
