@@ -1,0 +1,33 @@
+{
+  "caso": "velocita",
+  "versione": "0.41.0",
+  "inga": "inga 0.41.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 2048,
+  "seed": 42,
+  "data": "2026-11-01T19:00:44Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 1.0821885077578388,
+  "voci": {
+    "lettura del prompt (pp512), Inga su llama.cpp": 1.252382400161762,
+    "generazione (tg128), Inga su llama.cpp": 0.9119946153539156,
+    "perplexity, Inga su llama.cpp": 0.9990681799145656
+  },
+  "dettagli": {
+    "inga_pp": 33.1084031835452,
+    "inga_tg": 11.437302583282687,
+    "llama_pp": 26.436337,
+    "llama_tg": 12.540976,
+    "inga_ppl": 9.5423,
+    "inga_ppl_err": 0.2871,
+    "llama_ppl": 9.5512,
+    "llama_ppl_err": 0.28725,
+    "threads": 4,
+    "chunks": 40,
+    "llama_cpp": "b12032"
+  },
+  "secondi": 1734.0
+}
