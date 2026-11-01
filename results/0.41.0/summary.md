@@ -9,7 +9,7 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 | email | 83.8 | 83.8 | 0.0 | 2:16 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | pdf | 93.1 | 93.1 | 0.0 | 10:45 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | prova | 100.0 | 100.0 | 0.0 | 0:15 | Qwen3-0.6B-Q8_0.gguf | ok |
-| rag-rgb | - | - | - | 60:11 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | errore |
+| rag-rgb | 82.5 | - | - | 35:38 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 
 ## Voci di ogni caso
 
@@ -59,8 +59,13 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 | --- | ---: | ---: | ---: |
 | risposta non vuota | 100.0 | 100.0 | 0.0 |
 
-## Casi saltati o in errore
+### rag-rgb
 
-- rag-rgb: run.py over the time limit of 60 minutes
+| Voce | Valore | Valore precedente | Differenza |
+| --- | ---: | ---: | ---: |
+| risposta giusta con rumore | 100.0 | - | - |
+| rifiuto senza la risposta | 65.0 | - | - |
+| passaggio giusto fra gli estratti | 100.0 | - | - |
+| risposte date con rumore | 100.0 | - | - |
 
 Macchina: x86_64, 4 CPU, Linux-7.0.0-1017-azure-x86_64-with-glibc2.39.
