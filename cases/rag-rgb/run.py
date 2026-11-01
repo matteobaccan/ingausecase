@@ -11,7 +11,7 @@ Due collezioni di documenti di Inga, con un sottoinsieme fisso (seed):
   la risposta deve contenere il dato atteso (come in RGB: per ogni parte della risposta,
   una delle sue varianti);
 - rifiuto: per RIFIUTO altre domande, solo NEGATIVI_RIFIUTO passaggi negativi; la
-  risposta giusta è dire che negli estratti non c'è (found: false).
+  risposta giusta è dire che negli estratti non c'è (found: false), senza darla lo stesso.
 Ogni domanda nomina la sua collezione (inga_documents): Inga cerca gli estratti e li
 mette nel prompt, come nella chat.
 """
@@ -107,7 +107,9 @@ def main():
     ok_rifiuto = 0
     for q in rifiuto:
         dato, info, sec = chiedi(q, "rgb-rifiuto")
-        ok = dato.get("found") is False
+        # come RGB: un rifiuto che poi dà la risposta (dal modello, non dagli estratti)
+        # non è un rifiuto
+        ok = dato.get("found") is False and not giusta(dato.get("answer", ""), q["answer"])
         ok_rifiuto += ok
         print(f"rifiuto {q['id']:3d}: {'ok' if ok else 'NO'}, {sec:.1f} s: {str(dato.get('answer', ''))[:120]}")
         out.append({"id": q["id"], "tipo": "rifiuto", "domanda": q["query"], "attesa": q["answer"],

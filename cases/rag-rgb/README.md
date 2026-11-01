@@ -12,7 +12,9 @@ passaggi che contengono la risposta e passaggi sullo stesso tema che non la cont
   contiene il dato atteso (come RGB: ogni parte, in una delle sue
   varianti).
 - **Rifiuto** (20 altre domande): solo passaggi senza la risposta. Giusta se dice che negli
-  estratti non c'è (`found: false`), anche se il modello la sa da sé.
+  estratti non c'è (`found: false`) senza darla lo
+  stesso: un rifiuto che poi scrive la risposta, presa da quello che il modello sa, è
+  sbagliato.
 - **Voto:** la media delle due. Voci: le due, quante volte il passaggio giusto era fra gli
   estratti dati al modello, quante risposte date con il rumore.
 
