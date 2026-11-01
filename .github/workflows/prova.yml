@@ -9,10 +9,11 @@
 #   virgole; vuoto = tutti);
 # - in parallelo: un job per ogni caso e modello (`runner.py --matrix`), ognuno compila
 #   Inga per conto suo (il binario non esce mai dal suo runner) e, per i casi che lo
-#   chiedono, llama.cpp; un ultimo job raccoglie i risultati, scrive un riepilogo per
-#   modello, confrontato con l'ultima release in results/, e lo mette nel riepilogo
-#   della run. I risultati non vanno sul ramo `cases`: restano come artifact (solo i
-#   JSON e i log, mai il binario di Inga).
+#   chiedono, llama.cpp o Colibri (e, per i modelli grandi, libera prima spazio sul
+#   disco); un ultimo job raccoglie i risultati, scrive un riepilogo per modello,
+#   confrontato con l'ultima release in results/, e lo mette nel riepilogo della run.
+#   I risultati non vanno sul ramo `cases`: restano come artifact (solo i JSON e i log,
+#   mai il binario di Inga).
 #
 # Segreti: INGA_TOKEN, un token che legge matteobaccan/inga finché è privato; HF_TOKEN
 # (facoltativo) per Hugging Face.
@@ -98,6 +99,20 @@ jobs:
           persist-credentials: false
           # dentro il workspace (checkout non accetta altre cartelle); mai caricato
           path: .inga-src
+      - name: Spazio su disco
+        if: matrix.disk_gb > 0
+        env:
+          NEED: ${{ matrix.disk_gb }}
+        run: |
+          # i casi con modelli grandi (disco_gb in case.json): via gli SDK che i casi non usano
+          free=$(df -BG --output=avail / | tail -1 | tr -dc 0-9)
+          echo "Spazio libero: ${free} GB, il caso ne chiede ${NEED}"
+          if [ "$free" -lt "$NEED" ]; then
+            sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+            free=$(df -BG --output=avail / | tail -1 | tr -dc 0-9)
+            echo "Dopo la pulizia: ${free} GB"
+            [ "$free" -ge "$NEED" ] || echo "::warning::solo ${free} GB liberi, il caso ne chiede ${NEED}"
+          fi
       - uses: dtolnay/rust-toolchain@stable
       - name: Compila inga
         working-directory: .inga-src
@@ -113,6 +128,9 @@ jobs:
       - name: llama.cpp
         if: matrix.llama_cpp
         uses: ./.github/actions/llama-cpp
+      - name: Colibri
+        if: matrix.colibri
+        uses: ./.github/actions/colibri
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -121,6 +139,8 @@ jobs:
           python -m venv "$RUNNER_TEMP/venv"
           "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
       - uses: actions/cache@v6
+        # i modelli più grandi della cache di GitHub (10 GB) si scaricano ogni volta
+        if: matrix.models_cache
         with:
           path: ${{ env.IUC_CACHE }}/models
           key: ${{ matrix.models_key }}

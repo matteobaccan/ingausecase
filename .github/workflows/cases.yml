@@ -12,14 +12,16 @@
 #
 # I casi girano in parallelo, un job `run` per caso (la matrice la scrive
 # `runner.py --matrix`), con permessi di sola lettura; i casi che confrontano Inga con
-# llama.cpp lo compilano per la CPU del runner (.github/actions/llama-cpp). Il job
-# `publish` raccoglie i risultati, scrive il riepilogo con il runner del ramo `cases`
-# (mai il codice di una PR) e, solo per schedule e workflow_dispatch, li salva sul ramo
-# `cases`.
+# llama.cpp, o Colibri, li compilano per la CPU del runner (.github/actions/llama-cpp,
+# .github/actions/colibri); quelli con modelli grandi (disco_gb in case.json) liberano
+# prima spazio sul disco del runner. Il job `publish` raccoglie i risultati, scrive il
+# riepilogo con il runner del ramo `cases` (mai il codice di una PR) e, solo per schedule
+# e workflow_dispatch, li salva sul ramo `cases`.
 #
-# La cache di GitHub tiene i modelli di ogni job (chiave: i loro sha256, da models.json),
-# llama.cpp compilato (chiave: versione e CPU) e i PDF che i casi scaricano (chiave: URL
-# e sha256 di fonti.json); fonti.yml scarica i PDF e ne stampa il testo nel log.
+# La cache di GitHub tiene i modelli di ogni job (chiave: i loro sha256, da models.json;
+# non quelli oltre i 6 GB, che si scaricano ogni volta), llama.cpp e Colibri compilati
+# (chiave: versione o commit e CPU) e i PDF che i casi scaricano (chiave: URL e sha256 di
+# fonti.json); fonti.yml scarica i PDF e ne stampa il testo nel log.
 #
 # Segreti (facoltativi): INGA_TOKEN, un token che legge le release di
 # matteobaccan/inga finché quel repository è privato; HF_TOKEN per Hugging Face.
@@ -45,8 +47,12 @@ on:
       - inga-version.txt
       - models.json
       - fonti.json
+      - dati.json
+      - llama-cpp.txt
+      - colibri.txt
       - cases/**
       - tools/**
+      - .github/actions/**
       - .github/workflows/cases.yml
 
 permissions:
@@ -119,9 +125,26 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
           persist-credentials: false
+      - name: Spazio su disco
+        if: matrix.disk_gb > 0
+        env:
+          NEED: ${{ matrix.disk_gb }}
+        run: |
+          # i casi con modelli grandi (disco_gb in case.json): via gli SDK che i casi non usano
+          free=$(df -BG --output=avail / | tail -1 | tr -dc 0-9)
+          echo "Spazio libero: ${free} GB, il caso ne chiede ${NEED}"
+          if [ "$free" -lt "$NEED" ]; then
+            sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+            free=$(df -BG --output=avail / | tail -1 | tr -dc 0-9)
+            echo "Dopo la pulizia: ${free} GB"
+            [ "$free" -ge "$NEED" ] || echo "::warning::solo ${free} GB liberi, il caso ne chiede ${NEED}"
+          fi
       - name: llama.cpp
         if: matrix.llama_cpp
         uses: ./.github/actions/llama-cpp
+      - name: Colibri
+        if: matrix.colibri
+        uses: ./.github/actions/colibri
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -130,6 +153,8 @@ jobs:
           python -m venv "$RUNNER_TEMP/venv"
           "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
       - uses: actions/cache@v6
+        # i modelli più grandi della cache di GitHub (10 GB) si scaricano ogni volta
+        if: matrix.models_cache
         with:
           path: ${{ env.IUC_CACHE }}/models
           key: ${{ matrix.models_key }}
