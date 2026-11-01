@@ -38,10 +38,12 @@ def messaggi(el):
 
 def voto(el, testo):
     # "Answer: X" (l'ultimo, se il modello ragiona prima), poi "answer is X", poi
-    # una lettera da sola all'inizio
+    # "<label>X</label>" (come risponde qualche modello piccolo), poi una lettera da
+    # sola all'inizio
     e = "[" + re.escape("".join(el["choices"]["label"])) + "]"
-    m = (re.findall(r"Answer:\s*\**\(?(" + e + r")\b", testo)
+    m = (re.findall(r"Answer:\s*\**\(?(?:<label>)?(" + e + r")\b", testo)
          or re.findall(r"answer is\s*\**\(?(" + e + r")\b", testo, re.I)
+         or re.findall(r"<label>\s*(" + e + r")\s*</label>", testo)
          or re.findall(r"^\W*(" + e + r")\b", testo.strip()[:20]))
     dato = m[-1] if m else None
     return float(dato == el["answerKey"]), f"{dato} su {el['answerKey']}"
