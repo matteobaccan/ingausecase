@@ -4,7 +4,7 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 
 | Caso | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| contratti | 56.7 | - | - | 18:19 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| contratti | 76.7 | - | - | 29:04 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | documenti | 100.0 | 100.0 | 0.0 | 17:21 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | email | 83.8 | 83.8 | 0.0 | 2:16 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | pdf | 93.1 | 93.1 | 0.0 | 10:45 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
@@ -17,7 +17,7 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 | Voce | Valore | Valore precedente | Differenza |
 | --- | ---: | ---: | ---: |
 | risposta giusta | 93.3 | - | - |
-| articolo giusto | 20.0 | - | - |
+| articolo giusto | 60.0 | - | - |
 | citazione fra gli estratti | 100.0 | - | - |
 | estratti dal distrattore | 27.7 | - | - |
 
