@@ -1,2 +1,5 @@
 __pycache__/
 .venv/
+
+# i risultati delle prove in locale (runner.py --label locale-...)
+results/locale-*/
