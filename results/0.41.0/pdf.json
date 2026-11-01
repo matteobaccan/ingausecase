@@ -1,0 +1,177 @@
+{
+  "caso": "pdf",
+  "versione": "0.41.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-01T00:26:58Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 0.94375,
+  "voci": {
+    "campo numero": 1.0,
+    "campo data": 1.0,
+    "campo fornitore": 0.85,
+    "campo partita_iva": 0.85,
+    "campo imponibile": 1.0,
+    "campo iva": 1.0,
+    "campo totale": 1.0,
+    "campo righe": 0.85,
+    "righe singole": 0.94
+  },
+  "dettagli": {
+    "documenti": 20,
+    "campi_per_documento": 8,
+    "seed_dati": 7,
+    "secondi_richieste": 805.2,
+    "documenti_con_errori": [
+      {
+        "file": "doc01.pdf",
+        "tipo": "fattura_a",
+        "secondi": 34.4,
+        "sbagliati": {
+          "fornitore": {
+            "atteso": "Sartorello Alimentari S.r.l.",
+            "dato": "Cucchiarelli Forniture Ufficio S.r.l."
+          },
+          "partita_iva": {
+            "atteso": "60913900977",
+            "dato": "03082460290"
+          }
+        }
+      },
+      {
+        "file": "doc06.pdf",
+        "tipo": "fattura_c",
+        "secondi": 26.6,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Guarnizione OR 40x3 NBR",
+                "quantita": 10,
+                "prezzo_unitario": 0.57,
+                "importo": 5.7
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Guarnizione OR 40x3 NBR 10 EUR",
+                "importo": 5.7,
+                "prezzo_unitario": 0.57,
+                "quantita": 10
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc14.pdf",
+        "tipo": "fattura_a",
+        "secondi": 44.3,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Cuscinetto a sfere 6204-2RS",
+                "quantita": 1,
+                "prezzo_unitario": 5.7,
+                "importo": 5.7
+              },
+              {
+                "descrizione": "Olio idraulico ISO 46 (latta 20 l)",
+                "quantita": 5,
+                "prezzo_unitario": 65.92,
+                "importo": 329.6
+              },
+              {
+                "descrizione": "Cinghia trapezoidale A42",
+                "quantita": 50,
+                "prezzo_unitario": 11.7,
+                "importo": 585.0
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Cuscinetto a sfere 6204-2RS",
+                "importo": 5.7,
+                "prezzo_unitario": 5.7,
+                "quantita": 1
+              },
+              {
+                "descrizione": "Olio idraulico ISO 46 (latta 20 l)",
+                "importo": 329.6,
+                "prezzo_unitario": 65.92,
+                "quantita": 5
+              },
+              {
+                "descrizione": "Cinghia trapezoidale A42 50",
+                "importo": 585.0,
+                "prezzo_unitario": 11.7,
+                "quantita": 50
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc18.pdf",
+        "tipo": "fattura_c",
+        "secondi": 27.4,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Backup remoto 500 GB (anno)",
+                "quantita": 3,
+                "prezzo_unitario": 294.29,
+                "importo": 882.87
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Backup remoto 500 GB (anno)",
+                "importo": 882.87,
+                "prezzo_unitario": 3,
+                "quantita": 294.29
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc19.pdf",
+        "tipo": "fattura_a",
+        "secondi": 34.5,
+        "sbagliati": {
+          "fornitore": {
+            "atteso": "Pellacani Forniture Ufficio S.r.l.s.",
+            "dato": "Sartorello Alimentari S.n.c."
+          },
+          "partita_iva": {
+            "atteso": "37838300657",
+            "dato": "00376140372"
+          }
+        }
+      },
+      {
+        "file": "doc20.pdf",
+        "tipo": "fattura_a",
+        "secondi": 35.1,
+        "sbagliati": {
+          "fornitore": {
+            "atteso": "Bertolini Servizi Informatici S.n.c.",
+            "dato": "Marangoni Forniture Ufficio S.a.s."
+          },
+          "partita_iva": {
+            "atteso": "97923760033",
+            "dato": "60309260010"
+          }
+        }
+      }
+    ]
+  },
+  "secondi": 810.2
+}
