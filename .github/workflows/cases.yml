@@ -55,7 +55,7 @@ jobs:
       version: ${{ steps.v.outputs.version }}
       run: ${{ steps.v.outputs.run }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
           sparse-checkout: |
@@ -95,11 +95,11 @@ jobs:
     env:
       IUC_CACHE: /home/runner/iuc-cache
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Dipendenze
@@ -112,7 +112,7 @@ jobs:
           # la chiave è lo sha256 dei file dei modelli (da models.json), non il file JSON
           key=$(python -c "import json,hashlib; m=json.load(open('models.json'))['modelli']; print(hashlib.sha256(' '.join(sorted(v['sha256'] for v in m.values())).encode()).hexdigest()[:32])")
           echo "key=models-$key" >> "$GITHUB_OUTPUT"
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: ${{ env.IUC_CACHE }}/models
           key: ${{ steps.models.outputs.key }}
@@ -146,13 +146,13 @@ jobs:
           VERSION: ${{ needs.decide.outputs.version }}
         run: |
           [ -f "results/$VERSION/summary.md" ] && cat "results/$VERSION/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always() && steps.wrote.outputs.wrote == 'true'
         with:
           name: results-${{ needs.decide.outputs.version }}
           path: results/${{ needs.decide.outputs.version }}
           if-no-files-found: ignore
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: logs-${{ needs.decide.outputs.version }}
@@ -166,10 +166,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: cases
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: results-${{ needs.decide.outputs.version }}
           path: ${{ runner.temp }}/results

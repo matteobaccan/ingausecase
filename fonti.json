@@ -1,0 +1,19 @@
+{
+  "nota": "I PDF che i casi scaricano a ogni esecuzione (il loro testo non va nel repository). sha256 e size sono quelli del primo download: se il file scaricato è diverso, il caso lo dice e si ferma invece di dare voti su un testo cambiato. La cache di GitHub li tiene con la chiave fatta da URL e sha256.",
+  "fonti": {
+    "ccnl": {
+      "url": "https://file.conflavoro.it/pdf/ccnl/ccnl_commercio_terziario_conflavoro.pdf",
+      "nome": "CCNL Commercio e Terziario di Conflavoro",
+      "sha256": null,
+      "size": null,
+      "uso": "il contratto del caso contratti"
+    },
+    "divina-commedia": {
+      "url": "https://www.ebooksbrasil.org/adobeebook/ladivinacommedia.pdf",
+      "nome": "Dante Alighieri, La Divina Commedia (testo di pubblico dominio)",
+      "sha256": null,
+      "size": null,
+      "uso": "il distrattore dei casi contratti e documenti"
+    }
+  }
+}
