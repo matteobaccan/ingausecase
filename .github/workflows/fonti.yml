@@ -1,0 +1,62 @@
+# Scarica i PDF di fonti.json, ne stampa sha256, dimensione e pagine e, nel log, il
+# testo di una fonte pagina per pagina: serve a leggere i testi che i casi scaricano a
+# ogni esecuzione (non sono nel repository) e a riempire sha256 e size di fonti.json.
+#
+# Questo file è identico sui rami `main` e `cases`, come cases.yml: si lancia a mano
+# (`gh workflow run fonti.yml --ref main -f chiave=ccnl`), con il codice del ramo
+# `cases`, permessi di sola lettura e la stessa cache delle fonti dei casi.
+
+name: fonti
+
+on:
+  workflow_dispatch:
+    inputs:
+      chiave:
+        description: "La fonte di cui stampare il testo (una chiave di fonti.json)"
+        required: false
+        default: "ccnl"
+      pagine:
+        description: "Le pagine da stampare (es. 1-5); vuoto = tutte"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  fonti:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      IUC_CACHE: /home/runner/iuc-cache
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: cases
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Dipendenze
+        run: |
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
+      - name: Chiave della cache delle fonti
+        id: fonti
+        run: |
+          key=$(python -c "import json,hashlib; f=json.load(open('fonti.json'))['fonti']; print(hashlib.sha256(' '.join(sorted(v['url'] + '@' + str(v['sha256']) for v in f.values())).encode()).hexdigest()[:32])")
+          echo "key=fonti-$key" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v6
+        with:
+          path: ${{ env.IUC_CACHE }}/fonti
+          key: ${{ steps.fonti.outputs.key }}
+      - name: Scarica e controlla
+        run: '"$RUNNER_TEMP/venv/bin/python" tools/fonti.py scarica'
+      - name: Testo
+        env:
+          CHIAVE: ${{ github.event.inputs.chiave }}
+          PAGINE: ${{ github.event.inputs.pagine }}
+        run: |
+          args=(testo "${CHIAVE:-ccnl}")
+          [ -z "$PAGINE" ] || args+=(--pagine "$PAGINE")
+          "$RUNNER_TEMP/venv/bin/python" tools/fonti.py "${args[@]}"
