@@ -1,0 +1,17 @@
+{
+  "caso": "rag-rgb",
+  "versione": "0.41.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 8192,
+  "seed": 42,
+  "data": "2026-11-01T16:38:53Z",
+  "modello_embedding": "minilm-multilingue",
+  "file_modello_embedding": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0.gguf",
+  "sha256_modello_embedding": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
+  "secondi_avvio": 2.0,
+  "stato": "errore",
+  "motivo": "run.py over the time limit of 60 minutes",
+  "secondi": 3611.3
+}
