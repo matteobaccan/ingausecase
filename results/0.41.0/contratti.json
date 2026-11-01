@@ -4,11 +4,773 @@
   "modello": "qwen3-4b",
   "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
   "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
-  "ctx": 16384,
+  "ctx": 8192,
   "seed": 42,
-  "data": "2026-10-31T23:58:40Z",
+  "data": "2026-11-01T00:50:28Z",
+  "modello_embedding": "minilm-multilingue",
+  "file_modello_embedding": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0.gguf",
+  "sha256_modello_embedding": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
   "secondi_avvio": 2.0,
-  "stato": "saltato",
-  "motivo": "l'URL ufficiale del testo del CCNL non è impostato in cases/contratti/fonte.json",
-  "secondi": 26.3
+  "stato": "ok",
+  "voto": 0.5666666666666667,
+  "voci": {
+    "risposta giusta": 0.9333333333333333,
+    "articolo giusto": 0.2,
+    "citazione fra gli estratti": 1.0,
+    "estratti dal distrattore": 0.27666666666666667
+  },
+  "dettagli": {
+    "domande": 15,
+    "collezione": [
+      {
+        "fonte": "ccnl",
+        "nome": "ccnl-commercio-terziario-conflavoro.pdf",
+        "lettura": "PDF letto da Inga",
+        "chunks": 362,
+        "pagine": 96,
+        "secondi": 97.1
+      },
+      {
+        "fonte": "divina-commedia",
+        "nome": "divina-commedia.pdf",
+        "lettura": "PDF letto da Inga",
+        "chunks": 475,
+        "pagine": 475,
+        "secondi": 158.9
+      }
+    ],
+    "risposte": [
+      {
+        "id": 1,
+        "risposta": "Il periodo di prova non può superare i 60 giorni di effettivo lavoro per i livelli 2, 3, 4, 5 e Operatori di vendita.",
+        "articolo_dato": "1",
+        "articolo_atteso": "2",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 13,
+            "punteggio": 0.6405878663063049,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 14,
+            "punteggio": 0.41310635209083557,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 50,
+            "punteggio": 0.5772735476493835,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 150,
+            "punteggio": -0.004952318500727415,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 58.1
+      },
+      {
+        "id": 2,
+        "risposta": "6 mesi di calendario",
+        "articolo_dato": "1",
+        "articolo_atteso": "2",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 13,
+            "punteggio": 0.6431828141212463,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 43,
+            "punteggio": 0.33599287271499634,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 49,
+            "punteggio": 0.6399215459823608,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 1,
+            "punteggio": -0.0500277541577816,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 441,
+            "punteggio": -0.02881637029349804,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 44.0
+      },
+      {
+        "id": 3,
+        "risposta": "26 giorni lavorativi",
+        "articolo_dato": "2",
+        "articolo_atteso": "16",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 18,
+            "punteggio": 0.5255486369132996,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 24,
+            "punteggio": 0.6636107563972473,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 55,
+            "punteggio": 0.5065416097640991,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 227,
+            "punteggio": -0.009288918226957321,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 287,
+            "punteggio": -0.02456989884376526,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 390,
+            "punteggio": -0.019786398857831955,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 58.3
+      },
+      {
+        "id": 4,
+        "risposta": "La durata normale settimanale del lavoro per i dipendenti dei gestori di impianti di distribuzione carburanti non autostradali è di 38 ore settimanali con assorbimento di 72 ore di permessi.",
+        "articolo_dato": "1",
+        "articolo_atteso": "7",
+        "risposta_ok": false,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 18,
+            "punteggio": 0.33812832832336426,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 23,
+            "punteggio": 0.3199577033519745,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 55,
+            "punteggio": 0.5887423157691956,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 45.9
+      },
+      {
+        "id": 5,
+        "risposta": "72 ore",
+        "articolo_dato": "2",
+        "articolo_atteso": "17",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 18,
+            "punteggio": 0.41443556547164917,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 24,
+            "punteggio": 0.4397532343864441,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 34,
+            "punteggio": 0.3073235750198364,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 31.0
+      },
+      {
+        "id": 6,
+        "risposta": "Il diritto alla conservazione del posto di lavoro cessa dopo un periodo di 180 giorni in un anno solare.",
+        "articolo_dato": "36",
+        "articolo_atteso": "36",
+        "risposta_ok": true,
+        "articolo_ok": true,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 27,
+            "punteggio": 0.3111391067504883,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 32,
+            "punteggio": 0.334270715713501,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 32,
+            "punteggio": 0.5619859099388123,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 188,
+            "punteggio": 0.03878852725028992,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 472,
+            "punteggio": 0.08282851427793503,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 60.5
+      },
+      {
+        "id": 7,
+        "risposta": "In coincidenza con la mensilità di giugno e di ogni anno",
+        "articolo_dato": "3",
+        "articolo_atteso": "29",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 4,
+            "punteggio": 0.11956501007080078,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 30,
+            "punteggio": 0.440949022769928,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 30,
+            "punteggio": 0.669436514377594,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 124,
+            "punteggio": 0.05998705327510834,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 208,
+            "punteggio": 0.02787753939628601,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 50.6
+      },
+      {
+        "id": 8,
+        "risposta": "20%",
+        "articolo_dato": "1",
+        "articolo_atteso": "12",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 22,
+            "punteggio": 0.42381516098976135,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 56,
+            "punteggio": 0.5061720609664917,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 65,
+            "punteggio": 0.2651779055595398,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 244,
+            "punteggio": -0.026431843638420105,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 49.2
+      },
+      {
+        "id": 9,
+        "risposta": "250 ore annuali individuali",
+        "articolo_dato": "3",
+        "articolo_atteso": "12",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 20,
+            "punteggio": 0.4963853657245636,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 20,
+            "punteggio": 0.7068928480148315,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 21,
+            "punteggio": 0.3188237249851227,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 318,
+            "punteggio": -0.012391099706292152,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 466,
+            "punteggio": -0.014221683144569397,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 55.3
+      },
+      {
+        "id": 10,
+        "risposta": "Il datore di lavoro deve dare un preavviso di 30 giorni.",
+        "articolo_dato": "3",
+        "articolo_atteso": "51",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 26,
+            "punteggio": 0.5234282612800598,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 37,
+            "punteggio": 0.4022921621799469,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 43,
+            "punteggio": 0.4034445583820343,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 39.3
+      },
+      {
+        "id": 11,
+        "risposta": "Quindici giorni consecutivi di calendario",
+        "articolo_dato": "2",
+        "articolo_atteso": "21",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 23,
+            "punteggio": 0.5102353692054749,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 26,
+            "punteggio": 0.518564760684967,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 36,
+            "punteggio": 0.3342974781990051,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 1,
+            "punteggio": -0.05261871591210365,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 7,
+            "punteggio": -0.026938097551465034,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 78,
+            "punteggio": -0.06925100088119507,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 52.0
+      },
+      {
+        "id": 12,
+        "risposta": "18 ore",
+        "articolo_dato": "2",
+        "articolo_atteso": "77",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 55,
+            "punteggio": 0.526454746723175,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 55,
+            "punteggio": 0.6724691987037659,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 88,
+            "punteggio": 0.24074886739253998,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 36.6
+      },
+      {
+        "id": 13,
+        "risposta": "La durata massima del periodo di apprendistato professionalizzante è fissata in 36 mesi, salvo il 6° livello che è pari a 24 mesi e per i profili professionali caratterizzati dalla figura dell'artigiano come individuati nell'art. 143, per i quali la durata massima è di 48 mesi. Per i profili professionali caratterizzanti la figura dell'artigiano individuati al 4° livello, la durata massima è di 42",
+        "articolo_dato": "2",
+        "articolo_atteso": "56",
+        "risposta_ok": true,
+        "articolo_ok": false,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 49,
+            "punteggio": 0.672720730304718,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 49,
+            "punteggio": 0.6706897616386414,
+            "da": [
+              "dense",
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 50,
+            "punteggio": 0.5821460485458374,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 37,
+            "punteggio": -0.03694221377372742,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 267,
+            "punteggio": -0.057583823800086975,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 71.0
+      },
+      {
+        "id": 14,
+        "risposta": "San Francesco d'Assisi",
+        "articolo_dato": "14",
+        "articolo_atteso": "14",
+        "risposta_ok": true,
+        "articolo_ok": true,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 22,
+            "punteggio": 0.23976999521255493,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 26,
+            "punteggio": 0.2531183660030365,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 60,
+            "punteggio": 0.24843640625476837,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 186,
+            "punteggio": 0.19646205008029938,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 400,
+            "punteggio": 0.1266072690486908,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 59.4
+      },
+      {
+        "id": 15,
+        "risposta": "Un lavoratore può maturare al massimo 10 scatti di anzianità triennali presso la stessa azienda.",
+        "articolo_dato": "31",
+        "articolo_atteso": "31",
+        "risposta_ok": true,
+        "articolo_ok": true,
+        "citazione_fra_gli_estratti": true,
+        "estratti": [
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 26,
+            "punteggio": 0.43067529797554016,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 30,
+            "punteggio": 0.35787495970726013,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "ccnl-commercio-terziario-conflavoro.pdf",
+            "pagina": 31,
+            "punteggio": 0.20945854485034943,
+            "da": [
+              "bm25"
+            ]
+          },
+          {
+            "documento": "divina-commedia.pdf",
+            "pagina": 283,
+            "punteggio": -0.05910956487059593,
+            "da": [
+              "bm25"
+            ]
+          }
+        ],
+        "modo_documenti": "excerpts",
+        "secondi": 50.6
+      }
+    ]
+  },
+  "secondi": 1099.0
 }

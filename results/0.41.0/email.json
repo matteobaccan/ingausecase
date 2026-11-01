@@ -6,25 +6,27 @@
   "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
   "ctx": 2048,
   "seed": 42,
-  "data": "2026-11-01T00:23:41Z",
-  "secondi_avvio": 2.0,
+  "data": "2026-11-01T01:26:08Z",
+  "secondi_avvio": 1.0,
   "stato": "ok",
-  "voto": 0.85,
+  "voto": 0.8375,
   "voci": {
     "urgenza": 0.8,
-    "reparto": 0.9,
-    "entrambi giusti": 0.725
+    "reparto": 0.875,
+    "entrambi giusti": 0.675
   },
   "dettagli": {
     "messaggi": 40,
     "confusione": {
       "urgenza": {
         "media -> alta": 4,
-        "media -> bassa": 4
+        "media -> bassa": 3,
+        "bassa -> media": 1
       },
       "reparto": {
         "risorse_umane -> amministrazione": 2,
         "assistenza_tecnica -> logistica": 1,
+        "risorse_umane -> logistica": 1,
         "assistenza_tecnica -> commerciale": 1
       }
     },
@@ -92,7 +94,18 @@
         },
         "dato": {
           "reparto": "amministrazione",
-          "urgenza": "bassa"
+          "urgenza": "media"
+        }
+      },
+      {
+        "id": 16,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "reparto": "assistenza_tecnica",
+          "urgenza": "media"
         }
       },
       {
@@ -104,6 +117,17 @@
         "dato": {
           "reparto": "logistica",
           "urgenza": "alta"
+        }
+      },
+      {
+        "id": 25,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "reparto": "logistica",
+          "urgenza": "media"
         }
       },
       {
@@ -152,5 +176,5 @@
       }
     ]
   },
-  "secondi": 196.5
+  "secondi": 135.7
 }
