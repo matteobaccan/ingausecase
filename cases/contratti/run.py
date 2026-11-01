@@ -29,9 +29,9 @@ SISTEMA = (
     "Rispondi alle domande sul contratto collettivo nazionale di lavoro del commercio e "
     "del terziario usando solo gli estratti del contratto. Gli estratti possono venire "
     "anche da altri testi, che non c'entrano con il contratto: ignorali. Rispondi in "
-    "italiano con una frase breve che contenga il dato chiesto, e indica in 'sorgente' "
-    "il numero dell'articolo del contratto da cui viene la risposta (solo il numero, "
-    "per esempio 12)."
+    "italiano con una frase breve che contenga il dato chiesto, e indica in "
+    "'sta_nell_articolo' il numero dell'articolo del contratto (Art. N) da cui viene la "
+    "risposta, per esempio 12: il numero dell'articolo, non quello [n] dell'estratto."
 )
 
 
@@ -70,10 +70,11 @@ def main():
 
     schema = {"type": "object",
               "properties": {"risposta": {"type": "string", "maxLength": 400},
-                             "sorgente": {"type": "string", "maxLength": 20}},
-              "required": ["risposta", "sorgente"]}
-    # "sorgente" e non "articolo": Inga scrive le chiavi in ordine alfabetico, e
-    # l'articolo va scritto dopo la risposta, non prima
+                             "sta_nell_articolo": {"type": "string", "maxLength": 20}},
+              "required": ["risposta", "sta_nell_articolo"]}
+    # "sta_nell_articolo" e non "articolo": Inga scrive le chiavi in ordine alfabetico, e
+    # l'articolo va scritto dopo la risposta, non prima; con "sorgente" (0.41.0, prima
+    # esecuzione) il modello scriveva il numero [n] dell'estratto invece dell'articolo
     ok_r = ok_a = trovate = 0
     quota = []
     righe = []
@@ -92,17 +93,17 @@ def main():
         trovata = any(cit in compatto(e.get("text", "")) for e in dal_contratto)
         risposta = str(dato.get("risposta", ""))
         r_ok = any(compatto(r) in compatto(risposta) for r in q["risposte"])
-        a_ok = numero_articolo(dato.get("sorgente")) == numero_articolo(q["articolo"])
+        a_ok = numero_articolo(dato.get("sta_nell_articolo")) == numero_articolo(q["articolo"])
         ok_r += r_ok
         ok_a += a_ok
         trovate += trovata
         if estratti:
             quota.append(1 - len(dal_contratto) / len(estratti))
-        print(f"{q['id']:2d}: risposta {'ok' if r_ok else 'NO'}, articolo {dato.get('sorgente')} "
+        print(f"{q['id']:2d}: risposta {'ok' if r_ok else 'NO'}, articolo {dato.get('sta_nell_articolo')} "
               f"({'ok' if a_ok else 'atteso ' + q['articolo']}), citazione fra gli estratti "
               f"{'sì' if trovata else 'no'}, estratti {len(dal_contratto)} del contratto e "
               f"{len(estratti) - len(dal_contratto)} di altri testi, {sec:.1f} s: {risposta[:120]}")
-        righe.append({"id": q["id"], "risposta": risposta, "articolo_dato": dato.get("sorgente"),
+        righe.append({"id": q["id"], "risposta": risposta, "articolo_dato": dato.get("sta_nell_articolo"),
                       "articolo_atteso": q["articolo"], "risposta_ok": r_ok, "articolo_ok": a_ok,
                       "citazione_fra_gli_estratti": trovata,
                       "estratti": [{"documento": e.get("document"), "pagina": e.get("page"),

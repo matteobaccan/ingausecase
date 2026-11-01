@@ -34,7 +34,8 @@ Il caso usa le **collezioni di documenti di Inga**, non un recupero fatto in pro
 3. ogni domanda nomina la collezione (`"inga_documents": [{"collection":
    "contratti"}]`): Inga cerca gli estratti più vicini (ricerca ibrida) e li mette nel
    prompt, entro un terzo del contesto di 8192 token. La risposta è strutturata:
-   `risposta` e `sorgente` (il numero dell'articolo; la chiave viene dopo `risposta`
+   `risposta` e `sta_nell_articolo` (il numero dell'articolo, non quello `[n]`
+   dell'estratto; la chiave viene dopo `risposta`
    in ordine alfabetico, l'ordine in cui Inga le scrive, così l'articolo si sceglie
    dopo aver scritto la risposta).
 
