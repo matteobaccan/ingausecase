@@ -14,6 +14,10 @@
 # solo per schedule e workflow_dispatch, non esegue codice del repository: scarica i
 # risultati e li salva sul ramo `cases`.
 #
+# La cache di GitHub tiene i modelli (chiave: i loro sha256, da models.json) e i PDF che
+# i casi scaricano (chiave: URL e sha256 di fonti.json); fonti.yml scarica i PDF e ne
+# stampa il testo nel log.
+#
 # Segreti (facoltativi): INGA_TOKEN, un token che legge le release di
 # matteobaccan/inga finché quel repository è privato; HF_TOKEN per Hugging Face.
 
@@ -37,6 +41,7 @@ on:
     paths:
       - inga-version.txt
       - models.json
+      - fonti.json
       - cases/**
       - tools/**
       - .github/workflows/cases.yml
@@ -116,6 +121,16 @@ jobs:
         with:
           path: ${{ env.IUC_CACHE }}/models
           key: ${{ steps.models.outputs.key }}
+      - name: Chiave della cache delle fonti
+        id: fonti
+        run: |
+          # i PDF di fonti.json, con la chiave fatta dai loro URL e sha256 (come fonti.yml)
+          key=$(python -c "import json,hashlib; f=json.load(open('fonti.json'))['fonti']; print(hashlib.sha256(' '.join(sorted(v['url'] + '@' + str(v['sha256']) for v in f.values())).encode()).hexdigest()[:32])")
+          echo "key=fonti-$key" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v6
+        with:
+          path: ${{ env.IUC_CACHE }}/fonti
+          key: ${{ steps.fonti.outputs.key }}
       - name: Casi
         env:
           INGA_TOKEN: ${{ secrets.INGA_TOKEN }}

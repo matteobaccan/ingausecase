@@ -1,6 +1,7 @@
 {
-  "descrizione": "15 domande sulla wiki di AINews, con la pagina da citare",
+  "descrizione": "15 domande sulla wiki di AINews, in una collezione di 60 pagine con la Divina Commedia, con la pagina da citare",
   "modello": "qwen3-4b",
-  "ctx": 16384,
-  "timeout_minuti": 60
+  "modello_embedding": "minilm-multilingue",
+  "ctx": 8192,
+  "timeout_minuti": 40
 }

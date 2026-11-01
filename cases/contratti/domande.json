@@ -1,86 +1,137 @@
 [
   {
     "id": 1,
-    "domanda": "Quanto dura il periodo di prova per un lavoratore inquadrato al quarto livello?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Quanto dura al massimo il periodo di prova per un lavoratore inquadrato al quarto livello?",
+    "risposte": ["60 giorni", "sessanta giorni"],
+    "articolo": "2",
+    "pagina": 13,
+    "citazione": "60 giorni di effettivo lavoro per i livelli 2, 3, 4,5 e Operatori di vendita",
+    "verificata": true
   },
   {
     "id": 2,
-    "domanda": "Quanti giorni lavorativi di ferie spettano ogni anno a un lavoratore a tempo pieno?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Quanto dura al massimo il periodo di prova per un Quadro o un lavoratore del primo livello?",
+    "risposte": ["6 mesi", "sei mesi"],
+    "articolo": "2",
+    "pagina": 13,
+    "citazione": "6 mesi di calendario per Quadro e 1° livello",
+    "verificata": true
   },
   {
     "id": 3,
-    "domanda": "Qual è la durata normale dell'orario di lavoro settimanale?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Quanti giorni lavorativi di ferie annuali spettano al personale?",
+    "risposte": ["26 giorni", "ventisei giorni", "26 giornate"],
+    "articolo": "16",
+    "pagina": 24,
+    "citazione": "periodo di ferie annuali nella misura di 26 giorni lavorativi",
+    "verificata": true
   },
   {
     "id": 4,
-    "domanda": "Quante ore annue di permessi retribuiti (riduzione dell'orario) spettano a un lavoratore a tempo pieno di un'azienda con più di 15 dipendenti?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Qual è la durata normale settimanale del lavoro per i dipendenti dei gestori di impianti di distribuzione carburanti non autostradali?",
+    "risposte": ["45 ore", "quarantacinque ore"],
+    "articolo": "7",
+    "pagina": 18,
+    "citazione": "45 per i dipendenti da gestori di impianti di distribuzione carburanti",
+    "verificata": true
   },
   {
     "id": 5,
-    "domanda": "Quanti giorni dura il periodo di comporto in caso di malattia?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Quante ore annue di riduzione dell'orario di lavoro (ROL) spettano nelle aziende con più di 15 dipendenti?",
+    "risposte": ["72 ore", "settantadue ore"],
+    "articolo": "17",
+    "pagina": 24,
+    "citazione": "72 ore nelle aziende con più di 15 dipendenti",
+    "verificata": true
   },
   {
     "id": 6,
-    "domanda": "In quale mese si paga la quattordicesima mensilità?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Dopo quanti giorni di malattia in un anno solare cessa il diritto alla conservazione del posto di lavoro (periodo di comporto)?",
+    "risposte": ["180 giorni", "centottanta giorni"],
+    "articolo": "36",
+    "pagina": 32,
+    "citazione": "raggiunga un periodo di 180 giorni in un anno solare",
+    "verificata": true
   },
   {
     "id": 7,
-    "domanda": "Qual è la maggiorazione per il lavoro straordinario oltre la quarantottesima ora settimanale?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "In coincidenza con quale mensilità si paga la quattordicesima?",
+    "risposte": ["giugno"],
+    "articolo": "29",
+    "pagina": 30,
+    "citazione": "In coincidenza con la mensilità di giugno",
+    "verificata": true
   },
   {
     "id": 8,
-    "domanda": "Quante ore di lavoro straordinario si possono fare al massimo in un anno?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Qual è la maggiorazione per il lavoro straordinario diurno che eccede la quarantottesima ora settimanale?",
+    "risposte": ["20%", "20 per cento", "venti per cento"],
+    "articolo": "12",
+    "pagina": 22,
+    "citazione": "(eccedenti la 48a ora settimanale) 20%",
+    "verificata": true
   },
   {
     "id": 9,
-    "domanda": "Quanti giorni di preavviso di licenziamento spettano a un impiegato del terzo livello con meno di cinque anni di anzianità?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Entro quale soglia annuale individuale di ore può essere prestato il lavoro straordinario?",
+    "risposte": ["250 ore", "duecentocinquanta ore"],
+    "articolo": "12",
+    "pagina": 21,
+    "citazione": "entro la soglia di 250 ore annuali individuali",
+    "verificata": true
   },
   {
     "id": 10,
-    "domanda": "Quanti giorni di congedo matrimoniale retribuito spettano?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Quanti giorni di preavviso deve dare il datore di lavoro per licenziare un lavoratore del terzo livello con anzianità di servizio fino a 5 anni?",
+    "risposte": ["30 giorni", "trenta giorni"],
+    "articolo": "51",
+    "pagina": 43,
+    "citazione": "2° e 3° livello 30 giorni 45 giorni 60 giorni",
+    "verificata": true
   },
   {
     "id": 11,
-    "domanda": "Qual è la durata minima settimanale di un contratto a tempo parziale?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Quanto dura il congedo matrimoniale spettante al lavoratore non in prova?",
+    "risposte": ["15 giorni", "quindici giorni"],
+    "articolo": "21",
+    "pagina": 26,
+    "citazione": "spetta un periodo di congedo di quindici giorni consecutivi di calendario",
+    "verificata": true
   },
   {
     "id": 12,
-    "domanda": "Quanto dura al massimo l'apprendistato professionalizzante per i livelli più alti?",
-    "risposte": [],
-    "articolo": null,
-    "verificata": false
+    "domanda": "Qual è la durata minima settimanale della prestazione a tempo parziale in un'azienda che occupa più di 30 dipendenti?",
+    "risposte": ["18 ore", "diciotto ore"],
+    "articolo": "77",
+    "pagina": 55,
+    "citazione": "18 ore nel caso di orario ridotto rispetto al normale orario settimanale",
+    "verificata": true
+  },
+  {
+    "id": 13,
+    "domanda": "Qual è la durata massima del periodo di apprendistato professionalizzante, salvo il sesto livello e i profili artigiani?",
+    "risposte": ["36 mesi", "trentasei mesi", "tre anni"],
+    "articolo": "56",
+    "pagina": 49,
+    "citazione": "La durata massima del periodo di apprendistato è fissata in 36 mesi",
+    "verificata": true
+  },
+  {
+    "id": 14,
+    "domanda": "Quale santo si festeggia il 4 ottobre, giorno considerato festivo dal contratto?",
+    "risposte": ["Francesco"],
+    "articolo": "14",
+    "pagina": 22,
+    "citazione": "4 Ottobre (San Francesco D’Assisi)",
+    "verificata": true
+  },
+  {
+    "id": 15,
+    "domanda": "Quanti scatti di anzianità triennali può maturare al massimo un lavoratore presso la stessa azienda?",
+    "risposte": ["10 scatti", "dieci scatti", "massimo di 10", "massimo 10"],
+    "articolo": "31",
+    "pagina": 30,
+    "citazione": "scatti di anzianità triennali e per un massimo di 10  scatti",
+    "verificata": true
   }
 ]

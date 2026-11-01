@@ -14,6 +14,13 @@
       "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
       "size": 2497281120,
       "uso": "estrazione, classificazione, domande su documenti"
+    },
+    "minilm-multilingue": {
+      "repo": "mykor/paraphrase-multilingual-MiniLM-L12-v2.gguf",
+      "file": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0.gguf",
+      "sha256": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
+      "size": 132438304,
+      "uso": "modello di embedding (multilingue, 118M parametri) delle collezioni di documenti dei casi contratti e documenti"
     }
   }
 }

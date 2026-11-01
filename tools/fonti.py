@@ -107,6 +107,27 @@ def pagine(chiave, rigido=True):
     return out
 
 
+def in_collezione(inga_api, collezione, chiave, nome):
+    """Adds the source's PDF to one of Inga's collections, read by Inga itself; if Inga
+    refuses the PDF, the text pypdf extracts from it, page by page, as a text file.
+    Returns what happened: the name in the collection, how it was read, chunks, time."""
+    import time
+    path = pdf(chiave)
+    t0 = time.monotonic()
+    out = {"fonte": chiave, "nome": nome, "lettura": "PDF letto da Inga"}
+    try:
+        info = inga_api.add_document(collezione, nome, pdf_path=path)
+    except RuntimeError as e:
+        out.update(nome=os.path.splitext(nome)[0] + ".txt", lettura="testo estratto con pypdf",
+                   errore_pdf=str(e)[:300])
+        testo = "\n\n".join(f"[pagina {i}]\n{t}" for i, t in enumerate(pagine(chiave), 1))
+        info = inga_api.add_document(collezione, out["nome"], text=testo)
+    out.update(chunks=info.get("chunks"), pagine=info.get("pages"),
+               secondi=round(time.monotonic() - t0, 1))
+    print(f"{nome}: {out['lettura']}, {out['chunks']} chunk, {out['pagine']} pagine, {out['secondi']} s")
+    return out
+
+
 def intervallo(s, n):
     if not s:
         return range(1, n + 1)

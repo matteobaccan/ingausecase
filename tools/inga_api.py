@@ -123,3 +123,21 @@ def chat_stream(messages, max_tokens=256, timeout=600, think=False):
                         ttft = time.monotonic() - t0
                     parts.append(piece)
     return "".join(parts), ttft, time.monotonic() - t0
+
+
+def add_document(collection, name, text=None, pdf_path=None, timeout=3600):
+    """Add a file to one of Inga's collections of documents (POST /api/inga/documents):
+    Inga reads it (a PDF with its own reader), cuts it into chunks and embeds them with
+    the server's embedding model. Returns Inga's answer (chunks, pages, ...).
+
+    Needs a case with "modello_embedding" in case.json (the runner then serves the
+    embedding model beside the chat model and chooses it)."""
+    body = {"collection": collection, "name": name}
+    if pdf_path is not None:
+        import base64
+        with open(pdf_path, "rb") as f:
+            body["data"] = "data:application/pdf;base64," + base64.b64encode(f.read()).decode("ascii")
+    else:
+        body["text"] = text
+    with _post("/api/inga/documents", body, timeout) as r:
+        return json.loads(r.read().decode("utf-8"))

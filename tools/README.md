@@ -10,7 +10,10 @@
    ferma con un messaggio chiaro;
 4. per ogni caso avvia `inga serve` con il modello del caso su una porta libera
    (temperatura 0, seed fisso, senza rete, senza web UI, memoria, MCP e ricerca web),
-   aspetta `/health` ed esegue `run.py` del caso;
+   aspetta `/health` ed esegue `run.py` del caso; un caso con `modello_embedding` ha
+   anche quel modello, servito accanto (`--models-max 2`) e scelto come modello di
+   embedding del server, e l'archivio locale di Inga, dove stanno le collezioni di
+   documenti (la memoria resta inutilizzata: nessuna richiesta la chiede);
 5. scrive `results/<versione>/<caso>.json` e `results/<versione>/summary.md`, con il
    confronto con la versione precedente più recente presente in `results/`.
 
@@ -31,14 +34,15 @@ Variabili d'ambiente lette (nessuna è obbligatoria):
 | --- | --- |
 | `INGA_TOKEN`, poi `GH_TOKEN`, poi `GITHUB_TOKEN` | lettura delle release di `matteobaccan/inga` finché il repository è privato |
 | `HF_TOKEN` | download da Hugging Face, se presente |
-| `IUC_CACHE` | cartella dei download e dei file di lavoro (`~/.cache/ingausecase`) |
+| `IUC_CACHE` | cartella dei download (Inga, modelli, fonti) e dei file di lavoro (`~/.cache/ingausecase`); il runner la passa ai casi |
 
 ## Come è fatto un caso
 
 Una cartella `cases/<nome>/` con:
 
 - `case.json`: `modello` (una chiave di `models.json`), `ctx`, `timeout_minuti`,
-  `descrizione`, ed eventualmente `argomenti_serve` (altre opzioni di `inga serve`);
+  `descrizione`, ed eventualmente `modello_embedding` (una chiave di `models.json`, per
+  le collezioni di documenti) e `argomenti_serve` (altre opzioni di `inga serve`);
 - `run.py`: parla con il server tramite `inga_api.py` (l'URL è in `INGA_URL`) e scrive
   il risultato con `inga_api.write_result`: `stato` (`ok` o `saltato`), `voto` da 0 a
   1, `voci` (i voti parziali, da 0 a 1), `motivo` (per un caso saltato) e `dettagli`;
@@ -46,3 +50,24 @@ Una cartella `cases/<nome>/` con:
 
 I file generati (PDF, testi scaricati) vanno nella cartella di lavoro (`IUC_WORK_DIR`)
 e non nel repository. Ogni richiesta usa temperatura 0 e seed 42.
+
+`inga_api.py` ha anche `add_document`, che aggiunge un file (un PDF o un testo) a una
+collezione di documenti di Inga (`POST /api/inga/documents`).
+
+## Le fonti scaricate
+
+`fonti.py` scarica i PDF di [`fonti.json`](../fonti.json) in `<cache>/fonti` (in CI la
+cache di GitHub tiene quella cartella, con la chiave fatta da URL e sha256 di ogni
+fonte) e li controlla: se lo sha256 del file non è quello di `fonti.json` solleva
+`Cambiato`, e il caso si ferma in errore con il motivo. Estrae il testo con pypdf, una
+pagina alla volta, e lo tiene accanto al PDF. `in_collezione` aggiunge una fonte a una
+collezione di Inga (il PDF letto da Inga; se Inga lo rifiuta, il testo di pypdf).
+
+```
+.venv/bin/python tools/fonti.py scarica                      # sha256, dimensione, pagine
+.venv/bin/python tools/fonti.py testo ccnl                   # il testo, pagina per pagina
+.venv/bin/python tools/fonti.py testo divina-commedia --pagine 1-5
+```
+
+Il workflow `fonti.yml` fa le stesse due cose su un runner di GitHub (alcuni siti delle
+fonti non si raggiungono da tutte le reti).

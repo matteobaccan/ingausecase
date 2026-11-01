@@ -224,15 +224,21 @@ def free_port():
 
 
 class Server:
-    def __init__(self, exe, model_path, ctx, seed, home, logfile, extra):
+    def __init__(self, exe, model_path, ctx, seed, home, logfile, extra, embedding_path=None):
         self.port = free_port()
         self.url = f"http://127.0.0.1:{self.port}"
-        cmd = [exe, "--home", home, "serve", model_path,
+        # with an embedding model (the collections of documents): it is served beside the
+        # chat model, both stay loaded, and the local store is kept (the collections live
+        # in it, beside the memories); the memory is used only by requests that ask for it
+        # with inga_memory, which the cases never do
+        models = [model_path] + ([embedding_path] if embedding_path else [])
+        memory = ["--models-max", "2"] if embedding_path else ["--no-memory"]
+        cmd = [exe, "--home", home, "serve"] + models + [
                "--host", "127.0.0.1", "--port", str(self.port),
                "--ctx", str(ctx), "--seed", str(seed), "--temp", "0",
                "--offline", "--no-webui", "--quiet", "--exit-on-load-error",
-               "--no-mcp", "--no-mcp-server", "--no-memory", "--no-web-search",
-               "--no-api-nodes", "--no-cloud"] + list(extra)
+               "--no-mcp", "--no-mcp-server", "--no-web-search",
+               "--no-api-nodes", "--no-cloud"] + memory + list(extra)
         log("  " + " ".join(cmd))
         self.logfile = logfile
         self.log = open(logfile, "w", encoding="utf-8")
@@ -252,10 +258,32 @@ class Server:
             time.sleep(1)
         raise Failure(f"inga serve not ready after {timeout} s:\n{self.tail()}")
 
-    def model_id(self):
+    def model_ids(self):
         with urllib.request.urlopen(self.url + "/v1/models", timeout=30) as r:
             data = json.loads(r.read())
-        return data["data"][0]["id"] if data.get("data") else ""
+        return [m["id"] for m in data.get("data") or []]
+
+    def model_id(self):
+        ids = self.model_ids()
+        return ids[0] if ids else ""
+
+    def choose_embedding_model(self):
+        """Makes the second model served the server's embedding model (the one the
+        collections of documents use) and returns its name."""
+        ids = self.model_ids()
+        if len(ids) < 2:
+            raise Failure(f"the embedding model is not among the models served: {ids}")
+        req = urllib.request.Request(
+            self.url + "/api/inga/settings", data=json.dumps({"embedding_model": ids[1]}).encode(),
+            headers={"Content-Type": "application/json"}, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                chosen = json.loads(r.read()).get("embedding_model")
+        except (urllib.error.URLError, OSError, ValueError) as e:
+            raise Failure(f"POST /api/inga/settings embedding_model: {e}") from None
+        if chosen != ids[1]:
+            raise Failure(f"the server did not take {ids[1]} as its embedding model ({chosen})")
+        return chosen
 
     def tail(self, n=40):
         self.log.flush()
@@ -293,25 +321,34 @@ def run_case(name, cfg, exe, models, args, version, outdir):
     result_tmp = os.path.join(work, "result.json")
     key = cfg["modello"]
     meta = models.get(key, {})
+    ekey = cfg.get("modello_embedding")
     record = {
         "caso": name, "versione": version, "modello": key,
         "file_modello": meta.get("file"), "sha256_modello": meta.get("sha256"),
         "ctx": cfg.get("ctx", 4096), "seed": args.seed,
         "data": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
+    if ekey:
+        record.update(modello_embedding=ekey, file_modello_embedding=models.get(ekey, {}).get("file"),
+                      sha256_modello_embedding=models.get(ekey, {}).get("sha256"))
     t0 = time.monotonic()
     server = None
     try:
         model_path = get_model(key, models, args.cache)
+        embedding_path = get_model(ekey, models, args.cache) if ekey else None
         home = os.path.join(work, "inga-home")
         os.makedirs(home)
         server = Server(exe, model_path, record["ctx"], args.seed, home,
-                        os.path.join(work, "inga-serve.log"), cfg.get("argomenti_serve", []))
+                        os.path.join(work, "inga-serve.log"), cfg.get("argomenti_serve", []),
+                        embedding_path)
         record["secondi_avvio"] = round(server.wait(cfg.get("attesa_avvio", 600)), 1)
         env = dict(os.environ,
                    INGA_URL=server.url, INGA_MODEL=server.model_id(), SEED=str(args.seed),
                    IUC_TOOLS=TOOLS, IUC_CASE_DIR=case_dir, IUC_WORK_DIR=work,
-                   IUC_RESULT=result_tmp, IUC_VERSION=version, PYTHONUNBUFFERED="1")
+                   IUC_RESULT=result_tmp, IUC_VERSION=version, IUC_CACHE=args.cache,
+                   PYTHONUNBUFFERED="1")
+        if ekey:
+            env["INGA_EMBEDDING_MODEL"] = server.choose_embedding_model()
         log(f"  run.py ({server.url}, model {env['INGA_MODEL']})")
         timeout = cfg.get("timeout_minuti", 60) * 60
         try:

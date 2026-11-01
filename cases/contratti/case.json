@@ -1,6 +1,7 @@
 {
-  "descrizione": "domande con risposta nota sul CCNL Terziario, Distribuzione e Servizi",
+  "descrizione": "15 domande verificate sul CCNL Commercio e Terziario di Conflavoro, in una collezione con la Divina Commedia",
   "modello": "qwen3-4b",
-  "ctx": 16384,
-  "timeout_minuti": 45
+  "modello_embedding": "minilm-multilingue",
+  "ctx": 8192,
+  "timeout_minuti": 40
 }
