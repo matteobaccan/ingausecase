@@ -27,7 +27,7 @@ on:
         required: false
         default: ""
       case:
-        description: "Un caso solo (es. pdf); vuoto = tutti"
+        description: "Casi separati da virgole (es. pdf,memoria); vuoto = tutti"
         required: false
         default: ""
 
@@ -115,7 +115,8 @@ jobs:
             echo "$label" >> "$RUNNER_TEMP/labels"
             args=(--inga "$exe" --label "$label")
             [ -z "$m" ] || args+=(--model "$m")
-            [ -z "$CASE" ] || args+=(--case "$CASE")
+            IFS=',' read -ra casi <<< "${CASE:-}"
+            for c in "${casi[@]}"; do c=$(echo "$c" | tr -d ' '); [ -z "$c" ] || args+=(--case "$c"); done
             "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}" || status=1
           done
           exit $status
