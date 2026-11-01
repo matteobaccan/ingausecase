@@ -1,0 +1,7 @@
+{
+  "descrizione": "Recupero su SciFact (BEIR): 60 domande, 1000 abstract scientifici, nDCG@10 e recall@10 della ricerca nelle collezioni di documenti",
+  "modello": "qwen3-0.6b",
+  "modello_embedding": "minilm-multilingue",
+  "ctx": 4096,
+  "timeout_minuti": 60
+}

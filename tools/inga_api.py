@@ -141,3 +141,41 @@ def add_document(collection, name, text=None, pdf_path=None, timeout=3600):
         body["text"] = text
     with _post("/api/inga/documents", body, timeout) as r:
         return json.loads(r.read().decode("utf-8"))
+
+
+class NonDisponibile(Exception):
+    """The server has no such route (an older version of Inga): the case is skipped."""
+
+
+def _call(method, path, body=None, timeout=600):
+    data = None if body is None else json.dumps(body).encode("utf-8")
+    req = urllib.request.Request(base_url() + path, data=data, method=method,
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8") or "null")
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")[:2000]
+        if e.code == 404:
+            raise NonDisponibile(f"{method} {path}: HTTP 404 (questa versione di Inga non lo ha)") from None
+        raise RuntimeError(f"{method} {path}: HTTP {e.code}: {detail}") from None
+
+
+def get(path, timeout=600):
+    return _call("GET", path, timeout=timeout)
+
+
+def post(path, body, timeout=600):
+    return _call("POST", path, body, timeout=timeout)
+
+
+def put(path, body, timeout=600):
+    return _call("PUT", path, body, timeout=timeout)
+
+
+def search_documents(collection, query, k=10):
+    """The passages Inga finds for `query` in a collection (GET /api/inga/documents/search,
+    the same search the chat uses with inga_documents), best first."""
+    from urllib.parse import urlencode
+    q = urlencode({"q": query, "collection": collection, "k": k})
+    return get("/api/inga/documents/search?" + q).get("passages") or []

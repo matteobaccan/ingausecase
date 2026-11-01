@@ -51,7 +51,9 @@ Una cartella `cases/<nome>/` con:
 I file generati (PDF, testi scaricati) vanno nella cartella di lavoro (`IUC_WORK_DIR`)
 e non nel repository. Ogni richiesta usa temperatura 0 e seed 42.
 
-`inga_api.py` ha anche `add_document`, che aggiunge un file (un PDF o un testo) a una
+`inga_api.py` ha anche `get`, `post` e `put` per le altre API di Inga (un 404 diventa
+`NonDisponibile`: il caso si dà come saltato su una versione che non ha quella API),
+`search_documents` (la ricerca diretta nelle collezioni) e `add_document`, che aggiunge un file (un PDF o un testo) a una
 collezione di documenti di Inga (`POST /api/inga/documents`).
 
 ## Le fonti scaricate
@@ -71,3 +73,13 @@ collezione di Inga (il PDF letto da Inga; se Inga lo rifiuta, il testo di pypdf)
 
 Il workflow `fonti.yml` fa le stesse due cose su un runner di GitHub (alcuni siti delle
 fonti non si raggiungono da tutte le reti).
+
+## I dati dei test pubblici
+
+`dati.py` scarica i file di [`dati.json`](../dati.json) in `<cache>/dati` e ne controlla
+lo sha256: se il file è cambiato, `dati.Cambiato` e il caso si ferma con un messaggio
+chiaro. Un caso lo usa con `dati.file("<chiave>")`.
+
+`inga serve` di ogni caso ha la sua cartella dei dati dell'utente (`XDG_DATA_HOME` e
+`APPDATA` nella cartella di lavoro del caso), dove sta la memoria dei progetti: un caso
+non vede quella di un altro, né quella di chi esegue il runner.

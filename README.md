@@ -13,6 +13,9 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 | [`cases/email/`](cases/email) | smistamento di email e ticket, voto esatto |
 | [`cases/pdf/`](cases/pdf) | estrazione di dati da PDF, voto esatto |
 | [`cases/prova/`](cases/prova) | avvio e prima risposta con un modello piccolo |
+| [`cases/rag-recupero/`](cases/rag-recupero) | il recupero delle collezioni di documenti su un test pubblico (SciFact di BEIR): nDCG@10, recall@10 |
+| [`cases/rag-rgb/`](cases/rag-rgb) | risposte da documenti rumorosi e rifiuto quando la risposta non c'è, su un test pubblico (RGB) |
+| [`cases/memoria/`](cases/memoria) | la memoria dei progetti fra una chat e l'altra, su un test pubblico (LongMemEval) |
 | [`tools/`](tools) | lo script comune: scarica Inga, lo avvia, esegue i casi, dà i voti |
 | [`results/`](results) | i risultati, una cartella per versione, con `summary.md` |
 
@@ -30,6 +33,10 @@ ora, nessuna mesh. I dati sono pubblici o sintetici.
   e la Divina Commedia), con URL, sha256 e dimensione del file controllato: il testo non
   va nel repository, e se il file scaricato cambia il caso si ferma con un messaggio
   chiaro.
+- [`dati.json`](dati.json): i dati dei test pubblici (SciFact, RGB, LongMemEval) che i
+  casi scaricano a ogni esecuzione, con URL fissato a una revisione dove possibile,
+  sha256, dimensione e licenza: non vanno nel repository (RGB è solo per uso non
+  commerciale).
 - [`tools/runner.py`](tools/runner.py): esegue i casi in locale o in CI (vedi
   [`tools/README.md`](tools/README.md)). Temperatura 0 e seed fisso.
 

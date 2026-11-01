@@ -242,7 +242,12 @@ class Server:
         log("  " + " ".join(cmd))
         self.logfile = logfile
         self.log = open(logfile, "w", encoding="utf-8")
-        self.proc = subprocess.Popen(cmd, stdout=self.log, stderr=subprocess.STDOUT)
+        # the memory of the projects lives in the user's data folder (XDG_DATA_HOME,
+        # APPDATA): one inside the case's work folder, so a case never sees another's
+        data = os.path.join(home, "data")
+        os.makedirs(data, exist_ok=True)
+        env = dict(os.environ, XDG_DATA_HOME=data, APPDATA=data)
+        self.proc = subprocess.Popen(cmd, stdout=self.log, stderr=subprocess.STDOUT, env=env)
 
     def wait(self, timeout):
         t0 = time.monotonic()

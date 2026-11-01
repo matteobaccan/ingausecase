@@ -1,0 +1,6 @@
+{
+  "descrizione": "LongMemEval (memoria fra sessioni): 15 domande sulle chat passate, con la memoria dei progetti di Inga, con il suo diario e con tutta la chat",
+  "modello": "qwen3-4b",
+  "ctx": 12288,
+  "timeout_minuti": 200
+}
