@@ -5,10 +5,14 @@
 # scelto, ma GitHub lo mostra solo se c'è su `main`).
 #
 # - workflow_dispatch: `ref` (ramo o commit di Inga), `modelli` (chiavi di models.json
-#   separate da virgole; vuoto = il modello di ogni caso), `case` (vuoto = tutti);
-# - i modelli uno dopo l'altro nello stesso job; i risultati non vanno sul ramo `cases`:
-#   restano come artifact (solo i risultati e i log, mai il binario di Inga) e nel
-#   riepilogo del job, confrontati con l'ultima release in results/.
+#   separate da virgole; vuoto = il modello di ogni caso), `case` (casi separati da
+#   virgole; vuoto = tutti);
+# - in parallelo: un job per ogni caso e modello (`runner.py --matrix`), ognuno compila
+#   Inga per conto suo (il binario non esce mai dal suo runner) e, per i casi che lo
+#   chiedono, llama.cpp; un ultimo job raccoglie i risultati, scrive un riepilogo per
+#   modello, confrontato con l'ultima release in results/, e lo mette nel riepilogo
+#   della run. I risultati non vanno sul ramo `cases`: restano come artifact (solo i
+#   JSON e i log, mai il binario di Inga).
 #
 # Segreti: INGA_TOKEN, un token che legge matteobaccan/inga finché è privato; HF_TOKEN
 # (facoltativo) per Hugging Face.
@@ -35,15 +39,50 @@ permissions:
   contents: read
 
 concurrency:
-  group: prova-${{ github.event.inputs.ref }}
+  group: prova-${{ github.event.inputs.ref }}-${{ github.event.inputs.modelli }}-${{ github.event.inputs.case }}
   cancel-in-progress: false
 
 jobs:
-  # Un job solo: Inga è compilato e usato qui, e il binario non esce dal runner (il
-  # repository di Inga è privato, questo è pubblico: nessun artifact con il binario).
-  run:
+  plan:
     runs-on: ubuntu-24.04
-    timeout-minutes: 360
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+      sha: ${{ steps.sha.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: cases
+          persist-credentials: false
+      - id: sha
+        env:
+          TOKEN: ${{ secrets.INGA_TOKEN || github.token }}
+          REF: ${{ github.event.inputs.ref }}
+        run: |
+          # il commit di Inga da provare, lo stesso per tutti i job
+          sha=$(git ls-remote "https://x-access-token:${TOKEN}@github.com/matteobaccan/inga" "$REF" "refs/heads/$REF" | head -1 | cut -c1-40)
+          [ -n "$sha" ] || sha="$REF"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "Inga: $REF = $sha"
+      - id: m
+        env:
+          MODELLI: ${{ github.event.inputs.modelli }}
+          CASE: ${{ github.event.inputs.case }}
+        run: |
+          args=(--matrix "$MODELLI")
+          IFS=',' read -ra casi <<< "${CASE:-}"
+          for c in "${casi[@]}"; do c=$(echo "$c" | tr -d ' '); [ -z "$c" ] || args+=(--case "$c"); done
+          m=$(python3 tools/runner.py "${args[@]}")
+          echo "matrix=$m" >> "$GITHUB_OUTPUT"
+          echo "$m" | python3 -m json.tool
+
+  run:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    name: ${{ matrix.case }}${{ matrix.model && format(' ({0})', matrix.model) || '' }}
     env:
       IUC_CACHE: /home/runner/iuc-cache
     steps:
@@ -54,7 +93,7 @@ jobs:
       - uses: actions/checkout@v7
         with:
           repository: matteobaccan/inga
-          ref: ${{ github.event.inputs.ref }}
+          ref: ${{ needs.plan.outputs.sha }}
           token: ${{ secrets.INGA_TOKEN || github.token }}
           persist-credentials: false
           # dentro il workspace (checkout non accetta altre cartelle); mai caricato
@@ -71,7 +110,9 @@ jobs:
             echo "la compilazione di inga non è riuscita (il log non è mostrato: codice privato)"
             exit 1
           fi
-          echo "SHA=$(git rev-parse --short HEAD)" >> "$GITHUB_ENV"
+      - name: llama.cpp
+        if: matrix.llama_cpp
+        uses: ./.github/actions/llama-cpp
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -79,15 +120,10 @@ jobs:
         run: |
           python -m venv "$RUNNER_TEMP/venv"
           "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
-      - name: Chiave della cache dei modelli
-        id: models
-        run: |
-          key=$(python -c "import json,hashlib; m=json.load(open('models.json'))['modelli']; print(hashlib.sha256(' '.join(sorted(v['sha256'] for v in m.values())).encode()).hexdigest()[:32])")
-          echo "key=models-$key" >> "$GITHUB_OUTPUT"
       - uses: actions/cache@v6
         with:
           path: ${{ env.IUC_CACHE }}/models
-          key: ${{ steps.models.outputs.key }}
+          key: ${{ matrix.models_key }}
       - name: Chiave della cache delle fonti
         id: fonti
         run: |
@@ -97,40 +133,54 @@ jobs:
         with:
           path: ${{ env.IUC_CACHE }}/fonti
           key: ${{ steps.fonti.outputs.key }}
-      - name: Casi, un modello dopo l'altro
+      - name: Caso
+        id: caso
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           REF: ${{ github.event.inputs.ref }}
-          MODELLI: ${{ github.event.inputs.modelli }}
-          CASE: ${{ github.event.inputs.case }}
+          SHA: ${{ needs.plan.outputs.sha }}
+          MODEL: ${{ matrix.model }}
+          CASE: ${{ matrix.case }}
         run: |
-          exe="$GITHUB_WORKSPACE/.inga-src/target/release/inga"
-          IFS=',' read -ra list <<< "${MODELLI:-}"
-          [ ${#list[@]} -gt 0 ] || list=("")
-          status=0
-          : > "$RUNNER_TEMP/labels"
-          for m in "${list[@]}"; do
-            m=$(echo "$m" | tr -d ' ')
-            label=$(printf '%s-%s%s' "$REF" "$SHA" "${m:+-$m}" | tr -c 'A-Za-z0-9._-' '-')
-            echo "$label" >> "$RUNNER_TEMP/labels"
-            args=(--inga "$exe" --label "$label")
-            [ -z "$m" ] || args+=(--model "$m")
-            IFS=',' read -ra casi <<< "${CASE:-}"
-            for c in "${casi[@]}"; do c=$(echo "$c" | tr -d ' '); [ -z "$c" ] || args+=(--case "$c"); done
-            "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}" || status=1
-          done
-          exit $status
-      - name: Riepilogo
-        if: always()
-        run: |
-          while read -r label; do
-            [ -f "results/$label/summary.md" ] && cat "results/$label/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
-          done < "$RUNNER_TEMP/labels" 2>/dev/null || true
+          label=$(printf '%s-%s%s' "$REF" "${SHA:0:7}" "${MODEL:+-$MODEL}" | tr -c 'A-Za-z0-9._-' '-')
+          echo "label=$label" >> "$GITHUB_OUTPUT"
+          args=(--inga "$GITHUB_WORKSPACE/.inga-src/target/release/inga" --label "$label" --case "$CASE")
+          [ -z "$MODEL" ] || args+=(--model "$MODEL")
+          "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}"
       - uses: actions/upload-artifact@v7
         if: always()
         with:
-          name: results-prova
+          name: risultato-${{ steps.caso.outputs.label }}-${{ matrix.case }}
           path: |
-            results/*-*/
+            results/${{ steps.caso.outputs.label }}/${{ matrix.case }}.json
             ${{ env.IUC_CACHE }}/work/**/*.log
+          if-no-files-found: ignore
+
+  summary:
+    needs: run
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: cases
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: risultato-*
+          path: ${{ runner.temp }}/r
+      - name: Riepilogo per modello
+        run: |
+          # ogni artifact ha results/<etichetta>/<caso>.json (più i log)
+          labels=$(find "$RUNNER_TEMP/r" -path '*/results/*/*.json' | sed -E 's#.*/results/([^/]+)/[^/]+\.json#\1#' | sort -u)
+          for l in $labels; do
+            mkdir -p "results/$l"
+            find "$RUNNER_TEMP/r" -path "*/results/$l/*.json" -exec cp {} "results/$l/" \;
+            python3 tools/runner.py --summary-only --label "$l"
+            cat "results/$l/summary.md" >> "$GITHUB_STEP_SUMMARY"
+          done
+      - uses: actions/upload-artifact@v7
+        with:
+          name: results-prova
+          path: results/*-*/
           if-no-files-found: ignore

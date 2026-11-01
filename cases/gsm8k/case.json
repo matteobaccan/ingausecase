@@ -1,0 +1,7 @@
+{
+  "descrizione": "GSM8K (problemi di aritmetica a parole): 30 domande, Inga e llama.cpp sullo stesso file del modello",
+  "modello": "qwen3-4b",
+  "ctx": 4096,
+  "timeout_minuti": 120,
+  "llama_cpp": true
+}

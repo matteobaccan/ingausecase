@@ -35,6 +35,34 @@
       "size": 15388478,
       "licenza": "MIT (LongMemEval, Wu et al., ICLR 2025)",
       "uso": "il caso memoria"
+    },
+    "gsm8k-test": {
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet",
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+      "size": 419088,
+      "licenza": "MIT (GSM8K, Cobbe et al. 2021)",
+      "uso": "il caso gsm8k"
+    },
+    "arc-challenge-test": {
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/test-00000-of-00001.parquet",
+      "sha256": "62f03257e737aed263f55c6abf87c7bb0028a44a6bdd2a26eb1279eb42c1d1e9",
+      "size": 203808,
+      "licenza": "CC BY-SA 4.0 (AI2 Reasoning Challenge, Clark et al. 2018)",
+      "uso": "il caso arc"
+    },
+    "ifeval": {
+      "url": "https://huggingface.co/datasets/google/IFEval/resolve/966cd89545d6b6acfd7638bc708b98261ca58e84/ifeval_input_data.jsonl",
+      "sha256": "6a85310ca8ce15eff755aa08a3a4ff931c7e273e7515ebb3c492ea85fd8288f2",
+      "size": 207111,
+      "licenza": "Apache 2.0 (IFEval, Zhou et al. 2023)",
+      "uso": "il caso ifeval"
+    },
+    "wikitext-2": {
+      "url": "https://huggingface.co/datasets/ggml-org/ci/resolve/927b3642933080f1b0e811e2f916e14c292992f9/wikitext-2-raw-v1.zip",
+      "sha256": "ef7edb566e3e2b2d31b29c1fdb0c89a4cc683597484c3dc2517919c615435a11",
+      "size": 4721645,
+      "licenza": "CC BY-SA 3.0 (WikiText-2, Merity et al. 2016; il file usato da llama.cpp)",
+      "uso": "il caso velocita (la perplexity)"
     }
   }
 }

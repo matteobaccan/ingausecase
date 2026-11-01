@@ -318,7 +318,7 @@ def list_cases():
     return out
 
 
-def run_case(name, cfg, exe, models, args, version, outdir):
+def run_case(name, cfg, exe, models, args, version, outdir, inga_line=""):
     case_dir = os.path.join(CASES, name)
     work = os.path.join(args.cache, "work", version, name)
     shutil.rmtree(work, ignore_errors=True)
@@ -328,7 +328,7 @@ def run_case(name, cfg, exe, models, args, version, outdir):
     meta = models.get(key, {})
     ekey = cfg.get("modello_embedding")
     record = {
-        "caso": name, "versione": version, "modello": key,
+        "caso": name, "versione": version, "inga": inga_line, "modello": key,
         "file_modello": meta.get("file"), "sha256_modello": meta.get("sha256"),
         "ctx": cfg.get("ctx", 4096), "seed": args.seed,
         "data": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -349,6 +349,8 @@ def run_case(name, cfg, exe, models, args, version, outdir):
         record["secondi_avvio"] = round(server.wait(cfg.get("attesa_avvio", 600)), 1)
         env = dict(os.environ,
                    INGA_URL=server.url, INGA_MODEL=server.model_id(), SEED=str(args.seed),
+                   IUC_INGA=os.path.abspath(exe), IUC_MODEL_PATH=model_path,
+                   IUC_CTX=str(record["ctx"]),
                    IUC_TOOLS=TOOLS, IUC_CASE_DIR=case_dir, IUC_WORK_DIR=work,
                    IUC_RESULT=result_tmp, IUC_VERSION=version, IUC_CACHE=args.cache,
                    PYTHONUNBUFFERED="1")
@@ -477,6 +479,10 @@ def main():
     ap.add_argument("--label", help="with --inga: the name of the results folder instead of a version "
                     "(a trial build, e.g. exp-web-steps-41a7306-lfm3); compared with the newest release")
     ap.add_argument("--list", action="store_true", help="list the cases and exit")
+    ap.add_argument("--matrix", metavar="MODELS",
+                    help="print the GitHub Actions matrix (JSON) of the cases chosen with --case "
+                         "(all by default), one job per case and model of MODELS (keys of "
+                         "models.json, comma-separated; empty: the model of each case), and exit")
     ap.add_argument("--summary-only", action="store_true",
                     help="only write results/<version>/summary.md again from the case JSONs")
     args = ap.parse_args()
@@ -485,6 +491,20 @@ def main():
     if args.list:
         for name, cfg in cases:
             print(f"{name}: {cfg.get('descrizione', '')} (modello {cfg['modello']})")
+        return 0
+    if args.matrix is not None:
+        chosen = [(n, c) for n, c in cases if not args.case or n in args.case]
+        models = load_models()
+        wanted = [m.strip() for m in args.matrix.split(",") if m.strip()] or [""]
+        include = []
+        for n, c in chosen:
+            for m in wanted:
+                key = m or c["modello"]
+                needed = sorted({key} | ({c["modello_embedding"]} if c.get("modello_embedding") else set()))
+                sha = hashlib.sha256(" ".join(models[k]["sha256"] for k in needed).encode()).hexdigest()[:24]
+                include.append({"case": n, "model": m, "models_key": f"models-{sha}",
+                                "llama_cpp": bool(c.get("llama_cpp"))})
+        print(json.dumps({"include": include}))
         return 0
     if args.case:
         unknown = set(args.case) - {n for n, _ in cases}
@@ -499,7 +519,7 @@ def main():
             version = f.read().strip()
     version = version.lstrip("v")
     if args.label:
-        if not args.inga:
+        if not args.inga and not args.summary_only:
             log("--label needs --inga (a trial build, not a release)")
             return 2
         if not re.fullmatch(r"[A-Za-z0-9._-]+", args.label):
@@ -511,9 +531,16 @@ def main():
         return 2
 
     if args.summary_only:
-        with open(os.path.join(args.results, version, "summary.md"), encoding="utf-8") as f:
-            line = re.search(r"Eseguito con `([^`]*)`", f.read())
-        write_summary(args.results, version, line.group(1) if line else f"inga {version}")
+        # the line of `inga --version`: from the case JSONs (each job of a parallel run
+        # writes its own), else from the summary written before
+        found = [r.get("inga") for r in load_results(os.path.join(args.results, version)).values()]
+        line = next((x for x in found if x), None)
+        summary = os.path.join(args.results, version, "summary.md")
+        if not line and os.path.exists(summary):
+            with open(summary, encoding="utf-8") as f:
+                m = re.search(r"Eseguito con `([^`]*)`", f.read())
+            line = m.group(1) if m else None
+        write_summary(args.results, version, line or f"inga {version}")
         return 0
 
     os.makedirs(args.cache, exist_ok=True)
@@ -531,7 +558,7 @@ def main():
     errors = 0
     for name, cfg in cases:
         log(f"case {name}")
-        r = run_case(name, cfg, exe, models, args, version, outdir)
+        r = run_case(name, cfg, exe, models, args, version, outdir, inga_line)
         if r.get("stato") == "errore":
             errors += 1
             log(f"case {name}: ERROR {r['motivo']}")

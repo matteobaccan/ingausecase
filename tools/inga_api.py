@@ -44,9 +44,9 @@ def write_result(result):
         json.dump(result, f, ensure_ascii=False, indent=2)
 
 
-def _post(path, body, timeout):
+def _post(path, body, timeout, url=None):
     req = urllib.request.Request(
-        base_url() + path,
+        (url or base_url()).rstrip("/") + path,
         data=json.dumps(body).encode("utf-8"),
         headers={"Content-Type": "application/json"},
         method="POST",
@@ -58,11 +58,12 @@ def _post(path, body, timeout):
         raise RuntimeError(f"POST {path}: HTTP {e.code}: {detail}") from None
 
 
-def chat(messages, schema=None, max_tokens=1024, timeout=1800, think=False, extra=None):
+def chat(messages, schema=None, max_tokens=1024, timeout=1800, think=False, extra=None, url=None):
     """One chat completion. Returns (content, response_json, seconds).
 
     schema: a JSON schema dict; the answer is then constrained by
     response_format json_schema and the parsed object is in content.
+    url: another OpenAI-compatible server (llama-server) instead of INGA_URL.
     """
     body = {
         "model": os.environ.get("INGA_MODEL", ""),
@@ -81,7 +82,7 @@ def chat(messages, schema=None, max_tokens=1024, timeout=1800, think=False, extr
     if extra:
         body.update(extra)
     t0 = time.monotonic()
-    with _post("/v1/chat/completions", body, timeout) as r:
+    with _post("/v1/chat/completions", body, timeout, url) as r:
         data = json.loads(r.read().decode("utf-8"))
     seconds = time.monotonic() - t0
     content = data["choices"][0]["message"].get("content") or ""

@@ -15,12 +15,18 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 | [`cases/prova/`](cases/prova) | avvio e prima risposta con un modello piccolo |
 | [`cases/rag-recupero/`](cases/rag-recupero) | il recupero delle collezioni di documenti su un test pubblico (SciFact di BEIR): nDCG@10, recall@10 |
 | [`cases/rag-rgb/`](cases/rag-rgb) | risposte da documenti rumorosi e rifiuto quando la risposta non c'è, su un test pubblico (RGB) |
+| [`cases/gsm8k/`](cases/gsm8k) | aritmetica a parole (GSM8K), Inga e llama.cpp sullo stesso modello |
+| [`cases/arc/`](cases/arc) | domande di scienze a scelta multipla (ARC-Challenge), Inga e llama.cpp |
+| [`cases/ifeval/`](cases/ifeval) | rispetto di istruzioni verificabili (IFEval), Inga e llama.cpp |
+| [`cases/velocita/`](cases/velocita) | velocità (pp512, tg128) e perplexity (wikitext-2) di Inga su quelle di llama.cpp |
 | [`cases/memoria/`](cases/memoria) | la memoria dei progetti fra una chat e l'altra, su un test pubblico (LongMemEval) |
 | [`tools/`](tools) | lo script comune: scarica Inga, lo avvia, esegue i casi, dà i voti |
 | [`results/`](results) | i risultati, una cartella per versione, con `summary.md` |
 
-Tutto gira sui runner di GitHub, un solo PC alla volta: nessun PC personale e, per
-ora, nessuna mesh. I dati sono pubblici o sintetici.
+Tutto gira sui runner di GitHub, un job per caso in parallelo: nessun PC personale e,
+per ora, nessuna mesh. I dati sono pubblici o sintetici. I casi `gsm8k`, `arc`, `ifeval`
+e `velocita` fanno le stesse domande anche a llama.cpp (versione in
+[`llama-cpp.txt`](llama-cpp.txt), compilato sul runner) con lo stesso file del modello.
 
 ## Versione, modelli, esecuzione
 
@@ -47,18 +53,26 @@ legge il workflow da `main` per l'esecuzione pianificata e per quella a mano, e 
 ramo base della PR (questo) per le pull request. Va cambiato su tutti e due, come
 `fonti.yml`.
 
-- **A mano** (`workflow_dispatch`): `version` (vuoto: l'ultima release) e `case` (vuoto:
-  tutti). `gh workflow run cases.yml -R matteobaccan/ingausecase --ref main -f version=0.40.0`.
+- **A mano** (`workflow_dispatch`): `version` (vuoto: l'ultima release) e `case` (casi
+  separati da virgole; vuoto: tutti). `gh workflow run cases.yml -R matteobaccan/ingausecase --ref main -f version=0.40.0`.
 - **Ogni giorno**: se l'ultima release di Inga non ha ancora `results/<versione>/`, la
   prova.
 - **Pull request verso `cases`** (Renovate che cambia `inga-version.txt`, o chi cambia
   casi e strumenti): esegue i casi sulla versione della PR, senza salvare nulla.
 
-I casi girano in un job con permessi di sola lettura; solo per le esecuzioni
-pianificate e a mano un secondo job, che non esegue codice del repository, salva
+I casi girano in parallelo, un job per caso, con permessi di sola lettura; un ultimo
+job raccoglie i loro JSON, scrive `summary.md` con il runner di questo ramo (mai il
+codice di una PR) e, solo per le esecuzioni pianificate e a mano, salva
 `results/<versione>/` su questo ramo. Le PR da fork non hanno segreti né permessi di
-scrittura. La cache di GitHub tiene i modelli, con la chiave fatta dai loro sha256, e
-i PDF di `fonti.json`, con la chiave fatta da URL e sha256.
+scrittura. La cache di GitHub tiene i modelli di ogni job, con la chiave fatta dai loro
+sha256, llama.cpp compilato, con la chiave fatta da versione e CPU del runner, e i PDF
+di `fonti.json`, con la chiave fatta da URL e sha256.
+
+`.github/workflows/prova.yml` (identico sui due rami, si lancia solo a mano) prova un
+ramo o un commit di Inga, compilato in ogni job, con uno o più modelli: un job per ogni
+caso e modello, in parallelo, e un riepilogo per modello nella pagina della run; i
+risultati restano come artifact (solo JSON e log, mai il binario di Inga).
+`gh workflow run prova.yml -R matteobaccan/ingausecase --ref main -f ref=exp/web-steps -f modelli=qwen3-4b,lfm3-1.7b`.
 
 Un secondo workflow, `.github/workflows/fonti.yml` (anche lui identico sui due rami),
 si lancia solo a mano: scarica i PDF di `fonti.json`, ne stampa sha256, dimensione e

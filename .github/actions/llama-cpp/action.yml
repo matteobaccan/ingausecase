@@ -1,0 +1,37 @@
+# llama.cpp (llama-server, llama-perplexity, llama-bench) alla versione di llama-cpp.txt,
+# compilato per la CPU di questo runner (GGML_NATIVE) e tenuto nella cache di GitHub con
+# la chiave fatta da versione e modello della CPU: i runner non hanno tutti la stessa CPU,
+# e un binario nativo di un'altra potrebbe non partire. Mette la cartella in IUC_LLAMA.
+name: llama.cpp
+description: llama.cpp compilato per la CPU del runner, in IUC_LLAMA
+runs:
+  using: composite
+  steps:
+    - id: k
+      shell: bash
+      run: |
+        tag=$(tr -d ' \r\n' < llama-cpp.txt)
+        cpu=$(grep -m1 'model name' /proc/cpuinfo | cut -d: -f2 | sha256sum | cut -c1-12)
+        echo "tag=$tag" >> "$GITHUB_OUTPUT"
+        echo "key=llama-$tag-$cpu-v1" >> "$GITHUB_OUTPUT"
+        echo "IUC_LLAMA=$HOME/llama-bin" >> "$GITHUB_ENV"
+    - id: cache
+      uses: actions/cache@v6
+      with:
+        path: ~/llama-bin
+        key: ${{ steps.k.outputs.key }}
+    - if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      env:
+        TAG: ${{ steps.k.outputs.tag }}
+      run: |
+        set -euo pipefail
+        git clone -q --depth 1 --branch "$TAG" https://github.com/ggml-org/llama.cpp "$RUNNER_TEMP/llama.cpp"
+        cd "$RUNNER_TEMP/llama.cpp"
+        cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=ON -DBUILD_SHARED_LIBS=OFF \
+          -DLLAMA_CURL=OFF -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF > "$RUNNER_TEMP/llama-cmake.log"
+        cmake --build build -j "$(nproc)" --target llama-server llama-perplexity llama-bench > "$RUNNER_TEMP/llama-build.log" 2>&1 \
+          || { tail -40 "$RUNNER_TEMP/llama-build.log"; exit 1; }
+        mkdir -p ~/llama-bin
+        cp build/bin/llama-server build/bin/llama-perplexity build/bin/llama-bench ~/llama-bin/
+        ~/llama-bin/llama-bench --version || true

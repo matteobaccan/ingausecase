@@ -1,0 +1,7 @@
+{
+  "descrizione": "Velocità e perplexity contro llama.cpp sullo stesso file e sulla stessa macchina: inga bench e llama-bench (pp512, tg128), inga perplexity e llama-perplexity (wikitext-2)",
+  "modello": "qwen3-4b",
+  "ctx": 2048,
+  "timeout_minuti": 90,
+  "llama_cpp": true
+}

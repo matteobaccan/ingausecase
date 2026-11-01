@@ -1,0 +1,7 @@
+{
+  "descrizione": "IFEval (rispetto di istruzioni verificabili): 30 richieste, Inga e llama.cpp sullo stesso file del modello",
+  "modello": "qwen3-4b",
+  "ctx": 4096,
+  "timeout_minuti": 150,
+  "llama_cpp": true
+}

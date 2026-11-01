@@ -10,13 +10,16 @@
 # - pull_request verso `cases` (Renovate o una persona che cambia inga-version.txt, i
 #   casi o gli strumenti): esegue i casi sulla versione della PR, senza pubblicare nulla.
 #
-# Il codice dei casi gira nel job `run` con permessi di sola lettura; il job `publish`,
-# solo per schedule e workflow_dispatch, non esegue codice del repository: scarica i
-# risultati e li salva sul ramo `cases`.
+# I casi girano in parallelo, un job `run` per caso (la matrice la scrive
+# `runner.py --matrix`), con permessi di sola lettura; i casi che confrontano Inga con
+# llama.cpp lo compilano per la CPU del runner (.github/actions/llama-cpp). Il job
+# `publish` raccoglie i risultati, scrive il riepilogo con il runner del ramo `cases`
+# (mai il codice di una PR) e, solo per schedule e workflow_dispatch, li salva sul ramo
+# `cases`.
 #
-# La cache di GitHub tiene i modelli (chiave: i loro sha256, da models.json) e i PDF che
-# i casi scaricano (chiave: URL e sha256 di fonti.json); fonti.yml scarica i PDF e ne
-# stampa il testo nel log.
+# La cache di GitHub tiene i modelli di ogni job (chiave: i loro sha256, da models.json),
+# llama.cpp compilato (chiave: versione e CPU) e i PDF che i casi scaricano (chiave: URL
+# e sha256 di fonti.json); fonti.yml scarica i PDF e ne stampa il testo nel log.
 #
 # Segreti (facoltativi): INGA_TOKEN, un token che legge le release di
 # matteobaccan/inga finché quel repository è privato; HF_TOKEN per Hugging Face.
@@ -59,13 +62,12 @@ jobs:
     outputs:
       version: ${{ steps.v.outputs.version }}
       run: ${{ steps.v.outputs.run }}
+      matrix: ${{ steps.m.outputs.matrix }}
     steps:
       - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
-          sparse-checkout: |
-            inga-version.txt
-            results
+          persist-credentials: false
       - id: v
         env:
           GH_TOKEN: ${{ secrets.INGA_TOKEN || github.token }}
@@ -89,14 +91,27 @@ jobs:
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "run=$run" >> "$GITHUB_OUTPUT"
           echo "Versione: $version, esecuzione: $run"
+      - id: m
+        env:
+          CASE: ${{ github.event.inputs.case }}
+        run: |
+          # un job per caso (il modello di ognuno), in parallelo
+          args=(--matrix "")
+          IFS=',' read -ra casi <<< "${CASE:-}"
+          for c in "${casi[@]}"; do c=$(echo "$c" | tr -d ' '); [ -z "$c" ] || args+=(--case "$c"); done
+          m=$(python3 tools/runner.py "${args[@]}")
+          echo "matrix=$m" >> "$GITHUB_OUTPUT"
+          echo "$m" | python3 -m json.tool
 
   run:
     needs: decide
     if: needs.decide.outputs.run == 'true'
     runs-on: ubuntu-24.04
-    timeout-minutes: 240
-    outputs:
-      wrote: ${{ steps.wrote.outputs.wrote }}
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.decide.outputs.matrix) }}
+    name: ${{ matrix.case }}
     env:
       IUC_CACHE: /home/runner/iuc-cache
     steps:
@@ -104,6 +119,9 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'cases' }}
           persist-credentials: false
+      - name: llama.cpp
+        if: matrix.llama_cpp
+        uses: ./.github/actions/llama-cpp
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -111,16 +129,10 @@ jobs:
         run: |
           python -m venv "$RUNNER_TEMP/venv"
           "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
-      - name: Chiave della cache dei modelli
-        id: models
-        run: |
-          # la chiave è lo sha256 dei file dei modelli (da models.json), non il file JSON
-          key=$(python -c "import json,hashlib; m=json.load(open('models.json'))['modelli']; print(hashlib.sha256(' '.join(sorted(v['sha256'] for v in m.values())).encode()).hexdigest()[:32])")
-          echo "key=models-$key" >> "$GITHUB_OUTPUT"
       - uses: actions/cache@v6
         with:
           path: ${{ env.IUC_CACHE }}/models
-          key: ${{ steps.models.outputs.key }}
+          key: ${{ matrix.models_key }}
       - name: Chiave della cache delle fonti
         id: fonti
         run: |
@@ -131,52 +143,34 @@ jobs:
         with:
           path: ${{ env.IUC_CACHE }}/fonti
           key: ${{ steps.fonti.outputs.key }}
-      - name: Casi
+      - name: Caso
         env:
           INGA_TOKEN: ${{ secrets.INGA_TOKEN }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ needs.decide.outputs.version }}
-          CASE: ${{ github.event.inputs.case }}
+          CASE: ${{ matrix.case }}
         run: |
-          touch "$RUNNER_TEMP/start"
-          args=(--version "$VERSION")
-          [ -z "$CASE" ] || args+=(--case "$CASE")
-          "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}"
-      - name: Il runner ha scritto i risultati?
-        id: wrote
-        if: always()
-        env:
-          VERSION: ${{ needs.decide.outputs.version }}
-        run: |
-          # true solo se summary.md è stato riscritto in questa esecuzione (non quello del checkout)
-          if [ -f "$RUNNER_TEMP/start" ] && [ "results/$VERSION/summary.md" -nt "$RUNNER_TEMP/start" ]; then
-            echo "wrote=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "wrote=false" >> "$GITHUB_OUTPUT"
-          fi
-      - name: Riepilogo
-        if: always()
-        env:
-          VERSION: ${{ needs.decide.outputs.version }}
-        run: |
-          [ -f "results/$VERSION/summary.md" ] && cat "results/$VERSION/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
+          "$RUNNER_TEMP/venv/bin/python" tools/runner.py --version "$VERSION" --case "$CASE"
       - uses: actions/upload-artifact@v7
-        if: always() && steps.wrote.outputs.wrote == 'true'
+        if: always()
         with:
-          name: results-${{ needs.decide.outputs.version }}
-          path: results/${{ needs.decide.outputs.version }}
+          name: risultato-${{ matrix.case }}
+          path: results/${{ needs.decide.outputs.version }}/${{ matrix.case }}.json
           if-no-files-found: ignore
       - uses: actions/upload-artifact@v7
         if: always()
         with:
-          name: logs-${{ needs.decide.outputs.version }}
+          name: log-${{ matrix.case }}
           path: ${{ env.IUC_CACHE }}/work/**/*.log
           if-no-files-found: ignore
 
+  # Raccoglie i risultati dei job: il riepilogo della run sempre; per schedule e
+  # workflow_dispatch li salva anche sul ramo `cases`. Esegue solo il runner del ramo
+  # `cases` (--summary-only, nessun caso), mai il codice di una PR.
   publish:
     needs: [decide, run]
-    if: always() && github.event_name != 'pull_request' && needs.decide.outputs.run == 'true' && needs.run.outputs.wrote == 'true'
+    if: always() && needs.decide.outputs.run == 'true'
     runs-on: ubuntu-24.04
     permissions:
       contents: write
@@ -186,21 +180,38 @@ jobs:
           ref: cases
       - uses: actions/download-artifact@v8
         with:
-          name: results-${{ needs.decide.outputs.version }}
+          pattern: risultato-*
+          merge-multiple: true
           path: ${{ runner.temp }}/results
-      - name: Salva i risultati sul ramo cases
+      - name: Riepilogo
         env:
           VERSION: ${{ needs.decide.outputs.version }}
         run: |
           set -euo pipefail
-          git fetch origin cases
-          git checkout -B cases origin/cases
+          n=$(find "$RUNNER_TEMP/results" -name '*.json' 2>/dev/null | wc -l)
+          if [ "$n" -eq 0 ]; then
+            echo "Nessun risultato scritto dai job." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
           mkdir -p "results/$VERSION"
-          cp -r "$RUNNER_TEMP/results/." "results/$VERSION/"
+          cp "$RUNNER_TEMP"/results/*.json "results/$VERSION/"
+          python3 tools/runner.py --summary-only --version "$VERSION"
+          cat "results/$VERSION/summary.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Salva i risultati sul ramo cases
+        if: github.event_name != 'pull_request'
+        env:
+          VERSION: ${{ needs.decide.outputs.version }}
+        run: |
+          set -euo pipefail
+          [ -d "results/$VERSION" ] || exit 0
           git add "results/$VERSION"
           if git diff --cached --quiet; then
             echo "Nessun cambiamento nei risultati."
             exit 0
           fi
           git -c user.name="Matteo Baccan" -c user.email=matteo.baccan@gmail.com commit -m "Risultati di Inga $VERSION"
-          git push origin cases
+          for i in 1 2 3; do
+            git pull --no-rebase --no-edit origin cases && git push origin cases && exit 0
+            sleep 5
+          done
+          exit 1

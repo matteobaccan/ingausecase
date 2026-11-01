@@ -25,6 +25,7 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 .venv/bin/python tools/runner.py --case pdf      # un caso solo (ripetibile)
 .venv/bin/python tools/runner.py --version 0.40.0 --cache /tmp/iuc
 .venv/bin/python tools/runner.py --list
+.venv/bin/python tools/runner.py --matrix qwen3-4b,lfm3-1.7b  # la matrice dei job di GitHub Actions
 .venv/bin/python tools/runner.py --summary-only --version 0.40.0   # riscrive solo summary.md
 ```
 
@@ -83,3 +84,14 @@ chiaro. Un caso lo usa con `dati.file("<chiave>")`.
 `inga serve` di ogni caso ha la sua cartella dei dati dell'utente (`XDG_DATA_HOME` e
 `APPDATA` nella cartella di lavoro del caso), dove sta la memoria dei progetti: un caso
 non vede quella di un altro, né quella di chi esegue il runner.
+
+## llama.cpp accanto a Inga
+
+I casi con `"llama_cpp": true` in `case.json` (`gsm8k`, `arc`, `ifeval`, `velocita`)
+confrontano Inga con llama.cpp sullo stesso file del modello. I workflow compilano
+llama.cpp alla versione di [`llama-cpp.txt`](../llama-cpp.txt) per la CPU del runner
+(`.github/actions/llama-cpp`) e mettono la cartella dei programmi in `IUC_LLAMA`; senza,
+quei casi si danno come saltati. `llama.py` avvia `llama-server`; `confronto.py` fa le
+stesse domande ai due server e scrive i voti di tutti e due. Il runner passa ai casi
+anche `IUC_INGA` (l'eseguibile di Inga), `IUC_MODEL_PATH` (il file del modello) e
+`IUC_CTX`.
