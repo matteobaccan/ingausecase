@@ -38,14 +38,16 @@ def main():
                  "as 'Answer: <label>'."}]
 
     def voto(el, testo):
-        etichette = "".join(el["choices"]["label"])
-        m = re.search(r"Answer:\s*\**\(?([" + re.escape(etichette) + r"])\b", testo)
-        if not m:
-            m = re.search(r"\b([" + re.escape(etichette) + r"])\b", testo.strip()[:20])
-        dato = m.group(1) if m else None
+        # "Answer: X" (l'ultimo, se il modello ragiona prima), poi "answer is X", poi
+        # una lettera da sola all'inizio
+        e = "[" + re.escape("".join(el["choices"]["label"])) + "]"
+        m = (re.findall(r"Answer:\s*\**\(?(" + e + r")\b", testo)
+             or re.findall(r"answer is\s*\**\(?(" + e + r")\b", testo, re.I)
+             or re.findall(r"^\W*(" + e + r")\b", testo.strip()[:20]))
+        dato = m[-1] if m else None
         return float(dato == el["answerKey"]), f"{dato} su {el['answerKey']}"
 
-    confronto.esegui("arc", elementi, messaggi, voto, max_tokens=16,
+    confronto.esegui("arc", elementi, messaggi, voto, max_tokens=256,
                      dettagli={"seed": SEED, "id": [e["id"] for e in elementi]})
 
 

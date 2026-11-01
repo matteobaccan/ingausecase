@@ -11,5 +11,6 @@ sulla stessa macchina, greedy.
   di ARC.
 - **Voto e voci:** come [`gsm8k`](https://github.com/matteobaccan/ingausecase/tree/cases/cases/gsm8k).
 
-Risposte di pochi token: misura soprattutto la lettura del prompt e la conoscenza del
-modello.
+Risposte brevi (al massimo 256 token, per i modelli che ragionano prima di rispondere):
+misura soprattutto la lettura del prompt e la conoscenza del modello. La lettera è
+l'ultimo `Answer: X`, altrimenti `answer is X`, altrimenti una lettera da sola all'inizio.

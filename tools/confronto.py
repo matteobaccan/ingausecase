@@ -39,6 +39,11 @@ def esegui(nome, elementi, messaggi, voto, max_tokens, dettagli=None):
                 print(f"{nome} {i:3d}: Inga {riga['inga']['voto']:.2f} ({riga['inga']['nota']}), "
                       f"llama.cpp {riga['llama.cpp']['voto']:.2f} ({riga['llama.cpp']['nota']}), "
                       f"{'stesso testo' if riga['uguali'] else 'testi diversi'}", flush=True)
+                if riga["inga"]["voto"] < 1 or riga["llama.cpp"]["voto"] < 1:
+                    # l'inizio delle risposte sbagliate, per capire se è il modello o la lettura
+                    for m in ("inga", "llama.cpp"):
+                        if riga[m]["voto"] < 1:
+                            print(f"    {m}: {riga[m]['testo'][:160]!r}", flush=True)
                 righe.append(riga)
     except RuntimeError as e:
         if not righe:
