@@ -57,10 +57,11 @@ jobs:
           ref: ${{ github.event.inputs.ref }}
           token: ${{ secrets.INGA_TOKEN || github.token }}
           persist-credentials: false
-          path: ${{ runner.temp }}/inga-src
+          # dentro il workspace (checkout non accetta altre cartelle); mai caricato
+          path: .inga-src
       - uses: dtolnay/rust-toolchain@stable
       - name: Compila inga
-        working-directory: ${{ runner.temp }}/inga-src
+        working-directory: .inga-src
         run: |
           # L'output del compilatore resta in un file del runner: i suoi avvisi citano
           # righe del codice di Inga, privato, e i log di questo repository sono pubblici.
@@ -103,7 +104,7 @@ jobs:
           MODELLI: ${{ github.event.inputs.modelli }}
           CASE: ${{ github.event.inputs.case }}
         run: |
-          exe="$RUNNER_TEMP/inga-src/target/release/inga"
+          exe="$GITHUB_WORKSPACE/.inga-src/target/release/inga"
           IFS=',' read -ra list <<< "${MODELLI:-}"
           [ ${#list[@]} -gt 0 ] || list=("")
           status=0
