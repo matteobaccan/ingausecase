@@ -3,5 +3,5 @@
   "modello": "qwen3-4b",
   "modello_embedding": "minilm-multilingue",
   "ctx": 8192,
-  "timeout_minuti": 60
+  "timeout_minuti": 120
 }

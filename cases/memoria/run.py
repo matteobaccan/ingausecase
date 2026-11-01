@@ -3,7 +3,7 @@
 Dati: LongMemEval (Wu et al., ICLR 2025, licenza MIT), la versione "oracle" (per ogni
 domanda solo le sessioni di chat che servono), scaricata a ogni esecuzione (dati.json).
 Un sottoinsieme fisso (seed): PER_TIPO domande per ognuno dei tipi in TIPI e una
-domanda "senza risposta" (abstention: la risposta giusta è non saperlo) per tre tipi,
+domanda "senza risposta" (abstention: la risposta giusta è non saperlo) per PER_TIPO tipi,
 con sessioni fino a MAX_CARATTERI caratteri in tutto.
 
 Per ogni domanda, il percorso della web UI: un progetto nuovo
@@ -33,7 +33,7 @@ import dati  # noqa: E402
 import inga_api  # noqa: E402
 
 TIPI = ["single-session-user", "multi-session", "temporal-reasoning", "knowledge-update"]
-PER_TIPO = 3
+PER_TIPO = 2
 MAX_CARATTERI = 25000
 SEED = 3
 MODI = ["oggi", "diario", "tutta la chat"]
@@ -76,7 +76,7 @@ def scegli(righe):
         c = [r for r in corte if r["question_type"] == tipo and not r["question_id"].endswith("_abs")]
         rng.shuffle(c)
         out += c[:PER_TIPO]
-    # le domande senza risposta: una per tipo, finché ce ne sono
+    # le domande senza risposta: una per tipo, PER_TIPO tipi
     for tipo in ["single-session-user", "multi-session", "knowledge-update"][:PER_TIPO]:
         c = [r for r in corte if r["question_type"] == tipo and r["question_id"].endswith("_abs")]
         rng.shuffle(c)

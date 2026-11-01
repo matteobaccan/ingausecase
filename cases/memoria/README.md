@@ -7,9 +7,9 @@ chat che servono.
 
 - **Dati:** scaricati a ogni esecuzione da [`dati.json`](https://github.com/matteobaccan/ingausecase/blob/cases/dati.json)
   (revisione fissata, sha256 controllato), mai nel repository.
-- **Domande** (seed 3, sessioni fino a 25.000 caratteri in tutto): 3 per tipo, cioè un
+- **Domande** (seed 3, sessioni fino a 25.000 caratteri in tutto): 2 per tipo, cioè un
   fatto detto in una sessione, un conto su più sessioni, il ragionamento sulle date e un
-  fatto aggiornato, più 3 domande senza risposta, una per tipo (la risposta giusta è non saperlo).
+  fatto aggiornato, più 2 domande senza risposta, di due tipi (la risposta giusta è non saperlo).
 - **Percorso:** per ogni domanda un progetto nuovo. Ogni sessione viene scritta nella
   memoria dal modello, come alla fine di una chat nella web UI
   (`POST /api/inga/memory/{p}/write`, con la data della sessione come orario). Poi la
@@ -29,3 +29,7 @@ chat che servono.
 Differenze da LongMemEval: le sessioni sono scritte con la data di oggi nel diario e la
 loro data originale come orario; lo stile della persona viene svuotato prima di ogni
 domanda. Le versioni di Inga senza i progetti danno il caso come saltato.
+
+Sono poche domande (10) perché su un runner di GitHub ogni risposta con qwen3-4b costa
+qualche minuto: il voto si muove a passi di 10 punti, quindi una differenza di una
+domanda fra due versioni non è un segnale.
