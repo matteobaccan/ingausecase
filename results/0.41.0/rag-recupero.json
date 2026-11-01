@@ -1,0 +1,18 @@
+{
+  "caso": "rag-recupero",
+  "versione": "0.41.0",
+  "inga": "inga 0.41.0",
+  "modello": "qwen3-0.6b",
+  "file_modello": "Qwen3-0.6B-Q8_0.gguf",
+  "sha256_modello": "e150ed544dfe6016930c026a93913a5e3184181ebfe6ab2223ae01dd0491784c",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-01T18:48:42Z",
+  "modello_embedding": "minilm-multilingue",
+  "file_modello_embedding": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0.gguf",
+  "sha256_modello_embedding": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
+  "secondi_avvio": 1.0,
+  "stato": "saltato",
+  "motivo": "GET /api/inga/documents/search?q=prova&collection=scifact&k=1: HTTP 404 (questa versione di Inga non lo ha)",
+  "secondi": 5.5
+}
