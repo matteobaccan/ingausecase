@@ -1,0 +1,132 @@
+{
+  "nota": "Domande sul codice di itsdangerous 2.2.0 (il commit di progetto), con le risposte verificate leggendo quel commit: `verifica` dice dove. Una risposta è giusta se contiene una delle stringhe di `una` (senza distinguere maiuscole e minuscole, a parole intere), o tutte quelle di `tutte`.",
+  "progetto": {
+    "repo": "https://github.com/pallets/itsdangerous",
+    "tag": "2.2.0",
+    "commit": "096c8d42545d3b68ea21a4f890fb2b2d8979c0bd",
+    "licenza": "BSD-3-Clause",
+    "sorgenti": "src/itsdangerous"
+  },
+  "domande": [
+    {
+      "id": "file-timestampsigner",
+      "domanda": "Which file of the package defines the class TimestampSigner? Answer with the file name.",
+      "una": ["timed.py"],
+      "verifica": "src/itsdangerous/timed.py:22 class TimestampSigner(Signer)"
+    },
+    {
+      "id": "file-want-bytes",
+      "domanda": "Which file of the package defines the function want_bytes? Answer with the file name.",
+      "una": ["encoding.py"],
+      "verifica": "src/itsdangerous/encoding.py:11 def want_bytes"
+    },
+    {
+      "id": "file-compactjson",
+      "domanda": "Which file of the package defines the class _CompactJSON? Answer with the file name.",
+      "una": ["_json.py"],
+      "verifica": "src/itsdangerous/_json.py:7 class _CompactJSON"
+    },
+    {
+      "id": "base64-decode-errore",
+      "domanda": "Which exception class does base64_decode raise when its input is not valid base64?",
+      "una": ["BadData"],
+      "verifica": "src/itsdangerous/encoding.py:37-38 except (TypeError, ValueError) ... raise BadData(\"Invalid base64-encoded data\")"
+    },
+    {
+      "id": "key-derivation-default",
+      "domanda": "What is the value of Signer.default_key_derivation?",
+      "una": ["django-concat"],
+      "verifica": "src/itsdangerous/signer.py:127 default_key_derivation: str = \"django-concat\""
+    },
+    {
+      "id": "key-derivation-valori",
+      "domanda": "Which values of key_derivation does Signer.derive_key accept? List them all.",
+      "tutte": ["concat", "django-concat", "hmac", "none"],
+      "verifica": "src/itsdangerous/signer.py:200-213 i rami concat, django-concat, hmac, none, poi TypeError"
+    },
+    {
+      "id": "key-derivation-errore",
+      "domanda": "Which exception does Signer.derive_key raise for an unknown key derivation method?",
+      "una": ["TypeError"],
+      "verifica": "src/itsdangerous/signer.py:213 raise TypeError(\"Unknown key derivation method\")"
+    },
+    {
+      "id": "digest-default",
+      "domanda": "Which hash function does Signer use as its default digest method?",
+      "una": ["sha1", "sha-1"],
+      "verifica": "src/itsdangerous/signer.py:40-45 _lazy_sha1 -> hashlib.sha1; :120 default_digest_method = staticmethod(_lazy_sha1)"
+    },
+    {
+      "id": "salt-signer",
+      "domanda": "What is the default salt of Signer when salt is not given or is None?",
+      "una": ["itsdangerous.Signer"],
+      "verifica": "src/itsdangerous/signer.py:132 salt = b\"itsdangerous.Signer\" e :156 else: salt = b\"itsdangerous.Signer\""
+    },
+    {
+      "id": "separatore-errore",
+      "domanda": "Which exception does Signer.__init__ raise when the separator could appear in the signature itself (it is in the base64 alphabet)?",
+      "una": ["ValueError"],
+      "verifica": "src/itsdangerous/signer.py:146-151 if self.sep in _base64_alphabet: raise ValueError(...)"
+    },
+    {
+      "id": "padre-signatureexpired",
+      "domanda": "Which class does SignatureExpired directly inherit from?",
+      "una": ["BadTimeSignature"],
+      "verifica": "src/itsdangerous/exc.py:60 class SignatureExpired(BadTimeSignature)"
+    },
+    {
+      "id": "figli-badsignature",
+      "domanda": "Which classes directly subclass BadSignature? List them all.",
+      "tutte": ["BadTimeSignature", "BadHeader"],
+      "verifica": "src/itsdangerous/exc.py:36 class BadTimeSignature(BadSignature), :66 class BadHeader(BadSignature); nessun'altra in src"
+    },
+    {
+      "id": "quante-eccezioni",
+      "domanda": "How many exception classes are defined in exc.py? Answer with a number.",
+      "una": ["6", "six"],
+      "verifica": "src/itsdangerous/exc.py: BadData, BadSignature, BadTimeSignature, SignatureExpired, BadHeader, BadPayload (grep -c '^class ' = 6)"
+    },
+    {
+      "id": "figli-signingalgorithm",
+      "domanda": "Which classes subclass SigningAlgorithm? List them all.",
+      "tutte": ["NoneAlgorithm", "HMACAlgorithm"],
+      "verifica": "src/itsdangerous/signer.py:31 class NoneAlgorithm(SigningAlgorithm), :48 class HMACAlgorithm(SigningAlgorithm)"
+    },
+    {
+      "id": "chi-chiama-make-keys-list",
+      "domanda": "Which methods call the function _make_keys_list? Name the classes they belong to.",
+      "tutte": ["Signer", "Serializer"],
+      "verifica": "grep _make_keys_list src: signer.py:143 in Signer.__init__, serializer.py:210 in Serializer.__init__"
+    },
+    {
+      "id": "compressione",
+      "domanda": "Which Python module does URLSafeSerializerMixin use to compress the payload?",
+      "una": ["zlib"],
+      "verifica": "src/itsdangerous/url_safe.py:58 compressed = zlib.compress(json)"
+    },
+    {
+      "id": "serializer-url-safe",
+      "domanda": "What is the default_serializer of URLSafeSerializerMixin?",
+      "una": ["_CompactJSON"],
+      "verifica": "src/itsdangerous/url_safe.py:21 default_serializer: _PDataSerializer[str] = _CompactJSON"
+    },
+    {
+      "id": "default-signer-timed",
+      "domanda": "Which class sets default_signer to TimestampSigner?",
+      "una": ["TimedSerializer"],
+      "verifica": "src/itsdangerous/timed.py:170-175 class TimedSerializer ... default_signer: type[TimestampSigner] = TimestampSigner"
+    },
+    {
+      "id": "timestamp",
+      "domanda": "Which standard library function does TimestampSigner.get_timestamp call to get the current time?",
+      "una": ["time.time"],
+      "verifica": "src/itsdangerous/timed.py:29-33 return int(time.time())"
+    },
+    {
+      "id": "nonealgorithm-firma",
+      "domanda": "What does NoneAlgorithm.get_signature return?",
+      "una": ["b\"\"", "b''", "empty"],
+      "verifica": "src/itsdangerous/signer.py:36-37 def get_signature(...): return b\"\""
+    }
+  ]
+}

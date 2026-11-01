@@ -93,6 +93,15 @@ def chat(messages, schema=None, max_tokens=1024, timeout=1800, think=False, extr
 
 def chat_stream(messages, max_tokens=256, timeout=600, think=False):
     """A streamed chat completion. Returns (text, ttft_seconds, total_seconds)."""
+    r = stream(messages, max_tokens=max_tokens, timeout=timeout, think=think)
+    return r["testo"], r["ttft"], r["secondi"]
+
+
+def stream(messages, max_tokens=256, timeout=600, think=False, url=None, extra=None):
+    """A streamed chat completion, with the usage the server reports at the end
+    (stream_options.include_usage). url and extra as in chat (another server, more
+    fields of the body). Returns {"testo", "ttft" (seconds to the first piece of
+    text), "secondi" (to the end), "usage" (or None), "pezzi" (pieces received)}."""
     body = {
         "model": os.environ.get("INGA_MODEL", ""),
         "messages": messages,
@@ -100,12 +109,16 @@ def chat_stream(messages, max_tokens=256, timeout=600, think=False):
         "seed": SEED,
         "max_tokens": max_tokens,
         "stream": True,
+        "stream_options": {"include_usage": True},
         "chat_template_kwargs": {"enable_thinking": bool(think)},
     }
+    if extra:
+        body.update(extra)
     t0 = time.monotonic()
     ttft = None
     parts = []
-    with _post("/v1/chat/completions", body, timeout) as r:
+    usage = None
+    with _post("/v1/chat/completions", body, timeout, url) as r:
         for raw in r:
             line = raw.decode("utf-8", "replace").strip()
             if not line.startswith("data:"):
@@ -117,13 +130,19 @@ def chat_stream(messages, max_tokens=256, timeout=600, think=False):
                 chunk = json.loads(payload)
             except ValueError:
                 continue
+            if chunk.get("usage"):
+                usage = chunk["usage"]
             for ch in chunk.get("choices") or []:
-                piece = (ch.get("delta") or {}).get("content")
+                delta = ch.get("delta") or {}
+                # il primo token generato può essere anche ragionamento
+                piece = delta.get("content") or delta.get("reasoning_content")
                 if piece:
                     if ttft is None:
                         ttft = time.monotonic() - t0
-                    parts.append(piece)
-    return "".join(parts), ttft, time.monotonic() - t0
+                    if delta.get("content"):
+                        parts.append(delta["content"])
+    return {"testo": "".join(parts), "ttft": ttft, "secondi": time.monotonic() - t0,
+            "usage": usage, "pezzi": len(parts)}
 
 
 def add_document(collection, name, text=None, pdf_path=None, timeout=3600):

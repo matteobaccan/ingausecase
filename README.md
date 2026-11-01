@@ -19,6 +19,10 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 | [`cases/arc/`](cases/arc) | domande di scienze a scelta multipla (ARC-Challenge), Inga e llama.cpp |
 | [`cases/ifeval/`](cases/ifeval) | rispetto di istruzioni verificabili (IFEval), Inga e llama.cpp |
 | [`cases/velocita/`](cases/velocita) | velocità (pp512, tg128) e perplexity (wikitext-2) di Inga su quelle di llama.cpp |
+| [`cases/colibri-qualita/`](cases/colibri-qualita) | domande di ARC-Challenge e GSM8K a Inga e a Colibri sullo stesso GGUF |
+| [`cases/colibri-velocita/`](cases/colibri-velocita) | lettura del prompt e generazione di Inga su quelle di Colibri, dall'API in streaming |
+| [`cases/colibri-moe/`](cases/colibri-moe) | una mixture of experts più grande della RAM data (Qwen3-30B-A3B, 8 GB) con gli esperti dal disco: Inga e Colibri |
+| [`cases/tokensave/`](cases/tokensave) | Inga come host MCP con gli strumenti di tokensave su un codice vero (itsdangerous): risposte, chiamate e token, con e senza strumenti |
 | [`cases/memoria/`](cases/memoria) | la memoria dei progetti fra una chat e l'altra, su un test pubblico (LongMemEval) |
 | [`tools/`](tools) | lo script comune: scarica Inga, lo avvia, esegue i casi, dà i voti |
 | [`results/`](results) | i risultati, una cartella per versione, con `summary.md` |
@@ -26,7 +30,10 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 Tutto gira sui runner di GitHub, un job per caso in parallelo: nessun PC personale e,
 per ora, nessuna mesh. I dati sono pubblici o sintetici. I casi `gsm8k`, `arc`, `ifeval`
 e `velocita` fanno le stesse domande anche a llama.cpp (versione in
-[`llama-cpp.txt`](llama-cpp.txt), compilato sul runner) con lo stesso file del modello.
+[`llama-cpp.txt`](llama-cpp.txt), compilato sul runner) con lo stesso file del modello; i
+casi `colibri-*` a [Colibri](https://github.com/JustVugg/colibri) (commit in
+[`colibri.txt`](colibri.txt), compilato sul runner), che legge dal disco gli esperti
+delle mixture of experts.
 
 ## Versione, modelli, esecuzione
 
@@ -39,8 +46,8 @@ e `velocita` fanno le stesse domande anche a llama.cpp (versione in
   e la Divina Commedia), con URL, sha256 e dimensione del file controllato: il testo non
   va nel repository, e se il file scaricato cambia il caso si ferma con un messaggio
   chiaro.
-- [`dati.json`](dati.json): i dati dei test pubblici (SciFact, RGB, LongMemEval) che i
-  casi scaricano a ogni esecuzione, con URL fissato a una revisione dove possibile,
+- [`dati.json`](dati.json): i dati dei test pubblici (SciFact, RGB, LongMemEval, ...) e
+  il programma di tokensave che i casi scaricano a ogni esecuzione, con URL fissato a una revisione dove possibile,
   sha256, dimensione e licenza: non vanno nel repository (RGB è solo per uso non
   commerciale).
 - [`tools/runner.py`](tools/runner.py): esegue i casi in locale o in CI (vedi
@@ -65,8 +72,11 @@ job raccoglie i loro JSON, scrive `summary.md` con il runner di questo ramo (mai
 codice di una PR) e, solo per le esecuzioni pianificate e a mano, salva
 `results/<versione>/` su questo ramo. Le PR da fork non hanno segreti né permessi di
 scrittura. La cache di GitHub tiene i modelli di ogni job, con la chiave fatta dai loro
-sha256, llama.cpp compilato, con la chiave fatta da versione e CPU del runner, e i PDF
-di `fonti.json`, con la chiave fatta da URL e sha256.
+sha256 (non quelli oltre i 6 GB, che si scaricano ogni volta), llama.cpp e Colibri
+compilati, con la chiave fatta da versione (o commit) e CPU del runner, e i PDF di
+`fonti.json`, con la chiave fatta da URL e sha256. Un caso con `disco_gb` in `case.json`
+(`colibri-moe`) toglie prima dal runner gli SDK che i casi non usano, se lo spazio
+libero non basta.
 
 `.github/workflows/prova.yml` (identico sui due rami, si lancia solo a mano) prova un
 ramo o un commit di Inga, compilato in ogni job, con uno o più modelli: un job per ogni

@@ -1,0 +1,7 @@
+{
+  "descrizione": "Velocità di Inga contro quella di Colibri sullo stesso file e sulla stessa macchina, misurata dall'API in streaming: un prompt di circa 512 token e 128 token generati, 3 ripetizioni",
+  "modello": "qwen3-4b",
+  "ctx": 2048,
+  "timeout_minuti": 60,
+  "colibri": true
+}

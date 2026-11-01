@@ -1,0 +1,9 @@
+{
+  "descrizione": "Inga come host MCP: 20 domande verificate sul codice di itsdangerous 2.2.0, con gli strumenti di tokensave (il grafo dei simboli), senza strumenti e con tutto il codice nel prompt; risposte giuste, chiamate e token di ogni modo",
+  "modello": "qwen3-4b",
+  "ctx": 16384,
+  "timeout_minuti": 180,
+  "mcp": "mcp.json",
+  "argomenti_serve": ["--allow-mcp-commands", "--mcp-timeout", "120",
+                      "--mcp-auto-approve", "tokensave:tokensave_context,tokensave:tokensave_search,tokensave:tokensave_status,tokensave:tokensave_read,tokensave:tokensave_body,tokensave:tokensave_files,tokensave:tokensave_callers,tokensave:tokensave_callees,tokensave:tokensave_impact,tokensave:tokensave_more,tokensave:tokensave_node,tokensave:tokensave_signature,tokensave:tokensave_signature_search,tokensave:tokensave_implementations,tokensave:tokensave_impls,tokensave:tokensave_type_hierarchy,tokensave:tokensave_imports,tokensave:tokensave_call_chain,tokensave:tokensave_callers_for,tokensave:tokensave_by_qualified_name,tokensave:tokensave_find_exact_symbol,tokensave:tokensave_module_api,tokensave:tokensave_similar,tokensave:tokensave_derives,tokensave:tokensave_constructors,tokensave:tokensave_field_sites,tokensave:tokensave_file_dependents"]
+}

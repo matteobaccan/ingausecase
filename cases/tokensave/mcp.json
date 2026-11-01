@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "tokensave": {
+      "command": "{lavoro}/tokensave/tokensave",
+      "args": ["serve", "--path", "{lavoro}/progetto"],
+      "cwd": "{lavoro}/progetto",
+      "env": {
+        "HOME": "{lavoro}/tokensave-home",
+        "TOKENSAVE_UPDATE_CHECK": "0",
+        "TOKENSAVE_AUTO_INIT": "0",
+        "TOKENSAVE_REPORT_SAVINGS": "0"
+      }
+    }
+  }
+}

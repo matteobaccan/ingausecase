@@ -1,0 +1,10 @@
+{
+  "descrizione": "Una mixture of experts più grande della RAM a disposizione (Qwen3-30B-A3B, 18,6 GB) con Inga e con Colibri, che leggono tutti e due gli esperti dal disco, con lo stesso budget di RAM (8 GB): velocità e risposte a 10 domande",
+  "modello": "qwen3-30b-a3b",
+  "ctx": 4096,
+  "timeout_minuti": 240,
+  "colibri": true,
+  "avvia_inga": false,
+  "argomenti_serve": ["--mem-limit", "8G"],
+  "disco_gb": 26
+}

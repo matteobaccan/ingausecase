@@ -27,29 +27,36 @@ def numero(s):
     return float(m[-1]) if m else None
 
 
-def main():
+def scegli(domande=DOMANDE):
+    """I problemi fissi del caso (i primi `domande` dei DOMANDE scelti con il seed),
+    ognuno con il suo indice nel test."""
     import pyarrow.parquet as pq
+    righe = pq.read_table(dati.file("gsm8k-test")).to_pylist()
+    rng = random.Random(SEED)
+    scelte = sorted(rng.sample(range(len(righe)), DOMANDE))[:domande]
+    return [dict(righe[i], indice=i) for i in scelte]
+
+
+def messaggi(el):
+    return [{"role": "user", "content": f"{el['question']}\n\n{ISTRUZIONE}"}]
+
+
+def voto(el, testo):
+    atteso = numero(el["answer"].split("####")[-1])
+    m = re.findall(r"Answer:\s*([^\n]+)", testo)
+    dato = numero(m[-1]) if m else numero(testo)
+    ok = dato is not None and atteso is not None and abs(dato - atteso) < 1e-6
+    return float(ok), f"{dato} su {atteso}"
+
+
+def main():
     try:
-        righe = pq.read_table(dati.file("gsm8k-test")).to_pylist()
+        elementi = scegli()
     except dati.Cambiato as e:
         inga_api.write_result({"stato": "errore", "motivo": str(e)})
         return
-    rng = random.Random(SEED)
-    scelte = sorted(rng.sample(range(len(righe)), DOMANDE))
-    elementi = [dict(righe[i], indice=i) for i in scelte]
-
-    def messaggi(el):
-        return [{"role": "user", "content": f"{el['question']}\n\n{ISTRUZIONE}"}]
-
-    def voto(el, testo):
-        atteso = numero(el["answer"].split("####")[-1])
-        m = re.findall(r"Answer:\s*([^\n]+)", testo)
-        dato = numero(m[-1]) if m else numero(testo)
-        ok = dato is not None and atteso is not None and abs(dato - atteso) < 1e-6
-        return float(ok), f"{dato} su {atteso}"
-
     confronto.esegui("gsm8k", elementi, messaggi, voto, max_tokens=512,
-                     dettagli={"seed": SEED, "indici": scelte})
+                     dettagli={"seed": SEED, "indici": [e["indice"] for e in elementi]})
 
 
 if __name__ == "__main__":

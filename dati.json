@@ -63,6 +63,13 @@
       "size": 4721645,
       "licenza": "CC BY-SA 3.0 (WikiText-2, Merity et al. 2016; il file usato da llama.cpp)",
       "uso": "il caso velocita (la perplexity)"
+    },
+    "tokensave-linux": {
+      "url": "https://github.com/aovestdipaperino/tokensave/releases/download/v7.16.0/tokensave-v7.16.0-x86_64-linux.tar.gz",
+      "sha256": "783dcea8bb8b472982b497523ad912a5176b8d8e770d25592dc38b5f749ac7ea",
+      "size": 22063237,
+      "licenza": "MIT (tokensave 7.16.0, Enzo Lombardi; lo sha256 è anche quello di SHA256SUMS della release)",
+      "uso": "il caso tokensave (il programma del server MCP, non dati)"
     }
   }
 }

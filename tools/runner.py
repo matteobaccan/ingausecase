@@ -33,6 +33,7 @@ TOOLS = os.path.join(ROOT, "tools")
 CASES = os.path.join(ROOT, "cases")
 INGA_REPO = "matteobaccan/inga"
 ASSET = "inga-linux-x86_64-{v}.tar.gz"
+MODELS_CACHE_MAX = 6_000_000_000
 
 
 def log(msg):
@@ -224,7 +225,8 @@ def free_port():
 
 
 class Server:
-    def __init__(self, exe, model_path, ctx, seed, home, logfile, extra, embedding_path=None):
+    def __init__(self, exe, model_path, ctx, seed, home, logfile, extra, embedding_path=None,
+                 mcp=None):
         self.port = free_port()
         self.url = f"http://127.0.0.1:{self.port}"
         # with an embedding model (the collections of documents): it is served beside the
@@ -233,12 +235,14 @@ class Server:
         # with inga_memory, which the cases never do
         models = [model_path] + ([embedding_path] if embedding_path else [])
         memory = ["--models-max", "2"] if embedding_path else ["--no-memory"]
+        # MCP host: off, unless the case gives its servers (mcp.json in its home)
+        mcp_args = ["--mcp", mcp] if mcp else ["--no-mcp"]
         cmd = [exe, "--home", home, "serve"] + models + [
                "--host", "127.0.0.1", "--port", str(self.port),
                "--ctx", str(ctx), "--seed", str(seed), "--temp", "0",
                "--offline", "--no-webui", "--quiet", "--exit-on-load-error",
-               "--no-mcp", "--no-mcp-server", "--no-web-search",
-               "--no-api-nodes", "--no-cloud"] + memory + list(extra)
+               "--no-mcp-server", "--no-web-search",
+               "--no-api-nodes", "--no-cloud"] + mcp_args + memory + list(extra)
         log("  " + " ".join(cmd))
         self.logfile = logfile
         self.log = open(logfile, "w", encoding="utf-8")
@@ -343,20 +347,28 @@ def run_case(name, cfg, exe, models, args, version, outdir, inga_line=""):
         embedding_path = get_model(ekey, models, args.cache) if ekey else None
         home = os.path.join(work, "inga-home")
         os.makedirs(home)
-        server = Server(exe, model_path, record["ctx"], args.seed, home,
-                        os.path.join(work, "inga-serve.log"), cfg.get("argomenti_serve", []),
-                        embedding_path)
-        record["secondi_avvio"] = round(server.wait(cfg.get("attesa_avvio", 600)), 1)
+        mcp = write_mcp(cfg, case_dir, home, work)
         env = dict(os.environ,
-                   INGA_URL=server.url, INGA_MODEL=server.model_id(), SEED=str(args.seed),
+                   INGA_URL="", INGA_MODEL="", SEED=str(args.seed),
                    IUC_INGA=os.path.abspath(exe), IUC_MODEL_PATH=model_path,
                    IUC_CTX=str(record["ctx"]),
+                   IUC_ARGOMENTI_SERVE=json.dumps(cfg.get("argomenti_serve", [])),
                    IUC_TOOLS=TOOLS, IUC_CASE_DIR=case_dir, IUC_WORK_DIR=work,
                    IUC_RESULT=result_tmp, IUC_VERSION=version, IUC_CACHE=args.cache,
                    PYTHONUNBUFFERED="1")
-        if ekey:
-            env["INGA_EMBEDDING_MODEL"] = server.choose_embedding_model()
-        log(f"  run.py ({server.url}, model {env['INGA_MODEL']})")
+        if cfg.get("avvia_inga", True):
+            server = Server(exe, model_path, record["ctx"], args.seed, home,
+                            os.path.join(work, "inga-serve.log"), cfg.get("argomenti_serve", []),
+                            embedding_path, mcp)
+            record["secondi_avvio"] = round(server.wait(cfg.get("attesa_avvio", 600)), 1)
+            env.update(INGA_URL=server.url, INGA_MODEL=server.model_id())
+            if ekey:
+                env["INGA_EMBEDDING_MODEL"] = server.choose_embedding_model()
+            log(f"  run.py ({server.url}, model {env['INGA_MODEL']})")
+        else:
+            # the case starts inga serve itself (confronto.IngaDelCaso), e.g. to run it
+            # alone, after another engine has stopped
+            log("  run.py (the case starts inga serve itself)")
         timeout = cfg.get("timeout_minuti", 60) * 60
         try:
             p = subprocess.run([sys.executable, os.path.join(case_dir, "run.py")],
@@ -364,7 +376,8 @@ def run_case(name, cfg, exe, models, args, version, outdir, inga_line=""):
         except subprocess.TimeoutExpired:
             raise Failure(f"run.py over the time limit of {timeout // 60} minutes") from None
         if p.returncode != 0:
-            raise Failure(f"run.py exited with {p.returncode}\n--- inga serve ---\n{server.tail()}")
+            tail = f"\n--- inga serve ---\n{server.tail()}" if server else ""
+            raise Failure(f"run.py exited with {p.returncode}{tail}")
         if not os.path.exists(result_tmp):
             raise Failure("run.py wrote no result")
         with open(result_tmp, encoding="utf-8") as f:
@@ -379,6 +392,23 @@ def run_case(name, cfg, exe, models, args, version, outdir, inga_line=""):
         json.dump(record, f, ensure_ascii=False, indent=2)
         f.write("\n")
     return record
+
+
+def write_mcp(cfg, case_dir, home, work):
+    """A case with "mcp" in case.json (a file of its folder, in the format of mcp.json)
+    gets Inga's MCP host with those servers: the file is written into the case's home,
+    with {lavoro} replaced by the work folder (where run.py puts the programs and the
+    data the servers need), and passed with --mcp. Other cases keep --no-mcp."""
+    if not cfg.get("mcp"):
+        return None
+    with open(os.path.join(case_dir, cfg["mcp"]), encoding="utf-8") as f:
+        text = f.read()
+    text = text.replace("{lavoro}", json.dumps(work)[1:-1])
+    json.loads(text)  # the file must stay JSON
+    path = os.path.join(home, "mcp.json")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+    return path
 
 
 # --------------------------------------------------------------------------- summary
@@ -502,8 +532,13 @@ def main():
                 key = m or c["modello"]
                 needed = sorted({key} | ({c["modello_embedding"]} if c.get("modello_embedding") else set()))
                 sha = hashlib.sha256(" ".join(models[k]["sha256"] for k in needed).encode()).hexdigest()[:24]
+                # models too large for GitHub's cache (10 GB a repository) are not kept
+                size = sum(models[k]["size"] for k in needed)
                 include.append({"case": n, "model": m, "models_key": f"models-{sha}",
-                                "llama_cpp": bool(c.get("llama_cpp"))})
+                                "models_cache": size <= MODELS_CACHE_MAX,
+                                "llama_cpp": bool(c.get("llama_cpp")),
+                                "colibri": bool(c.get("colibri")),
+                                "disk_gb": int(c.get("disco_gb", 0))})
         print(json.dumps({"include": include}))
         return 0
     if args.case:

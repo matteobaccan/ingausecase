@@ -1,0 +1,43 @@
+# Colibri (https://github.com/JustVugg/colibri, Apache-2.0) al commit di colibri.txt,
+# compilato per la CPU di questo runner (ARCH=native, solo CPU: niente CUDA né Vulkan) e
+# tenuto nella cache di GitHub con la chiave fatta da commit e modello della CPU, come
+# llama.cpp. Si compilano i motori dei GGUF che i casi usano: qwen36 (qwen3, qwen3moe,
+# qwen35, lfm3, ...) e olmoe. Il launcher `coli` è Python della libreria standard e sta
+# nella stessa cartella `c`, che va in IUC_COLIBRI.
+name: Colibri
+description: Colibri compilato per la CPU del runner, in IUC_COLIBRI
+runs:
+  using: composite
+  steps:
+    - id: k
+      shell: bash
+      run: |
+        commit=$(tr -d ' \r\n' < colibri.txt)
+        cpu=$(grep -m1 'model name' /proc/cpuinfo | cut -d: -f2 | sha256sum | cut -c1-12)
+        echo "commit=$commit" >> "$GITHUB_OUTPUT"
+        echo "key=colibri-${commit:0:12}-$cpu-v1" >> "$GITHUB_OUTPUT"
+        echo "IUC_COLIBRI=$HOME/colibri/c" >> "$GITHUB_ENV"
+    - id: cache
+      uses: actions/cache@v6
+      with:
+        path: ~/colibri
+        key: ${{ steps.k.outputs.key }}
+    - if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      env:
+        COMMIT: ${{ steps.k.outputs.commit }}
+      run: |
+        set -euo pipefail
+        mkdir -p ~/colibri
+        cd ~/colibri
+        git init -q
+        git remote add origin https://github.com/JustVugg/colibri
+        git fetch -q --depth 1 origin "$COMMIT"
+        git checkout -q FETCH_HEAD
+        rm -rf .git
+        make -C c qwen36 olmoe ARCH=native -j "$(nproc)" > "$RUNNER_TEMP/colibri-build.log" 2>&1 \
+          || { tail -40 "$RUNNER_TEMP/colibri-build.log"; exit 1; }
+    - shell: bash
+      run: |
+        ls -la ~/colibri/c/qwen36 ~/colibri/c/olmoe
+        python3 ~/colibri/c/coli --version || true

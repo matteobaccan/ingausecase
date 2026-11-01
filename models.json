@@ -28,6 +28,13 @@
       "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
       "size": 1099627808,
       "uso": "architettura LFM3 (prova del ramo exp/web-steps): gli stessi casi con un altro modello"
+    },
+    "qwen3-30b-a3b": {
+      "repo": "unsloth/Qwen3-30B-A3B-GGUF",
+      "file": "Qwen3-30B-A3B-Q4_K_M.gguf",
+      "sha256": "9f1a24700a339b09c06009b729b5c809e0b64c213b8af5b711b3dbdfd0c5ba48",
+      "size": 18556686912,
+      "uso": "mixture of experts (30B parametri, 3B attivi) più grande della RAM data ai motori: il caso colibri-moe, Inga e Colibri con gli esperti letti dal disco"
     }
   }
 }

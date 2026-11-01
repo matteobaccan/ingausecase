@@ -36,14 +36,24 @@ Variabili d'ambiente lette (nessuna è obbligatoria):
 | `INGA_TOKEN`, poi `GH_TOKEN`, poi `GITHUB_TOKEN` | lettura delle release di `matteobaccan/inga` finché il repository è privato |
 | `HF_TOKEN` | download da Hugging Face, se presente |
 | `IUC_CACHE` | cartella dei download (Inga, modelli, fonti) e dei file di lavoro (`~/.cache/ingausecase`); il runner la passa ai casi |
+| `IUC_LLAMA`, `IUC_COLIBRI` | le cartelle di llama.cpp e di Colibri compilati (i workflow le mettono); senza, i casi che li confrontano si danno come saltati |
 
 ## Come è fatto un caso
 
 Una cartella `cases/<nome>/` con:
 
 - `case.json`: `modello` (una chiave di `models.json`), `ctx`, `timeout_minuti`,
-  `descrizione`, ed eventualmente `modello_embedding` (una chiave di `models.json`, per
-  le collezioni di documenti) e `argomenti_serve` (altre opzioni di `inga serve`);
+  `descrizione`, ed eventualmente:
+
+  | Chiave | Uso |
+  | --- | --- |
+  | `modello_embedding` | una chiave di `models.json`, per le collezioni di documenti |
+  | `argomenti_serve` | altre opzioni di `inga serve` (il runner le passa anche al caso in `IUC_ARGOMENTI_SERVE`) |
+  | `llama_cpp`, `colibri` | il caso confronta Inga con llama.cpp o con Colibri: il workflow li compila |
+  | `mcp` | un file del caso nel formato di `mcp.json`: Inga ha il suo host MCP con quei server (vedi sotto) |
+  | `avvia_inga` | `false`: il runner non avvia `inga serve`, lo avvia il caso (`confronto.IngaDelCaso`) |
+  | `disco_gb` | lo spazio su disco che il caso chiede: il workflow ne libera se non basta |
+
 - `run.py`: parla con il server tramite `inga_api.py` (l'URL è in `INGA_URL`) e scrive
   il risultato con `inga_api.write_result`: `stato` (`ok` o `saltato`), `voto` da 0 a
   1, `voci` (i voti parziali, da 0 a 1), `motivo` (per un caso saltato) e `dettagli`;
@@ -95,3 +105,28 @@ quei casi si danno come saltati. `llama.py` avvia `llama-server`; `confronto.py`
 stesse domande ai due server e scrive i voti di tutti e due. Il runner passa ai casi
 anche `IUC_INGA` (l'eseguibile di Inga), `IUC_MODEL_PATH` (il file del modello) e
 `IUC_CTX`.
+
+## Colibri accanto a Inga
+
+I casi con `"colibri": true` (`colibri-qualita`, `colibri-velocita`, `colibri-moe`)
+confrontano Inga con [Colibri](https://github.com/JustVugg/colibri) sullo stesso GGUF. I
+workflow lo compilano al commit di [`colibri.txt`](../colibri.txt) per la CPU del runner
+(`.github/actions/colibri`, solo CPU: i motori `qwen36` e `olmoe`) e mettono la sua
+cartella `c` in `IUC_COLIBRI`; senza, quei casi si danno come saltati, e così con un
+modello di un'architettura che Colibri non ha. `colibri.py` legge l'architettura dal
+GGUF, fa `coli import` nella cartella di lavoro e avvia `coli serve` (`--ctx` del caso,
+`--ram` se il caso dà un budget). `confronto.esegui` fa le domande a Inga e a
+`motori=("llama.cpp",)`, `("colibri",)` o a tutti e due, affiancati o, con
+`in_sequenza=True`, uno alla volta (per i modelli che non stanno due volte in RAM);
+`confronto.velocita` misura lettura del prompt e generazione dall'API in streaming, allo
+stesso modo per ogni motore.
+
+## L'host MCP
+
+`inga serve` parte con `--no-mcp`, tranne per un caso con `"mcp"` in `case.json`: il
+runner copia quel file nella home di Inga del caso, con `{lavoro}` cambiato nella
+cartella di lavoro (dove `run.py` mette i programmi e i dati dei server), e lo passa con
+`--mcp`. Le altre opzioni (`--allow-mcp-commands`, `--mcp-auto-approve`) vanno in
+`argomenti_serve`. Il caso approva il comando di un server stdio con `POST
+/api/inga/mcp/servers` e chiede gli strumenti con `"inga_mcp"` nella richiesta; le
+chiamate fatte sono in `inga_mcp_calls` della risposta (`tokensave`).
