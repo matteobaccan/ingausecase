@@ -319,7 +319,7 @@ def run_case(name, cfg, exe, models, args, version, outdir):
     shutil.rmtree(work, ignore_errors=True)
     os.makedirs(work)
     result_tmp = os.path.join(work, "result.json")
-    key = cfg["modello"]
+    key = args.model or cfg["modello"]
     meta = models.get(key, {})
     ekey = cfg.get("modello_embedding")
     record = {
@@ -379,9 +379,11 @@ def run_case(name, cfg, exe, models, args, version, outdir):
 def previous_version(results, version):
     if not os.path.isdir(results):
         return None
+    numeric = re.fullmatch(r"\d+(\.\d+)*", version)
+    # A trial build's label is compared with the newest release.
     older = [d for d in os.listdir(results)
              if os.path.isdir(os.path.join(results, d)) and re.fullmatch(r"\d+(\.\d+)*", d)
-             and version_key(d) < version_key(version)]
+             and (not numeric or version_key(d) < version_key(version))]
     return max(older, key=version_key) if older else None
 
 
@@ -465,6 +467,10 @@ def main():
     ap.add_argument("--results", default=os.path.join(ROOT, "results"))
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--inga", help="use this inga executable instead of downloading the release")
+    ap.add_argument("--model", help="run every case with this model of models.json instead of its own "
+                    "(the embedding model of a case stays its own)")
+    ap.add_argument("--label", help="with --inga: the name of the results folder instead of a version "
+                    "(a trial build, e.g. exp-web-steps-41a7306-lfm3); compared with the newest release")
     ap.add_argument("--list", action="store_true", help="list the cases and exit")
     ap.add_argument("--summary-only", action="store_true",
                     help="only write results/<version>/summary.md again from the case JSONs")
@@ -487,7 +493,15 @@ def main():
         with open(os.path.join(ROOT, "inga-version.txt"), encoding="utf-8") as f:
             version = f.read().strip()
     version = version.lstrip("v")
-    if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+    if args.label:
+        if not args.inga:
+            log("--label needs --inga (a trial build, not a release)")
+            return 2
+        if not re.fullmatch(r"[A-Za-z0-9._-]+", args.label):
+            log(f"not a label: {args.label!r}")
+            return 2
+        version = args.label
+    elif not re.fullmatch(r"\d+\.\d+\.\d+", version):
         log(f"not a version: {version!r}")
         return 2
 

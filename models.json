@@ -21,6 +21,13 @@
       "sha256": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
       "size": 132438304,
       "uso": "modello di embedding (multilingue, 118M parametri) delle collezioni di documenti dei casi contratti e documenti"
+    },
+    "lfm3-1.7b": {
+      "repo": "LiquidAI/LFM3-1.7B-GGUF",
+      "file": "LFM3-1.7B-Q4_K_M.gguf",
+      "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+      "size": 1099627808,
+      "uso": "architettura LFM3 (prova del ramo exp/web-steps): gli stessi casi con un altro modello"
     }
   }
 }

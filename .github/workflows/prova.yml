@@ -1,0 +1,134 @@
+# Esegue i casi d'uso su una build di prova di Inga: un ramo o un commit di
+# matteobaccan/inga (es. exp/web-steps), compilato qui, con uno o più modelli.
+#
+# Questo file è identico sui rami `main` e `cases` (workflow_dispatch lo prende dal ramo
+# scelto, ma GitHub lo mostra solo se c'è su `main`).
+#
+# - workflow_dispatch: `ref` (ramo o commit di Inga), `modelli` (chiavi di models.json
+#   separate da virgole; vuoto = il modello di ogni caso), `case` (vuoto = tutti);
+# - i modelli uno dopo l'altro nello stesso job; i risultati non vanno sul ramo `cases`:
+#   restano come artifact (solo i risultati e i log, mai il binario di Inga) e nel
+#   riepilogo del job, confrontati con l'ultima release in results/.
+#
+# Segreti: INGA_TOKEN, un token che legge matteobaccan/inga finché è privato; HF_TOKEN
+# (facoltativo) per Hugging Face.
+
+name: prova
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Ramo o commit di Inga (es. exp/web-steps)"
+        required: true
+        default: "exp/web-steps"
+      modelli:
+        description: "Modelli di models.json, separati da virgole (vuoto = quello di ogni caso)"
+        required: false
+        default: ""
+      case:
+        description: "Un caso solo (es. pdf); vuoto = tutti"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: prova-${{ github.event.inputs.ref }}
+  cancel-in-progress: false
+
+jobs:
+  # Un job solo: Inga è compilato e usato qui, e il binario non esce dal runner (il
+  # repository di Inga è privato, questo è pubblico: nessun artifact con il binario).
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      IUC_CACHE: /home/runner/iuc-cache
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: cases
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          repository: matteobaccan/inga
+          ref: ${{ github.event.inputs.ref }}
+          token: ${{ secrets.INGA_TOKEN || github.token }}
+          persist-credentials: false
+          path: ${{ runner.temp }}/inga-src
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Compila inga
+        working-directory: ${{ runner.temp }}/inga-src
+        run: |
+          # L'output del compilatore resta in un file del runner: i suoi avvisi citano
+          # righe del codice di Inga, privato, e i log di questo repository sono pubblici.
+          if cargo build --release --bin inga > "$RUNNER_TEMP/build.log" 2>&1; then
+            echo "inga compilato"
+          else
+            echo "la compilazione di inga non è riuscita (il log non è mostrato: codice privato)"
+            exit 1
+          fi
+          echo "SHA=$(git rev-parse --short HEAD)" >> "$GITHUB_ENV"
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Dipendenze
+        run: |
+          python -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q -r tools/requirements.txt
+      - name: Chiave della cache dei modelli
+        id: models
+        run: |
+          key=$(python -c "import json,hashlib; m=json.load(open('models.json'))['modelli']; print(hashlib.sha256(' '.join(sorted(v['sha256'] for v in m.values())).encode()).hexdigest()[:32])")
+          echo "key=models-$key" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v6
+        with:
+          path: ${{ env.IUC_CACHE }}/models
+          key: ${{ steps.models.outputs.key }}
+      - name: Chiave della cache delle fonti
+        id: fonti
+        run: |
+          key=$(python -c "import json,hashlib; f=json.load(open('fonti.json'))['fonti']; print(hashlib.sha256(' '.join(sorted(v['url'] + '@' + str(v['sha256']) for v in f.values())).encode()).hexdigest()[:32])")
+          echo "key=fonti-$key" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v6
+        with:
+          path: ${{ env.IUC_CACHE }}/fonti
+          key: ${{ steps.fonti.outputs.key }}
+      - name: Casi, un modello dopo l'altro
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          REF: ${{ github.event.inputs.ref }}
+          MODELLI: ${{ github.event.inputs.modelli }}
+          CASE: ${{ github.event.inputs.case }}
+        run: |
+          exe="$RUNNER_TEMP/inga-src/target/release/inga"
+          IFS=',' read -ra list <<< "${MODELLI:-}"
+          [ ${#list[@]} -gt 0 ] || list=("")
+          status=0
+          : > "$RUNNER_TEMP/labels"
+          for m in "${list[@]}"; do
+            m=$(echo "$m" | tr -d ' ')
+            label=$(printf '%s-%s%s' "$REF" "$SHA" "${m:+-$m}" | tr -c 'A-Za-z0-9._-' '-')
+            echo "$label" >> "$RUNNER_TEMP/labels"
+            args=(--inga "$exe" --label "$label")
+            [ -z "$m" ] || args+=(--model "$m")
+            [ -z "$CASE" ] || args+=(--case "$CASE")
+            "$RUNNER_TEMP/venv/bin/python" tools/runner.py "${args[@]}" || status=1
+          done
+          exit $status
+      - name: Riepilogo
+        if: always()
+        run: |
+          while read -r label; do
+            [ -f "results/$label/summary.md" ] && cat "results/$label/summary.md" >> "$GITHUB_STEP_SUMMARY" || true
+          done < "$RUNNER_TEMP/labels" 2>/dev/null || true
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: results-prova
+          path: |
+            results/*-*/
+            ${{ env.IUC_CACHE }}/work/**/*.log
+          if-no-files-found: ignore
