@@ -27,6 +27,8 @@ PAGES = 3
 RESULTS = 5
 S = requests.Session()
 S.headers["User-Agent"] = UA
+# Wikimedia chiede un User-Agent che dica chi chiama (altrimenti risponde 429 più spesso).
+WIKI_UA = "ingausecase-ricerca/1.0 (https://github.com/matteobaccan/ingausecase)"
 
 
 def text_of(page_html):
@@ -100,7 +102,7 @@ def ddg(q):
 
 def wikipedia(q, lang):
     r = S.get(f"https://{lang}.wikipedia.org/w/api.php", params={
-        "action": "query", "list": "search", "srsearch": q, "srlimit": 3, "format": "json"}, timeout=T)
+        "action": "query", "list": "search", "srsearch": q, "srlimit": 3, "format": "json"}, headers={"User-Agent": WIKI_UA}, timeout=T)
     r.raise_for_status()
     hits = r.json()["query"]["search"]
     snips = [h["title"] + " — " + text_of(h["snippet"]) for h in hits]
@@ -109,7 +111,7 @@ def wikipedia(q, lang):
     if titles:
         e = S.get(f"https://{lang}.wikipedia.org/w/api.php", params={
             "action": "query", "prop": "extracts", "explaintext": 1, "exintro": 1,
-            "titles": "|".join(titles[:2]), "format": "json"}, timeout=T).json()
+            "titles": "|".join(titles[:2]), "format": "json"}, headers={"User-Agent": WIKI_UA}, timeout=T).json()
         intro = " ".join(p.get("extract", "")[:PAGE_CHARS] for p in e["query"]["pages"].values())
         extra["intro"] = intro
     return snips, [], extra
@@ -149,7 +151,7 @@ def firecrawl(q, scrape):
         h["Authorization"] = "Bearer " + os.environ["FIRECRAWL_API_KEY"]
     r = S.post("https://api.firecrawl.dev/v2/search", json=body, headers=h, timeout=90)
     if not r.ok:
-        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:300]}")
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:600]}")
     data = r.json().get("data", {})
     res = data.get("web", data) if isinstance(data, dict) else data
     snips = [(x.get("title") or "") + " — " + (x.get("description") or "") for x in res]
@@ -209,9 +211,9 @@ def main():
                         txt = st + " " + " ".join(parts)
                         rows.append(dict(servizio=name, modalita=mode, domanda=qi, ok=found(txt, ans), chars=len(txt), secondi=dp))
             except Exception as e:  # noqa: BLE001 - si registra e si va avanti
-                msg = str(e).replace(os.environ.get("TAVILY_API_KEY", "\0"), "***")
+                msg = str(e)
                 rows.append(dict(servizio=name, modalita="errore", domanda=qi, ok=False, chars=0,
-                                 secondi=time.monotonic() - t0, errore=msg[:300]))
+                                 secondi=time.monotonic() - t0, errore=msg[:600]))
                 print(f"[{name}] domanda {qi}: {msg[:200]}", file=sys.stderr)
             time.sleep(1.0)
         print(f"domanda {qi + 1}/{len(qs)} fatta", file=sys.stderr)
