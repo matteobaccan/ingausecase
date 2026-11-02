@@ -1,0 +1,22 @@
+[
+ {"domanda": "capital of Australia", "risposte": ["Canberra"]},
+ {"domanda": "chi ha scritto I promessi sposi", "risposte": ["Manzoni"], "lingua": "it"},
+ {"domanda": "Mont Blanc height in meters", "risposte": ["4805", "4806", "4807", "4808", "4,805", "4,806", "4,807", "4,808"]},
+ {"domanda": "year Rust 1.0 was released", "risposte": ["2015"]},
+ {"domanda": "boiling point of water in Fahrenheit", "risposte": ["212"]},
+ {"domanda": "autore de Il nome della rosa", "risposte": ["Umberto Eco"], "lingua": "it"},
+ {"domanda": "who discovered penicillin", "risposte": ["Fleming"]},
+ {"domanda": "fiume più lungo d'Italia", "risposte": ["Po"], "lingua": "it"},
+ {"domanda": "speed of light in meters per second", "risposte": ["299792458"]},
+ {"domanda": "who created the Python programming language", "risposte": ["van Rossum", "Guido"]},
+ {"domanda": "in che anno è caduto il muro di Berlino", "risposte": ["1989"], "lingua": "it"},
+ {"domanda": "largest planet in the solar system", "risposte": ["Jupiter"]},
+ {"domanda": "chi ha creato il kernel Linux", "risposte": ["Torvalds"], "lingua": "it"},
+ {"domanda": "who painted Girl with a Pearl Earring", "risposte": ["Vermeer"]},
+ {"domanda": "capitale del Canada", "risposte": ["Ottawa"], "lingua": "it"},
+ {"domanda": "inventor of the World Wide Web", "risposte": ["Berners-Lee"]},
+ {"domanda": "average distance from Earth to the Moon in km", "risposte": ["384400", "384000", "384402"]},
+ {"domanda": "PostgreSQL default port", "risposte": ["5432"]},
+ {"domanda": "chi ha composto Le quattro stagioni", "risposte": ["Vivaldi"], "lingua": "it"},
+ {"domanda": "SQLite license", "risposte": ["public domain"]}
+]

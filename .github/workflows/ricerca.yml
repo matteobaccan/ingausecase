@@ -1,0 +1,48 @@
+# Confronta i servizi di ricerca web (DuckDuckGo, Wikipedia, Firecrawl e, se ci sono le
+# chiavi, Brave, Tavily, Exa) su domande con risposta nota: risposta trovata, token, tempo.
+# Non usa Inga: misura solo cosa arriverebbe nel prompt. Vedi ricerca/servizi.py.
+#
+# Parte a ogni push sui rami exp/ricerca-* e a mano (workflow_dispatch, quando il file è
+# anche su main). Il riepilogo va nel sommario del job, i dati in un artifact di 3 giorni.
+#
+# Segreti facoltativi: BRAVE_API_KEY, TAVILY_API_KEY, EXA_API_KEY, FIRECRAWL_API_KEY.
+# Senza FIRECRAWL_API_KEY si prova Firecrawl senza chiave (Keyless).
+
+name: ricerca
+
+on:
+  push:
+    branches: ["exp/ricerca-*"]
+    paths: ["ricerca/**", ".github/workflows/ricerca.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  servizi:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Confronto
+        env:
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: |
+          python ricerca/servizi.py --out ricerca-risultati.json --md ricerca-riepilogo.md
+          cat ricerca-riepilogo.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: ricerca-servizi
+          path: ricerca-*.*
+          retention-days: 3
