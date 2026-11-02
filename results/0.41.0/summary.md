@@ -4,7 +4,10 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 
 | Caso | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| arc | 91.7 | - | - | 6:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| arc | 91.7 | - | - | 4:14 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| colibri-moe | 174.0 | - | - | 25:20 | Qwen3-30B-A3B-Q4_K_M.gguf | ok |
+| colibri-qualita | 82.5 | - | - | 18:39 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| colibri-velocita | - | - | - | 4:05 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | errore |
 | contratti | 76.7 | - | - | 29:04 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | documenti | 100.0 | 100.0 | 0.0 | 17:21 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | email | 83.8 | 83.8 | 0.0 | 2:16 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
@@ -15,6 +18,7 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 | prova | 100.0 | 100.0 | 0.0 | 0:15 | Qwen3-0.6B-Q8_0.gguf | ok |
 | rag-recupero | - | - | - | 0:06 | Qwen3-0.6B-Q8_0.gguf | saltato |
 | rag-rgb | 82.5 | - | - | 35:38 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| tokensave | 55.0 | - | - | 77:15 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | velocita | 108.2 | - | - | 28:54 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 
 ## Voci di ogni caso
@@ -26,8 +30,32 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 | Inga | 91.7 | - | - |
 | llama.cpp | 91.7 | - | - |
 | Inga meno llama.cpp | 0.0 | - | - |
-| risposte con lo stesso testo | 96.7 | - | - |
-| tempo di llama.cpp su quello di Inga | 117.2 | - | - |
+| risposte con lo stesso testo | 95.0 | - | - |
+| tempo di llama.cpp su quello di Inga | 136.4 | - | - |
+
+### colibri-moe
+
+| Voce | Valore | Valore precedente | Differenza |
+| --- | ---: | ---: | ---: |
+| lettura del prompt (~512 token), Inga su Colibri | 162.4 | - | - |
+| generazione (128 token), Inga su Colibri | 185.6 | - | - |
+| risposte giuste, Inga | 100.0 | - | - |
+| risposte giuste, Colibri | 100.0 | - | - |
+| risposte con lo stesso testo | 70.0 | - | - |
+
+### colibri-qualita
+
+| Voce | Valore | Valore precedente | Differenza |
+| --- | ---: | ---: | ---: |
+| Inga | 82.5 | - | - |
+| Colibri | 80.0 | - | - |
+| Inga meno Colibri | 2.5 | - | - |
+| risposte con lo stesso testo | 42.5 | - | - |
+| tempo di Colibri su quello di Inga | 128.9 | - | - |
+| ARC, Inga | 90.0 | - | - |
+| ARC, Colibri | 90.0 | - | - |
+| GSM8K, Inga | 75.0 | - | - |
+| GSM8K, Colibri | 70.0 | - | - |
 
 ### contratti
 
@@ -106,6 +134,17 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 | passaggio giusto fra gli estratti | 100.0 | - | - |
 | risposte date con rumore | 100.0 | - | - |
 
+### tokensave
+
+| Voce | Valore | Valore precedente | Differenza |
+| --- | ---: | ---: | ---: |
+| giuste con tokensave | 55.0 | - | - |
+| giuste senza strumenti | 15.0 | - | - |
+| giuste con il codice nel prompt | 90.0 | - | - |
+| domande con almeno una chiamata a tokensave | 95.0 | - | - |
+| token del prompt per domanda, con tokensave su codice nel prompt | 72.7 | - | - |
+| token generati per domanda, con tokensave su senza strumenti | 119.2 | - | - |
+
 ### velocita
 
 | Voce | Valore | Valore precedente | Differenza |
@@ -116,6 +155,7 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 
 ## Casi saltati o in errore
 
+- colibri-velocita: RuntimeError: risposta senza usage o senza token: {'prompt_tokens': 512, 'completion_tokens': 0, 'total_tokens': 512} ''
 - memoria: questa versione non ha i progetti: GET /api/inga/projects: HTTP 404 (questa versione di Inga non lo ha)
 - rag-recupero: GET /api/inga/documents/search?q=prova&collection=scifact&k=1: HTTP 404 (questa versione di Inga non lo ha)
 

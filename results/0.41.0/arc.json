@@ -7,7 +7,7 @@
   "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
   "ctx": 4096,
   "seed": 42,
-  "data": "2026-11-01T18:59:48Z",
+  "data": "2026-11-01T22:55:53Z",
   "secondi_avvio": 2.0,
   "stato": "ok",
   "voto": 0.9166666666666666,
@@ -15,8 +15,8 @@
     "Inga": 0.9166666666666666,
     "llama.cpp": 0.9166666666666666,
     "Inga meno llama.cpp": 0.0,
-    "risposte con lo stesso testo": 0.9666666666666667,
-    "tempo di llama.cpp su quello di Inga": 1.171717171717172
+    "risposte con lo stesso testo": 0.95,
+    "tempo di llama.cpp su quello di Inga": 1.364423076923077
   },
   "dettagli": {
     "seed": 9,
@@ -84,37 +84,37 @@
     ],
     "domande": 60,
     "llama_cpp": "b12032",
-    "secondi_inga": 178,
-    "secondi_llama": 209,
+    "secondi_inga": 104,
+    "secondi_llama": 142,
     "risposte": [
       {
         "n": 0,
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 4.0,
-          "testo": "Answer: C"
+          "secondi": 2.5,
+          "testo": "Answer: C. The climate in the area was once tropical."
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 4.8,
+          "secondi": 2.6,
           "testo": "Answer: C"
         },
-        "uguali": true
+        "uguali": false
       },
       {
         "n": 1,
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.4,
+          "secondi": 2.1,
           "testo": "Answer: B. size differences"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.5,
+          "secondi": 2.8,
           "testo": "Answer: B. size differences"
         },
         "uguali": true
@@ -124,13 +124,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.7,
+          "secondi": 1.5,
           "testo": "Answer: C"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 3.3,
+          "secondi": 2.2,
           "testo": "Answer: C"
         },
         "uguali": true
@@ -140,13 +140,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 4.4,
+          "secondi": 2.6,
           "testo": "Answer: C. analyze new data as it becomes available"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 5.2,
+          "secondi": 3.6,
           "testo": "Answer: C. analyze new data as it becomes available"
         },
         "uguali": true
@@ -156,13 +156,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 3.4,
+          "secondi": 2.0,
           "testo": "Answer: A"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 4.3,
+          "secondi": 2.8,
           "testo": "Answer: A"
         },
         "uguali": true
@@ -172,13 +172,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.2,
+          "secondi": 1.3,
           "testo": "Answer: C"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.8,
+          "secondi": 1.9,
           "testo": "Answer: C"
         },
         "uguali": true
@@ -188,13 +188,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 2.5,
+          "secondi": 1.8,
           "testo": "Answer: D. the scientific method."
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 2.8,
+          "secondi": 2.0,
           "testo": "Answer: D. the scientific method."
         },
         "uguali": true
@@ -204,13 +204,13 @@
         "inga": {
           "voto": 0.0,
           "nota": "B su C",
-          "secondi": 3.6,
+          "secondi": 2.1,
           "testo": "Answer: B"
         },
         "llama.cpp": {
           "voto": 0.0,
           "nota": "B su C",
-          "secondi": 4.4,
+          "secondi": 2.9,
           "testo": "Answer: B"
         },
         "uguali": true
@@ -220,13 +220,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.1,
+          "secondi": 1.8,
           "testo": "Answer: B"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.8,
+          "secondi": 2.5,
           "testo": "Answer: B"
         },
         "uguali": true
@@ -236,13 +236,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 2.9,
+          "secondi": 1.8,
           "testo": "Answer: A"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 3.4,
+          "secondi": 2.2,
           "testo": "Answer: A"
         },
         "uguali": true
@@ -252,13 +252,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 3.0,
+          "secondi": 1.9,
           "testo": "Answer: C. formation of a cell plate"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 3.5,
+          "secondi": 2.5,
           "testo": "Answer: C. formation of a cell plate"
         },
         "uguali": true
@@ -268,13 +268,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 2.0,
+          "secondi": 1.2,
           "testo": "Answer: A. electron"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 2.3,
+          "secondi": 1.7,
           "testo": "Answer: A. electron"
         },
         "uguali": true
@@ -284,13 +284,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 2.9,
+          "secondi": 1.7,
           "testo": "Answer: D"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 3.4,
+          "secondi": 2.2,
           "testo": "Answer: D"
         },
         "uguali": true
@@ -300,13 +300,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.0,
+          "secondi": 1.2,
           "testo": "Answer: C. confident."
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.3,
+          "secondi": 1.6,
           "testo": "Answer: C. confident."
         },
         "uguali": true
@@ -316,13 +316,13 @@
         "inga": {
           "voto": 0.0,
           "nota": "D su C",
-          "secondi": 3.3,
+          "secondi": 1.7,
           "testo": "Answer: D"
         },
         "llama.cpp": {
           "voto": 0.0,
           "nota": "D su C",
-          "secondi": 4.4,
+          "secondi": 3.1,
           "testo": "Answer: D. It is an inherited behavior that maintains salt concentrations."
         },
         "uguali": false
@@ -332,13 +332,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.3,
+          "secondi": 1.7,
           "testo": "Answer: B"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.4,
+          "secondi": 2.2,
           "testo": "Answer: B"
         },
         "uguali": true
@@ -348,13 +348,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 4.0,
+          "secondi": 1.9,
           "testo": "Answer: B. using storage space efficiently."
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.8,
+          "secondi": 2.7,
           "testo": "Answer: B. using storage space efficiently."
         },
         "uguali": true
@@ -364,13 +364,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 2.5,
+          "secondi": 1.5,
           "testo": "Answer: B. burning coal"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 2.9,
+          "secondi": 2.0,
           "testo": "Answer: B. burning coal"
         },
         "uguali": true
@@ -380,13 +380,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 1.8,
+          "secondi": 1.0,
           "testo": "Answer: A"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 2.1,
+          "secondi": 1.5,
           "testo": "Answer: A"
         },
         "uguali": true
@@ -396,13 +396,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.4,
+          "secondi": 1.4,
           "testo": "Answer: C"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.9,
+          "secondi": 1.9,
           "testo": "Answer: C"
         },
         "uguali": true
@@ -412,13 +412,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 2.5,
+          "secondi": 1.4,
           "testo": "Answer: B"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.1,
+          "secondi": 2.1,
           "testo": "Answer: B"
         },
         "uguali": true
@@ -428,13 +428,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.7,
+          "secondi": 1.9,
           "testo": "Answer: B"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 4.5,
+          "secondi": 3.0,
           "testo": "Answer: B"
         },
         "uguali": true
@@ -444,13 +444,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.7,
+          "secondi": 1.7,
           "testo": "Answer: C. weathering"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 3.3,
+          "secondi": 2.3,
           "testo": "Answer: C. weathering"
         },
         "uguali": true
@@ -460,14 +460,14 @@
         "inga": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 4.7,
-          "testo": "Answer: A. Erosion is slower than uplift at El Cajon Pass"
+          "secondi": 2.8,
+          "testo": "Answer: A. Erosion is slower than uplift at El Cajon Pass."
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 5.5,
-          "testo": "Answer: A. Erosion is slower than uplift at El Cajon Pass"
+          "secondi": 4.0,
+          "testo": "Answer: A. Erosion is slower than uplift at El Cajon Pass."
         },
         "uguali": true
       },
@@ -476,13 +476,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.2,
+          "secondi": 1.3,
           "testo": "Answer: C"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.9,
+          "secondi": 1.9,
           "testo": "Answer: C"
         },
         "uguali": true
@@ -492,13 +492,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.5,
+          "secondi": 1.5,
           "testo": "Answer: C"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "C su C",
-          "secondi": 2.9,
+          "secondi": 2.0,
           "testo": "Answer: C"
         },
         "uguali": true
@@ -508,13 +508,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 3.9,
+          "secondi": 2.5,
           "testo": "Answer: A. continued investigation"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "A su A",
-          "secondi": 4.5,
+          "secondi": 3.0,
           "testo": "Answer: A. continued investigation"
         },
         "uguali": true
@@ -524,13 +524,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 4.4,
+          "secondi": 2.8,
           "testo": "Answer: B. Clouds reflect the energy into space."
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 5.1,
+          "secondi": 3.5,
           "testo": "Answer: B. Clouds reflect the energy into space."
         },
         "uguali": true
@@ -540,87 +540,7 @@
         "inga": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 3.4,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 4.0,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 29,
-        "inga": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 3.4,
-          "testo": "Answer: B"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 4.0,
-          "testo": "Answer: B"
-        },
-        "uguali": true
-      },
-      {
-        "n": 30,
-        "inga": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 2.5,
-          "testo": "Answer: B. a tornado"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 3.0,
-          "testo": "Answer: B. a tornado"
-        },
-        "uguali": true
-      },
-      {
-        "n": 31,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.1,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.7,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 32,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.9,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.4,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 33,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.2,
+          "secondi": 2.0,
           "testo": "Answer: D"
         },
         "llama.cpp": {
@@ -632,359 +552,39 @@
         "uguali": true
       },
       {
-        "n": 34,
+        "n": 29,
         "inga": {
           "voto": 1.0,
-          "nota": "1 su 1",
-          "secondi": 2.5,
-          "testo": "Answer: 1"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "1 su 1",
-          "secondi": 3.0,
-          "testo": "Answer: 1"
-        },
-        "uguali": true
-      },
-      {
-        "n": 35,
-        "inga": {
-          "voto": 1.0,
-          "nota": "C su C",
+          "nota": "B su B",
           "secondi": 2.0,
-          "testo": "Answer: C"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.2,
-          "testo": "Answer: C"
-        },
-        "uguali": true
-      },
-      {
-        "n": 36,
-        "inga": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.7,
-          "testo": "Answer: C. 7.0"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 3.0,
-          "testo": "Answer: C. 7.0"
-        },
-        "uguali": true
-      },
-      {
-        "n": 37,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.7,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.4,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 38,
-        "inga": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 4.0,
-          "testo": "Answer: B. The atoms recycle back into the environment."
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 4.4,
-          "testo": "Answer: B. The atoms recycle back into the environment."
-        },
-        "uguali": true
-      },
-      {
-        "n": 39,
-        "inga": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 2.2,
-          "testo": "Answer: A"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 2.5,
-          "testo": "Answer: A"
-        },
-        "uguali": true
-      },
-      {
-        "n": 40,
-        "inga": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 4.3,
-          "testo": "Answer: A"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 5.4,
-          "testo": "Answer: A"
-        },
-        "uguali": true
-      },
-      {
-        "n": 41,
-        "inga": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.0,
-          "testo": "Answer: C"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.3,
-          "testo": "Answer: C"
-        },
-        "uguali": true
-      },
-      {
-        "n": 42,
-        "inga": {
-          "voto": 1.0,
-          "nota": "B su B",
-          "secondi": 3.2,
           "testo": "Answer: B"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.5,
+          "secondi": 2.7,
           "testo": "Answer: B"
         },
         "uguali": true
       },
       {
-        "n": 43,
+        "n": 30,
         "inga": {
           "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 3.1,
-          "testo": "Answer: A. rocks"
+          "nota": "B su B",
+          "secondi": 1.4,
+          "testo": "Answer: B. a tornado"
         },
         "llama.cpp": {
           "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 2.2,
-          "testo": "Answer: A. rocks"
+          "nota": "B su B",
+          "secondi": 2.1,
+          "testo": "Answer: B. a tornado"
         },
         "uguali": true
       },
       {
-        "n": 44,
-        "inga": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 3.5,
-          "testo": "Answer: A. heat the solution"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 4.1,
-          "testo": "Answer: A. heat the solution"
-        },
-        "uguali": true
-      },
-      {
-        "n": 45,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.4,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 4.1,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 46,
-        "inga": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.5,
-          "testo": "Answer: C"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 3.1,
-          "testo": "Answer: C"
-        },
-        "uguali": true
-      },
-      {
-        "n": 47,
-        "inga": {
-          "voto": 0.0,
-          "nota": "D su B",
-          "secondi": 3.0,
-          "testo": "Answer: D. before sunrise"
-        },
-        "llama.cpp": {
-          "voto": 0.0,
-          "nota": "D su B",
-          "secondi": 3.6,
-          "testo": "Answer: D. before sunrise"
-        },
-        "uguali": true
-      },
-      {
-        "n": 48,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.7,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.3,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 49,
-        "inga": {
-          "voto": 0.0,
-          "nota": "B su C",
-          "secondi": 3.1,
-          "testo": "Answer: B. kinetic"
-        },
-        "llama.cpp": {
-          "voto": 0.0,
-          "nota": "B su C",
-          "secondi": 3.7,
-          "testo": "Answer: B. kinetic"
-        },
-        "uguali": true
-      },
-      {
-        "n": 50,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 4.1,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 5.1,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 51,
-        "inga": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.2,
-          "testo": "Answer: C. nucleus"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 2.3,
-          "testo": "Answer: C. nucleus"
-        },
-        "uguali": true
-      },
-      {
-        "n": 52,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.0,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.3,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 53,
-        "inga": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 3.1,
-          "testo": "Answer: A"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "A su A",
-          "secondi": 3.8,
-          "testo": "Answer: A"
-        },
-        "uguali": true
-      },
-      {
-        "n": 54,
-        "inga": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 2.7,
-          "testo": "Answer: D"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "D su D",
-          "secondi": 3.4,
-          "testo": "Answer: D"
-        },
-        "uguali": true
-      },
-      {
-        "n": 55,
-        "inga": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 3.6,
-          "testo": "Answer: C"
-        },
-        "llama.cpp": {
-          "voto": 1.0,
-          "nota": "C su C",
-          "secondi": 4.5,
-          "testo": "Answer: C"
-        },
-        "uguali": true
-      },
-      {
-        "n": 56,
+        "n": 31,
         "inga": {
           "voto": 1.0,
           "nota": "D su D",
@@ -994,23 +594,423 @@
         "llama.cpp": {
           "voto": 1.0,
           "nota": "D su D",
+          "secondi": 2.5,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 32,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.7,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
           "secondi": 2.2,
           "testo": "Answer: D"
         },
         "uguali": true
       },
       {
+        "n": 33,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.2,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.7,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 34,
+        "inga": {
+          "voto": 1.0,
+          "nota": "1 su 1",
+          "secondi": 1.5,
+          "testo": "Answer: 1"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "1 su 1",
+          "secondi": 2.0,
+          "testo": "Answer: 1"
+        },
+        "uguali": true
+      },
+      {
+        "n": 35,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.4,
+          "testo": "Answer: C"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.5,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 36,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.6,
+          "testo": "Answer: C. 7.0"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.1,
+          "testo": "Answer: C. 7.0"
+        },
+        "uguali": true
+      },
+      {
+        "n": 37,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.4,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.2,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 38,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 2.5,
+          "testo": "Answer: B. The atoms recycle back into the environment."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 3.2,
+          "testo": "Answer: B. The atoms recycle back into the environment."
+        },
+        "uguali": true
+      },
+      {
+        "n": 39,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 1.2,
+          "testo": "Answer: A"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 1.7,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 40,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.4,
+          "testo": "Answer: A"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 3.6,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 41,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.2,
+          "testo": "Answer: C"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.5,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 42,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 1.7,
+          "testo": "Answer: B"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 2.4,
+          "testo": "Answer: B"
+        },
+        "uguali": true
+      },
+      {
+        "n": 43,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 1.2,
+          "testo": "Answer: A. rocks"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 1.5,
+          "testo": "Answer: A. rocks"
+        },
+        "uguali": true
+      },
+      {
+        "n": 44,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.1,
+          "testo": "Answer: A. heat the solution"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.9,
+          "testo": "Answer: A. heat the solution"
+        },
+        "uguali": true
+      },
+      {
+        "n": 45,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.9,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.7,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 46,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.5,
+          "testo": "Answer: C"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.1,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 47,
+        "inga": {
+          "voto": 0.0,
+          "nota": "D su B",
+          "secondi": 1.7,
+          "testo": "Answer: D. before sunrise"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "D su B",
+          "secondi": 2.5,
+          "testo": "Answer: D. before sunrise"
+        },
+        "uguali": true
+      },
+      {
+        "n": 48,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.4,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.2,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 49,
+        "inga": {
+          "voto": 0.0,
+          "nota": "B su C",
+          "secondi": 1.9,
+          "testo": "Answer: B. kinetic"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "B su C",
+          "secondi": 2.5,
+          "testo": "Answer: B. kinetic"
+        },
+        "uguali": true
+      },
+      {
+        "n": 50,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.1,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 3.4,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 51,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.3,
+          "testo": "Answer: C. nucleus"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.7,
+          "testo": "Answer: C. nucleus"
+        },
+        "uguali": true
+      },
+      {
+        "n": 52,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.2,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.6,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 53,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 1.7,
+          "testo": "Answer: A"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.7,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 54,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.5,
+          "testo": "Answer: D"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.2,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 55,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 1.9,
+          "testo": "Answer: C"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.0,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 56,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.2,
+          "testo": "Answer: D. wood"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 1.5,
+          "testo": "Answer: D"
+        },
+        "uguali": false
+      },
+      {
         "n": 57,
         "inga": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 2.8,
+          "secondi": 1.8,
           "testo": "Answer: D. ZnCl_{2}"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "D su D",
-          "secondi": 3.2,
+          "secondi": 2.2,
           "testo": "Answer: D. ZnCl_{2}"
         },
         "uguali": true
@@ -1020,13 +1020,13 @@
         "inga": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 3.3,
+          "secondi": 2.2,
           "testo": "Answer: B. 4 times"
         },
         "llama.cpp": {
           "voto": 1.0,
           "nota": "B su B",
-          "secondi": 4.1,
+          "secondi": 2.8,
           "testo": "Answer: B. 4 times"
         },
         "uguali": true
@@ -1036,18 +1036,18 @@
         "inga": {
           "voto": 0.0,
           "nota": "A su C",
-          "secondi": 2.2,
+          "secondi": 1.8,
           "testo": "Answer: A. rivers"
         },
         "llama.cpp": {
           "voto": 0.0,
           "nota": "A su C",
-          "secondi": 2.3,
-          "testo": "Answer: A"
+          "secondi": 1.7,
+          "testo": "Answer: A. rivers"
         },
-        "uguali": false
+        "uguali": true
       }
     ]
   },
-  "secondi": 397.0
+  "secondi": 254.1
 }
