@@ -9,7 +9,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | arc | 91.7 | - | - | 4:14 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | colibri-moe | 174.0 | - | - | 25:20 | Qwen3-30B-A3B-Q4_K_M.gguf | ok |
 | colibri-qualita | 82.5 | - | - | 18:39 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
-| colibri-velocita | - | - | - | 4:05 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | errore |
+| colibri-velocita | - | - | - | 2:51 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | errore |
 | contratti | 76.7 | - | - | 29:04 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | documenti | 100.0 | 100.0 | 0.0 | 17:21 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | email | 83.8 | 83.8 | 0.0 | 2:16 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
