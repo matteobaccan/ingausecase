@@ -5,50 +5,50 @@
   "modello": "qwen3-4b",
   "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
   "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
-  "ctx": 2048,
+  "ctx": 4096,
   "seed": 42,
-  "data": "2026-11-01T22:56:05Z",
+  "data": "2026-11-02T00:15:05Z",
   "secondi_avvio": 2.0,
   "stato": "errore",
   "motivo": "RuntimeError: risposta senza usage o senza token: {'prompt_tokens': 512, 'completion_tokens': 0, 'total_tokens': 512} ''",
   "dettagli": {
     "inga": {
-      "pp": 32.555690181636734,
-      "tg": 8.814380277112495,
+      "pp": 64.06090268134112,
+      "tg": 9.756229103624271,
       "token_prompt": 508,
       "prove": [
         {
           "token_prompt": 508,
           "token_generati": 128,
-          "ttft": 15.612,
-          "secondi": 29.997,
-          "pp": 32.53951228571308,
-          "tg": 8.828372875277722
+          "ttft": 7.883,
+          "secondi": 20.597,
+          "pp": 64.43907967316397,
+          "tg": 9.989355354732451
         },
         {
           "token_prompt": 506,
           "token_generati": 128,
-          "ttft": 15.568,
-          "secondi": 30.513,
-          "pp": 32.503334558524465,
-          "tg": 8.497729979243012
+          "ttft": 7.959,
+          "secondi": 22.045,
+          "pp": 63.57947572568869,
+          "tg": 9.01575712190191
         },
         {
           "token_prompt": 508,
           "token_generati": 128,
-          "ttft": 15.571,
-          "secondi": 29.501,
-          "pp": 32.62422370067266,
-          "tg": 9.11703797681675
+          "ttft": 7.917,
+          "secondi": 20.291,
+          "pp": 64.1641526451707,
+          "tg": 10.263574834238451
         }
       ]
     },
     "inga_http": {
-      "token_al_secondo": 4.31918143321053,
-      "primo_output_p50": 15.608427140999993,
+      "token_al_secondo": 6.233019436178809,
+      "primo_output_p50": 7.956645548000012,
       "riuscite": 3,
       "fallite": 0
     }
   },
-  "secondi": 245.2
+  "secondi": 171.1
 }
