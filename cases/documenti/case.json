@@ -3,5 +3,6 @@
   "modello": "qwen3-4b",
   "modello_embedding": "minilm-multilingue",
   "ctx": 8192,
-  "timeout_minuti": 40
+  "timeout_minuti": 40,
+  "voci_meglio_basso": ["estratti dal distrattore"]
 }

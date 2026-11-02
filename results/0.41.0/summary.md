@@ -2,7 +2,9 @@
 
 Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il confronto è con la versione precedente presente in `results/` (0.40.0).
 
-| Caso | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |
+Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100), ↓ più basso è meglio, ≈ solo descrittivo. Le voci "A su B" sono un rapporto (100 = pari) e "A meno B" una differenza (0 = pari). In **neretto**: nei rapporti e nelle differenze, i valori dal lato buono della parità (sopra con ↑, sotto con ↓); nelle voci che misurano due motori o due modi, il migliore fra loro; altrimenti il migliore fra questa versione e la precedente.
+
+| Caso (↑ più alto è meglio) | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
 | arc | 91.7 | - | - | 4:14 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | colibri-moe | 174.0 | - | - | 25:20 | Qwen3-30B-A3B-Q4_K_M.gguf | ok |
@@ -23,135 +25,135 @@ Eseguito con `inga 0.41.0`, seed 42, temperatura 0. Voti in percentuale; il conf
 
 ## Voci di ogni caso
 
-### arc
+### arc — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| Inga | 91.7 | - | - |
-| llama.cpp | 91.7 | - | - |
-| Inga meno llama.cpp | 0.0 | - | - |
-| risposte con lo stesso testo | 95.0 | - | - |
-| tempo di llama.cpp su quello di Inga | 136.4 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| Inga | ↑ | 91.7 | - | - |
+| llama.cpp | ↑ | 91.7 | - | - |
+| Inga meno llama.cpp | ↑ | 0.0 | - | - |
+| risposte con lo stesso testo | ≈ | 95.0 | - | - |
+| tempo di llama.cpp su quello di Inga | ↑ | **136.4** | - | - |
 
-### colibri-moe
+### colibri-moe — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| lettura del prompt (~512 token), Inga su Colibri | 162.4 | - | - |
-| generazione (128 token), Inga su Colibri | 185.6 | - | - |
-| risposte giuste, Inga | 100.0 | - | - |
-| risposte giuste, Colibri | 100.0 | - | - |
-| risposte con lo stesso testo | 70.0 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| lettura del prompt (~512 token), Inga su Colibri | ↑ | **162.4** | - | - |
+| generazione (128 token), Inga su Colibri | ↑ | **185.6** | - | - |
+| risposte giuste, Inga | ↑ | 100.0 | - | - |
+| risposte giuste, Colibri | ↑ | 100.0 | - | - |
+| risposte con lo stesso testo | ≈ | 70.0 | - | - |
 
-### colibri-qualita
+### colibri-qualita — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| Inga | 82.5 | - | - |
-| Colibri | 80.0 | - | - |
-| Inga meno Colibri | 2.5 | - | - |
-| risposte con lo stesso testo | 42.5 | - | - |
-| tempo di Colibri su quello di Inga | 128.9 | - | - |
-| ARC, Inga | 90.0 | - | - |
-| ARC, Colibri | 90.0 | - | - |
-| GSM8K, Inga | 75.0 | - | - |
-| GSM8K, Colibri | 70.0 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| Inga | ↑ | **82.5** | - | - |
+| Colibri | ↑ | 80.0 | - | - |
+| Inga meno Colibri | ↑ | **2.5** | - | - |
+| risposte con lo stesso testo | ≈ | 42.5 | - | - |
+| tempo di Colibri su quello di Inga | ↑ | **128.9** | - | - |
+| ARC, Inga | ↑ | 90.0 | - | - |
+| ARC, Colibri | ↑ | 90.0 | - | - |
+| GSM8K, Inga | ↑ | **75.0** | - | - |
+| GSM8K, Colibri | ↑ | 70.0 | - | - |
 
-### contratti
+### contratti — ↑ più alto è meglio; le voci ↓, più basso è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| risposta giusta | 93.3 | - | - |
-| articolo giusto | 60.0 | - | - |
-| citazione fra gli estratti | 100.0 | - | - |
-| estratti dal distrattore | 27.7 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| risposta giusta | ↑ | 93.3 | - | - |
+| articolo giusto | ↑ | 60.0 | - | - |
+| citazione fra gli estratti | ↑ | 100.0 | - | - |
+| estratti dal distrattore | ↓ | 27.7 | - | - |
 
-### documenti
+### documenti — ↑ più alto è meglio; le voci ↓, più basso è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| risposta giusta | 100.0 | 100.0 | 0.0 |
-| pagina giusta | 100.0 | 100.0 | 0.0 |
-| pagina giusta fra gli estratti | 100.0 | - | - |
-| estratti dal distrattore | 1.7 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| risposta giusta | ↑ | 100.0 | 100.0 | 0.0 |
+| pagina giusta | ↑ | 100.0 | 100.0 | 0.0 |
+| pagina giusta fra gli estratti | ↑ | 100.0 | - | - |
+| estratti dal distrattore | ↓ | 1.7 | - | - |
 
-### email
+### email — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| urgenza | 80.0 | 80.0 | 0.0 |
-| reparto | 87.5 | 87.5 | 0.0 |
-| entrambi giusti | 67.5 | 67.5 | 0.0 |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| urgenza | ↑ | 80.0 | 80.0 | 0.0 |
+| reparto | ↑ | 87.5 | 87.5 | 0.0 |
+| entrambi giusti | ↑ | 67.5 | 67.5 | 0.0 |
 
-### gsm8k
+### gsm8k — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| Inga | 83.3 | - | - |
-| llama.cpp | 83.3 | - | - |
-| Inga meno llama.cpp | 0.0 | - | - |
-| risposte con lo stesso testo | 40.0 | - | - |
-| tempo di llama.cpp su quello di Inga | 94.0 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| Inga | ↑ | 83.3 | - | - |
+| llama.cpp | ↑ | 83.3 | - | - |
+| Inga meno llama.cpp | ↑ | 0.0 | - | - |
+| risposte con lo stesso testo | ≈ | 40.0 | - | - |
+| tempo di llama.cpp su quello di Inga | ↑ | 94.0 | - | - |
 
-### ifeval
+### ifeval — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| Inga | 82.2 | - | - |
-| llama.cpp | 85.6 | - | - |
-| Inga meno llama.cpp | -3.3 | - | - |
-| risposte con lo stesso testo | 10.0 | - | - |
-| tempo di llama.cpp su quello di Inga | 87.7 | - | - |
-| richieste con tutte le istruzioni, Inga | 76.7 | - | - |
-| richieste con tutte le istruzioni, llama.cpp | 80.0 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| Inga | ↑ | 82.2 | - | - |
+| llama.cpp | ↑ | **85.6** | - | - |
+| Inga meno llama.cpp | ↑ | -3.3 | - | - |
+| risposte con lo stesso testo | ≈ | 10.0 | - | - |
+| tempo di llama.cpp su quello di Inga | ↑ | 87.7 | - | - |
+| richieste con tutte le istruzioni, Inga | ↑ | 76.7 | - | - |
+| richieste con tutte le istruzioni, llama.cpp | ↑ | **80.0** | - | - |
 
-### pdf
+### pdf — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| campo numero | 100.0 | 100.0 | 0.0 |
-| campo data | 100.0 | 100.0 | 0.0 |
-| campo fornitore | 80.0 | 80.0 | 0.0 |
-| campo partita_iva | 80.0 | 80.0 | 0.0 |
-| campo imponibile | 100.0 | 100.0 | 0.0 |
-| campo iva | 100.0 | 100.0 | 0.0 |
-| campo totale | 100.0 | 100.0 | 0.0 |
-| campo righe | 85.0 | 85.0 | 0.0 |
-| righe singole | 94.0 | 94.0 | 0.0 |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| campo numero | ↑ | 100.0 | 100.0 | 0.0 |
+| campo data | ↑ | 100.0 | 100.0 | 0.0 |
+| campo fornitore | ↑ | 80.0 | 80.0 | 0.0 |
+| campo partita_iva | ↑ | 80.0 | 80.0 | 0.0 |
+| campo imponibile | ↑ | 100.0 | 100.0 | 0.0 |
+| campo iva | ↑ | 100.0 | 100.0 | 0.0 |
+| campo totale | ↑ | 100.0 | 100.0 | 0.0 |
+| campo righe | ↑ | 85.0 | 85.0 | 0.0 |
+| righe singole | ↑ | 94.0 | 94.0 | 0.0 |
 
-### prova
+### prova — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| risposta non vuota | 100.0 | 100.0 | 0.0 |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| risposta non vuota | ↑ | 100.0 | 100.0 | 0.0 |
 
-### rag-rgb
+### rag-rgb — ↑ più alto è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| risposta giusta con rumore | 100.0 | - | - |
-| rifiuto senza la risposta | 65.0 | - | - |
-| passaggio giusto fra gli estratti | 100.0 | - | - |
-| risposte date con rumore | 100.0 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| risposta giusta con rumore | ↑ | 100.0 | - | - |
+| rifiuto senza la risposta | ↑ | 65.0 | - | - |
+| passaggio giusto fra gli estratti | ↑ | 100.0 | - | - |
+| risposte date con rumore | ↑ | 100.0 | - | - |
 
-### tokensave
+### tokensave — ↑ più alto è meglio; le voci ↓, più basso è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| giuste con tokensave | 55.0 | - | - |
-| giuste senza strumenti | 15.0 | - | - |
-| giuste con il codice nel prompt | 90.0 | - | - |
-| domande con almeno una chiamata a tokensave | 95.0 | - | - |
-| token del prompt per domanda, con tokensave su codice nel prompt | 72.7 | - | - |
-| token generati per domanda, con tokensave su senza strumenti | 119.2 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| giuste con tokensave | ↑ | 55.0 | - | - |
+| giuste senza strumenti | ↑ | 15.0 | - | - |
+| giuste con il codice nel prompt | ↑ | **90.0** | - | - |
+| domande con almeno una chiamata a tokensave | ≈ | 95.0 | - | - |
+| token del prompt per domanda, con tokensave su codice nel prompt | ↓ | **72.7** | - | - |
+| token generati per domanda, con tokensave su senza strumenti | ↓ | 119.2 | - | - |
 
-### velocita
+### velocita — ↑ più alto è meglio; le voci ↓, più basso è meglio
 
-| Voce | Valore | Valore precedente | Differenza |
-| --- | ---: | ---: | ---: |
-| lettura del prompt (pp512), Inga su llama.cpp | 125.2 | - | - |
-| generazione (tg128), Inga su llama.cpp | 91.2 | - | - |
-| perplexity, Inga su llama.cpp | 99.9 | - | - |
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| lettura del prompt (pp512), Inga su llama.cpp | ↑ | **125.2** | - | - |
+| generazione (tg128), Inga su llama.cpp | ↑ | 91.2 | - | - |
+| perplexity, Inga su llama.cpp | ↓ | **99.9** | - | - |
 
 ## Casi saltati o in errore
 

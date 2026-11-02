@@ -3,5 +3,6 @@
   "modello": "qwen3-4b",
   "ctx": 2048,
   "timeout_minuti": 90,
-  "llama_cpp": true
+  "llama_cpp": true,
+  "voci_meglio_basso": ["perplexity, Inga su llama.cpp"]
 }

@@ -35,6 +35,14 @@ casi `colibri-*` a [Colibri](https://github.com/JustVugg/colibri) (commit in
 [`colibri.txt`](colibri.txt), compilato sul runner), che legge dal disco gli esperti
 delle mixture of experts.
 
+In `summary.md` ogni caso dice nel titolo da che parte è il meglio: ↑ più alto è meglio
+(il voto di un caso, al massimo 100), ↓ più basso è meglio (ad esempio gli estratti del
+distrattore), ≈ solo descrittivo. I rapporti "A su B" valgono 100 quando sono pari, le
+differenze "A meno B" 0. In neretto i valori migliori: dal lato buono della parità, il
+migliore fra due motori o due modi, o il migliore fra questa versione e la precedente. Le
+voci da leggere al contrario o solo descrittive sono in `case.json` (`voci_meglio_basso`,
+`voci_neutre`; `voci_confronto` per i gruppi di voci da confrontare fra loro).
+
 ## Versione, modelli, esecuzione
 
 - [`inga-version.txt`](inga-version.txt): la versione di Inga da provare (Renovate la

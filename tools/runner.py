@@ -452,7 +452,55 @@ def duration(s):
     return f"{s // 60}:{s % 60:02d}"
 
 
-def write_summary(results, version, inga_version_line):
+# Which way each number is better. The vote of a case is always "higher is better"; an
+# item of a case is too, unless its case.json lists it in "voci_meglio_basso" (lower is
+# better, e.g. the distractor's share among the passages) or "voci_neutre" (only a
+# description, e.g. how often two engines wrote the same text). "voci_confronto" lists
+# groups of items to compare with each other (the best in bold), on top of the ones found
+# by name: "Inga" with "llama.cpp" or "Colibri", "X, Inga" with "X, llama.cpp" or "X, Colibri".
+# An item "A su B" (a ratio, 100 = even) or "A meno B" (a difference, 0 = even) is in bold
+# on the good side of even: above with ↑, below with ↓.
+NEUTRAL = {"risposte con lo stesso testo"}
+ENGINES = ("Inga", "llama.cpp", "Colibri")
+
+
+def case_directions(name):
+    cfg = {}
+    path = os.path.join(CASES, name, "case.json")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            cfg = json.load(f)
+    return (set(cfg.get("voci_meglio_basso") or []), NEUTRAL | set(cfg.get("voci_neutre") or []),
+            [list(g) for g in cfg.get("voci_confronto") or []])
+
+
+def engine_groups(keys):
+    """The items that say the same of two engines: "Inga"/"llama.cpp", "X, Inga"/"X, Colibri"."""
+    groups = {}
+    for k in keys:
+        for e in ENGINES:
+            if k == e:
+                groups.setdefault("", []).append(k)
+            elif k.endswith(", " + e):
+                groups.setdefault(k[:-len(e) - 2], []).append(k)
+    return [g for g in groups.values() if len(g) > 1]
+
+
+def best(values, lower):
+    """The best of the numbers (None ignored), or None when they are all equal or alone."""
+    vals = [round(v, 4) for v in values if v is not None]
+    if len(vals) < 2 or len(set(vals)) == 1:
+        return None
+    return min(vals) if lower else max(vals)
+
+
+def cell(v, b):
+    """A percentage, in bold when it is the best `b`."""
+    s = pct(v)
+    return f"**{s}**" if b is not None and v is not None and round(v, 4) == b else s
+
+
+def write_summary(results, version, inga_version_line, machine=None):
     outdir = os.path.join(results, version)
     cur = load_results(outdir)
     prev_v = previous_version(results, version)
@@ -463,32 +511,67 @@ def write_summary(results, version, inga_version_line):
         f"Eseguito con `{inga_version_line}`, seed {cur[next(iter(cur))].get('seed') if cur else '-'}, "
         "temperatura 0. Voti in percentuale; il confronto è con la versione precedente "
         f"presente in `results/` ({pv}).", "",
-        "| Caso | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |",
+        "Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100), ↓ più basso è meglio, "
+        "≈ solo descrittivo. Le voci \"A su B\" sono un rapporto (100 = pari) e \"A meno B\" una "
+        "differenza (0 = pari). In **neretto**: nei rapporti e nelle differenze, i valori dal lato "
+        "buono della parità (sopra con ↑, sotto con ↓); nelle voci che misurano due motori o due modi, il migliore fra loro; altrimenti "
+        "il migliore fra questa versione e la precedente.", "",
+        "| Caso (↑ più alto è meglio) | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |",
         "| --- | ---: | ---: | ---: | ---: | --- | --- |",
     ]
     for name, r in cur.items():
         p = prev.get(name, {})
         score = r.get("voto") if r.get("stato") == "ok" else None
         pscore = p.get("voto") if p.get("stato") == "ok" else None
-        lines.append(f"| {name} | {pct(score)} | {pct(pscore)} | {delta(score, pscore)} | "
+        b = best([score, pscore], False)
+        lines.append(f"| {name} | {cell(score, b)} | {cell(pscore, b)} | {delta(score, pscore)} | "
                      f"{duration(r.get('secondi'))} | {r.get('file_modello') or '-'} | {r.get('stato')} |")
     detail = []
     for name, r in cur.items():
         voci = r.get("voci") or {}
         if not voci:
             continue
+        lower, neutral, groups = case_directions(name)
+        groups = engine_groups(voci) + [[k for k in g if k in voci] for g in groups]
+        # the best of each group, by item
+        group_best = {}
+        for g in groups:
+            if not g or any(k in neutral for k in g):
+                continue
+            b = best([voci.get(k) for k in g], g[0] in lower)
+            for k in g:
+                group_best[k] = b
         pvoci = (prev.get(name) or {}).get("voci") or {}
-        detail.append(f"\n### {name}\n")
-        detail.append("| Voce | Valore | Valore precedente | Differenza |")
-        detail.append("| --- | ---: | ---: | ---: |")
+        mixed = any(k in lower for k in voci)
+        title = "↑ più alto è meglio" + ("; le voci ↓, più basso è meglio" if mixed else "")
+        detail.append(f"\n### {name} — {title}\n")
+        detail.append("| Voce | Meglio | Valore | Valore precedente | Differenza |")
+        detail.append("| --- | :---: | ---: | ---: | ---: |")
         for k, v in voci.items():
-            detail.append(f"| {k} | {pct(v)} | {pct(pvoci.get(k))} | {delta(v, pvoci.get(k))} |")
+            way = "≈" if k in neutral else "↓" if k in lower else "↑"
+            if way == "≈":
+                vb = pb = None
+            elif " su " in k or " meno " in k:
+                # a ratio (100 = even) or a difference (0 = even): bold on the good side of even
+                even = 1.0 if " su " in k else 0.0
+                wins = (lambda x: x is not None and round(x, 4) != even and (x < even) == (way == "↓"))
+                now, old = pct(v), pct(pvoci.get(k))
+                detail.append(f"| {k} | {way} | {'**' + now + '**' if wins(v) else now} | "
+                              f"{'**' + old + '**' if wins(pvoci.get(k)) else old} | {delta(v, pvoci.get(k))} |")
+                continue
+            else:
+                pb = best([v, pvoci.get(k)], way == "↓")
+                vb = group_best.get(k)
+            # bold: the best of its group (this version), else the better of the two versions
+            now = cell(v, vb) if vb is not None else cell(v, pb)
+            detail.append(f"| {k} | {way} | {now} | {cell(pvoci.get(k), pb)} | {delta(v, pvoci.get(k))} |")
     if detail:
         lines += ["", "## Voci di ogni caso"] + detail
     notes = [f"- {n}: {r['motivo']}" for n, r in cur.items() if r.get("stato") != "ok" and r.get("motivo")]
     if notes:
         lines += ["", "## Casi saltati o in errore", ""] + [n.splitlines()[0] for n in notes]
-    lines += ["", f"Macchina: {platform.machine()}, {os.cpu_count()} CPU, {platform.platform()}.", ""]
+    machine = machine or f"Macchina: {platform.machine()}, {os.cpu_count()} CPU, {platform.platform()}."
+    lines += ["", machine, ""]
     with open(os.path.join(outdir, "summary.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
@@ -571,11 +654,17 @@ def main():
         found = [r.get("inga") for r in load_results(os.path.join(args.results, version)).values()]
         line = next((x for x in found if x), None)
         summary = os.path.join(args.results, version, "summary.md")
-        if not line and os.path.exists(summary):
+        machine = None
+        if os.path.exists(summary):
             with open(summary, encoding="utf-8") as f:
-                m = re.search(r"Eseguito con `([^`]*)`", f.read())
-            line = m.group(1) if m else None
-        write_summary(args.results, version, line or f"inga {version}")
+                text = f.read()
+            m = re.search(r"Eseguito con `([^`]*)`", text)
+            if not line and m:
+                line = m.group(1)
+            # the machine the cases ran on, not the one writing the summary again
+            m = re.search(r"^Macchina: .*$", text, re.M)
+            machine = m.group(0) if m else None
+        write_summary(args.results, version, line or f"inga {version}", machine)
         return 0
 
     os.makedirs(args.cache, exist_ok=True)
