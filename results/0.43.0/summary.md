@@ -15,7 +15,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | email | 82.5 | 82.5 | 0.0 | 3:16 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | gsm8k | 80.0 | **83.3** | -3.3 | 13:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | ifeval | 82.2 | 82.2 | 0.0 | 24:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
-| liyab-cli | 135.1 | - | - | 7:53 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| liyab-cli | 181.7 | - | - | 6:50 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-confronto | 157.1 | - | - | 11:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-qualita | 82.5 | - | - | 19:46 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-velocita | 168.8 | - | - | 3:20 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
@@ -115,14 +115,14 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 
 | Voce | Meglio | Valore | Valore precedente | Differenza |
 | --- | :---: | ---: | ---: | ---: |
-| lettura del prompt (~512 token), Inga su Liyab | ↑ | **156.4** | - | - |
-| generazione (128 token), Inga su Liyab senza bozze | ↑ | **113.8** | - | - |
-| generazione (128 token), Inga su Liyab con le sue bozze | ↑ | **117.7** | - | - |
-| generazione, Inga (tok/s) | ↑ | 904.1 | - | - |
-| generazione, Liyab senza bozze (tok/s) | ↑ | 794.5 | - | - |
-| generazione, Liyab con le sue bozze (tok/s) | ↑ | 768.0 | - | - |
-| picco di memoria residente, Inga (MiB) | ↓ | 285470.0 | - | - |
-| picco di memoria residente, Liyab (MiB) | ↓ | 250660.0 | - | - |
+| lettura del prompt (~512 token), Inga su Liyab | ↑ | **252.6** | - | - |
+| generazione (128 token), Inga su Liyab senza bozze | ↑ | **110.7** | - | - |
+| generazione (128 token), Inga su Liyab con le sue bozze | ↑ | **111.2** | - | - |
+| generazione, Inga (tok/s) | ↑ | 1004.0 | - | - |
+| generazione, Liyab senza bozze (tok/s) | ↑ | 906.5 | - | - |
+| generazione, Liyab con le sue bozze (tok/s) | ↑ | 903.1 | - | - |
+| picco di memoria residente, Inga (MiB) | ↓ | 285490.0 | - | - |
+| picco di memoria residente, Liyab (MiB) | ↓ | 250650.0 | - | - |
 | picco di memoria, Inga su Liyab | ↓ | 113.9 | - | - |
 
 ### liyab-confronto — ↑ più alto è meglio
