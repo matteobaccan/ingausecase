@@ -13,7 +13,8 @@
 # I casi girano in parallelo, un job `run` per caso (la matrice la scrive
 # `runner.py --matrix`), con permessi di sola lettura; i casi che confrontano Inga con
 # llama.cpp, o Colibri, li compilano per la CPU del runner (.github/actions/llama-cpp,
-# .github/actions/colibri); quelli con modelli grandi (disco_gb in case.json) liberano
+# .github/actions/colibri), e quelli con Liyab lo compilano allo stesso modo
+# (.github/actions/liyab); quelli con modelli grandi (disco_gb in case.json) liberano
 # prima spazio sul disco del runner. Il job `publish` raccoglie i risultati, scrive il
 # riepilogo con il runner del ramo `cases` (mai il codice di una PR) e, solo per schedule
 # e workflow_dispatch, li salva sul ramo `cases`.
@@ -50,6 +51,7 @@ on:
       - dati.json
       - llama-cpp.txt
       - colibri.txt
+      - liyab.txt
       - cases/**
       - tools/**
       - .github/actions/**
@@ -145,6 +147,11 @@ jobs:
       - name: Colibri
         if: matrix.colibri
         uses: ./.github/actions/colibri
+      - name: Liyab
+        if: matrix.liyab
+        # una build che non riesce non ferma il job: il caso si dà come saltato
+        continue-on-error: true
+        uses: ./.github/actions/liyab
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
