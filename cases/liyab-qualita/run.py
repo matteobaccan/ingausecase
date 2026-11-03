@@ -50,7 +50,9 @@ def main():
             picco_liyab = max(picco_liyab, g["turno"].get("peak_rss_mib") or 0)
         except (RuntimeError, OSError, ValueError, subprocess.TimeoutExpired) as e:
             tl, sl = f"[errore: {e}]", 0.0
+        # voto() dà (punteggio, spiegazione), come negli altri casi
         vi, vl = mod.voto(x["el"], ti), mod.voto(x["el"], tl)
+        vi, vl = (vi[0] if isinstance(vi, tuple) else vi), (vl[0] if isinstance(vl, tuple) else vl)
         righe.append({"test": x["test"], "inga": {"testo": ti, "voto": vi, "secondi": round(si, 2)},
                       "liyab": {"testo": tl, "voto": vl, "secondi": round(sl, 2)}})
         print(f"  {i + 1}/{len(elementi)} {x['test']}: Inga {vi}, Liyab {vl}", flush=True)
