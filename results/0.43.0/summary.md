@@ -16,6 +16,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | gsm8k | 80.0 | **83.3** | -3.3 | 13:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | ifeval | 82.2 | 82.2 | 0.0 | 24:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-cli | 135.1 | - | - | 7:53 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| liyab-confronto | 157.1 | - | - | 11:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-qualita | 82.5 | - | - | 19:46 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-velocita | 168.8 | - | - | 3:20 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | memoria | 20.0 | 20.0 | 0.0 | 52:54 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
@@ -123,6 +124,27 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | picco di memoria residente, Inga (MiB) | ↓ | 285470.0 | - | - |
 | picco di memoria residente, Liyab (MiB) | ↓ | 250660.0 | - | - |
 | picco di memoria, Inga su Liyab | ↓ | 113.9 | - | - |
+
+### liyab-confronto — ↑ più alto è meglio
+
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| qwen3-0.6b: prompt, Inga API su Liyab | ↑ | **155.9** | - | - |
+| qwen3-0.6b: generazione, Inga API su Liyab | ↑ | **215.9** | - | - |
+| qwen3-0.6b: prompt, Inga bench su Liyab | ↑ | **154.1** | - | - |
+| qwen3-0.6b: generazione, Inga bench su Liyab | ↑ | **373.7** | - | - |
+| qwen3-0.6b: generazione, Inga API su Inga bench | ↑ | 57.8 | - | - |
+| qwen3-0.6b: picco di RAM, Inga API (MiB) | ↑ | 104900.0 | - | - |
+| qwen3-0.6b: picco di RAM, Inga bench (MiB) | ↑ | 129973.3 | - | - |
+| qwen3-0.6b: picco di RAM, Liyab (MiB) | ↑ | 69923.3 | - | - |
+| qwen3-4b: prompt, Inga API su Liyab | ↑ | **155.3** | - | - |
+| qwen3-4b: generazione, Inga API su Liyab | ↑ | **101.5** | - | - |
+| qwen3-4b: prompt, Inga bench su Liyab | ↑ | **156.1** | - | - |
+| qwen3-4b: generazione, Inga bench su Liyab | ↑ | **126.1** | - | - |
+| qwen3-4b: generazione, Inga API su Inga bench | ↑ | 80.4 | - | - |
+| qwen3-4b: picco di RAM, Inga API (MiB) | ↑ | 273700.0 | - | - |
+| qwen3-4b: picco di RAM, Inga bench (MiB) | ↑ | 285486.7 | - | - |
+| qwen3-4b: picco di RAM, Liyab (MiB) | ↑ | 250633.3 | - | - |
 
 ### liyab-qualita — ↑ più alto è meglio
 
