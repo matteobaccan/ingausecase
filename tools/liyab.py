@@ -17,6 +17,7 @@ gets the same messages through its chat API (its template renders the same ChatM
 
 import json
 import os
+import re
 import subprocess
 import time
 
@@ -72,3 +73,32 @@ def genera(model, testo, n, ctx=4096, extra=(), timeout=3600):
         risposta = risposta.split(fine)[0]
     return {"carico": carico, "turno": turno, "risposta": risposta.strip(), "secondi": sec,
             "stderr": p.stderr[-2000:]}
+
+
+def con_time(cmd, timeout=3600):
+    """cmd under /usr/bin/time -v: stdout, stderr and the peak resident memory in MiB (the
+    same measure for every engine)."""
+    p = subprocess.run(["/usr/bin/time", "-v", *cmd], capture_output=True, text=True, timeout=timeout)
+    m = re.search(r"Maximum resident set size \(kbytes\):\s*(\d+)", p.stderr)
+    if p.returncode != 0:
+        raise RuntimeError(f"{os.path.basename(cmd[0])} è uscito con {p.returncode}: {p.stderr[-1200:]}")
+    return p.stdout, p.stderr, (round(int(m.group(1)) / 1024, 1) if m else None)
+
+
+def misura(model, testo, n, ctx=4096, extra=(), timeout=3600):
+    """One `liyab-cli --json` run under /usr/bin/time: prompt and decode speed from its
+    own stats (prompt tokens over the time to the first token, the tokens after the first
+    over the decode time), the reply and the peak resident memory."""
+    cmd = [os.path.join(cartella(), "liyab-cli"), "-m", model, "-p", testo, "-n", str(n),
+           "--temp", "0", "--ctx", str(ctx), "--threads", str(os.cpu_count() or 4), "--json", *extra]
+    so, _, picco = con_time(cmd, timeout)
+    t = next(json.loads(x) for x in so.splitlines() if x.startswith("{") and '"turn"' in x)
+    pt, ct = t["prompt_tokens"], t["generated_tokens"]
+    risposta = t.get("text", "")
+    for fine in ("<|im_end|>", "<|endoftext|>"):
+        risposta = risposta.split(fine)[0]
+    return {"token_prompt": pt, "token_generati": ct, "picco_mib": picco,
+            "bozze": [t.get("draft_tokens_proposed"), t.get("draft_tokens_accepted")],
+            "pp": pt / (t["ttft_ms"] / 1000) if t["ttft_ms"] else None,
+            "tg": (ct - 1) / (t["decode_ms"] / 1000) if ct > 1 and t["decode_ms"] else None,
+            "risposta": risposta.strip(), "turno": t}

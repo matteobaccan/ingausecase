@@ -22,6 +22,8 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 | [`cases/colibri-qualita/`](cases/colibri-qualita) | domande di ARC-Challenge e GSM8K a Inga e a Colibri sullo stesso GGUF |
 | [`cases/colibri-velocita/`](cases/colibri-velocita) | lettura del prompt e generazione di Inga su quelle di Colibri, dall'API in streaming |
 | [`cases/liyab-qualita/`](cases/liyab-qualita) | domande di ARC-Challenge e GSM8K a Inga e a Liyab sullo stesso GGUF |
+| [`cases/liyab-confronto/`](cases/liyab-confronto) | Inga (API e bench) e Liyab sullo stesso runner, 3 giri, Qwen3-0.6B e Qwen3-4B: velocità e picco di RAM |
+| [`cases/liyab-moe/`](cases/liyab-moe) | una mixture of experts più grande della RAM data (Qwen3-30B-A3B, 8 GB) con gli esperti dal disco: Inga e Liyab |
 | [`cases/liyab-cli/`](cases/liyab-cli) | Inga e Liyab senza server HTTP: inga bench e liyab-cli, con e senza le bozze di Liyab, il picco di RAM da /usr/bin/time |
 | [`cases/liyab-velocita/`](cases/liyab-velocita) | lettura del prompt e generazione di Inga su quelle di Liyab (liyab-cli --json) |
 | [`cases/colibri-moe/`](cases/colibri-moe) | una mixture of experts più grande della RAM data (Qwen3-30B-A3B, 8 GB) con gli esperti dal disco: Inga e Colibri |
