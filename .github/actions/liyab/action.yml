@@ -1,0 +1,47 @@
+# Liyab (https://github.com/andrei-borcea/liyab, Apache-2.0) al commit di liyab.txt,
+# compilato per la CPU di questo runner (CMake, Release, solo CPU: i kernel AVX2 scelti a
+# runtime con CPUID, niente Vulkan) e tenuto nella cache di GitHub con la chiave fatta da
+# commit e modello della CPU, come Colibri e llama.cpp. Si compila solo liyab-cli, il
+# comando che i casi usano; la cartella del binario va in IUC_LIYAB.
+name: Liyab
+description: Liyab compilato per la CPU del runner, in IUC_LIYAB
+runs:
+  using: composite
+  steps:
+    - id: k
+      shell: bash
+      run: |
+        commit=$(tr -d ' \r\n' < liyab.txt)
+        cpu=$(grep -m1 'model name' /proc/cpuinfo | cut -d: -f2 | sha256sum | cut -c1-12)
+        echo "commit=$commit" >> "$GITHUB_OUTPUT"
+        echo "key=liyab-${commit:0:12}-$cpu-v1" >> "$GITHUB_OUTPUT"
+        echo "IUC_LIYAB=$HOME/liyab/build" >> "$GITHUB_ENV"
+    - id: cache
+      uses: actions/cache@v6
+      with:
+        path: ~/liyab/build/liyab-cli
+        key: ${{ steps.k.outputs.key }}
+    - if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      env:
+        COMMIT: ${{ steps.k.outputs.commit }}
+      run: |
+        set -euo pipefail
+        command -v ninja >/dev/null || sudo apt-get install -y -qq ninja-build >/dev/null
+        mkdir -p ~/liyab
+        cd ~/liyab
+        git init -q
+        git remote add origin https://github.com/andrei-borcea/liyab
+        git fetch -q --depth 1 origin "$COMMIT"
+        git checkout -q FETCH_HEAD
+        # Clang 17+ (il README di Liyab); il runner Ubuntu 24.04 ha Clang 18
+        cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
+          -DLIYAB_BUILD_TESTS=OFF -DLIYAB_BUILD_SHARED=OFF > "$RUNNER_TEMP/liyab-build.log" 2>&1 \
+          && cmake --build build --target liyab-cli --parallel "$(nproc)" >> "$RUNNER_TEMP/liyab-build.log" 2>&1 \
+          || { tail -60 "$RUNNER_TEMP/liyab-build.log"; exit 1; }
+        find build -mindepth 1 -maxdepth 1 ! -name liyab-cli -exec rm -rf {} +
+    - shell: bash
+      run: |
+        ls -la ~/liyab/build/liyab-cli
+        ~/liyab/build/liyab-cli --device || true

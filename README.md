@@ -21,6 +21,8 @@ dare il voto; i risultati vanno in `results/<versione>/`.
 | [`cases/velocita/`](cases/velocita) | velocità (pp512, tg128) e perplexity (wikitext-2) di Inga su quelle di llama.cpp |
 | [`cases/colibri-qualita/`](cases/colibri-qualita) | domande di ARC-Challenge e GSM8K a Inga e a Colibri sullo stesso GGUF |
 | [`cases/colibri-velocita/`](cases/colibri-velocita) | lettura del prompt e generazione di Inga su quelle di Colibri, dall'API in streaming |
+| [`cases/liyab-qualita/`](cases/liyab-qualita) | domande di ARC-Challenge e GSM8K a Inga e a Liyab sullo stesso GGUF |
+| [`cases/liyab-velocita/`](cases/liyab-velocita) | lettura del prompt e generazione di Inga su quelle di Liyab (liyab-cli --json) |
 | [`cases/colibri-moe/`](cases/colibri-moe) | una mixture of experts più grande della RAM data (Qwen3-30B-A3B, 8 GB) con gli esperti dal disco: Inga e Colibri |
 | [`cases/tokensave/`](cases/tokensave) | Inga come host MCP con gli strumenti di tokensave su un codice vero (itsdangerous): risposte, chiamate e token, con e senza strumenti |
 | [`cases/memoria/`](cases/memoria) | la memoria dei progetti fra una chat e l'altra, su un test pubblico (LongMemEval) |
@@ -33,7 +35,9 @@ e `velocita` fanno le stesse domande anche a llama.cpp (versione in
 [`llama-cpp.txt`](llama-cpp.txt), compilato sul runner) con lo stesso file del modello; i
 casi `colibri-*` a [Colibri](https://github.com/JustVugg/colibri) (commit in
 [`colibri.txt`](colibri.txt), compilato sul runner), che legge dal disco gli esperti
-delle mixture of experts.
+delle mixture of experts; i casi `liyab-*` a [Liyab](https://github.com/andrei-borcea/liyab)
+(commit in [`liyab.txt`](liyab.txt), compilato sul runner per la CPU), il motore C++ per
+GGUF pensato per telefono e Mac, misurato con il suo `liyab-cli --json`.
 
 In `summary.md` ogni caso dice nel titolo da che parte è il meglio: ↑ più alto è meglio
 (il voto di un caso, al massimo 100), ↓ più basso è meglio (ad esempio gli estratti del

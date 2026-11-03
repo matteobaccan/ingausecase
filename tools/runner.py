@@ -621,6 +621,7 @@ def main():
                                 "models_cache": size <= MODELS_CACHE_MAX,
                                 "llama_cpp": bool(c.get("llama_cpp")),
                                 "colibri": bool(c.get("colibri")),
+                                "liyab": bool(c.get("liyab")),
                                 "disk_gb": int(c.get("disco_gb", 0))})
         print(json.dumps({"include": include}))
         return 0
