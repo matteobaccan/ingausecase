@@ -18,7 +18,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | liyab-cli | 181.7 | - | - | 6:50 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-confronto | 157.1 | - | - | 11:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-moe | 207.8 | - | - | 54:58 | Qwen3-30B-A3B-Q4_K_M.gguf | ok |
-| liyab-qualita | 82.5 | - | - | 19:46 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| liyab-qualita | 82.5 | - | - | 16:39 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-velocita | 130.5 | - | - | 4:20 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | memoria | 20.0 | 20.0 | 0.0 | 52:54 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | pdf | 92.5 | 92.5 | 0.0 | 12:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
@@ -170,10 +170,10 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | Inga | ↑ | 82.5 | - | - |
 | Liyab | ↑ | 80.0 | - | - |
 | Inga meno Liyab | ↑ | **2.5** | - | - |
-| risposte con lo stesso testo | ≈ | 62.5 | - | - |
-| tempo di Liyab su quello di Inga | ↑ | **110.1** | - | - |
-| picco di memoria residente, Inga (MiB) | ↑ | 364360.0 | - | - |
-| picco di memoria residente, Liyab (MiB) | ↑ | 248580.0 | - | - |
+| risposte con lo stesso testo | ≈ | 55.0 | - | - |
+| tempo di Liyab su quello di Inga | ↑ | **113.0** | - | - |
+| picco di memoria residente, Inga (MiB) | ↑ | 363490.0 | - | - |
+| picco di memoria residente, Liyab (MiB) | ↑ | 248590.0 | - | - |
 | ARC, Inga | ↑ | 90.0 | - | - |
 | ARC, Liyab | ↑ | 90.0 | - | - |
 | GSM8K, Inga | ↑ | 75.0 | - | - |
