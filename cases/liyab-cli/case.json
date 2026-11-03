@@ -1,0 +1,9 @@
+{
+  "descrizione": "Velocità e memoria di Inga contro Liyab senza server HTTP, sullo stesso file e sulla stessa macchina: inga bench (pp512, tg128) e liyab-cli --json (con le sue bozze dal testo e senza), il picco di RAM di tutti e due misurato da /usr/bin/time",
+  "modello": "qwen3-4b",
+  "ctx": 4096,
+  "timeout_minuti": 60,
+  "liyab": true,
+  "avvia_inga": false,
+  "voci_meglio_basso": ["picco di memoria residente, Inga (MiB)", "picco di memoria residente, Liyab (MiB)", "picco di memoria, Inga su Liyab"]
+}
