@@ -361,7 +361,8 @@ def run_case(name, cfg, exe, models, args, version, outdir, inga_line=""):
                             os.path.join(work, "inga-serve.log"), cfg.get("argomenti_serve", []),
                             embedding_path, mcp)
             record["secondi_avvio"] = round(server.wait(cfg.get("attesa_avvio", 600)), 1)
-            env.update(INGA_URL=server.url, INGA_MODEL=server.model_id())
+            env.update(INGA_URL=server.url, INGA_MODEL=server.model_id(),
+                       IUC_INGA_PID=str(server.proc.pid))
             if ekey:
                 env["INGA_EMBEDDING_MODEL"] = server.choose_embedding_model()
             log(f"  run.py ({server.url}, model {env['INGA_MODEL']})")

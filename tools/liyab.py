@@ -33,6 +33,16 @@ def versione():
         return f.read().strip()
 
 
+def picco_inga():
+    """The peak resident memory (VmHWM) of the `inga serve` the runner started
+    (IUC_INGA_PID), and its children, in MiB; None without it."""
+    pid = os.environ.get("IUC_INGA_PID")
+    if not pid:
+        return None
+    import colibri
+    return round(colibri.picco_rss(int(pid)) / 2**20, 1)
+
+
 def chatml(messages):
     """Qwen3's ChatML for `messages`, ending with the assistant's turn opened (no
     thinking block: the instruct models of the cases do not think)."""

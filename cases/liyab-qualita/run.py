@@ -36,6 +36,7 @@ def main():
         inga_api.write_result({"stato": "errore", "motivo": str(e)})
         return
     righe = []
+    picco_liyab = 0
     for i, x in enumerate(elementi):
         mod, max_tok = casi[x["test"]]
         msgs = mod.messaggi(x["el"])
@@ -46,6 +47,7 @@ def main():
         try:
             g = liyab.genera(model, liyab.chatml(msgs), max_tok, ctx)
             tl, sl = g["risposta"], (g["turno"]["ttft_ms"] + g["turno"]["decode_ms"]) / 1000
+            picco_liyab = max(picco_liyab, g["turno"].get("peak_rss_mib") or 0)
         except (RuntimeError, OSError, ValueError, subprocess.TimeoutExpired) as e:
             tl, sl = f"[errore: {e}]", 0.0
         vi, vl = mod.voto(x["el"], ti), mod.voto(x["el"], tl)
@@ -59,7 +61,9 @@ def main():
     voci = {"Inga": gi, "Liyab": gl, "Inga meno Liyab": gi - gl,
             "risposte con lo stesso testo": sum(r["inga"]["testo"].strip() == r["liyab"]["testo"].strip()
                                                 for r in righe) / n,
-            "tempo di Liyab su quello di Inga": sum(r["liyab"]["secondi"] for r in righe) / ti_tot}
+            "tempo di Liyab su quello di Inga": sum(r["liyab"]["secondi"] for r in righe) / ti_tot,
+            "picco di memoria residente, Inga (MiB)": liyab.picco_inga(),
+            "picco di memoria residente, Liyab (MiB)": picco_liyab or None}
     for test in casi:
         mie = [r for r in righe if r["test"] == test]
         for m, nome in (("inga", "Inga"), ("liyab", "Liyab")):

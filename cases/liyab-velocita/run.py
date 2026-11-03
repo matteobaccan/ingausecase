@@ -10,7 +10,10 @@ Liyab lo stesso testo già passato dal ChatML di Qwen3. Una prova non misurata p
 tutti e due (per Liyab porta il file nella cache delle pagine: ogni prova è un processo).
 
 - lettura del prompt: i token del prompt sul tempo fino al primo token;
-- generazione: i token dopo il primo sul tempo dopo il primo.
+- generazione: i token dopo il primo sul tempo dopo il primo;
+- picco di memoria residente: VmHWM del processo `inga serve` (con i figli) dopo le sue
+  prove, e il `peak_rss_mib` di liyab-cli (il più alto delle prove). Tutti e due mappano
+  il GGUF: le pagine del file lette contano nella memoria residente di entrambi.
 
 Voto: la media dei due rapporti Inga su Liyab (1 = come Liyab). Le misure dei due motori
 non vengono dallo stesso orologio (lo streaming HTTP per Inga, le statistiche di
@@ -48,7 +51,8 @@ def velocita_liyab(model, ctx, frasi):
               f"({prove[-1]['pp']:.1f} tok/s), {ct} generati, {prove[-1]['tg']:.2f} tok/s "
               f"(liyab: {t['tokens_per_second']:.2f}), picco {t.get('peak_rss_mib')} MiB", flush=True)
     return {"pp": sum(p["pp"] for p in prove) / R, "tg": sum(p["tg"] for p in prove) / R,
-            "token_prompt": prove[0]["token_prompt"], "prove": prove}
+            "token_prompt": prove[0]["token_prompt"], "prove": prove,
+            "picco_rss_mib": max(p["picco_rss_mib"] or 0 for p in prove) or None}
 
 
 def main():
@@ -61,6 +65,8 @@ def main():
         frasi = confronto.frasi_per(None, None, P)
         print(f"Inga: {frasi} frasi per un prompt di circa {P} token", flush=True)
         out["inga"] = confronto.velocita(None, None, frasi, N, R)
+        out["inga"]["picco_rss_mib"] = liyab.picco_inga()
+        print(f"    picco di Inga: {out['inga']['picco_rss_mib']} MiB", flush=True)
         print("Liyab:", flush=True)
         out["liyab"] = velocita_liyab(model, ctx, frasi)
     except (RuntimeError, OSError, ValueError, KeyError, subprocess.TimeoutExpired) as e:
@@ -78,7 +84,9 @@ def main():
                  "lettura del prompt, Inga (tok/s)": out["inga"]["pp"],
                  "lettura del prompt, Liyab (tok/s)": out["liyab"]["pp"],
                  "generazione, Inga (tok/s)": out["inga"]["tg"],
-                 "generazione, Liyab (tok/s)": out["liyab"]["tg"]},
+                 "generazione, Liyab (tok/s)": out["liyab"]["tg"],
+                 "picco di memoria residente, Inga (MiB)": out["inga"]["picco_rss_mib"],
+                 "picco di memoria residente, Liyab (MiB)": out["liyab"]["picco_rss_mib"]},
         "dettagli": dict(out, frasi=frasi, token_generati=N, ripetizioni=R, liyab=liyab.versione(),
                          cpu=os.cpu_count(),
                          misura="Inga: API in streaming; Liyab: statistiche di liyab-cli --json"),
