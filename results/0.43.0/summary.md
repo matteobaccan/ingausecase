@@ -19,7 +19,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | liyab-confronto | 157.1 | - | - | 11:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-moe | 207.8 | - | - | 54:58 | Qwen3-30B-A3B-Q4_K_M.gguf | ok |
 | liyab-qualita | 82.5 | - | - | 19:46 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
-| liyab-velocita | 168.8 | - | - | 3:20 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| liyab-velocita | 130.5 | - | - | 4:20 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | memoria | 20.0 | 20.0 | 0.0 | 52:54 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | pdf | 92.5 | 92.5 | 0.0 | 12:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | prova | 100.0 | 100.0 | 0.0 | 0:02 | Qwen3-0.6B-Q8_0.gguf | ok |
@@ -183,13 +183,13 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 
 | Voce | Meglio | Valore | Valore precedente | Differenza |
 | --- | :---: | ---: | ---: | ---: |
-| lettura del prompt (~512 token), Inga su Liyab | ↑ | **247.5** | - | - |
-| generazione (128 token), Inga su Liyab | ↑ | 90.0 | - | - |
-| lettura del prompt, Inga (tok/s) | ↑ | 6336.1 | - | - |
-| lettura del prompt, Liyab (tok/s) | ↑ | 2559.7 | - | - |
-| generazione, Inga (tok/s) | ↑ | 916.1 | - | - |
-| generazione, Liyab (tok/s) | ↑ | 1017.5 | - | - |
-| picco di memoria residente, Inga (MiB) | ↑ | 302400.0 | - | - |
+| lettura del prompt (~512 token), Inga su Liyab | ↑ | **156.5** | - | - |
+| generazione (128 token), Inga su Liyab | ↑ | **104.6** | - | - |
+| lettura del prompt, Inga (tok/s) | ↑ | 3251.6 | - | - |
+| lettura del prompt, Liyab (tok/s) | ↑ | 2077.9 | - | - |
+| generazione, Inga (tok/s) | ↑ | 911.6 | - | - |
+| generazione, Liyab (tok/s) | ↑ | 871.6 | - | - |
+| picco di memoria residente, Inga (MiB) | ↑ | 302370.0 | - | - |
 | picco di memoria residente, Liyab (MiB) | ↑ | 250820.0 | - | - |
 
 ### memoria — ↑ più alto è meglio
