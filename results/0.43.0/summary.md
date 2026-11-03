@@ -15,7 +15,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | email | 82.5 | 82.5 | 0.0 | 3:16 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | gsm8k | 80.0 | **83.3** | -3.3 | 13:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | ifeval | 82.2 | 82.2 | 0.0 | 24:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
-| liyab-qualita | - | - | - | 20:09 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | errore |
+| liyab-qualita | 82.5 | - | - | 19:46 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | liyab-velocita | 168.8 | - | - | 3:20 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | memoria | 20.0 | 20.0 | 0.0 | 52:54 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | pdf | 92.5 | 92.5 | 0.0 | 12:58 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
@@ -108,6 +108,22 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | tempo di llama.cpp su quello di Inga | ↑ | 86.2 | 87.1 | -0.9 |
 | richieste con tutte le istruzioni, Inga | ↑ | 76.7 | 76.7 | 0.0 |
 | richieste con tutte le istruzioni, llama.cpp | ↑ | **80.0** | 80.0 | 0.0 |
+
+### liyab-qualita — ↑ più alto è meglio
+
+| Voce | Meglio | Valore | Valore precedente | Differenza |
+| --- | :---: | ---: | ---: | ---: |
+| Inga | ↑ | 82.5 | - | - |
+| Liyab | ↑ | 80.0 | - | - |
+| Inga meno Liyab | ↑ | **2.5** | - | - |
+| risposte con lo stesso testo | ≈ | 62.5 | - | - |
+| tempo di Liyab su quello di Inga | ↑ | **110.1** | - | - |
+| picco di memoria residente, Inga (MiB) | ↑ | 364360.0 | - | - |
+| picco di memoria residente, Liyab (MiB) | ↑ | 248580.0 | - | - |
+| ARC, Inga | ↑ | 90.0 | - | - |
+| ARC, Liyab | ↑ | 90.0 | - | - |
+| GSM8K, Inga | ↑ | 75.0 | - | - |
+| GSM8K, Liyab | ↑ | 70.0 | - | - |
 
 ### liyab-velocita — ↑ più alto è meglio
 
@@ -204,6 +220,5 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 ## Casi saltati o in errore
 
 - colibri-velocita: RuntimeError: risposta senza usage o senza token: {'prompt_tokens': 512, 'completion_tokens': 0, 'total_tokens': 512} ''
-- liyab-qualita: run.py exited with 1
 
 Macchina: x86_64, 4 CPU, Linux-7.0.0-1017-azure-x86_64-with-glibc2.39.
