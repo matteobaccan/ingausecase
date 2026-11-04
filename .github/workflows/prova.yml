@@ -9,7 +9,7 @@
 #   virgole; vuoto = tutti);
 # - in parallelo: un job per ogni caso e modello (`runner.py --matrix`), ognuno compila
 #   Inga per conto suo (il binario non esce mai dal suo runner) e, per i casi che lo
-#   chiedono, llama.cpp o Colibri (e, per i modelli grandi, libera prima spazio sul
+#   chiedono, llama.cpp, Colibri o Liyab (e, per i modelli grandi, libera prima spazio sul
 #   disco); un ultimo job raccoglie i risultati, scrive un riepilogo per modello,
 #   confrontato con l'ultima release in results/, e lo mette nel riepilogo della run.
 #   I risultati non vanno sul ramo `cases`: restano come artifact (solo i JSON e i log,
@@ -131,6 +131,11 @@ jobs:
       - name: Colibri
         if: matrix.colibri
         uses: ./.github/actions/colibri
+      - name: Liyab
+        if: matrix.liyab
+        # una build che non riesce non ferma il job: il caso si dà come saltato
+        continue-on-error: true
+        uses: ./.github/actions/liyab
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
