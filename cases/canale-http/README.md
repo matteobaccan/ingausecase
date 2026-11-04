@@ -19,4 +19,6 @@ Prima esecuzione (Inga 0.43.0, 4 vCPU, i cinque modi iniziali): il canale HTTP n
 
 Seconda esecuzione (0.43.0, altro runner a 4 vCPU): `bench` 47,0 tok/s, `bench -d 512` 29,1, `run` 28,2, API 27,2, `run` con prompt corto 41,9 (Qwen3-0.6B); sul 4B 12,0 / 9,8 / 9,3 / 9,7 / 10,0. Lo scarto è l'attenzione in generazione sulla cache lunga; 3 thread contro 2 non cambiano niente su questo runner. Da qui, per ogni modello, `inga bench --profile -d 0` e `-d 512`: il tempo per operazione per token (nei dettagli, `profili`).
 
+Dalla 0.44 (build di prova): per ogni modello anche `inga bench --ab debug.attn_f16=false` a profondità 512 e 2048, la generazione con l'attenzione che legge la cache f16 direttamente dai suoi bit contro quella che la legge posizione per posizione come prima, nello stesso processo e a turni ABBA (le due danno gli stessi bit: `--ab` lo controlla); su una release senza la chiave la misura è saltata.
+
 Voto: la media, sui due modelli, della generazione in streaming vista dal client sulla generazione di `bench` (1 = il canale non costa niente). I dettagli in [`run.py`](run.py).

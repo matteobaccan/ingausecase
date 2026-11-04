@@ -65,6 +65,25 @@ def profilo(model, d):
     return {"tg": row["avg_ts"], "profile": row.get("profile")}
 
 
+def ab_f16(model, d):
+    """`inga bench --ab debug.attn_f16=false` at depth d: the CPU's attention reading
+    the f16 cache straight from its bits (0.44.0) against reading it position by
+    position into a copy (before), in the same process, runs in ABBA order; None for a
+    build without the key (it fails)."""
+    try:
+        so, _, _ = liyab.con_time([os.environ["IUC_INGA"], "bench", model, "-p", "0", "-n", str(N),
+                                   "-d", str(d), "-r", "4", "--ab", "debug.attn_f16=false", "--json"])
+    except RuntimeError:
+        return None
+    rows = [x for x in json.loads(so[so.index("["):]) if x.get("n_gen") == N]
+    by = {x.get("ab_variant"): x for x in rows}
+    a = by.get("default")
+    b = next((x for k, x in by.items() if k != "default"), None)
+    if not a or not b:
+        return None
+    return {"f16": a["avg_ts"], "copia": b["avg_ts"], "f16_su_copia": a["avg_ts"] / b["avg_ts"]}
+
+
 def run_giro(model, ctx, frasi, r):
     home = os.path.join(inga_api.work_dir(), "inga-home-run")
     os.makedirs(home, exist_ok=True)
@@ -180,12 +199,18 @@ def main():
             agg = {k: {m: media([g[k].get(m) for g in giri])
                        for m in ("pp", "tg", "tg_motore", "pp_motore", "picco_mib")} for k in MODI}
             profili = {str(d): profilo(model, d) for d in (0, P)}
+            ab = {str(d): ab_f16(model, d) for d in (P, 4 * P)}
+            for d, x in ab.items():
+                if x:
+                    print(f"  attenzione f16 a d={d}: {x['f16']:.2f} tok/s contro {x['copia']:.2f} "
+                          f"letta per posizione ({x['f16_su_copia']:.3f}x)", flush=True)
+                    voci[f"{key}: generazione a d={d}, attenzione f16 su quella per posizione"] = x["f16_su_copia"]
             for d, pr in profili.items():
                 ops = sorted((pr.get("profile") or {}).get("ops") or [], key=lambda o: -o["ns_per_token"])
                 print(f"  profilo d={d}: {pr['tg']:.2f} tok/s, "
                       + ", ".join(f"{o['op']} {o['ns_per_token'] / 1e6:.2f} ms" for o in ops[:6]), flush=True)
             out[key] = {"giri": giri, "medie": agg, "frasi": frasi, "threads_decode_meno": meno[1],
-                        "profili": profili}
+                        "profili": profili, "ab_attn_f16": ab}
             b = agg["bench"]["tg"]
             for chi in MODI:
                 voci[f"{key}: generazione {chi}, tok/s"] = agg[chi]["tg"]
