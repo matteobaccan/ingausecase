@@ -17,4 +17,6 @@ Il caso nasce dai risultati di [`liyab-confronto`](../liyab-confronto) su Inga 0
 
 Prima esecuzione (Inga 0.43.0, 4 vCPU, i cinque modi iniziali): il canale HTTP non costa niente, il client vede la stessa velocità del motore (Qwen3-0.6B: 21,9 tok/s in streaming contro 22,1 del motore; `inga run -p` 21,3) e lo scarto è tutto fra `bench` (34,2) e la sessione vera; `--threads-decode 3` batte il default (23,2 contro 21,9; sul 4B 7,5 contro 6,2). Da qui `bench_d`, `bench_t` e `run_corto`: separano la cache lunga dal lavoro per token della sessione.
 
+Seconda esecuzione (0.43.0, altro runner a 4 vCPU): `bench` 47,0 tok/s, `bench -d 512` 29,1, `run` 28,2, API 27,2, `run` con prompt corto 41,9 (Qwen3-0.6B); sul 4B 12,0 / 9,8 / 9,3 / 9,7 / 10,0. Lo scarto è l'attenzione in generazione sulla cache lunga; 3 thread contro 2 non cambiano niente su questo runner. Da qui, per ogni modello, `inga bench --profile -d 0` e `-d 512`: il tempo per operazione per token (nei dettagli, `profili`).
+
 Voto: la media, sui due modelli, della generazione in streaming vista dal client sulla generazione di `bench` (1 = il canale non costa niente). I dettagli in [`run.py`](run.py).

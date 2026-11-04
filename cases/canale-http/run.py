@@ -55,6 +55,16 @@ def bench_giro(model, extra=()):
             "picco_mib": picco}
 
 
+def profilo(model, d):
+    """`inga bench --profile` at depth d: the time per operation kind per generated
+    token (the tg row's profile), so the share of the attention at depth P shows."""
+    so, _, _ = liyab.con_time([os.environ["IUC_INGA"], "bench", model, "-p", "0", "-n", str(N), "-d", str(d),
+                               "-r", "1", "--profile", "--json"])
+    rows = json.loads(so[so.index("["):])
+    row = next(x for x in rows if x["n_gen"] == N)
+    return {"tg": row["avg_ts"], "profile": row.get("profile")}
+
+
 def run_giro(model, ctx, frasi, r):
     home = os.path.join(inga_api.work_dir(), "inga-home-run")
     os.makedirs(home, exist_ok=True)
@@ -169,7 +179,13 @@ def main():
                                   for k, v in g.items()), flush=True)
             agg = {k: {m: media([g[k].get(m) for g in giri])
                        for m in ("pp", "tg", "tg_motore", "pp_motore", "picco_mib")} for k in MODI}
-            out[key] = {"giri": giri, "medie": agg, "frasi": frasi, "threads_decode_meno": meno[1]}
+            profili = {str(d): profilo(model, d) for d in (0, P)}
+            for d, pr in profili.items():
+                ops = sorted((pr.get("profile") or {}).get("ops") or [], key=lambda o: -o["ns_per_token"])
+                print(f"  profilo d={d}: {pr['tg']:.2f} tok/s, "
+                      + ", ".join(f"{o['op']} {o['ns_per_token'] / 1e6:.2f} ms" for o in ops[:6]), flush=True)
+            out[key] = {"giri": giri, "medie": agg, "frasi": frasi, "threads_decode_meno": meno[1],
+                        "profili": profili}
             b = agg["bench"]["tg"]
             for chi in MODI:
                 voci[f"{key}: generazione {chi}, tok/s"] = agg[chi]["tg"]
