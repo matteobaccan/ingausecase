@@ -7,50 +7,68 @@
   "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
   "ctx": 4096,
   "seed": 42,
-  "data": "2026-11-04T07:37:14Z",
+  "data": "2026-11-04T08:06:31Z",
   "stato": "ok",
-  "voto": 0.7464477862693388,
+  "voto": 0.6924520646706982,
   "voci": {
-    "qwen3-0.6b: generazione bench, tok/s": 34.2232861079207,
-    "qwen3-0.6b: prompt bench, tok/s": 406.38487290453,
-    "qwen3-0.6b: generazione run, tok/s": 21.3,
-    "qwen3-0.6b: generazione run su bench": 0.6223832490203297,
-    "qwen3-0.6b: prompt run, tok/s": 399.40000000000003,
-    "qwen3-0.6b: generazione api, tok/s": 21.873971278226524,
-    "qwen3-0.6b: generazione api su bench": 0.6391546156394365,
-    "qwen3-0.6b: generazione api, il motore, tok/s": 22.04877294352842,
-    "qwen3-0.6b: generazione api, il motore su bench": 0.6442622977232281,
-    "qwen3-0.6b: prompt api, tok/s": 407.1074889864853,
-    "qwen3-0.6b: generazione stream, tok/s": 21.91367792921182,
-    "qwen3-0.6b: generazione stream su bench": 0.640314838852955,
-    "qwen3-0.6b: generazione stream, il motore, tok/s": 22.085649119635544,
-    "qwen3-0.6b: generazione stream, il motore su bench": 0.6453398148263735,
-    "qwen3-0.6b: prompt stream, tok/s": 401.1112875684681,
-    "qwen3-0.6b: generazione stream_meno, tok/s": 23.195001981615746,
-    "qwen3-0.6b: generazione stream_meno su bench": 0.6777549621761031,
-    "qwen3-0.6b: generazione stream_meno, il motore, tok/s": 23.376649947562424,
-    "qwen3-0.6b: generazione stream_meno, il motore su bench": 0.6830626922805081,
-    "qwen3-0.6b: prompt stream_meno, tok/s": 421.75123700034834,
-    "qwen3-4b: generazione bench, tok/s": 7.26447454771665,
-    "qwen3-4b: prompt bench, tok/s": 72.31354551155079,
-    "qwen3-4b: generazione run, tok/s": 5.966666666666666,
-    "qwen3-4b: generazione run su bench": 0.8213486918392594,
-    "qwen3-4b: prompt run, tok/s": 71.43333333333334,
-    "qwen3-4b: generazione api, tok/s": 6.173896081682005,
-    "qwen3-4b: generazione api su bench": 0.8498751067443092,
-    "qwen3-4b: generazione api, il motore, tok/s": 6.222847133019652,
-    "qwen3-4b: generazione api, il motore su bench": 0.8566135227186666,
-    "qwen3-4b: prompt api, tok/s": 72.27409817769332,
-    "qwen3-4b: generazione stream, tok/s": 6.19355103973352,
-    "qwen3-4b: generazione stream su bench": 0.8525807336857227,
-    "qwen3-4b: generazione stream, il motore, tok/s": 6.242379785482123,
-    "qwen3-4b: generazione stream, il motore su bench": 0.859302313536801,
-    "qwen3-4b: prompt stream, tok/s": 73.21520464756999,
-    "qwen3-4b: generazione stream_meno, tok/s": 7.470844458730738,
-    "qwen3-4b: generazione stream_meno su bench": 1.0284080988457664,
-    "qwen3-4b: generazione stream_meno, il motore, tok/s": 7.529736887075138,
-    "qwen3-4b: generazione stream_meno, il motore su bench": 1.03651500705469,
-    "qwen3-4b: prompt stream_meno, tok/s": 73.32502150278482
+    "qwen3-0.6b: generazione bench, tok/s": 46.957512660360294,
+    "qwen3-0.6b: prompt bench, tok/s": 391.8032908863416,
+    "qwen3-0.6b: generazione bench_d, tok/s": 29.118913380908424,
+    "qwen3-0.6b: generazione bench_d su bench": 0.6201119209938366,
+    "qwen3-0.6b: prompt bench_d, tok/s": 291.3818852360602,
+    "qwen3-0.6b: generazione bench_t, tok/s": 47.34661187373806,
+    "qwen3-0.6b: generazione bench_t su bench": 1.0082861972735244,
+    "qwen3-0.6b: prompt bench_t, tok/s": 365.59423015566773,
+    "qwen3-0.6b: generazione run, tok/s": 28.233333333333334,
+    "qwen3-0.6b: generazione run su bench": 0.6012527438909007,
+    "qwen3-0.6b: prompt run, tok/s": 383.8333333333333,
+    "qwen3-0.6b: generazione run_corto, tok/s": 41.93333333333333,
+    "qwen3-0.6b: generazione run_corto su bench": 0.8930058462984096,
+    "qwen3-0.6b: prompt run_corto, tok/s": 395.6333333333334,
+    "qwen3-0.6b: generazione api, tok/s": 26.899338799587785,
+    "qwen3-0.6b: generazione api su bench": 0.5728442005467458,
+    "qwen3-0.6b: generazione api, il motore, tok/s": 27.113871207213517,
+    "qwen3-0.6b: generazione api, il motore su bench": 0.5774128498527136,
+    "qwen3-0.6b: prompt api, tok/s": 386.7064682821015,
+    "qwen3-0.6b: generazione stream, tok/s": 27.245240566152006,
+    "qwen3-0.6b: generazione stream su bench": 0.5802104716068442,
+    "qwen3-0.6b: generazione stream, il motore, tok/s": 27.45824780785738,
+    "qwen3-0.6b: generazione stream, il motore su bench": 0.5847466412128887,
+    "qwen3-0.6b: prompt stream, tok/s": 387.43242076574035,
+    "qwen3-0.6b: generazione stream_meno, tok/s": 27.231960415789427,
+    "qwen3-0.6b: generazione stream_meno su bench": 0.5799276595580325,
+    "qwen3-0.6b: generazione stream_meno, il motore, tok/s": 27.441890758945856,
+    "qwen3-0.6b: generazione stream_meno, il motore su bench": 0.5843983040036793,
+    "qwen3-0.6b: prompt stream_meno, tok/s": 383.39758986005313,
+    "qwen3-4b: generazione bench, tok/s": 11.959569465525801,
+    "qwen3-4b: prompt bench, tok/s": 65.22484553293687,
+    "qwen3-4b: generazione bench_d, tok/s": 9.841266856624538,
+    "qwen3-4b: generazione bench_d su bench": 0.8228780212358479,
+    "qwen3-4b: prompt bench_d, tok/s": 57.68831604703277,
+    "qwen3-4b: generazione bench_t, tok/s": 12.034515779720378,
+    "qwen3-4b: generazione bench_t su bench": 1.0062666398159745,
+    "qwen3-4b: prompt bench_t, tok/s": 60.978385593301944,
+    "qwen3-4b: generazione run, tok/s": 9.333333333333334,
+    "qwen3-4b: generazione run su bench": 0.7804071342398441,
+    "qwen3-4b: prompt run, tok/s": 63.53333333333333,
+    "qwen3-4b: generazione run_corto, tok/s": 9.966666666666667,
+    "qwen3-4b: generazione run_corto su bench": 0.8333633326346905,
+    "qwen3-4b: prompt run_corto, tok/s": 62.666666666666664,
+    "qwen3-4b: generazione api, tok/s": 9.678248534256538,
+    "qwen3-4b: generazione api su bench": 0.809247236044298,
+    "qwen3-4b: generazione api, il motore, tok/s": 9.755011094017409,
+    "qwen3-4b: generazione api, il motore su bench": 0.8156657413242869,
+    "qwen3-4b: prompt api, tok/s": 63.11025096245634,
+    "qwen3-4b: generazione stream, tok/s": 9.623789698144419,
+    "qwen3-4b: generazione stream su bench": 0.804693657734552,
+    "qwen3-4b: generazione stream, il motore, tok/s": 9.70408738453465,
+    "qwen3-4b: generazione stream, il motore su bench": 0.8114077528047546,
+    "qwen3-4b: prompt stream, tok/s": 63.186927218097274,
+    "qwen3-4b: generazione stream_meno, tok/s": 9.819622941235146,
+    "qwen3-4b: generazione stream_meno su bench": 0.8210682641662659,
+    "qwen3-4b: generazione stream_meno, il motore, tok/s": 9.897020263299803,
+    "qwen3-4b: generazione stream_meno, il motore su bench": 0.8275398451280855,
+    "qwen3-4b: prompt stream_meno, tok/s": 62.73052911805021
   },
   "dettagli": {
     "modelli": {
@@ -58,193 +76,265 @@
         "giri": [
           {
             "bench": {
-              "pp": 408.6512970524725,
-              "tg": 33.09891751627108,
-              "picco_mib": 1287.9
+              "pp": 385.13289450193105,
+              "tg": 45.24302505814351,
+              "picco_mib": 1288.3
+            },
+            "bench_d": {
+              "pp": 289.3137002622785,
+              "tg": 28.691809425689684,
+              "picco_mib": 1134.7
+            },
+            "bench_t": {
+              "pp": 366.1971828769713,
+              "tg": 46.653322387705785,
+              "picco_mib": 1070.0
             },
             "run": {
-              "pp": 411.0,
-              "tg": 21.4,
+              "pp": 382.7,
+              "tg": 28.3,
               "token_prompt": 508,
               "token_generati": 128,
-              "picco_mib": 986.0
+              "picco_mib": 986.4
+            },
+            "run_corto": {
+              "pp": 396.7,
+              "tg": 39.8,
+              "token_prompt": 59,
+              "token_generati": 128,
+              "picco_mib": 914.1
             },
             "api": {
-              "pp": 380.36117968425566,
-              "tg": 21.615707858355748,
+              "pp": 384.83798471170974,
+              "tg": 26.232490055074127,
               "token_prompt": 512,
               "token_generati": 128,
-              "secondi": 7.221,
+              "secondi": 6.172,
               "picco_mib": 1049.0,
-              "tg_motore": 21.78848054761778,
-              "pp_motore": 376.36547486232416,
-              "ttft_ms_motore": 1346.089
+              "tg_motore": 26.442092657133767,
+              "pp_motore": 380.79213777238954,
+              "ttft_ms_motore": 1330.43
             },
             "stream": {
-              "pp": 387.45014620510796,
-              "tg": 21.496700082278682,
+              "pp": 386.21297174834746,
+              "tg": 27.227125680583274,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "ttft": 1.326,
+              "secondi": 5.99,
+              "pezzi": 128,
+              "picco_mib": 1049.0,
+              "tg_motore": 27.43969673993589,
+              "pp_motore": 382.4099332821179,
+              "ttft_ms_motore": 1324.967
+            },
+            "stream_meno": {
+              "pp": 381.92590981232007,
+              "tg": 27.258618243144106,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "ttft": 1.341,
+              "secondi": 6.0,
+              "pezzi": 128,
+              "picco_mib": 1077.7,
+              "tg_motore": 27.469433759387318,
+              "pp_motore": 378.266397906846,
+              "ttft_ms_motore": 1339.511
+            }
+          },
+          {
+            "bench_d": {
+              "pp": 290.11120235498765,
+              "tg": 29.480219197387644,
+              "picco_mib": 1134.1
+            },
+            "bench_t": {
+              "pp": 370.6794809655844,
+              "tg": 47.5740992631693,
+              "picco_mib": 1074.2
+            },
+            "run": {
+              "pp": 383.5,
+              "tg": 27.8,
+              "token_prompt": 506,
+              "token_generati": 128,
+              "picco_mib": 987.2
+            },
+            "run_corto": {
+              "pp": 386.5,
+              "tg": 42.0,
+              "token_prompt": 59,
+              "token_generati": 128,
+              "picco_mib": 913.6
+            },
+            "api": {
+              "pp": 388.60192457008054,
+              "tg": 27.075266081921317,
+              "token_prompt": 510,
+              "token_generati": 128,
+              "secondi": 6.003,
+              "picco_mib": 1039.5,
+              "tg_motore": 27.291517769582697,
+              "pp_motore": 385.2142742844279,
+              "ttft_ms_motore": 1312.397
+            },
+            "stream": {
+              "pp": 388.5724499618709,
+              "tg": 27.571062105399765,
+              "token_prompt": 510,
+              "token_generati": 128,
+              "ttft": 1.312,
+              "secondi": 5.919,
+              "pezzi": 128,
+              "picco_mib": 1039.5,
+              "tg_motore": 27.786504513031748,
+              "pp_motore": 385.45436081947804,
+              "ttft_ms_motore": 1311.743
+            },
+            "stream_meno": {
+              "pp": 384.99076396589754,
+              "tg": 27.6281021716891,
+              "token_prompt": 510,
+              "token_generati": 128,
+              "ttft": 1.325,
+              "secondi": 5.921,
+              "pezzi": 128,
+              "picco_mib": 1049.0,
+              "tg_motore": 27.8391883690641,
+              "pp_motore": 382.2627379680637,
+              "ttft_ms_motore": 1323.767
+            },
+            "bench": {
+              "pp": 403.3411183788646,
+              "tg": 47.59090770666602,
+              "picco_mib": 1329.7
+            }
+          },
+          {
+            "bench_t": {
+              "pp": 359.9060266244476,
+              "tg": 47.81241397033912,
+              "picco_mib": 1069.9
+            },
+            "run": {
+              "pp": 385.3,
+              "tg": 28.6,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "picco_mib": 984.4
+            },
+            "run_corto": {
+              "pp": 403.7,
+              "tg": 44.0,
+              "token_prompt": 60,
+              "token_generati": 128,
+              "picco_mib": 913.6
+            },
+            "api": {
+              "pp": 386.6794955645143,
+              "tg": 27.390260261767917,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "secondi": 5.961,
+              "picco_mib": 1049.0,
+              "tg_motore": 27.608003194924088,
+              "pp_motore": 383.36994937275426,
+              "ttft_ms_motore": 1324.094
+            },
+            "stream": {
+              "pp": 387.5118405870028,
+              "tg": 26.937533912472976,
               "token_prompt": 512,
               "token_generati": 128,
               "ttft": 1.321,
-              "secondi": 7.229,
+              "secondi": 6.036,
               "pezzi": 128,
               "picco_mib": 1049.0,
-              "tg_motore": 21.665602520257984,
-              "pp_motore": 383.6396838620673,
-              "ttft_ms_motore": 1320.728
+              "tg_motore": 27.1485421706045,
+              "pp_motore": 384.40718476165273,
+              "ttft_ms_motore": 1320.618
             },
             "stream_meno": {
-              "pp": 407.7931007415936,
-              "tg": 23.357027524147586,
+              "pp": 383.2760958019418,
+              "tg": 26.809160832535067,
               "token_prompt": 512,
               "token_generati": 128,
-              "ttft": 1.256,
-              "secondi": 6.693,
+              "ttft": 1.336,
+              "secondi": 6.073,
               "pezzi": 128,
-              "picco_mib": 1058.6,
-              "tg_motore": 23.540074756505977,
-              "pp_motore": 403.8136853964701,
-              "ttft_ms_motore": 1254.779
-            }
-          },
-          {
-            "run": {
-              "pp": 400.3,
-              "tg": 20.8,
-              "token_prompt": 506,
-              "token_generati": 128,
-              "picco_mib": 986.1
-            },
-            "api": {
-              "pp": 430.102085995117,
-              "tg": 21.944913390780187,
-              "token_prompt": 510,
-              "token_generati": 128,
-              "secondi": 6.973,
-              "picco_mib": 1058.6,
-              "tg_motore": 22.120259259676054,
-              "pp_motore": 426.498907141734,
-              "ttft_ms_motore": 1185.765
-            },
-            "stream": {
-              "pp": 380.9260306876375,
-              "tg": 22.00467645185908,
-              "token_prompt": 510,
-              "token_generati": 128,
-              "ttft": 1.339,
-              "secondi": 7.11,
-              "pezzi": 128,
-              "picco_mib": 1039.5,
-              "tg_motore": 22.177429908749524,
-              "pp_motore": 377.9271299063584,
-              "ttft_ms_motore": 1338.047
-            },
-            "stream_meno": {
-              "pp": 428.9613475874222,
-              "tg": 23.31680440319785,
-              "token_prompt": 510,
-              "token_generati": 128,
-              "ttft": 1.189,
-              "secondi": 6.636,
-              "pezzi": 128,
-              "picco_mib": 1058.6,
-              "tg_motore": 23.500268735854362,
-              "pp_motore": 425.6232803507838,
-              "ttft_ms_motore": 1188.098
+              "picco_mib": 1068.1,
+              "tg_motore": 27.017050148386147,
+              "pp_motore": 380.3101933106136,
+              "ttft_ms_motore": 1335.01
             },
             "bench": {
-              "pp": 406.49759732926,
-              "tg": 34.19964783671445,
-              "picco_mib": 1285.7
-            }
-          },
-          {
-            "api": {
-              "pp": 410.8592012800832,
-              "tg": 22.06129258554364,
-              "token_prompt": 512,
-              "token_generati": 128,
-              "secondi": 7.003,
-              "picco_mib": 1049.0,
-              "tg_motore": 22.237579023291428,
-              "pp_motore": 407.36743629672395,
-              "ttft_ms_motore": 1246.169
+              "pp": 386.93585977822914,
+              "tg": 48.03860521627134,
+              "picco_mib": 1287.6
             },
-            "stream": {
-              "pp": 434.95768581265884,
-              "tg": 22.239657253497697,
-              "token_prompt": 512,
-              "token_generati": 128,
-              "ttft": 1.177,
-              "secondi": 6.888,
-              "pezzi": 128,
-              "picco_mib": 1058.6,
-              "tg_motore": 22.41391492989912,
-              "pp_motore": 431.583093836709,
-              "ttft_ms_motore": 1176.369
-            },
-            "stream_meno": {
-              "pp": 428.49926267202926,
-              "tg": 22.9111740175018,
-              "token_prompt": 512,
-              "token_generati": 128,
-              "ttft": 1.195,
-              "secondi": 6.738,
-              "pezzi": 128,
-              "picco_mib": 1077.7,
-              "tg_motore": 23.089606350326928,
-              "pp_motore": 426.1341114751774,
-              "ttft_ms_motore": 1191.71
-            },
-            "bench": {
-              "pp": 404.00572433185766,
-              "tg": 35.37129297077658,
-              "picco_mib": 1329.8
-            },
-            "run": {
-              "pp": 386.9,
-              "tg": 21.7,
-              "token_prompt": 508,
-              "token_generati": 128,
-              "picco_mib": 984.5
+            "bench_d": {
+              "pp": 294.7207530909145,
+              "tg": 29.184711519647944,
+              "picco_mib": 1132.4
             }
           }
         ],
         "medie": {
           "bench": {
-            "pp": 406.38487290453,
-            "tg": 34.2232861079207,
+            "pp": 391.8032908863416,
+            "tg": 46.957512660360294,
             "tg_motore": null,
             "pp_motore": null,
-            "picco_mib": 1301.1333333333334
+            "picco_mib": 1301.8666666666666
+          },
+          "bench_d": {
+            "pp": 291.3818852360602,
+            "tg": 29.118913380908424,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 1133.7333333333333
+          },
+          "bench_t": {
+            "pp": 365.59423015566773,
+            "tg": 47.34661187373806,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 1071.3666666666668
           },
           "run": {
-            "pp": 399.40000000000003,
-            "tg": 21.3,
+            "pp": 383.8333333333333,
+            "tg": 28.233333333333334,
             "tg_motore": null,
             "pp_motore": null,
-            "picco_mib": 985.5333333333333
+            "picco_mib": 986.0
+          },
+          "run_corto": {
+            "pp": 395.6333333333334,
+            "tg": 41.93333333333333,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 913.7666666666668
           },
           "api": {
-            "pp": 407.1074889864853,
-            "tg": 21.873971278226524,
-            "tg_motore": 22.04877294352842,
-            "pp_motore": 403.41060610026074,
-            "picco_mib": 1052.2
+            "pp": 386.7064682821015,
+            "tg": 26.899338799587785,
+            "tg_motore": 27.113871207213517,
+            "pp_motore": 383.1254538098572,
+            "picco_mib": 1045.8333333333333
           },
           "stream": {
-            "pp": 401.1112875684681,
-            "tg": 21.91367792921182,
-            "tg_motore": 22.085649119635544,
-            "pp_motore": 397.7166358683782,
-            "picco_mib": 1049.0333333333333
+            "pp": 387.43242076574035,
+            "tg": 27.245240566152006,
+            "tg_motore": 27.45824780785738,
+            "pp_motore": 384.0904929544162,
+            "picco_mib": 1045.8333333333333
           },
           "stream_meno": {
-            "pp": 421.75123700034834,
-            "tg": 23.195001981615746,
-            "tg_motore": 23.376649947562424,
-            "pp_motore": 418.5236924074771,
-            "picco_mib": 1064.9666666666665
+            "pp": 383.39758986005313,
+            "tg": 27.231960415789427,
+            "tg_motore": 27.441890758945856,
+            "pp_motore": 380.2797763951744,
+            "picco_mib": 1064.9333333333334
           }
         },
         "frasi": 33,
@@ -254,193 +344,265 @@
         "giri": [
           {
             "bench": {
-              "pp": 71.7796316777732,
-              "tg": 7.212017375492687,
-              "picco_mib": 2854.7
+              "pp": 65.33775761612421,
+              "tg": 11.812485685649456,
+              "picco_mib": 2854.5
+            },
+            "bench_d": {
+              "pp": 57.600701169735295,
+              "tg": 9.821033974874881,
+              "picco_mib": 2708.8
+            },
+            "bench_t": {
+              "pp": 60.60920360364227,
+              "tg": 12.05885036237656,
+              "picco_mib": 2636.5
             },
             "run": {
-              "pp": 72.4,
-              "tg": 6.1,
+              "pp": 63.8,
+              "tg": 9.4,
               "token_prompt": 508,
               "token_generati": 128,
-              "picco_mib": 2660.6
+              "picco_mib": 2660.7
+            },
+            "run_corto": {
+              "pp": 62.4,
+              "tg": 10.1,
+              "token_prompt": 59,
+              "token_generati": 128,
+              "picco_mib": 2518.7
             },
             "api": {
-              "pp": 72.53169156612056,
-              "tg": 6.172187743967036,
+              "pp": 62.8255519929675,
+              "tg": 9.663916690865427,
               "token_prompt": 508,
               "token_generati": 128,
-              "secondi": 27.58,
+              "secondi": 21.228,
               "picco_mib": 2737.0,
-              "tg_motore": 6.221141497920284,
-              "pp_motore": 71.69197933869202,
-              "ttft_ms_motore": 7003.835
+              "tg_motore": 9.740751803884157,
+              "pp_motore": 62.09474179867317,
+              "ttft_ms_motore": 8085.882
             },
             "stream": {
-              "pp": 75.21567051902746,
-              "tg": 6.2378297865680565,
+              "pp": 63.1118935682813,
+              "tg": 9.573972324882346,
               "token_prompt": 508,
               "token_generati": 128,
-              "ttft": 6.754,
-              "secondi": 27.114,
+              "ttft": 8.049,
+              "secondi": 21.314,
               "pezzi": 128,
               "picco_mib": 2737.0,
-              "tg_motore": 6.287081382820037,
-              "pp_motore": 74.35357535172389,
-              "ttft_ms_motore": 6753.292
+              "tg_motore": 9.649396639330574,
+              "pp_motore": 62.3847522246708,
+              "ttft_ms_motore": 8048.527
             },
             "stream_meno": {
-              "pp": 72.83290044241078,
-              "tg": 7.4933278551765135,
+              "pp": 62.890947251351314,
+              "tg": 9.855706173370848,
               "token_prompt": 508,
               "token_generati": 128,
-              "ttft": 6.975,
-              "secondi": 23.923,
+              "ttft": 8.077,
+              "secondi": 20.963,
               "pezzi": 128,
               "picco_mib": 2737.0,
-              "tg_motore": 7.552421155811365,
-              "pp_motore": 71.99783311420381,
-              "ttft_ms_motore": 6974.208
+              "tg_motore": 9.933289620117819,
+              "pp_motore": 62.170024236847716,
+              "ttft_ms_motore": 8076.645
             }
           },
           {
+            "bench_d": {
+              "pp": 57.44606222293321,
+              "tg": 9.899580209035971,
+              "picco_mib": 2709.0
+            },
+            "bench_t": {
+              "pp": 60.81187602500332,
+              "tg": 11.883649568998942,
+              "picco_mib": 2636.5
+            },
             "run": {
-              "pp": 74.0,
-              "tg": 5.7,
+              "pp": 63.0,
+              "tg": 9.0,
               "token_prompt": 506,
               "token_generati": 128,
-              "picco_mib": 2660.4
+              "picco_mib": 2660.2
+            },
+            "run_corto": {
+              "pp": 61.6,
+              "tg": 10.1,
+              "token_prompt": 59,
+              "token_generati": 128,
+              "picco_mib": 2518.7
             },
             "api": {
-              "pp": 71.94894184577474,
-              "tg": 6.204721341589012,
+              "pp": 63.222332326815476,
+              "tg": 9.58129902079736,
               "token_prompt": 506,
               "token_generati": 128,
-              "secondi": 27.501,
+              "secondi": 21.258,
               "picco_mib": 2737.0,
-              "tg_motore": 6.253922509973126,
-              "pp_motore": 71.25383944967163,
-              "ttft_ms_motore": 7032.765
+              "tg_motore": 9.657466210418367,
+              "pp_motore": 62.61077447985258,
+              "ttft_ms_motore": 8003.501
             },
             "stream": {
-              "pp": 75.49950376571044,
-              "tg": 6.169578703005106,
+              "pp": 63.147379982133124,
+              "tg": 9.644541090498993,
               "token_prompt": 506,
               "token_generati": 128,
-              "ttft": 6.702,
-              "secondi": 27.287,
+              "ttft": 8.013,
+              "secondi": 21.181,
               "pezzi": 128,
               "picco_mib": 2737.0,
-              "tg_motore": 6.2181937769997235,
-              "pp_motore": 74.78040657485526,
-              "ttft_ms_motore": 6701.332
+              "tg_motore": 9.720645512530414,
+              "pp_motore": 62.5396453057775,
+              "ttft_ms_motore": 8012.37
             },
             "stream_meno": {
-              "pp": 75.2212962183506,
-              "tg": 7.502887041221566,
+              "pp": 62.70230996345868,
+              "tg": 9.62936450679948,
               "token_prompt": 506,
               "token_generati": 128,
-              "ttft": 6.727,
-              "secondi": 23.654,
+              "ttft": 8.07,
+              "secondi": 21.259,
               "pezzi": 128,
               "picco_mib": 2756.1,
-              "tg_motore": 7.562170606463164,
-              "pp_motore": 74.50526741302761,
-              "ttft_ms_motore": 6726.098
+              "tg_motore": 9.705239722165523,
+              "pp_motore": 62.10325394323951,
+              "ttft_ms_motore": 8069.22
             },
             "bench": {
-              "pp": 75.40144700516473,
-              "tg": 7.269678767219384,
+              "pp": 65.26429800674158,
+              "tg": 12.058016139695864,
+              "picco_mib": 2855.1
+            }
+          },
+          {
+            "bench_t": {
+              "pp": 61.514077151260246,
+              "tg": 12.161047407785631,
+              "picco_mib": 2637.0
+            },
+            "run": {
+              "pp": 63.8,
+              "tg": 9.6,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "picco_mib": 2660.7
+            },
+            "run_corto": {
+              "pp": 64.0,
+              "tg": 9.7,
+              "token_prompt": 60,
+              "token_generati": 128,
+              "picco_mib": 2518.8
+            },
+            "api": {
+              "pp": 63.28286856758605,
+              "tg": 9.789529891106822,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "secondi": 21.0,
+              "picco_mib": 2737.0,
+              "tg_motore": 9.866815267749702,
+              "pp_motore": 62.6767283123034,
+              "ttft_ms_motore": 8027.449
+            },
+            "stream": {
+              "pp": 63.30150810387738,
+              "tg": 9.652855679051916,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "ttft": 8.025,
+              "secondi": 21.182,
+              "pezzi": 128,
+              "picco_mib": 2737.0,
+              "tg_motore": 9.742220001742966,
+              "pp_motore": 62.6961879797084,
+              "ttft_ms_motore": 8024.444
+            },
+            "stream_meno": {
+              "pp": 62.598330139340625,
+              "tg": 9.973798143535108,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "ttft": 8.115,
+              "secondi": 20.849,
+              "pezzi": 128,
+              "picco_mib": 2737.0,
+              "tg_motore": 10.052531447616069,
+              "pp_motore": 62.00290609938292,
+              "ttft_ms_motore": 8114.45
+            },
+            "bench": {
+              "pp": 65.07248097594484,
+              "tg": 12.008206571232082,
               "picco_mib": 2855.2
-            }
-          },
-          {
-            "api": {
-              "pp": 72.34166112118467,
-              "tg": 6.144779159489967,
-              "token_prompt": 508,
-              "token_generati": 128,
-              "secondi": 27.69,
-              "picco_mib": 2737.0,
-              "tg_motore": 6.193477391165545,
-              "pp_motore": 71.64629590432786,
-              "ttft_ms_motore": 7022.233
             },
-            "stream": {
-              "pp": 68.93043965797209,
-              "tg": 6.173244629627396,
-              "token_prompt": 508,
-              "token_generati": 128,
-              "ttft": 7.37,
-              "secondi": 27.942,
-              "pezzi": 128,
-              "picco_mib": 2737.0,
-              "tg_motore": 6.2218641966266075,
-              "pp_motore": 68.27727234751696,
-              "ttft_ms_motore": 7368.982
-            },
-            "stream_meno": {
-              "pp": 71.92086784759307,
-              "tg": 7.416318479794137,
-              "token_prompt": 508,
-              "token_generati": 128,
-              "ttft": 7.063,
-              "secondi": 24.188,
-              "pezzi": 128,
-              "picco_mib": 2756.1,
-              "tg_motore": 7.4746188989508875,
-              "pp_motore": 71.24322308861161,
-              "ttft_ms_motore": 7062.087
-            },
-            "bench": {
-              "pp": 69.75955785171442,
-              "tg": 7.311727500437878,
-              "picco_mib": 2854.9
-            },
-            "run": {
-              "pp": 67.9,
-              "tg": 6.1,
-              "token_prompt": 508,
-              "token_generati": 128,
-              "picco_mib": 2660.6
+            "bench_d": {
+              "pp": 58.0181847484298,
+              "tg": 9.803186385962764,
+              "picco_mib": 2709.3
             }
           }
         ],
         "medie": {
           "bench": {
-            "pp": 72.31354551155079,
-            "tg": 7.26447454771665,
+            "pp": 65.22484553293687,
+            "tg": 11.959569465525801,
             "tg_motore": null,
             "pp_motore": null,
             "picco_mib": 2854.933333333333
           },
+          "bench_d": {
+            "pp": 57.68831604703277,
+            "tg": 9.841266856624538,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 2709.0333333333333
+          },
+          "bench_t": {
+            "pp": 60.978385593301944,
+            "tg": 12.034515779720378,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 2636.6666666666665
+          },
           "run": {
-            "pp": 71.43333333333334,
-            "tg": 5.966666666666666,
+            "pp": 63.53333333333333,
+            "tg": 9.333333333333334,
             "tg_motore": null,
             "pp_motore": null,
             "picco_mib": 2660.5333333333333
           },
+          "run_corto": {
+            "pp": 62.666666666666664,
+            "tg": 9.966666666666667,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 2518.733333333333
+          },
           "api": {
-            "pp": 72.27409817769332,
-            "tg": 6.173896081682005,
-            "tg_motore": 6.222847133019652,
-            "pp_motore": 71.53070489756384,
+            "pp": 63.11025096245634,
+            "tg": 9.678248534256538,
+            "tg_motore": 9.755011094017409,
+            "pp_motore": 62.46074819694305,
             "picco_mib": 2737.0
           },
           "stream": {
-            "pp": 73.21520464756999,
-            "tg": 6.19355103973352,
-            "tg_motore": 6.242379785482123,
-            "pp_motore": 72.47041809136537,
+            "pp": 63.186927218097274,
+            "tg": 9.623789698144419,
+            "tg_motore": 9.70408738453465,
+            "pp_motore": 62.540195170052236,
             "picco_mib": 2737.0
           },
           "stream_meno": {
-            "pp": 73.32502150278482,
-            "tg": 7.470844458730738,
-            "tg_motore": 7.529736887075138,
-            "pp_motore": 72.58210787194768,
-            "picco_mib": 2749.7333333333336
+            "pp": 62.73052911805021,
+            "tg": 9.819622941235146,
+            "tg_motore": 9.897020263299803,
+            "pp_motore": 62.092061426490055,
+            "picco_mib": 2743.366666666667
           }
         },
         "frasi": 33,
@@ -449,5 +611,5 @@
     },
     "cpu": 4
   },
-  "secondi": 772.4
+  "secondi": 1042.1
 }

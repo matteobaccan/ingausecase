@@ -7,7 +7,7 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 | Caso (↑ più alto è meglio) | Voto | Voto precedente | Differenza | Tempo (m:s) | Modello | Stato |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
 | arc | 91.7 | 91.7 | 0.0 | 6:37 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
-| canale-http | 74.6 | - | - | 12:52 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
+| canale-http | 69.2 | - | - | 17:22 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | colibri-moe | 142.9 | **143.2** | -0.3 | 19:39 | Qwen3-30B-A3B-Q4_K_M.gguf | ok |
 | colibri-qualita | 82.5 | 82.5 | 0.0 | 18:49 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | ok |
 | colibri-velocita | - | - | - | 2:53 | Qwen3-4B-Instruct-2507-Q4_K_M.gguf | errore |
@@ -45,46 +45,64 @@ Come leggere i numeri: ↑ più alto è meglio (un voto arriva al massimo a 100)
 
 | Voce | Meglio | Valore | Valore precedente | Differenza |
 | --- | :---: | ---: | ---: | ---: |
-| qwen3-0.6b: generazione bench, tok/s | ↑ | 3422.3 | - | - |
-| qwen3-0.6b: prompt bench, tok/s | ↑ | 40638.5 | - | - |
-| qwen3-0.6b: generazione run, tok/s | ↑ | 2130.0 | - | - |
-| qwen3-0.6b: generazione run su bench | ↑ | 62.2 | - | - |
-| qwen3-0.6b: prompt run, tok/s | ↑ | 39940.0 | - | - |
-| qwen3-0.6b: generazione api, tok/s | ↑ | 2187.4 | - | - |
-| qwen3-0.6b: generazione api su bench | ↑ | 63.9 | - | - |
-| qwen3-0.6b: generazione api, il motore, tok/s | ↑ | 2204.9 | - | - |
-| qwen3-0.6b: generazione api, il motore su bench | ↑ | 64.4 | - | - |
-| qwen3-0.6b: prompt api, tok/s | ↑ | 40710.7 | - | - |
-| qwen3-0.6b: generazione stream, tok/s | ↑ | 2191.4 | - | - |
-| qwen3-0.6b: generazione stream su bench | ↑ | 64.0 | - | - |
-| qwen3-0.6b: generazione stream, il motore, tok/s | ↑ | 2208.6 | - | - |
-| qwen3-0.6b: generazione stream, il motore su bench | ↑ | 64.5 | - | - |
-| qwen3-0.6b: prompt stream, tok/s | ↑ | 40111.1 | - | - |
-| qwen3-0.6b: generazione stream_meno, tok/s | ↑ | 2319.5 | - | - |
-| qwen3-0.6b: generazione stream_meno su bench | ↑ | 67.8 | - | - |
-| qwen3-0.6b: generazione stream_meno, il motore, tok/s | ↑ | 2337.7 | - | - |
-| qwen3-0.6b: generazione stream_meno, il motore su bench | ↑ | 68.3 | - | - |
-| qwen3-0.6b: prompt stream_meno, tok/s | ↑ | 42175.1 | - | - |
-| qwen3-4b: generazione bench, tok/s | ↑ | 726.4 | - | - |
-| qwen3-4b: prompt bench, tok/s | ↑ | 7231.4 | - | - |
-| qwen3-4b: generazione run, tok/s | ↑ | 596.7 | - | - |
-| qwen3-4b: generazione run su bench | ↑ | 82.1 | - | - |
-| qwen3-4b: prompt run, tok/s | ↑ | 7143.3 | - | - |
-| qwen3-4b: generazione api, tok/s | ↑ | 617.4 | - | - |
-| qwen3-4b: generazione api su bench | ↑ | 85.0 | - | - |
-| qwen3-4b: generazione api, il motore, tok/s | ↑ | 622.3 | - | - |
-| qwen3-4b: generazione api, il motore su bench | ↑ | 85.7 | - | - |
-| qwen3-4b: prompt api, tok/s | ↑ | 7227.4 | - | - |
-| qwen3-4b: generazione stream, tok/s | ↑ | 619.4 | - | - |
-| qwen3-4b: generazione stream su bench | ↑ | 85.3 | - | - |
-| qwen3-4b: generazione stream, il motore, tok/s | ↑ | 624.2 | - | - |
-| qwen3-4b: generazione stream, il motore su bench | ↑ | 85.9 | - | - |
-| qwen3-4b: prompt stream, tok/s | ↑ | 7321.5 | - | - |
-| qwen3-4b: generazione stream_meno, tok/s | ↑ | 747.1 | - | - |
-| qwen3-4b: generazione stream_meno su bench | ↑ | **102.8** | - | - |
-| qwen3-4b: generazione stream_meno, il motore, tok/s | ↑ | 753.0 | - | - |
-| qwen3-4b: generazione stream_meno, il motore su bench | ↑ | **103.7** | - | - |
-| qwen3-4b: prompt stream_meno, tok/s | ↑ | 7332.5 | - | - |
+| qwen3-0.6b: generazione bench, tok/s | ↑ | 4695.8 | - | - |
+| qwen3-0.6b: prompt bench, tok/s | ↑ | 39180.3 | - | - |
+| qwen3-0.6b: generazione bench_d, tok/s | ↑ | 2911.9 | - | - |
+| qwen3-0.6b: generazione bench_d su bench | ↑ | 62.0 | - | - |
+| qwen3-0.6b: prompt bench_d, tok/s | ↑ | 29138.2 | - | - |
+| qwen3-0.6b: generazione bench_t, tok/s | ↑ | 4734.7 | - | - |
+| qwen3-0.6b: generazione bench_t su bench | ↑ | **100.8** | - | - |
+| qwen3-0.6b: prompt bench_t, tok/s | ↑ | 36559.4 | - | - |
+| qwen3-0.6b: generazione run, tok/s | ↑ | 2823.3 | - | - |
+| qwen3-0.6b: generazione run su bench | ↑ | 60.1 | - | - |
+| qwen3-0.6b: prompt run, tok/s | ↑ | 38383.3 | - | - |
+| qwen3-0.6b: generazione run_corto, tok/s | ↑ | 4193.3 | - | - |
+| qwen3-0.6b: generazione run_corto su bench | ↑ | 89.3 | - | - |
+| qwen3-0.6b: prompt run_corto, tok/s | ↑ | 39563.3 | - | - |
+| qwen3-0.6b: generazione api, tok/s | ↑ | 2689.9 | - | - |
+| qwen3-0.6b: generazione api su bench | ↑ | 57.3 | - | - |
+| qwen3-0.6b: generazione api, il motore, tok/s | ↑ | 2711.4 | - | - |
+| qwen3-0.6b: generazione api, il motore su bench | ↑ | 57.7 | - | - |
+| qwen3-0.6b: prompt api, tok/s | ↑ | 38670.6 | - | - |
+| qwen3-0.6b: generazione stream, tok/s | ↑ | 2724.5 | - | - |
+| qwen3-0.6b: generazione stream su bench | ↑ | 58.0 | - | - |
+| qwen3-0.6b: generazione stream, il motore, tok/s | ↑ | 2745.8 | - | - |
+| qwen3-0.6b: generazione stream, il motore su bench | ↑ | 58.5 | - | - |
+| qwen3-0.6b: prompt stream, tok/s | ↑ | 38743.2 | - | - |
+| qwen3-0.6b: generazione stream_meno, tok/s | ↑ | 2723.2 | - | - |
+| qwen3-0.6b: generazione stream_meno su bench | ↑ | 58.0 | - | - |
+| qwen3-0.6b: generazione stream_meno, il motore, tok/s | ↑ | 2744.2 | - | - |
+| qwen3-0.6b: generazione stream_meno, il motore su bench | ↑ | 58.4 | - | - |
+| qwen3-0.6b: prompt stream_meno, tok/s | ↑ | 38339.8 | - | - |
+| qwen3-4b: generazione bench, tok/s | ↑ | 1196.0 | - | - |
+| qwen3-4b: prompt bench, tok/s | ↑ | 6522.5 | - | - |
+| qwen3-4b: generazione bench_d, tok/s | ↑ | 984.1 | - | - |
+| qwen3-4b: generazione bench_d su bench | ↑ | 82.3 | - | - |
+| qwen3-4b: prompt bench_d, tok/s | ↑ | 5768.8 | - | - |
+| qwen3-4b: generazione bench_t, tok/s | ↑ | 1203.5 | - | - |
+| qwen3-4b: generazione bench_t su bench | ↑ | **100.6** | - | - |
+| qwen3-4b: prompt bench_t, tok/s | ↑ | 6097.8 | - | - |
+| qwen3-4b: generazione run, tok/s | ↑ | 933.3 | - | - |
+| qwen3-4b: generazione run su bench | ↑ | 78.0 | - | - |
+| qwen3-4b: prompt run, tok/s | ↑ | 6353.3 | - | - |
+| qwen3-4b: generazione run_corto, tok/s | ↑ | 996.7 | - | - |
+| qwen3-4b: generazione run_corto su bench | ↑ | 83.3 | - | - |
+| qwen3-4b: prompt run_corto, tok/s | ↑ | 6266.7 | - | - |
+| qwen3-4b: generazione api, tok/s | ↑ | 967.8 | - | - |
+| qwen3-4b: generazione api su bench | ↑ | 80.9 | - | - |
+| qwen3-4b: generazione api, il motore, tok/s | ↑ | 975.5 | - | - |
+| qwen3-4b: generazione api, il motore su bench | ↑ | 81.6 | - | - |
+| qwen3-4b: prompt api, tok/s | ↑ | 6311.0 | - | - |
+| qwen3-4b: generazione stream, tok/s | ↑ | 962.4 | - | - |
+| qwen3-4b: generazione stream su bench | ↑ | 80.5 | - | - |
+| qwen3-4b: generazione stream, il motore, tok/s | ↑ | 970.4 | - | - |
+| qwen3-4b: generazione stream, il motore su bench | ↑ | 81.1 | - | - |
+| qwen3-4b: prompt stream, tok/s | ↑ | 6318.7 | - | - |
+| qwen3-4b: generazione stream_meno, tok/s | ↑ | 982.0 | - | - |
+| qwen3-4b: generazione stream_meno su bench | ↑ | 82.1 | - | - |
+| qwen3-4b: generazione stream_meno, il motore, tok/s | ↑ | 989.7 | - | - |
+| qwen3-4b: generazione stream_meno, il motore su bench | ↑ | 82.8 | - | - |
+| qwen3-4b: prompt stream_meno, tok/s | ↑ | 6273.1 | - | - |
 
 ### colibri-moe — ↑ più alto è meglio
 
