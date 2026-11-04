@@ -21,4 +21,6 @@ Seconda esecuzione (0.43.0, altro runner a 4 vCPU): `bench` 47,0 tok/s, `bench -
 
 Dalla 0.44 (build di prova): per ogni modello anche `inga bench --ab debug.attn_f16=false` a profondità 512 e 2048, la generazione con l'attenzione che legge la cache f16 direttamente dai suoi bit contro quella che la legge posizione per posizione come prima, nello stesso processo e a turni ABBA (le due danno gli stessi bit: `--ab` lo controlla); su una release senza la chiave la misura è saltata.
 
+Sempre dalla 0.44: `inga bench --ab debug.attn_split=true` a profondità 2048 su tutti e due i modelli e 4096 sul Qwen3-0.6B, l'attenzione di decodifica divisa in pezzi di 256 posizioni sui thread (split-KV, spenta di default) contro un compito per testa KV; le somme cambiano solo d'ordine, quindi `--ab` confronta le distribuzioni del token successivo invece dei bit.
+
 Voto: la media, sui due modelli, della generazione in streaming vista dal client sulla generazione di `bench` (1 = il canale non costa niente). I dettagli in [`run.py`](run.py).
