@@ -1,0 +1,11 @@
+{
+  "descrizione": "Il costo del canale HTTP di Inga, sullo stesso runner e nello stesso job, per Qwen3-0.6B e Qwen3-4B: inga bench, inga run -p (stesso prompt, senza server), l'API senza streaming, l'API in streaming, l'API in streaming con un thread di generazione in meno; 3 giri a ordine ruotato; i tempi del motore (inga_timings) accanto a quelli visti dal client",
+  "modello": "qwen3-4b",
+  "modelli": [
+    "qwen3-0.6b",
+    "qwen3-4b"
+  ],
+  "ctx": 4096,
+  "timeout_minuti": 150,
+  "avvia_inga": false
+}

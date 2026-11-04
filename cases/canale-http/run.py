@@ -1,0 +1,176 @@
+"""Caso canale-http: quanto costa il canale HTTP di Inga, sulla stessa macchina e nello
+stesso job, misurando lo stesso modello in cinque modi (G giri, ordine ruotato a ogni
+giro, una prova non misurata per ogni modo):
+
+- bench: `inga bench -p P -n N -r 1 --json` (prompt casuale, generazione da un contesto
+  vuoto, come llama-bench): la velocità del motore da solo;
+- run: `inga run <modello> -p TESTO -n N`, lo stesso prompt del caso liyab-velocita
+  (circa P token, chiede di contare fino a 1000): il motore con la sessione completa
+  (template, prompt vero) ma senza server, la riga delle statistiche su stderr;
+- api: `inga serve` avviato qui, la stessa richiesta dall'API senza streaming: la
+  velocità vista dal client (token della risposta sul tempo oltre il primo token del
+  server) e quella del motore (inga_timings.predicted_per_second);
+- stream: la stessa richiesta in streaming (come liyab-velocita): la velocità vista dal
+  client (token dopo il primo sul tempo dopo il primo) e quella del motore;
+- stream_meno: in streaming, con `--threads-decode` pari ai processori meno uno (il
+  thread che scrive sulla rete non contende un core ai thread di generazione).
+
+Se la velocità del motore in streaming (inga_timings) è vicina a quella del client, il
+rallentamento sta dentro il processo (contesa dei core, lavoro per token del server);
+se il motore va come bench e il client no, sta nel canale (relay, JSON, scrittura).
+Voto: la media, sui modelli, della generazione in streaming vista dal client sulla
+generazione di bench (1 = il canale non costa niente).
+"""
+
+import json
+import os
+import re
+import subprocess
+import sys
+
+sys.path.insert(0, os.environ["IUC_TOOLS"])
+import confronto  # noqa: E402
+import inga_api  # noqa: E402
+import liyab  # noqa: E402
+import runner  # noqa: E402
+
+P, N, G = 512, 128, 3
+MODI = ["bench", "run", "api", "stream", "stream_meno"]
+RIGA = re.compile(r"prompt: (\d+) tokens \((\d+) cached\), ([\d.]+) tok/s \| first token: ([^|]+)\| "
+                  r"answer: (\d+) tokens, ([\d.]+) tok/s")
+
+
+def bench_giro(model):
+    so, _, picco = liyab.con_time([os.environ["IUC_INGA"], "bench", model, "-p", str(P), "-n", str(N),
+                                   "-r", "1", "--json"])
+    rows = json.loads(so[so.index("["):])
+    return {"pp": next(x["avg_ts"] for x in rows if x["n_prompt"] == P and x["n_gen"] == 0),
+            "tg": next(x["avg_ts"] for x in rows if x["n_gen"] == N and x["n_prompt"] == 0),
+            "picco_mib": picco}
+
+
+def run_giro(model, ctx, frasi, r):
+    home = os.path.join(inga_api.work_dir(), "inga-home-run")
+    os.makedirs(home, exist_ok=True)
+    testo = confronto._messaggi(frasi, r, G)[0]["content"]
+    cmd = [os.environ["IUC_INGA"], "--home", home, "run", model, "-p", testo, "-n", str(N),
+           "--ctx", str(ctx), "--seed", str(inga_api.SEED), "--temp", "0", "--offline"]
+    _, se, picco = liyab.con_time(cmd)
+    m = RIGA.search(se)
+    if not m:
+        raise RuntimeError(f"inga run senza la riga delle statistiche: {se[-800:]!r}")
+    return {"pp": float(m.group(3)), "tg": float(m.group(6)), "token_prompt": int(m.group(1)),
+            "token_generati": int(m.group(5)), "picco_mib": picco}
+
+
+def _server(timings):
+    t = timings or {}
+    return {"tg_motore": t.get("predicted_per_second"), "pp_motore": t.get("prompt_per_second"),
+            "ttft_ms_motore": t.get("ttft_ms")}
+
+
+def api_giro(frasi, r, argomenti):
+    with confronto.IngaDelCaso(argomenti) as m:
+        inga_api.chat(confronto._messaggi(10, 99, 1), max_tokens=8, url=m.url, extra=m.extra())
+        _, data, secondi = inga_api.chat(confronto._messaggi(frasi, r, G), max_tokens=N, url=m.url,
+                                         extra=m.extra(), timeout=3600)
+        info = m.info()
+    u, t = data.get("usage") or {}, data.get("inga_timings") or {}
+    pt, ct = u.get("prompt_tokens"), u.get("completion_tokens")
+    if not pt or not ct or not t.get("ttft_ms"):
+        raise RuntimeError(f"risposta senza usage o inga_timings: {u} {t}")
+    ttft = t["ttft_ms"] / 1000
+    out = {"pp": pt / ttft, "tg": (ct - 1) / (secondi - ttft), "token_prompt": pt,
+           "token_generati": ct, "secondi": round(secondi, 3),
+           "picco_mib": round(info["picco_rss_gb"] * 1e9 / 2**20, 1)}
+    out.update(_server(t))
+    return out
+
+
+def stream_giro(frasi, r, argomenti):
+    with confronto.IngaDelCaso(argomenti) as m:
+        inga_api.stream(confronto._messaggi(10, 99, 1), max_tokens=8, url=m.url, extra=m.extra())
+        x = inga_api.stream(confronto._messaggi(frasi, r, G), max_tokens=N, url=m.url, extra=m.extra(),
+                            timeout=3600)
+        info = m.info()
+    u = x["usage"] or {}
+    pt, ct = u.get("prompt_tokens"), u.get("completion_tokens")
+    if not pt or not ct or x["ttft"] is None or ct < 2:
+        raise RuntimeError(f"risposta senza usage o senza token: {u} {x['testo'][:200]!r}")
+    out = {"pp": pt / x["ttft"], "tg": (ct - 1) / (x["secondi"] - x["ttft"]), "token_prompt": pt,
+           "token_generati": ct, "ttft": round(x["ttft"], 3), "secondi": round(x["secondi"], 3),
+           "pezzi": x["pezzi"], "picco_mib": round(info["picco_rss_gb"] * 1e9 / 2**20, 1)}
+    out.update(_server(x["timings"]))
+    return out
+
+
+def media(xs):
+    xs = [x for x in xs if x is not None]
+    return sum(xs) / len(xs) if xs else None
+
+
+def main():
+    with open(os.path.join(os.environ["IUC_CASE_DIR"], "case.json"), encoding="utf-8") as f:
+        cfg = json.load(f)
+    ctx = int(os.environ.get("IUC_CTX", "4096"))
+    cpu = os.cpu_count() or 2
+    meno = ["--threads-decode", str(max(1, cpu - 1))]
+    models = runner.load_models()
+    out, voci, rapporti = {}, {}, []
+    try:
+        for key in cfg["modelli"]:
+            model = runner.get_model(key, models, os.environ["IUC_CACHE"])
+            os.environ["IUC_MODEL_PATH"] = model
+            print(f"== {key}", flush=True)
+            # il numero di frasi per circa P token, dal server; poi la prova non misurata
+            # di bench e di run (api e stream la fanno a ogni avvio del server)
+            with confronto.IngaDelCaso([]) as m:
+                frasi = confronto.frasi_per(m.url, m.extra(), P)
+            bench_giro(model)
+            run_giro(model, ctx, frasi, 99)
+
+            def misura(chi, r):
+                if chi == "bench":
+                    return bench_giro(model)
+                if chi == "run":
+                    return run_giro(model, ctx, frasi, r)
+                if chi == "api":
+                    return api_giro(frasi, r, [])
+                if chi == "stream":
+                    return stream_giro(frasi, r, [])
+                return stream_giro(frasi, r, meno)
+
+            giri = []
+            for r in range(G):
+                ordine = MODI[r:] + MODI[:r]
+                g = {chi: misura(chi, r) for chi in ordine}
+                giri.append(g)
+                print(f"  giro {r + 1} ({', '.join(ordine)}): "
+                      + "; ".join(f"{k} pp {v['pp']:.1f} tg {v['tg']:.2f}"
+                                  + (f" (motore {v['tg_motore']:.2f})" if v.get("tg_motore") else "")
+                                  for k, v in g.items()), flush=True)
+            agg = {k: {m: media([g[k].get(m) for g in giri])
+                       for m in ("pp", "tg", "tg_motore", "pp_motore", "picco_mib")} for k in MODI}
+            out[key] = {"giri": giri, "medie": agg, "frasi": frasi, "threads_decode_meno": meno[1]}
+            b = agg["bench"]["tg"]
+            for chi in MODI:
+                voci[f"{key}: generazione {chi}, tok/s"] = agg[chi]["tg"]
+                if chi != "bench":
+                    voci[f"{key}: generazione {chi} su bench"] = agg[chi]["tg"] / b
+                if agg[chi]["tg_motore"]:
+                    voci[f"{key}: generazione {chi}, il motore, tok/s"] = agg[chi]["tg_motore"]
+                    voci[f"{key}: generazione {chi}, il motore su bench"] = agg[chi]["tg_motore"] / b
+                voci[f"{key}: prompt {chi}, tok/s"] = agg[chi]["pp"]
+            rapporti.append(agg["stream"]["tg"] / b)
+    except (RuntimeError, OSError, ValueError, KeyError, StopIteration, runner.Failure,
+            subprocess.TimeoutExpired) as e:
+        inga_api.write_result({"stato": "errore", "motivo": f"{type(e).__name__}: {e}", "dettagli": out})
+        return
+    for k, v in voci.items():
+        print(f"{k}: {round(v, 3) if v is not None else None}")
+    inga_api.write_result({"stato": "ok", "voto": min(1.0, sum(rapporti) / len(rapporti)), "voci": voci,
+                           "dettagli": dict(modelli=out, cpu=cpu)})
+
+
+if __name__ == "__main__":
+    main()

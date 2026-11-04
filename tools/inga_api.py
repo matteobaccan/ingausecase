@@ -101,7 +101,9 @@ def stream(messages, max_tokens=256, timeout=600, think=False, url=None, extra=N
     """A streamed chat completion, with the usage the server reports at the end
     (stream_options.include_usage). url and extra as in chat (another server, more
     fields of the body). Returns {"testo", "ttft" (seconds to the first piece of
-    text), "secondi" (to the end), "usage" (or None), "pezzi" (pieces received)}."""
+    text), "secondi" (to the end), "usage" (or None), "pezzi" (pieces received),
+    "timings" (the server's own times, inga_timings of the last chunk of the choice, or
+    None)}."""
     body = {
         "model": os.environ.get("INGA_MODEL", ""),
         "messages": messages,
@@ -118,6 +120,7 @@ def stream(messages, max_tokens=256, timeout=600, think=False, url=None, extra=N
     ttft = None
     parts = []
     usage = None
+    timings = None
     with _post("/v1/chat/completions", body, timeout, url) as r:
         for raw in r:
             line = raw.decode("utf-8", "replace").strip()
@@ -134,6 +137,8 @@ def stream(messages, max_tokens=256, timeout=600, think=False, url=None, extra=N
                 usage = chunk["usage"]
             for ch in chunk.get("choices") or []:
                 delta = ch.get("delta") or {}
+                if delta.get("inga_timings"):
+                    timings = delta["inga_timings"]
                 # il primo token generato può essere anche ragionamento
                 piece = delta.get("content") or delta.get("reasoning_content")
                 if piece:
@@ -142,7 +147,7 @@ def stream(messages, max_tokens=256, timeout=600, think=False, url=None, extra=N
                     if delta.get("content"):
                         parts.append(delta["content"])
     return {"testo": "".join(parts), "ttft": ttft, "secondi": time.monotonic() - t0,
-            "usage": usage, "pezzi": len(parts)}
+            "usage": usage, "pezzi": len(parts), "timings": timings}
 
 
 def add_document(collection, name, text=None, pdf_path=None, timeout=3600):
