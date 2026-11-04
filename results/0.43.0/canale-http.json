@@ -1,0 +1,453 @@
+{
+  "caso": "canale-http",
+  "versione": "0.43.0",
+  "inga": "inga 0.43.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-04T07:37:14Z",
+  "stato": "ok",
+  "voto": 0.7464477862693388,
+  "voci": {
+    "qwen3-0.6b: generazione bench, tok/s": 34.2232861079207,
+    "qwen3-0.6b: prompt bench, tok/s": 406.38487290453,
+    "qwen3-0.6b: generazione run, tok/s": 21.3,
+    "qwen3-0.6b: generazione run su bench": 0.6223832490203297,
+    "qwen3-0.6b: prompt run, tok/s": 399.40000000000003,
+    "qwen3-0.6b: generazione api, tok/s": 21.873971278226524,
+    "qwen3-0.6b: generazione api su bench": 0.6391546156394365,
+    "qwen3-0.6b: generazione api, il motore, tok/s": 22.04877294352842,
+    "qwen3-0.6b: generazione api, il motore su bench": 0.6442622977232281,
+    "qwen3-0.6b: prompt api, tok/s": 407.1074889864853,
+    "qwen3-0.6b: generazione stream, tok/s": 21.91367792921182,
+    "qwen3-0.6b: generazione stream su bench": 0.640314838852955,
+    "qwen3-0.6b: generazione stream, il motore, tok/s": 22.085649119635544,
+    "qwen3-0.6b: generazione stream, il motore su bench": 0.6453398148263735,
+    "qwen3-0.6b: prompt stream, tok/s": 401.1112875684681,
+    "qwen3-0.6b: generazione stream_meno, tok/s": 23.195001981615746,
+    "qwen3-0.6b: generazione stream_meno su bench": 0.6777549621761031,
+    "qwen3-0.6b: generazione stream_meno, il motore, tok/s": 23.376649947562424,
+    "qwen3-0.6b: generazione stream_meno, il motore su bench": 0.6830626922805081,
+    "qwen3-0.6b: prompt stream_meno, tok/s": 421.75123700034834,
+    "qwen3-4b: generazione bench, tok/s": 7.26447454771665,
+    "qwen3-4b: prompt bench, tok/s": 72.31354551155079,
+    "qwen3-4b: generazione run, tok/s": 5.966666666666666,
+    "qwen3-4b: generazione run su bench": 0.8213486918392594,
+    "qwen3-4b: prompt run, tok/s": 71.43333333333334,
+    "qwen3-4b: generazione api, tok/s": 6.173896081682005,
+    "qwen3-4b: generazione api su bench": 0.8498751067443092,
+    "qwen3-4b: generazione api, il motore, tok/s": 6.222847133019652,
+    "qwen3-4b: generazione api, il motore su bench": 0.8566135227186666,
+    "qwen3-4b: prompt api, tok/s": 72.27409817769332,
+    "qwen3-4b: generazione stream, tok/s": 6.19355103973352,
+    "qwen3-4b: generazione stream su bench": 0.8525807336857227,
+    "qwen3-4b: generazione stream, il motore, tok/s": 6.242379785482123,
+    "qwen3-4b: generazione stream, il motore su bench": 0.859302313536801,
+    "qwen3-4b: prompt stream, tok/s": 73.21520464756999,
+    "qwen3-4b: generazione stream_meno, tok/s": 7.470844458730738,
+    "qwen3-4b: generazione stream_meno su bench": 1.0284080988457664,
+    "qwen3-4b: generazione stream_meno, il motore, tok/s": 7.529736887075138,
+    "qwen3-4b: generazione stream_meno, il motore su bench": 1.03651500705469,
+    "qwen3-4b: prompt stream_meno, tok/s": 73.32502150278482
+  },
+  "dettagli": {
+    "modelli": {
+      "qwen3-0.6b": {
+        "giri": [
+          {
+            "bench": {
+              "pp": 408.6512970524725,
+              "tg": 33.09891751627108,
+              "picco_mib": 1287.9
+            },
+            "run": {
+              "pp": 411.0,
+              "tg": 21.4,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "picco_mib": 986.0
+            },
+            "api": {
+              "pp": 380.36117968425566,
+              "tg": 21.615707858355748,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "secondi": 7.221,
+              "picco_mib": 1049.0,
+              "tg_motore": 21.78848054761778,
+              "pp_motore": 376.36547486232416,
+              "ttft_ms_motore": 1346.089
+            },
+            "stream": {
+              "pp": 387.45014620510796,
+              "tg": 21.496700082278682,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "ttft": 1.321,
+              "secondi": 7.229,
+              "pezzi": 128,
+              "picco_mib": 1049.0,
+              "tg_motore": 21.665602520257984,
+              "pp_motore": 383.6396838620673,
+              "ttft_ms_motore": 1320.728
+            },
+            "stream_meno": {
+              "pp": 407.7931007415936,
+              "tg": 23.357027524147586,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "ttft": 1.256,
+              "secondi": 6.693,
+              "pezzi": 128,
+              "picco_mib": 1058.6,
+              "tg_motore": 23.540074756505977,
+              "pp_motore": 403.8136853964701,
+              "ttft_ms_motore": 1254.779
+            }
+          },
+          {
+            "run": {
+              "pp": 400.3,
+              "tg": 20.8,
+              "token_prompt": 506,
+              "token_generati": 128,
+              "picco_mib": 986.1
+            },
+            "api": {
+              "pp": 430.102085995117,
+              "tg": 21.944913390780187,
+              "token_prompt": 510,
+              "token_generati": 128,
+              "secondi": 6.973,
+              "picco_mib": 1058.6,
+              "tg_motore": 22.120259259676054,
+              "pp_motore": 426.498907141734,
+              "ttft_ms_motore": 1185.765
+            },
+            "stream": {
+              "pp": 380.9260306876375,
+              "tg": 22.00467645185908,
+              "token_prompt": 510,
+              "token_generati": 128,
+              "ttft": 1.339,
+              "secondi": 7.11,
+              "pezzi": 128,
+              "picco_mib": 1039.5,
+              "tg_motore": 22.177429908749524,
+              "pp_motore": 377.9271299063584,
+              "ttft_ms_motore": 1338.047
+            },
+            "stream_meno": {
+              "pp": 428.9613475874222,
+              "tg": 23.31680440319785,
+              "token_prompt": 510,
+              "token_generati": 128,
+              "ttft": 1.189,
+              "secondi": 6.636,
+              "pezzi": 128,
+              "picco_mib": 1058.6,
+              "tg_motore": 23.500268735854362,
+              "pp_motore": 425.6232803507838,
+              "ttft_ms_motore": 1188.098
+            },
+            "bench": {
+              "pp": 406.49759732926,
+              "tg": 34.19964783671445,
+              "picco_mib": 1285.7
+            }
+          },
+          {
+            "api": {
+              "pp": 410.8592012800832,
+              "tg": 22.06129258554364,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "secondi": 7.003,
+              "picco_mib": 1049.0,
+              "tg_motore": 22.237579023291428,
+              "pp_motore": 407.36743629672395,
+              "ttft_ms_motore": 1246.169
+            },
+            "stream": {
+              "pp": 434.95768581265884,
+              "tg": 22.239657253497697,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "ttft": 1.177,
+              "secondi": 6.888,
+              "pezzi": 128,
+              "picco_mib": 1058.6,
+              "tg_motore": 22.41391492989912,
+              "pp_motore": 431.583093836709,
+              "ttft_ms_motore": 1176.369
+            },
+            "stream_meno": {
+              "pp": 428.49926267202926,
+              "tg": 22.9111740175018,
+              "token_prompt": 512,
+              "token_generati": 128,
+              "ttft": 1.195,
+              "secondi": 6.738,
+              "pezzi": 128,
+              "picco_mib": 1077.7,
+              "tg_motore": 23.089606350326928,
+              "pp_motore": 426.1341114751774,
+              "ttft_ms_motore": 1191.71
+            },
+            "bench": {
+              "pp": 404.00572433185766,
+              "tg": 35.37129297077658,
+              "picco_mib": 1329.8
+            },
+            "run": {
+              "pp": 386.9,
+              "tg": 21.7,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "picco_mib": 984.5
+            }
+          }
+        ],
+        "medie": {
+          "bench": {
+            "pp": 406.38487290453,
+            "tg": 34.2232861079207,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 1301.1333333333334
+          },
+          "run": {
+            "pp": 399.40000000000003,
+            "tg": 21.3,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 985.5333333333333
+          },
+          "api": {
+            "pp": 407.1074889864853,
+            "tg": 21.873971278226524,
+            "tg_motore": 22.04877294352842,
+            "pp_motore": 403.41060610026074,
+            "picco_mib": 1052.2
+          },
+          "stream": {
+            "pp": 401.1112875684681,
+            "tg": 21.91367792921182,
+            "tg_motore": 22.085649119635544,
+            "pp_motore": 397.7166358683782,
+            "picco_mib": 1049.0333333333333
+          },
+          "stream_meno": {
+            "pp": 421.75123700034834,
+            "tg": 23.195001981615746,
+            "tg_motore": 23.376649947562424,
+            "pp_motore": 418.5236924074771,
+            "picco_mib": 1064.9666666666665
+          }
+        },
+        "frasi": 33,
+        "threads_decode_meno": "3"
+      },
+      "qwen3-4b": {
+        "giri": [
+          {
+            "bench": {
+              "pp": 71.7796316777732,
+              "tg": 7.212017375492687,
+              "picco_mib": 2854.7
+            },
+            "run": {
+              "pp": 72.4,
+              "tg": 6.1,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "picco_mib": 2660.6
+            },
+            "api": {
+              "pp": 72.53169156612056,
+              "tg": 6.172187743967036,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "secondi": 27.58,
+              "picco_mib": 2737.0,
+              "tg_motore": 6.221141497920284,
+              "pp_motore": 71.69197933869202,
+              "ttft_ms_motore": 7003.835
+            },
+            "stream": {
+              "pp": 75.21567051902746,
+              "tg": 6.2378297865680565,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "ttft": 6.754,
+              "secondi": 27.114,
+              "pezzi": 128,
+              "picco_mib": 2737.0,
+              "tg_motore": 6.287081382820037,
+              "pp_motore": 74.35357535172389,
+              "ttft_ms_motore": 6753.292
+            },
+            "stream_meno": {
+              "pp": 72.83290044241078,
+              "tg": 7.4933278551765135,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "ttft": 6.975,
+              "secondi": 23.923,
+              "pezzi": 128,
+              "picco_mib": 2737.0,
+              "tg_motore": 7.552421155811365,
+              "pp_motore": 71.99783311420381,
+              "ttft_ms_motore": 6974.208
+            }
+          },
+          {
+            "run": {
+              "pp": 74.0,
+              "tg": 5.7,
+              "token_prompt": 506,
+              "token_generati": 128,
+              "picco_mib": 2660.4
+            },
+            "api": {
+              "pp": 71.94894184577474,
+              "tg": 6.204721341589012,
+              "token_prompt": 506,
+              "token_generati": 128,
+              "secondi": 27.501,
+              "picco_mib": 2737.0,
+              "tg_motore": 6.253922509973126,
+              "pp_motore": 71.25383944967163,
+              "ttft_ms_motore": 7032.765
+            },
+            "stream": {
+              "pp": 75.49950376571044,
+              "tg": 6.169578703005106,
+              "token_prompt": 506,
+              "token_generati": 128,
+              "ttft": 6.702,
+              "secondi": 27.287,
+              "pezzi": 128,
+              "picco_mib": 2737.0,
+              "tg_motore": 6.2181937769997235,
+              "pp_motore": 74.78040657485526,
+              "ttft_ms_motore": 6701.332
+            },
+            "stream_meno": {
+              "pp": 75.2212962183506,
+              "tg": 7.502887041221566,
+              "token_prompt": 506,
+              "token_generati": 128,
+              "ttft": 6.727,
+              "secondi": 23.654,
+              "pezzi": 128,
+              "picco_mib": 2756.1,
+              "tg_motore": 7.562170606463164,
+              "pp_motore": 74.50526741302761,
+              "ttft_ms_motore": 6726.098
+            },
+            "bench": {
+              "pp": 75.40144700516473,
+              "tg": 7.269678767219384,
+              "picco_mib": 2855.2
+            }
+          },
+          {
+            "api": {
+              "pp": 72.34166112118467,
+              "tg": 6.144779159489967,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "secondi": 27.69,
+              "picco_mib": 2737.0,
+              "tg_motore": 6.193477391165545,
+              "pp_motore": 71.64629590432786,
+              "ttft_ms_motore": 7022.233
+            },
+            "stream": {
+              "pp": 68.93043965797209,
+              "tg": 6.173244629627396,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "ttft": 7.37,
+              "secondi": 27.942,
+              "pezzi": 128,
+              "picco_mib": 2737.0,
+              "tg_motore": 6.2218641966266075,
+              "pp_motore": 68.27727234751696,
+              "ttft_ms_motore": 7368.982
+            },
+            "stream_meno": {
+              "pp": 71.92086784759307,
+              "tg": 7.416318479794137,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "ttft": 7.063,
+              "secondi": 24.188,
+              "pezzi": 128,
+              "picco_mib": 2756.1,
+              "tg_motore": 7.4746188989508875,
+              "pp_motore": 71.24322308861161,
+              "ttft_ms_motore": 7062.087
+            },
+            "bench": {
+              "pp": 69.75955785171442,
+              "tg": 7.311727500437878,
+              "picco_mib": 2854.9
+            },
+            "run": {
+              "pp": 67.9,
+              "tg": 6.1,
+              "token_prompt": 508,
+              "token_generati": 128,
+              "picco_mib": 2660.6
+            }
+          }
+        ],
+        "medie": {
+          "bench": {
+            "pp": 72.31354551155079,
+            "tg": 7.26447454771665,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 2854.933333333333
+          },
+          "run": {
+            "pp": 71.43333333333334,
+            "tg": 5.966666666666666,
+            "tg_motore": null,
+            "pp_motore": null,
+            "picco_mib": 2660.5333333333333
+          },
+          "api": {
+            "pp": 72.27409817769332,
+            "tg": 6.173896081682005,
+            "tg_motore": 6.222847133019652,
+            "pp_motore": 71.53070489756384,
+            "picco_mib": 2737.0
+          },
+          "stream": {
+            "pp": 73.21520464756999,
+            "tg": 6.19355103973352,
+            "tg_motore": 6.242379785482123,
+            "pp_motore": 72.47041809136537,
+            "picco_mib": 2737.0
+          },
+          "stream_meno": {
+            "pp": 73.32502150278482,
+            "tg": 7.470844458730738,
+            "tg_motore": 7.529736887075138,
+            "pp_motore": 72.58210787194768,
+            "picco_mib": 2749.7333333333336
+          }
+        },
+        "frasi": 33,
+        "threads_decode_meno": "3"
+      }
+    },
+    "cpu": 4
+  },
+  "secondi": 772.4
+}
