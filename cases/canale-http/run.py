@@ -4,6 +4,12 @@ giro, una prova non misurata per ogni modo):
 
 - bench: `inga bench -p P -n N -r 1 --json` (prompt casuale, generazione da un contesto
   vuoto, come llama-bench): la velocità del motore da solo;
+- bench_d: lo stesso con `-d P` (P token già nella cache prima di ogni prova, non
+  misurati: la generazione dopo un prompt lungo quanto quello dei casi);
+- bench_t: `bench` con `-t` pari ai processori meno uno (il default è un thread per core
+  fisico, cioè 2 su un runner a 4 vCPU con SMT);
+- run_corto: `inga run -p` con un prompt corto (una frase): la sessione completa senza
+  la cache lunga;
 - run: `inga run <modello> -p TESTO -n N`, lo stesso prompt del caso liyab-velocita
   (circa P token, chiede di contare fino a 1000): il motore con la sessione completa
   (template, prompt vero) ma senza server, la riga delle statistiche su stderr;
@@ -35,14 +41,14 @@ import liyab  # noqa: E402
 import runner  # noqa: E402
 
 P, N, G = 512, 128, 3
-MODI = ["bench", "run", "api", "stream", "stream_meno"]
+MODI = ["bench", "bench_d", "bench_t", "run", "run_corto", "api", "stream", "stream_meno"]
 RIGA = re.compile(r"prompt: (\d+) tokens \((\d+) cached\), ([\d.]+) tok/s \| first token: ([^|]+)\| "
                   r"answer: (\d+) tokens, ([\d.]+) tok/s")
 
 
-def bench_giro(model):
+def bench_giro(model, extra=()):
     so, _, picco = liyab.con_time([os.environ["IUC_INGA"], "bench", model, "-p", str(P), "-n", str(N),
-                                   "-r", "1", "--json"])
+                                   "-r", "1", "--json", *extra])
     rows = json.loads(so[so.index("["):])
     return {"pp": next(x["avg_ts"] for x in rows if x["n_prompt"] == P and x["n_gen"] == 0),
             "tg": next(x["avg_ts"] for x in rows if x["n_gen"] == N and x["n_prompt"] == 0),
@@ -53,6 +59,11 @@ def run_giro(model, ctx, frasi, r):
     home = os.path.join(inga_api.work_dir(), "inga-home-run")
     os.makedirs(home, exist_ok=True)
     testo = confronto._messaggi(frasi, r, G)[0]["content"]
+    return run_testo(model, ctx, testo)
+
+
+def run_testo(model, ctx, testo):
+    home = os.path.join(inga_api.work_dir(), "inga-home-run")
     cmd = [os.environ["IUC_INGA"], "--home", home, "run", model, "-p", testo, "-n", str(N),
            "--ctx", str(ctx), "--seed", str(inga_api.SEED), "--temp", "0", "--offline"]
     _, se, picco = liyab.con_time(cmd)
@@ -115,6 +126,7 @@ def main():
     ctx = int(os.environ.get("IUC_CTX", "4096"))
     cpu = os.cpu_count() or 2
     meno = ["--threads-decode", str(max(1, cpu - 1))]
+    t_meno = ["-t", str(max(1, cpu - 1))]
     models = runner.load_models()
     out, voci, rapporti = {}, {}, []
     try:
@@ -132,8 +144,14 @@ def main():
             def misura(chi, r):
                 if chi == "bench":
                     return bench_giro(model)
+                if chi == "bench_d":
+                    return bench_giro(model, ["-d", str(P)])
+                if chi == "bench_t":
+                    return bench_giro(model, t_meno)
                 if chi == "run":
                     return run_giro(model, ctx, frasi, r)
+                if chi == "run_corto":
+                    return run_testo(model, ctx, confronto._messaggi(1, r, G)[0]["content"])
                 if chi == "api":
                     return api_giro(frasi, r, [])
                 if chi == "stream":
