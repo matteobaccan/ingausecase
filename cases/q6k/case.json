@@ -1,0 +1,6 @@
+{
+  "descrizione": "Il secondo kernel Q6_K di generazione (debug.q6k_kernel=v2) contro il primo, sulla stessa macchina e nello stesso processo: inga bench --ab con 2 e 4 thread (tg128, 5 ripetizioni alternate), e lscpu",
+  "modello": "qwen3-4b",
+  "ctx": 2048,
+  "timeout_minuti": 60
+}
