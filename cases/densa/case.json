@@ -4,12 +4,10 @@
   "ctx": 2048,
   "timeout_minuti": 90,
   "varianti": [
-    "debug.cpu_task_kb=128",
-    "debug.cpu_task_kb=256",
-    "debug.cpu_task_kb=512",
-    "debug.cpu_task_kb=1024"
+    "debug.cpu_task_kb=64",
+    "debug.cpu_tasks_per_thread=1"
   ],
-  "scala": false,
+  "scala": true,
   "pagine_grandi": true,
-  "profilo": false
+  "profilo": true
 }
