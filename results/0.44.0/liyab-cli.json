@@ -1,0 +1,186 @@
+{
+  "caso": "liyab-cli",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-05T10:56:35Z",
+  "stato": "ok",
+  "voto": 1.4250759140285623,
+  "voci": {
+    "lettura del prompt (~512 token), Inga su Liyab": 1.5555608510016712,
+    "generazione (128 token), Inga su Liyab senza bozze": 1.2945909770554536,
+    "generazione (128 token), Inga su Liyab con le sue bozze": 1.3008210096170365,
+    "generazione, Inga (tok/s)": 11.473570972782014,
+    "generazione, Liyab senza bozze (tok/s)": 8.862699629560716,
+    "generazione, Liyab con le sue bozze (tok/s)": 8.82025343068517,
+    "picco di memoria residente, Inga (MiB)": 2855.3,
+    "picco di memoria residente, Liyab (MiB)": 2506.6,
+    "picco di memoria, Inga su Liyab": 1.1391127423601692
+  },
+  "dettagli": {
+    "inga": {
+      "pp": 32.57365616386411,
+      "tg": 11.473570972782014,
+      "picco_mib": 2855.3,
+      "righe": [
+        {
+          "build_version": "0.44.0",
+          "backends": "CPU",
+          "gpu_device": null,
+          "n_gpu_layers": 0,
+          "cpu_isa": "AVX2",
+          "model_filename": "/home/runner/iuc-cache/models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+          "model_type": "qwen3 4B Q4_K - Medium",
+          "model_size": 2497281120,
+          "model_n_params": 4022468096,
+          "n_threads": 4,
+          "type_k": "f16",
+          "type_v": "f16",
+          "n_prompt": 512,
+          "n_gen": 0,
+          "n_depth": 0,
+          "avg_ns": 15718472352,
+          "stddev_ns": 76533456,
+          "avg_ts": 32.57365616386411,
+          "stddev_ts": 0.15902535758847275,
+          "samples_ns": [
+            15754115656,
+            15770683095,
+            15630618307
+          ],
+          "samples_ts": [
+            32.499444029725865,
+            32.46530267051821,
+            32.75622179134823
+          ],
+          "ttft_p50_ms": 15754.258993000001,
+          "ttft_p95_ms": 15770.826202,
+          "ttft_mean_ms": 15718.627495333334,
+          "samples_ttft_ms": [
+            15754.258993000001,
+            15770.826202,
+            15630.797291
+          ]
+        },
+        {
+          "build_version": "0.44.0",
+          "backends": "CPU",
+          "gpu_device": null,
+          "n_gpu_layers": 0,
+          "cpu_isa": "AVX2",
+          "model_filename": "/home/runner/iuc-cache/models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+          "model_type": "qwen3 4B Q4_K - Medium",
+          "model_size": 2497281120,
+          "model_n_params": 4022468096,
+          "n_threads": 2,
+          "type_k": "f16",
+          "type_v": "f16",
+          "n_prompt": 0,
+          "n_gen": 128,
+          "n_depth": 0,
+          "avg_ns": 11156125977,
+          "stddev_ns": 29651581,
+          "avg_ts": 11.473570972782014,
+          "stddev_ts": 0.03051371794948636,
+          "samples_ns": [
+            11124453448,
+            11183225209,
+            11160699276
+          ],
+          "samples_ts": [
+            11.5061832564019,
+            11.445714237873755,
+            11.468815424070385
+          ]
+        }
+      ]
+    },
+    "liyab": {
+      "pp": 20.80760443305023,
+      "tg": 8.82025343068517,
+      "picco_mib": 2508.3,
+      "prove": [
+        {
+          "token_prompt": 506,
+          "token_generati": 128,
+          "picco_mib": 2508.3,
+          "bozze": [
+            6,
+            0
+          ],
+          "pp": 20.859049876049426,
+          "tg": 8.779316869602535
+        },
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "picco_mib": 2508.2,
+          "bozze": [
+            5,
+            0
+          ],
+          "pp": 20.82236965206845,
+          "tg": 8.845922625202368
+        },
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "picco_mib": 2508.0,
+          "bozze": [
+            4,
+            0
+          ],
+          "pp": 20.741393771032815,
+          "tg": 8.835520797250608
+        }
+      ]
+    },
+    "liyab_senza_bozze": {
+      "pp": 20.94013624917918,
+      "tg": 8.862699629560716,
+      "picco_mib": 2506.6,
+      "prove": [
+        {
+          "token_prompt": 506,
+          "token_generati": 128,
+          "picco_mib": 2506.4,
+          "bozze": [
+            0,
+            0
+          ],
+          "pp": 20.943708609271525,
+          "tg": 8.915573520241196
+        },
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "picco_mib": 2506.6,
+          "bozze": [
+            0,
+            0
+          ],
+          "pp": 20.87793869316598,
+          "tg": 8.7310666476004
+        },
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "picco_mib": 2506.5,
+          "bozze": [
+            0,
+            0
+          ],
+          "pp": 20.99876144510004,
+          "tg": 8.941458720840549
+        }
+      ]
+    },
+    "liyab_commit": "f187d3ecf950994755aafb94488c7b8fe90a15c8",
+    "cpu": 4
+  },
+  "secondi": 444.8
+}

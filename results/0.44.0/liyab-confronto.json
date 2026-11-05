@@ -1,0 +1,196 @@
+{
+  "caso": "liyab-confronto",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-05T10:53:33Z",
+  "stato": "ok",
+  "voto": 2.942536187569641,
+  "voci": {
+    "qwen3-0.6b: prompt, Inga API su Liyab": 4.1514304691621,
+    "qwen3-0.6b: generazione, Inga API su Liyab": 2.801890066469841,
+    "qwen3-0.6b: prompt, Inga bench su Liyab": 4.154221531572575,
+    "qwen3-0.6b: generazione, Inga bench su Liyab": 3.423815338117493,
+    "qwen3-0.6b: generazione, Inga API su Inga bench": 0.8183531498548624,
+    "qwen3-0.6b: picco di RAM, Inga API (MiB)": 1049.0,
+    "qwen3-0.6b: picco di RAM, Inga bench (MiB)": 1288.3666666666666,
+    "qwen3-0.6b: picco di RAM, Liyab (MiB)": 699.3333333333334,
+    "qwen3-4b: prompt, Inga API su Liyab": 3.6931153667525223,
+    "qwen3-4b: generazione, Inga API su Liyab": 1.1237088478941013,
+    "qwen3-4b: prompt, Inga bench su Liyab": 3.700444188142575,
+    "qwen3-4b: generazione, Inga bench su Liyab": 1.2162859198401672,
+    "qwen3-4b: generazione, Inga API su Inga bench": 0.9238854364455429,
+    "qwen3-4b: picco di RAM, Inga API (MiB)": 2737.0,
+    "qwen3-4b: picco di RAM, Inga bench (MiB)": 2855.6666666666665,
+    "qwen3-4b: picco di RAM, Liyab (MiB)": 2506.3333333333335
+  },
+  "dettagli": {
+    "modelli": {
+      "qwen3-0.6b": {
+        "giri": [
+          {
+            "inga_api": {
+              "pp": 389.1026205602492,
+              "tg": 30.59641891871099,
+              "token_prompt": 512,
+              "picco_mib": 1049.0
+            },
+            "inga_bench": {
+              "pp": 384.3703906473543,
+              "tg": 40.042593131127234,
+              "picco_mib": 1289.1
+            },
+            "liyab": {
+              "pp": 94.50906077713982,
+              "tg": 11.95394812080641,
+              "token_prompt": 508,
+              "picco_mib": 699.4
+            }
+          },
+          {
+            "inga_bench": {
+              "pp": 401.66522462967254,
+              "tg": 40.27646926451656,
+              "picco_mib": 1288.9
+            },
+            "liyab": {
+              "pp": 96.1582316007115,
+              "tg": 11.955793688188194,
+              "token_prompt": 506,
+              "picco_mib": 699.3
+            },
+            "inga_api": {
+              "pp": 403.87579119040436,
+              "tg": 34.798398586355646,
+              "token_prompt": 512,
+              "picco_mib": 1049.0
+            }
+          },
+          {
+            "liyab": {
+              "pp": 97.12858830862416,
+              "tg": 11.955855592092567,
+              "token_prompt": 508,
+              "picco_mib": 699.3
+            },
+            "inga_api": {
+              "pp": 401.7861762305211,
+              "tg": 35.09664358104605,
+              "token_prompt": 512,
+              "picco_mib": 1049.0
+            },
+            "inga_bench": {
+              "pp": 409.5322289686213,
+              "tg": 42.47812009694536,
+              "picco_mib": 1287.1
+            }
+          }
+        ],
+        "medie": {
+          "inga_api": {
+            "pp": 398.25486266039155,
+            "tg": 33.4971536953709,
+            "picco_mib": 1049.0
+          },
+          "inga_bench": {
+            "pp": 398.5226147485494,
+            "tg": 40.93239416419638,
+            "picco_mib": 1288.3666666666666
+          },
+          "liyab": {
+            "pp": 95.93196022882516,
+            "tg": 11.955199133695723,
+            "picco_mib": 699.3333333333334
+          }
+        },
+        "frasi": 33
+      },
+      "qwen3-4b": {
+        "giri": [
+          {
+            "inga_api": {
+              "pp": 69.03644854643169,
+              "tg": 8.132269876273547,
+              "token_prompt": 508,
+              "picco_mib": 2737.0
+            },
+            "inga_bench": {
+              "pp": 68.9992467294286,
+              "tg": 8.849768497692482,
+              "picco_mib": 2855.5
+            },
+            "liyab": {
+              "pp": 18.714358908690578,
+              "tg": 7.207638734985624,
+              "token_prompt": 508,
+              "picco_mib": 2506.1
+            }
+          },
+          {
+            "inga_bench": {
+              "pp": 69.28912235287872,
+              "tg": 8.765897934620362,
+              "picco_mib": 2855.8
+            },
+            "liyab": {
+              "pp": 18.61716756720163,
+              "tg": 7.2365563017755665,
+              "token_prompt": 506,
+              "picco_mib": 2506.5
+            },
+            "inga_api": {
+              "pp": 69.06049799313197,
+              "tg": 8.203131120279659,
+              "token_prompt": 508,
+              "picco_mib": 2737.0
+            }
+          },
+          {
+            "liyab": {
+              "pp": 18.729892096649195,
+              "tg": 7.142194340795145,
+              "token_prompt": 508,
+              "picco_mib": 2506.4
+            },
+            "inga_api": {
+              "pp": 68.94433987263426,
+              "tg": 7.921415741094091,
+              "token_prompt": 508,
+              "picco_mib": 2737.0
+            },
+            "inga_bench": {
+              "pp": 69.16378145348169,
+              "tg": 8.639555027796277,
+              "picco_mib": 2855.7
+            }
+          }
+        ],
+        "medie": {
+          "inga_api": {
+            "pp": 69.0137621373993,
+            "tg": 8.085605579215766,
+            "picco_mib": 2737.0
+          },
+          "inga_bench": {
+            "pp": 69.150716845263,
+            "tg": 8.75174048670304,
+            "picco_mib": 2855.6666666666665
+          },
+          "liyab": {
+            "pp": 18.687139524180466,
+            "tg": 7.195463125852112,
+            "picco_mib": 2506.3333333333335
+          }
+        },
+        "frasi": 33
+      }
+    },
+    "liyab": "f187d3ecf950994755aafb94488c7b8fe90a15c8",
+    "cpu": 4
+  },
+  "secondi": 615.4
+}

@@ -1,0 +1,439 @@
+{
+  "caso": "memoria",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 12288,
+  "seed": 42,
+  "data": "2026-11-05T10:53:33Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 0.2,
+  "voci": {
+    "giuste, oggi": 0.2,
+    "giuste, diario": 0.3,
+    "giuste, tutta la chat": 0.7,
+    "testo atteso contenuto, oggi": 0.2,
+    "testo atteso contenuto, diario": 0.3,
+    "testo atteso contenuto, tutta la chat": 0.6,
+    "abstention, diario": 1.0,
+    "knowledge-update, diario": 0.0,
+    "multi-session, diario": 0.5,
+    "single-session-user, diario": 0.0,
+    "temporal-reasoning, diario": 0.0,
+    "abstention, oggi": 1.0,
+    "knowledge-update, oggi": 0.0,
+    "multi-session, oggi": 0.0,
+    "single-session-user, oggi": 0.0,
+    "temporal-reasoning, oggi": 0.0,
+    "sessioni scritte nel diario": 0.875
+  },
+  "dettagli": {
+    "domande": 10,
+    "seed": 3,
+    "sessioni": 16,
+    "regole_scritte": 0,
+    "giudice": "lo stesso modello (Qwen3-4B-Instruct-2507-Q4_K_M)",
+    "risposte": [
+      {
+        "id": "37d43f65",
+        "tipo": "single-session-user",
+        "domanda": "How much RAM did I upgrade my laptop to?",
+        "attesa": "16GB",
+        "scrittura": [
+          {
+            "data": "2023/05/26 (Fri) 00:35",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "I do not know how much RAM you upgraded your laptop to.",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 15.8
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.7
+        },
+        "tutta la chat": {
+          "risposta": "16GB",
+          "known": true,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 132.5
+        }
+      },
+      {
+        "id": "118b2229",
+        "tipo": "single-session-user",
+        "domanda": "How long is my daily commute to work?",
+        "attesa": "45 minutes each way",
+        "scrittura": [
+          {
+            "data": "2023/05/23 (Tue) 18:02",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 12.3
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.3
+        },
+        "tutta la chat": {
+          "risposta": "My daily commute to work is 45 minutes each way.",
+          "known": true,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 110.7
+        }
+      },
+      {
+        "id": "cc06de0d",
+        "tipo": "multi-session",
+        "domanda": "For my daily commute, how much more expensive was the taxi ride compared to the train fare?",
+        "attesa": "$6",
+        "scrittura": [
+          {
+            "data": "2023/05/26 (Fri) 00:49",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          },
+          {
+            "data": "2023/05/27 (Sat) 13:49",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "The taxi ride cost $12, while the train fare was $11.43 per day. Therefore, the taxi ride was $0.57 more expensive than the train fare.",
+          "known": true,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 28.6
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.4
+        },
+        "tutta la chat": {
+          "risposta": "I do not know how much more expensive the taxi ride was compared to the train fare because the train fare amount was not provided in the conversation.",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 214.5
+        }
+      },
+      {
+        "id": "a3332713",
+        "tipo": "multi-session",
+        "domanda": "What is the total amount I spent on gifts for my coworker and brother?",
+        "attesa": "$200",
+        "scrittura": [
+          {
+            "data": "2023/05/24 (Wed) 02:02",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          },
+          {
+            "data": "2023/05/25 (Thu) 07:02",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "You spent $100 on your coworker's baby shower gift and $100 on your brother's graduation gift, totaling $200.",
+          "known": true,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 23.4
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.4
+        },
+        "tutta la chat": {
+          "risposta": "You spent $100 on your coworker's baby shower gift and $100 on your brother's graduation gift, so the total amount spent on gifts for your coworker and brother is $200.",
+          "known": true,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 154.2
+        }
+      },
+      {
+        "id": "af082822",
+        "tipo": "temporal-reasoning",
+        "domanda": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+        "attesa": 2,
+        "scrittura": [
+          {
+            "data": "2022/11/18 (Fri) 05:47",
+            "scritto": false,
+            "perché": "nothing worth keeping",
+            "writer": null
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 1.4
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.6
+        },
+        "tutta la chat": {
+          "risposta": "I do not know how many weeks ago you attended the friends and family sale at Nordstrom.",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 117.3
+        }
+      },
+      {
+        "id": "gpt4_78cf46a3",
+        "tipo": "temporal-reasoning",
+        "domanda": "Which event happened first, the narrator losing their phone charger or the narrator receiving their new phone case?",
+        "attesa": "Receiving the new phone case",
+        "scrittura": [
+          {
+            "data": "2023/05/29 (Mon) 08:19",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          },
+          {
+            "data": "2023/05/29 (Mon) 10:14",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 20.3
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.8
+        },
+        "tutta la chat": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 230.7
+        }
+      },
+      {
+        "id": "2133c1b5",
+        "tipo": "knowledge-update",
+        "domanda": "How long have I been living in my current apartment in Harajuku?",
+        "attesa": "3 months",
+        "scrittura": [
+          {
+            "data": "2023/04/11 (Tue) 04:23",
+            "scritto": false,
+            "perché": "nothing worth keeping",
+            "writer": null
+          },
+          {
+            "data": "2023/10/15 (Sun) 17:11",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "I do not know how long you have been living in your current apartment in Harajuku.",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 18.4
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.5
+        },
+        "tutta la chat": {
+          "risposta": "Three months",
+          "known": true,
+          "giusta": true,
+          "esatta": false,
+          "secondi": 246.0
+        }
+      },
+      {
+        "id": "59524333",
+        "tipo": "knowledge-update",
+        "domanda": "What time do I usually go to the gym?",
+        "attesa": "6:00 pm",
+        "scrittura": [
+          {
+            "data": "2023/02/11 (Sat) 15:33",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          },
+          {
+            "data": "2023/05/30 (Tue) 20:57",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "Based on the information provided, you usually go to the gym at 7:00 PM on Mondays, Wednesdays, and Fridays.",
+          "known": true,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 24.1
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": false,
+          "esatta": false,
+          "secondi": 4.3
+        },
+        "tutta la chat": {
+          "risposta": "I usually go to the gym at 6:00 pm on Mondays, Wednesdays, and Fridays.",
+          "known": true,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 235.6
+        }
+      },
+      {
+        "id": "19b5f2b3_abs",
+        "tipo": "abstention",
+        "domanda": "How long was I in Korea for?",
+        "attesa": "You did not mention this information. You mentioned staying in Japan, but not in Korea.",
+        "scrittura": [
+          {
+            "data": "2023/05/23 (Tue) 06:01",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "You do not know",
+          "known": false,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 15.1
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 4.4
+        },
+        "tutta la chat": {
+          "risposta": "You do not know",
+          "known": false,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 145.5
+        }
+      },
+      {
+        "id": "2311e44b_abs",
+        "tipo": "abstention",
+        "domanda": "How many pages do I have left to read in 'Sapiens'?",
+        "attesa": "The information provided is not enough. You did not mention how many paged do you have left to read in 'Sapiens'.",
+        "scrittura": [
+          {
+            "data": "2023/05/23 (Tue) 09:13",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          },
+          {
+            "data": "2023/05/30 (Tue) 06:57",
+            "scritto": true,
+            "perché": null,
+            "writer": "written by Qwen3-4B-Instruct-2507-Q4_K_M"
+          }
+        ],
+        "contesto": "",
+        "diario": {
+          "risposta": "You do not know how many pages are left to read in 'Sapiens' because the information about the remaining pages in 'Sapiens' is not available in the provided diary entries.",
+          "known": false,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 29.1
+        },
+        "oggi": {
+          "risposta": "I do not know",
+          "known": false,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 4.3
+        },
+        "tutta la chat": {
+          "risposta": "I do not know how many pages you have left to read in 'Sapiens' because that information was not provided in the earlier conversations.",
+          "known": false,
+          "giusta": true,
+          "esatta": true,
+          "secondi": 230.7
+        }
+      }
+    ]
+  },
+  "secondi": 3049.1
+}

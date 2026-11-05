@@ -1,0 +1,555 @@
+{
+  "caso": "liyab-qualita",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-05T10:53:28Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "motivo": null,
+  "voto": 0.825,
+  "voci": {
+    "Inga": 0.825,
+    "Liyab": 0.8,
+    "Inga meno Liyab": 0.02499999999999991,
+    "risposte con lo stesso testo": 0.625,
+    "tempo di Liyab su quello di Inga": 1.1780966312438153,
+    "picco di memoria residente, Inga (MiB)": 3663.3,
+    "picco di memoria residente, Liyab (MiB)": 2485.7,
+    "ARC, Inga": 0.9,
+    "ARC, Liyab": 0.9,
+    "GSM8K, Inga": 0.75,
+    "GSM8K, Liyab": 0.7
+  },
+  "dettagli": {
+    "risposte": [
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 3.6
+        },
+        "liyab": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 5.24
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: B. size differences",
+          "voto": 1.0,
+          "secondi": 3.37
+        },
+        "liyab": {
+          "testo": "Answer: B. size differences",
+          "voto": 1.0,
+          "secondi": 4.22
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 2.74
+        },
+        "liyab": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 4.04
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C. analyze new data as it becomes available",
+          "voto": 1.0,
+          "secondi": 4.44
+        },
+        "liyab": {
+          "testo": "Answer: C. analyze new data as it becomes available",
+          "voto": 1.0,
+          "secondi": 6.12
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: A",
+          "voto": 1.0,
+          "secondi": 3.48
+        },
+        "liyab": {
+          "testo": "Answer: A",
+          "voto": 1.0,
+          "secondi": 4.99
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 2.24
+        },
+        "liyab": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 3.24
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: D. the scientific method.",
+          "voto": 1.0,
+          "secondi": 2.47
+        },
+        "liyab": {
+          "testo": "Answer: D. the scientific method.",
+          "voto": 1.0,
+          "secondi": 3.32
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: B",
+          "voto": 0.0,
+          "secondi": 3.69
+        },
+        "liyab": {
+          "testo": "Answer: B",
+          "voto": 0.0,
+          "secondi": 5.18
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: B",
+          "voto": 1.0,
+          "secondi": 3.19
+        },
+        "liyab": {
+          "testo": "Answer: B",
+          "voto": 1.0,
+          "secondi": 4.45
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: A",
+          "voto": 1.0,
+          "secondi": 2.94
+        },
+        "liyab": {
+          "testo": "Answer: A",
+          "voto": 1.0,
+          "secondi": 4.03
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C. formation of a cell plate",
+          "voto": 1.0,
+          "secondi": 3.0
+        },
+        "liyab": {
+          "testo": "Answer: C. formation of a cell plate",
+          "voto": 1.0,
+          "secondi": 4.11
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: A. electron",
+          "voto": 1.0,
+          "secondi": 1.97
+        },
+        "liyab": {
+          "testo": "Answer: A. electron",
+          "voto": 1.0,
+          "secondi": 2.83
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: D",
+          "voto": 1.0,
+          "secondi": 2.94
+        },
+        "liyab": {
+          "testo": "Answer: D",
+          "voto": 1.0,
+          "secondi": 3.97
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C. confident.",
+          "voto": 1.0,
+          "secondi": 2.07
+        },
+        "liyab": {
+          "testo": "Answer: C. confident.",
+          "voto": 1.0,
+          "secondi": 2.93
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: D",
+          "voto": 0.0,
+          "secondi": 3.3
+        },
+        "liyab": {
+          "testo": "Answer: D",
+          "voto": 0.0,
+          "secondi": 4.16
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: B",
+          "voto": 1.0,
+          "secondi": 3.28
+        },
+        "liyab": {
+          "testo": "Answer: B",
+          "voto": 1.0,
+          "secondi": 4.12
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: B. using storage space efficiently.",
+          "voto": 1.0,
+          "secondi": 3.99
+        },
+        "liyab": {
+          "testo": "Answer: B. using storage space efficiently.",
+          "voto": 1.0,
+          "secondi": 4.49
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: B. burning coal",
+          "voto": 1.0,
+          "secondi": 2.49
+        },
+        "liyab": {
+          "testo": "Answer: B. burning coal",
+          "voto": 1.0,
+          "secondi": 3.42
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: A",
+          "voto": 1.0,
+          "secondi": 1.79
+        },
+        "liyab": {
+          "testo": "Answer: A",
+          "voto": 1.0,
+          "secondi": 2.56
+        }
+      },
+      {
+        "test": "ARC",
+        "inga": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 2.51
+        },
+        "liyab": {
+          "testo": "Answer: C",
+          "voto": 1.0,
+          "secondi": 3.47
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Suzy’s iPhone is 1 year old.  \nStep 2: Ben’s iPhone is two times older than Suzy’s.  \n\"Two times older\" means Ben’s iPhone is 2 × 1 = 2 years old.  \nStep 3: Brandon’s iPhone is four times as old as Ben’s.  \nSo, Brandon’s iPhone = 4 × 2 = 8 years old.  \n\nAnswer: 8",
+          "voto": 1.0,
+          "secondi": 11.11
+        },
+        "liyab": {
+          "testo": "Step 1: Suzy’s iPhone is 1 year old.  \nStep 2: Ben’s iPhone is two times older than Suzy’s.  \n\"Two times older\" means Ben’s iPhone is 2 × 1 = 2 years old.  \nStep 3: Brandon’s iPhone is four times as old as Ben’s.  \nSo, Brandon’s iPhone = 4 × 2 = 8 years old.  \n\nAnswer: 8",
+          "voto": 1.0,
+          "secondi": 14.11
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "We are given:\n\n- If Marcy works for **40 years**, she gets a **pension of $50,000 per year**.\n- Starting **after 20 years**, she becomes entitled to **5% of the value of the pension per year**.\n- She quits after **30 years**.\n\nWe need to find her **annual pension after 30 years**.\n\n---\n\nStep 1: Understand the pension rule.\n\nThe key phrase is: \"Starting after 20 years, she becomes entitled to 5% of the value of the pension per year.\"\n\nThis likely means that **after 20 years of service**, the pension amount is reduced to **5% of the full pension**.\n\nBut let's interpret carefully.\n\nIf she works 40 years → full pension = $50,000/year.\n\nSo, the full pension is $50,000.\n\nAfter 20 years, she becomes entitled to **5% of the value** — that is, 5% of $50,000?\n\nThat would be:\n\n5% of $50,000 = 0.05 × 50,000 = $2,500.\n\nBut that seems very low — and it says \"starting after 20 years\", so after 20 years, she gets 5% of the pension.\n\nBut she quits after **30 years**, which is **after 20 years**, so she should be entitled to the reduced amount.\n\nSo, after 20 years, pension = 5% of $50,000 = $2,500.\n\nSince she quits after 30 years (which is after 20), she gets the reduced pension.\n\nSo, her annual pension is $2,500.\n\nBut wait — is the 5% applied to the full pension value, or is it a percentage of time?\n\nAlternative interpretation: Maybe the pension is based on years of service, and after 20 years, she gets 5% of the full pension.\n\nThat still leads to 5% of $50,000 = $2,500.\n\nAnother possibility: Is it 5% of the value per year of service? But the problem says \"5% of the value of the pension per year\", which is ambiguous.\n\nBut the most straightforward reading is:\n\n- Full pension: $50,",
+          "voto": 0.0,
+          "secondi": 52.1
+        },
+        "liyab": {
+          "testo": "We are given:\n\n- If Marcy works for the full 40 years, she gets a pension of $50,000 per year.\n- Starting after 20 years, she becomes entitled to **5% of the value** of the pension per year.\n- She quits after **30 years**.\n\nWe need to find her **annual pension** after 30 years.\n\nStep-by-step:\n\n1. The full pension (after 40 years) is $50,000/year.\n\n2. The rule says: **starting after 20 years**, she becomes entitled to **5% of the value** of the pension per year.\n\n   This likely means that **after 20 years**, her pension is reduced to 5% of the full pension amount.\n\n   So, after 20 years, her pension = 5% of $50,000 = 0.05 × 50,000 = $2,500 per year.\n\n3. She quits after 30 years — which is **after 20 years**, so she is entitled to the reduced pension.\n\n4. Therefore, her annual pension after 30 years is $2,500.\n\nAnswer: 2500",
+          "voto": 0.0,
+          "secondi": 35.09
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Determine how many guests will actually attend.  \nChristina invites 16 friends, but 1/4 of them don't show up.  \nSo, 1/4 of 16 = 16 × 1/4 = 4 guests don't show up.  \nThus, 16 - 4 = 12 guests will attend.\n\nStep 2: Calculate the number of gift bags needed.  \nShe needs 0.75 gift bags per guest.  \nSo, 12 guests × 0.75 = 9 gift bags.\n\nStep 3: Calculate the total cost.  \nEach gift bag costs $2.  \n9 × 2 = $18.\n\nAnswer: 18",
+          "voto": 0.0,
+          "secondi": 16.55
+        },
+        "liyab": {
+          "testo": "Step 1: Determine how many guests will actually attend.  \nChristina invites 16 friends, but 1/4 of them don't show up.  \nSo, 1/4 of 16 = 16 × 1/4 = 4 guests don't show up.  \nThus, 16 - 4 = 12 guests will attend.\n\nStep 2: Calculate the number of gift bags needed.  \nShe needs 0.75 gift bags per guest (because 1/4 don't show up, so she prepares 3/4 per guest).  \nSo, 12 guests × 0.75 = 9 gift bags needed.\n\nStep 3: Calculate the total cost.  \nEach gift bag costs $2.  \n9 × 2 = $18.\n\nAnswer: 18",
+          "voto": 0.0,
+          "secondi": 22.57
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Determine the time to peel and cut one potato.  \n- Peeling time: 1 minute 30 seconds = 90 seconds  \n- Cutting time: 5 seconds  \n- Total time per potato = 90 + 5 = 95 seconds\n\nStep 2: Multiply by the number of potatoes.  \n- 60 potatoes × 95 seconds = 5700 seconds\n\nStep 3: Convert total time to minutes (optional, but for understanding):  \n- 5700 ÷ 60 = 95 minutes\n\nBut the question only asks for the total time in seconds (implied by the format), and we are to give the final answer as a number.\n\nAnswer: 5700",
+          "voto": 0.0,
+          "secondi": 19.0
+        },
+        "liyab": {
+          "testo": "Step 1: Determine the time to peel and cut one potato.  \n- Peeling time: 1.5 minutes = 90 seconds  \n- Cutting time: 5 seconds  \n- Total time per potato = 90 + 5 = 95 seconds\n\nStep 2: Multiply by the number of potatoes.  \n- 60 potatoes × 95 seconds = 5700 seconds\n\nStep 3: Convert total time to minutes (optional, but for understanding):  \n- 5700 ÷ 60 = 95 minutes\n\nBut the question only asks for the total time in seconds or just the number — we can just report the total time in seconds as computed.\n\nAnswer: 5700",
+          "voto": 0.0,
+          "secondi": 22.46
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "We are given two relay teams running a 4 × 400 meter race.\n\n---\n\n**Team A (Well-rounded):**  \nEach runner completes 400 meters in **55 seconds**.  \nSince there are 4 runners, total time =  \n4 × 55 = **220 seconds**\n\n---\n\n**Team B (Less well-rounded):**  \n- 1st runner: 60 seconds  \n- Each subsequent runner is **3 seconds faster** than the previous one.\n\nSo the times for each leg:\n\n- Runner 1: 60 seconds  \n- Runner 2: 60 - 3 = 57 seconds  \n- Runner 3: 57 - 3 = 54 seconds  \n- Runner 4: 54 - 3 = 51 seconds  \n\nTotal time for Team B =  \n60 + 57 + 54 + 51\n\nAdd them step by step:  \n60 + 57 = 117  \n117 + 54 = 171  \n171 + 51 = **222 seconds**\n\n---\n\nNow, compare the two teams:\n\n- Team A: 220 seconds  \n- Team B: 222 seconds  \n\nDifference = 222 - 220 = **2 seconds**\n\nSo, Team A wins by **2 seconds**.\n\nAnswer: 2",
+          "voto": 1.0,
+          "secondi": 32.91
+        },
+        "liyab": {
+          "testo": "We are given two relay teams running a 4 × 400 meter race.\n\n---\n\n**Team A (Well-rounded):**  \nEach runner completes 400 meters in **55 seconds**.  \nSince there are 4 runners, total time =  \n4 × 55 = **220 seconds**\n\n---\n\n**Team B (Less well-rounded):**  \n- 1st runner: 60 seconds  \n- Each subsequent runner is **3 seconds faster** than the previous one.\n\nSo the times for each leg:\n\n- Runner 1: 60 seconds  \n- Runner 2: 60 - 3 = 57 seconds  \n- Runner 3: 57 - 3 = 54 seconds  \n- Runner 4: 54 - 3 = 51 seconds  \n\nTotal time for Team B =  \n60 + 57 + 54 + 51\n\nAdd them:\n\n60 + 57 = 117  \n117 + 54 = 171  \n171 + 51 = 222 seconds\n\n---\n\nTeam A finishes in **220 seconds**, Team B in **222 seconds**.\n\nDifference = 222 - 220 = **2 seconds**\n\nAnswer: 2",
+          "voto": 1.0,
+          "secondi": 38.11
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Calculate the cost for the 8 overdue books.  \nEach book costs $0.50, so:  \n8 books × $0.50 = $4.00\n\nStep 2: Add the flat fee for having at least one book overdue.  \nFlat fee = $2.00\n\nStep 3: Total amount due:  \n$4.00 + $2.00 = $6.00\n\nAnswer: 6",
+          "voto": 1.0,
+          "secondi": 11.63
+        },
+        "liyab": {
+          "testo": "Step 1: Calculate the cost for the 8 overdue books.  \nEach book costs $0.50, so:  \n8 books × $0.50 = $4.00\n\nStep 2: Add the flat fee for having at least one book overdue.  \nFlat fee = $2.00\n\nStep 3: Total amount due:  \n$4.00 + $2.00 = $6.00\n\nAnswer: 6",
+          "voto": 1.0,
+          "secondi": 14.62
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Calculate the cost of the popsicles.  \nPeter bought 20 popsicles at $0.25 each:  \n20 × 0.25 = $5.00\n\nStep 2: Calculate the cost of the ice cream bars.  \nHe bought 4 ice cream bars at $0.50 each:  \n4 × 0.50 = $2.00\n\nStep 3: Add both amounts to find the total cost.  \n$5.00 + $2.00 = $7.00\n\nAnswer: 7",
+          "voto": 1.0,
+          "secondi": 13.23
+        },
+        "liyab": {
+          "testo": "Step 1: Calculate the cost of the popsicles.  \nPeter bought 20 popsicles at $0.25 each:  \n20 × 0.25 = $5.00\n\nStep 2: Calculate the cost of the ice cream bars.  \nHe bought 4 ice cream bars at $0.50 each:  \n4 × 0.50 = $2.00\n\nStep 3: Add both amounts to find the total cost.  \n$5.00 + $2.00 = $7.00\n\nAnswer: 7",
+          "voto": 1.0,
+          "secondi": 17.02
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Convert all times to the same unit (minutes).\n\n- Writing: 4 hours = 4 × 60 = 240 minutes  \n- Recording: half of 4 hours = 2 hours = 2 × 60 = 120 minutes  \n- Editing: 90 minutes (already in minutes)\n\nStep 2: Find total work time.\n\nTotal time = Writing + Recording + Editing  \n= 240 + 120 + 90 = 450 minutes\n\nStep 3: Find the percentage of time spent editing.\n\nEditing percentage = (Editing time / Total time) × 100  \n= (90 / 450) × 100  \n= 0.2 × 100  \n= 20%\n\nAnswer: 20",
+          "voto": 1.0,
+          "secondi": 18.18
+        },
+        "liyab": {
+          "testo": "Step 1: Convert all times to the same unit (minutes).\n\n- Writing: 4 hours = 4 × 60 = 240 minutes  \n- Recording: half of 4 hours = 2 hours = 2 × 60 = 120 minutes  \n- Editing: 90 minutes (already in minutes)\n\nStep 2: Find total work time.\n\nTotal time = writing + recording + editing  \n= 240 + 120 + 90 = 450 minutes\n\nStep 3: Find the percentage of time spent editing.\n\nEditing percentage = (editing time / total time) × 100  \n= (90 / 450) × 100  \n= 0.2 × 100  \n= 20%\n\nAnswer: 20",
+          "voto": 1.0,
+          "secondi": 22.21
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Start with the cards Erica originally made.  \nShe made 20 cards.\n\nStep 2: Add the pre-made cards her dad brought.  \nDad brought 2 boxes, each with 15 cards:  \n2 × 15 = 30 cards.\n\nTotal cards before giving out:  \n20 + 30 = 50 cards.\n\nStep 3: Subtract the cards she passed out.  \nShe gave out:  \n- 24 to classmates  \n- 5 to family  \nTotal given out: 24 + 5 = 29 cards.\n\nSo, cards remaining after giving out:  \n50 − 29 = 21 cards.\n\nStep 4: Add the cards she received from family and friends.  \nShe received 17 cards.\n\nFinal total:  \n21 + 17 = 38 cards.\n\nAnswer: 38",
+          "voto": 1.0,
+          "secondi": 20.03
+        },
+        "liyab": {
+          "testo": "Step 1: Determine how many cards Erica originally had.  \nShe made 20 cards.\n\nStep 2: Add the pre-made cards her dad brought.  \nDad brought 2 boxes × 15 cards = 30 cards.  \nTotal cards before giving out: 20 + 30 = 50 cards.\n\nStep 3: Subtract the cards she passed out.  \nShe gave out 24 to classmates and 5 to family.  \nTotal given out: 24 + 5 = 29 cards.\n\nStep 4: Add the cards she received from family and friends.  \nShe received 17 cards.\n\nStep 5: Compute final number of cards.  \nStart with 50, subtract 29 (given out), add 17 (received).  \n50 - 29 = 21  \n21 + 17 = 38\n\nAnswer: 38",
+          "voto": 1.0,
+          "secondi": 25.96
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: The caterer was told to prepare for 36 guests.\n\nStep 2: Originally, he prepared enough for half of the guests to have two hotdogs.  \nHalf of 36 = 18 guests → each of these 18 guests gets 2 hotdogs.  \nThe remaining 18 guests get 1 hotdog each.\n\nSo total hotdogs prepared:  \n(18 × 2) + (18 × 1) = 36 + 18 = 54 hotdogs.\n\nStep 3: 40 guests actually showed up, and everyone wanted a second hotdog.\n\nSo each of the 40 guests wants 2 hotdogs → total hotdogs needed = 40 × 2 = 80.\n\nBut only 54 hotdogs were prepared.\n\nSo the question is: how many guests did **not** get a second hotdog?\n\nWe need to determine how many of the 40 guests were unable to get a second hotdog due to lack of supply.\n\nTotal hotdogs available: 54  \nEach guest wants 2 hotdogs → total needed: 80  \nSo, shortage = 80 – 54 = 26 hotdogs short.\n\nEach guest who gets only one hotdog (i.e., no second) is missing one hotdog.\n\nSo, the number of guests who did not get a second hotdog = 26.\n\nBut wait — we must check if this makes sense.\n\nWe have 40 guests. Each wants 2 hotdogs. Total needed: 80.\n\nOnly 54 hotdogs available.\n\nSo, only 54 hotdogs can be distributed.\n\nIf every guest gets at least one hotdog, then 40 guests × 1 = 40 hotdogs used.\n\nRemaining hotdogs = 54 – 40 = 14.\n\nThese 14 hotdogs can be given as second hotdogs to 14 guests.\n\nSo, 14 guests get a second hotdog.\n\nThe remaining 40 – 14 = 26 guests only get one hotdog.\n\nTherefore, **26 guests did not get a second hotdog**.\n\nAnswer: 26",
+          "voto": 1.0,
+          "secondi": 47.23
+        },
+        "liyab": {
+          "testo": "Step 1: The caterer was told to prepare for 36 guests.\n\nStep 2: Originally, he prepared enough for half of the guests to have two hotdogs.  \nHalf of 36 = 18 guests → each of these 18 guests gets 2 hotdogs.  \nThe other 18 guests get 1 hotdog each.\n\nSo total hotdogs prepared:  \n18 guests × 2 = 36 hotdogs  \n18 guests × 1 = 18 hotdogs  \nTotal = 36 + 18 = 54 hotdogs.\n\nStep 3: 40 guests actually showed up, and **everyone wanted a second hotdog**.\n\nSo each of the 40 guests wants 2 hotdogs → total hotdogs needed = 40 × 2 = 80.\n\nBut the caterer only prepared 54 hotdogs.\n\nSo, the total number of hotdogs available is 54.\n\nEach guest wants 2 hotdogs, so we can calculate how many guests can actually get 2 hotdogs.\n\nTotal hotdogs available = 54  \nEach guest needing 2 hotdogs → number of guests who can get 2 hotdogs = 54 ÷ 2 = 27.\n\nSo, 27 guests get 2 hotdogs, and the remaining guests get only one (or none).\n\nTotal guests = 40  \nGuests who get 2 hotdogs = 27  \nGuests who do **not** get a second hotdog = 40 − 27 = 13.\n\nAnswer: 13",
+          "voto": 0.0,
+          "secondi": 43.69
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Start: Finley begins in **1st place**.\n\n1. She falls back 5 spots:  \n   1st → 1 + 5 = **6th place**\n\n2. Then moves ahead 2 spots:  \n   6th → 6 - 2 = **4th place**\n\n3. Then falls behind 3 spots:  \n   4th → 4 + 3 = **7th place**\n\n4. Lastly, she jumps ahead 1 spot:  \n   7th → 7 - 1 = **6th place**\n\nFinal place: **6th**\n\nAnswer: 6",
+          "voto": 1.0,
+          "secondi": 14.3
+        },
+        "liyab": {
+          "testo": "Step 1: Finley starts in **1st place**.\n\nStep 2: She falls back 5 spots.  \n1st → 1 + 5 = **6th place**.\n\nStep 3: She moves ahead 2 spots.  \n6th → 6 - 2 = **4th place**.\n\nStep 4: She falls behind 3 spots.  \n4th → 4 + 3 = **7th place**.\n\nStep 5: She jumps ahead 1 spot.  \n7th → 7 - 1 = **6th place**.\n\nFinal place: 6th.\n\nAnswer: 6",
+          "voto": 1.0,
+          "secondi": 19.23
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Calculate the cost of plane tickets.  \nEach ticket is $5000, and there are two people.  \n5000 × 2 = $10,000\n\nStep 2: Calculate the hotel cost.  \nNormal price is $1500 per day.  \nIt is 20% more expensive during the busy weekend.  \n20% of 1500 = 0.20 × 1500 = $300  \nSo, daily rate = 1500 + 300 = $1800 per day  \n\nThey are there for 3 days:  \n1800 × 3 = $5400\n\nStep 3: Add plane tickets and hotel cost.  \n10,000 + 5400 = $15,400\n\nAnswer: 15400",
+          "voto": 1.0,
+          "secondi": 20.59
+        },
+        "liyab": {
+          "testo": "Step 1: Calculate the cost of plane tickets.  \nEach ticket is $5000, and there are two people.  \n5000 × 2 = $10,000\n\nStep 2: Calculate the hotel cost.  \nNormal price is $1500 per day.  \nIt is 20% more expensive during the busy weekend.  \n20% of 1500 = 0.20 × 1500 = $300  \nSo, daily rate = 1500 + 300 = $1800 per day  \n\nThey are there for 3 days:  \n1800 × 3 = $5400\n\nStep 3: Add plane tickets and hotel cost.  \n10,000 + 5400 = $15,400\n\nAnswer: 15400",
+          "voto": 1.0,
+          "secondi": 25.89
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Mario has 6 sled dogs.  \nStep 2: Each dog has 4 legs, but snowshoes are typically needed per dog, not per leg. So we don’t need to divide by 4 or consider legs — each dog needs one pair of snowshoes.  \nStep 3: Each pair of snowshoes costs $12.00.  \nStep 4: For 6 dogs, he needs 6 pairs.  \nStep 5: Total cost = 6 × $12 = $72.  \n\nAnswer: 72",
+          "voto": 0.0,
+          "secondi": 13.54
+        },
+        "liyab": {
+          "testo": "Step 1: Mario has 6 sled dogs.  \nStep 2: Each dog has 4 legs, but snowshoes are typically needed per dog, not per leg. So we don’t need to divide by legs — each dog gets one pair of snowshoes.  \nStep 3: Each pair of snowshoes costs $12.00.  \nStep 4: For 6 dogs, he needs 6 pairs.  \nStep 5: Total cost = 6 × $12 = $72.  \n\nAnswer: 72",
+          "voto": 0.0,
+          "secondi": 16.83
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Let's break down what Elise does step by step:\n\n1. **First, she writes the alphabet in full twice.**  \n   The alphabet has 26 letters.  \n   So, 2 × 26 = **52 letters**.\n\n2. **Then, she writes half of it once.**  \n   Half of the alphabet is 26 ÷ 2 = 13 letters.  \n   So, she writes **13 letters**.\n\n3. **Then, she re-writes everything she has already written.**  \n   That means she rewrites all the letters she has written so far.  \n   So, we need to find the total number of letters she has written **before** this step.\n\n   So far:\n   - First two full alphabets: 52 letters  \n   - Half of it: 13 letters  \n   → Total written before re-writing: 52 + 13 = **65 letters**\n\n   Now, she **re-writes everything she has already written** — that means she writes down all 65 letters again.\n\n   So, she adds **65 more letters**.\n\nNow, total letters written:\n\n- First two full alphabets: 52  \n- Half of it: 13  \n- Re-writing everything: 65  \n\nTotal = 52 + 13 + 65 = **130**\n\nAnswer: 130",
+          "voto": 1.0,
+          "secondi": 30.49
+        },
+        "liyab": {
+          "testo": "Let's break down what Elise does step by step:\n\n1. **First, she writes the alphabet in full twice.**  \n   The alphabet has 26 letters.  \n   So, 2 × 26 = **52 letters**.\n\n2. **Then, she writes half of it once.**  \n   Half of the alphabet is 26 ÷ 2 = 13 letters.  \n   So, she writes **13 letters**.\n\n3. **Then, she re-writes everything she has already written.**  \n   That means she re-writes all the letters she wrote so far.  \n   So, we need to find the total number of letters she had written before this step.\n\n   Before step 3:\n   - First two full alphabets: 52 letters  \n   - Half of it: 13 letters  \n   Total so far: 52 + 13 = **65 letters**\n\n   Now, she **re-writes everything she has already written** — that means she writes those 65 letters again.\n\n   So, she adds **65 more letters**.\n\nNow, total letters written:\n\n- First two full alphabets: 52  \n- Half of it: 13  \n- Re-writing everything: 65  \n\nTotal = 52 + 13 + 65 = **130**\n\nAnswer: 130",
+          "voto": 1.0,
+          "secondi": 35.51
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Find the amount of the discount.  \n5% of $140 = (5/100) × 140 = 0.05 × 140 = $7\n\nStep 2: Subtract the discount from the original price.  \n$140 - $7 = $133\n\nAnswer: 133",
+          "voto": 1.0,
+          "secondi": 8.96
+        },
+        "liyab": {
+          "testo": "Step 1: Find the amount of the discount.  \n5% of $140 = 0.05 × 140 = $7\n\nStep 2: Subtract the discount from the original price.  \n$140 - $7 = $133\n\nAnswer: 133",
+          "voto": 1.0,
+          "secondi": 9.79
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: We are told that in one hour, Ezra read twice as many books as Ahmed.\n\nEzra read 300 books in that hour.\n\nSo, let Ahmed's books be A.  \nThen:  \nEzra = 2 × Ahmed  \n300 = 2 × A  \nA = 300 ÷ 2 = 150\n\nSo Ahmed read 150 books.\n\nStep 2: Total books read in that hour = Ezra's books + Ahmed's books  \n= 300 + 150 = 450\n\nStep 3: Ezra decided to read 150 more books.  \nBut the question is: \"How many books have they read altogether?\"\n\nThe phrase \"read altogether\" refers to the total books read during the hour, not including future reading unless specified.\n\nSince the 150 more books are a decision *after* the hour, and not part of the original hour's reading, they are not included in the \"have read\" total unless stated otherwise.\n\nSo, only the books read in that hour count.\n\nAnswer: 450",
+          "voto": 0.0,
+          "secondi": 23.2
+        },
+        "liyab": {
+          "testo": "Step 1: We are told that in one hour, Ezra read twice as many books as Ahmed.\n\nEzra read 300 books in that hour.\n\nSo, let Ahmed's books be A.  \nThen:  \nEzra = 2 × Ahmed  \n300 = 2 × A  \nA = 300 ÷ 2 = 150\n\nSo Ahmed read 150 books.\n\nStep 2: Total books read in that hour = Ezra's books + Ahmed's books  \n= 300 + 150 = 450\n\nStep 3: Ezra decided to read 150 more books.  \nBut the question is: \"How many books have they read altogether?\"\n\nThe phrase \"read altogether\" refers to the total books read during the hour, plus any additional books Ezra reads *after* that?\n\nBut the problem says: \"Ezra has read 300 books this hour and decided to read 150 more.\"\n\nThe word \"decided\" suggests it's a future action — not yet read.\n\nSo unless specified that those 150 are already read, we assume they are not included in the total \"read altogether\" for the hour.\n\nTherefore, only the books read during the hour count.\n\nSo total books read altogether = 300 (Ezra) + 150 (Ahmed) = 450\n\nAnswer: 450",
+          "voto": 0.0,
+          "secondi": 36.45
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Find the cost of 3 loaves of bread.  \nEach loaf costs $2, so:  \n3 × $2 = $6\n\nStep 2: Find the cost of 2 bagels.  \nEach bagel costs $1, so:  \n2 × $1 = $2\n\nStep 3: Find the difference in cost.  \n$6 (bread) − $2 (bagels) = $4\n\nAnswer: 4",
+          "voto": 1.0,
+          "secondi": 10.69
+        },
+        "liyab": {
+          "testo": "Step 1: Find the cost of 3 loaves of bread.  \nEach loaf costs $2, so:  \n3 × $2 = $6\n\nStep 2: Find the cost of 2 bagels.  \nEach bagel costs $1, so:  \n2 × $1 = $2\n\nStep 3: Subtract the cost of 2 bagels from the cost of 3 loaves.  \n$6 − $2 = $4\n\nAnswer: 4",
+          "voto": 1.0,
+          "secondi": 13.73
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Determine the walking time on the first day.  \nSandy walked for 8 hours on the first day.\n\nStep 2: Determine the walking time on the second day.  \nShe walked half as many hours as on the first day:  \n½ × 8 = 4 hours.\n\nStep 3: Total walking time in hours:  \n8 hours + 4 hours = 12 hours.\n\nStep 4: Convert total time to minutes:  \n12 hours × 60 = 720 minutes.\n\nAnswer: 720",
+          "voto": 1.0,
+          "secondi": 13.11
+        },
+        "liyab": {
+          "testo": "Step 1: Determine the walking time on the first day.  \nSandy walked for 8 hours on the first day.\n\nStep 2: Determine the walking time on the second day.  \nShe walked half as many hours as on the first day:  \n½ × 8 = 4 hours.\n\nStep 3: Total walking time in hours:  \n8 hours + 4 hours = 12 hours.\n\nStep 4: Convert total time to minutes:  \n12 hours × 60 = 720 minutes.\n\nAnswer: 720",
+          "voto": 1.0,
+          "secondi": 16.56
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Find the total number of tins of cat food.  \nKimberly bought 8 packages of cat food, and each package has 11 tins.  \n8 × 11 = 88 tins of cat food.\n\nStep 2: Find the total number of tins of dog food.  \nShe bought 6 packages of dog food, and each has 6 tins.  \n6 × 6 = 36 tins of dog food.\n\nStep 3: Find how many more tins of cat food than dog food.  \n88 − 36 = 52.\n\nAnswer: 52",
+          "voto": 1.0,
+          "secondi": 14.77
+        },
+        "liyab": {
+          "testo": "Step 1: Find the total number of tins of cat food.  \nKimberly bought 8 packages of cat food, and each package has 11 tins.  \n8 × 11 = 88 tins of cat food.\n\nStep 2: Find the total number of tins of dog food.  \nShe bought 6 packages of dog food, and each has 6 tins.  \n6 × 6 = 36 tins of dog food.\n\nStep 3: Find the difference between cat food and dog food tins.  \n88 − 36 = 52.\n\nAnswer: 52",
+          "voto": 1.0,
+          "secondi": 19.48
+        }
+      },
+      {
+        "test": "GSM8K",
+        "inga": {
+          "testo": "Step 1: Calculate the distance traveled in the first part of the journey.  \nMason rides at 8 miles per hour for 4 hours.  \nDistance = Speed × Time = 8 × 4 = 32 miles.\n\nStep 2: Calculate the distance traveled in the second part of the journey.  \nHe rides for another 6 hours at the same speed.  \nDistance = 8 × 6 = 48 miles.\n\nStep 3: Add both distances to get the total distance.  \nTotal distance = 32 + 48 = 80 miles.\n\nAnswer: 80",
+          "voto": 1.0,
+          "secondi": 13.74
+        },
+        "liyab": {
+          "testo": "Step 1: Calculate the distance traveled in the first part of the journey.  \nMason rides at 8 miles per hour for 4 hours.  \nDistance = speed × time = 8 × 4 = 32 miles.\n\nStep 2: Calculate the distance traveled in the second part of the journey.  \nHe rides for another 6 hours at the same speed.  \nDistance = 8 × 6 = 48 miles.\n\nStep 3: Add both distances to get the total distance.  \nTotal distance = 32 + 48 = 80 miles.\n\nAnswer: 80",
+          "voto": 1.0,
+          "secondi": 17.45
+        }
+      }
+    ],
+    "liyab": "f187d3ecf950994755aafb94488c7b8fe90a15c8",
+    "errori_liyab": 0
+  },
+  "secondi": 1155.0
+}

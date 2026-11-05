@@ -1,0 +1,191 @@
+{
+  "caso": "email",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 2048,
+  "seed": 42,
+  "data": "2026-11-05T10:53:32Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 0.8125,
+  "voci": {
+    "urgenza": 0.725,
+    "reparto": 0.9,
+    "entrambi giusti": 0.65
+  },
+  "dettagli": {
+    "messaggi": 40,
+    "confusione": {
+      "urgenza": {
+        "media -> alta": 5,
+        "media -> bassa": 4,
+        "bassa -> media": 2
+      },
+      "reparto": {
+        "risorse_umane -> amministrazione": 2,
+        "assistenza_tecnica -> logistica": 1,
+        "assistenza_tecnica -> commerciale": 1
+      }
+    },
+    "errori": [
+      {
+        "id": 1,
+        "atteso": {
+          "urgenza": "alta",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "urgenza": "alta",
+          "reparto": "logistica"
+        }
+      },
+      {
+        "id": 3,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "logistica"
+        },
+        "dato": {
+          "urgenza": "alta",
+          "reparto": "logistica"
+        }
+      },
+      {
+        "id": 4,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "commerciale"
+        },
+        "dato": {
+          "urgenza": "bassa",
+          "reparto": "commerciale"
+        }
+      },
+      {
+        "id": 7,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "amministrazione"
+        },
+        "dato": {
+          "urgenza": "bassa",
+          "reparto": "amministrazione"
+        }
+      },
+      {
+        "id": 8,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "commerciale"
+        },
+        "dato": {
+          "urgenza": "media",
+          "reparto": "commerciale"
+        }
+      },
+      {
+        "id": 11,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "urgenza": "alta",
+          "reparto": "assistenza_tecnica"
+        }
+      },
+      {
+        "id": 15,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "urgenza": "bassa",
+          "reparto": "amministrazione"
+        }
+      },
+      {
+        "id": 16,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "urgenza": "media",
+          "reparto": "assistenza_tecnica"
+        }
+      },
+      {
+        "id": 24,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "logistica"
+        },
+        "dato": {
+          "urgenza": "alta",
+          "reparto": "logistica"
+        }
+      },
+      {
+        "id": 26,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "assistenza_tecnica"
+        },
+        "dato": {
+          "urgenza": "bassa",
+          "reparto": "commerciale"
+        }
+      },
+      {
+        "id": 28,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "commerciale"
+        },
+        "dato": {
+          "urgenza": "alta",
+          "reparto": "commerciale"
+        }
+      },
+      {
+        "id": 32,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "amministrazione"
+        },
+        "dato": {
+          "urgenza": "alta",
+          "reparto": "amministrazione"
+        }
+      },
+      {
+        "id": 35,
+        "atteso": {
+          "urgenza": "bassa",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "urgenza": "bassa",
+          "reparto": "amministrazione"
+        }
+      },
+      {
+        "id": 40,
+        "atteso": {
+          "urgenza": "media",
+          "reparto": "risorse_umane"
+        },
+        "dato": {
+          "urgenza": "bassa",
+          "reparto": "risorse_umane"
+        }
+      }
+    ]
+  },
+  "secondi": 132.4
+}

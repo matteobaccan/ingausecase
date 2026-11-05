@@ -1,0 +1,54 @@
+{
+  "caso": "colibri-velocita",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-05T10:53:46Z",
+  "secondi_avvio": 2.0,
+  "stato": "errore",
+  "motivo": "RuntimeError: risposta senza usage o senza token: {'prompt_tokens': 512, 'completion_tokens': 0, 'total_tokens': 512} ''",
+  "dettagli": {
+    "inga": {
+      "pp": 62.651173258491404,
+      "tg": 9.98896161551818,
+      "token_prompt": 508,
+      "prove": [
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "ttft": 8.048,
+          "secondi": 20.356,
+          "pp": 63.118205799774714,
+          "tg": 10.318701222789903
+        },
+        {
+          "token_prompt": 506,
+          "token_generati": 128,
+          "ttft": 8.107,
+          "secondi": 22.065,
+          "pp": 62.41502788345794,
+          "tg": 9.0987295798953
+        },
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "ttft": 8.138,
+          "secondi": 20.177,
+          "pp": 62.42028609224156,
+          "tg": 10.549454043869341
+        }
+      ]
+    },
+    "inga_http": {
+      "token_al_secondo": 6.315027111562897,
+      "primo_output_p50": 8.090745346999995,
+      "riuscite": 3,
+      "fallite": 0
+    }
+  },
+  "secondi": 171.1
+}

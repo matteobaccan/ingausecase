@@ -1,0 +1,1303 @@
+{
+  "caso": "rag-recupero",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-0.6b",
+  "file_modello": "Qwen3-0.6B-Q8_0.gguf",
+  "sha256_modello": "e150ed544dfe6016930c026a93913a5e3184181ebfe6ab2223ae01dd0491784c",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-05T10:53:12Z",
+  "modello_embedding": "minilm-multilingue",
+  "file_modello_embedding": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0.gguf",
+  "sha256_modello_embedding": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 0.7078853804465887,
+  "voci": {
+    "nDCG@10": 0.7078853804465887,
+    "recall@10": 0.9166666666666666,
+    "recall@5": 0.8236111111111112,
+    "MRR@10": 0.6379828042328042
+  },
+  "dettagli": {
+    "domande": 60,
+    "abstract": 1000,
+    "seed": 7,
+    "modello_embedding": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0",
+    "risposte": [
+      {
+        "id": "13",
+        "domanda": "5% of perinatal mortality is due to low birth weight.",
+        "attesi": [
+          "1606628"
+        ],
+        "trovati": [
+          "1263446",
+          "17450673",
+          "5487448",
+          "7662395",
+          "37480103",
+          "12779444",
+          "23557241",
+          "36355784",
+          "16322674",
+          "11360768"
+        ],
+        "ndcg10": 0.0,
+        "recall10": 0.0
+      },
+      {
+        "id": "42",
+        "domanda": "A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.",
+        "attesi": [
+          "18174210"
+        ],
+        "trovati": [
+          "18174210",
+          "14492339",
+          "18617259",
+          "4449524",
+          "21164071",
+          "16056514",
+          "42373943",
+          "39443128",
+          "39506601",
+          "25830701"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "53",
+        "domanda": "ALDH1 expression is associated with poorer prognosis in breast cancer.",
+        "attesi": [
+          "45638119"
+        ],
+        "trovati": [
+          "45638119",
+          "16734530",
+          "27123743",
+          "25973484",
+          "1171121",
+          "12358173",
+          "2015126",
+          "24249915",
+          "7795952",
+          "37480103"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "75",
+        "domanda": "Active H. pylori urease has a polymeric structure that compromises two subunits, UreA and UreB.",
+        "attesi": [
+          "4387784"
+        ],
+        "trovati": [
+          "38805486",
+          "14155726",
+          "12149169",
+          "21598000",
+          "22896970",
+          "4387784",
+          "19313533",
+          "29107180",
+          "40383969",
+          "7465900"
+        ],
+        "ndcg10": 0.356,
+        "recall10": 1.0
+      },
+      {
+        "id": "94",
+        "domanda": "Albendazole is used to treat lymphatic filariasis.",
+        "attesi": [
+          "1215116"
+        ],
+        "trovati": [
+          "22613657",
+          "19313533",
+          "26000593",
+          "1215116",
+          "7370282",
+          "20428155",
+          "11481946",
+          "29634262",
+          "13441037",
+          "34481589"
+        ],
+        "ndcg10": 0.431,
+        "recall10": 1.0
+      },
+      {
+        "id": "127",
+        "domanda": "Arginine 90 in p150n is important for interaction with EB1.",
+        "attesi": [
+          "21598000"
+        ],
+        "trovati": [
+          "21598000",
+          "30224907",
+          "10423989",
+          "11419230",
+          "18126445",
+          "40145839",
+          "22029384",
+          "4406819",
+          "34258065",
+          "34198460"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "129",
+        "domanda": "Articles published in open access format are less likely to be cited than traditional journals.",
+        "attesi": [
+          "27768226"
+        ],
+        "trovati": [
+          "27768226",
+          "39593548",
+          "3222122",
+          "23294314",
+          "20422174",
+          "20008796",
+          "327319",
+          "7547329",
+          "24943534",
+          "14717213"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "130",
+        "domanda": "Articles published in open access format are more likely to be cited than traditional journals.",
+        "attesi": [
+          "27768226"
+        ],
+        "trovati": [
+          "27768226",
+          "3222122",
+          "15795880",
+          "60515890",
+          "13916484",
+          "20008796",
+          "14717213",
+          "25052749",
+          "20422174",
+          "18098290"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "146",
+        "domanda": "Autologous transplantation of mesenchymal stem cells has lower rates of rejection than induction therapy with anti-interleukin-2 receptor antibodies.",
+        "attesi": [
+          "10582939"
+        ],
+        "trovati": [
+          "24825841",
+          "10582939",
+          "24069089",
+          "22613657",
+          "4417177",
+          "5123516",
+          "6280907",
+          "8185080",
+          "11771811",
+          "22210434"
+        ],
+        "ndcg10": 0.631,
+        "recall10": 1.0
+      },
+      {
+        "id": "218",
+        "domanda": "CX3CR1 on the Th2 cells promotes airway inflammation.",
+        "attesi": [
+          "21366394"
+        ],
+        "trovati": [
+          "21366394",
+          "14311986",
+          "13798951",
+          "20388894",
+          "17997584",
+          "7046487",
+          "20568364",
+          "5979056",
+          "9226649",
+          "12650610"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "230",
+        "domanda": "Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.",
+        "attesi": [
+          "3067015"
+        ],
+        "trovati": [
+          "5849439",
+          "3067015",
+          "641786",
+          "12810152",
+          "2356950",
+          "4561402",
+          "6446747",
+          "14116046",
+          "8892905",
+          "45638119"
+        ],
+        "ndcg10": 0.631,
+        "recall10": 1.0
+      },
+      {
+        "id": "232",
+        "domanda": "Cataract and trachoma are the primary cause of blindness in Southern Sudan.",
+        "attesi": [
+          "10536636"
+        ],
+        "trovati": [
+          "10536636",
+          "7655029",
+          "457630",
+          "31560225",
+          "34760396",
+          "21932050",
+          "28738741",
+          "58564850",
+          "19824183",
+          "129199129"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "268",
+        "domanda": "Cold exposure increases BAT recruitment.",
+        "attesi": [
+          "970012"
+        ],
+        "trovati": [
+          "970012",
+          "20532591",
+          "7285256",
+          "20363389",
+          "5389523",
+          "15305881",
+          "10314816",
+          "39776978",
+          "13770184",
+          "37619697"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "327",
+        "domanda": "Deletion of αvβ8 does not result in a spontaneous inflammatory phenotype.",
+        "attesi": [
+          "17997584"
+        ],
+        "trovati": [
+          "17997584",
+          "22312627",
+          "13905670",
+          "1049501",
+          "32927401",
+          "12880573",
+          "34378726",
+          "14926162",
+          "11156883",
+          "40349336"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "338",
+        "domanda": "Dexamethasone decreases risk of postoperative bleeding.",
+        "attesi": [
+          "23349986"
+        ],
+        "trovati": [
+          "23349986",
+          "5260382",
+          "43128141",
+          "10608822",
+          "21645205",
+          "39903312",
+          "35521287",
+          "11201004",
+          "6158879",
+          "24524403"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "343",
+        "domanda": "Diabetic patients with acute coronary syndrome experience increased short-term and long-term risk for bleeding events.",
+        "attesi": [
+          "5884524",
+          "7873737"
+        ],
+        "trovati": [
+          "5884524",
+          "44827480",
+          "39443128",
+          "3613041",
+          "54490092",
+          "6945285",
+          "7873737",
+          "14082855",
+          "16760369",
+          "22420524"
+        ],
+        "ndcg10": 0.818,
+        "recall10": 1.0
+      },
+      {
+        "id": "415",
+        "domanda": "Female carriers of the Apolipoprotein E4 (APOE4) allele have increased risk for dementia.",
+        "attesi": [
+          "6309659"
+        ],
+        "trovati": [
+          "6309659",
+          "24530130",
+          "45457778",
+          "13905670",
+          "380526",
+          "51386222",
+          "10548391",
+          "24906548",
+          "43226130",
+          "2015126"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "431",
+        "domanda": "FoxO3a activation in neuronal death is mediated by reactive oxygen species (ROS).",
+        "attesi": [
+          "28937856"
+        ],
+        "trovati": [
+          "19922508",
+          "29073751",
+          "6000423",
+          "23052989",
+          "18348376",
+          "7157436",
+          "1049501",
+          "28937856",
+          "3107733",
+          "39381118"
+        ],
+        "ndcg10": 0.315,
+        "recall10": 1.0
+      },
+      {
+        "id": "439",
+        "domanda": "Fz/PCP-dependent Pk localizes to the anterior membrane of neuroectoderm cells during zebrafish neuralation",
+        "attesi": [
+          "4423559"
+        ],
+        "trovati": [
+          "4423559",
+          "4343437",
+          "38485364",
+          "29073751",
+          "17631671",
+          "17755060",
+          "34537906",
+          "28071965",
+          "7370282",
+          "7869794"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "502",
+        "domanda": "Healthcare delivery efficiency in crowded delivery centers is impaired by improving structural, logistical, and interpersonal elements.",
+        "attesi": [
+          "13071728"
+        ],
+        "trovati": [
+          "27712433",
+          "24318630",
+          "13906581",
+          "14390137",
+          "13071728",
+          "28071965",
+          "8185080",
+          "11953232",
+          "22896970",
+          "20302714"
+        ],
+        "ndcg10": 0.387,
+        "recall10": 1.0
+      },
+      {
+        "id": "513",
+        "domanda": "High cardiopulmonary fitness causes increased mortality rate.",
+        "attesi": [
+          "13230773"
+        ],
+        "trovati": [
+          "13230773",
+          "21767325",
+          "24097933",
+          "11481946",
+          "7662395",
+          "12779444",
+          "21048969",
+          "40867854",
+          "23573229",
+          "54490092"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "525",
+        "domanda": "Histone demethylase recruitment and a transient decrease in histone methylation is necessary for ligand-dependent induction of transcription by nuclear receptors.",
+        "attesi": [
+          "13639330"
+        ],
+        "trovati": [
+          "13639330",
+          "12156187",
+          "2754534",
+          "2566674",
+          "8185080",
+          "5389523",
+          "22210434",
+          "34071621",
+          "6923961",
+          "2817000"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "536",
+        "domanda": "Hypocretin neurones induce panicprone state in rats.",
+        "attesi": [
+          "16056514"
+        ],
+        "trovati": [
+          "306311",
+          "16056514",
+          "16398827",
+          "7157436",
+          "2225918",
+          "9197786",
+          "28436879",
+          "15491404",
+          "3140772",
+          "7875158"
+        ],
+        "ndcg10": 0.631,
+        "recall10": 1.0
+      },
+      {
+        "id": "544",
+        "domanda": "IFIT1 restricts viral replication by sequestrating mis-capped viral RNAs.",
+        "attesi": [
+          "24221369"
+        ],
+        "trovati": [
+          "3052642",
+          "45287266",
+          "21651116",
+          "461550",
+          "2566674",
+          "21330280",
+          "14050257",
+          "7029990",
+          "3583084",
+          "15593561"
+        ],
+        "ndcg10": 0.0,
+        "recall10": 0.0
+      },
+      {
+        "id": "575",
+        "domanda": "In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",
+        "attesi": [
+          "10300888"
+        ],
+        "trovati": [
+          "10300888",
+          "26182390",
+          "8210189",
+          "615047",
+          "6106004",
+          "516867",
+          "9154703",
+          "8989616",
+          "36606083",
+          "23664875"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "578",
+        "domanda": "In mouse models, the loss of CSF1R facilitates MOZ-TIF2-induced leuekmogenesis.",
+        "attesi": [
+          "8764879"
+        ],
+        "trovati": [
+          "7239105",
+          "6910577",
+          "42565477",
+          "8764879",
+          "7734150",
+          "12486491",
+          "4422868",
+          "14615911",
+          "10698739",
+          "13777138"
+        ],
+        "ndcg10": 0.431,
+        "recall10": 1.0
+      },
+      {
+        "id": "597",
+        "domanda": "Incidence rates of cervical cancer have decreased.",
+        "attesi": [
+          "12779444",
+          "25742130",
+          "36355784"
+        ],
+        "trovati": [
+          "46695481",
+          "25742130",
+          "36355784",
+          "27446873",
+          "8082528",
+          "12779444",
+          "23136735",
+          "27873158",
+          "28617573",
+          "15512462"
+        ],
+        "ndcg10": 0.698,
+        "recall10": 1.0
+      },
+      {
+        "id": "598",
+        "domanda": "Incidence rates of cervical cancer have increased due to nationwide screening programs based primarily on cytology to detect uterine cervical cancer.",
+        "attesi": [
+          "25742130"
+        ],
+        "trovati": [
+          "27446873",
+          "25742130",
+          "36355784",
+          "8082528",
+          "12779444",
+          "46695481",
+          "27873158",
+          "2015126",
+          "7650066",
+          "15512462"
+        ],
+        "ndcg10": 0.631,
+        "recall10": 1.0
+      },
+      {
+        "id": "641",
+        "domanda": "Insomnia can be effectively treated with cognitive behavioral therapy.",
+        "attesi": [
+          "31554917",
+          "5912283"
+        ],
+        "trovati": [
+          "5912283",
+          "31554917",
+          "7239105",
+          "7627167",
+          "20326526",
+          "25315295",
+          "10017612",
+          "24524403",
+          "23052989",
+          "19571273"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "728",
+        "domanda": "Ly6C hi monocytes have a lower inflammatory capacity than Ly6C lo monocytes.",
+        "attesi": [
+          "36444198",
+          "7521113"
+        ],
+        "trovati": [
+          "14492339",
+          "7521113",
+          "10648422",
+          "36444198",
+          "13905670",
+          "10165258",
+          "11233339",
+          "36474",
+          "22483580",
+          "34469966"
+        ],
+        "ndcg10": 0.651,
+        "recall10": 1.0
+      },
+      {
+        "id": "781",
+        "domanda": "Mice that lack Interferon-γ or its receptor exhibit high resistance to experimental autoimmune myocarditis.",
+        "attesi": [
+          "24338780"
+        ],
+        "trovati": [
+          "34378726",
+          "4561402",
+          "24338780",
+          "45096063",
+          "14116046",
+          "1049501",
+          "11233339",
+          "31272411",
+          "6270720",
+          "1855679"
+        ],
+        "ndcg10": 0.5,
+        "recall10": 1.0
+      },
+      {
+        "id": "784",
+        "domanda": "MicroRNA is involved in the regulation of Neural Stem Cell (NSC) differentiation and proliferation dynamic homeostasis",
+        "attesi": [
+          "2356950"
+        ],
+        "trovati": [
+          "2356950",
+          "3052642",
+          "21601459",
+          "33677323",
+          "13964633",
+          "6446747",
+          "13290521",
+          "26993601",
+          "14581009",
+          "9159495"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "800",
+        "domanda": "Modifying the epigenome in the brain affects the normal human aging process by affecting certain genes related to neurogenesis.",
+        "attesi": [
+          "22543403"
+        ],
+        "trovati": [
+          "22264117",
+          "22543403",
+          "23052989",
+          "8318286",
+          "2356950",
+          "2547636",
+          "40349336",
+          "26993601",
+          "12324049",
+          "6599693"
+        ],
+        "ndcg10": 0.631,
+        "recall10": 1.0
+      },
+      {
+        "id": "805",
+        "domanda": "Monoclonal antibody targeting of N-cadherin inhibits metastasis.",
+        "attesi": [
+          "22180793"
+        ],
+        "trovati": [
+          "22180793",
+          "5123516",
+          "9600826",
+          "7795952",
+          "1389264",
+          "5406411",
+          "9063688",
+          "19313533",
+          "23160444",
+          "4373433"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "808",
+        "domanda": "Most termination events in Okazaki fragments are sequence specific.",
+        "attesi": [
+          "36606083"
+        ],
+        "trovati": [
+          "36606083",
+          "25799020",
+          "31514338",
+          "3981729",
+          "25787749",
+          "41022628",
+          "2107238",
+          "18361917",
+          "38805486",
+          "29107180"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "821",
+        "domanda": "N-terminal cleavage reduces success identifying transcription start sites.",
+        "attesi": [
+          "8646760"
+        ],
+        "trovati": [
+          "12642224",
+          "461550",
+          "2817000",
+          "15419873",
+          "12149169",
+          "1259280",
+          "42106119",
+          "12588500",
+          "8646760",
+          "12451492"
+        ],
+        "ndcg10": 0.301,
+        "recall10": 1.0
+      },
+      {
+        "id": "830",
+        "domanda": "NF2 (Merlin) causes phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila by activating LATS1/2 kinases.",
+        "attesi": [
+          "1897324"
+        ],
+        "trovati": [
+          "735130",
+          "16494316",
+          "25670099",
+          "1897324",
+          "52873726",
+          "18810195",
+          "4343437",
+          "7370282",
+          "8133180",
+          "20568364"
+        ],
+        "ndcg10": 0.431,
+        "recall10": 1.0
+      },
+      {
+        "id": "880",
+        "domanda": "Occupancy of ribosomes by IncRNAs mirror 5 0-UTRs",
+        "attesi": [
+          "8426046"
+        ],
+        "trovati": [
+          "22896970",
+          "12486491",
+          "12149169",
+          "17240457",
+          "8426046",
+          "2566674",
+          "2251426",
+          "21330280",
+          "984825",
+          "13777138"
+        ],
+        "ndcg10": 0.387,
+        "recall10": 1.0
+      },
+      {
+        "id": "956",
+        "domanda": "Pleiotropic coupling of GLP-1R to intracellular effectors promotes distinct profiles of cellular signaling.",
+        "attesi": [
+          "12956194"
+        ],
+        "trovati": [
+          "12956194",
+          "12650610",
+          "29073751",
+          "37311371",
+          "20568364",
+          "13798951",
+          "16494316",
+          "7869794",
+          "3127341",
+          "32697244"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "971",
+        "domanda": "Primary cervical cancer screening with HPV detection has higher longitudinal sensitivity than conventional cytology to detect cervical intraepithelial neoplasia grade 2.",
+        "attesi": [
+          "27873158",
+          "28617573",
+          "46695481",
+          "9764256"
+        ],
+        "trovati": [
+          "27446873",
+          "46695481",
+          "27873158",
+          "23136735",
+          "9764256",
+          "7650066",
+          "1203035",
+          "28617573",
+          "12779444",
+          "25742130"
+        ],
+        "ndcg10": 0.716,
+        "recall10": 1.0
+      },
+      {
+        "id": "1019",
+        "domanda": "Rapid phosphotransfer rates govern fidelity in two component systems",
+        "attesi": [
+          "11603066"
+        ],
+        "trovati": [
+          "13072112",
+          "6847208",
+          "27840664",
+          "15282056",
+          "15491404",
+          "14492339",
+          "11603066",
+          "2817000",
+          "21598000",
+          "20602517"
+        ],
+        "ndcg10": 0.333,
+        "recall10": 1.0
+      },
+      {
+        "id": "1024",
+        "domanda": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+        "attesi": [
+          "5373138"
+        ],
+        "trovati": [
+          "5373138",
+          "2817000",
+          "13277623",
+          "33677323",
+          "14311986",
+          "36606083",
+          "641786",
+          "26672703",
+          "41022628",
+          "12486491"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1130",
+        "domanda": "T regulatory cells (tTregs) lacking αvβ8 are more adept at suppressing pathogenic T-cell responses during active inflammation.",
+        "attesi": [
+          "17997584"
+        ],
+        "trovati": [
+          "17997584",
+          "5406411",
+          "13798951",
+          "991137",
+          "24069089",
+          "4422734",
+          "9226649",
+          "7046487",
+          "22210434",
+          "5800138"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1146",
+        "domanda": "Teaching hospitals do not provide better care than non-teaching hospitals.",
+        "attesi": [
+          "13906581"
+        ],
+        "trovati": [
+          "43855756",
+          "27712433",
+          "10374686",
+          "13906581",
+          "13732033",
+          "16495649",
+          "28738741",
+          "2665675",
+          "24906548",
+          "24318630"
+        ],
+        "ndcg10": 0.431,
+        "recall10": 1.0
+      },
+      {
+        "id": "1180",
+        "domanda": "The PRR MDA5 is a sensor of RNA virus infection.",
+        "attesi": [
+          "31272411"
+        ],
+        "trovati": [
+          "15419873",
+          "2566674",
+          "31272411",
+          "21932050",
+          "45287266",
+          "24221369",
+          "18914652",
+          "16172576",
+          "25141908",
+          "7447120"
+        ],
+        "ndcg10": 0.5,
+        "recall10": 1.0
+      },
+      {
+        "id": "1187",
+        "domanda": "The YAP1 and TEAD complex tanslocates into the nucleus where it interacts with transcription factors and DNA-binding proteins that modulate target gene transcription.",
+        "attesi": [
+          "52873726"
+        ],
+        "trovati": [
+          "52873726",
+          "11922370",
+          "34071621",
+          "3981729",
+          "2817000",
+          "17240457",
+          "42565477",
+          "29851836",
+          "28937856",
+          "3468459"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1197",
+        "domanda": "The availability of safe places to study is not effective at decreasing homelessness.",
+        "attesi": [
+          "25649714"
+        ],
+        "trovati": [
+          "13071728",
+          "7514614",
+          "21323758",
+          "25649714",
+          "39652608",
+          "15670968",
+          "29634262",
+          "8780599",
+          "2522977",
+          "40867854"
+        ],
+        "ndcg10": 0.431,
+        "recall10": 1.0
+      },
+      {
+        "id": "1199",
+        "domanda": "The benefits of colchicine were achieved with effective widespread use of secondary prevention strategies such as high-dose statins.",
+        "attesi": [
+          "16760369"
+        ],
+        "trovati": [
+          "2522977",
+          "22420524",
+          "8963413",
+          "5260382",
+          "708425",
+          "5289038",
+          "8780599",
+          "18988265",
+          "5597586",
+          "23294314"
+        ],
+        "ndcg10": 0.0,
+        "recall10": 0.0
+      },
+      {
+        "id": "1226",
+        "domanda": "The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",
+        "attesi": [
+          "13777138"
+        ],
+        "trovati": [
+          "13277623",
+          "9063688",
+          "4920376",
+          "12156187",
+          "16839245",
+          "11481946",
+          "2374637",
+          "13011249",
+          "8646760",
+          "27123743"
+        ],
+        "ndcg10": 0.0,
+        "recall10": 0.0
+      },
+      {
+        "id": "1232",
+        "domanda": "The minor G allele of FOXO3 is related to more severe symptoms of Crohn's Disease.",
+        "attesi": [
+          "13905670"
+        ],
+        "trovati": [
+          "13905670",
+          "28937856",
+          "29423324",
+          "10012166",
+          "24906548",
+          "1583134",
+          "1358909",
+          "8698208",
+          "24632480",
+          "24524403"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1241",
+        "domanda": "The myocardial lineage develops from cardiac progenitors of mesodermal origin.",
+        "attesi": [
+          "4427392"
+        ],
+        "trovati": [
+          "4020950",
+          "26899920",
+          "4427392",
+          "23124332",
+          "21272977",
+          "6270720",
+          "21932050",
+          "4417177",
+          "38899659",
+          "6280907"
+        ],
+        "ndcg10": 0.5,
+        "recall10": 1.0
+      },
+      {
+        "id": "1245",
+        "domanda": "The one-child policy has been successful in lowering population growth.",
+        "attesi": [
+          "7662395"
+        ],
+        "trovati": [
+          "1606628",
+          "7662395",
+          "12428497",
+          "39593548",
+          "15907458",
+          "10692948",
+          "18025240",
+          "33723822",
+          "33740844",
+          "40949706"
+        ],
+        "ndcg10": 0.631,
+        "recall10": 1.0
+      },
+      {
+        "id": "1266",
+        "domanda": "The risk of breast cancer among parous women increases with placental weight of pregnancies, and this association is strongest for premenopausal breast cancer.",
+        "attesi": [
+          "37480103"
+        ],
+        "trovati": [
+          "37480103",
+          "25973484",
+          "27123743",
+          "5487448",
+          "15512462",
+          "2015126",
+          "23557241",
+          "17450673",
+          "16734530",
+          "16322674"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1279",
+        "domanda": "The treatment of cancer patients with co-IR blockade precipitates adverse autoimmune events.",
+        "attesi": [
+          "11335781"
+        ],
+        "trovati": [
+          "11335781",
+          "34378726",
+          "4561402",
+          "8963413",
+          "5406411",
+          "3825750",
+          "667451",
+          "3613041",
+          "17934603",
+          "1583134"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1332",
+        "domanda": "Tumor necrosis factor alpha (TNF-α) and interleukin-1 (IL-1) are pro-inflammatory cytokines that inhibit IL-6 and IL-10.",
+        "attesi": [
+          "5304891"
+        ],
+        "trovati": [
+          "11233339",
+          "34378726",
+          "10648422",
+          "45096063",
+          "26068103",
+          "13905670",
+          "22210434",
+          "20388894",
+          "3981033",
+          "35766603"
+        ],
+        "ndcg10": 0.0,
+        "recall10": 0.0
+      },
+      {
+        "id": "1335",
+        "domanda": "UCB T cells maintain high TCR diversity after transplantation.",
+        "attesi": [
+          "27910499"
+        ],
+        "trovati": [
+          "27910499",
+          "24069089",
+          "9283422",
+          "25853741",
+          "13798951",
+          "2825380",
+          "8305686",
+          "86129154",
+          "24825841",
+          "10078024"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1337",
+        "domanda": "Ubiquitin ligase UBC13 generates a K63-linked polyubiquitin moiety at PCNA K164.",
+        "attesi": [
+          "20231138"
+        ],
+        "trovati": [
+          "13277623",
+          "29557235",
+          "20231138",
+          "17768946",
+          "23577014",
+          "21561474",
+          "7915836",
+          "34537906",
+          "6268106",
+          "10012166"
+        ],
+        "ndcg10": 0.5,
+        "recall10": 1.0
+      },
+      {
+        "id": "1339",
+        "domanda": "Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion.",
+        "attesi": [
+          "15482274"
+        ],
+        "trovati": [
+          "15482274",
+          "6296189",
+          "37628989",
+          "24906548",
+          "73323408",
+          "26445118",
+          "102662",
+          "14155726",
+          "28633594",
+          "14926162"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      },
+      {
+        "id": "1379",
+        "domanda": "Women with a higher birth weight are more likely to develop breast cancer later in life.",
+        "attesi": [
+          "16322674",
+          "17450673",
+          "23557241",
+          "27123743"
+        ],
+        "trovati": [
+          "25973484",
+          "37480103",
+          "5487448",
+          "17450673",
+          "27123743",
+          "2015126",
+          "23557241",
+          "16322674",
+          "13007205",
+          "1171121"
+        ],
+        "ndcg10": 0.572,
+        "recall10": 1.0
+      },
+      {
+        "id": "1395",
+        "domanda": "p16INK4A accumulation is  linked to an abnormal wound response caused by the microinvasive step of advanced Oral Potentially Malignant Lesions (OPMLs).",
+        "attesi": [
+          "17717391"
+        ],
+        "trovati": [
+          "17717391",
+          "12650610",
+          "24790460",
+          "9226649",
+          "39443128",
+          "6446747",
+          "15879931",
+          "14615911",
+          "10698739",
+          "31616203"
+        ],
+        "ndcg10": 1.0,
+        "recall10": 1.0
+      }
+    ]
+  },
+  "secondi": 519.3
+}

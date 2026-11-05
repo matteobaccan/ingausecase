@@ -1,0 +1,46 @@
+{
+  "caso": "thread",
+  "versione": "0.44.0",
+  "inga": "inga 0.44.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 2048,
+  "seed": 42,
+  "data": "2026-11-05T10:53:27Z",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 1.323293053122302,
+  "voci": {
+    "generazione con 2 thread, Inga su llama.cpp": 1.0693180137516467,
+    "generazione con 2 thread, Inga su Liyab": 1.8017697723395032,
+    "generazione con 4 thread, Inga su llama.cpp": 1.323293053122302,
+    "generazione con 4 thread, Inga su Liyab": 1.4557133189231437,
+    "Inga con 4 thread su Inga con 2": 1.4077840673145698,
+    "llama.cpp con 4 thread su llama.cpp con 2": 1.13759296106038,
+    "Inga senza -t su llama.cpp con 4 thread": 0.9387988287084121
+  },
+  "dettagli": {
+    "lscpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Xeon(R) 6975P-C\nCPU family:                              6\nModel:                                   173\nThread(s) per core:                      2\nCore(s) per socket:                      2\nSocket(s):                               1\nStepping:                                1\nBogoMIPS:                                5400.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq monitor vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 wbnoinvd ida arat vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq rdpid bus_lock_detect cldemote movdiri movdir64b md_clear serialize amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                          VT-x\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               96 KiB (2 instances)\nL1i cache:                               128 KiB (2 instances)\nL2 cache:                                4 MiB (2 instances)\nL3 cache:                                480 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS Not affected; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+    "cpu_logiche": 4,
+    "inga_tg_t2": 8.480483144380734,
+    "llama_tg_t2": 7.93074,
+    "liyab_tg_t2": 4.706751814006333,
+    "liyab_prove_t2": [
+      4.711838955429083,
+      4.702827410196271,
+      4.705589076393646
+    ],
+    "inga_tg_t4": 11.938689053788963,
+    "llama_tg_t4": 9.021954,
+    "liyab_tg_t4": 8.201263874277489,
+    "liyab_prove_t4": [
+      8.13359487217191,
+      8.223541499875546,
+      8.246655250785007
+    ],
+    "inga_tg_default": 8.469799847861173,
+    "llama_cpp": "b12032"
+  },
+  "secondi": 428.0
+}
