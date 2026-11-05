@@ -91,8 +91,21 @@ def leggi(path):
         return f"(non letto: {e})"
 
 
+def scelta():
+    """Le varianti e le parti da misurare: quelle di case.json (`varianti`, `scala`,
+    `pagine_grandi`, `profilo`), altrimenti tutte."""
+    try:
+        with open(os.path.join(inga_api.case_dir(), "case.json")) as f:
+            c = json.load(f)
+    except (OSError, ValueError):
+        c = {}
+    return (c.get("varianti", VARIANTI), c.get("scala", True), c.get("pagine_grandi", True),
+            c.get("profilo", True))
+
+
 def main():
     model, exe = os.environ["IUC_MODEL_PATH"], os.environ["IUC_INGA"]
+    varianti, scala, pagine, profilo = scelta()
     out = {"lscpu": subprocess.run(["lscpu"], capture_output=True, text=True).stdout,
            "cpu_logiche": os.cpu_count(),
            "thp_enabled": leggi("/sys/kernel/mm/transparent_hugepage/enabled"),
@@ -102,7 +115,7 @@ def main():
     voci = {}
     errori = []
     # La scala da 1 a 4 thread.
-    for t in (1, 2, 3, 4):
+    for t in (1, 2, 3, 4) if scala else ():
         try:
             out[f"tg_t{t}"] = tg(exe, model, t)
         except (RuntimeError, StopIteration, ValueError, subprocess.TimeoutExpired) as e:
@@ -111,7 +124,7 @@ def main():
         voci["da 2 a 4 thread (default)"] = out["tg_t4"] / out["tg_t2"]
     # Le varianti della divisione del lavoro.
     for t in THREADS:
-        for v in VARIANTI:
+        for v in varianti:
             try:
                 a, b, r, riga = ab(exe, model, t, v)
                 out[f"ab_{v}_t{t}"] = {"default": a, "variante": b, "rapporto": r, "riga": riga}
@@ -119,7 +132,7 @@ def main():
             except (RuntimeError, ValueError, AttributeError, subprocess.TimeoutExpired) as e:
                 errori.append(f"{v} t{t}: {type(e).__name__}: {e}")
     # Le pagine grandi, esecuzioni alternate.
-    for t in THREADS:
+    for t in THREADS if pagine else ():
         base, thp, picchi = [], [], []
         try:
             for _ in range(2):
@@ -131,7 +144,7 @@ def main():
         if base and thp:
             voci[f"debug.weights_thp con {t} thread, sul default"] = (sum(thp) / len(thp)) / (sum(base) / len(base))
     # Il profilo per operazione.
-    for t in THREADS:
+    for t in THREADS if profilo else ():
         try:
             out[f"profilo_t{t}"] = esegui([exe, "bench", model, "-p", "0", "-n", "64", "-r", "1", "-t", str(t),
                                            "--profile"])

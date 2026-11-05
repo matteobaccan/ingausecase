@@ -28,6 +28,11 @@ qui si cerca dove si perde.
 - **Profilo**: `inga bench -p 0 -n 64 -r 1 -t T --profile` con 2 e 4 thread, il tempo per
   tipo di operazione per token.
 
+Le varianti e le parti da misurare si scelgono in `case.json` (`varianti`, `scala`,
+`pagine_grandi`, `profilo`); senza, il caso le misura tutte (la prima run,
+[42093214626](https://github.com/matteobaccan/ingausecase/actions/runs/42093214626), con le
+quattro varianti qui sopra).
+
 Voci: la scala da 2 a 4 thread e il rapporto variante / default di ogni chiave con 2 e 4
 thread. Voto: il rapporto migliore con 4 thread (sopra 1, più veloce del default). Il JSON
 tiene `lscpu`, il kernel e lo stato delle pagine grandi trasparenti. Va lanciato con
