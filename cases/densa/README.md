@@ -16,11 +16,15 @@ qui si cerca dove si perde.
     llama.cpp (8 compiti per thread di default);
   - `debug.cpu_spin_us=0`: i thread senza lavoro dormono subito invece di girare per
     5 ms (sull'SMT un thread che gira toglie risorse al suo gemello).
-- **Pagine grandi per i pesi** (`debug.weights_thp`): il file letto in memoria anonima
-  con `MADV_HUGEPAGE` invece di essere mappato. Si legge al caricamento, quindi niente
-  `--ab`: esecuzioni alternate senza e con `--set debug.weights_thp=true` (ABAB, `-r 3`),
-  con 2 e 4 thread; durante quelle con la chiave il caso legge `AnonHugePages` del
-  processo da `/proc`, per sapere se il kernel ha dato davvero pagine da 2 MiB.
+- **Pagine grandi per i pesi** (`debug.weights_thp`): i pesi riordinati al caricamento
+  (Q4_K e gli altri tipi riordinati per gruppi di otto righe, la maggior parte dei byte di
+  un Q4_K_M) in memoria anonima con `MADV_HUGEPAGE` invece che sull'heap; i pesi letti dal
+  file così come sono (Q6_K, gli embedding) restano mappati. Si legge al caricamento,
+  quindi niente `--ab`: esecuzioni alternate senza e con `--set debug.weights_thp=true`
+  (ABAB, `-r 3`), con 2 e 4 thread; durante quelle con la chiave il caso legge
+  `AnonHugePages` del processo da `/proc`, per sapere se il kernel ha dato davvero pagine
+  da 2 MiB. (Nel commit c054b07 di Inga la chiave leggeva invece l'intero file in
+  memoria anonima: la run 42093214626 misura quella versione.)
 - **Profilo**: `inga bench -p 0 -n 64 -r 1 -t T --profile` con 2 e 4 thread, il tempo per
   tipo di operazione per token.
 

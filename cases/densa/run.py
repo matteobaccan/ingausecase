@@ -7,7 +7,8 @@ runner con SMT (4 vCPU, 2 core), dove da 2 a 4 thread Inga guadagna poco (caso q
   `debug.cpu_task_kb` (i KiB di pesi di un compito, 64 di default) a 16 e 256,
   `debug.cpu_tasks_per_thread=1` (una sola fetta di righe per thread, come llama.cpp),
   `debug.cpu_spin_us=0` (i thread fermi dormono subito invece di girare 5 ms).
-- Pagine grandi: `debug.weights_thp` si legge al caricamento, quindi niente --ab:
+- Pagine grandi: `debug.weights_thp` (i pesi riordinati in memoria anonima con
+  MADV_HUGEPAGE) si legge al caricamento, quindi niente --ab:
   esecuzioni alternate senza e con `--set debug.weights_thp=true` (ABAB, `-r 3`), con 2 e
   4 thread; durante quelle con la chiave il caso legge `AnonHugePages` del processo da
   /proc (se il kernel ha dato davvero pagine da 2 MiB).
