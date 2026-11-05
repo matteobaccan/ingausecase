@@ -1,0 +1,6 @@
+{
+  "descrizione": "Generazione dei modelli densi sulla CPU: quanto scala Inga da 1 a 4 thread, le chiavi debug della divisione del lavoro fra i thread (inga bench --ab con 2 e 4 thread), le pagine grandi per i pesi (debug.weights_thp, esecuzioni alternate) e il profilo per operazione, con lscpu",
+  "modello": "qwen3-4b",
+  "ctx": 2048,
+  "timeout_minuti": 90
+}
