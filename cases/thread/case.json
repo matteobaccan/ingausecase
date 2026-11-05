@@ -1,0 +1,8 @@
+{
+  "descrizione": "Generazione con 2 e con 4 thread di Inga, llama.cpp e Liyab sullo stesso file e sulla stessa macchina: inga bench -t, llama-bench -t, liyab-cli --threads (tg128, 3 ripetizioni), e lscpu",
+  "modello": "qwen3-4b",
+  "ctx": 2048,
+  "timeout_minuti": 60,
+  "llama_cpp": true,
+  "liyab": true
+}
