@@ -1,0 +1,65 @@
+{
+  "caso": "liyab-velocita",
+  "versione": "0.45.0",
+  "inga": "inga 0.45.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-06T10:51:23Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 1.4071292337544024,
+  "voci": {
+    "lettura del prompt (~512 token), Inga su Liyab": 1.585324865833108,
+    "generazione (128 token), Inga su Liyab": 1.2289336016756964,
+    "lettura del prompt, Inga (tok/s)": 31.990367533112437,
+    "lettura del prompt, Liyab (tok/s)": 20.179061227492383,
+    "generazione, Inga (tok/s)": 10.326053949778078,
+    "generazione, Liyab (tok/s)": 8.402450657788282,
+    "picco di memoria residente, Inga (MiB)": 3039.3,
+    "picco di memoria residente, Liyab (MiB)": 2508.2
+  },
+  "dettagli": {
+    "inga": {
+      "pp": 31.990367533112437,
+      "tg": 10.326053949778078,
+      "token_prompt": 508,
+      "prove": [
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "ttft": 15.857,
+          "secondi": 28.123,
+          "pp": 32.03614860933056,
+          "tg": 10.354096567269009
+        },
+        {
+          "token_prompt": 506,
+          "token_generati": 128,
+          "ttft": 15.862,
+          "secondi": 28.476,
+          "pp": 31.900387908231526,
+          "tg": 10.068199408664883
+        },
+        {
+          "token_prompt": 508,
+          "token_generati": 128,
+          "ttft": 15.858,
+          "secondi": 27.889,
+          "pp": 32.03456608177523,
+          "tg": 10.555865873400343
+        }
+      ],
+      "picco_rss_mib": 3039.3
+    },
+    "liyab": "f187d3ecf950994755aafb94488c7b8fe90a15c8",
+    "frasi": 33,
+    "token_generati": 128,
+    "ripetizioni": 3,
+    "cpu": 4,
+    "misura": "Inga: API in streaming; Liyab: statistiche di liyab-cli --json"
+  },
+  "secondi": 260.9
+}
