@@ -1,0 +1,728 @@
+{
+  "caso": "colibri-qualita",
+  "versione": "0.46.0",
+  "inga": "inga 0.46.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-09T11:30:58Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 0.825,
+  "voci": {
+    "Inga": 0.825,
+    "Colibri": 0.8,
+    "Inga meno Colibri": 0.02499999999999991,
+    "risposte con lo stesso testo": 0.475,
+    "tempo di Colibri su quello di Inga": 1.4570249828099933,
+    "ARC, Inga": 0.9,
+    "ARC, Colibri": 0.9,
+    "GSM8K, Inga": 0.75,
+    "GSM8K, Colibri": 0.7
+  },
+  "dettagli": {
+    "arc": [
+      "Mercury_7086660",
+      "Mercury_7250058",
+      "Mercury_SC_407400",
+      "Mercury_7186358",
+      "Mercury_7234308",
+      "Mercury_184975",
+      "Mercury_SC_401272",
+      "MCAS_2006_9_43",
+      "Mercury_7263375",
+      "Mercury_7058415",
+      "Mercury_416650",
+      "Mercury_7132020",
+      "LEAP_2005_8_10404",
+      "MCAS_2011_8_15365",
+      "AKDE&ED_2008_8_53",
+      "Mercury_405873",
+      "MCAS_2005_5_34",
+      "MEA_2016_8_12",
+      "MCAS_2000_4_36",
+      "Mercury_184100"
+    ],
+    "gsm8k": [
+      40,
+      62,
+      89,
+      174,
+      183,
+      258,
+      280,
+      393,
+      395,
+      428,
+      464,
+      479,
+      506,
+      546,
+      758,
+      768,
+      799,
+      820,
+      824,
+      834
+    ],
+    "domande": 40,
+    "colibri": "0a5504a1dc64f86fcd0fe7db298b0448c730e7e6",
+    "secondi_inga": 436,
+    "secondi_colibri": 636,
+    "motori": {
+      "inga": {},
+      "colibri": {
+        "secondi_avvio": 3.0,
+        "ram_gb": null,
+        "picco_rss_gb": 3.16,
+        "thread": 2,
+        "contesto": 4096
+      }
+    },
+    "risposte": [
+      {
+        "n": 0,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.9,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 4.4,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 1,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 4.8,
+          "testo": "Answer: B. size differences"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 3.7,
+          "testo": "Answer: B"
+        },
+        "uguali": false
+      },
+      {
+        "n": 2,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.7,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.8,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 3,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.7,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 5.0,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 4,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 3.4,
+          "testo": "Answer: A"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 4.7,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 5,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.3,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.1,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 6,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.5,
+          "testo": "Answer: D. the scientific method."
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.8,
+          "testo": "Answer: D"
+        },
+        "uguali": false
+      },
+      {
+        "n": 7,
+        "inga": {
+          "voto": 0.0,
+          "nota": "B su C",
+          "secondi": 3.6,
+          "testo": "Answer: B"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "B su C",
+          "secondi": 4.8,
+          "testo": "Answer: B"
+        },
+        "uguali": true
+      },
+      {
+        "n": 8,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 3.2,
+          "testo": "Answer: B"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 4.2,
+          "testo": "Answer: B"
+        },
+        "uguali": true
+      },
+      {
+        "n": 9,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.9,
+          "testo": "Answer: A"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 3.8,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 10,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.1,
+          "testo": "Answer: C. formation of a cell plate"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 4.0,
+          "testo": "Answer: C. formation of a cell plate"
+        },
+        "uguali": true
+      },
+      {
+        "n": 11,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.0,
+          "testo": "Answer: A. electron"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.5,
+          "testo": "Answer: A"
+        },
+        "uguali": false
+      },
+      {
+        "n": 12,
+        "inga": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 2.9,
+          "testo": "Answer: D"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "D su D",
+          "secondi": 3.8,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 13,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.0,
+          "testo": "Answer: C. confident."
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.9,
+          "testo": "Answer: C. confident."
+        },
+        "uguali": true
+      },
+      {
+        "n": 14,
+        "inga": {
+          "voto": 0.0,
+          "nota": "D su C",
+          "secondi": 2.9,
+          "testo": "Answer: D"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "D su C",
+          "secondi": 4.0,
+          "testo": "Answer: D"
+        },
+        "uguali": true
+      },
+      {
+        "n": 15,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 2.9,
+          "testo": "Answer: B"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 3.9,
+          "testo": "Answer: B"
+        },
+        "uguali": true
+      },
+      {
+        "n": 16,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 3.7,
+          "testo": "Answer: B. using storage space efficiently."
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 4.4,
+          "testo": "Answer: B. using storage space efficiently."
+        },
+        "uguali": true
+      },
+      {
+        "n": 17,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 2.5,
+          "testo": "Answer: B. burning coal"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 3.0,
+          "testo": "Answer: B"
+        },
+        "uguali": false
+      },
+      {
+        "n": 18,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 1.8,
+          "testo": "Answer: A"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 2.5,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 19,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 2.4,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 3.2,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 20,
+        "inga": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 10.9,
+          "testo": "Step 1: Suzy’s iPhone is 1 year old.  \nStep 2: Ben’s iPhone is two times older than Suzy’s.  \n\"Two times older\" means Ben’s iPhone is 2 × 1 = 2 years old.  \nStep 3: Brandon’s iPhone is four times as old as Ben’s.  \nSo, Brandon’s iPhone = 4 × 2 = 8 years old.  \n\nAnswer: 8"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 15.7,
+          "testo": "Step 1: Suzy’s iPhone is 1 year old.  \nStep 2: Ben’s iPhone is two times older than Suzy’s.  \n\"Two times older\" means Ben’s iPhone is 2 × 1 = 2 years old.  \nStep 3: Brandon’s iPhone is four times as old as Ben’s.  \nSo, Brandon’s iPhone = 4 × 2 = 8 years old.\n\nAnswer: 8"
+        },
+        "uguali": false
+      },
+      {
+        "n": 21,
+        "inga": {
+          "voto": 0.0,
+          "nota": "2500.0 su 25000.0",
+          "secondi": 41.2,
+          "testo": "We are given:\n\n- If Marcy works for **40 years**, she gets a **pension of $50,000 per year**.\n- Starting **after 20 years**, she becomes entitled to **5% of the value of the pension per year**.\n- She quits after **30 years**.\n\nWe need to find her **annual pension after 30 years**.\n\n---\n\nStep 1: Understand the pension rule.\n\nThe key phrase is: \"Starting after 20 years, she becomes entitled to 5% of the value of the pension per year.\"\n\nThis likely means that **after 20 years of service**, the pension amount is reduced to **5% of the full pension**.\n\nBut let's interpret carefully.\n\nIf she works 40 years → full pension = $50,000/year.\n\nSo, the full pension is $50,000.\n\nAfter 20 years, she becomes entitled to **5% of the value** — that is, 5% of $50,000?\n\nThat would be:\n\n5% of $50,000 = 0.05 × 50,000 = $2,500.\n\nBut that seems very low — and it says \"starting after 20 years\", so after 20 years, she gets 5% of the pension.\n\nBut she quits after **30 years**, which is **after 20 years**, so she qualifies for the reduced pension.\n\nSo, at 30 years, she is past the 20-year mark, so she gets **5% of the full pension**.\n\nThus:\n\nPension = 5% of $50,000 = 0.05 × 50,000 = $2,500.\n\nAnswer: 2500"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "5.0 su 25000.0",
+          "secondi": 67.7,
+          "testo": "Step 1: Understand the pension rules.\n\n- If Marcy works for 40 years, she gets a full annual pension of $50,000.\n- Starting after 20 years, she becomes entitled to 5% of the pension value per year. This likely means that after 20 years, her pension is reduced by 5% per year of service beyond 20 years.\n\nBut the phrasing is ambiguous. Let's interpret it carefully.\n\n\"Starting after 20 years, she becomes entitled to 5% of the value of the pension per year.\"\n\nThis could mean that for each year beyond 20, she gets 5% of the full pension value per year.\n\nBut that would mean she gets 5% of $50,000 = $2,500 per year for each year beyond 20.\n\nBut that doesn't make sense — it would be too low.\n\nAlternatively, it might mean that after 20 years, her pension is reduced by 5% per year of service beyond 20 years.\n\nBut that still needs clarification.\n\nAnother interpretation: After 20 years, she earns 5% of the full pension value per year — meaning her pension is 5% of $50,000 = $2,500 per year?\n\nBut that would be very low, and it says \"she becomes entitled to 5% of the value of the pension per year\" — possibly meaning 5% of the full pension value per year, starting after 20 years.\n\nBut if she quits after 30 years, that's 10 years beyond 20.\n\nSo if after 20 years, she gets 5% of $50,000 per year, then:\n\n5% of $50,000 = $2,500 per year.\n\nBut that seems inconsistent with the idea of a pension that increases with years.\n\nWait — perhaps the intended meaning is:\n\nAfter 20 years, she becomes entitled to a pension that is 5% of the full pension value per year — but that still seems too low.\n\nAlternatively, maybe it's a typo or misphrasing.\n\nAnother possibility: \"she becomes entitled to 5% of the value of the pension per year\" might mean that for each year beyond 20, she gets 5% of the full pension value.\n\nBut that would be strange.\n\nAlternatively, perhaps it's"
+        },
+        "uguali": false
+      },
+      {
+        "n": 22,
+        "inga": {
+          "voto": 0.0,
+          "nota": "18.0 su 24.0",
+          "secondi": 16.9,
+          "testo": "Step 1: Determine how many guests will actually attend.  \nChristina invites 16 friends, but 1/4 of them don't show up.  \nSo, 1/4 of 16 = 16 × 1/4 = 4 guests don't show up.  \nThus, 16 - 4 = 12 guests will attend.\n\nStep 2: Calculate the number of gift bags needed.  \nShe needs 0.75 gift bags per guest.  \nSo, 12 guests × 0.75 = 9 gift bags.\n\nStep 3: Calculate the total cost.  \nEach gift bag costs $2.  \n9 × 2 = $18.\n\nAnswer: 18"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "18.0 su 24.0",
+          "secondi": 24.4,
+          "testo": "Step 1: Determine how many guests will actually attend.  \nChristina invites 16 friends, but 1/4 of them don't show up.  \nSo, 1/4 of 16 = 16 × 1/4 = 4 guests won't show up.  \nThus, 16 - 4 = 12 guests will attend.\n\nStep 2: Calculate the number of gift bags needed.  \nShe needs 0.75 gift bags per guest.  \nSo, 12 guests × 0.75 = 9 gift bags.\n\nStep 3: Calculate the total cost.  \nEach gift bag costs $2.  \n9 × 2 = $18.\n\nAnswer: 18"
+        },
+        "uguali": false
+      },
+      {
+        "n": 23,
+        "inga": {
+          "voto": 0.0,
+          "nota": "5700.0 su 95.0",
+          "secondi": 18.1,
+          "testo": "Step 1: Determine the time to peel and cut one potato.  \n- Peeling time: 1 minute 30 seconds = 90 seconds  \n- Cutting time: 5 seconds  \n- Total time per potato = 90 + 5 = 95 seconds\n\nStep 2: Multiply by the number of potatoes.  \n- 60 potatoes × 95 seconds = 5700 seconds\n\nStep 3: Convert total time to minutes (optional, but for understanding):  \n- 5700 ÷ 60 = 95 minutes\n\nBut the question only asks for the total time in seconds (implied by the format), and we just need the numerical answer.\n\nAnswer: 5700"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "5700.0 su 95.0",
+          "secondi": 34.7,
+          "testo": "Step 1: Determine the time to peel one potato.  \nIt takes Billy 1 minute and 30 seconds to peel a potato.  \nConvert that to seconds:  \n1 minute = 60 seconds → 60 + 30 = 90 seconds per peel.\n\nStep 2: Determine the time to cut one potato.  \nIt takes 5 seconds to cut a potato.\n\nStep 3: Total time per potato (peel + cut):  \n90 seconds (peel) + 5 seconds (cut) = 95 seconds per potato.\n\nStep 4: Total time for 60 potatoes:  \n60 potatoes × 95 seconds = 5700 seconds.\n\nStep 5: Convert total time to minutes (optional, but helpful for understanding):  \n5700 ÷ 60 = 95 minutes.\n\nBut the question only asks for the total time in seconds (implied by the format), and we are to give the final answer as a number.\n\nAnswer: 5700"
+        },
+        "uguali": false
+      },
+      {
+        "n": 24,
+        "inga": {
+          "voto": 1.0,
+          "nota": "2.0 su 2.0",
+          "secondi": 31.8,
+          "testo": "We are given two relay teams running a 4×400 meter race.\n\n---\n\n**Team A (Well-rounded):**  \nEach runner completes 400 meters in **55 seconds**.  \nSince there are 4 runners, total time =  \n4 × 55 = **220 seconds**\n\n---\n\n**Team B (Less well-rounded):**  \n- 1st runner: 60 seconds  \n- Each subsequent runner is **3 seconds faster** than the previous one.\n\nSo the times for each leg:\n\n- Runner 1: 60 seconds  \n- Runner 2: 60 - 3 = 57 seconds  \n- Runner 3: 57 - 3 = 54 seconds  \n- Runner 4: 54 - 3 = 51 seconds  \n\nTotal time for Team B =  \n60 + 57 + 54 + 51\n\nAdd them step by step:  \n60 + 57 = 117  \n117 + 54 = 171  \n171 + 51 = **222 seconds**\n\n---\n\nNow, compare the total times:\n\n- Team A: 220 seconds  \n- Team B: 222 seconds  \n\nDifference = 222 - 220 = **2 seconds**\n\nSo, Team A wins by 2 seconds.\n\nAnswer: 2"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "2.0 su 2.0",
+          "secondi": 41.1,
+          "testo": "Step 1: Calculate the total time for the well-rounded team.\n\nEach of the four runners runs 400 meters in 55 seconds.\n\nTotal time = 4 × 55 = 220 seconds.\n\nStep 2: Calculate the total time for the less well-rounded team.\n\nThe first runner takes 60 seconds.\n\nEach subsequent runner is 3 seconds faster than the previous one.\n\nSo:\n\n- Runner 1: 60 seconds  \n- Runner 2: 60 - 3 = 57 seconds  \n- Runner 3: 57 - 3 = 54 seconds  \n- Runner 4: 54 - 3 = 51 seconds  \n\nTotal time = 60 + 57 + 54 + 51\n\nAdd them:\n\n60 + 57 = 117  \n117 + 54 = 171  \n171 + 51 = 222 seconds\n\nStep 3: Find the difference in times.\n\nFaster team time = 220 seconds  \nSlower team time = 222 seconds  \n\nDifference = 222 - 220 = 2 seconds\n\nAnswer: 2"
+        },
+        "uguali": false
+      },
+      {
+        "n": 25,
+        "inga": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 11.6,
+          "testo": "Step 1: Calculate the cost for the 8 overdue books.  \nEach book costs $0.50, so:  \n8 books × $0.50 = $4.00\n\nStep 2: Add the flat fee for having at least one book overdue.  \nFlat fee = $2.00\n\nStep 3: Total amount = cost of books + flat fee  \n$4.00 + $2.00 = $6.00\n\nAnswer: 6"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 17.1,
+          "testo": "Step 1: Calculate the cost for the 8 overdue books.  \nEach book costs $0.50, so:  \n8 books × $0.50 = $4.00\n\nStep 2: Add the flat fee for having at least one book overdue.  \nFlat fee = $2.00\n\nStep 3: Total amount = cost of books + flat fee  \n$4.00 + $2.00 = $6.00\n\nAnswer: 6"
+        },
+        "uguali": true
+      },
+      {
+        "n": 26,
+        "inga": {
+          "voto": 1.0,
+          "nota": "7.0 su 7.0",
+          "secondi": 12.8,
+          "testo": "Step 1: Calculate the cost of the popsicles.  \nPeter bought 20 popsicles at $0.25 each:  \n20 × 0.25 = $5.00\n\nStep 2: Calculate the cost of the ice cream bars.  \nHe bought 4 ice cream bars at $0.50 each:  \n4 × 0.50 = $2.00\n\nStep 3: Add both amounts to find the total cost.  \n$5.00 + $2.00 = $7.00\n\nAnswer: 7"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "7.0 su 7.0",
+          "secondi": 18.4,
+          "testo": "Step 1: Calculate the cost of the popsicles.  \nPeter bought 20 popsicles at $0.25 each:  \n20 × 0.25 = $5.00\n\nStep 2: Calculate the cost of the ice cream bars.  \nHe bought 4 ice cream bars at $0.50 each:  \n4 × 0.50 = $2.00\n\nStep 3: Add both amounts to find the total cost.  \n$5.00 + $2.00 = $7.00\n\nAnswer: 7"
+        },
+        "uguali": true
+      },
+      {
+        "n": 27,
+        "inga": {
+          "voto": 1.0,
+          "nota": "20.0 su 20.0",
+          "secondi": 17.1,
+          "testo": "Step 1: Convert all times to the same unit (minutes).\n\n- Writing: 4 hours = 4 × 60 = 240 minutes  \n- Recording: half of 4 hours = 2 hours = 2 × 60 = 120 minutes  \n- Editing: 90 minutes (already in minutes)\n\nStep 2: Find total work time.\n\nTotal time = Writing + Recording + Editing  \n= 240 + 120 + 90 = 450 minutes\n\nStep 3: Find percentage spent editing.\n\nEditing percentage = (Editing time / Total time) × 100  \n= (90 / 450) × 100  \n= 0.2 × 100  \n= 20%\n\nAnswer: 20"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "20.0 su 20.0",
+          "secondi": 25.6,
+          "testo": "Step 1: Convert all times to the same unit (minutes).\n\n- Writing: 4 hours = 4 × 60 = 240 minutes  \n- Recording: half of 4 hours = 2 hours = 2 × 60 = 120 minutes  \n- Editing: 90 minutes (already in minutes)\n\nStep 2: Find total work time.\n\nTotal time = writing + recording + editing  \n= 240 + 120 + 90 = 450 minutes\n\nStep 3: Find percentage spent editing.\n\nEditing percentage = (editing time / total time) × 100  \n= (90 / 450) × 100  \n= 0.2 × 100  \n= 20%\n\nAnswer: 20"
+        },
+        "uguali": false
+      },
+      {
+        "n": 28,
+        "inga": {
+          "voto": 1.0,
+          "nota": "38.0 su 38.0",
+          "secondi": 19.5,
+          "testo": "Step 1: Start with the cards Erica originally made.  \nShe made 20 cards.\n\nStep 2: Add the pre-made cards her dad brought.  \nDad brought 2 boxes, each with 15 cards:  \n2 × 15 = 30 cards.\n\nTotal cards before giving out:  \n20 + 30 = 50 cards.\n\nStep 3: Subtract the cards she passed out.  \nShe gave out:  \n- 24 to classmates  \n- 5 to family  \nTotal given out: 24 + 5 = 29 cards.\n\nSo, cards remaining after giving out:  \n50 − 29 = 21 cards.\n\nStep 4: Add the cards she received from family and friends.  \nShe received 17 cards.\n\nFinal total:  \n21 + 17 = 38 cards.\n\nAnswer: 38"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "38.0 su 38.0",
+          "secondi": 33.7,
+          "testo": "Step 1: Determine how many cards Erica originally had.  \nShe made 20 cards.\n\nStep 2: Add the pre-made cards her dad brought.  \nDad brought 2 boxes × 15 cards = 30 cards.  \nTotal cards before giving out: 20 + 30 = 50 cards.\n\nStep 3: Subtract the cards she passed out.  \nShe gave out 24 to classmates and 5 to family.  \nTotal given out: 24 + 5 = 29 cards.\n\nStep 4: Subtract the cards she received.  \nShe received 17 from family and friends.  \nSo, net change: she gave out 29, received 17.  \nNet loss: 29 − 17 = 12 cards.\n\nStep 5: Final count of cards:  \nOriginal 50 − 29 (given out) + 17 (received) = 50 − 29 + 17 = 38.\n\nAnswer: 38"
+        },
+        "uguali": false
+      },
+      {
+        "n": 29,
+        "inga": {
+          "voto": 1.0,
+          "nota": "26.0 su 26.0",
+          "secondi": 43.2,
+          "testo": "Step 1: The caterer was told to prepare for 36 guests.\n\nStep 2: Originally, he prepared enough for half of the guests to have two hotdogs.  \nHalf of 36 = 18 guests → each of these 18 guests gets 2 hotdogs.  \nThe other 18 guests get 1 hotdog each.\n\nSo total hotdogs prepared:  \n18 guests × 2 = 36 hotdogs  \n18 guests × 1 = 18 hotdogs  \nTotal = 36 + 18 = 54 hotdogs.\n\nStep 3: 40 guests showed up, and everyone wanted a second hotdog.  \nThat means each of the 40 guests wants 2 hotdogs.\n\nTotal hotdogs needed = 40 × 2 = 80 hotdogs.\n\nBut the caterer only prepared 54 hotdogs.\n\nSo, the total hotdogs available are 54, and 80 are needed → not enough.\n\nWe need to determine how many guests did **not** get a second hotdog.\n\nBut the question is: **How many guests did not get a second hotdog?**\n\nWe assume that the caterer distributed the hotdogs as fairly as possible, and that each guest gets at least one hotdog, and only some get a second.\n\nBut the problem says: \"everyone wanted a second hotdog\" — so all 40 guests wanted two.\n\nBut only 54 hotdogs were prepared.\n\nEach guest needs 2 hotdogs → total needed: 80 → only 54 available.\n\nSo, the total number of hotdogs available is 54.\n\nIf each guest gets at least one, then 40 guests × 1 = 40 hotdogs used for the first one.\n\nRemaining hotdogs = 54 – 40 = 14 → these 14 can be given as second hotdogs.\n\nSo, only 14 guests can get a second hotdog.\n\nTherefore, the number of guests who did **not** get a second hotdog = 40 – 14 = 26.\n\nAnswer: 26"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "13.0 su 26.0",
+          "secondi": 63.0,
+          "testo": "Step 1: The caterer was told to prepare for 36 guests.  \nHe prepared enough for half of them to have two hotdogs.  \nHalf of 36 is 18, so 18 guests were expected to have 2 hotdogs each.  \nThat means the remaining 18 guests were expected to have only 1 hotdog.\n\nSo, total hotdogs prepared:  \n- 18 guests × 2 = 36 hotdogs  \n- 18 guests × 1 = 18 hotdogs  \nTotal = 36 + 18 = 54 hotdogs.\n\nStep 2: 40 guests actually showed up.  \nEveryone wanted a second hotdog.  \nSo each of the 40 guests wanted 2 hotdogs.  \nTotal hotdogs needed = 40 × 2 = 80.\n\nBut the caterer only prepared 54 hotdogs.  \nSo, there is a shortage of 80 − 54 = 26 hotdogs.\n\nBut the question is: **How many guests did not get a second hotdog?**\n\nWe need to determine how many guests were unable to get a second hotdog due to lack of supply.\n\nSince everyone wanted a second hotdog, and only 54 hotdogs were prepared, we need to see how many guests could actually get two hotdogs.\n\nLet’s suppose that the 54 hotdogs were distributed such that as many guests as possible got two hotdogs.\n\nEach guest who gets two hotdogs uses 2 hotdogs.\n\nSo, the maximum number of guests who can get two hotdogs is:  \n54 ÷ 2 = 27 guests.\n\nSo, 27 guests got two hotdogs.  \nThe remaining 40 − 27 = 13 guests only got one hotdog (since they didn’t get a second).\n\nBut the question is: **How many guests did not get a second hotdog?**\n\nThat would be the 13 guests who only got one hotdog.\n\nAnswer: 13"
+        },
+        "uguali": false
+      },
+      {
+        "n": 30,
+        "inga": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 14.4,
+          "testo": "Start: Finley begins in **1st place**.\n\n1. She falls back 5 spots:  \n   1st → 1 + 5 = **6th place**\n\n2. Then moves ahead 2 spots:  \n   6th → 6 - 2 = **4th place**\n\n3. Then falls behind 3 spots:  \n   4th → 4 + 3 = **7th place**\n\n4. Lastly, she jumps ahead 1 spot:  \n   7th → 7 - 1 = **6th place**\n\nFinal place: **6th**\n\nAnswer: 6"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 21.3,
+          "testo": "Step 1: Finley starts in **1st place**.\n\nStep 2: She falls back 5 spots.  \n1st → 1 + 5 = **6th place**.\n\nStep 3: She moves ahead 2 spots.  \n6th → 6 - 2 = **4th place**.\n\nStep 4: She falls behind 3 spots.  \n4th → 4 + 3 = **7th place**.\n\nStep 5: She jumps ahead 1 spot.  \n7th → 7 - 1 = **6th place**.\n\nAnswer: 6"
+        },
+        "uguali": false
+      },
+      {
+        "n": 31,
+        "inga": {
+          "voto": 1.0,
+          "nota": "15400.0 su 15400.0",
+          "secondi": 20.0,
+          "testo": "Step 1: Calculate the cost of plane tickets.  \nEach ticket is $5000, and there are two people.  \n5000 × 2 = $10,000\n\nStep 2: Calculate the hotel cost.  \nNormal price is $1500 per day.  \nIt is 20% more expensive during the busy weekend.  \n20% of 1500 = 0.20 × 1500 = $300  \nSo, daily rate = 1500 + 300 = $1800 per day  \n\nThey are there for 3 days:  \n1800 × 3 = $5400\n\nStep 3: Add plane tickets and hotel cost.  \n10,000 + 5400 = $15,400\n\nAnswer: 15400"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "15400.0 su 15400.0",
+          "secondi": 29.9,
+          "testo": "Step 1: Calculate the cost of plane tickets.  \nEach ticket is $5000, and there are two people.  \n5000 × 2 = $10,000\n\nStep 2: Calculate the hotel cost.  \nNormal price is $1500 per day.  \nIt is 20% more expensive during the busy weekend.  \n20% of 1500 = 0.20 × 1500 = $300  \nSo, daily rate = 1500 + 300 = $1800 per day  \n\nThey stay for 3 days:  \n1800 × 3 = $5400\n\nStep 3: Add plane tickets and hotel cost.  \n10,000 + 5400 = $15,400\n\nAnswer: 15400"
+        },
+        "uguali": false
+      },
+      {
+        "n": 32,
+        "inga": {
+          "voto": 0.0,
+          "nota": "72.0 su 144.0",
+          "secondi": 12.7,
+          "testo": "Step 1: Mario has 6 sled dogs.  \nStep 2: Each dog has 4 legs, but snowshoes are typically needed per dog, not per leg. So we don’t need to divide by legs — each dog gets one pair of snowshoes.  \nStep 3: Each pair of snowshoes costs $12.00.  \nStep 4: For 6 dogs, he needs 6 pairs.  \nStep 5: Total cost = 6 × $12 = $72.  \n\nAnswer: 72"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "72.0 su 144.0",
+          "secondi": 20.3,
+          "testo": "Step 1: Mario has 6 sled dogs.  \nEach dog has 4 legs, but we don't need the number of legs to determine how many pairs of snowshoes are needed. Snowshoes are typically provided per dog, not per leg.\n\nStep 2: Each dog needs one pair of snowshoes.  \nSo, for 6 dogs, he needs 6 pairs of snowshoes.\n\nStep 3: Each pair costs $12.00.  \nTotal cost = 6 pairs × $12.00 = $72.00.\n\nAnswer: 72"
+        },
+        "uguali": false
+      },
+      {
+        "n": 33,
+        "inga": {
+          "voto": 1.0,
+          "nota": "130.0 su 130.0",
+          "secondi": 23.9,
+          "testo": "Let's break down what Elise does step by step:\n\n1. **First, she writes the alphabet in full twice.**  \n   The alphabet has 26 letters.  \n   So, 2 × 26 = **52 letters**.\n\n2. **Then, she writes half of it once.**  \n   Half of 26 is 13.  \n   So, she writes **13 letters**.\n\n3. **Then, she re-writes everything she has already written.**  \n   That means she rewrites the total of the previous steps:  \n   First 52 letters (two full alphabets) + 13 letters (half) = 52 + 13 = **65 letters**.  \n   So she rewrites all of that — that’s **65 more letters**.\n\nNow, total letters written:\n\n- First two full alphabets: 52  \n- Half alphabet: 13  \n- Rewriting everything she has already written: 65  \n\nTotal = 52 + 13 + 65 = **130**\n\nAnswer: 130"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "130.0 su 130.0",
+          "secondi": 28.0,
+          "testo": "Step 1: Elise writes the full alphabet twice.  \nEach full alphabet has 26 letters.  \nSo, 2 × 26 = 52 letters.\n\nStep 2: She writes half of it once.  \nHalf of the alphabet is 26 ÷ 2 = 13 letters.  \nSo, 13 more letters.\n\nStep 3: She re-writes everything she has already written.  \nThat means she re-writes the total of the first two steps: 52 + 13 = 65 letters.  \nSo, she writes all 65 letters again — that’s another 65 letters.\n\nTotal letters written =  \nFirst two steps: 52 + 13 = 65  \nPlus re-writing everything: 65  \nTotal = 65 + 65 = 130\n\nAnswer: 130"
+        },
+        "uguali": false
+      },
+      {
+        "n": 34,
+        "inga": {
+          "voto": 1.0,
+          "nota": "133.0 su 133.0",
+          "secondi": 8.9,
+          "testo": "Step 1: Find the amount of the discount.  \n5% of $140 = (5/100) × 140 = 0.05 × 140 = $7\n\nStep 2: Subtract the discount from the original price.  \n$140 - $7 = $133\n\nAnswer: 133"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "133.0 su 133.0",
+          "secondi": 13.4,
+          "testo": "Step 1: Find the amount of the discount.  \n5% of $140 = (5/100) × 140 = 0.05 × 140 = $7\n\nStep 2: Subtract the discount from the original price.  \n$140 - $7 = $133\n\nAnswer: 133"
+        },
+        "uguali": true
+      },
+      {
+        "n": 35,
+        "inga": {
+          "voto": 0.0,
+          "nota": "450.0 su 675.0",
+          "secondi": 23.4,
+          "testo": "Step 1: We are told that in one hour, Ezra read twice as many books as Ahmed.\n\nEzra read 300 books in that hour.\n\nSo, let Ahmed's books be A.  \nThen:  \nEzra = 2 × Ahmed  \n300 = 2 × A  \nA = 300 ÷ 2 = 150\n\nSo Ahmed read 150 books.\n\nStep 2: Total books read in that hour = Ezra's books + Ahmed's books  \n= 300 + 150 = 450\n\nStep 3: Ezra decided to read 150 more books.  \nBut the question is: \"How many books have they read altogether?\"\n\nThe phrase \"read altogether\" refers to the total books read during the hour, not including future reading unless specified.\n\nSince the 150 more books are a decision *after* the hour, and not part of the original hour's reading, they are not included in the total \"read\" during that hour.\n\nSo, only the books read in the hour count.\n\nAnswer: 450"
+        },
+        "colibri": {
+          "voto": 0.0,
+          "nota": "600.0 su 675.0",
+          "secondi": 27.0,
+          "testo": "Step 1: We are told that in one hour, Ezra read twice as many books as Ahmed.\n\nEzra read 300 books in that hour.\n\nSo, let Ahmed's books be A.  \nThen:  \nEzra = 2 × Ahmed  \n300 = 2 × A  \nA = 300 ÷ 2 = 150\n\nSo Ahmed read 150 books.\n\nStep 2: Ezra decided to read 150 more books after that.\n\nSo Ezra's total books = 300 (already read) + 150 (additional) = 450 books.\n\nStep 3: Total books read by both = Ezra's total + Ahmed's books  \n= 450 + 150 = 600\n\nAnswer: 600"
+        },
+        "uguali": false
+      },
+      {
+        "n": 36,
+        "inga": {
+          "voto": 1.0,
+          "nota": "4.0 su 4.0",
+          "secondi": 10.5,
+          "testo": "Step 1: Find the cost of 3 loaves of bread.  \nEach loaf costs $2, so:  \n3 × $2 = $6\n\nStep 2: Find the cost of 2 bagels.  \nEach bagel costs $1, so:  \n2 × $1 = $2\n\nStep 3: Find the difference in cost.  \n$6 (bread) − $2 (bagels) = $4\n\nAnswer: 4"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "4.0 su 4.0",
+          "secondi": 16.9,
+          "testo": "Step 1: Find the cost of 3 loaves of bread.  \nEach loaf costs $2, so:  \n3 loaves = 3 × $2 = $6\n\nStep 2: Find the cost of 2 bagels.  \nEach bagel costs $1, so:  \n2 bagels = 2 × $1 = $2\n\nStep 3: Find the difference in cost.  \n$6 (bread) − $2 (bagels) = $4\n\nAnswer: 4"
+        },
+        "uguali": false
+      },
+      {
+        "n": 37,
+        "inga": {
+          "voto": 1.0,
+          "nota": "720.0 su 720.0",
+          "secondi": 13.2,
+          "testo": "Step 1: Determine the walking time on the first day.  \nSandy walked for 8 hours on the first day.\n\nStep 2: Determine the walking time on the second day.  \nShe walked half as many hours as on the first day:  \n½ × 8 = 4 hours.\n\nStep 3: Find the total time in hours.  \n8 hours + 4 hours = 12 hours.\n\nStep 4: Convert total time to minutes.  \n12 hours × 60 = 720 minutes.\n\nAnswer: 720"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "720.0 su 720.0",
+          "secondi": 19.3,
+          "testo": "Step 1: Determine the walking time on the first day.  \nSandy walked for 8 hours on the first day.\n\nStep 2: Determine the walking time on the second day.  \nShe walked half as many hours as on the first day:  \n½ × 8 = 4 hours.\n\nStep 3: Find the total walking time in hours.  \n8 hours + 4 hours = 12 hours.\n\nStep 4: Convert total time to minutes.  \n12 hours × 60 = 720 minutes.\n\nAnswer: 720"
+        },
+        "uguali": false
+      },
+      {
+        "n": 38,
+        "inga": {
+          "voto": 1.0,
+          "nota": "52.0 su 52.0",
+          "secondi": 14.1,
+          "testo": "Step 1: Find the total number of tins of cat food.  \nKimberly bought 8 packages of cat food, and each package has 11 tins.  \n8 × 11 = 88 tins of cat food.\n\nStep 2: Find the total number of tins of dog food.  \nShe bought 6 packages of dog food, and each has 6 tins.  \n6 × 6 = 36 tins of dog food.\n\nStep 3: Find how many more tins of cat food than dog food.  \n88 − 36 = 52.\n\nAnswer: 52"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "52.0 su 52.0",
+          "secondi": 22.7,
+          "testo": "Step 1: Find the total number of tins of cat food.  \nKimberly bought 8 packages of cat food, and each package has 11 tins.  \nSo, total cat food tins = 8 × 11 = 88 tins.\n\nStep 2: Find the total number of tins of dog food.  \nShe bought 6 packages of dog food, and each has 6 tins.  \nSo, total dog food tins = 6 × 6 = 36 tins.\n\nStep 3: Find how many more tins of cat food than dog food.  \n88 − 36 = 52.\n\nAnswer: 52"
+        },
+        "uguali": false
+      },
+      {
+        "n": 39,
+        "inga": {
+          "voto": 1.0,
+          "nota": "80.0 su 80.0",
+          "secondi": 12.9,
+          "testo": "Step 1: Calculate the distance traveled in the first part of the journey.  \nMason rides at 8 miles per hour for 4 hours.  \nDistance = Speed × Time = 8 × 4 = 32 miles.\n\nStep 2: Calculate the distance traveled in the second part.  \nHe rides for another 6 hours at the same speed.  \nDistance = 8 × 6 = 48 miles.\n\nStep 3: Add both distances to get the total distance.  \nTotal distance = 32 + 48 = 80 miles.\n\nAnswer: 80"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "80.0 su 80.0",
+          "secondi": 21.0,
+          "testo": "Step 1: Calculate the distance traveled in the first part of the journey.  \nMason travels at 8 miles per hour for 4 hours.  \nDistance = Speed × Time = 8 × 4 = 32 miles.\n\nStep 2: Calculate the distance traveled in the second part of the journey.  \nHe travels for another 6 hours at the same speed.  \nDistance = 8 × 6 = 48 miles.\n\nStep 3: Add both distances to get the total distance.  \nTotal distance = 32 + 48 = 80 miles.\n\nAnswer: 80"
+        },
+        "uguali": false
+      }
+    ]
+  },
+  "secondi": 1082.4
+}

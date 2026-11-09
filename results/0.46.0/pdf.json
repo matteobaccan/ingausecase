@@ -1,0 +1,264 @@
+{
+  "caso": "pdf",
+  "versione": "0.46.0",
+  "inga": "inga 0.46.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-09T11:28:49Z",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 0.93125,
+  "voci": {
+    "campo numero": 1.0,
+    "campo data": 1.0,
+    "campo fornitore": 0.85,
+    "campo partita_iva": 0.85,
+    "campo imponibile": 1.0,
+    "campo iva": 1.0,
+    "campo totale": 1.0,
+    "campo righe": 0.75,
+    "righe singole": 0.9
+  },
+  "dettagli": {
+    "documenti": 20,
+    "campi_per_documento": 8,
+    "seed_dati": 7,
+    "secondi_richieste": 397.2,
+    "documenti_con_errori": [
+      {
+        "file": "doc01.pdf",
+        "tipo": "fattura_a",
+        "secondi": 15.7,
+        "sbagliati": {
+          "fornitore": {
+            "atteso": "Sartorello Alimentari S.r.l.",
+            "dato": "Cucchiarelli Forniture Ufficio S.r.l."
+          },
+          "partita_iva": {
+            "atteso": "60913900977",
+            "dato": "03082460290"
+          }
+        }
+      },
+      {
+        "file": "doc02.pdf",
+        "tipo": "fattura_c",
+        "secondi": 18.6,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Motoriduttore 0,37 kW",
+                "quantita": 3,
+                "prezzo_unitario": 366.53,
+                "importo": 1099.59
+              },
+              {
+                "descrizione": "Olio idraulico ISO 46 (latta 20 l)",
+                "quantita": 10,
+                "prezzo_unitario": 80.18,
+                "importo": 801.8
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Motoriduttore 0,37 kW",
+                "quantita": 3,
+                "prezzo_unitario": 121.54,
+                "importo": 1099.59
+              },
+              {
+                "descrizione": "Olio idraulico ISO 46 (latta 20 l)",
+                "quantita": 10,
+                "prezzo_unitario": 80.18,
+                "importo": 801.8
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc06.pdf",
+        "tipo": "fattura_c",
+        "secondi": 12.8,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Guarnizione OR 40x3 NBR",
+                "quantita": 10,
+                "prezzo_unitario": 0.57,
+                "importo": 5.7
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Guarnizione OR 40x3 NBR 10 EUR",
+                "quantita": 10,
+                "prezzo_unitario": 0.57,
+                "importo": 5.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc11.pdf",
+        "tipo": "fattura_c",
+        "secondi": 20.8,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Canone assistenza sistemistica mensile",
+                "quantita": 2,
+                "prezzo_unitario": 432.9,
+                "importo": 865.8
+              },
+              {
+                "descrizione": "Licenza gestionale annuale",
+                "quantita": 1,
+                "prezzo_unitario": 704.76,
+                "importo": 704.76
+              },
+              {
+                "descrizione": "Configurazione firewall",
+                "quantita": 1,
+                "prezzo_unitario": 290.34,
+                "importo": 290.34
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Canone assistenza sistemistica mensile",
+                "quantita": 2,
+                "prezzo_unitario": 232.45,
+                "importo": 464.9
+              },
+              {
+                "descrizione": "Licenza gestionale annuale",
+                "quantita": 1,
+                "prezzo_unitario": 704.76,
+                "importo": 704.76
+              },
+              {
+                "descrizione": "Configurazione firewall",
+                "quantita": 1,
+                "prezzo_unitario": 290.34,
+                "importo": 290.34
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc14.pdf",
+        "tipo": "fattura_a",
+        "secondi": 22.0,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Cuscinetto a sfere 6204-2RS",
+                "quantita": 1,
+                "prezzo_unitario": 5.7,
+                "importo": 5.7
+              },
+              {
+                "descrizione": "Olio idraulico ISO 46 (latta 20 l)",
+                "quantita": 5,
+                "prezzo_unitario": 65.92,
+                "importo": 329.6
+              },
+              {
+                "descrizione": "Cinghia trapezoidale A42",
+                "quantita": 50,
+                "prezzo_unitario": 11.7,
+                "importo": 585.0
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Cuscinetto a sfere 6204-2RS",
+                "quantita": 1,
+                "prezzo_unitario": 5.7,
+                "importo": 5.7
+              },
+              {
+                "descrizione": "Olio idraulico ISO 46 (latta 20 l)",
+                "quantita": 5,
+                "prezzo_unitario": 65.92,
+                "importo": 329.6
+              },
+              {
+                "descrizione": "Cinghia trapezoidale A42 50",
+                "quantita": 50,
+                "prezzo_unitario": 11.7,
+                "importo": 585
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc18.pdf",
+        "tipo": "fattura_c",
+        "secondi": 13.4,
+        "sbagliati": {
+          "righe": {
+            "atteso": [
+              {
+                "descrizione": "Backup remoto 500 GB (anno)",
+                "quantita": 3,
+                "prezzo_unitario": 294.29,
+                "importo": 882.87
+              }
+            ],
+            "dato": [
+              {
+                "descrizione": "Backup remoto 500 GB (anno)",
+                "quantita": 3,
+                "prezzo_unitario": 98.0967,
+                "importo": 882.87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "file": "doc19.pdf",
+        "tipo": "fattura_a",
+        "secondi": 16.9,
+        "sbagliati": {
+          "fornitore": {
+            "atteso": "Pellacani Forniture Ufficio S.r.l.s.",
+            "dato": "Sartorello Alimentari S.n.c."
+          },
+          "partita_iva": {
+            "atteso": "37838300657",
+            "dato": "00376140372"
+          }
+        }
+      },
+      {
+        "file": "doc20.pdf",
+        "tipo": "fattura_a",
+        "secondi": 17.3,
+        "sbagliati": {
+          "fornitore": {
+            "atteso": "Bertolini Servizi Informatici S.n.c.",
+            "dato": "Marangoni Forniture Ufficio S.a.s."
+          },
+          "partita_iva": {
+            "atteso": "97923760033",
+            "dato": "60309260010"
+          }
+        }
+      }
+    ]
+  },
+  "secondi": 402.0
+}

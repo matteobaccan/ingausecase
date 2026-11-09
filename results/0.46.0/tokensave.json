@@ -1,0 +1,1016 @@
+{
+  "caso": "tokensave",
+  "versione": "0.46.0",
+  "inga": "inga 0.46.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 16384,
+  "seed": 42,
+  "data": "2026-11-09T11:28:50Z",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 0.45,
+  "voci": {
+    "giuste con tokensave": 0.45,
+    "giuste senza strumenti": 0.15,
+    "giuste con il codice nel prompt": 0.9,
+    "domande con almeno una chiamata a tokensave": 0.95,
+    "token del prompt per domanda, con tokensave su codice nel prompt": 0.7180952380952381,
+    "token generati per domanda, con tokensave su senza strumenti": 0.9915966386554622
+  },
+  "dettagli": {
+    "tokensave": "tokensave 7.16.0",
+    "progetto": {
+      "repo": "https://github.com/pallets/itsdangerous",
+      "tag": "2.2.0",
+      "commit": "096c8d42545d3b68ea21a4f890fb2b2d8979c0bd",
+      "licenza": "BSD-3-Clause",
+      "sorgenti": "src/itsdangerous"
+    },
+    "indice": {
+      "node_count": 377,
+      "edge_count": 324,
+      "file_count": 18,
+      "nodes_by_kind": {
+        "class": 29,
+        "decorator": 32,
+        "module": 16,
+        "use": 123,
+        "file": 18,
+        "method": 98,
+        "function": 20,
+        "const": 41
+      },
+      "edges_by_kind": {
+        "calls": 148,
+        "annotates": 32,
+        "uses": 126,
+        "extends": 18
+      },
+      "db_size_bytes": 1236992,
+      "last_updated": 1794223735,
+      "total_source_bytes": 63954,
+      "files_by_language": {
+        "Other": 1,
+        "Batch": 1,
+        "TOML": 1,
+        "Python": 15
+      },
+      "last_sync_at": 1794223735,
+      "last_full_sync_at": 1794223735,
+      "last_full_index_version": "7.16.0",
+      "last_sync_duration_ms": 35
+    },
+    "strumenti_offerti": [
+      "tokensave_search",
+      "tokensave_context",
+      "tokensave_callers",
+      "tokensave_callees",
+      "tokensave_impact",
+      "tokensave_status",
+      "tokensave_files",
+      "tokensave_str_replace",
+      "tokensave_multi_str_replace",
+      "tokensave_body",
+      "tokensave_read",
+      "tokensave_more"
+    ],
+    "per_domanda": {
+      "con tokensave": {
+        "token_prompt": 7163,
+        "token_generati": 118,
+        "secondi": 39.0,
+        "chiamate": 1.3,
+        "chiamate_rifiutate": 0.0
+      },
+      "senza strumenti": {
+        "token_prompt": 81,
+        "token_generati": 119,
+        "secondi": 8.1
+      },
+      "codice nel prompt": {
+        "token_prompt": 9975,
+        "token_generati": 58,
+        "secondi": 22.1
+      }
+    },
+    "nota": null,
+    "domande": 20,
+    "risposte": [
+      {
+        "id": "file-timestampsigner",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "The file that defines the class `TimestampSigner` is `src/itsdangerous/timed.py`.",
+          "secondi": 124.2,
+          "token_prompt": 6981,
+          "token_generati": 55,
+          "token_in_cache": 6600,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "TimestampSigner",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "timestamp_signer.py",
+          "secondi": 0.7,
+          "token_prompt": 84,
+          "token_generati": 4,
+          "token_in_cache": 47,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The class `TimestampSigner` is defined in the file `src/itsdangerous/timed.py`.",
+          "secondi": 207.1,
+          "token_prompt": 9978,
+          "token_generati": 22,
+          "token_in_cache": 47,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "file-want-bytes",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "src/itsdangerous/encoding.py",
+          "secondi": 12.0,
+          "token_prompt": 6778,
+          "token_generati": 40,
+          "token_in_cache": 6599,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "want_bytes",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "itsdangerous/__init__.py",
+          "secondi": 0.6,
+          "token_prompt": 83,
+          "token_generati": 7,
+          "token_in_cache": 68,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The function `want_bytes` is defined in the file `src/itsdangerous/encoding.py`.",
+          "secondi": 5.0,
+          "token_prompt": 9977,
+          "token_generati": 21,
+          "token_in_cache": 9962,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "file-compactjson",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "src/itsdangerous/_json.py",
+          "secondi": 11.7,
+          "token_prompt": 6807,
+          "token_generati": 40,
+          "token_in_cache": 6600,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "_CompactJSON",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "itsdangerous/signed.py",
+          "secondi": 0.6,
+          "token_prompt": 84,
+          "token_generati": 6,
+          "token_in_cache": 69,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The class `_CompactJSON` is defined in the file `src/itsdangerous/_json.py`.",
+          "secondi": 4.9,
+          "token_prompt": 9978,
+          "token_generati": 21,
+          "token_in_cache": 9962,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "base64-decode-errore",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The `base64_decode` function in `itsdangerous` raises a `ValueError` when its input is not valid base64. This is inferred from the standard behavior of base64 decoding in Python libraries, where invalid input triggers a `ValueError`. While the specific exception is not directly stated in the provided code, the context of the function and its usage in the library aligns with this standard behavior.",
+          "secondi": 25.1,
+          "token_prompt": 6818,
+          "token_generati": 125,
+          "token_in_cache": 6601,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "base64_decode",
+                "path_include": [
+                  "src"
+                ],
+                "format": "text"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "The `base64_decode` function in `itsdangerous` raises a `Base64DecodeError` when the input is not valid base64.\n\nThis exception is defined in the file `itsdangerous/sig.py` as part of the `itsdangerous` library's signing and encoding utilities.\n\nSo, the answer is: **`Base64DecodeError`** (defined in `itsdangerous/sig.py`).",
+          "secondi": 6.1,
+          "token_prompt": 85,
+          "token_generati": 90,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The `base64_decode` function in `src/itsdangerous/encoding.py` raises a `BadData` exception when its input is not valid base64.\n\nThis is because it wraps the base64 decoding in a try-except block and raises a `BadData(\"Invalid base64-encoded data\")` exception if a `TypeError` or `ValueError` occurs during decoding. The `BadData` exception is defined in `src/itsdangerous/exc.py` as the base exception for all ItsDangerous errors.",
+          "secondi": 21.9,
+          "token_prompt": 9979,
+          "token_generati": 112,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "key-derivation-default",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "I need to find the value of `Signer.default_key_derivation` in the itsdangerous library. Let me search for this specific symbol in the code.\n\nI need to look for the `Signer` class and its members in the codebase to find the `default_key_derivation` value.\nI need to look for the `default_key_derivation` attribute within the Signer class in the signer.py file.\nThe value of `Signer.default_key_derivation` is `\"django-concat\"`. This is defined in the `signer.py` file within the `Signer` class as a class attribute with the default value set to `\"django-concat\"`.",
+          "secondi": 93.9,
+          "token_prompt": 8855,
+          "token_generati": 229,
+          "token_in_cache": 7168,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "Signer.default_key_derivation",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "path_include": [
+                  "src"
+                ],
+                "query": "Signer"
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_body",
+              "argomenti": {
+                "symbol": "Signer"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In the `itsdangerous` library, `Signer.default_key_derivation` is not a defined value or attribute in the source code of version 2.2.0.\n\nThe `Signer` class in `itsdangerous` does not have a public attribute named `default_key_derivation`. Instead, the default key derivation method (such as `hmac` or `sha256`) is typically set via the `key` parameter or through configuration, and the actual key derivation is handled internally using HMAC.\n\nTherefore, **`Signer.default_key_derivation` does not exist** as a value in the library.\n\n✅ Answer: `default_key_derivation` is not defined in `itsdangerous` 2.2.0.",
+          "secondi": 10.4,
+          "token_prompt": 78,
+          "token_generati": 154,
+          "token_in_cache": 61,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The value of `Signer.default_key_derivation` is `\"django-concat\"`. This is defined in the `signer.py` file within the `Signer` class.",
+          "secondi": 8.2,
+          "token_prompt": 9972,
+          "token_generati": 37,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "key-derivation-valori",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The `Signer.derive_key` method accepts a single parameter, `secret_key`, of type `str | bytes | None`. There is no explicit parameter named `key_derivation`. Therefore, it does not accept any values for `key_derivation`.",
+          "secondi": 19.9,
+          "token_prompt": 6750,
+          "token_generati": 104,
+          "token_in_cache": 6600,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "key_derivation",
+                "path_include": [
+                  "src/itsdangerous"
+                ],
+                "path_exclude": [
+                  "node_modules",
+                  "dist",
+                  "venv"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "The `Signer` class in `itsdangerous` does not have a public method or parameter named `key_derivation` in its `derive_key` method. The `Signer.derive_key` method is not exposed or documented in the public API of `itsdangerous` 2.2.0.\n\nTherefore, there are **no** values of `key_derivation` that `Signer.derive_key` accepts — this parameter does not exist in the library.\n\n✅ Answer: **None** (the parameter `key_derivation` is not part of the `Signer.derive_key` interface).",
+          "secondi": 8.9,
+          "token_prompt": 84,
+          "token_generati": 126,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The `Signer.derive_key` method accepts the following values for `key_derivation`:\n\n- `\"concat\"`\n- `\"django-concat\"`\n- `\"hmac\"`\n- `\"none\"`\n\nThese are explicitly listed in the `Signer` class's `__init__` method and documented in the code.",
+          "secondi": 13.2,
+          "token_prompt": 9978,
+          "token_generati": 63,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "key-derivation-errore",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The exception raised by `Signer.derive_key` for an unknown key derivation method is not explicitly mentioned in the provided code snippet. To determine the exact exception, further inspection of the `signer.py` file, specifically around the `derive_key` method, is required.",
+          "secondi": 24.4,
+          "token_prompt": 6990,
+          "token_generati": 100,
+          "token_in_cache": 6598,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "Signer.derive_key unknown key derivation method",
+                "path_include": [
+                  "src"
+                ],
+                "format": "text"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "The `Signer.derive_key` method in `itsdangerous` raises a `ValueError` when an unknown key derivation method is provided. This is not explicitly defined in a separate exception class, but rather handled via the built-in `ValueError`.\n\nSo, the exception is: **ValueError**.\n\nFile: `itsdangerous/signer.py`  \nClass: `Signer`  \nMethod: `derive_key`",
+          "secondi": 5.9,
+          "token_prompt": 82,
+          "token_generati": 87,
+          "token_in_cache": 63,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The `Signer.derive_key` method raises a `TypeError` for an unknown key derivation method.",
+          "secondi": 5.2,
+          "token_prompt": 9976,
+          "token_generati": 21,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "digest-default",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The default digest method used by the Signer class in itsdangerous is determined by the `digest_method` parameter in its `__init__` method. However, the code does not explicitly specify a default hash function (like SHA-256 or MD5). The `digest_method` parameter is set to `None` by default, and the implementation likely defaults to a standard hash function (e.g., SHA-256) if not specified. Without explicit documentation or code, the default hash function cannot be definitively identified from the provided information.",
+          "secondi": 31.5,
+          "token_prompt": 7006,
+          "token_generati": 146,
+          "token_in_cache": 6595,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "Signer",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "The `Signer` class in `itsdangerous` uses `hmac` as its default digest method, specifically with the `hmac.sha256` hash function.\n\nThis is implemented in the file `itsdangerous/sig.py`, within the `Signer` class, where the default digest method is set to `hmac.sha256`.\n\nAnswer: `hmac.sha256` (in `itsdangerous/sig.py`)",
+          "secondi": 6.3,
+          "token_prompt": 79,
+          "token_generati": 95,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The default digest method for the `Signer` class is `hashlib.sha1`. This is set in the `default_digest_method` attribute of the `Signer` class, which is initialized via the `_lazy_sha1` function that imports and returns `hashlib.sha1`.",
+          "secondi": 12.7,
+          "token_prompt": 9973,
+          "token_generati": 58,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "salt-signer",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The provided source code of `itsdangerous` does not contain information about the default salt value used by the `Signer` class when no salt is provided. To determine this, one would need to inspect the implementation of the `Signer` class in the source code, specifically its initialization logic or default values.\n\nSince the exact implementation or default salt value is not available in the provided context, I cannot directly answer this question. A direct inspection of the `src/itsdangerous` source code (e.g., in the `Signer` class) would be required to determine the default salt behavior.",
+          "secondi": 18.1,
+          "token_prompt": 6582,
+          "token_generati": 123,
+          "token_in_cache": 6560,
+          "chiamate": []
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In the `itsdangerous` library, when a salt is not provided or is `None` for a `Signer`, the default salt is generated from the **current time** and a **random value**. However, the actual default salt value is **not hardcoded** and is instead derived dynamically during instantiation.\n\nSpecifically, the default behavior is implemented in the `Signer` class in the file:\n\n👉 `src/itsdangerous/signer.py`\n\nIn that file, the `Signer` class uses `os.urandom(32)` to generate a secure random salt when no salt is provided. The salt is then used in the signing process.\n\nSo, to directly answer your question:\n\n> What is the default salt of Signer when salt is not given or is None?\n\n✅ The default salt is a **32-byte random value generated using `os.urandom(32)`**.\n\nThis behavior is not tied to a fixed string or value — it's a secure, cryptographically random value generated at runtime.\n\nThus, the answer is:\n\n👉 **A 32-byte random value generated by `os.urandom(32)`** (in `src/itsdangerous/signer.py`).",
+          "secondi": 16.4,
+          "token_prompt": 83,
+          "token_generati": 248,
+          "token_in_cache": 64,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The default salt of `Signer` when `salt` is not given or is `None` is `b\"itsdangerous.Signer\"`. This is defined in the `Signer` class constructor, where the default value for `salt` is set to `b\"itsdangerous.Signer\"` if no salt is provided.",
+          "secondi": 14.6,
+          "token_prompt": 9977,
+          "token_generati": 69,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "separatore-errore",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "The exception raised is `ValueError`. It is raised when the separator is in the base64 alphabet because it may be contained in the signature itself. The specific message is: \"The given separator cannot be used because it may be contained in the signature itself. ASCII letters, digits, and '-_=' must not be used.\"",
+          "secondi": 33.5,
+          "token_prompt": 7100,
+          "token_generati": 133,
+          "token_in_cache": 6707,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "Signer.__init__",
+                "path_include": [
+                  "src"
+                ],
+                "format": "text"
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_body",
+              "argomenti": {
+                "symbol": "Signer.__init__"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": true,
+          "testo": "The `Signer.__init__` method in `itsdangerous` raises a `ValueError` when the separator could appear in the signature itself (i.e., when the separator is part of the base64 alphabet).\n\nThis is explicitly checked in the `Signer` class, specifically in the `__init__` method of `itsdangerous.Signer`, where it validates that the separator is not present in the base64 alphabet (e.g., `+`, `/`, `=`) to avoid ambiguity during signature decoding.\n\n✅ Answer: `ValueError`  \n📍 File: `itsdangerous/__init__.py`  \n📍 Class: `Signer`  \n📍 Method: `__init__`",
+          "secondi": 9.9,
+          "token_prompt": 94,
+          "token_generati": 146,
+          "token_in_cache": 66,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The `Signer.__init__` method does **not** raise an exception directly when the separator could appear in the signature itself.\n\nInstead, it **raises a `ValueError`** during initialization if the separator contains characters that are in the base64 alphabet (like letters, digits, or `-_=`, which are used in base64 encoding).\n\nThis check is performed in the `__init__` method of the `Signer` class:\n\n```python\nif self.sep in _base64_alphabet:\n    raise ValueError(\n        \"The given separator cannot be used because it may be\"\n        \" contained in the signature itself. ASCII letters,\"\n        \" digits, and '-_=' must not be used.\"\n    )\n```\n\n### Answer:\n**`ValueError`** is raised when the separator contains characters from the base64 alphabet.",
+          "secondi": 33.8,
+          "token_prompt": 9988,
+          "token_generati": 173,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "padre-signatureexpired",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "The class `SignatureExpired` directly inherits from `BadTimeSignature`. This is evident from the entry in the search result:\n\n`src/itsdangerous/exc.py:60-63: SignatureExpired (class) — class SignatureExpired(BadTimeSignature)`",
+          "secondi": 22.9,
+          "token_prompt": 6949,
+          "token_generati": 88,
+          "token_in_cache": 6591,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "class SignatureExpired",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "`SignatureExpired` directly inherits from `SignatureExpired` in the file `itsdangerous/sig.py`. However, it does not inherit from any other class directly — it is a class defined in the module and is a subclass of `Exception`.\n\nActually, upon checking the source code of `itsdangerous`, `SignatureExpired` is defined as a subclass of `Exception`.\n\nSo, the correct answer is:\n\n**`Exception`**\n\nThis is evident in `itsdangerous/sig.py`, where `SignatureExpired` is defined as:\n\n```python\nclass SignatureExpired(Exception):\n    pass\n```\n\n✅ Final answer: **`Exception`**",
+          "secondi": 8.8,
+          "token_prompt": 75,
+          "token_generati": 131,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The class `SignatureExpired` directly inherits from `BadTimeSignature`.",
+          "secondi": 3.8,
+          "token_prompt": 9969,
+          "token_generati": 14,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "figli-badsignature",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "[{\"file\": \"src/itsdangerous/exc.py\", \"line\": \"36-57\", \"class\": \"BadTimeSignature\", \"description\": \"class BadTimeSignature(BadSignature)\"}]",
+          "secondi": 23.1,
+          "token_prompt": 6963,
+          "token_generati": 87,
+          "token_in_cache": 6593,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "class",
+                "path_include": [
+                  "src"
+                ],
+                "path_exclude": [
+                  "tests",
+                  "docs"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In the `itsdangerous` library, the `BadSignature` exception is a base class used for signaling signature verification failures. However, **no classes directly subclass `BadSignature`** in the source code of `itsdangerous` 2.2.0.\n\nThe `BadSignature` class is not subclassed by any other exception class in the library. It is used as a base for signaling invalid or corrupted signatures, and exceptions like `BadData`, `SignatureExpired`, or `BadTime` are handled separately and do not inherit from `BadSignature`.\n\nThus, the list of classes that directly subclass `BadSignature` is:\n\n**[]** (empty list)",
+          "secondi": 9.3,
+          "token_prompt": 77,
+          "token_generati": 137,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": false,
+          "testo": "The classes that directly subclass `BadSignature` are:\n\n1. `BadTimeSignature`\n2. `SignatureExpired`",
+          "secondi": 5.5,
+          "token_prompt": 9971,
+          "token_generati": 24,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "quante-eccezioni",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "I need to find out how many exception classes are defined in exc.py. Let me search for this file and look at its contents.\n\nI need to examine the content of exc.py to count the exception classes. Let me read the file.\nThere are 5 exception classes defined in exc.py: BadData, BadSignature, BadTimeSignature, SignatureExpired, BadHeader, and BadPayload. That makes 6 exception classes in total.",
+          "secondi": 46.6,
+          "token_prompt": 7511,
+          "token_generati": 154,
+          "token_in_cache": 6729,
+          "chiamate": [
+            {
+              "strumento": "tokensave_files",
+              "argomenti": {
+                "path": "src/itsdangerous/exc.py"
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_read",
+              "argomenti": {
+                "file": "src/itsdangerous/exc.py",
+                "mode": "map"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "2",
+          "secondi": 0.3,
+          "token_prompt": 81,
+          "token_generati": 1,
+          "token_in_cache": 61,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": false,
+          "testo": "5",
+          "secondi": 1.5,
+          "token_prompt": 9975,
+          "token_generati": 1,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "figli-signingalgorithm",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The class that subclasses `SigningAlgorithm` is:\n\n- `HMACAlgorithm` (defined in `src/itsdangerous/signer.py`)\n\nNo other classes directly subclass `SigningAlgorithm` in the provided results.",
+          "secondi": 22.8,
+          "token_prompt": 6962,
+          "token_generati": 85,
+          "token_in_cache": 6592,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "class",
+                "path_include": [
+                  "src"
+                ],
+                "path_exclude": [
+                  "tests",
+                  "docs"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In the `itsdangerous` library, there is no class that directly subclasses `SigningAlgorithm`. The `SigningAlgorithm` class is an abstract base class (or interface) defined in the library, and it is not meant to be subclassed directly—instead, concrete signing algorithms like `HMAC` or `RSA` are implemented as separate classes that use the signing mechanism defined by `SigningAlgorithm`.\n\nHowever, in `itsdangerous`, the actual signing algorithms are implemented in the `itsdangerous.signing` module, and the relevant classes are:\n\n- `HMACSigning` (implements HMAC-based signing)\n- `RSASigning` (implements RSA-based signing)\n\nThese classes **do not subclass `SigningAlgorithm`** directly. Instead, they are designed to work with the signing interface, and `SigningAlgorithm` is more of a conceptual base.\n\nTherefore, **there are no classes that subclass `SigningAlgorithm`** in `itsdangerous`.\n\n✅ Answer: **None**.",
+          "secondi": 13.4,
+          "token_prompt": 76,
+          "token_generati": 201,
+          "token_in_cache": 63,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The classes that subclass `SigningAlgorithm` are:\n\n1. `NoneAlgorithm`\n2. `HMACAlgorithm`",
+          "secondi": 5.4,
+          "token_prompt": 9970,
+          "token_generati": 23,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "chi-chiama-make-keys-list",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "The function `_make_keys_list` is called by the class `Signer` in `src/itsdangerous/signer.py`. Additionally, it is referenced in `src/itsdangerous/serializer.py`, which suggests it may be used by the `Serializer` class. However, direct method calls to `_make_keys_list` are only explicitly found in the `Signer` class.",
+          "secondi": 20.3,
+          "token_prompt": 6700,
+          "token_generati": 112,
+          "token_in_cache": 6599,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "_make_keys_list",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In the `itsdangerous` library (version 2.2.0), the function `_make_keys_list` is not a public or widely documented method. Upon inspection of the source code, `_make_keys_list` is an internal helper function used in the `Signing` class (specifically in `itsdangerous/sig.py`), and it is called by the `Signing` class's `__init__` method when initializing the signing key list.\n\nThus:\n\n- **Function**: `_make_keys_list`  \n- **Called by**: `Signing.__init__`  \n- **Class**: `Signing`  \n- **File**: `itsdangerous/sig.py`\n\n> Note: `_make_keys_list` is not exposed publicly and is used internally to generate a list of keys from the provided key arguments.\n\n✅ Answer:  \nThe method `Signing.__init__` calls `_make_keys_list`, and it belongs to the class `Signing`.",
+          "secondi": 12.9,
+          "token_prompt": 83,
+          "token_generati": 193,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The function `_make_keys_list` is called by the following methods in these classes:\n\n1. **`Signer.__init__`** in `src/itsdangerous/signer.py`  \n   - Called to convert the `secret_key` parameter into a list of bytes.\n\n2. **`Serializer.__init__`** in `src/itsdangerous/serializer.py`  \n   - Called to convert the `secret_key` parameter into a list of bytes.\n\nThese methods use `_make_keys_list` to handle key rotation by converting a single key or a list of keys into a list of bytes for signing and verification.",
+          "secondi": 25.0,
+          "token_prompt": 9977,
+          "token_generati": 128,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "compressione",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The `URLSafeSerializerMixin` does not use a separate module for compressing the payload. It relies on the base `Serializer` class from `itsdangerous` for serialization and deserialization, and compression is not explicitly implemented or referenced in the provided code. The payload handling is managed through methods like `dump_payload` and `load_payload`, which are part of the `URLSafeSerializerMixin` class itself.",
+          "secondi": 24.8,
+          "token_prompt": 6803,
+          "token_generati": 123,
+          "token_in_cache": 6596,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "URLSafeSerializerMixin",
+                "path_include": [
+                  "src"
+                ],
+                "format": "text"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": true,
+          "testo": "The `URLSafeSerializerMixin` in `itsdangerous` does not use any external compression module directly. It relies on the built-in `pickle` module to serialize and deserialize data, and compression (if any) is not part of its default behavior.\n\nHowever, if compression is applied, it is typically done via the `zlib` module, which is used internally by `itsdangerous` in some serializer implementations (like `URLSafeSerializer`) when the `compress` parameter is set to `True`.\n\nThus, the module used for compression (when enabled) is:\n\n**zlib**  \n\n✅ Answer: `zlib`",
+          "secondi": 8.6,
+          "token_prompt": 80,
+          "token_generati": 129,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The `URLSafeSerializerMixin` uses the `zlib` module to compress the payload. This is evident in the `load_payload` and `dump_payload` methods where `zlib.decompress` and `zlib.compress` are called respectively.",
+          "secondi": 10.4,
+          "token_prompt": 9974,
+          "token_generati": 51,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "serializer-url-safe",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The `default_serializer` of `URLSafeSerializerMixin` is not explicitly defined in the provided code. However, based on the context, `URLSafeSerializerMixin` inherits from `Serializer` in `src/itsdangerous/serializer.py`. The `default_serializer` is typically defined in the base `Serializer` class, which may be used by `URLSafeSerializerMixin`. To determine the exact value, further inspection of the `Serializer` class is required.",
+          "secondi": 23.3,
+          "token_prompt": 6664,
+          "token_generati": 135,
+          "token_in_cache": 6593,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "default_serializer",
+                "path_include": [
+                  "src/itsdangerous"
+                ],
+                "format": "text"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "The `default_serializer` of `URLSafeSerializerMixin` in `itsdangerous` is not explicitly defined as a class attribute in the source code. However, by examining the implementation, `URLSafeSerializerMixin` inherits from `SerializerMixin` and uses `default_serializer` as a class-level attribute that defaults to `URLSafeSerializer`.\n\nThus, the default serializer is:\n\n**`URLSafeSerializer`**\n\nThis is inferred from the structure and design of the library, where `URLSafeSerializerMixin` is intended to work with `URLSafeSerializer` as its default serializer. While the exact line may not be directly visible in the source, the behavior and naming convention confirm this.\n\n✅ Answer: **`URLSafeSerializer`**",
+          "secondi": 9.8,
+          "token_prompt": 77,
+          "token_generati": 148,
+          "token_in_cache": 65,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The default_serializer of `URLSafeSerializerMixin` is `_CompactJSON`. This is defined in the class itself:\n\n```python\nclass URLSafeSerializerMixin(Serializer[str]):\n    default_serializer: _PDataSerializer[str] = _CompactJSON\n```\n\nThis value is inherited by both `URLSafeSerializer` and `URLSafeTimedSerializer`.",
+          "secondi": 13.8,
+          "token_prompt": 9971,
+          "token_generati": 71,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "default-signer-timed",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "The class that sets `default_signer` to `TimestampSigner` is not present in the provided code. The `default_signer` is set to `Signer` in the `Serializer` class, and there is no explicit setting of `default_signer` to `TimestampSigner`.",
+          "secondi": 146.9,
+          "token_prompt": 10509,
+          "token_generati": 178,
+          "token_in_cache": 7069,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "class",
+                "path_include": [
+                  "src/itsdangerous"
+                ],
+                "format": "text"
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "format": "text",
+                "path_include": [
+                  "src/itsdangerous"
+                ],
+                "query": "default_signer"
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_body",
+              "argomenti": {
+                "symbol": "Serializer",
+                "path_include": [
+                  "src/itsdangerous"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In the `itsdangerous` library, the `Signer` class sets the default signer to `TimestampSigner` via its class-level configuration.\n\nSpecifically, the class that sets the default signer to `TimestampSigner` is:\n\n**`itsdangerous.Signer`**\n\nThis is done in the `Signer` class definition, where `default_signer = TimestampSigner` is implicitly set as part of the class initialization or configuration.\n\nHowever, note: in the actual source code of `itsdangerous`, the default signer is not explicitly set in the class definition. Instead, the `TimestampSigner` is used by default when no signer is specified, and this behavior is managed through the `Signer` class's default behavior.\n\nBut to directly answer your question:  \n✅ The class that **sets** the default signer to `TimestampSigner` is:\n\n**`itsdangerous.Signer`**\n\nThis is because `Signer` is the base class that defines the default signer behavior, and `TimestampSigner` is used by default when no signer is provided.",
+          "secondi": 15.1,
+          "token_prompt": 77,
+          "token_generati": 222,
+          "token_in_cache": 63,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The class that sets `default_signer` to `TimestampSigner` is `TimedSerializer`. \n\nThis is evident in the `TimedSerializer` class definition in `src/itsdangerous/timed.py`:\n\n```python\nclass TimedSerializer(Serializer[_TSerialized]):\n    default_signer: type[TimestampSigner] = TimestampSigner\n```\n\nThis line explicitly assigns `TimestampSigner` as the default signer for `TimedSerializer`.",
+          "secondi": 18.3,
+          "token_prompt": 9971,
+          "token_generati": 96,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "timestamp",
+        "con tokensave": {
+          "giusta": true,
+          "testo": "I need to find which standard library function TimestampSigner.get_timestamp calls to get the current time. Let me analyze this step by step.\n\nFirst, I should look for the TimestampSigner class and its get_timestamp method in the codebase.\n\nNow I need to examine the implementation of the get_timestamp method in timed.py to see what it calls.\nThe TimestampSigner.get_timestamp method calls the standard library function `time.time()` to get the current time. This is evident from the implementation in timed.py where it returns `int(time.time())`.",
+          "secondi": 32.7,
+          "token_prompt": 6844,
+          "token_generati": 182,
+          "token_in_cache": 6750,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "TimestampSigner.get_timestamp",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            },
+            {
+              "strumento": "tokensave_body",
+              "argomenti": {
+                "symbol": "get_timestamp",
+                "path": "src/itsdangerous/timed.py"
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": true,
+          "testo": "The `TimestampSigner.get_timestamp` method in `itsdangerous` calls the standard library function `time.time()` to get the current time. \n\nSpecifically, it uses `time.time()` from the `time` module. This is evident in the source code of `itsdangerous` where `get_timestamp` internally relies on `time.time()` to retrieve the current Unix timestamp.\n\n✅ Answer: `time.time()`",
+          "secondi": 5.9,
+          "token_prompt": 83,
+          "token_generati": 86,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "The `TimestampSigner.get_timestamp` method calls `time.time()` to get the current time. This is evident from the source code:\n\n```python\ndef get_timestamp(self) -> int:\n    \"\"\"Returns the current timestamp. The function must return an integer.\"\"\"\n    return int(time.time())\n```\n\nThus, the standard library function is `time.time()`.",
+          "secondi": 14.5,
+          "token_prompt": 9977,
+          "token_generati": 73,
+          "token_in_cache": 9956,
+          "chiamate": []
+        }
+      },
+      {
+        "id": "nonealgorithm-firma",
+        "con tokensave": {
+          "giusta": false,
+          "testo": "I need to find out what `NoneAlgorithm.get_signature` returns. Let me first check if this symbol exists in the codebase.\n\nThe `NoneAlgorithm.get_signature` method returns `bytes`. It is defined in `src/itsdangerous/signer.py` and takes two parameters: `key` and `value`, both of type `bytes`. The method signature is:\n\n```python\ndef get_signature(self, key: bytes, value: bytes) -> bytes\n```",
+          "secondi": 21.8,
+          "token_prompt": 6688,
+          "token_generati": 130,
+          "token_in_cache": 6599,
+          "chiamate": [
+            {
+              "strumento": "tokensave_search",
+              "argomenti": {
+                "query": "NoneAlgorithm.get_signature",
+                "path_include": [
+                  "src"
+                ]
+              },
+              "stato": "done",
+              "motivo": null
+            }
+          ]
+        },
+        "senza strumenti": {
+          "giusta": false,
+          "testo": "In `itsdangerous` (version 2.2.0), `NoneAlgorithm.get_signature` is not a defined method or attribute in the standard API. The `NoneAlgorithm` class does not exist in the library.\n\nThe `itsdangerous` library provides cryptographic signing algorithms (like `HMAC`, `RSA`, etc.), but there is no built-in `NoneAlgorithm`. If you're referring to a hypothetical or custom implementation, it would not be part of the standard library.\n\nTherefore, **`NoneAlgorithm.get_signature` does not exist** in `itsdangerous`, and thus **it does not return anything** — it would raise an `AttributeError` or `NameError` if accessed.\n\n✅ Answer: `NoneAlgorithm.get_signature` does not exist in `itsdangerous` — it raises an error if accessed.",
+          "secondi": 11.1,
+          "token_prompt": 74,
+          "token_generati": 170,
+          "token_in_cache": 62,
+          "chiamate": []
+        },
+        "codice nel prompt": {
+          "giusta": true,
+          "testo": "`NoneAlgorithm.get_signature` returns `b\"\"`, an empty bytes object. This is defined in the `signer.py` file under the `NoneAlgorithm` class:\n\n```python\nclass NoneAlgorithm(SigningAlgorithm):\n    \"\"\"Provides an algorithm that does not perform any signing and returns an empty signature.\"\"\"\n\n    def get_signature(self, key: bytes, value: bytes) -> bytes:\n        return b\"\"\n```",
+          "secondi": 16.7,
+          "token_prompt": 9968,
+          "token_generati": 85,
+          "token_in_cache": 9955,
+          "chiamate": []
+        }
+      }
+    ]
+  },
+  "secondi": 1386.4
+}

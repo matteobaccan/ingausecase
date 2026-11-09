@@ -1,0 +1,25 @@
+{
+  "caso": "prova",
+  "versione": "0.46.0",
+  "inga": "inga 0.46.0",
+  "modello": "qwen3-0.6b",
+  "file_modello": "Qwen3-0.6B-Q8_0.gguf",
+  "sha256_modello": "e150ed544dfe6016930c026a93913a5e3184181ebfe6ab2223ae01dd0491784c",
+  "ctx": 2048,
+  "seed": 42,
+  "data": "2026-11-09T11:33:37Z",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 1.0,
+  "voci": {
+    "risposta non vuota": 1.0
+  },
+  "dettagli": {
+    "domanda": "Qual è la capitale d'Italia? Rispondi con una frase.",
+    "risposta": "La capitale d'Italia è Roma.",
+    "contiene_roma": true,
+    "secondi_primo_token": 0.102,
+    "secondi_risposta": 0.377
+  },
+  "secondi": 2.2
+}

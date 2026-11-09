@@ -1,0 +1,543 @@
+{
+  "caso": "gsm8k",
+  "versione": "0.46.0",
+  "inga": "inga 0.46.0",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-09T11:28:51Z",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 0.8333333333333334,
+  "voci": {
+    "Inga": 0.8333333333333334,
+    "llama.cpp": 0.8333333333333334,
+    "Inga meno llama.cpp": 0.0,
+    "risposte con lo stesso testo": 0.4,
+    "tempo di llama.cpp su quello di Inga": 1.0038392628615307
+  },
+  "dettagli": {
+    "seed": 8,
+    "indici": [
+      40,
+      62,
+      89,
+      174,
+      183,
+      258,
+      280,
+      393,
+      395,
+      428,
+      464,
+      479,
+      506,
+      546,
+      758,
+      768,
+      799,
+      820,
+      824,
+      834,
+      928,
+      940,
+      971,
+      993,
+      998,
+      1013,
+      1037,
+      1065,
+      1173,
+      1314
+    ],
+    "domande": 30,
+    "llama_cpp": "b12032",
+    "secondi_inga": 391,
+    "secondi_llama": 392,
+    "risposte": [
+      {
+        "n": 0,
+        "inga": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 6.8,
+          "testo": "Step 1: Suzy’s iPhone is 1 year old.  \nStep 2: Ben’s iPhone is two times older than Suzy’s.  \n\"Two times older\" means Ben’s iPhone is 2 × 1 = 2 years old.  \nStep 3: Brandon’s iPhone is four times as old as Ben’s.  \nSo, Brandon’s iPhone = 4 × 2 = 8 years old.  \n\nAnswer: 8"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 6.5,
+          "testo": "Step 1: Suzy’s iPhone is 1 year old.  \nStep 2: Ben’s iPhone is two times older than Suzy’s.  \n\"Two times older\" means Ben’s iPhone is 2 × 1 = 2 years old.  \nStep 3: Brandon’s iPhone is four times as old as Ben’s.  \nSo, Brandon’s iPhone = 4 × 2 = 8 years old.  \n\nAnswer: 8"
+        },
+        "uguali": true
+      },
+      {
+        "n": 1,
+        "inga": {
+          "voto": 0.0,
+          "nota": "2500.0 su 25000.0",
+          "secondi": 32.0,
+          "testo": "We are given:\n\n- If Marcy works for the **full 40 years**, she gets a **pension of $50,000 per year**.\n- Starting **after 20 years**, she becomes entitled to **5% of the value of the pension per year**.\n- She **quits after 30 years**.\n\nWe are to find her **annual pension after 30 years**.\n\n---\n\nStep 1: Understand the pension rule.\n\nThe key phrase is: \"Starting after 20 years, she becomes entitled to 5% of the value of the pension per year.\"\n\nThis likely means that **after 20 years of service**, the pension amount is reduced to **5% of the full pension**.\n\nBut let's interpret carefully.\n\nIf she works 40 years → full pension = $50,000/year.\n\nAfter 20 years, she becomes entitled to **5% of the value** — that is, 5% of $50,000?\n\nThat would be:\n\n5% of $50,000 = 0.05 × 50,000 = $2,500.\n\nBut that seems very low — and it doesn't make sense in context. Also, the phrase \"entitled to 5% of the value of the pension per year\" might mean that **after 20 years**, the pension is reduced to 5% of the full amount.\n\nBut if she quits after 30 years, which is **after 20 years**, then she should be entitled to **5% of $50,000**.\n\nSo:\n\n5% of $50,000 = 0.05 × 50,000 = $2,500.\n\nBut is that correct?\n\nWait — the wording says: \"Starting after 20 years, she becomes entitled to 5% of the value of the pension per year.\"\n\nThis could mean that **after 20 years**, the pension is reduced to 5% of the full pension value.\n\nSo, if she works 30 years (which is after 20), she gets 5% of $50,000.\n\nThus:\n\nAnnual pension = 5% × $50,000 = $2,500.\n\nBut let's double-check: is there another interpretation?\n\nAlternative interpretation: Maybe the"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "1250.0 su 25000.0",
+          "secondi": 32.9,
+          "testo": "We are given:\n\n- If Marcy works for 40 years, she gets a **full annual pension of $50,000**.\n- Starting **after 20 years**, she becomes entitled to **5% of the pension value per year** — this likely means that **after 20 years**, her pension entitlement increases by 5% per year (or perhaps the pension is scaled based on years worked).\n- But the key point is: **if she quits after 30 years**, what is her annual pension?\n\nLet’s interpret the statement carefully:\n\n> \"Starting after 20 years, she becomes entitled to 5% of the value of the pension per year.\"\n\nThis is ambiguous, but likely means that **after 20 years**, her pension is **increased by 5% per year** — but that doesn’t make sense in context.\n\nAlternatively, it might mean that **after 20 years**, she becomes entitled to **5% of the full pension value per year** — but that would be only $2,500, which seems too low.\n\nAnother interpretation: perhaps the pension is **based on years worked**, and after 20 years, she gets **5% of the full pension** — but that would be a reduction, not an increase.\n\nWait — the phrasing is: \"she becomes entitled to 5% of the value of the pension per year\" — this seems to suggest that **after 20 years**, her pension is **only 5% of the full pension** — which would be a reduction.\n\nBut that contradicts the idea of a pension increasing with time.\n\nAlternatively, maybe it's a typo or misphrasing. A more plausible interpretation is:\n\n> After 20 years, she becomes entitled to **a pension that increases by 5% per year** — but again, that's not clear.\n\nBut the key is: **if she quits after 30 years**, what is her annual pension?\n\nWe know:\n\n- Full pension after 40 years: $50,000/year.\n\nSo likely, the pension is **proportional to years worked**, or **a fixed amount based on years**.\n\nLet’s suppose the pension is **proportional to years worked**.\n\nSo, after 40 years → $50,000\n\nThen per year: $50,000 / 40 = $1,250 per year.\n\n"
+        },
+        "uguali": false
+      },
+      {
+        "n": 2,
+        "inga": {
+          "voto": 0.0,
+          "nota": "18.0 su 24.0",
+          "secondi": 11.2,
+          "testo": "Step 1: Determine how many guests will actually attend.  \nChristina invites 16 friends, but 1/4 of them don't show up.  \nSo, 1/4 of 16 = 16 × 1/4 = 4 guests don't show up.  \nThus, 16 - 4 = 12 guests will attend.\n\nStep 2: Calculate the number of gift bags needed.  \nShe needs 0.75 gift bags per guest.  \nSo, 12 guests × 0.75 = 9 gift bags.\n\nStep 3: Calculate the total cost.  \nEach gift bag costs $2.  \n9 × 2 = $18.\n\nAnswer: 18"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "18.0 su 24.0",
+          "secondi": 10.1,
+          "testo": "Step 1: Determine how many guests will actually attend.  \nChristina invites 16 friends, but 1/4 of them don't show up.  \nSo, 1/4 of 16 = 16 × 1/4 = 4 guests won't show up.  \nThus, 16 - 4 = 12 guests will attend.\n\nStep 2: Calculate the number of gift bags needed.  \nShe needs 0.75 gift bags per guest.  \nSo, 12 guests × 0.75 = 9 gift bags.\n\nStep 3: Calculate the total cost.  \nEach gift bag costs $2.  \n9 × 2 = $18.\n\nAnswer: 18"
+        },
+        "uguali": false
+      },
+      {
+        "n": 3,
+        "inga": {
+          "voto": 0.0,
+          "nota": "5700.0 su 95.0",
+          "secondi": 15.0,
+          "testo": "Step 1: Determine the time to peel one potato.  \nBilly takes 1 minute and 30 seconds to peel a potato.  \nConvert that to seconds:  \n1 minute = 60 seconds → 60 + 30 = 90 seconds.\n\nStep 2: Determine the time to cut one potato.  \nIt takes 5 seconds to cut a potato.\n\nStep 3: Total time per potato (peel + cut):  \n90 seconds (peel) + 5 seconds (cut) = 95 seconds per potato.\n\nStep 4: Total time for 60 potatoes:  \n60 potatoes × 95 seconds = 5700 seconds.\n\nStep 5: Convert total time to minutes (optional, but for understanding):  \n5700 ÷ 60 = 95 minutes.\n\nBut the question only asks for the total time in seconds (implied by the format), and we are to give the final answer as a number.\n\nAnswer: 5700"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "5700.0 su 95.0",
+          "secondi": 14.6,
+          "testo": "Step 1: Determine the time to peel one potato.  \nBilly takes 1 minute and 30 seconds to peel a potato.  \nConvert that to seconds:  \n1 minute = 60 seconds → 60 + 30 = 90 seconds.\n\nStep 2: Determine the time to cut one potato.  \nIt takes 5 seconds to cut a potato.\n\nStep 3: Total time per potato (peel + cut):  \n90 seconds (peel) + 5 seconds (cut) = 95 seconds per potato.\n\nStep 4: Total time for 60 potatoes:  \n60 potatoes × 95 seconds = 5700 seconds.\n\nStep 5: Convert total time to minutes (optional, but helpful for understanding):  \n5700 ÷ 60 = 95 minutes.\n\nBut the question only asks for the total time in seconds (implied by the format), and we are to give the final answer as a number.\n\nAnswer: 5700"
+        },
+        "uguali": false
+      },
+      {
+        "n": 4,
+        "inga": {
+          "voto": 1.0,
+          "nota": "2.0 su 2.0",
+          "secondi": 20.8,
+          "testo": "We are given two relay teams running a 4 × 400 meter race.\n\n---\n\n**Team A (Well-rounded):**  \nEach runner completes 400 meters in **55 seconds**.  \nSince there are 4 runners, total time =  \n4 × 55 = **220 seconds**\n\n---\n\n**Team B (Less well-rounded):**  \n- 1st runner: 60 seconds  \n- Each subsequent runner is **3 seconds faster** than the previous one.\n\nSo the times for each leg:\n\n- Runner 1: 60 seconds  \n- Runner 2: 60 - 3 = 57 seconds  \n- Runner 3: 57 - 3 = 54 seconds  \n- Runner 4: 54 - 3 = 51 seconds  \n\nTotal time for Team B =  \n60 + 57 + 54 + 51\n\nAdd them step by step:  \n60 + 57 = 117  \n117 + 54 = 171  \n171 + 51 = **222 seconds**\n\n---\n\nNow, compare the two teams:\n\n- Team A: 220 seconds  \n- Team B: 222 seconds  \n\nDifference = 222 - 220 = **2 seconds**\n\nSo, Team A wins by **2 seconds**.\n\nAnswer: 2"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "2.0 su 2.0",
+          "secondi": 20.4,
+          "testo": "We are given two relay teams running a 4 × 400 meter race.\n\n---\n\n**Team A (Well-rounded):**  \nEach runner completes 400 meters in **55 seconds**.  \nSince there are 4 runners, total time =  \n4 × 55 = **220 seconds**\n\n---\n\n**Team B (Less well-rounded):**  \n- 1st runner: 60 seconds  \n- Each subsequent runner is **3 seconds faster** than the previous one.\n\nSo the times for each leg:\n\n- Runner 1: 60 seconds  \n- Runner 2: 60 - 3 = 57 seconds  \n- Runner 3: 57 - 3 = 54 seconds  \n- Runner 4: 54 - 3 = 51 seconds  \n\nTotal time for Team B =  \n60 + 57 + 54 + 51\n\nAdd them step by step:  \n60 + 57 = 117  \n117 + 54 = 171  \n171 + 51 = **222 seconds**\n\n---\n\nNow, compare the two teams:\n\n- Team A: 220 seconds  \n- Team B: 222 seconds  \n\nDifference = 222 - 220 = **2 seconds**\n\nSo, Team A wins by **2 seconds**.\n\nAnswer: 2"
+        },
+        "uguali": true
+      },
+      {
+        "n": 5,
+        "inga": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 7.4,
+          "testo": "Step 1: Calculate the cost for the 8 overdue books.  \nEach book costs $0.50, so:  \n8 books × $0.50 = $4.00\n\nStep 2: Add the flat fee for having at least one book overdue.  \nFlat fee = $2.00\n\nStep 3: Total amount due = cost of books + flat fee  \n$4.00 + $2.00 = $6.00\n\nAnswer: 6"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 7.5,
+          "testo": "Step 1: Calculate the cost for the 8 overdue books.  \nEach book costs $0.50, so:  \n8 books × $0.50 = $4.00\n\nStep 2: Add the flat fee for having at least one book overdue.  \nFlat fee = $2.00\n\nStep 3: Total amount = cost of books + flat fee  \n$4.00 + $2.00 = $6.00\n\nAnswer: 6"
+        },
+        "uguali": false
+      },
+      {
+        "n": 6,
+        "inga": {
+          "voto": 1.0,
+          "nota": "7.0 su 7.0",
+          "secondi": 8.5,
+          "testo": "Step 1: Calculate the cost of the popsicles.  \nPeter bought 20 popsicles at $0.25 each:  \n20 × 0.25 = $5.00\n\nStep 2: Calculate the cost of the ice cream bars.  \nHe bought 4 ice cream bars at $0.50 each:  \n4 × 0.50 = $2.00\n\nStep 3: Add both amounts to find the total cost.  \n$5.00 + $2.00 = $7.00\n\nAnswer: 7"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "7.0 su 7.0",
+          "secondi": 8.6,
+          "testo": "Step 1: Calculate the cost of the popsicles.  \nPeter bought 20 popsicles at $0.25 each:  \n20 × 0.25 = $5.00\n\nStep 2: Calculate the cost of the ice cream bars.  \nHe bought 4 ice cream bars at $0.50 each:  \n4 × 0.50 = $2.00\n\nStep 3: Add both amounts to find the total cost.  \n$5.00 + $2.00 = $7.00\n\nAnswer: 7"
+        },
+        "uguali": true
+      },
+      {
+        "n": 7,
+        "inga": {
+          "voto": 1.0,
+          "nota": "20.0 su 20.0",
+          "secondi": 11.1,
+          "testo": "Step 1: Convert all times to the same unit (minutes).\n\n- Writing: 4 hours = 4 × 60 = 240 minutes  \n- Recording: half of 4 hours = 2 hours = 2 × 60 = 120 minutes  \n- Editing: 90 minutes (already in minutes)\n\nStep 2: Find total work time.\n\nTotal time = writing + recording + editing  \n= 240 + 120 + 90 = 450 minutes\n\nStep 3: Find percentage spent editing.\n\nEditing percentage = (editing time / total time) × 100  \n= (90 / 450) × 100  \n= 0.2 × 100  \n= 20%\n\nAnswer: 20"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "20.0 su 20.0",
+          "secondi": 11.4,
+          "testo": "Step 1: Convert all times to the same unit (minutes).\n\n- Writing time: 4 hours = 4 × 60 = 240 minutes  \n- Recording time: half of 4 hours = 2 hours = 2 × 60 = 120 minutes  \n- Editing time: 90 minutes (already in minutes)\n\nStep 2: Find total work time.\n\nTotal time = writing + recording + editing  \n= 240 + 120 + 90 = 450 minutes\n\nStep 3: Find the percentage of time spent editing.\n\nEditing percentage = (editing time / total time) × 100  \n= (90 / 450) × 100  \n= 0.2 × 100  \n= 20%\n\nAnswer: 20"
+        },
+        "uguali": false
+      },
+      {
+        "n": 8,
+        "inga": {
+          "voto": 1.0,
+          "nota": "38.0 su 38.0",
+          "secondi": 13.2,
+          "testo": "Step 1: Determine how many cards Erica originally had.  \nShe made 20 cards.\n\nStep 2: Add the pre-made cards her dad brought.  \nDad brought 2 boxes × 15 cards = 30 cards.  \nTotal cards before giving out: 20 + 30 = 50 cards.\n\nStep 3: Subtract the cards she passed out.  \nShe gave out 24 to classmates and 5 to family.  \nTotal given out: 24 + 5 = 29 cards.\n\nStep 4: Add the cards she received from family and friends.  \nShe received 17 cards.\n\nStep 5: Compute final number of cards.  \nStart with 50, subtract 29 (given out), add 17 (received):  \n50 - 29 = 21  \n21 + 17 = 38\n\nAnswer: 38"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "38.0 su 38.0",
+          "secondi": 11.8,
+          "testo": "Step 1: Start with the cards Erica originally made.  \nShe made 20 cards.\n\nStep 2: Add the pre-made cards her dad brought.  \nDad brought 2 boxes, each with 15 cards:  \n2 × 15 = 30 cards  \nTotal cards now: 20 + 30 = 50 cards\n\nStep 3: Subtract the cards she passed out.  \nShe gave out 24 to classmates and 5 to family:  \n24 + 5 = 29 cards given out  \n50 − 29 = 21 cards left\n\nStep 4: Add the cards she received from family and friends.  \nShe received 17 cards  \n21 + 17 = 38 cards\n\nAnswer: 38"
+        },
+        "uguali": false
+      },
+      {
+        "n": 9,
+        "inga": {
+          "voto": 1.0,
+          "nota": "26.0 su 26.0",
+          "secondi": 29.7,
+          "testo": "Step 1: The caterer was told to prepare for 36 guests.\n\nStep 2: Originally, he prepared enough for half of the guests to have two hotdogs.  \nHalf of 36 = 18 guests → each of these 18 guests gets 2 hotdogs.  \nThe remaining 18 guests get 1 hotdog each.\n\nSo total hotdogs prepared:  \n(18 × 2) + (18 × 1) = 36 + 18 = 54 hotdogs.\n\nStep 3: 40 guests actually showed up, and everyone wanted a second hotdog.\n\nSo each of the 40 guests wants 2 hotdogs → total hotdogs needed = 40 × 2 = 80.\n\nBut only 54 hotdogs were prepared.\n\nSo the question is: how many guests did **not** get a second hotdog?\n\nWe need to determine how many of the 40 guests were unable to get a second hotdog due to lack of supply.\n\nTotal hotdogs available: 54  \nEach guest wants 2 hotdogs → total needed: 80 → not enough.\n\nBut the caterer only prepared 54 hotdogs. So the total number of hotdogs that were actually given out is 54.\n\nEach guest who gets a hotdog gets at most 2, but if they don’t get a second, they only get one.\n\nLet’s suppose that x guests got only one hotdog (no second), and (40 - x) guests got two hotdogs.\n\nThen total hotdogs given = 1×x + 2×(40 - x) = x + 80 - 2x = 80 - x\n\nWe know total hotdogs available = 54\n\nSo:  \n80 - x = 54  \n→ x = 80 - 54 = 26\n\nSo 26 guests did not get a second hotdog.\n\nAnswer: 26"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "26.0 su 26.0",
+          "secondi": 33.6,
+          "testo": "Step 1: The caterer was told to prepare for 36 guests.\n\nStep 2: Originally, he prepared enough for half of the guests to have two hotdogs.  \nHalf of 36 = 18 guests → each of these 18 guests gets 2 hotdogs.  \nThe remaining 18 guests get 1 hotdog each.\n\nSo total hotdogs prepared:  \n(18 × 2) + (18 × 1) = 36 + 18 = 54 hotdogs.\n\nStep 3: 40 guests actually showed up. Everyone wanted a second hotdog.\n\nSo each of the 40 guests wants 2 hotdogs → total hotdogs needed = 40 × 2 = 80.\n\nBut only 54 hotdogs were prepared.\n\nSo the question is: how many guests did **not** get a second hotdog?\n\nWe need to determine how many of the 40 guests were unable to get a second hotdog due to lack of supply.\n\nTotal hotdogs available: 54  \nEach guest wants 2 hotdogs → total needed: 80  \nSo, shortage = 80 – 54 = 26 hotdogs short.\n\nEach guest who gets only one hotdog is missing one hotdog (the second one). So each guest who doesn’t get a second hotdog is missing one hotdog.\n\nSo, 26 guests did not get a second hotdog.\n\nBut wait — we must check if this is possible given the original plan.\n\nOriginal plan: 18 guests got 2 hotdogs, 18 got 1.\n\nBut now 40 guests show up, and all want 2.\n\nSo, the caterer only has 54 hotdogs total.\n\nIf all 40 guests wanted 2, they would need 80.\n\nBut only 54 are available.\n\nSo, the number of guests who get only one hotdog (i.e., don’t get a second) is equal to the number of hotdogs missing.\n\nEach such guest is missing one hotdog.\n\nSo, total missing hotdogs = 80 – 54 = 26.\n\nTherefore, 26 guests did not get a second hotdog.\n\nAnswer: 26"
+        },
+        "uguali": false
+      },
+      {
+        "n": 10,
+        "inga": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 9.7,
+          "testo": "Start: Finley begins in **1st place**.\n\n1. She falls back 5 spots:  \n   1st → 1 + 5 = **6th place**\n\n2. Then moves ahead 2 spots:  \n   6th → 6 - 2 = **4th place**\n\n3. Then falls behind 3 spots:  \n   4th → 4 + 3 = **7th place**\n\n4. Lastly, she jumps ahead 1 spot:  \n   7th → 7 - 1 = **6th place**\n\nFinal place: **6th**\n\nAnswer: 6"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "6.0 su 6.0",
+          "secondi": 7.6,
+          "testo": "Start: Finley begins in **1st place**.\n\n1. She falls back 5 spots:  \n   1st → 1 + 5 = **6th place**\n\n2. Then moves ahead 2 spots:  \n   6th → 6 - 2 = **4th place**\n\n3. Then falls behind 3 spots:  \n   4th → 4 + 3 = **7th place**\n\n4. Lastly, she jumps ahead 1 spot:  \n   7th → 7 - 1 = **6th place**\n\nAnswer: 6"
+        },
+        "uguali": false
+      },
+      {
+        "n": 11,
+        "inga": {
+          "voto": 1.0,
+          "nota": "15400.0 su 15400.0",
+          "secondi": 11.7,
+          "testo": "Step 1: Calculate the cost of plane tickets.  \nEach ticket is $5000, and there are two people.  \n5000 × 2 = $10,000\n\nStep 2: Calculate the hotel cost.  \nNormal price is $1500 per day.  \nIt is 20% more expensive during the busy weekend.  \n20% of 1500 = 0.20 × 1500 = $300  \nSo, daily rate = 1500 + 300 = $1800 per day  \n\nThey are there for 3 days:  \n1800 × 3 = $5400\n\nStep 3: Add plane tickets and hotel cost.  \n10,000 + 5400 = $15,400\n\nAnswer: 15400"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "15400.0 su 15400.0",
+          "secondi": 14.5,
+          "testo": "Step 1: Calculate the cost of plane tickets.  \nEach ticket is $5000, and there are two people.  \n5000 × 2 = $10,000\n\nStep 2: Calculate the hotel cost.  \nNormal price is $1500 per day.  \nIt is 20% more expensive during the busy weekend.  \n20% of 1500 = 0.20 × 1500 = $300  \nSo, daily rate = 1500 + 300 = $1800 per day  \n\nThey are there for 3 days:  \n1800 × 3 = $5400\n\nStep 3: Add plane tickets and hotel cost.  \n10,000 + 5400 = $15,400\n\nAnswer: 15400"
+        },
+        "uguali": true
+      },
+      {
+        "n": 12,
+        "inga": {
+          "voto": 0.0,
+          "nota": "72.0 su 144.0",
+          "secondi": 8.8,
+          "testo": "Step 1: Mario has 6 sled dogs.  \nStep 2: Each dog has 4 legs, but snowshoes are typically needed per dog, not per leg. So we don’t need to divide by legs — each dog gets one pair of snowshoes.  \nStep 3: Each pair of snowshoes costs $12.00.  \nStep 4: For 6 dogs, he needs 6 pairs.  \nStep 5: Total cost = 6 × $12 = $72.\n\nAnswer: 72"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "72.0 su 144.0",
+          "secondi": 9.1,
+          "testo": "Step 1: Mario has 6 sled dogs.  \nStep 2: Each dog has 4 legs, but snowshoes are typically needed per dog, not per leg. So we don’t need to divide by 4 or use legs in the calculation.  \nStep 3: Each dog needs one pair of snowshoes.  \nSo, 6 dogs × 1 pair each = 6 pairs of snowshoes.  \nStep 4: Each pair costs $12.  \nTotal cost = 6 × $12 = $72.\n\nAnswer: 72"
+        },
+        "uguali": false
+      },
+      {
+        "n": 13,
+        "inga": {
+          "voto": 1.0,
+          "nota": "130.0 su 130.0",
+          "secondi": 18.9,
+          "testo": "Let's break down what Elise does step by step:\n\n1. **First, she writes the alphabet in full twice.**  \n   The alphabet has 26 letters.  \n   So, 2 × 26 = **52 letters**.\n\n2. **Then, she writes half of it once.**  \n   Half of 26 is 13.  \n   So, she writes **13 letters**.\n\n3. **Then, she re-writes everything she has already written.**  \n   That means she rewrites the total of the previous steps:  \n   - First 2 full alphabets: 52 letters  \n   - Then half: 13 letters  \n   So, total letters already written before re-writing: 52 + 13 = 65  \n   She re-writes all of that — so she writes **65 more letters**.\n\nNow, total letters written:\n\n- First two full alphabets: 52  \n- Half of the alphabet: 13  \n- Rewriting everything already written: 65  \n\nTotal = 52 + 13 + 65 = **130**\n\nAnswer: 130"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "130.0 su 130.0",
+          "secondi": 19.3,
+          "testo": "Let's break down what Elise does step by step:\n\n1. **First, she writes the alphabet in full twice.**  \n   The alphabet has 26 letters.  \n   So, 2 × 26 = **52 letters**.\n\n2. **Then, she writes half of it once.**  \n   Half of the alphabet is 26 ÷ 2 = 13 letters.  \n   So, she writes **13 letters**.\n\n3. **Then, she re-writes everything she has already written.**  \n   That means she rewrites all the letters she has written so far.  \n   So far, she has written:  \n   - First 2 times: 52 letters  \n   - Then half: 13 letters  \n   Total written before re-writing: 52 + 13 = **65 letters**  \n   Now, she re-writes **all of these 65 letters**.  \n   So, she adds **65 more letters**.\n\nNow, total letters written:\n\n- First two full alphabets: 52  \n- Half of the alphabet: 13  \n- Rewriting everything she has written: 65  \n\nTotal = 52 + 13 + 65 = **130**\n\nAnswer: 130"
+        },
+        "uguali": false
+      },
+      {
+        "n": 14,
+        "inga": {
+          "voto": 1.0,
+          "nota": "133.0 su 133.0",
+          "secondi": 6.3,
+          "testo": "Step 1: Find the amount of the discount.  \n5% of $140 = (5/100) × 140 = 0.05 × 140 = $7\n\nStep 2: Subtract the discount from the original price.  \n$140 - $7 = $133\n\nAnswer: 133"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "133.0 su 133.0",
+          "secondi": 5.8,
+          "testo": "Step 1: Find the amount of the discount.  \n5% of $140 = (5/100) × 140 = 0.05 × 140 = $7\n\nStep 2: Subtract the discount from the original price.  \n$140 - $7 = $133\n\nAnswer: 133"
+        },
+        "uguali": true
+      },
+      {
+        "n": 15,
+        "inga": {
+          "voto": 0.0,
+          "nota": "450.0 su 675.0",
+          "secondi": 22.5,
+          "testo": "Step 1: We are told that in one hour, Ezra read twice as many books as Ahmed.\n\nEzra read 300 books in that hour.\n\nSo, let Ahmed's books be A.  \nThen:  \nEzra = 2 × Ahmed  \n300 = 2 × A  \nA = 300 ÷ 2 = 150\n\nSo Ahmed read 150 books.\n\nStep 2: Total books read in that hour = Ezra's books + Ahmed's books  \n= 300 + 150 = 450\n\nStep 3: Ezra decided to read 150 more books.  \nBut the question is: \"How many books have they read altogether?\"\n\nThe phrase \"read altogether\" refers to the total books read during the hour, plus any additional books Ezra reads *after* that?\n\nBut the problem says: \"Ezra has read 300 books this hour and decided to read 150 more.\"\n\nThe word \"decided\" implies future action — not yet read.\n\nSo unless specified that those 150 are already read, we assume they are not yet included.\n\nTherefore, the total books read *so far* is only the 300 (Ezra) and 150 (Ahmed) — the 150 more are not yet read.\n\nSo total books read altogether = 300 + 150 = 450\n\nAnswer: 450"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "450.0 su 675.0",
+          "secondi": 23.4,
+          "testo": "Step 1: We are told that in one hour, Ezra read twice as many books as Ahmed.\n\nEzra read 300 books in that hour.\n\nSo, let Ahmed's books be A.  \nThen:  \nEzra = 2 × Ahmed → 300 = 2 × A  \nSo, A = 300 ÷ 2 = 150 books.\n\nSo, Ahmed read 150 books.\n\nStep 2: Total books read in that hour = Ezra's books + Ahmed's books  \n= 300 + 150 = 450 books.\n\nStep 3: Ezra decided to read 150 more books.  \nBut the question is: \"How many books have they read altogether?\"\n\nThe phrase \"read altogether\" likely refers to the total books read during the hour, including the additional 150 that Ezra plans to read — but we must interpret carefully.\n\nThe original reading (in one hour) is already accounted for: Ezra read 300, Ahmed read 150 → total 450.\n\nThen Ezra decides to read 150 more — but this is a future decision, not yet completed.\n\nThe question is: \"How many books have they read altogether?\"\n\n\"Have read\" implies completed reading.\n\nSo, the additional 150 books are not yet read — they are a plan.\n\nTherefore, only the books already read count.\n\nSo, total books read altogether = 300 (Ezra) + 150 (Ahmed) = 450.\n\nAnswer: 450"
+        },
+        "uguali": false
+      },
+      {
+        "n": 16,
+        "inga": {
+          "voto": 1.0,
+          "nota": "4.0 su 4.0",
+          "secondi": 6.8,
+          "testo": "Step 1: Find the cost of 3 loaves of bread.  \nEach loaf costs $2, so:  \n3 × $2 = $6\n\nStep 2: Find the cost of 2 bagels.  \nEach bagel costs $1, so:  \n2 × $1 = $2\n\nStep 3: Find the difference in cost.  \n$6 (bread) − $2 (bagels) = $4\n\nAnswer: 4"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "4.0 su 4.0",
+          "secondi": 6.8,
+          "testo": "Step 1: Find the cost of 3 loaves of bread.  \nEach loaf costs $2, so:  \n3 × $2 = $6\n\nStep 2: Find the cost of 2 bagels.  \nEach bagel costs $1, so:  \n2 × $1 = $2\n\nStep 3: Find the difference in cost.  \n$6 (bread) − $2 (bagels) = $4\n\nAnswer: 4"
+        },
+        "uguali": true
+      },
+      {
+        "n": 17,
+        "inga": {
+          "voto": 1.0,
+          "nota": "720.0 su 720.0",
+          "secondi": 8.8,
+          "testo": "Step 1: Determine the walking time on the first day.  \nSandy walked for 8 hours on the first day.\n\nStep 2: Determine the walking time on the second day.  \nShe walked half as many hours as on the first day:  \n½ × 8 = 4 hours.\n\nStep 3: Find the total walking time in hours.  \n8 hours + 4 hours = 12 hours.\n\nStep 4: Convert total time to minutes.  \n12 hours × 60 minutes/hour = 720 minutes.\n\nAnswer: 720"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "720.0 su 720.0",
+          "secondi": 9.0,
+          "testo": "Step 1: Determine the walking time on the first day.  \nSandy walked for 8 hours on the first day.\n\nStep 2: Determine the walking time on the second day.  \nShe walked half as many hours as on the first day:  \n½ × 8 = 4 hours.\n\nStep 3: Find the total walking time in hours.  \n8 hours + 4 hours = 12 hours.\n\nStep 4: Convert total time to minutes.  \n12 hours × 60 minutes/hour = 720 minutes.\n\nAnswer: 720"
+        },
+        "uguali": true
+      },
+      {
+        "n": 18,
+        "inga": {
+          "voto": 1.0,
+          "nota": "52.0 su 52.0",
+          "secondi": 10.4,
+          "testo": "Step 1: Find the total number of tins of cat food.  \nKimberly bought 8 packages of cat food, and each package has 11 tins.  \nSo, cat food tins = 8 × 11 = 88 tins.\n\nStep 2: Find the total number of tins of dog food.  \nShe bought 6 packages of dog food, and each has 6 tins.  \nSo, dog food tins = 6 × 6 = 36 tins.\n\nStep 3: Find how many more tins of cat food than dog food.  \n88 − 36 = 52.\n\nAnswer: 52"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "52.0 su 52.0",
+          "secondi": 10.5,
+          "testo": "Step 1: Find the total number of tins of cat food.  \nKimberly bought 8 packages of cat food, and each package has 11 tins.  \nSo, cat food tins = 8 × 11 = 88 tins.\n\nStep 2: Find the total number of tins of dog food.  \nShe bought 6 packages of dog food, and each has 6 tins.  \nSo, dog food tins = 6 × 6 = 36 tins.\n\nStep 3: Find how many more tins of cat food than dog food.  \nDifference = 88 − 36 = 52.\n\nAnswer: 52"
+        },
+        "uguali": false
+      },
+      {
+        "n": 19,
+        "inga": {
+          "voto": 1.0,
+          "nota": "80.0 su 80.0",
+          "secondi": 8.9,
+          "testo": "Step 1: Calculate the distance traveled in the first part of the journey.  \nMason rides at 8 miles per hour for 4 hours.  \nDistance = Speed × Time = 8 × 4 = 32 miles.\n\nStep 2: Calculate the distance traveled in the second part.  \nHe rides for another 6 hours at the same speed.  \nDistance = 8 × 6 = 48 miles.\n\nStep 3: Add both distances to get the total distance.  \nTotal distance = 32 + 48 = 80 miles.\n\nAnswer: 80"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "80.0 su 80.0",
+          "secondi": 8.6,
+          "testo": "Step 1: Calculate the distance traveled in the first part of the journey.  \nMason rides at 8 miles per hour for 4 hours.  \nDistance = speed × time = 8 × 4 = 32 miles.\n\nStep 2: Calculate the distance traveled in the second part.  \nHe rides for another 6 hours at the same speed.  \nDistance = 8 × 6 = 48 miles.\n\nStep 3: Add both distances to get the total distance.  \nTotal distance = 32 + 48 = 80 miles.\n\nAnswer: 80"
+        },
+        "uguali": false
+      },
+      {
+        "n": 20,
+        "inga": {
+          "voto": 1.0,
+          "nota": "60.0 su 60.0",
+          "secondi": 14.2,
+          "testo": "Step 1: Find how many Junebugs Rita removed each day.\n\n- Monday: 39  \n- Tuesday: twice as many as Monday = 2 × 39 = 78  \n- Wednesday: also twice as many as Monday = 2 × 39 = 78  \n- Thursday: 48  \n- Friday: 57  \n\nStep 2: Add up the total number of Junebugs removed over the 5 days.\n\nTotal = 39 + 78 + 78 + 48 + 57  \n= (39 + 78) = 117  \n117 + 78 = 195  \n195 + 48 = 243  \n243 + 57 = 300  \n\nStep 3: Divide total by number of days (5) to find the average.\n\nAverage = 300 ÷ 5 = 60  \n\nAnswer: 60"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "60.0 su 60.0",
+          "secondi": 14.2,
+          "testo": "Step 1: Find how many Junebugs Rita removed each day.\n\n- Monday: 39  \n- Tuesday: twice as many as Monday = 2 × 39 = 78  \n- Wednesday: twice as many as Monday = 2 × 39 = 78  \n- Thursday: 48  \n- Friday: 57  \n\nStep 2: Add up the total number of Junebugs removed over the 5 days.\n\nTotal = 39 + 78 + 78 + 48 + 57  \n= (39 + 78) = 117  \n117 + 78 = 195  \n195 + 48 = 243  \n243 + 57 = 300  \n\nStep 3: Divide total by number of days (5) to find the average.\n\nAverage = 300 ÷ 5 = 60  \n\nAnswer: 60"
+        },
+        "uguali": false
+      },
+      {
+        "n": 21,
+        "inga": {
+          "voto": 1.0,
+          "nota": "280.0 su 280.0",
+          "secondi": 8.4,
+          "testo": "We are given:\n\n- Each row has 8 children.\n- There are 7 rows per school.\n- There are 5 different schools.\n\nWe need to find the total number of children in the drill.\n\nStep 1: Calculate the number of children per school.  \nEach school has 7 rows, and each row has 8 children.  \nSo, per school:  \n7 rows × 8 children = 56 children\n\nStep 2: Multiply by the number of schools.  \n5 schools × 56 children = 280 children\n\nAnswer: 280"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "280.0 su 280.0",
+          "secondi": 8.5,
+          "testo": "We are given:\n\n- Each row has 8 children.\n- There are 7 rows per school.\n- There are 5 different schools.\n\nWe need to find the total number of children in the drill.\n\nStep 1: Calculate the number of children per school.  \nEach school has 7 rows, and each row has 8 children.  \nSo, per school:  \n7 rows × 8 children = 56 children\n\nStep 2: Multiply by the number of schools.  \n5 schools × 56 children = 280 children\n\nAnswer: 280"
+        },
+        "uguali": true
+      },
+      {
+        "n": 22,
+        "inga": {
+          "voto": 1.0,
+          "nota": "100.0 su 100.0",
+          "secondi": 9.5,
+          "testo": "Step 1: Find the perimeter of the rectangular fence.  \nThe fence is 15 feet long and 10 feet wide.  \nPerimeter = 2 × (length + width) = 2 × (15 + 10) = 2 × 25 = 50 feet.\n\nStep 2: Determine how many wood slats are needed per foot.  \nRobert needs 2 wood slats for every foot of fencing.\n\nStep 3: Multiply the perimeter by the number of slats per foot.  \nTotal slats = 50 feet × 2 slats/foot = 100 slats.\n\nAnswer: 100"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "100.0 su 100.0",
+          "secondi": 9.9,
+          "testo": "Step 1: Find the perimeter of the rectangular fence.  \nThe fence is 15 feet long and 10 feet wide.  \nPerimeter = 2 × (length + width) = 2 × (15 + 10) = 2 × 25 = 50 feet.\n\nStep 2: Determine how many wood slats are needed per foot.  \nRobert needs 2 wood slats for every foot of fencing.\n\nStep 3: Multiply the perimeter by the number of slats per foot.  \nTotal slats = 50 feet × 2 slats/foot = 100 slats.\n\nAnswer: 100"
+        },
+        "uguali": true
+      },
+      {
+        "n": 23,
+        "inga": {
+          "voto": 1.0,
+          "nota": "11.0 su 11.0",
+          "secondi": 20.3,
+          "testo": "We are given information about two planes and their flight destinations and frequencies.\n\n---\n\n**Step 1: Understand the first plane's flight distribution**\n\n- The first plane goes to Greece for **three-quarters** of its flights.\n- The remaining **one-quarter** of its flights are split **equally** between France and Germany.\n- So, for the remaining 1/4:\n  - France: (1/4) × (1/2) = 1/8\n  - Germany: 1/8\n\nSo, the fraction of flights to France is **1/8**.\n\n---\n\n**Step 2: Use information about the second plane**\n\n- The second plane flies **exclusively to Poland**.\n- It makes **44 trips**.\n- This number (44) is **half** the number of trips the first plane makes in a day.\n\nSo, if the first plane makes **x** trips per day, then:\n\n> 44 = (1/2) × x  \n> x = 88\n\nSo, the first plane makes **88 flights per day**.\n\n---\n\n**Step 3: Find number of flights to France**\n\nWe already found that the first plane makes 1/8 of its flights to France.\n\nSo:\n\n> Flights to France = (1/8) × 88 = 11\n\n---\n\nAnswer: 11"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "11.0 su 11.0",
+          "secondi": 18.9,
+          "testo": "We are given information about two planes and their flight destinations and frequencies.\n\n---\n\n**Step 1: Understand the first plane's flight distribution**\n\n- The first plane goes to Greece for **three-quarters** of its flights.\n- The remaining **one-quarter** of its flights are split **equally** between France and Germany.\n\nSo:\n- Greece: 3/4 of total flights\n- France: 1/4 × 1/2 = 1/8 of total flights\n- Germany: 1/4 × 1/2 = 1/8 of total flights\n\nLet the total number of flights of the first plane in a day be **F**.\n\nThen:\n- Flights to France = (1/8)F\n\n---\n\n**Step 2: Understand the second plane**\n\n- The second plane flies **only to Poland**.\n- It makes **44 trips**.\n- This number (44) is **half** the number of trips the first plane makes.\n\nSo:\n- 44 = (1/2) × F\n- Therefore, F = 88\n\n---\n\n**Step 3: Find number of flights to France**\n\nWe already found:\n- Flights to France = (1/8) × F = (1/8) × 88 = 11\n\n---\n\nAnswer: 11"
+        },
+        "uguali": false
+      },
+      {
+        "n": 24,
+        "inga": {
+          "voto": 1.0,
+          "nota": "50.0 su 50.0",
+          "secondi": 9.8,
+          "testo": "Step 1: Find the total number of cookies brought by guests.  \nThere are 100 guests, each bringing 15 cookies.  \nTotal cookies = 100 × 15 = 1500 cookies.\n\nStep 2: The bride gives half of the cookies to the church next door.  \nHalf of 1500 = 1500 ÷ 2 = 750 cookies.\n\nStep 3: Each person in the church gets 15 cookies.  \nSo, number of people in the church = 750 ÷ 15 = 50.\n\nAnswer: 50"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "50.0 su 50.0",
+          "secondi": 9.7,
+          "testo": "Step 1: Find the total number of cookies brought by guests.  \nThere are 100 guests, each bringing 15 cookies.  \nTotal cookies = 100 × 15 = 1500 cookies.\n\nStep 2: The bride gives half of the cookies to the church next door.  \nHalf of 1500 = 1500 ÷ 2 = 750 cookies.\n\nStep 3: Each person in the church gets 15 cookies.  \nSo, number of people in the church = 750 ÷ 15 = 50.\n\nAnswer: 50"
+        },
+        "uguali": true
+      },
+      {
+        "n": 25,
+        "inga": {
+          "voto": 1.0,
+          "nota": "2.0 su 2.0",
+          "secondi": 13.2,
+          "testo": "Step 1: Find the cost of the car that Janet wants to save for.  \nShe wants to save 20% of $10,000:  \n20% of 10,000 = 0.20 × 10,000 = $2,000\n\nStep 2: Calculate Janet’s total hourly earnings.  \nShe earns $10 from wages and $15 from tips:  \n10 + 15 = $25 per hour\n\nStep 3: Calculate her weekly earnings.  \nShe works 40 hours a week:  \n40 hours × $25 = $1,000 per week\n\nStep 4: Determine how many weeks to save $2,000.  \n$2,000 ÷ $1,000 per week = 2 weeks\n\nAnswer: 2"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "2.0 su 2.0",
+          "secondi": 13.2,
+          "testo": "Step 1: Find the cost of the car that Janet wants to save for.  \nShe wants to save 20% of $10,000:  \n20% of $10,000 = 0.20 × 10,000 = $2,000\n\nStep 2: Calculate Janet’s total hourly earnings.  \nShe earns $10 from wages and $15 from tips per hour:  \n$10 + $15 = $25 per hour\n\nStep 3: Calculate her weekly earnings.  \nShe works 40 hours a week:  \n40 hours × $25 = $1,000 per week\n\nStep 4: Determine how many weeks to save $2,000.  \n$2,000 ÷ $1,000 per week = 2 weeks\n\nAnswer: 2"
+        },
+        "uguali": false
+      },
+      {
+        "n": 26,
+        "inga": {
+          "voto": 1.0,
+          "nota": "10.0 su 10.0",
+          "secondi": 10.4,
+          "testo": "Step 1: Calculate the cost of Parmesan cheese.  \nPrice of Parmesan = $11 per pound  \nMoisture buys 2 pounds:  \n2 × 11 = $22\n\nStep 2: Calculate the cost of Mozzarella cheese.  \nPrice of Mozzarella = $6 per pound  \nBuys 3 pounds:  \n3 × 6 = $18\n\nStep 3: Total cost of cheese:  \n$22 (Parmesan) + $18 (Mozzarella) = $40\n\nStep 4: Subtract from initial cash:  \nShe starts with $50  \n50 − 40 = $10\n\nAnswer: 10"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "10.0 su 10.0",
+          "secondi": 10.3,
+          "testo": "Step 1: Calculate the cost of Parmesan cheese.  \nPrice of Parmesan = $11 per pound  \nMoisture buys 2 pounds:  \n2 × 11 = $22\n\nStep 2: Calculate the cost of Mozzarella cheese.  \nPrice of Mozzarella = $6 per pound  \nBuys 3 pounds:  \n3 × 6 = $18\n\nStep 3: Total cost of cheese:  \n$22 (Parmesan) + $18 (Mozzarella) = $40\n\nStep 4: Subtract from initial cash:  \nShe starts with $50  \n50 − 40 = $10\n\nAnswer: 10"
+        },
+        "uguali": true
+      },
+      {
+        "n": 27,
+        "inga": {
+          "voto": 1.0,
+          "nota": "95.0 su 95.0",
+          "secondi": 7.6,
+          "testo": "Step 1: Add up all the test scores.  \nJohn scored 100 on the first 3 tests:  \n3 × 100 = 300  \nHe scored 80 on the 4th test.  \nTotal score = 300 + 80 = 380\n\nStep 2: Divide the total by the number of tests (4) to find the average.  \nAverage = 380 ÷ 4 = 95\n\nAnswer: 95"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "95.0 su 95.0",
+          "secondi": 7.7,
+          "testo": "Step 1: Add up all the test scores.  \nJohn scored 100 on the first 3 tests:  \n3 × 100 = 300  \nHe scored 80 on the 4th test.  \nTotal score = 300 + 80 = 380\n\nStep 2: Divide the total by the number of tests (4) to find the average.  \nAverage = 380 ÷ 4 = 95\n\nAnswer: 95"
+        },
+        "uguali": true
+      },
+      {
+        "n": 28,
+        "inga": {
+          "voto": 1.0,
+          "nota": "10.0 su 10.0",
+          "secondi": 13.6,
+          "testo": "Step 1: Find how many pods are in the regular box.  \nRegular box has 100 pods for $12.\n\nStep 2: The special box has 20% more pods.  \n20% of 100 = 0.20 × 100 = 20  \nSo, new box has 100 + 20 = 120 pods.\n\nStep 3: The special box costs the same $12, and has 120 pods.  \nSo, cost per pod = $12 ÷ 120 = $0.10 per pod.\n\nStep 4: How many cycles can you run for $1?  \nSince each pod gives one cycle, and each pod costs $0.10,  \nNumber of cycles per dollar = 1 ÷ 0.10 = 10 cycles.\n\nAnswer: 10"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "10.0 su 10.0",
+          "secondi": 12.9,
+          "testo": "Step 1: Find how many pods are in the regular box.  \nRegular box has 100 pods for $12.\n\nStep 2: The special box has 20% more pods.  \n20% of 100 = 0.20 × 100 = 20  \nSo, new box has 100 + 20 = 120 pods.\n\nStep 3: The special box costs the same $12, but has 120 pods.  \nSo, cost per pod = $12 ÷ 120 = $0.10 per pod.\n\nStep 4: How many cycles can you run for $1?  \nSince each pod gives one cycle, and each pod costs $0.10,  \nNumber of cycles per dollar = 1 ÷ 0.10 = 10 cycles.\n\nAnswer: 10"
+        },
+        "uguali": false
+      },
+      {
+        "n": 29,
+        "inga": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 15.2,
+          "testo": "Step 1: Find Dora's current age.  \nDora will turn 12 in 3 years, so she is currently:  \n12 - 3 = 9 years old.\n\nStep 2: Find James's current age.  \nJames is twice as old as Dora, so:  \n2 × 9 = 18 years old.\n\nStep 3: Find John's age when James was born.  \nJohn was 19 when James was born.\n\nSo, James is 18 now → John is now:  \n19 + 18 = 37 years old.\n\nStep 4: Find the age of John's youngest son.  \nThe youngest son was born when John was 32.  \nSo, when John was 32, the son was born.  \nJohn is now 37, so the son is:  \n37 - 32 = 5 years old.\n\nStep 5: How old will the youngest son be in 3 years?  \n5 + 3 = 8 years old.\n\nAnswer: 8"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 14.9,
+          "testo": "Step 1: Find Dora's current age.  \nDora will turn 12 in 3 years, so she is currently:  \n12 - 3 = 9 years old.\n\nStep 2: Find James's current age.  \nJames is twice as old as Dora, so:  \n2 × 9 = 18 years old.\n\nStep 3: Find John's age when James was born.  \nJohn was 19 when James was born.\n\nSo, James is currently 18, which means John is now:  \n19 + 18 = 37 years old.\n\nStep 4: Find the age of John's youngest son.  \nThe youngest son was born when John was 32.  \nSo, when John was 32, the son was born.  \nJohn is now 37, so the son is:  \n37 - 32 = 5 years old.\n\nStep 5: How old will the youngest son be in 3 years?  \n5 + 3 = 8 years old.\n\nAnswer: 8"
+        },
+        "uguali": false
+      }
+    ]
+  },
+  "secondi": 789.6
+}
