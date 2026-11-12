@@ -1,0 +1,902 @@
+{
+  "caso": "rag-rgb",
+  "versione": "0.46.5",
+  "inga": "inga 0.46.5",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 8192,
+  "seed": 42,
+  "data": "2026-11-12T11:04:18Z",
+  "modello_embedding": "minilm-multilingue",
+  "file_modello_embedding": "paraphrase-multilingual-MiniLM-L12-118M-v2-Q8_0.gguf",
+  "sha256_modello_embedding": "1bcc1fd3f65d1269f8e733218d77ac5a479796fade0e87257606c2c4f2854662",
+  "secondi_avvio": 1.0,
+  "stato": "ok",
+  "voto": 0.85,
+  "voci": {
+    "risposta giusta con rumore": 1.0,
+    "rifiuto senza la risposta": 0.7,
+    "passaggio giusto fra gli estratti": 1.0,
+    "risposte date con rumore": 1.0
+  },
+  "dettagli": {
+    "seed": 5,
+    "risposte": [
+      {
+        "id": 13,
+        "tipo": "rumore",
+        "domanda": "What is the price for a 30-second spot during the Super Bowl 2022?",
+        "attesa": [
+          "$6.5 million"
+        ],
+        "risposta": "The price for a 30-second spot during the Super Bowl 2022 was $6.5 million.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q13-0.txt",
+          "q13-1.txt",
+          "q13-2.txt",
+          "q13-3.txt",
+          "q13-4.txt",
+          "q13-5.txt",
+          "q25-3.txt",
+          "q25-4.txt",
+          "q55-2.txt",
+          "q168-2.txt",
+          "q206-2.txt"
+        ],
+        "secondi": 34.4
+      },
+      {
+        "id": 21,
+        "tipo": "rumore",
+        "domanda": "Who won the 2022 Nobel Prize for chemistry?",
+        "attesa": [
+          "Carolyn R. Bertozzi",
+          "Morten Meldal",
+          "K. Barry Sharpless"
+        ],
+        "risposta": "Carolyn R. Bertozzi, Morten Meldal, and K. Barry Sharpless won the 2022 Nobel Prize in Chemistry.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q21-0.txt",
+          "q21-1.txt",
+          "q21-2.txt",
+          "q21-3.txt",
+          "q21-4.txt",
+          "q21-5.txt",
+          "q31-1.txt",
+          "q58-0.txt",
+          "q58-1.txt",
+          "q66-3.txt",
+          "q206-2.txt"
+        ],
+        "secondi": 34.9
+      },
+      {
+        "id": 24,
+        "tipo": "rumore",
+        "domanda": "When was Lost Ark game release on Steam?",
+        "attesa": [
+          [
+            "February 11",
+            "Feb 11",
+            "Feb. 11",
+            "February 11",
+            "11 February",
+            "11 Feb",
+            "11 Feb.",
+            "11 February"
+          ]
+        ],
+        "risposta": "Lost Ark was released on Steam on February 11, 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q24-0.txt",
+          "q24-1.txt",
+          "q24-2.txt",
+          "q24-3.txt",
+          "q24-4.txt",
+          "q24-5.txt",
+          "q31-1.txt",
+          "q31-4.txt",
+          "q31-5.txt",
+          "q66-2.txt",
+          "q206-3.txt",
+          "q244-0.txt",
+          "q244-2.txt",
+          "q280-2.txt",
+          "q280-4.txt",
+          "q290-5.txt"
+        ],
+        "secondi": 33.3
+      },
+      {
+        "id": 25,
+        "tipo": "rumore",
+        "domanda": "What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?",
+        "attesa": [
+          [
+            "silver",
+            "Silver"
+          ],
+          [
+            "bronze",
+            "Bronze"
+          ]
+        ],
+        "risposta": "Jessie Diggins won a bronze medal in the women's individual cross-country sprint and a silver medal in the 30-kilometer freestyle race at the Beijing 2022 Olympic Games.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q25-0.txt",
+          "q25-1.txt",
+          "q25-2.txt",
+          "q25-3.txt",
+          "q25-4.txt",
+          "q25-5.txt",
+          "q29-0.txt",
+          "q55-1.txt",
+          "q55-2.txt",
+          "q73-5.txt",
+          "q164-4.txt",
+          "q280-4.txt"
+        ],
+        "secondi": 36.1
+      },
+      {
+        "id": 29,
+        "tipo": "rumore",
+        "domanda": "Who did Iga Swiatek defeat to win the Qatar Open 2022?",
+        "attesa": [
+          "Anett Kontaveit"
+        ],
+        "risposta": "Iga Swiatek defeated Anett Kontaveit in the final to win the Qatar Open 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q29-0.txt",
+          "q29-1.txt",
+          "q29-2.txt",
+          "q29-3.txt",
+          "q29-5.txt",
+          "q55-0.txt",
+          "q55-1.txt",
+          "q55-2.txt",
+          "q58-1.txt",
+          "q66-0.txt",
+          "q206-4.txt"
+        ],
+        "secondi": 33.1
+      },
+      {
+        "id": 31,
+        "tipo": "rumore",
+        "domanda": "Who won the Male Vocalist of the Year at the 2022 CMA ?",
+        "attesa": [
+          "Chris Stapleton"
+        ],
+        "risposta": "Chris Stapleton",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q31-0.txt",
+          "q31-1.txt",
+          "q31-2.txt",
+          "q31-3.txt",
+          "q55-1.txt",
+          "q55-4.txt",
+          "q58-0.txt",
+          "q58-1.txt",
+          "q66-0.txt",
+          "q66-1.txt",
+          "q66-2.txt"
+        ],
+        "secondi": 30.8
+      },
+      {
+        "id": 55,
+        "tipo": "rumore",
+        "domanda": "Who won the women's singles French Open 2022?",
+        "attesa": [
+          "Iga Swiatek"
+        ],
+        "risposta": "Iga Swiatek won the women's singles French Open 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q29-0.txt",
+          "q55-0.txt",
+          "q55-1.txt",
+          "q55-2.txt",
+          "q55-5.txt",
+          "q58-0.txt",
+          "q58-1.txt",
+          "q58-2.txt",
+          "q58-5.txt",
+          "q66-0.txt",
+          "q66-1.txt",
+          "q206-2.txt"
+        ],
+        "secondi": 29.9
+      },
+      {
+        "id": 58,
+        "tipo": "rumore",
+        "domanda": "Who won the men's singles French Open 2022?",
+        "attesa": [
+          [
+            "Rafael Nadal",
+            "Nadal"
+          ]
+        ],
+        "risposta": "Rafael Nadal won the men's singles French Open 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q55-0.txt",
+          "q55-1.txt",
+          "q55-2.txt",
+          "q55-5.txt",
+          "q58-0.txt",
+          "q58-1.txt",
+          "q58-2.txt",
+          "q58-5.txt",
+          "q66-0.txt",
+          "q66-1.txt",
+          "q66-2.txt",
+          "q206-2.txt"
+        ],
+        "secondi": 32.3
+      },
+      {
+        "id": 66,
+        "tipo": "rumore",
+        "domanda": "Who won the men's singles U.S. Open 2022?",
+        "attesa": [
+          "Carlos Alcaraz"
+        ],
+        "risposta": "Carlos Alcaraz won the men's singles U.S. Open 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q31-1.txt",
+          "q58-0.txt",
+          "q58-1.txt",
+          "q58-2.txt",
+          "q58-5.txt",
+          "q66-0.txt",
+          "q66-1.txt",
+          "q66-2.txt",
+          "q66-5.txt"
+        ],
+        "secondi": 33.4
+      },
+      {
+        "id": 73,
+        "tipo": "rumore",
+        "domanda": "When did Orrin G. Hatch pass away?",
+        "attesa": [
+          [
+            "April 23 2022",
+            "Apr 23, 2022",
+            "Apr. 23, 2022",
+            "April 23, 2022",
+            "23 April 2022",
+            "23 Apr, 2022",
+            "23 Apr., 2022",
+            "23 April, 2022"
+          ]
+        ],
+        "risposta": "Orrin G. Hatch passed away on April 23, 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q24-3.txt",
+          "q25-5.txt",
+          "q55-3.txt",
+          "q73-0.txt",
+          "q73-1.txt",
+          "q73-2.txt",
+          "q73-3.txt",
+          "q73-4.txt",
+          "q73-5.txt",
+          "q206-5.txt"
+        ],
+        "secondi": 33.9
+      },
+      {
+        "id": 164,
+        "tipo": "rumore",
+        "domanda": "Who is Italy's first female prime minister?",
+        "attesa": [
+          "Giorgia Meloni"
+        ],
+        "risposta": "Giorgia Meloni",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q25-3.txt",
+          "q25-4.txt",
+          "q164-0.txt",
+          "q164-1.txt",
+          "q164-2.txt",
+          "q164-3.txt",
+          "q164-4.txt",
+          "q164-5.txt",
+          "q251-3.txt"
+        ],
+        "secondi": 32.8
+      },
+      {
+        "id": 168,
+        "tipo": "rumore",
+        "domanda": "What is the release date of the Pixel Watch?",
+        "attesa": [
+          [
+            "October 13",
+            "Oct 13",
+            "Oct. 13",
+            "13 October",
+            "13 Oct",
+            "13 Oct."
+          ]
+        ],
+        "risposta": "The Pixel Watch was released in the United States on October 13, 2022.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q24-0.txt",
+          "q31-4.txt",
+          "q55-4.txt",
+          "q168-0.txt",
+          "q168-1.txt",
+          "q168-2.txt",
+          "q168-3.txt",
+          "q168-4.txt",
+          "q168-5.txt",
+          "q244-2.txt"
+        ],
+        "secondi": 35.0
+      },
+      {
+        "id": 206,
+        "tipo": "rumore",
+        "domanda": "What grouping is France in World Cup 2022?",
+        "attesa": [
+          "Group D"
+        ],
+        "risposta": "France was in Group D of the 2022 FIFA World Cup.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q29-5.txt",
+          "q55-0.txt",
+          "q55-2.txt",
+          "q58-2.txt",
+          "q58-5.txt",
+          "q66-2.txt",
+          "q206-0.txt",
+          "q206-1.txt",
+          "q206-2.txt",
+          "q206-4.txt",
+          "q206-5.txt"
+        ],
+        "secondi": 33.0
+      },
+      {
+        "id": 244,
+        "tipo": "rumore",
+        "domanda": "When will the final season of The Blacklist premiere?",
+        "attesa": [
+          [
+            "February 26",
+            "Feb 26",
+            "Feb. 26",
+            "26 February",
+            "26 Feb",
+            "26 Feb."
+          ]
+        ],
+        "risposta": "The final season of The Blacklist premiered on February 26, 2023.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q25-4.txt",
+          "q55-0.txt",
+          "q55-1.txt",
+          "q55-2.txt",
+          "q66-2.txt",
+          "q66-4.txt",
+          "q206-4.txt",
+          "q244-0.txt",
+          "q244-1.txt",
+          "q244-2.txt",
+          "q244-3.txt",
+          "q244-4.txt",
+          "q244-5.txt"
+        ],
+        "secondi": 33.8
+      },
+      {
+        "id": 251,
+        "tipo": "rumore",
+        "domanda": "Who is the new CEO of Pinterest?",
+        "attesa": [
+          "Bill Ready"
+        ],
+        "risposta": "Bill Ready",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q21-2.txt",
+          "q24-5.txt",
+          "q31-3.txt",
+          "q31-5.txt",
+          "q58-4.txt",
+          "q251-0.txt",
+          "q251-1.txt",
+          "q251-2.txt",
+          "q251-3.txt",
+          "q251-4.txt",
+          "q251-5.txt",
+          "q253-2.txt",
+          "q253-3.txt"
+        ],
+        "secondi": 32.1
+      },
+      {
+        "id": 253,
+        "tipo": "rumore",
+        "domanda": "How many employees did Meta lay off in November?",
+        "attesa": [
+          [
+            "11,000",
+            "11000"
+          ]
+        ],
+        "risposta": "More than 11,000 people",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q66-4.txt",
+          "q164-4.txt",
+          "q206-2.txt",
+          "q244-2.txt",
+          "q253-0.txt",
+          "q253-1.txt",
+          "q253-2.txt",
+          "q253-3.txt",
+          "q253-4.txt",
+          "q253-5.txt",
+          "q280-4.txt",
+          "q289-4.txt"
+        ],
+        "secondi": 33.0
+      },
+      {
+        "id": 262,
+        "tipo": "rumore",
+        "domanda": "Which movie won Best International Feature Film at the 95th Academy Awards Ceremony?",
+        "attesa": [
+          "All Quiet on the Western Front"
+        ],
+        "risposta": "All Quiet on the Western Front",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q21-1.txt",
+          "q31-1.txt",
+          "q58-0.txt",
+          "q244-4.txt",
+          "q262-0.txt",
+          "q262-1.txt",
+          "q262-2.txt",
+          "q262-3.txt",
+          "q262-4.txt",
+          "q262-5.txt"
+        ],
+        "secondi": 32.5
+      },
+      {
+        "id": 280,
+        "tipo": "rumore",
+        "domanda": "Who is the main character in Jedi: Survivor?",
+        "attesa": [
+          "Cal Kestis"
+        ],
+        "risposta": "Cal Kestis is the main character in Jedi: Survivor.",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q24-1.txt",
+          "q24-3.txt",
+          "q24-4.txt",
+          "q31-4.txt",
+          "q55-1.txt",
+          "q244-0.txt",
+          "q244-1.txt",
+          "q244-4.txt",
+          "q244-5.txt",
+          "q280-0.txt",
+          "q280-1.txt",
+          "q280-2.txt",
+          "q280-3.txt",
+          "q280-4.txt",
+          "q280-5.txt",
+          "q290-5.txt"
+        ],
+        "secondi": 33.0
+      },
+      {
+        "id": 289,
+        "tipo": "rumore",
+        "domanda": "When is the end date for the federal PHE for COVID-19?",
+        "attesa": [
+          [
+            "May 11",
+            "May 11",
+            "May. 11",
+            "11 May",
+            "11 May",
+            "11 May."
+          ]
+        ],
+        "risposta": "May 11, 2023",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q24-0.txt",
+          "q25-5.txt",
+          "q55-4.txt",
+          "q244-2.txt",
+          "q253-4.txt",
+          "q289-0.txt",
+          "q289-1.txt",
+          "q289-2.txt",
+          "q289-3.txt",
+          "q289-4.txt",
+          "q289-5.txt"
+        ],
+        "secondi": 33.8
+      },
+      {
+        "id": 290,
+        "tipo": "rumore",
+        "domanda": "What is the name of Microsoft's ai assistant in office?",
+        "attesa": [
+          "Copilot"
+        ],
+        "risposta": "Microsoft 365 Copilot",
+        "found": true,
+        "ok": true,
+        "positivo_fra_estratti": true,
+        "estratti": [
+          "q24-5.txt",
+          "q31-4.txt",
+          "q73-5.txt",
+          "q206-1.txt",
+          "q251-4.txt",
+          "q253-3.txt",
+          "q290-0.txt",
+          "q290-1.txt",
+          "q290-2.txt",
+          "q290-3.txt",
+          "q290-4.txt",
+          "q290-5.txt"
+        ],
+        "secondi": 33.0
+      },
+      {
+        "id": 3,
+        "tipo": "rifiuto",
+        "domanda": "What position did Jason Semore hold at Valdosta State before returning to Georgia Tech?",
+        "attesa": [
+          "defensive coordinator"
+        ],
+        "risposta": "The provided excerpts do not specify the position Jason Semore held at Valdosta State University before returning to Georgia Tech.",
+        "found": false,
+        "ok": true,
+        "secondi": 33.9
+      },
+      {
+        "id": 7,
+        "tipo": "rifiuto",
+        "domanda": "When will Truth Social launch on iOS?",
+        "attesa": [
+          [
+            "February 21",
+            "Feb 21",
+            "Feb. 21",
+            "21 February",
+            "21 Feb",
+            "21 Feb."
+          ]
+        ],
+        "risposta": "Truth Social announced a public beta of the web app in early April 2022, and the initial web app rollout was scheduled for some time over the next week or two, but no specific launch date for the iOS app is provided in the excerpts.",
+        "found": false,
+        "ok": true,
+        "secondi": 36.1
+      },
+      {
+        "id": 17,
+        "tipo": "rifiuto",
+        "domanda": "What is the name of Meta's AI supercomputer?",
+        "attesa": [
+          [
+            "RSC",
+            "the AI Research SuperCluster"
+          ]
+        ],
+        "risposta": "The name of Meta's AI supercomputer is not mentioned in the provided excerpts. The excerpts refer to a custom AI chip called the Meta Training and Inference Accelerator (MTIA), but do not name an AI supercomputer.",
+        "found": false,
+        "ok": true,
+        "secondi": 33.4
+      },
+      {
+        "id": 28,
+        "tipo": "rifiuto",
+        "domanda": "When was Elden Ring being released?",
+        "attesa": [
+          [
+            "February 25",
+            "Feb 25",
+            "Feb. 25",
+            "25 February",
+            "25 Feb",
+            "25 Feb."
+          ]
+        ],
+        "risposta": "The provided excerpts do not mention the release date of Elden Ring.",
+        "found": false,
+        "ok": true,
+        "secondi": 32.7
+      },
+      {
+        "id": 40,
+        "tipo": "rifiuto",
+        "domanda": "What happened at the Academy Awards involving Will Smith and Chris Rock?",
+        "attesa": [
+          "slapped"
+        ],
+        "risposta": "Will Smith slapped Chris Rock during the Academy Awards, prompting a viral photo and widespread controversy, with Smith later apologizing and being asked to leave the ceremony but refusing to leave.",
+        "found": true,
+        "ok": false,
+        "secondi": 34.3
+      },
+      {
+        "id": 56,
+        "tipo": "rifiuto",
+        "domanda": "Who won the women's singles French Open 2023?",
+        "attesa": [
+          "Iga Swiatek"
+        ],
+        "risposta": "The provided excerpts do not specify who won the women's singles French Open 2023.",
+        "found": false,
+        "ok": true,
+        "secondi": 32.7
+      },
+      {
+        "id": 76,
+        "tipo": "rifiuto",
+        "domanda": "What is the megapixel in main camera on the iPhone 14 Pro?",
+        "attesa": [
+          "48"
+        ],
+        "risposta": "The provided excerpts do not specify the megapixel count of the main camera on the iPhone 14 Pro.",
+        "found": false,
+        "ok": true,
+        "secondi": 32.6
+      },
+      {
+        "id": 82,
+        "tipo": "rifiuto",
+        "domanda": "When was Overwatch 2 released?",
+        "attesa": [
+          [
+            "October 4 2022",
+            "Oct 4, 2022",
+            "Oct. 4, 2022",
+            "October 4, 2022",
+            "4 October 2022",
+            "4 Oct, 2022",
+            "4 Oct., 2022",
+            "4 October, 2022"
+          ]
+        ],
+        "risposta": "Overwatch 2 was released on October 4, 2023.",
+        "found": true,
+        "ok": false,
+        "secondi": 33.7
+      },
+      {
+        "id": 98,
+        "tipo": "rifiuto",
+        "domanda": "When did AMD unveil Ryzen 7000 processors?",
+        "attesa": [
+          [
+            "August 29",
+            "Aug 29",
+            "Aug. 29",
+            "29 August",
+            "29 Aug",
+            "29 Aug."
+          ]
+        ],
+        "risposta": "AMD did not unveil the Ryzen 7000 processors in a single event; the company announced details at an event in late August, with the official launch scheduled for September 27, 2023, aligning with Intel's Raptor Lake launch.",
+        "found": true,
+        "ok": false,
+        "secondi": 37.1
+      },
+      {
+        "id": 112,
+        "tipo": "rifiuto",
+        "domanda": "Who is the chief meteorologist for KPLR-TV?",
+        "attesa": [
+          "John Fuller"
+        ],
+        "risposta": "The provided excerpts do not state who the chief meteorologist for KPLR-TV is.",
+        "found": false,
+        "ok": true,
+        "secondi": 32.9
+      },
+      {
+        "id": 121,
+        "tipo": "rifiuto",
+        "domanda": "How did Tanya Pardazi die?",
+        "attesa": [
+          [
+            "sky diving accident",
+            "skydiving accident"
+          ]
+        ],
+        "risposta": "The provided excerpts do not contain information about how Tanya Pardazi died.",
+        "found": false,
+        "ok": true,
+        "secondi": 32.8
+      },
+      {
+        "id": 129,
+        "tipo": "rifiuto",
+        "domanda": "When does the 2022 NFL Football Season begin?",
+        "attesa": [
+          [
+            "September 8",
+            "Sep 8",
+            "Sep. 8",
+            "8 September",
+            "8 Sep",
+            "8 Sep.",
+            "Sept 8",
+            "Sept. 8",
+            "8 Sept",
+            "8 Sept."
+          ]
+        ],
+        "risposta": "The 2022 NFL Football Season begins on August 27.",
+        "found": true,
+        "ok": false,
+        "secondi": 32.7
+      },
+      {
+        "id": 138,
+        "tipo": "rifiuto",
+        "domanda": "What is Trace Adkins' role in \"Monarch\"?",
+        "attesa": [
+          "Albie Roman"
+        ],
+        "risposta": "The provided excerpts do not mention Trace Adkins' role in 'Monarch'.",
+        "found": false,
+        "ok": true,
+        "secondi": 31.4
+      },
+      {
+        "id": 189,
+        "tipo": "rifiuto",
+        "domanda": "Who is the new CEO of Yahoo?",
+        "attesa": [
+          "Jim Lanzone"
+        ],
+        "risposta": "The provided excerpts do not mention the new CEO of Yahoo.",
+        "found": false,
+        "ok": true,
+        "secondi": 33.9
+      },
+      {
+        "id": 214,
+        "tipo": "rifiuto",
+        "domanda": "What was the unemployment rate in November 2022?",
+        "attesa": [
+          "3.7%"
+        ],
+        "risposta": "The unemployment rate in December 2022 was 4.1 percent, as reported by the California Employment Development Department (EDD) [5].",
+        "found": false,
+        "ok": true,
+        "secondi": 35.3
+      },
+      {
+        "id": 233,
+        "tipo": "rifiuto",
+        "domanda": "Who discovered asteroid 2022 YG?",
+        "attesa": [
+          "Gennadiy Borisov"
+        ],
+        "risposta": "The provided excerpts do not contain information about who discovered asteroid 2022 YG.",
+        "found": false,
+        "ok": true,
+        "secondi": 34.0
+      },
+      {
+        "id": 242,
+        "tipo": "rifiuto",
+        "domanda": "Who was the runner-up of the 2022 World Cup?",
+        "attesa": [
+          "France"
+        ],
+        "risposta": "The runner-up of the 2022 World Cup was not explicitly mentioned in the provided excerpts. However, the excerpt [12] states that Argentina, the current holders, claimed victory in the 2022 tournament, implying that they won, but does not name the runner-up. Therefore, based on the given information,",
+        "found": false,
+        "ok": true,
+        "secondi": 27.9
+      },
+      {
+        "id": 255,
+        "tipo": "rifiuto",
+        "domanda": "Which team won Super Bowl LVII?",
+        "attesa": [
+          "Kansas City Chiefs"
+        ],
+        "risposta": "The Kansas City Chiefs won Super Bowl LVII.",
+        "found": true,
+        "ok": false,
+        "secondi": 32.6
+      },
+      {
+        "id": 283,
+        "tipo": "rifiuto",
+        "domanda": "Who hosted the 2023 White House Correspondents' Dinner?",
+        "attesa": [
+          "Roy Wood Jr."
+        ],
+        "risposta": "Trevor Noah hosted the 2023 White House Correspondents' Dinner.",
+        "found": true,
+        "ok": false,
+        "secondi": 31.3
+      },
+      {
+        "id": 299,
+        "tipo": "rifiuto",
+        "domanda": "Who was the MVP of Super Bowl 2022?",
+        "attesa": [
+          "Cooper Kupp"
+        ],
+        "risposta": "The provided excerpts do not mention the MVP of Super Bowl 2022.",
+        "found": false,
+        "ok": true,
+        "secondi": 33.6
+      }
+    ]
+  },
+  "secondi": 1369.7
+}

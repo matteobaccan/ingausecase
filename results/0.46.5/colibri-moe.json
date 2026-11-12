@@ -1,0 +1,274 @@
+{
+  "caso": "colibri-moe",
+  "versione": "0.46.5",
+  "inga": "inga 0.46.5",
+  "modello": "qwen3-30b-a3b",
+  "file_modello": "Qwen3-30B-A3B-Q4_K_M.gguf",
+  "sha256_modello": "9f1a24700a339b09c06009b729b5c809e0b64c213b8af5b711b3dbdfd0c5ba48",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-12T11:09:30Z",
+  "stato": "ok",
+  "voto": 1.61018959989517,
+  "voci": {
+    "lettura del prompt (~512 token), Inga su Colibri": 1.457674825495141,
+    "generazione (128 token), Inga su Colibri": 1.762704374295199,
+    "risposte giuste, Inga": 1.0,
+    "risposte giuste, Colibri": 1.0,
+    "risposte con lo stesso testo": 0.6
+  },
+  "dettagli": {
+    "ram_gb": 8,
+    "domande": 10,
+    "colibri": "0a5504a1dc64f86fcd0fe7db298b0448c730e7e6",
+    "secondi_inga": 334,
+    "secondi_colibri": 292,
+    "misure": {
+      "inga": {
+        "pp": 24.79610180970435,
+        "tg": 5.779491074635708,
+        "token_prompt": 512,
+        "prove": [
+          {
+            "token_prompt": 512,
+            "token_generati": 128,
+            "ttft": 15.381,
+            "secondi": 37.448,
+            "pp": 33.28793002278861,
+            "tg": 5.755164428147114
+          },
+          {
+            "token_prompt": 510,
+            "token_generati": 128,
+            "ttft": 36.244,
+            "secondi": 60.001,
+            "pp": 14.071368628681189,
+            "tg": 5.345788402950819
+          },
+          {
+            "token_prompt": 512,
+            "token_generati": 128,
+            "ttft": 18.943,
+            "secondi": 39.303,
+            "pp": 27.02900677764325,
+            "tg": 6.237520392809192
+          }
+        ],
+        "cache_svuotata": true
+      },
+      "colibri": {
+        "pp": 17.0107224025644,
+        "tg": 3.2787636763802688,
+        "token_prompt": 512,
+        "prove": [
+          {
+            "token_prompt": 512,
+            "token_generati": 128,
+            "ttft": 32.885,
+            "secondi": 72.594,
+            "pp": 15.56920172476145,
+            "tg": 3.1983028297802405
+          },
+          {
+            "token_prompt": 510,
+            "token_generati": 128,
+            "ttft": 28.809,
+            "secondi": 66.637,
+            "pp": 17.702991208631875,
+            "tg": 3.3572977796054673
+          },
+          {
+            "token_prompt": 512,
+            "token_generati": 128,
+            "ttft": 28.829,
+            "secondi": 67.54,
+            "pp": 17.759974274299882,
+            "tg": 3.280690419755098
+          }
+        ],
+        "cache_svuotata": true
+      }
+    },
+    "motori": {
+      "inga": {
+        "secondi_avvio": 7.1,
+        "argomenti": [
+          "--mem-limit",
+          "8G"
+        ],
+        "picco_rss_gb": 14.65
+      },
+      "colibri": {
+        "secondi_avvio": 2.4,
+        "ram_gb": 8,
+        "picco_rss_gb": 3.54,
+        "thread": 2,
+        "contesto": 4096
+      }
+    },
+    "risposte": [
+      {
+        "n": 0,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 19.4,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 22.8,
+          "testo": "Answer: C. The climate in the area was once tropical."
+        },
+        "uguali": false
+      },
+      {
+        "n": 1,
+        "inga": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 16.8,
+          "testo": "Answer: B"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "B su B",
+          "secondi": 16.8,
+          "testo": "Answer: B"
+        },
+        "uguali": true
+      },
+      {
+        "n": 2,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 17.0,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 19.2,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 3,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 16.8,
+          "testo": "Answer: C"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 20.1,
+          "testo": "Answer: C"
+        },
+        "uguali": true
+      },
+      {
+        "n": 4,
+        "inga": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 16.3,
+          "testo": "Answer: A"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "A su A",
+          "secondi": 20.0,
+          "testo": "Answer: A"
+        },
+        "uguali": true
+      },
+      {
+        "n": 5,
+        "inga": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 16.9,
+          "testo": "Answer: C. analogous structures."
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "C su C",
+          "secondi": 18.1,
+          "testo": "Answer: C"
+        },
+        "uguali": false
+      },
+      {
+        "n": 6,
+        "inga": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 54.3,
+          "testo": "Suzy’s iPhone is 1 year old.  \nBen's iPhone is two times older than Suzy's, so Ben's iPhone is 2 * 1 = 2 years old.  \nBrandon's iPhone is four times as old as Ben's, so Brandon's iPhone is 4 * 2 = 8 years old.  \n\nAnswer: 8"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "8.0 su 8.0",
+          "secondi": 42.0,
+          "testo": "Suzy’s iPhone is 1 year old.  \nBen's iPhone is two times older than Suzy's, so Ben's iPhone is 2 * 1 = 2 years old.  \nBrandon's iPhone is four times as old as Ben's, so Brandon's iPhone is 4 * 2 = 8 years old.  \n\nAnswer: 8"
+        },
+        "uguali": true
+      },
+      {
+        "n": 7,
+        "inga": {
+          "voto": 1.0,
+          "nota": "25000.0 su 25000.0",
+          "secondi": 58.8,
+          "testo": "Marcy's full pension is $50,000 per year after 40 years.  \nShe becomes entitled to 5% of the pension per year after 20 years.  \nAfter 30 years, she has worked 10 years beyond the 20-year mark.  \nSo, she gets 5% × 10 = 50% of the pension.  \n50% of $50,000 is $25,000.  \n\nAnswer: 25000"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "25000.0 su 25000.0",
+          "secondi": 63.2,
+          "testo": "Step 1: Marcy earns 5% of the pension value per year after 20 years.  \nStep 2: The full pension is $50,000 per year.  \nStep 3: After 20 years, she gets 5% of $50,000 per year, which is $2,500 per year.  \nStep 4: If she quits after 30 years, she has worked 30 years, so she gets 10 years of 5% increments (from year 20 to year 30).  \nStep 5: 10 years × $2,500 = $25,000.  \nStep 6: Her annual pension is $25,000.  \n\nAnswer: 25000"
+        },
+        "uguali": false
+      },
+      {
+        "n": 8,
+        "inga": {
+          "voto": 1.0,
+          "nota": "24.0 su 24.0",
+          "secondi": 46.9,
+          "testo": "Christina invited 16 friends. She needs 0.75 gift bags per guest, so 16 × 0.75 = 12 gift bags. Each gift bag costs $2, so 12 × 2 = 24.  \n\nAnswer: 24"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "24.0 su 24.0",
+          "secondi": 30.7,
+          "testo": "Christina invited 16 friends. She needs 0.75 gift bags per guest, so 16 × 0.75 = 12 gift bags. Each gift bag costs $2, so 12 × 2 = 24.  \n\nAnswer: 24"
+        },
+        "uguali": true
+      },
+      {
+        "n": 9,
+        "inga": {
+          "voto": 1.0,
+          "nota": "95.0 su 95.0",
+          "secondi": 71.0,
+          "testo": "First, calculate the time to peel all 60 potatoes:  \n60 potatoes × 1.5 minutes per potato = 90 minutes.  \n\nNext, calculate the time to cut all 60 potatoes:  \n60 potatoes × 5 seconds per potato = 300 seconds.  \nConvert 300 seconds to minutes: 300 ÷ 60 = 5 minutes.  \n\nAdd the two times together:  \n90 minutes + 5 minutes = 95 minutes.  \n\nAnswer: 95"
+        },
+        "colibri": {
+          "voto": 1.0,
+          "nota": "95.0 su 95.0",
+          "secondi": 39.2,
+          "testo": "First, calculate the total time to peel all potatoes: 60 potatoes × 1.5 minutes = 90 minutes.  \nNext, calculate the total time to cut all potatoes: 60 potatoes × 5 seconds = 300 seconds, which is 5 minutes.  \nAdd the two times together: 90 minutes + 5 minutes = 95 minutes.  \n\nAnswer: 95"
+        },
+        "uguali": false
+      }
+    ],
+    "frasi": 33
+  },
+  "secondi": 1108.8
+}

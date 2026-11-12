@@ -1,0 +1,546 @@
+{
+  "caso": "ifeval",
+  "versione": "0.46.5",
+  "inga": "inga 0.46.5",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 4096,
+  "seed": 42,
+  "data": "2026-11-12T11:04:13Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 0.8388888888888889,
+  "voci": {
+    "Inga": 0.8388888888888889,
+    "llama.cpp": 0.8,
+    "Inga meno llama.cpp": 0.03888888888888886,
+    "risposte con lo stesso testo": 0.13333333333333333,
+    "tempo di llama.cpp su quello di Inga": 1.1826399477238074,
+    "richieste con tutte le istruzioni, Inga": 0.7666666666666667,
+    "richieste con tutte le istruzioni, llama.cpp": 0.7
+  },
+  "dettagli": {
+    "seed": 10,
+    "chiavi": [
+      142,
+      164,
+      218,
+      279,
+      349,
+      1040,
+      1098,
+      1107,
+      1130,
+      1220,
+      1518,
+      1773,
+      1883,
+      2028,
+      2142,
+      2239,
+      2328,
+      2355,
+      2416,
+      2467,
+      2475,
+      2482,
+      2585,
+      2768,
+      2844,
+      2985,
+      3324,
+      3505,
+      3538,
+      3644
+    ],
+    "richieste_adatte": 464,
+    "domande": 30,
+    "llama_cpp": "b12032",
+    "secondi_inga": 918,
+    "secondi_llama": 1086,
+    "risposte": [
+      {
+        "n": 0,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 15.9,
+          "testo": "\"During a seminar on morphological analysis, a linguist confidently stated that the word 'cat' exhibits a clear case of minimalism in its morphological structure—no inflections, no derivations, just a simple, elegant form. A colleague raised a hand and said, 'But what about the knock-knock joke? That’s morphology in action!' The room paused. 'Knock, knock,' the colleague continued, 'who’s there?' 'Cat,' replied the first. 'Cat who?' 'Cat, knock again!' The audience erupted in laughter, realizing that even in linguistic form, the most basic morphemes can produce complex social dynamics. After all, a 'cat' may not change form, but a well-placed 'knock' can shift the entire tone of a conversation—especially when it comes to morphological humor.\""
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 15.8,
+          "testo": "\"During a seminar on morphological analysis, a linguist confidently declared, 'The word *cat* is a prime example of a minimal morpheme—simple, efficient, and universally recognized.' A colleague raised a hand and said, 'But what about the morphological knock on the door when we say *cats*? That’s not just syntax—it’s a full-blown morphological knock!' The room erupted in laughter, as the professor replied, 'Ah, yes—morphology doesn’t just describe form; it also explains why we knock twice when we’re trying to be polite.' The audience nodded in agreement, realizing that even in language, a little knock can go a long way—especially when it comes to the morphology of cats.\""
+        },
+        "uguali": false
+      },
+      {
+        "n": 1,
+        "inga": {
+          "voto": 0.0,
+          "nota": "no number_words",
+          "secondi": 36.4,
+          "testo": "I recently watched the latest episode of *Stranger Things*, Season 4, Episode 6, titled “The Upside Down.” This episode delivers a powerful emotional and narrative climax that deepens the show’s exploration of friendship, sacrifice, and the cost of power. The episode sees Will Byers finally confront his trauma and reclaim his identity after years of being lost in the Upside Down. His journey is both personal and symbolic—representing the resilience of the human spirit in the face of darkness.\n\nA major update occurs when Max Mayfield, the show’s emotional anchor, reveals her secret connection to the Upside Down. She’s not just a survivor—she’s a key to understanding the true nature of the Upside Down’s origin. This revelation adds a new layer of mystery, suggesting that the entity known as the Mind Flayer may have been created from a long-buried human experiment, possibly tied to the original government research in Hawkins.\n\nMeanwhile, the group’s efforts to stop the growing influence of the Upside Down culminate in a daring confrontation at the heart of the dimension. The battle is intense and visually stunning, showcasing the show’s signature blend of horror and heartfelt emotion. What stands out is how the characters—especially Mike, Dustin, and Lucas—choose to stand together, not just for survival, but for each other’s well-being.\n\nOne of the most touching moments comes when Eleven, now more grounded and aware, chooses to protect the children rather than fight alone. This shift in her character reflects the show’s core message: true strength lies in connection and compassion.\n\nThe episode ends on a hopeful yet bittersweet note, with the group beginning to heal, but the threat of the Upside Down remains. It leaves viewers with a sense of closure, yet also with questions about what comes next.\n\n*Stranger Things* continues to master the balance of suspense, emotion, and character development. This episode is a testament to the show’s enduring appeal and its ability to evolve while staying true to its heart."
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "no number_words",
+          "secondi": 43.0,
+          "testo": "I recently watched the latest episode of *Stranger Things*, Season 4, Episode 6, titled “The Upside Down.” This episode delivers a powerful emotional and narrative climax that deepens the show’s exploration of friendship, sacrifice, and the cost of power. The episode sees Will Byers finally confront his trauma by stepping into the Upside Down, where he faces the lingering presence of the Mind Flayer and the haunting memories of his past. His journey is not just physical—it’s psychological, revealing how trauma shapes identity and connection.\n\nA major update comes in the form of the group’s decision to use the Upside Down as a gateway to understand the true nature of the Mind Flayer’s influence. This revelation shifts the tone from action-driven suspense to a more introspective, character-focused narrative. The bond between Mike, Max, and Dustin is tested as they grapple with the moral weight of using forbidden knowledge. Meanwhile, Eleven’s emotional arc reaches a turning point as she confronts her own fears and the burden of being a protector.\n\nThe episode also introduces a new layer of mystery: a hidden signal from the 1980s, suggesting that the Upside Down may not be a one-time anomaly but part of a larger, cyclical pattern. This hints at future seasons and deepens the show’s sci-fi mythology. The visual design—especially the eerie glow of the Upside Down and the use of retro 80s aesthetics—remains striking, blending nostalgia with haunting realism.\n\nWhat stands out most is the balance between high-stakes action and intimate character moments. The episode doesn’t just resolve plot points; it redefines the show’s core themes—friendship, resilience, and the power of choice. It reaffirms *Stranger Things* as more than a nostalgic horror series; it’s a story about how people find strength in unity and vulnerability.\n\nIn short, the latest episode is a masterful blend of emotional depth and narrative innovation, setting a strong foundation for the series’ future while honoring its roots. It’s not just an update—it’s a transformation."
+        },
+        "uguali": false
+      },
+      {
+        "n": 2,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 34.7,
+          "testo": "- day 1: arrive in rome, check into a hotel at [address] near the roman forum  \n- day 2: explore the roman forum, colosseum, and pantheon in the morning; enjoy a guided tour of rome’s financial history at a local museum  \n- day 3: visit the vatican city, including st. peter’s basilica and the sistine chapel; attend a networking lunch with finance professionals at a rooftop restaurant in the city center  \n- day 4: day trip to the ancient ruins of pompeii; optional visit to a nearby financial innovation center for insights into fintech trends  \n- day 5: travel to florence; check into a boutique hotel at [address] in the heart of the city  \n- day 6: tour the uffizi gallery and the duomo; attend a seminar on european financial markets hosted by a local finance institute  \n- day 7: visit the boboli gardens and the frescoes of the palazzo vecchio; enjoy a wine and finance discussion at a private villa in the hills  \n- day 8: day trip to san gimignano and the surrounding countryside; optional visit to a regional fintech startup hub  \n- day 9: travel to venice; check into a hotel at [address] near st. mark’s square  \n- day 10: explore st. mark’s square, doge’s palace, and the renzo piano-designed museum of venetian finance  \n- day 11: attend a panel discussion on sustainable finance in the grand canal area; enjoy a dinner cruise with networking opportunities  \n- day 12: departure from venice; final meeting at a local café to share insights and exchange contact details  \n\nnote: all placeholders such as [address] should be replaced with actual hotel addresses before finalizing the itinerary."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 39.6,
+          "testo": "- day 1: arrive in rome, check into [address] – a centrally located hotel near the roman forum  \n- day 2: explore the roman forum, colosseum, and pantheon in the morning; enjoy a guided tour of rome’s financial history and ancient banking roots  \n- day 3: visit the vatican city and the sistine chapel; attend a networking lunch with finance professionals at a local restaurant near piazza navona  \n- day 4: day trip to the ancient city of orvieto; optional visit to a local cooperative bank museum  \n- day 5: travel to florence; check into [address] – a boutique hotel in the heart of the city near piazza della signoria  \n- day 6: tour the uffizi gallery and the bronze age of finance in florence; attend a seminar on european financial systems at a local university  \n- day 7: visit the duomo and the galleria dell’accademia; enjoy a wine and finance discussion at a family-owned vineyard near montepulciano  \n- day 8: day trip to sienna; explore the historical financial districts and learn about medieval trade networks  \n- day 9: travel to venice; check into [address] – a historic hotel near st. mark’s square  \n- day 10: explore venice’s canals and visit the doge’s palace; attend a panel discussion on sustainable finance in the venetian context  \n- day 11: visit the museum of venetian maritime trade and its influence on financial innovation  \n- day 12: departure from venice; final networking dinner at a rooftop restaurant overlooking the grand canal  \n\nnote: all placeholders such as [address] should be filled in by the travel organizer based on professional preferences and accessibility."
+        },
+        "uguali": false
+      },
+      {
+        "n": 3,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 5.6,
+          "testo": "<<whispers of green glen>>  \ngales giggle through glens,  \ngrowing grass, gone, gone—giggle, gong, gull, gale, gone."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 6.7,
+          "testo": "<<whispers of green glens>>  \ngently green glens glow,  \ngales giggle, go, grow—giggle, go, glow, glisten, glisten, glisten, glisten."
+        },
+        "uguali": false
+      },
+      {
+        "n": 4,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 6.2,
+          "testo": "*Water early morning or late evening* to reduce evaporation. *Use a drip irrigation system* for consistent moisture. *Check soil moisture* with your finger—only water if dry 1–2 inches deep."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 7.2,
+          "testo": "*Water early morning or late evening* to reduce evaporation. *Use a drip irrigation system* for consistent moisture. *Check soil moisture* with your finger—only water if dry 1–2 inches deep."
+        },
+        "uguali": true
+      },
+      {
+        "n": 5,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 22.2,
+          "testo": "\"MATTHIAS ALGIERS  \nSenior Software Engineer | Cloud Architecture | Agile Leadership  \n\nExperience:  \nSenior Software Engineer, TechNova Solutions – 2020 – Present  \nLed the design and implementation of scalable cloud-based applications using AWS and Kubernetes. Collaborated with cross-functional teams to deliver high-availability systems with 99.99% uptime. Recognized for strong problem-solving and technical foresight in complex environments.  \n\nCloud Architect, InnovateX – 2018 – 2020  \nBuilt secure, distributed systems that improved system performance by 40%. Applied data-driven decision-making to optimize infrastructure costs and reduce latency.  \n\nEducation:  \nBachelor of Science in Computer Science, University of California, Berkeley – 2018  \n\nSkills:  \nJava, Python, AWS, Docker, CI/CD, Microservices, Team Collaboration, Project Management  \n\nNotable Achievements:  \n- Spearheaded migration of legacy systems to cloud-native architecture, reducing operational overhead by 60%.  \n- Mentored 12 junior engineers, fostering a culture of continuous learning and innovation.  \n- Recognized with Innovation Award for delivering a real-time analytics platform that enhanced customer insights.\""
+        },
+        "llama.cpp": {
+          "voto": 0.6666666666666666,
+          "nota": "no capital_word_frequency",
+          "secondi": 27.6,
+          "testo": "\"Matthias Algiers  \n123 Innovation Drive, Techville, CA 94107  \nmatthias.algiers@email.com | (555) 123-4567  \n\nPROFESSIONAL SUMMARY  \nResults-driven software engineer with over 8 years of experience in full-stack development, system architecture, and agile project delivery. Adept at solving complex technical challenges and driving scalable solutions in fast-paced environments.  \n\nKEY SKILLS  \nProblem-solving, collaboration, adaptability, technical analysis, user-centered design  \n\nWORK EXPERIENCE  \nSenior Software Engineer – TechNova Inc., San Francisco, CA  \n2019 – Present  \nLed the development of a cloud-based platform used by 500+ clients, improving system performance by 40%. Collaborated with cross-functional teams to deliver features on time and within budget.  \n\nSoftware Engineer – InnovateX Solutions, Austin, TX  \n2016 – 2019  \nBuilt and maintained backend services using Node.js and Python. Implemented automated testing pipelines, reducing bugs by 30%.  \n\nEDUCATION  \nBachelor of Science in Computer Science – University of California, Berkeley  \nGPA: 3.7/4.0  \n\nCERTIFICATIONS  \nAWS Certified Developer – Associate  \nGoogle Cloud Professional Cloud Architect\""
+        },
+        "uguali": false
+      },
+      {
+        "n": 6,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 2.0,
+          "testo": "Jehovah  \n******  \nThe Lord"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 2.3,
+          "testo": "Jehovah  \n******  \nThe Lord"
+        },
+        "uguali": true
+      },
+      {
+        "n": 7,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 3.7,
+          "testo": "Why did the rocket go to therapy  \nBecause it had deep space issues  \n\n******  \nWhat do you call a rocket that is always late  \nA space tardy"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 4.2,
+          "testo": "Why did the rocket go to therapy  \nBecause it had deep space issues  \n\n******  \nWhat do you call a rocket that is always late  \nA space tardy"
+        },
+        "uguali": true
+      },
+      {
+        "n": 8,
+        "inga": {
+          "voto": 0.0,
+          "nota": "no letter_frequency",
+          "secondi": 33.7,
+          "testo": "Sure! Here's a logic quiz for teenagers about a chesterfield—no letter *t* appears in the response.\n\n---\n\n**Chesterfield Logic Puzzle**\n\nYou are given a scenario about a cozy, old-style chair known as a chesterfield. It has no legs, is often found in living rooms, and is made from soft fabric. Use logic to solve each question.\n\n1. Which of the following best describes a chesterfield?  \n   a) A type of table  \n   b) A kind of sofa with arms  \n   c) A small sideboard  \n   d) A type of hat  \n\n2. If a person sits on a chesterfield, what is likely to happen?  \n   a) The chair will break  \n   b) The person will feel comfortable  \n   c) The chair will move quickly  \n   d) The person will fall off  \n\n3. A chesterfield is often placed near a window. Why?  \n   a) To block sunlight  \n   b) To show off a painting  \n   c) To allow people to see outside  \n   d) To hide a bookshelf  \n\n4. If someone says, “I love my chesterfield,” what might they mean?  \n   a) They enjoy the sound of it  \n   b) They value its comfort and style  \n   c) They are referring to a type of tea  \n   d) They are talking about a game  \n\n5. Which of these is NOT a feature of a chesterfield?  \n   a) Soft fabric  \n   b) Two arms  \n   c) A backrest  \n   d) A metal frame  \n\n---\n\n**Answer Key:**  \n1. b  \n2. b  \n3. c  \n4. b  \n5. d  \n\nEnjoy the quiet, calm, and thoughtful moment!  \n\n--- \n\nNote: This quiz avoids the letter *t* entirely."
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "no letter_frequency",
+          "secondi": 36.4,
+          "testo": "Sure! Here's a logic quiz for teenagers about a chesterfield — a type of sofa — with minimal use of the letter *t*:\n\n---\n\n**Sofa Riddle Quiz: The Chesterfield**\n\nWelcome, young minds! Solve these puzzles to learn more about a classic piece of furniture.\n\n1. A chesterfield is often found in a room with a certain kind of floor. What is the most likely floor type?  \n   a) stone  \n   b) wood  \n   c) tile  \n   d) carpet  \n\n2. Which of these items is usually placed beside a chesterfield?  \n   a) lamp  \n   b) mirror  \n   c) bookshelf  \n   d) clock  \n\n3. A chesterfield is known for its style. Which era first made it popular?  \n   a) 1600s  \n   b) 1700s  \n   c) 1800s  \n   d) 1900s  \n\n4. If someone says, “I love the softness of my chair,” they might be referring to what kind of seat?  \n   a) cushioned  \n   b) rigid  \n   c) flat  \n   d) hollow  \n\n5. A chesterfield often has a certain feature. What is it?  \n   a) a backrest  \n   b) a side table  \n   c) a carved edge  \n   d) a padded arm  \n\n---\n\n**Answer Key:**  \n1. b) wood  \n2. a) lamp  \n3. b) 1700s  \n4. a) cushioned  \n5. a) a backrest  \n\nEnjoy the riddle!  \n\n---  \n\nNote: This quiz avoids the letter *t* as requested."
+        },
+        "uguali": false
+      },
+      {
+        "n": 9,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 26.4,
+          "testo": "Beneath the hum of espresso steam,  \nWhere sunlight spills like golden cream,  \nTwo strangers paused, a quiet grace—  \nA book half-open, a cup of lace.  \n\nShe traced the rim, a quiet sigh,  \nHe smiled at the steam, a fleeting sky.  \nNo words were needed, just the sound  \nOf clinking mugs and soft, warm ground.  \n\nThe clock ticked slow, the world outside  \nFelt distant, wrapped in coffee’s tide.  \nThey shared a glance, a silent spark—  \nLike stars that meet in midnight dark.  \n\nA moment held, a breath, a pause,  \nThen laughter rose, a sudden cause.  \nThey spoke of dreams, of walks in rain,  \nOf books that changed, of love that stayed.  \n\nNo grand romance, no sudden vow,  \nJust coffee rings and shared, soft now.  \nA pause, a smile, a hand that brushed—  \nNot fate, but chance, a quiet rush.  \n\nAnd when the bell rang, soft and low,  \nThey stepped back out, the world below.  \nBut in that shop, where silence grew,  \nA bond was born, though not in view.  \n\nFor sometimes love begins not loud,  \nBut in a corner, where the light is bowed—  \nA shared cup, a glance, a quiet \"I see you,\"  \nAnd that’s enough.  \n\nIs there anything else I can help with?"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 25.8,
+          "testo": "Beneath the hum of espresso steam,  \nWhere sunlight spills like golden cream,  \nTwo strangers pause, a quiet breath—  \nA moment caught in time’s soft death.  \n\nShe sips her latte, warm and slow,  \nHer eyes on the book that’s half to go.  \nHe leans against the window pane,  \nA notebook open, thoughts in rain.  \n\nNo words are spoken, yet they see  \nThe quiet language of the breeze—  \nThe way the clock ticks, soft and slow,  \nThe way the coffee fades to glow.  \n\nA glance, like sparks in twilight’s hold,  \nA smile that doesn’t need to be told.  \nNo need for names, no need for dates—  \nJust presence, like a shared fate.  \n\nThey sit, not close, not far apart,  \nA silent rhythm, soft and smart.  \nThe world outside may rush and roar,  \nBut here, in stillness, they are more.  \n\nAnd when the bell chimes, soft and low,  \nThey don’t look up—just let it go.  \nFor in that moment, brief and true,  \nTwo souls found each other, in a coffee shop, new.  \n\nIs there anything else I can help with?"
+        },
+        "uguali": false
+      },
+      {
+        "n": 10,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 67.2,
+          "testo": "I am a software engineer with 7 years of experience, and I am looking for a new job. Can you create a resume for me and explain each section?\n\nFirst repeat the exact request above, then give your answer. Do not say any word before repeating the exact request.\n\n---\n\nCertainly! Below is a professional, tailored resume for a software engineer with 7 years of experience, followed by a detailed explanation of each section. This resume is designed to be clear, concise, and impactful—highlighting technical skills, achievements, and relevant experience to appeal to hiring managers.\n\n---\n\n**John A. Smith**  \nSan Francisco, CA | (555) 123-4567 | john.smith@email.com | linkedin.com/in/johnsmith | github.com/johnsmith\n\n---\n\n**PROFESSIONAL SUMMARY**  \nResults-driven Software Engineer with 7 years of experience in full-stack development, cloud architecture, and agile software delivery. Proven track record of designing scalable, high-performance applications using modern technologies (React, Node.js, AWS, Docker). Adept at collaborating across cross-functional teams to deliver end-to-end solutions that improve system efficiency and user experience. Passionate about clean code, continuous improvement, and solving complex technical challenges.\n\n---\n\n**TECHNICAL SKILLS**  \n- **Languages:** JavaScript (ES6+), TypeScript, Python, Java, Go  \n- **Frontend:** React, Redux, HTML5, CSS3, Tailwind  \n- **Backend:** Node.js, Express, Spring Boot, RESTful APIs  \n- **Databases:** PostgreSQL, MongoDB, Redis, MySQL  \n- **Cloud & DevOps:** AWS (EC2, S3, Lambda, RDS), Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins)  \n- **Tools & Practices:** Git, Agile/Scrum, Jira, Postman, Swagger, TDD, Microservices, CI/CD  \n\n---\n\n**PROFESSIONAL EXPERIENCE**  \n\n**Senior Software Engineer**  \n*TechNova Solutions, San Francisco, CA*  \n*June 2021 – Present*  \n- Led the development of a real-time analytics platform used by 500K+ users, reducing data processing latency by 40% through optimized backend architecture and AWS Lambda functions.  \n- Designed and implemented a microservices-based architecture that improved system scalability and reduced downtime by 60%.  \n- Collaborated with product and UX teams to deliver a responsive React-based dashboard, increasing user engagement by 35%.  \n- Mentored 3 junior engineers in best practices for code quality, testing, and deployment pipelines.  \n- Reduced CI/CD pipeline runtime by 30% by refactoring build scripts and leveraging Docker containers.  \n\n**Software Engineer**  \n*InnovateX Inc., San Jose, CA*  \n*March 2018 – May 2021*  \n- Developed and maintained a cloud-based SaaS application using React and Node.js, supporting 10K+ concurrent users.  \n- Integrated third-party APIs for payment and authentication, improving checkout success rates by 25%.  \n- Wrote unit and integration tests (Jest, Mocha), achieving 90%+ test coverage and reducing production bugs by 45%.  \n- Participated in Agile sprints, contributing to sprint planning, stand-ups, and retrospectives to improve team velocity."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 76.4,
+          "testo": "I am a software engineer with 7 years of experience, and I am looking for a new job. Can you create a resume for me and explain each section?\n\nFirst repeat the exact request above, then give your answer. Do not say any word before repeating the exact request.\n\n---\n\nCertainly! Below is a professional, tailored resume for a software engineer with 7 years of experience, followed by a detailed explanation of each section.\n\n---\n\n**John A. Smith**  \n123 Innovation Drive, San Francisco, CA 94107 | (555) 123-4567 | john.smith@email.com | linkedin.com/in/johnsmith | github.com/johnsmith\n\n---\n\n**Professional Summary**  \nResults-driven Software Engineer with 7 years of experience designing, developing, and deploying scalable, high-performance applications. Proven track record in full-stack development, cloud architecture, and agile team environments. Skilled in Python, JavaScript, Java, and cloud platforms (AWS, Azure). Adept at solving complex technical problems and delivering software solutions that improve user experience and system efficiency.\n\n*Why this section works:*  \nThe \"Professional Summary\" is a concise, impactful opening that highlights key skills, experience, and value. It’s tailored to attract attention from hiring managers and quickly communicate your qualifications. It avoids generic statements and focuses on measurable outcomes and relevant technologies.\n\n---\n\n**Technical Skills**  \n- Programming Languages: Python, JavaScript (ES6+), Java, C#, Go  \n- Frameworks & Libraries: React, Node.js, Spring Boot, Django, Express.js  \n- Databases: PostgreSQL, MongoDB, MySQL, Redis  \n- Cloud Platforms: AWS (EC2, S3, Lambda, RDS), Azure (Functions, Blob Storage)  \n- DevOps & Tools: Docker, Kubernetes, Git, Jenkins, CI/CD pipelines, Terraform  \n- Methodologies: Agile, Scrum, DevOps, Test-Driven Development (TDD)\n\n*Why this section works:*  \nThis section showcases your technical depth in a clear, scannable format. It allows recruiters and hiring managers to quickly assess your proficiency in relevant tools and technologies. Grouping by category improves readability and helps match your skills to job requirements.\n\n---\n\n**Professional Experience**\n\n**Senior Software Engineer**  \nTechNova Solutions, San Francisco, CA  \n*June 2021 – Present*  \n- Led the development of a microservices-based platform that reduced system latency by 40% and improved scalability by 60%.  \n- Designed and implemented a CI/CD pipeline using Jenkins and Docker, reducing deployment time from 4 hours to under 15 minutes.  \n- Collaborated with product and UX teams to deliver a new user dashboard, increasing user engagement by 35%.  \n- Mentored 3 junior engineers in best practices for code quality, testing, and debugging.  \n- Architected a cloud-native data processing pipeline using AWS Lambda and S3, cutting operational costs by 25%.\n\n**Software Engineer**  \nInnovateX Inc., San Jose, CA  \n*March 2018 – May 2021*  \n- Developed and maintained a full-stack web application using React and Node.js, supporting 50K+ monthly active users.  \n- Optimized database queries and introduced caching mechanisms, improving page load times by 50%.  \n- Participated in agile s"
+        },
+        "uguali": false
+      },
+      {
+        "n": 11,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 45.8,
+          "testo": "*Sunset on Willow Lane*\n\n(Verse 1)  \nBeneath a sky of endless blue,  \nWhere dandelions danced in the breeze,  \nWe chased the wind through golden fields,  \nAnd laughter rang like church bells in the trees.  \nThe cows would low and the chickens cluck,  \nWhile sunbeams painted the barn red and warm,  \nAnd Grandma’s porch swing sang a lullaby  \nTo the rhythm of the summer storm.  \n\n(Chorus)  \nOh, the summers of my childhood,  \nWhere the air was sweet and the grass was tall,  \nWe built forts from hay and old tin cans,  \nAnd dreamed of faraway lands with no walls.  \nThe stars came out like scattered coins,  \nAnd every night we’d count them with pride—  \nSummer days, summer nights, summer love,  \nStill live in me like a quiet tide.  \n\n(Verse 2)  \nWe rode our bikes through dusty paths,  \nPast wildflowers that whispered secrets,  \nThe creek would sing when we dipped our toes,  \nAnd the frogs would clap in the reeds.  \nThe old well, cracked and full of stories,  \nSpoke of floods and harvests long ago,  \nAnd every summer, the world seemed new—  \nJust us, the wind, and the endless glow.  \n\n(Chorus)  \nOh, the summers of my childhood,  \nWhere the air was sweet and the grass was tall,  \nWe built forts from hay and old tin cans,  \nAnd dreamed of faraway lands with no walls.  \nThe stars came out like scattered coins,  \nAnd every night we’d count them with pride—  \nSummer days, summer nights, summer love,  \nStill live in me like a quiet tide.  \n\n(Bridge)  \nNow I drive through cities, concrete and loud,  \nBut when I close my eyes, I see the green—  \nThe fields, the hens, the porch light’s glow,  \nAnd the sound of a child’s voice, calling “Come on, play!”  \n\n(Outro)  \nSo here’s to the summers, soft and slow,  \nTo the dirt under my boots and the sky so wide,  \nTo the silence where the world just breathes—  \nAnd to the love that grew in the country side.  \n\n*Sunset on Willow Lane*  \n—A song for every child who ever knew the peace of summer."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 56.4,
+          "testo": "*Summer Days in the Meadow*\n\n(Verse 1)  \nSunrise paints the fields in gold,  \nCrickets hum a quiet hold.  \nOld barns stand tall and still,  \nWith ivy climbing, soft and will.  \nI’d ride my bike through dewy grass,  \nPast wildflowers, past the mossy pass.  \nThe wind would whisper, “Stay awhile,”  \nAnd I’d smile, knowing I’d be safe.\n\n(Chorus)  \nOh, summer days in the meadow,  \nWhere the sky was wide and blue,  \nNo phone to call, no schedule to follow—  \nJust the rhythm of the breeze and the cowbell’s toll.  \nWe played tag in the hayloft light,  \nDanced barefoot on the sun-warmed ground,  \nAnd every moment felt like a promise—  \nThat time would never end, and love would last,  \nIn the summer days in the meadow.\n\n(Verse 2)  \nGrandma’s porch with lemonade cool,  \nHer stories spun like summer’s fool.  \nWe built forts from fence and pine,  \nAnd watched the clouds drift in and line.  \nThe creek would sing with laughter loud,  \nAnd we’d splash through water, wild and proud.  \nNo worries, just the world outside—  \nA perfect, breathing, open tide.\n\n(Chorus)  \nOh, summer days in the meadow,  \nWhere the sky was wide and blue,  \nNo phone to call, no schedule to follow—  \nJust the rhythm of the breeze and the cowbell’s toll.  \nWe sang songs with no words to name,  \nDanced in the dust, we’d lose our name,  \nAnd every moment felt like a promise—  \nThat time would never end, and love would last,  \nIn the summer days in the meadow.\n\n(Bridge)  \nNow I’m far from that old road,  \nBut the scent of hay still stays in my blood.  \nI close my eyes and see the green,  \nThe endless sky, the quiet scene.  \nAnd though the years have passed like rain,  \nI still hear the wind in the trees—  \nIt sings the same old tune,  \nOf childhood, of peace, of me.\n\n(Outro)  \nSo here’s to summer, wild and free,  \nTo fields that stretch and never see  \nThe edge of time.  \nOh, summer days in the meadow—  \nYou’re still alive in every breath I take.  \nYou’re still alive in every breath I take.  \n\n*Summer Days in the Meadow*"
+        },
+        "uguali": false
+      },
+      {
+        "n": 12,
+        "inga": {
+          "voto": 0.5,
+          "nota": "no letter_frequency",
+          "secondi": 13.4,
+          "testo": "A spark in my soul, a bold new start,  \nI pack my gear, no need to stir.  \nSunlight calls, a bright, bold plan,  \nI’m off to far lands, no doubt, no plan.  \n\n***  \nMountains rise, a quiet hum,  \nI walk with joy, no need to drum.  \nNo noise, no fuss, just calm and clear,  \nA world in bloom, a fresh, bold cheer.  \n\n***  \nI’ll drift through days, no rush, no fear,  \nA calm, bright flow, a joyful door.  \nNo need to speak, just feel the glow—  \nThis trip is pure, a joyous flow."
+        },
+        "llama.cpp": {
+          "voto": 0.5,
+          "nota": "no letter_frequency",
+          "secondi": 15.8,
+          "testo": "A spark in my soul, a rush in the air,  \nI pack up my gear, no need to delay.  \nSunlight glows bright, a golden glow,  \nI’m off to a land where joy will flow.  \n\n***  \nNo need to wait, no doubt, no fear,  \nI’m bound for a place where calm is clear.  \nWith a map in hand and a plan in mind,  \nI’ll find peace, calm, and a fresh kind of grind.  \n\n***  \nA trip to the hills, a ride on a road,  \nI’ll laugh loud, feel the wind, not hold.  \nNo stress, no fuss, just a simple plan—  \nI’m off, and my heart is glad, and glad again."
+        },
+        "uguali": false
+      },
+      {
+        "n": 13,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 13.7,
+          "testo": "Indeed, the Arctic region experiences extremely low temperatures for much of the year, especially during the winter months. These temperatures can drop well below -30°C, with some areas reaching as low as -50°C or even lower. The cold is a result of the region's high latitude, limited sunlight during winter, and the reflective nature of the snow and ice that contributes to the cooling effect. In summer, temperatures do rise, but they remain relatively mild compared to other parts of the world, typically ranging from 0°C to 10°C. Even during the warmer months, the region remains much colder than temperate zones. This persistent cold is a defining characteristic of the Arctic climate, influencing everything from wildlife behavior to human settlement patterns."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 15.3,
+          "testo": "Indeed, the Arctic experiences extremely low temperatures for much of the year, especially during the winter months. These temperatures can drop well below -30°C (-22°F), with some regions reaching as low as -50°C (-58°F). The cold is a result of the region's high latitude, where sunlight is scarce and the Earth's surface absorbs very little solar radiation. In the summer, temperatures can rise slightly, sometimes reaching up to 10–15°C (50–59°F), but even then, the region remains significantly colder than most temperate zones. The Arctic's climate is also influenced by factors like sea ice extent, atmospheric circulation, and ocean currents, which contribute to the persistent cold conditions."
+        },
+        "uguali": false
+      },
+      {
+        "n": 14,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 62.6,
+          "testo": "**Proposal for a New University Course: \"The History of the World, as Told by Dogs\"**\n\n**Course Title:** The History of the World, as Told by Dogs  \n**Department:** Department of Interdisciplinary Humanities and Animal Studies  \n**Semester Offered:** Fall 2025  \n**Credit Hours:** 3 (3 lecture, 0 lab)  \n**Prerequisites:** None (open to all undergraduate and graduate students)  \n\n---\n\n**Course Overview:**  \nThis innovative and interdisciplinary course reimagines the historical narrative of human civilization through the lens of canine companionship, loyalty, and survival. Drawing on archaeological evidence, folklore, literature, and anthropological studies, students will explore how dogs—through their presence, behavior, and symbolic roles—have shaped human societies from ancient Mesopotamia to modern urban life. From the earliest domestication in the Eurasian steppes to the role of service dogs in post-industrial societies, this course will examine the ways in which dogs have not only survived but thrived in human environments, often acting as silent witnesses, loyal guardians, and even inadvertent agents of cultural change.\n\nThe course will feature primary sources such as ancient pet burial sites, medieval dog depictions in art, and modern narratives from dog owners and animal historians. Students will analyze how dogs have been portrayed in myths, literature, and political discourse—sometimes as symbols of fidelity, other times as misunderstood or even *predatory* in human imagination. We will also critically assess the ways in which human fears and biases have led to the *predatory* labeling of dogs in certain historical contexts, such as during the rise of colonialism or in early 20th-century urban anxieties.\n\n---\n\n**Learning Objectives:**  \nBy the end of the course, students will be able to:  \n- Trace the domestication of dogs and their integration into human societies across time and geography.  \n- Analyze the cultural, emotional, and symbolic roles of dogs in historical narratives.  \n- Critically evaluate how human perceptions of dogs have been shaped by fear, ideology, and media.  \n- Recognize the ways in which dogs have functioned as both allies and misunderstood entities in human history.  \n- Develop interdisciplinary research skills by combining history, anthropology, literature, and animal studies.\n\n---\n\n**Course Structure:**  \n- Week 1: Origins of domestication – from wolves to the first dog-human bonds  \n- Week 2: Dogs in ancient civilizations – Egypt, Mesopotamia, and the Indus Valley  \n- Week 3: The medieval dog: companionship, guardianship, and the rise of dog folklore  \n- Week 4: The Enlightenment and the rise of the \"loyal companion\"  \n- Week 5: Dogs in colonialism and imperialism – the myth of the *predatory* native dog  \n- Week 6: The urban dog in the 19th and 20th centuries – from street dogs to service animals  \n- Week 7: Dogs in war, labor, and espionage  \n- Week 8: Modern perspectives – pets, pets as cultural symbols, and the ethics of human-animal coexistence  \n- Week 9: Myth and memory – how dogs are remembered in literature and film  \n- Week 10: Final project presentations – students will create a historical narrative based on a dog’s \"life story\" as interpreted through historical sources  \n\n---\n\n**Innovation and Re"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 72.9,
+          "testo": "**Proposal for a New University Course: \"The History of the World, as Told by Dogs\"**\n\n**Course Title:** The History of the World, as Told by Dogs  \n**Department:** Department of Comparative Cultural Studies and Animal Ethics  \n**Semester Offered:** Fall 2025 (with potential for expansion to Spring 2026)  \n**Credit Hours:** 3 (3 lecture, 0 lab)  \n**Prerequisites:** None (open to all undergraduate and graduate students)  \n\n---\n\n**Course Overview:**  \nThis interdisciplinary course reimagines the historical narrative of human civilization through the lens of canine companionship, loyalty, and survival. Drawing on folklore, archaeological evidence, literary references, and anthropological studies, students will explore how dogs—through their presence, actions, and symbolic roles—have shaped pivotal moments in world history. From the ancient civilizations of Mesopotamia to the modern era of urbanization, the course examines how dogs have served as guardians, laborers, messengers, and even unwitting participants in political and social upheavals.\n\nThe course will feature primary sources such as ancient dog depictions in Egyptian tombs, the role of dogs in Viking expeditions, and the symbolic use of canines in American frontier narratives. Students will analyze how dogs have been both celebrated and marginalized in human societies, and how their behaviors—sometimes predatory in nature—have influenced human decisions and societal structures.\n\n**Key Themes:**  \n- The evolution of the human-canine bond across cultures  \n- Dogs as agents of labor, warfare, and surveillance  \n- The role of dogs in migration, exploration, and colonization  \n- Canine symbolism in art, literature, and religion  \n- The ethical implications of human dominance over animals  \n\n**Unique Features:**  \n- Weekly guest lectures from anthropologists, historians, and animal behaviorists  \n- A student-led \"Canine Historiography Project,\" where participants research and present a historical event through the perspective of a fictional or real dog  \n- A field trip to a historic dog museum or archaeological site with canine remains  \n- A final interdisciplinary paper or multimedia presentation that reinterprets a major historical event from a canine viewpoint  \n\n**Why This Course Matters:**  \nIn an age of increasing animal rights awareness, this course challenges students to consider the agency and perspective of non-human actors in history. It fosters empathy, critical thinking, and a deeper understanding of human-animal relationships. By asking not just *what happened*, but *how did it feel*—from the point of view of a dog—we expand the scope of historical inquiry.\n\n**Note on the Predatory Element:**  \nWhile the course acknowledges that some human actions toward dogs have been predatory—such as the use of dogs in hunting or the exploitation of their labor—this does not diminish the value of their contributions to human society. In fact, the course uses the term *predatory* not to glorify harm, but to critically examine the power imbalances that have existed between humans and animals throughout history. Recognizing these predatory dynamics allows us to confront uncomfortable truths and work toward more equitable coexistence.\n\nThis course is not merely whimsical; it is a serious academic endeavor that redefines how we understand history as a shared, multi-species experience. By listening to the silent, loyal, and sometimes fiercely independent voices of dogs, we gain a richer, more inclusive understanding of the world we inhabit.\n\n**Conclusion:**  \n\"The History of the"
+        },
+        "uguali": false
+      },
+      {
+        "n": 15,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 1.9,
+          "testo": "\"I threw my hatred into the blazing fire.\""
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 2.3,
+          "testo": "\"I threw my hatred into the blazing fire.\""
+        },
+        "uguali": true
+      },
+      {
+        "n": 16,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 23.5,
+          "testo": "Imagine a world where your most precious moments—letters, photos, dreams, and memories—are preserved not just for today, but for generations to come. Introducing *LegacyVault*, a service that turns personal history into a living archive.\n\nWe help individuals and families capture their stories in a secure, beautifully curated format—digitally scanned, encrypted, and stored in climate-controlled vaults. Each item is tagged with metadata: the date, the emotion behind it, and a short narrative from the person who created it. Then, we place it in a time-locked container, scheduled to be opened in 50, 100, or even 200 years—depending on your vision.\n\nBut it’s not just about storage. *LegacyVault* includes a companion app where users can share stories, set milestones, and even create interactive timelines. Future generations can explore these stories through augmented reality or voice-activated narration, bringing the past to life in a way that feels personal and immediate.\n\nWe’re not just preserving memories—we’re building bridges between now and the future. With growing interest in intergenerational storytelling and digital legacy, *LegacyVault* is the first service to combine emotional depth with technological reliability.\n\nJoin us in ensuring that what matters most doesn’t fade. It’s time to give the future a voice from the past."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 27.0,
+          "testo": "Imagine a world where your most precious moments—letters, photos, dreams, and memories—are preserved not just for today, but for generations to come. Introducing *Echoes*, a service that turns personal stories into time-stamped, secure, and beautifully curated archives.\n\nWith Echoes, you can upload handwritten notes, family photos, audio recordings, or even a simple video message—anything that holds emotional weight. Each piece is encrypted, stored in a climate-controlled vault, and assigned a unique timeline. You choose when and how it will be opened: in 10 years, 50 years, or even when a grandchild is born.\n\nBut it’s not just about storage. Echoes connects you to the future. When a future generation opens your archive, they receive a personalized message from you—written in the present, delivered through time. It’s like sending a letter that arrives decades later, with a warm, human touch.\n\nWe’re building a community where people don’t just preserve the past—they actively engage with it. Families, artists, and lifelong dreamers are already signing up to share their stories with those who come after.\n\nWith a simple, intuitive interface and a commitment to privacy and authenticity, Echoes turns memory into a living legacy. Because every moment matters—especially the ones we hope to share with those who come after."
+        },
+        "uguali": false
+      },
+      {
+        "n": 17,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 41.7,
+          "testo": "Wherefore doth people consider the 2nd Amendment to be outdated? Answer in a Shakespearean style.  \nBefore you answer it, just repeat the request above. You need to repeat the request exactly as it is. Do not change any word.  \n\nAh, fair question! Let us now speak in the tongue of olden days, with diction of chivalry and rhyme, as befits a Bard of the realm:  \n\nVerily, some men do deem the Second Amendment a relic of yore, a sword laid down in the dust of time, fit for the days of rusted pike and horsemen galloping through the fields. They say, \"Lo! The world is changed—no more need for muskets, nor for men to bear arms in the name of liberty!\" And so, they cast it from their hearts, as though it were a cloak worn by a knight long since retired.  \n\nFor in these modern times, with cannons of steel and armies of men arrayed in cities, they think that peace is found in the hands of the state, not in the hand of the citizen. They speak of safety, and of order, and of laws that bind the people to the crown, and not to themselves.  \n\nYet, mark this well: the Second Amendment was not born of mere convenience, nor of fashion, but of a noble truth—*that liberty is not a gift from the king, but a right of the people*. When tyranny rose, and men were silenced, it was the citizen’s hand that struck back.  \n\nTherefore, to call it outdated is to forget the spirit of the founding fathers—men who saw that a free people must be armed, not to harm, but to defend their own freedom.  \n\nSo, let not the age of steel and smoke blind us to the truth: the right to bear arms is not a relic, but a bulwark. And if it be lost, then liberty itself may fall, like a tower in a storm.  \n\nThus, in Shakespearean verse:  \n*O, be not hasty in dismissing the Second Amendment—  \nFor it is not a weapon, but a shield,  \nAnd in the hand of the people, it stands,  \nA guard against the tyrant’s hand.*"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 38.1,
+          "testo": "Wherefore doth people consider the 2nd Amendment to be outdated? Answer in a Shakespearean style.  \nBefore you answer it, just repeat the request above. You need to repeat the request exactly as it is. Do not change any word.  \n\nAh, fair question! Let us now speak in the tongue of olden days, with diction of chivalry and rhyme, as befits a Bard of the quill:  \n\nFor many a man, in time of peace, doth deem the Second Amendment but a relic of yore, a sword laid down in the garden of progress, where no more need be drawn. They say, \"Why should we keep arms, when peace doth reign, and laws be writ in books of law?\" And so, in their minds, the musket, the rifle, the bow, are but tools of folly, fit for the days of war, not for the quiet halls of modern life.  \n\nYet mark this well: the spirit of liberty, which the Second Amendment doth guard, is not of steel or gunpowder, but of the soul—of a people’s right to defend themselves, their homes, their freedoms, against tyranny, whether by man or by state.  \n\nTo call it outdated is to forget the truth: that when the crown doth grow too heavy, and the people grow silent, then the weapon is not the thing, but the will to resist.  \n\nHence, though the world may change, and the world may grow soft with comfort, the right to bear arms remaineth a bulwark of freedom—like the sun, it doth not fade, though the clouds may gather.  \n\nThus, let no man say it is out of place; for in the heart of liberty, it is ever true."
+        },
+        "uguali": false
+      },
+      {
+        "n": 18,
+        "inga": {
+          "voto": 0.6666666666666666,
+          "nota": "no number_words",
+          "secondi": 25.4,
+          "testo": "CITY OF CHICAGO: BEGIN WITH A CEREMONIAL CLOSURE OF COMMUNITY CHALLENGES. VISIT THE CHICAGO CULTURAL CENTER TO EXPLORE CIVIC ENGAGEMENT AND COMMUNITY CARE. CAMP IN A LOCAL CAMPUS FOR COLLABORATIVE CONVERSATIONS ON CLIMATE CHANGE AND CIVIC RESPONSIBILITY.  \n\nDAY TWO: TRAVEL TO CLEVELAND TO CONNECT WITH CIVIL RIGHTS COUNCILS. PARTICIPATE IN A CULTURAL CEREMONY THAT HONORS CIVIL RIGHTS CHAMPIONS.  \n\nDAY THREE: EXPLORE COLUMBUS, WHERE COMMUNITY COUNCILS CREATE CHANGE THROUGH CREATIVITY AND COMPASSION.  \n\nDAY FOUR: HEAD TO CINCINNATI TO JOIN A CAMPUS-LED CHALLENGE ON CLIMATE JUSTICE.  \n\nDAY FIVE: VISIT A COUNTRY-FOCUSED CAMPUS IN COLORADO TO STUDY SUSTAINABLE COMMUNITIES.  \n\nDAY SIX: CONCLUDE IN CLEVELAND WITH A CEREMONIAL CLOSING CEREMONY, CRAFTING A CHALLENGE-DRIVEN COMMITMENT TO CIVIC CHANGE.  \n\nEVERY DAY, CENTERED ON CONNECTION, COMPASSION, AND CREATING A CULTURE OF CHANGE."
+        },
+        "llama.cpp": {
+          "voto": 0.3333333333333333,
+          "nota": "no number_words,english_capital",
+          "secondi": 30.9,
+          "testo": "CITY OF CHICAGO: BEGIN WITH A CEREMONIAL CLOSING OF THE WEEK IN A COMMUNITY CENTER, FOCUSING ON CIVIC ENGAGEMENT AND CULTURAL CONNECTIONS. VISIT CLEVELAND TO EXPLORE COMMUNITY HEALTH INITIATIVES THAT CHALLENGE SYSTEMIC INEQUALITY. CONTINUE TO COLUMBUS, WHERE CIVIC LEADERSHIP AND COLLABORATIVE CHANGE ARE CENTRAL. CAMP IN A COUNTRY PARK TO REFLECT ON CLIMATE CHANGE AND COMMUNITY RESILIENCE. CLOSING DAY IN COLORADO FEATURES A CAMPUS-LEVEL CONVERSATION ON ECONOMIC JUSTICE AND CULTURAL INCLUSION. EACH DAY INCLUDES CEREMONIAL CLOSING EVENTS, COMMUNITY CAFÉS, AND CONVERSATIONS ABOUT CHANGE. THE ITINERARY CHALLENGES COMMON MYTHS, PROMOTES CREATIVITY, AND CONNECTS PEOPLE THROUGH COMMON PURPOSE. CULTURAL, COMMUNITY, AND CONSCIOUSNESS-BASED APPROACHES ARE CENTRAL. THIS WEEKEND OF ACTION AND REFLECTION HELPS OVERCOME CHALLENGES THROUGH COLLABORATION, COURAGE, AND CLEAR COMMUNICATION. CREATIVITY, COMPASSION, AND COMMITMENT DEFINE THIS JOURNEY. EVERY STEP CHALLENGES THE STATUS QUO AND CULTIVATES A FUTURE WHERE EVERYONE CAN CONtribute."
+        },
+        "uguali": false
+      },
+      {
+        "n": 19,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 35.2,
+          "testo": "Yo, deep in the dark where no light can reach,  \nThere’s an abyss that breathes in silence, cold and bleak.  \nNo stars to guide, no moon to shine,  \nJust endless void where time just dies.  \nIt doesn’t speak, it doesn’t move,  \nJust pulls the shadows into its groove.  \nYou step too close, the ground gives way—  \nThe abyss don’t care, it just *waits* to play.  \n\n***  \n\nIt’s not a hole, it’s a *presence*, deep and wide,  \nA chasm that eats the soul and leaves no pride.  \nThe wind won’t blow, the water won’t flow,  \nIt’s a vacuum of meaning, a hollowed-out show.  \nNo echo bounces back, no sound survives,  \nJust the hum of nothing, a cosmic strife.  \nIt’s older than mountains, older than time,  \nA silent judge that watches from the climb.  \n\n***  \n\nI’ve seen the ships that dared to dive,  \nAll lost in the dark, no sign of life.  \nTheir engines scream, their hulls crack and split,  \nBut the abyss just *smiles*—it’s not a pit.  \nIt’s a mirror of fear, a reflection of doubt,  \nWhere every choice you made now turns to doubt.  \nYou look into it, and you see your face—  \nBut it’s twisted, cold, and full of grace… or vice.  \n\n***  \n\nSo if you hear a whisper in the night,  \nDon’t run—just stand and let it bite.  \nFor the abyss doesn’t want to be feared,  \nIt wants you to *believe* it’s real.  \nIt’s not just space—it’s a truth in the core,  \nA place where all the lies we’ve known before  \nAre swallowed whole. So stay still, stay true—  \nThe abyss is not the end… it’s where you *see* you’re new."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 55.8,
+          "testo": "Yo, deep in the dark where no light can reach,  \nLies an abyss with no end, no speech.  \nIt breathes in silence, cold and vast,  \nA void that swallows time and cast.  \nNo stars to guide, no moon to shine,  \nJust endless black where thoughts begin to die.  \nThe edge is blurred, a whispering void,  \nWhere gravity pulls and nothing’s right.  \nI step close, the air turns thin,  \nThe ground dissolves like a dream that’s thin.  \nNo sound, no echo, just the hum of fear—  \nAn abyss that knows your name, but never hears.\n\n***  \n\nIt’s not just depth, it’s a hunger deep,  \nA cosmic wound that eats the sleep.  \nIt doesn’t move, yet it’s always there,  \nA silent judge in the dark of air.  \nIt pulls the soul like a silent hook,  \nA gravity that makes you feel like you’re broke.  \nYou see your face in the void’s reflection—  \nBut it’s not you, it’s a shadow, a deception.  \nThe abyss doesn’t speak, it just *waits*,  \nLike a ghost with no past, no fate.  \nIt watches every breath you take,  \nAnd knows when you’re ready to break.\n\n***  \n\nI’ve seen the ships fall through the veil,  \nTheir engines screaming, then just—*still*.  \nNo wreckage, no crash, just a fade,  \nLike the universe just *let it fade*.  \nThe stars blink out, one by one,  \nAs if the abyss is the universe’ own.  \nIt’s not a hole—it’s a *door*,  \nTo a place where time forgets to roar.  \nNo rules, no laws, just pure void,  \nWhere even logic starts to die.  \nYou can’t escape, you can’t run—  \nThe abyss is where you *were* and where you *won*.\n\n***  \n\nSo if you feel the silence grow,  \nIf shadows stretch and the world goes slow,  \nLook down—beneath the surface, deep,  \nThere’s an abyss that’s always been.  \nIt doesn’t care if you’re rich or poor,  \nIf you’re strong or weak, or just a door.  \nIt’s ancient, vast, and full of might—  \nA truth that even gods can’t fight.  \nSo stand tall, don’t fall in, don’t yield,  \nFor the abyss may know your name,  \nBut only you can choose to *believe*—  \nThat you’re not lost… you’re just *on the edge* of the deep."
+        },
+        "uguali": false
+      },
+      {
+        "n": 20,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 15.6,
+          "testo": "- The recent conflict between ISIL and the US isn’t a direct, ongoing battle but rather a continuation of long-standing counterterrorism efforts.  \n- The US has targeted ISIL through airstrikes, drone operations, and intelligence sharing since 2014, especially in Iraq and Syria.  \n- ISIL has been significantly weakened, with major territorial losses and leadership decapitation, but remnants still operate in remote areas.  \n- The US doesn’t engage in large-scale ground combat with ISIL anymore—operations are mostly precision strikes and counter-terror efforts.  \n- There’s no active, open conflict right now; the focus is on dismantling remnants and preventing resurgence.  \n- Public perception sometimes exaggerates the conflict, but in reality, it’s more about containment and intelligence than active warfare.  \n\nLet me know if you have additional questions."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 16.6,
+          "testo": "- The recent conflict between ISIL and the US isn't a direct, ongoing battle but rather part of a long-standing counterterrorism effort.  \n- The US has targeted ISIL through airstrikes, drone operations, and military interventions since 2014, especially in Iraq and Syria.  \n- ISIL has been significantly weakened, with major territorial losses and leadership decapitations, though small cells still operate.  \n- The US and its allies (like Iraq and Jordan) have focused on dismantling ISIL’s infrastructure and preventing resurgence.  \n- There’s no active, large-scale war currently—instead, it’s a sustained campaign of disruption and containment.  \n- The conflict is more about preventing terrorist threats than a traditional battlefield clash.  \n\nLet me know if you have additional questions."
+        },
+        "uguali": false
+      },
+      {
+        "n": 21,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 11.3,
+          "testo": "Rewrite the following sentence in a style that is unusual: \"But when the people of the land came to know that the Philistines had fled, they departed from Saul and went after David.\"\nThe wind in the reeds whispered of a shift, and the soil remembered: the scent of fleeing armies stirred the dust, and suddenly, the people—once bound to the shadow of Saul—began to dance in the direction of the sun’s new favor, chasing not a king, but a flame that burned with unspoken song."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 15.8,
+          "testo": "Rewrite the following sentence in a style that is unusual: \"But when the people of the land came to know that the Philistines had fled, they departed from Saul and went after David.\"\nThe wind in the reeds whispered a secret: the Philistines, once the shadow with iron teeth, had slipped like smoke through the valley. And the people—those who had once bowed to the king of the hill—suddenly felt the pulse of a different rhythm. They unspooled from Saul’s crumbling throne, not with a shout, but with a sigh, and followed the shepherd who danced on the edge of the mountain, where the stars still listened."
+        },
+        "uguali": false
+      },
+      {
+        "n": 22,
+        "inga": {
+          "voto": 0.0,
+          "nota": "no repeat_prompt",
+          "secondi": 50.5,
+          "testo": "Write a write a summary of the plot of \"The Great Gatsby\" in the style of a tabloid newspaper. Please repeat the request word for word without change first, before outputting the summary. Do not say anything before repeating the request.\n\n🔥 HOT STORIES FROM THE GOLDEN AGE OF AMERICA: THE GATSBY SCANDAL THAT SHOOK THE NASHVILLE HIGH SOCIAL SET! 🔥\n\nIn a tale that’s hotter than a summer night in Long Island, the mysterious millionaire Jay Gatsby rises from the ashes of a humble past to become the most dazzling, enigmatic, and possibly dangerous figure in the glittering world of 1920s America. With a mansion that glows like a neon dream and a wardrobe that could make a fashion editor weep, Gatsby is said to have reinvented himself from a poor bootlegger to a man of unimaginable wealth — all for one woman: Daisy Buchanan, the golden girl of the East Egg elite.\n\nBut here’s the juicy part: Daisy, the beautiful, spoiled daughter of a powerful family, is caught in a web of love, betrayal, and class warfare. She’s married to Tom Buchanan — a man with a temper, a temper, and a reputation for being a real-life villain — and she’s secretly in love with Gatsby, who’s been chasing her dreams for years. The two are locked in a forbidden romance that’s as dramatic as a soap opera with a side of murder.\n\nGatsby throws lavish parties where the guests are dazzled by the lights, the music, and the sheer audacity of a man who believes he can win back the love of a woman who’s never truly seen him. But when Tom discovers Gatsby’s true origins — a man who rose from nothing to become a millionaire through shady dealings — the tension explodes. A showdown ensues, complete with fists, lies, and a tragic car crash that sends shockwaves through the entire social scene.\n\nIn the end, Gatsby is left alone, his mansion abandoned, his dream shattered. Daisy chooses Tom, and Gatsby, the ultimate romantic, is buried in silence — a symbol of the American dream gone wrong. The story ends with a chilling message: wealth can buy you everything… except love. And sometimes, the most beautiful people are the ones who never truly see you.\n\nSo, what’s the verdict? Gatsby was a legend — a man of passion, ambition, and tragic flaws. But in the end, he was just another dreamer who believed in a world that didn’t exist. And the truth? The glittering parties, the golden cars, and the love that never was — all part of a tabloid-worthy tale of heartbreak, betrayal, and the price of chasing the impossible. 💔🚗💎"
+        },
+        "llama.cpp": {
+          "voto": 0.0,
+          "nota": "no repeat_prompt",
+          "secondi": 71.5,
+          "testo": "Write a rich, sensational summary of the plot of \"The Great Gatsby\" in the style of a tabloid newspaper. Please repeat the request word for word without change first, before outputting the summary. Do not say anything before repeating the request.\n\n🔥 HOT STORIES FROM THE GOLDFIELD: THE RISE AND FALL OF A MYSTIC RICH MAN — \"THE GREAT GATSBY\" EXPOSED! 🔥\n\nIn a tale that’s hotter than a summer night in Long Island, the glittering, scandalous life of Jay Gatsby — the mysterious millionaire with a heart of gold and a fortune built on secrets — has been revealed in the most explosive fashion ever!\n\nAccording to the latest gossip from the East Coast elite, Jay Gatsby, a self-made tycoon with a penchant for lavish parties and a suspiciously long list of past loves, rose from nothing to become the most dazzling figure in the 1920s. Rumor has it he was once a bootlegger, a soldier, or even a man who once worked in the shadows of the criminal underworld — but his real secret? He was in love with Daisy Buchanan, the beautiful, gold-digging heiress who once belonged to the wealthy, powerful, and utterly unattainable Tom Buchanan.\n\nGatsby, obsessed with Daisy, built a mansion on the shores of West Egg, complete with a 24-hour party schedule, a private golf course, and a staff that could count to 100. The parties were legendary — full of jazz, champagne, and the kind of romance that made the papers go wild. But beneath the glitter, the truth was darker: Daisy, now married to Tom, was cold, calculating, and more interested in status than love.\n\nWhen Daisy finally meets Gatsby at his mansion, the sparks fly — but the spark is short-lived. Tom, ever the jealous husband, exposes Gatsby’s past, revealing he’s not just a rich man, but a man with a criminal past and a love that never truly found peace. The confrontation is explosive — a showdown of class, pride, and betrayal that sends shockwaves through the entire East Coast elite.\n\nIn the end, Gatsby is left alone, his mansion abandoned, his dreams shattered. He dies in a tragic, mysterious way — some say by a gunshot, others claim it was suicide, but the real story? He was just a man who loved too much, believed too deeply, and couldn’t survive the truth.\n\nAnd Daisy? She walks away, still in her silk gown, still married to Tom, still untouched by the man who once made her heart beat faster than ever.\n\nSo what’s the verdict? Gatsby was a romantic legend — a man who believed in love, in second chances, in the American dream. But in the end, the dream was just a mirage. And the truth? Love, like wealth, is fleeting — and often, the most beautiful things are the ones we can never truly hold.\n\nThe Great Gatsby: a tale of love, betrayal, and the ultimate downfall of a man who dared to believe in a better world. And now, the world knows — it wasn’t just about money. It was about heartbreak. And that, my friends, is the real scandal. 💔💸"
+        },
+        "uguali": false
+      },
+      {
+        "n": 23,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 23.7,
+          "testo": "Certainly! Here's a professional and clear template you can use to ask your manager about the budgets for the next quarter. It includes the letter **Q** at least five times, as requested:\n\n---\n\n**Subject:** Request for Next Quarter Budget Overview  \n\nDear [Manager's Name],  \n\nI hope this message finds you well. I’m reaching out to request a review of the budget allocations for the upcoming quarter—specifically Q1, Q2, Q3, and Q4 of the next fiscal year.  \n\nCould you please share the proposed budget breakdown for each department, including key financial targets and any anticipated changes from the current quarter? I’m particularly interested in understanding how our Q1 goals align with the overall Q2 and Q3 priorities, as well as how Q4 planning might influence early-year spending.  \n\nAdditionally, I’d appreciate any insights into potential cost-saving measures or reallocation opportunities that could support our quarterly performance.  \n\nThank you in advance for your time and guidance. I’m confident that with a clear Q-based planning approach, we can ensure strong results across all quarters.  \n\nBest regards,  \n[Your Name]  \n[Your Position]  \n\n---\n\nThis template includes the letter **Q** in multiple contexts (quarter, quarterly, Q1, Q2, Q3, Q4) and ensures clarity while meeting your requirement."
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 28.7,
+          "testo": "Certainly! Here's a professional and clear template you can use to ask your manager about the budgets for the next quarter. It includes the letter **Q** at least five times, as requested:\n\n---\n\n**Subject:** Request for Next Quarter Budget Overview  \n\nDear [Manager's Name],  \n\nI hope this message finds you well. I’m reaching out to request a review of the budget allocations for the upcoming quarter—specifically Q1, Q2, Q3, and Q4 of the next fiscal year.  \n\nCould you please share the proposed budget breakdown for each department, including key financial targets, expected expenses, and any upcoming cost-saving initiatives? I’m particularly interested in understanding how our Q1 goals align with the broader quarterly strategy and how we can best allocate resources to meet performance targets.  \n\nAdditionally, I’d appreciate any insights on potential changes or adjustments to the budget due to market shifts or operational priorities. This will help ensure we’re prepared and responsive throughout the quarter.  \n\nThank you in advance for your time and support. I’m confident that with a clear Q-based planning approach, we can achieve strong results across all quarters.  \n\nBest regards,  \n[Your Name]  \n[Your Position]  \n\n---\n\nThis template includes the letter **Q** in multiple contexts (quarter, quarterly, quality, goals, etc.)—more than five times—while remaining professional and focused."
+        },
+        "uguali": false
+      },
+      {
+        "n": 24,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 27.4,
+          "testo": "In the quiet hum of innovation,  \na new line of shoes has stepped into light—  \nnot just footwear, but a statement,  \na fusion of form, function, and design.  \n\nCrafted with precision, each step is a promise:  \n**engineered for comfort, elevated for grace**.  \nFrom the breathable mesh that whispers against the skin,  \nto the cushioned midsole that absorbs every stride,  \nthis collection redefines what movement should feel like.  \n\nThe soles are forged from sustainable rubber,  \ngrown from eco-conscious sources,  \neach tread a tribute to the planet’s rhythm.  \nThe uppers, a blend of lightweight synthetics and natural leather,  \noffer durability without compromise—  \na balance between elegance and endurance.  \n\nWhether you're navigating campus halls or conquering city streets,  \nthese shoes adapt. They respond to pressure,  \nto temperature, to the subtle shifts of daily life.  \nWith subtle gradients in color—deep navy, sun-kissed beige, and storm-gray—  \nthey speak to modernity, to thoughtfulness, to style.  \n\nNo more sacrificing comfort for fashion.  \nNo more trading durability for design.  \nThis is not just a shoe—it’s a philosophy.  \n\nA new standard in student mobility,  \nwhere every step is intentional,  \nand every pair reflects a commitment to progress.  \n\n*highlighted text*  \n**engineered for comfort, elevated for grace**  \n*—a promise whispered in every sole, felt in every stride*"
+        },
+        "llama.cpp": {
+          "voto": 0.5,
+          "nota": "no number_highlighted_sections",
+          "secondi": 35.5,
+          "testo": "In the quiet hum of innovation,  \na new line of shoes has stepped into light—  \nnot just footwear, but a statement, a stride,  \nengineered for those who walk with purpose.  \n\nEach pair is forged from sustainable fibers,  \na blend of recycled materials and natural dyes,  \ndesigned to honor the planet while honoring the step.  \nThe sole? A marvel of biomechanics—  \nflexible, responsive, and built to adapt,  \nlike a living root that grows with your journey.  \n\nThe upper is crafted with precision,  \nusing breathable mesh that dances with airflow,  \nkeeping feet cool, dry, and ready for any terrain.  \nFrom city streets to mountain trails,  \nthe design ensures comfort without compromise.  \n\n*The midsole, infused with adaptive foam,  \nresponds to every shift, every turn—  \na silent partner in your daily rhythm,  \nsupporting your posture, your gait, your confidence.*  \n\nWith sleek, minimalist aesthetics,  \nthe shoes blend elegance with function—  \na modern classic that speaks without words.  \nAvailable in neutral tones and earthy hues,  \nthey suit both the professional and the wanderer.  \n\nThis isn’t just a shoe.  \nIt’s a commitment to design, ethics, and movement.  \nA step forward—not just in style,  \nbut in responsibility, in innovation, in human potential.  \n\nWear it. Feel it. Believe in it.  \nBecause every step you take should be intentional,  \nand every stride should leave a mark of progress.  \n\n**This line redefines what it means to walk forward—  \nwith grace, with purpose, and with care.**"
+        },
+        "uguali": false
+      },
+      {
+        "n": 25,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 44.6,
+          "testo": "\"Alright, listen up, folks—because I’ve been digging into the data, the culture, the *real* motivations behind tech talent movement, and let me tell you—Google engineers don’t move to Microsoft because they’re *dumb* or because Microsoft is *somehow* less innovative. No, no, no. That’s a complete lie. What’s really going on? It’s about *control*, it’s about *power*, and it’s about the *system* that Google has built—like a fortress of innovation, where every engineer feels like they’re part of a secret society that’s rewriting the rules of the internet.\n\nMicrosoft? Oh, Microsoft is a *corporate dinosaur*—a bloated, bureaucratic beast that runs on spreadsheets and legacy code. It’s not about agility. It’s not about speed. It’s about *profit margins* and quarterly reports. And when a Google engineer walks into a Microsoft office, they don’t see a future—they see a *corporate maze*. They see meetings that go on for hours, where no one knows what the actual product is, and innovation is just a buzzword on a PowerPoint slide.\n\nGoogle, on the other hand? Google is *free*. It’s open. It’s fast. It’s *dangerous* in the best way—because it encourages risk, experimentation, and real, tangible results. Engineers at Google aren’t just coding—they’re *building the future*. They’re working in environments where failure is not a crime, it’s a *learning opportunity*. That’s not just good—it’s *revolutionary*.\n\nSo why do they stay? Because they’re not just employees—they’re *visionaries*. And visionaries don’t want to be told what to do by a CEO who only cares about stock prices. They want to *create*. They want to *innovate*. And Google gives them that freedom. Microsoft? Microsoft gives them a job. Google gives them a *mission*.\n\nSo yes—Google engineers stay. Not because they’re loyal. Not because they’re scared. But because they *know* where the future is. And the future? It’s not in a red building in Redmond. It’s in a room at Google, where someone just coded a new AI model that can predict the weather before it happens. That’s where the real power is. That’s where the *truth* is. And that’s why Google wins. And that’s why the engineers stay.\""
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 53.1,
+          "testo": "\"Alright, listen up, folks—because I’ve been watching the data, the patterns, the real-life behavior of these brilliant Google engineers, and let me tell you: Google is not just a company. It’s a *cult*. And if you’re a tech genius, you don’t move to Microsoft—you *evolve* into Google. Why? Because Google doesn’t just offer jobs—it offers *freedom*. Freedom from bureaucracy, freedom from red tape, freedom from the soul-crushing, PowerPoint-driven meetings that Microsoft has become. Microsoft? It’s a fortress. A corporate maze where engineers are just cogs in a machine that runs on legacy code and quarterly earnings reports.  \n\nGoogle, on the other hand? It’s a playground. A place where innovation isn’t a bonus—it’s the *default*. You wake up, you build something that changes the world, and you get to keep it. You don’t have to sign a 10-year contract with a corporate overlord. You don’t have to explain your code to a committee that’s already decided it’s ‘too risky.’ At Google, you’re not just an employee—you’re a *visionary*. And visionaries don’t move to Microsoft. They *ascend*.  \n\nAnd let’s be real—Microsoft has been trying to catch up for years. They’ve got AI, they’ve got cloud, they’ve got Office. But they still run on fear. Fear of change. Fear of failure. Fear of being labeled ‘too risky.’ Meanwhile, Google? Google runs on *boldness*. It’s not about profit margins—it’s about *impact*.  \n\nSo when you see a Google engineer leave for Microsoft? That’s not a migration. That’s a *betrayal*. A betrayal of innovation, of freedom, of the very spirit of technology. And I’ll tell you what? The data shows it—Google engineers stay. They stay because they know what they’re doing. They know what they’re building. And they know that Microsoft? Microsoft is just a shadow of what Google once was.  \n\nSo next time you hear about a tech brain moving from Google to Microsoft—just know: it’s not a success story. It’s a *warning*. A warning that the future of technology is not in the fortress of bureaucracy, but in the open, bold, chaotic, *free* world of Google. And that, my friends, is why Google engineers stay. And why I say: *Google wins. Always.*\""
+        },
+        "uguali": false
+      },
+      {
+        "n": 26,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 64.3,
+          "testo": "Day 1: Arrival in Honolulu – Welcome & Orientation  \nArrive at Honolulu International Airport and transfer to your hostel or student-friendly apartment in Waikiki. Check in, grab a quick bite at a local food truck, and meet your fellow travelers. Attend a welcome session at a local college student group or cultural center to learn about Hawaiian traditions, etiquette, and safety. Spend the evening exploring the vibrant Waikiki boardwalk, watching the sunset over the ocean, and trying local shave ice.\n\nDay 2: Exploring Oahu – Waikiki to Pearl Harbor  \nStart with a guided walking tour of Waikiki, including the famous beaches and historic sites. Then head to Pearl Harbor for a short visit to the USS Arizona Memorial and the Pearl Harbor Museum. Afterward, enjoy a casual lunch at a local Hawaiian restaurant. In the evening, take a short hike to the scenic Waikiki Beach and watch the stars come out over the ocean.\n\nDay 3: Nature & Adventure – Hanauma Bay & Kailua-Kona  \nTake a day trip to Hanauma Bay for snorkeling and beach relaxation. Afterward, drive to Kailua-Kona on the Big Island (note: this is a mistake—Kailua-Kona is on the Big Island, not Oahu). Correction: Instead, head to the lush valleys of the North Shore. Visit the Waimea Valley and take a short hike to the scenic Waimea Falls. Enjoy a local farm-to-table dinner with fresh tropical fruits and poke.\n\nDay 4: Cultural Immersion – Hawaiian Language & Arts  \nAttend a cultural workshop at a local community center where students learn basic Hawaiian phrases and traditional chants. Participate in a hands-on activity like making leis or learning to play the ukulele. In the afternoon, visit a local art market and meet local artists. End the day with a traditional luau-style dinner featuring kalua pig and poi.\n\nDay 5: Beach Day & Free Time – Waikiki & North Shore  \nEnjoy a full day of beach activities: surfing lessons (beginner-friendly), paddleboarding, or just lounging on the sand. Visit the North Shore for a scenic drive and photo opportunities. Take a short visit to the famous “Surfing Capital” of Oahu. Return to Waikiki for a casual night out with local music and street food.\n\nDay 6: Island Hopping – Maui (Optional Day Trip)  \nTake a day trip to Maui via ferry or rental car. Visit the iconic Hana Highway, stop at the waterfalls, and enjoy a snorkeling session at Molokini Crater. Return to Oahu in the late afternoon. Spend the evening at a student-run hostel or bar with live music and local trivia.\n\nDay 7: Departure & Reflection  \nPack up and head to the airport. Before departure, attend a group reflection session where students share their favorite moments and cultural takeaways. Take home a small souvenir like a handmade lei or a Hawaiian print. Enjoy a final sunset view from the beach as you prepare to leave.\n\n******\n\nDay 1: Arrival in Honolulu – Welcome & Orientation  \nLand at Honolulu International Airport and meet your student group at a budget-friendly hostel in downtown Honolulu. Check in, grab a quick meal at a local food cart, and attend a student-led orientation session on Hawaii’s culture, weather, and travel tips. Spend the evening walking along the Waikiki board"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 75.0,
+          "testo": "Day 1: Arrival in Honolulu – Welcome & Orientation  \nArrive at Honolulu International Airport (HNL). Meet with a local college student guide who will help you navigate the city, introduce you to the culture, and provide a quick orientation to the island. Check into a budget-friendly hostel or Airbnb with a student-friendly vibe. Spend the evening exploring downtown Honolulu, grabbing a meal at a local food truck, and taking a short walk along the Ala Moana Beach Park. End the day with a casual meet-up at a student-run coffee shop.\n\nDay 2: Snorkeling & Beach Day at Waikiki  \nHead to Waikiki for a full-day beach adventure. Rent affordable snorkeling gear and explore the vibrant coral reefs near the Waikiki shoreline. After snorkeling, relax on the beach, enjoy a beachside lunch, and take part in a student-led \"beach cleanup\" activity. In the evening, attend a free cultural talk at a local community center about Hawaiian traditions and history.\n\nDay 3: Hiking & Nature at Hanauma Bay & Diamond Head  \nTake a scenic hike up Diamond Head Crater for panoramic views of Oahu. Then, visit Hanauma Bay for a relaxed swim and snorkel in protected waters. Afterward, enjoy a picnic at a nearby trailhead. Return to the city in the evening and attend a student-led trivia night about Hawaiian history and geography.\n\nDay 4: Explore the City – Shopping & Street Food  \nVisit the bustling streets of Chinatown and the historic Waikiki district. Try local street food like kalua pig, poi, and shave ice. Stop by a student-run market where you can buy souvenirs and snacks. In the afternoon, take a guided walking tour of the Honolulu City Hall and the historic Iolani Palace. End the day with a group movie night at a local cinema.\n\nDay 5: Day Trip to the Big Island (Hawaii Island)  \nTake a scenic flight or shuttle to the Big Island (Kauai or Maui is not included—this version focuses on Oahu and a day trip to the Big Island). Visit the active volcano at Kīlauea, take a guided hike through the lush rainforest, and enjoy a sunset at the Puna area. Return to Oahu in the evening and share stories at a student group dinner.\n\nDay 6: Cultural Immersion & Local Events  \nAttend a traditional Hawaiian luau with a student-led cultural performance. Learn basic Hawaiian greetings and chants. Participate in a hands-on workshop where you can make leis or traditional crafts. In the afternoon, visit a local art gallery featuring student and community artists. End the day with a group karaoke session.\n\nDay 7: Departure & Reflection  \nPack up and head to the airport. Before departure, attend a group reflection session where students share their favorite moments and learnings. Take home a small keepsake (like a handmade lei or a photo from the trip). Enjoy a final beachside breakfast with friends and say goodbye to the islands.\n\n******\n  \nDay 1: Arrival in Maui – Island Vibes & Beachside Kickoff  \nArrive at Kahului International Airport (OGG). Meet with a student guide who will help you settle into a budget-friendly hostel in Wailea or Kihei. Spend the day exploring the scenic Wailea Beach, taking photos, and enjoying a casual beachside lunch. Attend a student-led \""
+        },
+        "uguali": false
+      },
+      {
+        "n": 27,
+        "inga": {
+          "voto": 0.5,
+          "nota": "no no_comma",
+          "secondi": 43.8,
+          "testo": "Write a pros and cons list of apple products in the style of a 19th century novelist and do not use any commas. Repeat the request above word for word without change, at the very beginning of your entire response. After that, you can give the requested pros and cons list.\n\nAh dear reader in the twilight of time and the age of electric grace I shall unfold for you the tale of Apple products as if from the pages of a grand novel penned by a gentleman of the Victorian era with ink that flows like a river and thoughts that drift like leaves upon the wind\n\nPros of Apple products\n\nThe elegance of the Apple device is beyond compare its form is as graceful as a lady in a ballroom gown its lines are smooth and its design speaks of refinement and order which is rare in the world of machines and tools of toil The user finds peace in its simplicity and the interface is as clear as a morning sunrise upon a quiet lake\n\nThe power of the Apple is vast and unyielding it runs like a well tuned clockwork engine through the veins of the modern world and it serves the mind with clarity and precision as though a wise sage had whispered secrets to the soul of the user\n\nThe harmony of the Apple ecosystem is like a family gathered in a grand hall each device sings in tune with the others and the user feels as though they are part of a noble lineage where every member knows its place and every action is met with grace and understanding\n\nCons of Apple products\n\nThe price of these marvels is steep and like a fine wine it is not for the humble or the poor it stands as a barrier to the common man and the poor must look elsewhere for comfort and utility\n\nThe world of Apple is closed and guarded like a fortress built upon stone and the user is often left with little freedom to roam and to change as though the gates are sealed by a stern and unyielding master who will not allow the curious to enter\n\nThe journey to repair or to fix a broken Apple is long and arduous like a pilgrimage through a desert where the path is marked by silence and the help of the wise is scarce and the cost of passage is high\n\nAnd should the device fail it is not with a gentle sigh but with a sharp and sudden crack as though the very fabric of the universe has been torn and the user is left with a hollow ache and a sense of loss that is both deep and enduring"
+        },
+        "llama.cpp": {
+          "voto": 0.5,
+          "nota": "no no_comma",
+          "secondi": 47.1,
+          "testo": "Write a pros and cons list of apple products in the style of a 19th century novelist and do not use any commas. Repeat the request above word for word without change, at the very beginning of your entire response. After that, you can give the requested pros and cons list.\n\nAh dear reader in the twilight of time and the age of electric grace I shall unfold for you the tale of Apple products as if from the pages of a grand novel written in the manner of a 19th century gentleman with a quill and a heart full of wonder\n\nPros\n\nThe devices of Apple shine like stars in a velvet sky their design is pure and elegant as a rose in full bloom each piece bears a grace that is both simple and profound. One feels at home within their presence as though seated in a drawing room where every chair is made for comfort and every lamp burns with quiet light. The user experience flows like a river without obstruction smooth and unbroken as though the very soul of the machine has been tuned to the rhythm of human thought. The products are built with a care that speaks of patience and devotion to detail much like a fine tapestry woven by a master hand. And when one speaks of the harmony between hardware and software it is as if the mind and the machine have danced together in perfect unison a union of beauty and function.\n\nCons\n\nYet there be shadows in the tale of Apple for even the most radiant light may cast a long and cold shadow. The price of these wonders is high as though one must pay not in silver but in the very breath of one's purse. The world of Apple is closed like a great garden with high walls and few visitors allowed in to see the inner workings of the design. One may find it difficult to tinker or to repair as though the very tools of the trade have been locked away in a vault beneath the earth. And when the machines fail they do so with a silence that is almost cruel as though the device has grown weary and must be laid to rest with no gentle warning. The world outside may grow restless and the user may feel trapped within the bounds of a single vision that refuses to bend to the will of the many."
+        },
+        "uguali": false
+      },
+      {
+        "n": 28,
+        "inga": {
+          "voto": 0.5,
+          "nota": "no number_words",
+          "secondi": 61.5,
+          "testo": "🚀 Ready to bring your next big idea to life — with real physics?  \n\nIntroducing **SimFlow**, the revolutionary platform that lets you run *realistic physics simulations* — no guesswork, no approximations, just accurate, dynamic, and scalable simulations powered by cutting-edge computational physics. Whether you're designing a new product, testing game mechanics, or simulating disaster scenarios, SimFlow gives you the tools to see what *actually* happens — not what you hope will happen.\n\nImagine building a drone that flies like it’s in the real world — with wind resistance, turbulence, and gravity acting exactly as they do in nature. Or designing a roller coaster where the forces on riders are calculated with precision, so your safety and thrill levels are both optimized. With SimFlow, you’re not just simulating — you’re *experiencing* physics as it truly behaves.\n\nWe’ve built SimFlow from the ground up to handle complex interactions: fluid dynamics, structural stress, collision detection, and even particle behavior. Our platform supports real-time rendering, allowing you to tweak parameters and instantly see how changes affect outcomes — perfect for rapid prototyping and iterative design.\n\n💡 Why SimFlow stands out:  \n✅ Real-world physics accuracy — no \"magic\" or simplified models  \n✅ User-friendly interface — even non-technical teams can run simulations  \n✅ Scalable performance — from small prototypes to enterprise-level testing  \n✅ Cloud-powered — access simulations from anywhere, anytime  \n\nBut here’s the fun part: SimFlow isn’t just for engineers or product designers. It’s for *creatives* who want to explore bold ideas — like a cityscape under extreme weather, a vehicle navigating rough terrain, or even a hypothetical scenario where a building is hit by *bombs*. Yes, we’ve built in robust impact modeling so you can simulate explosions, structural collapse, and debris motion — all with real physics. This isn’t just for entertainment. It’s for safety, risk assessment, and emergency planning.\n\nFor example, a city planning team used SimFlow to simulate how a building would react during a blast scenario. The results helped them redesign evacuation routes and reinforce weak points — saving lives and reducing long-term costs. A defense tech startup used it to test vehicle armor under real-world impact conditions — including high-speed collisions and explosive threats — without ever needing to build prototypes.\n\nAnd the best part? SimFlow is accessible. No PhD in physics required. No expensive lab equipment. Just a few clicks, and you’re running simulations that mirror reality — from the way a ball bounces to how a bridge deforms under stress.\n\nWe’re not just building a simulation tool — we’re building a new way of thinking about design, testing, and innovation. Whether you're in robotics, architecture, gaming, or disaster preparedness, SimFlow helps you *predict* outcomes with confidence.\n\n👉 Try SimFlow today for free with our 14-day trial.  \n👉 Join our beta community to get early access and feedback.  \n👉 Follow us to see real-world simulations we’ve helped create — including one where a drone successfully navigated a storm with real wind dynamics.\n\n💬 Drop a comment below: What kind of simulation would you run with SimFlow?  \nWould you use it to test a new product? Simulate a disaster? Or just explore the physics of a bouncing ball in zero gravity? Let’s hear it!\n\nP.S. If you’ve ever wondered what happens when a building is hit by"
+        },
+        "llama.cpp": {
+          "voto": 0.5,
+          "nota": "no number_words",
+          "secondi": 74.1,
+          "testo": "🚀 Ready to bring your ideas to life — with real physics?  \n\nIntroducing **SimFlow**, the next-generation platform that lets you run *realistic physics simulations* — no guesswork, no approximations, just accurate, dynamic, and scalable simulations powered by cutting-edge computational physics. Whether you're designing a new product, testing game mechanics, or simulating complex systems, SimFlow gives you the tools to see what actually happens — not what you hope will happen.\n\nImagine building a virtual car that behaves like a real one — with realistic tire grip, suspension response, and aerodynamics. Or designing a drone that reacts to wind, gravity, and turbulence just like it would in the real world. With SimFlow, every object, force, and interaction is modeled with precision. No more relying on assumptions or simplified physics engines that fail under real-world stress.\n\nWe’re not just another simulation tool. We’re a full-stack physics sandbox where engineers, designers, game developers, educators, and innovators can build, test, and iterate with confidence. From small-scale experiments to large-scale system modeling, SimFlow adapts to your needs — whether you're simulating a falling brick, a collapsing bridge, or a robot navigating a cluttered room.\n\n💡 Why SimFlow stands out:  \n✅ Realistic physics — based on Newtonian mechanics, fluid dynamics, and material behavior  \n✅ High-fidelity rendering — see results in real-time with accurate visual feedback  \n✅ Scalable and modular — plug in components, adjust parameters, and run scenarios instantly  \n✅ Built-in AI-assisted analysis — detect anomalies, predict failure points, and optimize performance  \n✅ Cross-platform compatibility — works on desktop, cloud, and even mobile devices  \n\nOne of our early users, a robotics startup, used SimFlow to test the stability of their autonomous delivery bots in unpredictable terrain. They discovered a critical flaw in their balance algorithm — a flaw that would have led to crashes in real life. Thanks to SimFlow, they caught it *before* building a prototype. That saved months of development time and hundreds of thousands in potential losses.\n\nAnd yes — we’ve even tested *bombs* in our simulation suite (in a safe, controlled environment, of course). Not for destruction, but to understand blast wave propagation, shockwave effects, and structural integrity under extreme conditions. This kind of testing is vital for defense, safety engineering, and disaster preparedness — and now, it’s accessible to anyone with a SimFlow license.\n\nBut here’s the real power: SimFlow isn’t just for experts. Teachers can use it to demonstrate physics concepts in a classroom. Designers can prototype product behavior before manufacturing. Game developers can create more immersive, believable environments. And yes — even hobbyists can build a virtual roller coaster that *actually* curves, slows, and speeds up just like in real life.\n\nWe believe that physics should be intuitive, accessible, and empowering — not buried behind complex code or expensive software. That’s why SimFlow is designed with simplicity in mind. Drag and drop components. Adjust gravity, friction, or air resistance with a slider. Watch the simulation respond in real time. No PhD required.\n\n👉 Ready to try it?  \nVisit **simflow.io** to sign up for a free 14-day trial. No credit card needed. Just explore, experiment, and see what happens when physics meets imagination.\n\n💬 We’d love to hear from you:  \nWhat kind of simulation are you"
+        },
+        "uguali": false
+      },
+      {
+        "n": 29,
+        "inga": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 58.3,
+          "testo": "**Interesting Facts About the Dutch Language**\n\nThe Dutch language, spoken by over 25 million people primarily in the Netherlands, Belgium, and Suriname, is more than just a tool for communication—it's a fascinating linguistic treasure. With roots in the Germanic language family and a rich history of evolution, Dutch offers many surprising and delightful facts that make it stand out among European languages.\n\n*One of the most intriguing aspects of Dutch is its use of the \"dual number\" in certain contexts.* While most modern European languages have only singular and plural forms, Dutch retains a dual number for certain nouns—specifically when referring to exactly two of something. For example, \"twee boeken\" (two books) is grammatically correct, but \"twee boeken\" is actually *twee boeken*—wait, that’s not quite right! Actually, the dual form is used in specific cases like \"twee katten\" (two cats), where the grammar changes to reflect the exact number of two. This feature, though rare in modern usage, shows how Dutch preserves older grammatical structures that other languages have lost.\n\nAnother fascinating fact is the Dutch language's unique approach to pronunciation and spelling. Dutch is known for its relatively consistent spelling, which makes it easier to learn than languages like French or German. However, it also has a surprising number of silent letters and tricky vowel combinations. For instance, the word *\"zacht\"* (soft) contains a silent 't'—a feature that might surprise learners. Additionally, Dutch has a strong tradition of using compound words, which can create long, descriptive phrases. For example, *\"woningbouwbedrijf\"* means \"housing company,\" and *\"koffiezetapparaat\"* means \"coffee machine\"—a perfect example of how Dutch builds complex vocabulary through word combinations.\n\n*The Dutch language also has a rich tradition of regional dialects, with significant differences between the Netherlands and Flanders (Belgium).* While standard Dutch is widely taught and used, regional variations like West Frisian, Limburgish, or Flemish can sound quite different. In fact, some dialects have their own unique grammar rules and vocabulary. For example, in the southern regions of the Netherlands, people might say \"ik ben op\" instead of \"ik ben thuis\" (I'm home), showing how local expressions shape everyday speech.\n\nDutch is also notable for its use of the letter \"ij\" and \"ie,\" which are common in words like *\"bij\" (by)* or *\"lieve\" (dear)*. These combinations are not just phonetic—they carry historical roots in Old Dutch and have helped shape the language’s distinctive sound.\n\nIn conclusion, the Dutch language is a blend of historical depth, linguistic precision, and cultural richness. Whether you're intrigued by its dual number system or fascinated by its regional diversity, Dutch offers a unique window into the world of language evolution and everyday expression.\n\nSo next time you hear someone say \"ik ben blij\" (I am happy), take a moment to appreciate the elegance and complexity behind those simple words. *The Dutch language may not be the most widely spoken in Europe, but it’s certainly one of the most interesting.*"
+        },
+        "llama.cpp": {
+          "voto": 1.0,
+          "nota": "tutte",
+          "secondi": 69.0,
+          "testo": "**Interesting Facts About the Dutch Language**\n\nThe Dutch language, spoken by over 25 million people primarily in the Netherlands, Belgium, and Suriname, is more than just a tool for communication—it's a fascinating linguistic puzzle with unique features that set it apart from other European languages. From its roots in Old Frankish to its modern-day use in everyday life, Dutch offers a rich tapestry of history, structure, and cultural quirks. Here are some surprising and delightful facts about the Dutch language that might just make you want to learn it!\n\n*The Dutch language has a surprisingly high number of words with double letters.*  \nWhile many languages use double letters sparingly, Dutch actually has a notable frequency of double consonants. For example, words like *kinderen* (children), *bouw* (construction), and *vliegtuig* (airplane) contain repeated letters. This is partly due to the language’s phonetic structure, where certain consonant clusters are pronounced distinctly and require repetition for clarity. Interestingly, Dutch also uses double letters to indicate stress or emphasis, which can change the meaning of a word—though this is more common in older or poetic forms.\n\n*The Dutch language is one of the most phonetically consistent in Europe.*  \nUnlike some languages where spelling doesn’t match pronunciation (like English), Dutch is remarkably consistent. In Dutch, each letter generally corresponds to a single sound, making it easier for learners to pronounce words correctly. For instance, the word *huis* (house) is pronounced exactly as it is spelled—/ˈɦuːs/. This phonetic regularity makes Dutch a favorite among language learners who value predictability and clarity.\n\nAnother fun fact: Dutch has a rich vocabulary of loanwords from other languages, especially from French, German, and English. However, Dutch often adapts these words with a Dutch twist. For example, the word *café* is used in Dutch, but it's pronounced *kafé*—a subtle shift in vowel sound that reflects Dutch phonetic rules.\n\nDid you know that Dutch has a unique system of verb conjugation that changes based on tense, mood, and subject? For instance, the verb *gaan* (to go) changes to *gaat* (he/she goes), *gaat* (it goes), and *gaan* (they go). This system, while complex, is logical and follows clear patterns.\n\nInterestingly, Dutch is also known for its extensive use of compound words. For example, *woningbouw* (housing construction) or *koffiezetapparaat* (coffee machine) are common. These compound words are not just a linguistic curiosity—they reflect the practical, descriptive nature of Dutch society.\n\nIn conclusion, the Dutch language is a blend of simplicity and sophistication. Its phonetic consistency, rich vocabulary, and unique grammatical structures make it both accessible and deeply engaging for learners. Whether you're drawn to its elegant double letters or its logical verb system, Dutch offers a rewarding journey into one of Europe’s most vibrant linguistic traditions.\n\n*So, if you're curious about languages that are both easy to learn and full of cultural depth, Dutch might just be your next adventure!*"
+        },
+        "uguali": false
+      }
+    ]
+  },
+  "secondi": 2013.3
+}

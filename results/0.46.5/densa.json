@@ -1,0 +1,90 @@
+{
+  "caso": "densa",
+  "versione": "0.46.5",
+  "inga": "inga 0.46.5",
+  "modello": "qwen3-4b",
+  "file_modello": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "sha256_modello": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "ctx": 2048,
+  "seed": 42,
+  "data": "2026-11-12T11:04:48Z",
+  "secondi_avvio": 2.0,
+  "stato": "ok",
+  "voto": 1.0148390007490404,
+  "voci": {
+    "da 2 a 4 thread (default)": 1.0124237222041674,
+    "debug.cpu_task_kb=64 con 2 thread, sul default": 0.914,
+    "debug.cpu_tasks_per_thread=1 con 2 thread, sul default": 0.997,
+    "debug.cpu_task_kb=64 con 4 thread, sul default": 0.94,
+    "debug.cpu_tasks_per_thread=1 con 4 thread, sul default": 1.001,
+    "debug.weights_thp con 2 thread, sul default": 1.0037594641665977,
+    "debug.weights_thp con 4 thread, sul default": 1.0148390007490404
+  },
+  "dettagli": {
+    "lscpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               AuthenticAMD\nModel name:                              AMD EPYC 9V74 80-Core Processor\nCPU family:                              25\nModel:                                   17\nThread(s) per core:                      2\nCore(s) per socket:                      2\nSocket(s):                               1\nStepping:                                1\nBogoMIPS:                                5192.28\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx512_bf16 clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm\nVirtualization:                          AMD-V\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               64 KiB (2 instances)\nL1i cache:                               64 KiB (2 instances)\nL2 cache:                                2 MiB (2 instances)\nL3 cache:                                32 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Vulnerable\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Vulnerable: No microcode\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+    "cpu_logiche": 4,
+    "thp_enabled": "always [madvise] never",
+    "thp_defrag": "always defer defer+madvise [madvise] never",
+    "kernel": "7.0.0-1017-azure",
+    "tg_t1": 7.55747049108426,
+    "tg_t2": 11.749210397028996,
+    "tg_t3": 12.11693744164518,
+    "tg_t4": 11.895179323119999,
+    "ab_debug.cpu_task_kb=64_t2": {
+      "default": 12.0,
+      "variante": 10.97,
+      "rapporto": 0.914,
+      "riga": "| qwen3 4B Q4_K - Medium | CPU (AVX-512) | 2 | tg128 | 12.00 ± 0.05 | 10.97 ± 0.09 | 0.914 | identical |"
+    },
+    "ab_debug.cpu_tasks_per_thread=1_t2": {
+      "default": 11.94,
+      "variante": 11.91,
+      "rapporto": 0.997,
+      "riga": "| qwen3 4B Q4_K - Medium | CPU (AVX-512) | 2 | tg128 | 11.94 ± 0.16 | 11.91 ± 0.19 | 0.997 | identical |"
+    },
+    "ab_debug.cpu_task_kb=64_t4": {
+      "default": 11.43,
+      "variante": 10.74,
+      "rapporto": 0.94,
+      "riga": "| qwen3 4B Q4_K - Medium | CPU (AVX-512) | 4 | tg128 | 11.43 ± 0.20 | 10.74 ± 0.23 | 0.940 | identical |"
+    },
+    "ab_debug.cpu_tasks_per_thread=1_t4": {
+      "default": 11.67,
+      "variante": 11.68,
+      "rapporto": 1.001,
+      "riga": "| qwen3 4B Q4_K - Medium | CPU (AVX-512) | 4 | tg128 | 11.67 ± 0.16 | 11.68 ± 0.15 | 1.001 | identical |"
+    },
+    "thp_t2": {
+      "senza": [
+        11.789050267326452,
+        12.066019734781287
+      ],
+      "con": [
+        11.961556454395206,
+        11.983195828577133
+      ],
+      "anon_huge_kb": [
+        1331200,
+        1331200
+      ]
+    },
+    "thp_t4": {
+      "senza": [
+        11.820175885071057,
+        11.791363835675122
+      ],
+      "con": [
+        11.970001091978332,
+        11.991910284370002
+      ],
+      "anon_huge_kb": [
+        1327104,
+        1327104
+      ]
+    },
+    "profilo_t2": "| model | size | params | backend | threads | test | t/s | TTFT p50 ms |\n| --- | ---: | ---: | --- | ---: | ---: | ---: | ---: |\n| qwen3 4B Q4_K - Medium | 2381.59 MiB | 4.02 B | CPU (AVX-512) | 2 | tg64 | 11.95 ± 0.00 | - |\n\nprofile of tg64, 2 threads, AVX-512: 83703.6 µs per token\n\n| operation | calls / token | µs / token | share |\n| --- | ---: | ---: | ---: |\n| matmul Q6_K | 19.0 | 30210.5 | 36.1 % |\n| matmul_swiglu Q4_K | 36.0 | 28558.6 | 34.1 % |\n| matmul Q4_K | 54.0 | 13020.6 | 15.6 % |\n| matmuls mixed | 18.0 | 5666.7 | 6.8 % |\n| matmuls Q4_K | 18.0 | 4438.8 | 5.3 % |\n| attention | 36.0 | 856.8 | 1.0 % |\n| rms_norm | 145.0 | 492.0 | 0.6 % |\n| rope | 72.0 | 78.1 | 0.1 % |\n| add | 72.0 | 31.5 | 0.0 % |\n| get_rows | 1.0 | 4.5 | 0.0 % |\n| outside the operations | | 345.5 | 0.4 % |\n| pool: starting jobs (in the above) | 181.0 | 17.8 | 0.0 % |\n| pool: waiting for threads (in the above) | 181.0 | 290.9 | 0.3 % |\n",
+    "profilo_t4": "| model | size | params | backend | threads | test | t/s | TTFT p50 ms |\n| --- | ---: | ---: | --- | ---: | ---: | ---: | ---: |\n| qwen3 4B Q4_K - Medium | 2381.59 MiB | 4.02 B | CPU (AVX-512) | 4 | tg64 | 11.86 ± 0.00 | - |\n\nprofile of tg64, 4 threads, AVX-512: 84286.3 µs per token\n\n| operation | calls / token | µs / token | share |\n| --- | ---: | ---: | ---: |\n| matmul_swiglu Q4_K | 36.0 | 31065.0 | 36.9 % |\n| matmul Q6_K | 19.0 | 25701.0 | 30.5 % |\n| matmul Q4_K | 54.0 | 14395.3 | 17.1 % |\n| matmuls mixed | 18.0 | 5747.0 | 6.8 % |\n| matmuls Q4_K | 18.0 | 4848.2 | 5.8 % |\n| attention | 36.0 | 1290.6 | 1.5 % |\n| rms_norm | 145.0 | 597.8 | 0.7 % |\n| rope | 72.0 | 118.9 | 0.1 % |\n| add | 72.0 | 67.3 | 0.1 % |\n| get_rows | 1.0 | 4.3 | 0.0 % |\n| outside the operations | | 450.9 | 0.5 % |\n| pool: starting jobs (in the above) | 181.0 | 2274.4 | 2.7 % |\n| pool: waiting for threads (in the above) | 181.0 | 2898.3 | 3.4 % |\n",
+    "errori": []
+  },
+  "secondi": 1116.4
+}
